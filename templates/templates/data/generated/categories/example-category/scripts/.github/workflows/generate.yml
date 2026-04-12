@@ -1,63 +1,24 @@
-import json
-from pathlib import Path
+name: Generate site
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
-TEMPLATES_DIR = ROOT / "templates"
-GENERATED_DIR = ROOT / "generated"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/**"
+      - "templates/**"
+      - "scripts/**"
 
-CATEGORIES_JSON = DATA_DIR / "categories.json"
-CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-def load_json(path: Path):
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def load_template(path: Path) -> str:
-    with path.open("r", encoding="utf-8") as f:
-        return f.read()
-
-
-def ensure_dir(path: Path):
-    path.mkdir(parents=True, exist_ok=True)
-
-
-def write_text(path: Path, text: str):
-    ensure_dir(path.parent)
-    path.write_text(text, encoding="utf-8")
-
-
-def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
-    return (
-        template
-        .replace("{{CATEGORY_NAME}}", name)
-        .replace("{{CATEGORY_DESCRIPTION}}", description)
-        .replace("{{PRODUCT_LIST}}", product_list_html)
-    )
-
-
-def main():
-    categories = load_json(CATEGORIES_JSON)
-    template = load_template(CATEGORY_TEMPLATE)
-
-    for cat in categories:
-        slug = cat.get("slug", "").strip()
-        name = cat.get("name", "").strip() or slug
-        description = cat.get("description", "").strip()
-
-        if not slug:
-            continue
-
-        product_list_html = "<li>Example product (coming soon)</li>"
-        html = render_category_page(template, name, description, product_list_html)
-
-        out_path = GENERATED_DIR / "categories" / slug / "index.html"
-        write_text(out_path, html)
-
-    print(f"Generated {len(categories)} category page(s).")
-
-
-if __name__ == "__main__":
-    main()
+      - name: Run generator
+        run: python scripts/generate.py
