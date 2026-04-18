@@ -1,6 +1,8 @@
 import json
+import re
 from pathlib import Path
 from html import escape
+from typing import Any, Dict, List
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -13,16 +15,28 @@ PRODUCTS_JSON = DATA_DIR / "products.json"
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
 PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
 
+_slug_re = re.compile(r"[^a-z0-9-]+")
 
-def load_json(path: Path):
+
+# ----------------------------
+# IO helpers
+# ----------------------------
+
+def load_json(path: Path) -> Any:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing required file: {path}")
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_template_optional(path: Path, fallback: str) -> str:
-    if path.exists():
-        return path.read_text(encoding="utf-8")
-    return fallback
+def read_text_required(path: Path) -> str:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing required file: {path}")
+    return path.read_text(encoding="utf-8")
+
+
+def read_text_optional(path: Path, fallback: str) -> str:
+    return path.read_text(encoding="utf-8") if path.exists() else fallback
 
 
 def ensure_dir(path: Path):
@@ -34,45 +48,214 @@ def write_text(path: Path, text: str):
     path.write_text(text, encoding="utf-8")
 
 
+# ----------------------------
+# Normalization + validation
+# ----------------------------
+
+def as_str(v: Any) -> str:
+    return ("" if v is None else str(v)).strip()
+
+
+def normalize_slug(v: Any) -> str:
+    """
+    Stable, URL-safe slug normalization:
+      - lowercase
+      - spaces/underscores -> hyphen
+      - strip invalid chars
+      - collapse repeated hyphens
+    """
+    s = as_str(v).lower()
+    s = s.replace("_", "-")
+    s = "-".join(s.split())
+    s = _slug_re.sub("-", s)
+    s = re.sub(r"-{2,}", "-", s).strip("-")
+    return s
+
+
+def require_list(v: Any, name: str) -> List[Any]:
+    if v is None:
+        return []
+    if not isinstance(v, list):
+        raise ValueError(f"Expected '{name}' to be a list, got {type(v).__name__}")
+    return v
+
+
+def require_dict(v: Any, name: str) -> Dict[str, Any]:
+    if v is None:
+        return {}
+    if not isinstance(v, dict):
+        raise ValueError(f"Expected '{name}' to be a dict, got {type(v).__name__}")
+    return v
+
+
+def assert_unique_slugs(items: List[Dict[str, Any]], kind: str):
+    seen = set()
+    dups = set()
+    for x in items:
+        s = as_str(x.get("slug"))
+        if not s:
+            continue
+        if s in seen:
+            dups.add(s)
+        seen.add(s)
+    if dups:
+        raise ValueError(f"Duplicate {kind} slug(s) found: {sorted(dups)}")
+
+
+def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
+    products = require_list(raw_products, "products")
+    out: List[Dict[str, Any]] = []
+
+    for i, p in enumerate(products):
+        if not isinstance(p, dict):
+            continue
+
+        slug = normalize_slug(p.get("slug"))
+        if not slug:
+            continue
+
+        name = as_str(p.get("name")) or slug
+        brand = as_str(p.get("brand"))
+        affiliate_url = as_str(p.get("affiliate_url"))
+        image_url = as_str(p.get("image_url"))
+        price_usd = p.get("price_usd")
+
+        best_for = [
+            normalize_slug(x)
+            for x in require_list(p.get("best_for"), f"products[{i}].best_for")
+            if as_str(x)
+        ]
+        specs = require_dict(p.get("specs"), f"products[{i}].specs")
+
+        out.append({
+            "slug": slug,
+            "name": name,
+            "brand": brand,
+            "price_usd": price_usd,
+            "affiliate_url": affiliate_url,
+            "image_url": image_url,
+            "best_for": best_for,
+            "specs": specs,
+        })
+
+    out.sort(key=lambda x: x["slug"])
+    assert_unique_slugs(out, "product")
+    return out
+
+
+def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
+    cats = require_list(raw_categories, "categories")
+    out: List[Dict[str, Any]] = []
+
+    for i, c in enumerate(cats):
+        if not isinstance(c, dict):
+            continue
+
+        slug = normalize_slug(c.get("slug"))
+        if not slug:
+            continue
+
+        name = as_str(c.get("name")) or slug
+        description = as_str(c.get("description"))
+
+        tags_raw = c.get("tags", None)
+        tags = []
+        if tags_raw is not None:
+            tags = [
+                normalize_slug(x)
+                for x in require_list(tags_raw, f"categories[{i}].tags")
+                if as_str(x)
+            ]
+
+        out.append({
+            "slug": slug,
+            "name": name,
+            "description": description,
+            "tags": tags,  # optional, may be empty
+        })
+
+    out.sort(key=lambda x: x["slug"])
+    assert_unique_slugs(out, "category")
+    return out
+
+
+# ----------------------------
+# HTML rendering helpers
+# ----------------------------
+
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return (
         template
-        .replace("{{CATEGORY_NAME}}", name)
-        .replace("{{CATEGORY_DESCRIPTION}}", description)
+        .replace("{{CATEGORY_NAME}}", escape(name))
+        .replace("{{CATEGORY_DESCRIPTION}}", escape(description))
         .replace("{{PRODUCT_LIST}}", product_list_html)
     )
 
 
-def specs_table_html(specs: dict) -> str:
-    if not isinstance(specs, dict) or not specs:
+def specs_table_html(specs: Dict[str, Any]) -> str:
+    specs = require_dict(specs, "specs")
+    if not specs:
         return "<p>No specs available.</p>"
+
     rows = []
-    for k, v in specs.items():
-        rows.append(f"<tr><th>{escape(str(k))}</th><td>{escape(str(v))}</td></tr>")
+    for k in sorted(specs.keys(), key=lambda x: str(x).lower()):
+        rows.append(f"<tr><th>{escape(str(k))}</th><td>{escape(str(specs[k]))}</td></tr>")
     return "<table><tbody>" + "".join(rows) + "</tbody></table>"
 
 
-def render_product_page(template: str, p: dict) -> str:
-    name = (p.get("name") or "").strip()
-    brand = (p.get("brand") or "").strip()
+def best_for_html(best_for: Any) -> str:
+    tags = require_list(best_for, "best_for")
+    tags = [as_str(t) for t in tags if as_str(t)]
+    if not tags:
+        return "<p>—</p>"
+    return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
+
+
+def affiliate_open_tag(url: str) -> str:
+    """
+    Your template pattern is:
+      {{AFFILIATE_URL}}Buy / Check Price</a>
+    Therefore, this must return an OPENING <a ...> tag (no closing </a>).
+    """
+    url = as_str(url)
+    if not url:
+        return '<a class="cta" href="#" aria-disabled="true" style="pointer-events:none;opacity:.6;">'
+    safe = escape(url, quote=True)
+    return f'<a class="cta" href="{safe}" target="_blank" rel="sponsored nofollow noopener">'
+
+
+def image_html(image_url: str, product_name: str) -> str:
+    """
+    Your template puts {{IMAGE_URL}} inside a container.
+    We return a complete <img> tag or empty string.
+    """
+    image_url = as_str(image_url)
+    if not image_url:
+        return ""
+    src = escape(image_url, quote=True)
+    alt = escape(as_str(product_name), quote=True)
+    return f'<img src="{src}" alt="{alt}" loading="lazy" />'
+
+
+def render_product_page(template: str, p: Dict[str, Any]) -> str:
+    name = as_str(p.get("name"))
+    brand = as_str(p.get("brand"))
     price = p.get("price_usd")
-    affiliate_url = (p.get("affiliate_url") or "").strip()
-    image_url = (p.get("image_url") or "").strip()
+    affiliate_url = as_str(p.get("affiliate_url"))
+    img_url = as_str(p.get("image_url"))
     best_for = p.get("best_for") or []
     specs = p.get("specs") or {}
 
-    best_for_html = ""
-    if isinstance(best_for, list) and best_for:
-        best_for_html = "<ul>" + "".join(f"<li>{escape(str(x))}</li>" for x in best_for) + "</ul>"
+    price_txt = "" if price is None else str(price)
 
     return (
         template
         .replace("{{PRODUCT_NAME}}", escape(name))
         .replace("{{PRODUCT_BRAND}}", escape(brand))
-        .replace("{{PRODUCT_PRICE}}", escape(str(price) if price is not None else ""))
-        .replace("{{AFFILIATE_URL}}", escape(affiliate_url))
-        .replace("{{IMAGE_URL}}", escape(image_url))
-        .replace("{{BEST_FOR}}", best_for_html)
+        .replace("{{PRODUCT_PRICE}}", escape(price_txt))
+        .replace("{{AFFILIATE_URL}}", affiliate_open_tag(affiliate_url))
+        .replace("{{IMAGE_URL}}", image_html(img_url, name))
+        .replace("{{BEST_FOR}}", best_for_html(best_for))
         .replace("{{SPECS_TABLE}}", specs_table_html(specs))
     )
 
@@ -87,7 +270,8 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
     <h1>{{PRODUCT_NAME}}</h1>
     <p><strong>Brand:</strong> {{PRODUCT_BRAND}}</p>
     <p><strong>Price (USD):</strong> {{PRODUCT_PRICE}}</p>
-    <p><a href="{{AFFILIATE_URL}}" rel="nofollow sponsored">Buy / Check Price</a></p>
+    <p>{{AFFILIATE_URL}}Buy / Check Price</a></p>
+    <h2>Best For</h2>
     <div>{{BEST_FOR}}</div>
     <h2>Specs</h2>
     <div>{{SPECS_TABLE}}</div>
@@ -96,23 +280,58 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
 """
 
 
+def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
+    best_for = product.get("best_for") or []
+    if not isinstance(best_for, list):
+        return False
+    best_for_norm = [normalize_slug(t) for t in best_for if as_str(t)]
+    return any(t in best_for_norm for t in match_tags)
+
+
+def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
+    if not matched:
+        return "<ul><li>No products yet.</li></ul>"
+
+    items = []
+    for p in matched:
+        slug = as_str(p.get("slug"))
+        name = as_str(p.get("name")) or slug
+        brand = as_str(p.get("brand"))
+        price = p.get("price_usd")
+
+        meta_bits = []
+        if brand:
+            meta_bits.append(brand)
+        if price is not None:
+            meta_bits.append(f"${price}")
+
+        meta = " — " + " • ".join(escape(x) for x in meta_bits) if meta_bits else ""
+
+        href = f"/generated/products/{slug}/"
+        href_attr = escape(href, quote=True)
+        items.append(f'<li><a href="{href_attr}">{escape(name)}</a>{meta}</li>')
+
+    html = "<ul>" + "".join(items) + "</ul>"
+
+    # Guardrail: prevent silent broken link output
+    if matched and '<a href="' not in html:
+        raise RuntimeError("Category product list rendered without anchor tags.")
+    return html
+
+
 def main():
-    categories = load_json(CATEGORIES_JSON)
+    categories = normalize_categories(load_json(CATEGORIES_JSON))
+    category_template = read_text_required(CATEGORY_TEMPLATE)
+    product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
 
-    # category.html is required for now
-    category_template = (TEMPLATES_DIR / "category.html").read_text(encoding="utf-8")
-
-    # product.html is optional; fallback keeps workflow green even if missing
-    product_template = load_template_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
-
-    products = []
+    products: List[Dict[str, Any]] = []
     if PRODUCTS_JSON.exists():
-        products = load_json(PRODUCTS_JSON)
+        products = normalize_products(load_json(PRODUCTS_JSON))
 
     # Generate product pages
     product_count = 0
     for p in products:
-        slug = (p.get("slug") or "").strip()
+        slug = as_str(p.get("slug"))
         if not slug:
             continue
         html = render_product_page(product_template, p)
@@ -120,28 +339,24 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages (lists products for now)
+    # Generate category pages (filter products by tags; fallback to all products early on)
     category_count = 0
     for cat in categories:
-        slug = (cat.get("slug") or "").strip()
-        name = (cat.get("name") or "").strip() or slug
-        description = (cat.get("description") or "").strip()
-        if not slug:
-            continue
+        cslug = as_str(cat.get("slug"))
+        name = as_str(cat.get("name")) or cslug
+        description = as_str(cat.get("description"))
 
-        # For now: list ALL products in every category page (we will filter later)
-        items = []
-        for p in products:
-            pslug = (p.get("slug") or "").strip()
-            pname = (p.get("name") or "").strip() or pslug
-            price = p.get("price_usd")
-            price_txt = f" — ${price}" if price is not None else ""
-            items.append(f'<li><a href="/generated/products/{escape(pslug)}/">{escape(pname)}</a>{escape(price_txt)}</li>')
+        tags = cat.get("tags") or []
+        match_tags = [normalize_slug(t) for t in tags if as_str(t)] or [cslug]
 
-        product_list_html = "<ul>" + "".join(items) + "</ul>" if items else "<ul><li>No products yet.</li></ul>"
+        matched = [p for p in products if product_matches(p, match_tags)]
+        if not matched and products:
+            matched = products  # early-stage safety fallback
+
+        product_list_html = build_category_product_list(matched)
 
         html = render_category_page(category_template, name, description, product_list_html)
-        out_path = GENERATED_DIR / "categories" / slug / "index.html"
+        out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
 
