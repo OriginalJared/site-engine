@@ -1,8 +1,86 @@
-
 [
   {
-    "slug": "example-category",
-    "name": "Example Category",
-    "description": "This is a placeholder category."
+    "slug": "standing-desks",
+    "name": "Standing Desks",
+    "description": "Browse our current standing desk picks and compare key specs at a glance.",
+    "tags": [
+      "best-overall",
+      "budget",
+      "under-500",
+      "small-spaces",
+      "tall-people",
+      "premium",
+      "quiet-motor",
+      "l-shaped",
+      "home-office",
+      "under-600",
+      "executive"
+    ]
+  },
+  {
+    "slug": "best-standing-desks",
+    "name": "Best Standing Desks (Top Picks)",
+    "description": "Our strongest overall standing desk picks based on price-to-performance and specs.",
+    "tags": ["best-overall"]
+  },
+  {
+    "slug": "standing-desks-under-500",
+    "name": "Best Standing Desks Under $500",
+    "description": "High-value standing desks under $500 with solid core specs.",
+    "tags": ["under-500"]
+  },
+  {
+    "slug": "budget-standing-desks",
+    "name": "Budget Standing Desks",
+    "description": "Affordable standing desk options focused on essentials and value.",
+    "tags": ["budget"]
+  },
+  {
+    "slug": "standing-desks-for-small-spaces",
+    "name": "Standing Desks for Small Spaces",
+    "description": "Compact standing desks that fit tighter home office setups.",
+    "tags": ["small-spaces"]
+  },
+  {
+    "slug": "standing-desks-for-tall-people",
+    "name": "Standing Desks for Tall People",
+    "description": "Standing desks with height ranges that better accommodate taller users.",
+    "tags": ["tall-people"]
+  },
+  {
+    "slug": "standing-desks-under-600",
+    "name": "Best Standing Desks Under $600",
+    "description": "Our picks under $600 balancing features, stability, and warranty.",
+    "tags": ["under-600"]
+  },
+  {
+    "slug": "premium-standing-desks",
+    "name": "Premium Standing Desks",
+    "description": "Higher-end standing desks with stronger specs, stability, and warranties.",
+    "tags": ["premium"]
+  },
+  {
+    "slug": "quiet-standing-desks",
+    "name": "Quiet Standing Desks",
+    "description": "Standing desks selected for quieter motor operation and smooth movement.",
+    "tags": ["quiet-motor"]
+  },
+  {
+    "slug": "l-shaped-standing-desks",
+    "name": "L-Shaped Standing Desks",
+    "description": "L-shaped standing desk picks for larger work surfaces and multi-monitor setups.",
+    "tags": ["l-shaped"]
+  },
+  {
+    "slug": "home-office-standing-desks",
+    "name": "Home Office Standing Desks",
+    "description": "Standing desks selected for everyday home office use and balanced ergonomics.",
+    "tags": ["home-office"]
+  },
+  {
+    "slug": "executive-standing-desks",
+    "name": "Executive Standing Desks",
+    "description": "Executive-class standing desks with larger surfaces and premium positioning.",
+    "tags": ["executive"]
   }
 ]
