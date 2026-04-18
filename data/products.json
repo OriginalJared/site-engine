@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "desk-a",
+    "name": "Standing Desk A",
+    "brand": "Brand A",
+    "price_usd": 499,
+    "affiliate_url": "https://example.com/desk-a",
+    "image_url": "",
+    "best_for": ["under-500", "small-spaces"],
+    "specs": {
+      "height_min_in": 24,
+      "height_max_in": 49,
+      "weight_capacity_lbs": 275,
+      "desktop_width_in": 48,
+      "desktop_depth_in": 24,
+      "motors": 2,
+      "warranty_years": 7
+    }
+  },
+  {
+    "slug": "desk-b",
+    "name": "Standing Desk B",
+    "brand": "Brand B",
+    "price_usd": 699,
+    "affiliate_url": "https://example.com/desk-b",
+    "image_url": "",
+    "best_for": ["best-overall", "tall-people"],
+    "specs": {
+      "height_min_in": 23,
+      "height_max_in": 50,
+      "weight_capacity_lbs": 355,
+      "desktop_width_in": 60,
+      "desktop_depth_in": 30,
+      "motors": 2,
+      "warranty_years": 10
+    }
+  },
+  {
+    "slug": "desk-c",
+    "name": "Standing Desk C",
+    "brand": "Brand C",
+    "price_usd": 399,
+    "affiliate_url": "https://example.com/desk-c",
+    "image_url": "",
+    "best_for": ["budget", "under-500"],
+    "specs": {
+      "height_min_in": 28,
+      "height_max_in": 47,
+      "weight_capacity_lbs": 220,
+      "desktop_width_in": 48,
+      "desktop_depth_in": 24,
+      "motors": 1,
+      "warranty_years": 5
+    }
+  },
+  {
+    "slug": "desk-d",
+    "name": "Standing Desk D",
+    "brand": "Brand D",
+    "price_usd": 899,
+    "affiliate_url": "https://example.com/desk-d",
+    "image_url": "",
+    "best_for": ["premium", "best-overall"],
+    "specs": {
+      "height_min_in": 22,
+      "height_max_in": 50,
+      "weight_capacity_lbs": 400,
+      "desktop_width_in": 72,
+      "desktop_depth_in": 30,
+      "motors": 2,
+      "warranty_years": 12
+    }
+  },
+  {
+    "slug": "desk-e",
+    "name": "Standing Desk E",
+    "brand": "Brand E",
+    "price_usd": 599,
+    "affiliate_url": "https://example.com/desk-e",
+    "image_url": "",
+    "best_for": ["small-spaces", "quiet-motor"],
+    "specs": {
+      "height_min_in": 24,
+      "height_max_in": 49,
+      "weight_capacity_lbs": 300,
+      "desktop_width_in": 42,
+      "desktop_depth_in": 24,
+      "motors": 2,
+      "warranty_years": 7
+    }
+  },
+  {
+    "slug": "desk-f",
+    "name": "Standing Desk F",
+    "brand": "Brand F",
+    "price_usd": 749,
+    "affiliate_url": "https://example.com/desk-f",
+    "image_url": "",
+    "best_for": ["l-shaped", "home-office"],
+    "specs": {
+      "height_min_in": 23,
+      "height_max_in": 49,
+      "weight_capacity_lbs": 330,
+      "desktop_width_in": 63,
+      "desktop_depth_in": 55,
+      "motors": 2,
+      "warranty_years": 10
+    }
+  },
+  {
+    "slug": "desk-g",
+    "name": "Standing Desk G",
+    "brand": "Brand G",
+    "price_usd": 329,
+    "affiliate_url": "https://example.com/desk-g",
+    "image_url": "",
+    "best_for": ["budget", "small-spaces"],
+    "specs": {
+      "height_min_in": 28,
+      "height_max_in": 46,
+      "weight_capacity_lbs": 176,
+      "desktop_width_in": 40,
+      "desktop_depth_in": 24,
+      "motors": 1,
+      "warranty_years": 3
+    }
+  },
+  {
+    "slug": "desk-h",
+    "name": "Standing Desk H",
+    "brand": "Brand H",
+    "price_usd": 549,
+    "affiliate_url": "https://example.com/desk-h",
+    "image_url": "",
+    "best_for": ["under-600", "best-overall"],
+    "specs": {
+      "height_min_in": 24,
+      "height_max_in": 50,
+      "weight_capacity_lbs": 300,
+      "desktop_width_in": 55,
+      "desktop_depth_in": 28,
+      "motors": 2,
+      "warranty_years": 7
+    }
+  },
+  {
+    "slug": "desk-i",
+    "name": "Standing Desk I",
+    "brand": "Brand I",
+    "price_usd": 999,
+    "affiliate_url": "https://example.com/desk-i",
+    "image_url": "",
+    "best_for": ["premium", "executive"],
+    "specs": {
+      "height_min_in": 22,
+      "height_max_in": 50,
+      "weight_capacity_lbs": 350,
+      "desktop_width_in": 72,
+      "desktop_depth_in": 36,
+      "motors": 2,
+      "warranty_years": 15
+    }
+  },
+  {
+    "slug": "desk-j",
+    "name": "Standing Desk J",
+    "brand": "Brand J",
+    "price_usd": 459,
+    "affiliate_url": "https://example.com/desk-j",
+    "image_url": "",
+    "best_for": ["under-500", "home-office"],
+    "specs": {
+      "height_min_in": 24,
+      "height_max_in": 48,
+      "weight_capacity_lbs": 264,
+      "desktop_width_in": 48,
+      "desktop_depth_in": 24,
+      "motors": 2,
+      "warranty_years": 5
+    }
+  }
+]
