@@ -1,64 +1,83 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Site Engine – Product Picks & Comparisons</title>
+    <title>Site Engine – Product Picks &amp; Comparisons</title>
     <meta name="description" content="Browse curated product picks and compare key specs quickly. Categories and product pages are generated automatically from structured data." />
+
+    /assets/styles.css
+
     <style>
-      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:24px auto;padding:0 16px;line-height:1.5}
-      h1{margin:0 0 8px}
-      .sub{color:#555;margin:0 0 18px}
-      .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
-      .card{border:1px solid #ddd;border-radius:12px;padding:14px}
-      .card h2{margin:0 0 8px;font-size:18px}
-      .card p{margin:0 0 10px;color:#555}
-      a.btn{display:inline-block;background:#0b5fff;color:#fff;text-decoration:none;padding:10px 12px;border-radius:10px;font-weight:600}
-      a.btn:hover{filter:brightness(0.95)}
-      ul{margin:10px 0 0 18px}
-      footer{margin-top:26px;color:#777;font-size:12px}
+      /* Homepage-only layout (cards grid) */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 14px;
+        margin-top: 18px;
+      }
+      .cards .card h2 { margin: 0 0 8px; font-size: 18px; }
+      .cards .card p  { margin: 0 0 10px; color: var(--muted); }
     </style>
   </head>
 
   <body>
-    <h1>Site Engine</h1>
-    <p class="sub">Browse generated categories and product pages. This site is built from structured data + templates and updates automatically.</p>
+    <div class="wrap">
+      <header class="site">
+        /
+        <nav>
+          /generated/categories/standing-desks/
+          /sitemap.xml
+        </nav>
+      </header>
 
-    <div class="cards">
-      <div class="card">
-        <h2>Standing Desks (Browse All)</h2>
-        <p>All current standing desk products and category groupings.</p>
-        <a class="btn" href="/generated/categories/standing-desks/">Browse Standing Desks</a>
+      <h1 style="margin-top:18px;">Site Engine</h1>
+      <p class="meta">Browse generated categories and product pages. This site is built from structured data + templates and updates automatically.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h2>Standing Desks (Browse All)</h2>
+          <p>All current standing desk products and category groupings.</p>
+          /generated/categories/standing-desks/
+        </div>
+
+        <div class="card">
+          <h2>Best Standing Desks (Top Picks)</h2>
+          <p>Our strongest overall picks based on specs and value.</p>
+          /generated/categories/best-standing-desks/
+        </div>
+
+        <div class="card">
+          <h2>Best Under $500</h2>
+          <p>High-value desks under $500.</p>
+          /generated/categories/standing-desks-under-500/Browse Under $500</a>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Best Standing Desks (Top Picks)</h2>
-        <p>Our strongest overall picks based on specs and value.</p>
-        <a class="btn" href="/generated/categories/best-standing-desks/">View Top Picks</a>
+      <h2 style="margin-top:26px;">More Categories</h2>
+      <ul style="margin:10px 0 0 18px;">
+        <li><a href="/generatedes/standing-desks-for-small-spaces/</li>
+        <li>/generated/categories/standing-desks-for-tall-people/</li>
+        <li>/generated/categories/l-shaped-standing-desks/</li>
+        <li>/generated/categories/premium-standing-desks/</li>
+        <li>/generated/categories/quiet-standing-desks/</li>
+        <li>/generated/categories/home-office-standing-desks/</li>
+        <li>/generated/categories/executive-standing-desks/</li>
+        <li>/generated/categories/budget-standing-desks/</li>
+        <li><a href="/generated/s/standing-desks-under-600/</li>
+      </ul>
+
+      <div class="disclosure" style="margin-top:14px;">
+        Disclosure: This site may contain affiliate links. If you buy through links, we may earn a commission at no extra cost to you.
       </div>
 
-      <div class="card">
-        <h2>Best Under $500</h2>
-        <p>High-value desks under $500.</p>
-        <a class="btn" href="/generated/categories/standing-desks-under-500/">Browse Under $500</a>
-      </div>
+      <footer>
+        <div>Site Engine &bull; Generated pages &bull; Fast, structured comparisons</div>
+        <div style="margin-top:6px;">
+          /robots.txt &bull; /sitemap.xml
+        </div>
+      </footer>
     </div>
-
-    <h2 style="margin-top:26px;">More Categories</h2>
-    <ul>
-      <li><a href="/generated/categories/standing-desks-for-small-spaces/">Standing Desks for Small Spaces</a></li>
-      <li><a href="/generated/categories/standing-desks-for-tall-people/">Standing Desks for Tall People</a></li>
-      <li><a href="/generated/categories/l-shaped-standing-desks/">L-Shaped Standing Desks</a></li>
-      <li><a href="/generated/categories/premium-standing-desks/">Premium Standing Desks</a></li>
-      <li><a href="/generated/categories/quiet-standing-desks/">Quiet Standing Desks</a></li>
-      <li><a href="/generated/categories/home-office-standing-desks/">Home Office Standing Desks</a></li>
-      <li><a href="/generated/categories/executive-standing-desks/">Executive Standing Desks</a></li>
-      <li><a href="/generated/categories/budget-standing-desks/">Budget Standing Desks</a></li>
-      <li><a href="/generated/categories/standing-desks-under-600/">Standing Desks Under $600</a></li>
-    </ul>
-
-    <footer>
-      Disclosure: This site may contain affiliate links. If you buy through links, we may earn a commission at no extra cost to you.
-    </footer>
   </body>
 </html>
