@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import sys
 from datetime import date
 from pathlib import Path
 from html import escape
@@ -356,6 +357,91 @@ def build_robots(site_url: str) -> str:
     ])
 
 
+# ----------------------------
+# Quality gates (Phase 1)
+# ----------------------------
+
+def run_quality_gates():
+    """
+    Post-generation validation. Checks every generated HTML file for
+    correctness. If ANY check fails, the build is halted with a non-zero
+    exit code so GitHub Actions goes red and nothing is deployed broken.
+    """
+    failures: List[str] = []
+
+    product_pages = sorted(GENERATED_DIR.glob("products/*/index.html"))
+    category_pages = sorted(GENERATED_DIR.glob("categories/*/index.html"))
+
+    # --- Product page checks ---
+    for page in product_pages:
+        rel = page.relative_to(GENERATED_DIR)
+        content = page.read_text(encoding="utf-8")
+
+        # 1a. Python source leak
+        for line in content.splitlines():
+            if line.startswith("import ") or line.startswith("from "):
+                failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
+                break
+
+        # 1b. Valid HTML structure
+        if "<html" not in content.lower():
+            failures.append(f"[MISSING <html>] {rel}")
+
+        # 1c. Has a <title> tag
+        if "<title>" not in content.lower():
+            failures.append(f"[MISSING <title>] {rel}")
+
+        # 1d. Has at least one link (CTA or navigation)
+        if "href=" not in content.lower():
+            failures.append(f"[MISSING href=] {rel}: no links found (broken CTA?)")
+
+        # 1e. No unreplaced placeholders
+        if "{{" in content and "}}" in content:
+            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
+
+    # --- Category page checks ---
+    for page in category_pages:
+        rel = page.relative_to(GENERATED_DIR)
+        content = page.read_text(encoding="utf-8")
+
+        # 2a. Python source leak
+        for line in content.splitlines():
+            if line.startswith("import ") or line.startswith("from "):
+                failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
+                break
+
+        # 2b. Valid HTML structure
+        if "<html" not in content.lower():
+            failures.append(f"[MISSING <html>] {rel}")
+
+        # 2c. Has a <title> tag
+        if "<title>" not in content.lower():
+            failures.append(f"[MISSING <title>] {rel}")
+
+        # 2d. Has product links
+        if "<a href=" not in content.lower():
+            failures.append(f"[MISSING <a href=] {rel}: no product links found")
+
+        # 2e. No unreplaced placeholders
+        if "{{" in content and "}}" in content:
+            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
+
+    # --- Report ---
+    if failures:
+        print("\n❌ QUALITY GATE FAILURES:\n")
+        for f in failures:
+            print(f"   • {f}")
+        print(f"\n   {len(failures)} failure(s) found. Build halted.\n")
+        sys.exit(1)
+
+    total = len(product_pages) + len(category_pages)
+    print(f"✅ Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages checked).")
+
+
+# ----------------------------
+# Main
+# ----------------------------
+
 def main():
     categories = normalize_categories(load_json(CATEGORIES_JSON))
     category_template = read_text_required(CATEGORY_TEMPLATE)
@@ -412,6 +498,9 @@ def main():
     urls = sorted(set(urls))
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
+
+    # Run quality gates — halts the build if any output is broken
+    run_quality_gates()
 
     print(f"Generated {category_count} category page(s).")
     print(f"Generated {product_count} product page(s).")
