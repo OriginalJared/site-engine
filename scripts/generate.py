@@ -294,32 +294,78 @@ def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
 
 
 def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
+    """
+    Build rich product cards for category pages.
+    Each card shows: name, brand, price, key specs, CTA + details link.
+    """
     if not matched:
-        return "<ul><li>No products yet.</li></ul>"
+        return "<p>No products yet.</p>"
 
-    items = []
+    cards = []
     for p in matched:
         slug = as_str(p.get("slug"))
         name = as_str(p.get("name")) or slug
         brand = as_str(p.get("brand"))
         price = p.get("price_usd")
+        affiliate_url = as_str(p.get("affiliate_url"))
+        specs = p.get("specs") or {}
 
-        meta_bits = []
+        # Build meta line (brand + price)
+        meta_parts = []
         if brand:
-            meta_bits.append(brand)
+            meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
         if price is not None:
-            meta_bits.append(f"${price}")
-        meta = " — " + " • ".join(escape(x) for x in meta_bits) if meta_bits else ""
+            meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
+        meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
 
-        href = f"/generated/products/{slug}/"
-        href_attr = escape(href, quote=True)
-        items.append(f'<li><a href="{href_attr}">{escape(name)}</a>{meta}</li>')
+        # Build key specs line
+        spec_bits = []
+        w = specs.get("desktop_width_in")
+        d = specs.get("desktop_depth_in")
+        if w and d:
+            spec_bits.append(f'<span>Desktop: {escape(str(w))}" × {escape(str(d))}"</span>')
+        h_min = specs.get("height_min_in")
+        h_max = specs.get("height_max_in")
+        if h_min and h_max:
+            spec_bits.append(f'<span>Height: {escape(str(h_min))}" – {escape(str(h_max))}"</span>')
+        cap = specs.get("weight_capacity_lbs")
+        if cap:
+            spec_bits.append(f"<span>Capacity: {escape(str(cap))} lbs</span>")
+        motors = specs.get("motors")
+        if motors:
+            spec_bits.append(f"<span>Motors: {escape(str(motors))}</span>")
+        warranty = specs.get("warranty_years")
+        if warranty:
+            spec_bits.append(f"<span>Warranty: {escape(str(warranty))} yr</span>")
+        specs_html = " ".join(spec_bits) if spec_bits else ""
 
-    html = "<ul>" + "".join(items) + "</ul>"
+        # Build affiliate CTA href
+        aff_href = safe_url(affiliate_url)
+        detail_href = escape(f"/generated/products/{slug}/", quote=True)
+        name_href = escape(f"/generated/products/{slug}/", quote=True)
 
-    # Guardrail: prevent silent broken links
-    if matched and '<a href="' not in html:
-        raise RuntimeError("Category product list rendered without anchor tags.")
+        card = (
+            f'<div class="product-card">'
+            f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
+        )
+        if meta_html:
+            card += f'<p class="card-meta">{meta_html}</p>'
+        if specs_html:
+            card += f'<div class="card-specs">{specs_html}</div>'
+        card += (
+            f'<div class="card-actions">'
+            f'<a class="cta" href="{aff_href}" target="_blank" rel="nofollow sponsored noopener">Buy / Check Price</a>'
+            f'<a class="secondary" href="{detail_href}">View Details</a>'
+            f'</div>'
+            f'</div>'
+        )
+        cards.append(card)
+
+    html = "\n".join(cards)
+
+    # Guardrail: ensure cards rendered with links
+    if matched and "product-card" not in html:
+        raise RuntimeError("Category product list rendered without product cards.")
     return html
 
 
