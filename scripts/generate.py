@@ -218,33 +218,26 @@ def best_for_html(best_for: Any) -> str:
     return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
 
 
-def affiliate_open_tag(url: str) -> str:
+def safe_url(url: str) -> str:
     """
-    Your product template contains:
-      {{AFFILIATE_URL}}Buy / Check Price</a>
-    Therefore this must return the OPENING <a ...> tag.
+    Return a safe, escaped URL string for use in href= or src= attributes.
+    Returns '#' if the URL is empty/missing.
     """
     url = as_str(url)
     if not url:
-        return '<a class="cta" href="#" style="pointer-events:none;opacity:.6;">'
-    safe = escape(url, quote=True)
-    return f'<a class="cta" href="{safe}" rel="nofollow sponsored noopener" target="_blank">'
-
-
-def image_html(image_url: str, product_name: str) -> str:
-    """
-    Your product template puts {{IMAGE_URL}} inside a container.
-    We return a complete <img> tag or empty string.
-    """
-    image_url = as_str(image_url)
-    if not image_url:
-        return ""
-    src = escape(image_url, quote=True)
-    alt = escape(as_str(product_name), quote=True)
-    return f'<img src="{src}" alt="{alt}" loading="lazy" />'
+        return "#"
+    return escape(url, quote=True)
 
 
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
+    """
+    CONTRACT: The product template uses plain-URL placeholders.
+      - {{AFFILIATE_URL}} goes inside href="..."   -> we supply a URL string
+      - {{IMAGE_URL}}     goes inside src="..."     -> we supply a URL string
+      - {{PRODUCT_NAME}}, {{PRODUCT_BRAND}}, {{PRODUCT_PRICE}} -> escaped text
+      - {{BEST_FOR}}      -> rendered HTML (<ul> with <li> items)
+      - {{SPECS_TABLE}}   -> rendered HTML (<table>)
+    """
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
     price = p.get("price_usd")
@@ -260,8 +253,8 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{PRODUCT_NAME}}", escape(name))
         .replace("{{PRODUCT_BRAND}}", escape(brand))
         .replace("{{PRODUCT_PRICE}}", escape(price_txt))
-        .replace("{{AFFILIATE_URL}}", affiliate_open_tag(affiliate_url))
-        .replace("{{IMAGE_URL}}", image_html(img_url, name))
+        .replace("{{AFFILIATE_URL}}", safe_url(affiliate_url))
+        .replace("{{IMAGE_URL}}", safe_url(img_url))
         .replace("{{BEST_FOR}}", best_for_html(best_for))
         .replace("{{SPECS_TABLE}}", specs_table_html(specs))
     )
@@ -277,7 +270,7 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
     <h1>{{PRODUCT_NAME}}</h1>
     <p><strong>Brand:</strong> {{PRODUCT_BRAND}}</p>
     <p><strong>Price (USD):</strong> {{PRODUCT_PRICE}}</p>
-    <p>{{AFFILIATE_URL}}Buy / Check Price</a></p>
+    <p><a class="cta" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Buy / Check Price</a></p>
     <h2>Best For</h2>
     <div>{{BEST_FOR}}</div>
     <h2>Specs</h2>
