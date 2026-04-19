@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://site-engine-9gr.pages.dev/sitemap.xml
