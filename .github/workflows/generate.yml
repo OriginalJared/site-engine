@@ -33,8 +33,7 @@ jobs:
           python-version: "3.11"
 
       - name: Sync with remote
-        run: |
-          git pull --rebase origin main
+        run: git pull --rebase origin main
 
       - name: Run generator
         run: python scripts/generate.py
@@ -47,7 +46,7 @@ jobs:
           # Always stage generated site output
           git add -A generated
 
-          # Also stage root SEO files if they exist (we’ll generate these next)
+          # Also stage root SEO files if they exist (generator creates these)
           if [ -f sitemap.xml ]; then git add sitemap.xml; fi
           if [ -f robots.txt ]; then git add robots.txt; fi
 
@@ -59,4 +58,3 @@ jobs:
           else
             echo "No changes to commit"
           fi
-``
