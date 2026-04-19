@@ -229,3 +229,49 @@ footer a {
   color: var(--muted);
   text-decoration: underline;
 }
+
+/* ---------- Product Cards (Category Pages) ---------- */
+.product-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.product-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.product-card .card-meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+.product-card .card-meta strong {
+  color: var(--text);
+}
+.product-card .card-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 8px 0 12px;
+}
+.product-card .card-specs span {
+  white-space: nowrap;
+}
+.product-card .card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.product-card .card-actions .cta {
+  font-size: 14px;
+  padding: 9px 12px;
+}
+.product-card .card-actions .secondary {
+  font-size: 14px;
+  padding: 9px 12px;
+}
