@@ -1,5 +1,7 @@
 import json
+import os
 import re
+from datetime import date
 from pathlib import Path
 from html import escape
 from typing import Any, Dict, List
@@ -14,6 +16,11 @@ PRODUCTS_JSON = DATA_DIR / "products.json"
 
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
 PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
+
+SITEMAP_XML = ROOT / "sitemap.xml"
+ROBOTS_TXT = ROOT / "robots.txt"
+
+DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
 
 _slug_re = re.compile(r"[^a-z0-9-]+")
 
@@ -61,7 +68,7 @@ def normalize_slug(v: Any) -> str:
     Stable, URL-safe slug normalization:
       - lowercase
       - spaces/underscores -> hyphen
-      - strip invalid chars
+      - remove invalid chars
       - collapse repeated hyphens
     """
     s = as_str(v).lower()
@@ -159,7 +166,7 @@ def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
         description = as_str(c.get("description"))
 
         tags_raw = c.get("tags", None)
-        tags = []
+        tags: List[str] = []
         if tags_raw is not None:
             tags = [
                 normalize_slug(x)
@@ -171,7 +178,7 @@ def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
             "slug": slug,
             "name": name,
             "description": description,
-            "tags": tags,  # optional, may be empty
+            "tags": tags,
         })
 
     out.sort(key=lambda x: x["slug"])
@@ -213,20 +220,20 @@ def best_for_html(best_for: Any) -> str:
 
 def affiliate_open_tag(url: str) -> str:
     """
-    Your template pattern is:
+    Your product template contains:
       {{AFFILIATE_URL}}Buy / Check Price</a>
-    Therefore, this must return an OPENING <a ...> tag (no closing </a>).
+    Therefore this must return the OPENING <a ...> tag.
     """
     url = as_str(url)
     if not url:
-        return '<a class="cta" href="#" aria-disabled="true" style="pointer-events:none;opacity:.6;">'
+        return '<a class="cta" href="#" style="pointer-events:none;opacity:.6;">'
     safe = escape(url, quote=True)
-    return f'<a class="cta" href="{safe}" target="_blank" rel="sponsored nofollow noopener">'
+    return f'<a class="cta" href="{safe}" rel="nofollow sponsored noopener" target="_blank">'
 
 
 def image_html(image_url: str, product_name: str) -> str:
     """
-    Your template puts {{IMAGE_URL}} inside a container.
+    Your product template puts {{IMAGE_URL}} inside a container.
     We return a complete <img> tag or empty string.
     """
     image_url = as_str(image_url)
@@ -280,6 +287,10 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
 """
 
 
+# ----------------------------
+# Category filtering + listing
+# ----------------------------
+
 def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
     best_for = product.get("best_for") or []
     if not isinstance(best_for, list):
@@ -304,7 +315,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             meta_bits.append(brand)
         if price is not None:
             meta_bits.append(f"${price}")
-
         meta = " — " + " • ".join(escape(x) for x in meta_bits) if meta_bits else ""
 
         href = f"/generated/products/{slug}/"
@@ -313,10 +323,44 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
 
     html = "<ul>" + "".join(items) + "</ul>"
 
-    # Guardrail: prevent silent broken link output
+    # Guardrail: prevent silent broken links
     if matched and '<a href="' not in html:
         raise RuntimeError("Category product list rendered without anchor tags.")
     return html
+
+
+# ----------------------------
+# SEO files: sitemap.xml + robots.txt
+# ----------------------------
+
+def get_site_url() -> str:
+    site = (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
+    return site
+
+
+def build_sitemap(urls: List[str]) -> str:
+    today = date.today().isoformat()
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    ]
+    for u in urls:
+        parts.append("  <url>")
+        parts.append(f"    <loc>{escape(u)}</loc>")
+        parts.append(f"    <lastmod>{today}</lastmod>")
+        parts.append("  </url>")
+    parts.append("</urlset>")
+    parts.append("")
+    return "\n".join(parts)
+
+
+def build_robots(site_url: str) -> str:
+    return "\n".join([
+        "User-agent: *",
+        "Allow: /",
+        f"Sitemap: {site_url}/sitemap.xml",
+        ""
+    ])
 
 
 def main():
@@ -339,7 +383,7 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages (filter products by tags; fallback to all products early on)
+    # Generate category pages (filter by tags; fallback to all products early on)
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -360,8 +404,25 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
+    # Generate sitemap.xml + robots.txt at repo root
+    site_url = get_site_url()
+    urls = [f"{site_url}/"]
+
+    for cat in categories:
+        cslug = as_str(cat.get("slug"))
+        urls.append(f"{site_url}/generated/categories/{cslug}/")
+
+    for p in products:
+        pslug = as_str(p.get("slug"))
+        urls.append(f"{site_url}/generated/products/{pslug}/")
+
+    urls = sorted(set(urls))
+    write_text(SITEMAP_XML, build_sitemap(urls))
+    write_text(ROBOTS_TXT, build_robots(site_url))
+
     print(f"Generated {category_count} category page(s).")
     print(f"Generated {product_count} product page(s).")
+    print("Generated sitemap.xml and robots.txt.")
 
 
 if __name__ == "__main__":
