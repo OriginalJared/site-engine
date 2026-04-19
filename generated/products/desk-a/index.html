@@ -1,203 +1,431 @@
-<!doctype html>
-<html lang="en">
+import json
+import os
+import re
+from datetime import date
+from pathlib import Path
+from html import escape
+from typing import Any, Dict, List
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data"
+TEMPLATES_DIR = ROOT / "templates"
+GENERATED_DIR = ROOT / "generated"
+
+CATEGORIES_JSON = DATA_DIR / "categories.json"
+PRODUCTS_JSON = DATA_DIR / "products.json"
+
+CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
+PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
+
+SITEMAP_XML = ROOT / "sitemap.xml"
+ROBOTS_TXT = ROOT / "robots.txt"
+
+DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
+
+_slug_re = re.compile(r"[^a-z0-9-]+")
+
+
+# ----------------------------
+# IO helpers
+# ----------------------------
+
+def load_json(path: Path) -> Any:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing required file: {path}")
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def read_text_required(path: Path) -> str:
+    if not path.exists():
+        raise FileNotFoundError(f"Missing required file: {path}")
+    return path.read_text(encoding="utf-8")
+
+
+def read_text_optional(path: Path, fallback: str) -> str:
+    return path.read_text(encoding="utf-8") if path.exists() else fallback
+
+
+def ensure_dir(path: Path):
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def write_text(path: Path, text: str):
+    ensure_dir(path.parent)
+    path.write_text(text, encoding="utf-8")
+
+
+# ----------------------------
+# Normalization + validation
+# ----------------------------
+
+def as_str(v: Any) -> str:
+    return ("" if v is None else str(v)).strip()
+
+
+def normalize_slug(v: Any) -> str:
+    """
+    Stable, URL-safe slug normalization:
+      - lowercase
+      - spaces/underscores -> hyphen
+      - remove invalid chars
+      - collapse repeated hyphens
+    """
+    s = as_str(v).lower()
+    s = s.replace("_", "-")
+    s = "-".join(s.split())
+    s = _slug_re.sub("-", s)
+    s = re.sub(r"-{2,}", "-", s).strip("-")
+    return s
+
+
+def require_list(v: Any, name: str) -> List[Any]:
+    if v is None:
+        return []
+    if not isinstance(v, list):
+        raise ValueError(f"Expected '{name}' to be a list, got {type(v).__name__}")
+    return v
+
+
+def require_dict(v: Any, name: str) -> Dict[str, Any]:
+    if v is None:
+        return {}
+    if not isinstance(v, dict):
+        raise ValueError(f"Expected '{name}' to be a dict, got {type(v).__name__}")
+    return v
+
+
+def assert_unique_slugs(items: List[Dict[str, Any]], kind: str):
+    seen = set()
+    dups = set()
+    for x in items:
+        s = as_str(x.get("slug"))
+        if not s:
+            continue
+        if s in seen:
+            dups.add(s)
+        seen.add(s)
+    if dups:
+        raise ValueError(f"Duplicate {kind} slug(s) found: {sorted(dups)}")
+
+
+def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
+    products = require_list(raw_products, "products")
+    out: List[Dict[str, Any]] = []
+
+    for i, p in enumerate(products):
+        if not isinstance(p, dict):
+            continue
+
+        slug = normalize_slug(p.get("slug"))
+        if not slug:
+            continue
+
+        name = as_str(p.get("name")) or slug
+        brand = as_str(p.get("brand"))
+        affiliate_url = as_str(p.get("affiliate_url"))
+        image_url = as_str(p.get("image_url"))
+        price_usd = p.get("price_usd")
+
+        best_for = [
+            normalize_slug(x)
+            for x in require_list(p.get("best_for"), f"products[{i}].best_for")
+            if as_str(x)
+        ]
+        specs = require_dict(p.get("specs"), f"products[{i}].specs")
+
+        out.append({
+            "slug": slug,
+            "name": name,
+            "brand": brand,
+            "price_usd": price_usd,
+            "affiliate_url": affiliate_url,
+            "image_url": image_url,
+            "best_for": best_for,
+            "specs": specs,
+        })
+
+    out.sort(key=lambda x: x["slug"])
+    assert_unique_slugs(out, "product")
+    return out
+
+
+def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
+    cats = require_list(raw_categories, "categories")
+    out: List[Dict[str, Any]] = []
+
+    for i, c in enumerate(cats):
+        if not isinstance(c, dict):
+            continue
+
+        slug = normalize_slug(c.get("slug"))
+        if not slug:
+            continue
+
+        name = as_str(c.get("name")) or slug
+        description = as_str(c.get("description"))
+
+        tags_raw = c.get("tags", None)
+        tags: List[str] = []
+        if tags_raw is not None:
+            tags = [
+                normalize_slug(x)
+                for x in require_list(tags_raw, f"categories[{i}].tags")
+                if as_str(x)
+            ]
+
+        out.append({
+            "slug": slug,
+            "name": name,
+            "description": description,
+            "tags": tags,
+        })
+
+    out.sort(key=lambda x: x["slug"])
+    assert_unique_slugs(out, "category")
+    return out
+
+
+# ----------------------------
+# HTML rendering helpers
+# ----------------------------
+
+def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
+    return (
+        template
+        .replace("{{CATEGORY_NAME}}", escape(name))
+        .replace("{{CATEGORY_DESCRIPTION}}", escape(description))
+        .replace("{{PRODUCT_LIST}}", product_list_html)
+    )
+
+
+def specs_table_html(specs: Dict[str, Any]) -> str:
+    specs = require_dict(specs, "specs")
+    if not specs:
+        return "<p>No specs available.</p>"
+
+    rows = []
+    for k in sorted(specs.keys(), key=lambda x: str(x).lower()):
+        rows.append(f"<tr><th>{escape(str(k))}</th><td>{escape(str(specs[k]))}</td></tr>")
+    return "<table><tbody>" + "".join(rows) + "</tbody></table>"
+
+
+def best_for_html(best_for: Any) -> str:
+    tags = require_list(best_for, "best_for")
+    tags = [as_str(t) for t in tags if as_str(t)]
+    if not tags:
+        return "<p>—</p>"
+    return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
+
+
+def affiliate_url_value(url: str) -> str:
+    """
+    IMPORTANT:
+    Your current templates/product.html uses:
+      <a ... href="{{AFFILIATE_URL}}" ...>Buy / Check Price</a>
+
+    So this function must return ONLY the URL string (escaped for attributes),
+    NOT an <a> tag.
+    """
+    url = as_str(url)
+    if not url:
+        return "#"
+    return escape(url, quote=True)
+
+
+def image_html(image_url: str, product_name: str) -> str:
+    """
+    Your template places {{IMAGE_URL}} inside a container.
+    We output a real <img> tag or empty string.
+    """
+    image_url = as_str(image_url)
+    if not image_url:
+        return ""
+    src = escape(image_url, quote=True)
+    alt = escape(as_str(product_name), quote=True)
+    return f'<img src="{src}" alt="{alt}" loading="lazy" />'
+
+
+def render_product_page(template: str, p: Dict[str, Any]) -> str:
+    name = as_str(p.get("name"))
+    brand = as_str(p.get("brand"))
+    price = p.get("price_usd")
+    affiliate_url = as_str(p.get("affiliate_url"))
+    img_url = as_str(p.get("image_url"))
+    best_for = p.get("best_for") or []
+    specs = p.get("specs") or {}
+
+    price_txt = "" if price is None else str(price)
+
+    return (
+        template
+        .replace("{{PRODUCT_NAME}}", escape(name))
+        .replace("{{PRODUCT_BRAND}}", escape(brand))
+        .replace("{{PRODUCT_PRICE}}", escape(price_txt))
+        .replace("{{AFFILIATE_URL}}", affiliate_url_value(affiliate_url))
+        .replace("{{IMAGE_URL}}", image_html(img_url, name))
+        .replace("{{BEST_FOR}}", best_for_html(best_for))
+        .replace("{{SPECS_TABLE}}", specs_table_html(specs))
+    )
+
+
+DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <title>Standing Desk A – Review, Specs & Best-For</title>
-    <meta name="description" content="Key specs, best-for tags, and a quick buy link for Standing Desk A." />
-
-    <style>
-      :root{
-        --bg:#ffffff;
-        --text:#111;
-        --muted:#555;
-        --border:#e6e6e6;
-        --card:#fafafa;
-        --brand:#0b5fff;
-        --brand2:#0847be;
-        --chip:#f1f5ff;
-      }
-      body{
-        margin:0;
-        background:var(--bg);
-        color:var(--text);
-        font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-        line-height:1.55;
-      }
-      .wrap{max-width:980px;margin:0 auto;padding:18px 16px 40px}
-      header.site{
-        display:flex;align-items:center;justify-content:space-between;gap:12px;
-        padding:10px 0 14px;border-bottom:1px solid var(--border);
-      }
-      .brand{
-        display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);
-        font-weight:800;letter-spacing:.2px;
-      }
-      .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--brand)}
-      nav a{
-        color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600;font-size:14px;
-      }
-      nav a:hover{color:var(--text);text-decoration:underline}
-
-      .grid{
-        display:grid;
-        grid-template-columns:1.2fr .8fr;
-        gap:18px;
-        margin-top:18px;
-      }
-      @media (max-width: 860px){
-        .grid{grid-template-columns:1fr}
-      }
-
-      .card{
-        border:1px solid var(--border);
-        border-radius:14px;
-        background:var(--card);
-        padding:16px;
-      }
-
-      h1{margin:0 0 8px;font-size:28px;line-height:1.15}
-      .meta{color:var(--muted);font-size:14px;margin:0 0 10px}
-      .meta strong{color:var(--text)}
-      .price{font-size:18px;margin:10px 0 14px}
-
-      .cta-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0 8px}
-      .cta{
-        display:inline-block;
-        background:var(--brand);
-        color:#fff;
-        text-decoration:none;
-        padding:11px 14px;
-        border-radius:12px;
-        font-weight:800;
-      }
-      .cta:hover{background:var(--brand2)}
-      .secondary{
-        display:inline-block;
-        border:1px solid var(--border);
-        background:#fff;
-        color:var(--text);
-        text-decoration:none;
-        padding:11px 14px;
-        border-radius:12px;
-        font-weight:700;
-      }
-
-      .disclosure{
-        font-size:12px;
-        color:var(--muted);
-        margin-top:8px;
-      }
-
-      .hero-img{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        min-height:220px;
-        background:#fff;
-        border:1px dashed var(--border);
-        border-radius:14px;
-        overflow:hidden;
-      }
-      .hero-img img{max-width:100%;height:auto;display:block}
-
-      h2{margin:18px 0 10px;font-size:18px}
-
-      /* “best for” chips, even if the generator outputs a <ul> */
-      .chips ul{margin:8px 0 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-      .chips li{
-        list-style:none;
-        background:var(--chip);
-        border:1px solid #dbe6ff;
-        color:#143a8a;
-        padding:6px 10px;
-        border-radius:999px;
-        font-size:13px;
-        font-weight:700;
-      }
-
-      table{border-collapse:collapse;width:100%;background:#fff;border-radius:12px;overflow:hidden}
-      th,td{border-bottom:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top}
-      th{width:42%;background:#fcfcfc}
-      tr:last-child th,tr:last-child td{border-bottom:none}
-
-      footer{
-        margin-top:22px;
-        border-top:1px solid var(--border);
-        padding-top:14px;
-        color:var(--muted);
-        font-size:12px;
-      }
-      footer a{color:var(--muted);text-decoration:underline}
-    </style>
+    <title>{{PRODUCT_NAME}}</title>
   </head>
-
   <body>
-    <div class="wrap">
-      <header class="site">
-        <a class="brand" href="/">
-          <span class="dot"></span>
-          <span>Site Engine</span>
-        </a>
-        <nav>
-          <a href="/generated/categories/standing-desks/">Categories</a>
-          <a href="/sitemap.xml">Sitemap</a>
-        </nav>
-      </header>
-
-      <div class="grid">
-        <section class="card">
-          <h1>Standing Desk A</h1>
-
-          <p class="meta">
-            <strong>Brand:</strong> Brand A
-          </p>
-
-          <div class="price">
-            <strong>Price (USD):</strong> 499
-          </div>
-
-          <div class="cta-row">
-            <a class="cta" href="<a class="cta" href="https://example.com/desk-a" rel="nofollow sponsored noopener" target="_blank">" target="_blank" rel="nofollow sponsored noopener">Buy / Check Price</a>
-            <a class="secondary" href="/generated/categories/standing-desks/">Browse Standing Desks</a>
-          </div>
-
-          <div class="disclosure">
-            Disclosure: This page may contain affiliate links. If you buy through links, we may earn a commission at no extra cost to you.
-          </div>
-
-          <h2>Best For</h2>
-          <div class="chips"><ul><li>under-500</li><li>small-spaces</li></ul></div>
-        </section>
-
-        <aside class="card">
-          <h2>Photo</h2>
-          <div class="hero-img">
-            <img src="" alt="Standing Desk A" loading="lazy" onerror="this.style.display='none';" />
-          </div>
-
-          <h2 style="margin-top:16px;">Quick Links</h2>
-          <ul style="margin:8px 0 0 18px;">
-            <li><a href="/generated/categories/best-standing-desks/">Top Picks</a></li>
-            <li><a href="/generated/categories/standing-desks-under-500/">Under $500</a></li>
-            <li><a href="/generated/categories/standing-desks-for-small-spaces/">Small Spaces</a></li>
-            <li><a href="/generated/categories/standing-desks-for-tall-people/">Tall People</a></li>
-          </ul>
-        </aside>
-      </div>
-
-      <section class="card" style="margin-top:18px;">
-        <h2>Specs</h2>
-        <div><table><tbody><tr><th>desktop_depth_in</th><td>24</td></tr><tr><th>desktop_width_in</th><td>48</td></tr><tr><th>height_max_in</th><td>49</td></tr><tr><th>height_min_in</th><td>24</td></tr><tr><th>motors</th><td>2</td></tr><tr><th>warranty_years</th><td>7</td></tr><tr><th>weight_capacity_lbs</th><td>275</td></tr></tbody></table></div>
-      </section>
-
-      <footer>
-        <div>Site Engine • Generated pages • Fast, structured comparisons</div>
-        <div style="margin-top:6px;">
-          <a href="/robots.txt">robots.txt</a> • <a href="/sitemap.xml">sitemap.xml</a>
-        </div>
-      </footer>
-    </div>
+    <h1>{{PRODUCT_NAME}}</h1>
+    <p><strong>Brand:</strong> {{PRODUCT_BRAND}}</p>
+    <p><strong>Price (USD):</strong> {{PRODUCT_PRICE}}</p>
+    <p><a href="{{AFFILIATE_URL}}">Buy / Check Price</a></p>
+    <h2>Best For</h2>
+    <div>{{BEST_FOR}}</div>
+    <h2>Specs</h2>
+    <div>{{SPECS_TABLE}}</div>
   </body>
 </html>
+"""
+
+
+# ----------------------------
+# Category filtering + listing
+# ----------------------------
+
+def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
+    best_for = product.get("best_for") or []
+    if not isinstance(best_for, list):
+        return False
+    best_for_norm = [normalize_slug(t) for t in best_for if as_str(t)]
+    return any(t in best_for_norm for t in match_tags)
+
+
+def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
+    if not matched:
+        return "<ul><li>No products yet.</li></ul>"
+
+    items = []
+    for p in matched:
+        slug = as_str(p.get("slug"))
+        name = as_str(p.get("name")) or slug
+        brand = as_str(p.get("brand"))
+        price = p.get("price_usd")
+
+        meta_bits = []
+        if brand:
+            meta_bits.append(brand)
+        if price is not None:
+            meta_bits.append(f"${price}")
+        meta = " — " + " • ".join(escape(x) for x in meta_bits) if meta_bits else ""
+
+        href = f"/generated/products/{slug}/"
+        href_attr = escape(href, quote=True)
+        items.append(f'<li><a href="{href_attr}">{escape(name)}</a>{meta}</li>')
+
+    html = "<ul>" + "".join(items) + "</ul>"
+
+    # Guardrail: prevent silent broken links
+    if matched and "<a " not in html:
+        raise RuntimeError("Category product list rendered without anchor tags.")
+    return html
+
+
+# ----------------------------
+# SEO files: sitemap.xml + robots.txt
+# ----------------------------
+
+def get_site_url() -> str:
+    site = (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
+    return site
+
+
+def build_sitemap(urls: List[str]) -> str:
+    today = date.today().isoformat()
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    ]
+    for u in urls:
+        parts.append("  <url>")
+        parts.append(f"    <loc>{escape(u)}</loc>")
+        parts.append(f"    <lastmod>{today}</lastmod>")
+        parts.append("  </url>")
+    parts.append("</urlset>")
+    parts.append("")
+    return "\n".join(parts)
+
+
+def build_robots(site_url: str) -> str:
+    return "\n".join([
+        "User-agent: *",
+        "Allow: /",
+        f"Sitemap: {site_url}/sitemap.xml",
+        ""
+    ])
+
+
+def main():
+    categories = normalize_categories(load_json(CATEGORIES_JSON))
+    category_template = read_text_required(CATEGORY_TEMPLATE)
+    product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
+
+    products: List[Dict[str, Any]] = []
+    if PRODUCTS_JSON.exists():
+        products = normalize_products(load_json(PRODUCTS_JSON))
+
+    # Generate product pages
+    product_count = 0
+    for p in products:
+        slug = as_str(p.get("slug"))
+        if not slug:
+            continue
+        html = render_product_page(product_template, p)
+        out_path = GENERATED_DIR / "products" / slug / "index.html"
+        write_text(out_path, html)
+        product_count += 1
+
+    # Generate category pages (filter by tags; fallback to all products early on)
+    category_count = 0
+    for cat in categories:
+        cslug = as_str(cat.get("slug"))
+        name = as_str(cat.get("name")) or cslug
+        description = as_str(cat.get("description"))
+
+        tags = cat.get("tags") or []
+        match_tags = [normalize_slug(t) for t in tags if as_str(t)] or [cslug]
+
+        matched = [p for p in products if product_matches(p, match_tags)]
+        if not matched and products:
+            matched = products  # early-stage safety fallback
+
+        product_list_html = build_category_product_list(matched)
+
+        html = render_category_page(category_template, name, description, product_list_html)
+        out_path = GENERATED_DIR / "categories" / cslug / "index.html"
+        write_text(out_path, html)
+        category_count += 1
+
+    # Generate sitemap.xml + robots.txt at repo root
+    site_url = get_site_url()
+    urls = [f"{site_url}/"]
+
+    for cat in categories:
+        cslug = as_str(cat.get("slug"))
+        urls.append(f"{site_url}/generated/categories/{cslug}/")
+
+    for p in products:
+        pslug = as_str(p.get("slug"))
+        urls.append(f"{site_url}/generated/products/{pslug}/")
+
+    urls = sorted(set(urls))
+    write_text(SITEMAP_XML, build_sitemap(urls))
+    write_text(ROBOTS_TXT, build_robots(site_url))
+
+    print(f"Generated {category_count} category page(s).")
+    print(f"Generated {product_count} product page(s).")
+    print("Generated sitemap.xml and robots.txt.")
+
+
+if __name__ == "__main__":
+    main()
