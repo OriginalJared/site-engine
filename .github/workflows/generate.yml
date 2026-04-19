@@ -8,6 +8,7 @@ on:
       - "templates/**"
       - "scripts/**"
       - ".github/workflows/generate.yml"
+      - "index.html"
 
 permissions:
   contents: write
@@ -42,7 +43,20 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated
-          git commit -m "Update generated pages" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push origin main
+
+          # Always stage generated site output
+          git add -A generated
+
+          # Also stage root SEO files if they exist (we’ll generate these next)
+          if [ -f sitemap.xml ]; then git add sitemap.xml; fi
+          if [ -f robots.txt ]; then git add robots.txt; fi
+
+          # Commit only if there are changes
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update generated pages"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+``
