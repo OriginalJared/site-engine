@@ -4,7 +4,7 @@
     "name": "Standing Desk A",
     "brand": "Brand A",
     "price_usd": 499,
-    "affiliate_url": "https://example.com/desk-a",
+    "network_ids": { "amazon": "B0XXXXXXXXA" },
     "image_url": "",
     "best_for": ["under-500", "small-spaces"],
     "specs": {
@@ -22,7 +22,7 @@
     "name": "Standing Desk B",
     "brand": "Brand B",
     "price_usd": 699,
-    "affiliate_url": "https://example.com/desk-b",
+    "network_ids": { "amazon": "B0XXXXXXXXB" },
     "image_url": "",
     "best_for": ["best-overall", "tall-people"],
     "specs": {
@@ -40,7 +40,7 @@
     "name": "Standing Desk C",
     "brand": "Brand C",
     "price_usd": 399,
-    "affiliate_url": "https://example.com/desk-c",
+    "network_ids": { "amazon": "B0XXXXXXXXC" },
     "image_url": "",
     "best_for": ["budget", "under-500"],
     "specs": {
@@ -58,7 +58,7 @@
     "name": "Standing Desk D",
     "brand": "Brand D",
     "price_usd": 899,
-    "affiliate_url": "https://example.com/desk-d",
+    "network_ids": { "amazon": "B0XXXXXXXXD" },
     "image_url": "",
     "best_for": ["premium", "best-overall"],
     "specs": {
@@ -76,7 +76,7 @@
     "name": "Standing Desk E",
     "brand": "Brand E",
     "price_usd": 599,
-    "affiliate_url": "https://example.com/desk-e",
+    "network_ids": { "amazon": "B0XXXXXXXXE" },
     "image_url": "",
     "best_for": ["small-spaces", "quiet-motor"],
     "specs": {
@@ -94,7 +94,7 @@
     "name": "Standing Desk F",
     "brand": "Brand F",
     "price_usd": 749,
-    "affiliate_url": "https://example.com/desk-f",
+    "network_ids": { "amazon": "B0XXXXXXXXF" },
     "image_url": "",
     "best_for": ["l-shaped", "home-office"],
     "specs": {
@@ -112,7 +112,7 @@
     "name": "Standing Desk G",
     "brand": "Brand G",
     "price_usd": 329,
-    "affiliate_url": "https://example.com/desk-g",
+    "network_ids": { "amazon": "B0XXXXXXXXG" },
     "image_url": "",
     "best_for": ["budget", "small-spaces"],
     "specs": {
@@ -130,7 +130,7 @@
     "name": "Standing Desk H",
     "brand": "Brand H",
     "price_usd": 549,
-    "affiliate_url": "https://example.com/desk-h",
+    "network_ids": { "amazon": "B0XXXXXXXXH" },
     "image_url": "",
     "best_for": ["under-600", "best-overall"],
     "specs": {
@@ -148,7 +148,7 @@
     "name": "Standing Desk I",
     "brand": "Brand I",
     "price_usd": 999,
-    "affiliate_url": "https://example.com/desk-i",
+    "network_ids": { "amazon": "B0XXXXXXXXI" },
     "image_url": "",
     "best_for": ["premium", "executive"],
     "specs": {
@@ -166,7 +166,7 @@
     "name": "Standing Desk J",
     "brand": "Brand J",
     "price_usd": 459,
-    "affiliate_url": "https://example.com/desk-j",
+    "network_ids": { "amazon": "B0XXXXXXXXJ" },
     "image_url": "",
     "best_for": ["under-500", "home-office"],
     "specs": {
