@@ -14,6 +14,7 @@ GENERATED_DIR = ROOT / "generated"
 
 CATEGORIES_JSON = DATA_DIR / "categories.json"
 PRODUCTS_JSON = DATA_DIR / "products.json"
+AFFILIATES_JSON = DATA_DIR / "affiliates.json"
 
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
 PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
@@ -65,13 +66,6 @@ def as_str(v: Any) -> str:
 
 
 def normalize_slug(v: Any) -> str:
-    """
-    Stable, URL-safe slug normalization:
-      - lowercase
-      - spaces/underscores -> hyphen
-      - remove invalid chars
-      - collapse repeated hyphens
-    """
     s = as_str(v).lower()
     s = s.replace("_", "-")
     s = "-".join(s.split())
@@ -110,6 +104,69 @@ def assert_unique_slugs(items: List[Dict[str, Any]], kind: str):
         raise ValueError(f"Duplicate {kind} slug(s) found: {sorted(dups)}")
 
 
+# ----------------------------
+# Affiliate URL builder (Phase 4)
+# ----------------------------
+
+def load_affiliates_config() -> Dict[str, Any]:
+    if not AFFILIATES_JSON.exists():
+        return {}
+    return load_json(AFFILIATES_JSON)
+
+
+def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any]) -> str:
+    """
+    Build a full affiliate URL from per-product network IDs + central config.
+    Returns '#' if anything is missing so pages still render safely.
+    """
+    if not aff_config:
+        return "#"
+
+    active = as_str(aff_config.get("active_network"))
+    if not active:
+        return "#"
+
+    networks = aff_config.get("networks") or {}
+    net_cfg = networks.get(active)
+    if not net_cfg:
+        return "#"
+
+    product_id = as_str((network_ids or {}).get(active))
+    if not product_id:
+        return "#"
+
+    pattern = as_str(net_cfg.get("url_pattern"))
+    if not pattern:
+        return "#"
+
+    # Merge network config values + product_id into substitution dict
+    subs = {k: as_str(v) for k, v in net_cfg.items()}
+    subs["product_id"] = product_id
+
+    try:
+        url = pattern.format_map(subs)
+    except (KeyError, ValueError):
+        return "#"
+
+    # Append tracking params if defined
+    tracking = aff_config.get("tracking") or {}
+    utm_parts = []
+    for key in ("utm_source", "utm_medium", "sub_id"):
+        val = as_str(tracking.get(key))
+        if val:
+            utm_parts.append(f"{key}={val}")
+
+    if utm_parts:
+        separator = "&" if "?" in url else "?"
+        url += separator + "&".join(utm_parts)
+
+    return url
+
+
+# ----------------------------
+# Product / category normalization
+# ----------------------------
+
 def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
     products = require_list(raw_products, "products")
     out: List[Dict[str, Any]] = []
@@ -124,9 +181,12 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
 
         name = as_str(p.get("name")) or slug
         brand = as_str(p.get("brand"))
-        affiliate_url = as_str(p.get("affiliate_url"))
         image_url = as_str(p.get("image_url"))
         price_usd = p.get("price_usd")
+
+        network_ids = require_dict(
+            p.get("network_ids"), f"products[{i}].network_ids"
+        )
 
         best_for = [
             normalize_slug(x)
@@ -140,7 +200,8 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
             "name": name,
             "brand": brand,
             "price_usd": price_usd,
-            "affiliate_url": affiliate_url,
+            "network_ids": network_ids,
+            "affiliate_url": "",
             "image_url": image_url,
             "best_for": best_for,
             "specs": specs,
@@ -220,10 +281,6 @@ def best_for_html(best_for: Any) -> str:
 
 
 def safe_url(url: str) -> str:
-    """
-    Return a safe, escaped URL string for use in href= or src= attributes.
-    Returns '#' if the URL is empty/missing.
-    """
     url = as_str(url)
     if not url:
         return "#"
@@ -231,14 +288,6 @@ def safe_url(url: str) -> str:
 
 
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
-    """
-    CONTRACT: The product template uses plain-URL placeholders.
-      - {{AFFILIATE_URL}} goes inside href="..."   -> we supply a URL string
-      - {{IMAGE_URL}}     goes inside src="..."     -> we supply a URL string
-      - {{PRODUCT_NAME}}, {{PRODUCT_BRAND}}, {{PRODUCT_PRICE}} -> escaped text
-      - {{BEST_FOR}}      -> rendered HTML (<ul> with <li> items)
-      - {{SPECS_TABLE}}   -> rendered HTML (<table>)
-    """
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
     price = p.get("price_usd")
@@ -294,10 +343,6 @@ def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
 
 
 def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
-    """
-    Build rich product cards for category pages.
-    Each card shows: name, brand, price, key specs, CTA + details link.
-    """
     if not matched:
         return "<p>No products yet.</p>"
 
@@ -310,7 +355,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         affiliate_url = as_str(p.get("affiliate_url"))
         specs = p.get("specs") or {}
 
-        # Build meta line (brand + price)
         meta_parts = []
         if brand:
             meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
@@ -318,7 +362,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
         meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
 
-        # Build key specs line
         spec_bits = []
         w = specs.get("desktop_width_in")
         d = specs.get("desktop_depth_in")
@@ -339,7 +382,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             spec_bits.append(f"<span>Warranty: {escape(str(warranty))} yr</span>")
         specs_html = " ".join(spec_bits) if spec_bits else ""
 
-        # Build affiliate CTA href
         aff_href = safe_url(affiliate_url)
         detail_href = escape(f"/generated/products/{slug}/", quote=True)
         name_href = escape(f"/generated/products/{slug}/", quote=True)
@@ -363,7 +405,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
 
     html = "\n".join(cards)
 
-    # Guardrail: ensure cards rendered with links
     if matched and "product-card" not in html:
         raise RuntimeError("Category product list rendered without product cards.")
     return html
@@ -408,71 +449,53 @@ def build_robots(site_url: str) -> str:
 # ----------------------------
 
 def run_quality_gates():
-    """
-    Post-generation validation. Checks every generated HTML file for
-    correctness. If ANY check fails, the build is halted with a non-zero
-    exit code so GitHub Actions goes red and nothing is deployed broken.
-    """
     failures: List[str] = []
 
     product_pages = sorted(GENERATED_DIR.glob("products/*/index.html"))
     category_pages = sorted(GENERATED_DIR.glob("categories/*/index.html"))
 
-    # --- Product page checks ---
     for page in product_pages:
         rel = page.relative_to(GENERATED_DIR)
         content = page.read_text(encoding="utf-8")
 
-        # 1a. Python source leak
         for line in content.splitlines():
             if line.startswith("import ") or line.startswith("from "):
                 failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
                 break
 
-        # 1b. Valid HTML structure
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
 
-        # 1c. Has a <title> tag
         if "<title>" not in content.lower():
             failures.append(f"[MISSING <title>] {rel}")
 
-        # 1d. Has at least one link (CTA or navigation)
         if "href=" not in content.lower():
             failures.append(f"[MISSING href=] {rel}: no links found (broken CTA?)")
 
-        # 1e. No unreplaced placeholders
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
 
-    # --- Category page checks ---
     for page in category_pages:
         rel = page.relative_to(GENERATED_DIR)
         content = page.read_text(encoding="utf-8")
 
-        # 2a. Python source leak
         for line in content.splitlines():
             if line.startswith("import ") or line.startswith("from "):
                 failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
                 break
 
-        # 2b. Valid HTML structure
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
 
-        # 2c. Has a <title> tag
         if "<title>" not in content.lower():
             failures.append(f"[MISSING <title>] {rel}")
 
-        # 2d. Has product links
         if "<a href=" not in content.lower():
             failures.append(f"[MISSING <a href=] {rel}: no product links found")
 
-        # 2e. No unreplaced placeholders
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
 
-    # --- Report ---
     if failures:
         print("\n❌ QUALITY GATE FAILURES:\n")
         for f in failures:
@@ -493,9 +516,18 @@ def main():
     category_template = read_text_required(CATEGORY_TEMPLATE)
     product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
 
+    # Load affiliate config (Phase 4)
+    aff_config = load_affiliates_config()
+
     products: List[Dict[str, Any]] = []
     if PRODUCTS_JSON.exists():
         products = normalize_products(load_json(PRODUCTS_JSON))
+
+    # Build affiliate URLs from network_ids + central config
+    for p in products:
+        p["affiliate_url"] = build_affiliate_url(
+            p.get("network_ids", {}), aff_config
+        )
 
     # Generate product pages
     product_count = 0
@@ -508,7 +540,7 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages (filter by tags; fallback to all products early on)
+    # Generate category pages
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -520,7 +552,7 @@ def main():
 
         matched = [p for p in products if product_matches(p, match_tags)]
         if not matched and products:
-            matched = products  # early-stage safety fallback
+            matched = products
 
         product_list_html = build_category_product_list(matched)
 
@@ -529,7 +561,7 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
-    # Generate sitemap.xml + robots.txt at repo root
+    # Generate sitemap.xml + robots.txt
     site_url = get_site_url()
     urls = [f"{site_url}/"]
 
@@ -545,7 +577,7 @@ def main():
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
 
-    # Run quality gates — halts the build if any output is broken
+    # Run quality gates
     run_quality_gates()
 
     print(f"Generated {category_count} category page(s).")
