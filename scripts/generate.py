@@ -139,7 +139,6 @@ def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any])
     if not pattern:
         return "#"
 
-    # Merge network config values + product_id into substitution dict
     subs = {k: as_str(v) for k, v in net_cfg.items()}
     subs["product_id"] = product_id
 
@@ -148,7 +147,6 @@ def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any])
     except (KeyError, ValueError):
         return "#"
 
-    # Append tracking params if defined
     tracking = aff_config.get("tracking") or {}
     utm_parts = []
     for key in ("utm_source", "utm_medium", "sub_id"):
@@ -516,20 +514,17 @@ def main():
     category_template = read_text_required(CATEGORY_TEMPLATE)
     product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
 
-    # Load affiliate config (Phase 4)
     aff_config = load_affiliates_config()
 
     products: List[Dict[str, Any]] = []
     if PRODUCTS_JSON.exists():
         products = normalize_products(load_json(PRODUCTS_JSON))
 
-    # Build affiliate URLs from network_ids + central config
     for p in products:
         p["affiliate_url"] = build_affiliate_url(
             p.get("network_ids", {}), aff_config
         )
 
-    # Generate product pages
     product_count = 0
     for p in products:
         slug = as_str(p.get("slug"))
@@ -540,7 +535,6 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -561,7 +555,6 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
-    # Generate sitemap.xml + robots.txt
     site_url = get_site_url()
     urls = [f"{site_url}/"]
 
@@ -577,7 +570,6 @@ def main():
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
 
-    # Run quality gates
     run_quality_gates()
 
     print(f"Generated {category_count} category page(s).")
