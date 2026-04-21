@@ -1,0 +1,20 @@
+{
+  "active_network": "amazon",
+  "networks": {
+    "amazon": {
+      "base_url": "https://www.amazon.com/dp/",
+      "tag": "yourtag-20",
+      "url_pattern": "{base_url}{product_id}?tag={tag}&linkCode=ll1&ref_=nosim"
+    },
+    "impact": {
+      "base_url": "https://goto.example.com/c/",
+      "tracking_id": "YOUR_IMPACT_ID",
+      "url_pattern": "{base_url}{tracking_id}/sharedid/{product_id}"
+    }
+  },
+  "tracking": {
+    "utm_source": "smartpick",
+    "utm_medium": "affiliate",
+    "sub_id": ""
+  }
+}
