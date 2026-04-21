@@ -274,7 +274,7 @@ def best_for_html(best_for: Any) -> str:
     tags = require_list(best_for, "best_for")
     tags = [as_str(t) for t in tags if as_str(t)]
     if not tags:
-        return "<p>—</p>"
+        return "<p>\u2014</p>"
     return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
 
 
@@ -358,17 +358,17 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
         if price is not None:
             meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
-        meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
+        meta_html = " &nbsp;\u2022&nbsp; ".join(meta_parts) if meta_parts else ""
 
         spec_bits = []
         w = specs.get("desktop_width_in")
         d = specs.get("desktop_depth_in")
         if w and d:
-            spec_bits.append(f'<span>Desktop: {escape(str(w))}" × {escape(str(d))}"</span>')
+            spec_bits.append(f'<span>Desktop: {escape(str(w))}" \u00d7 {escape(str(d))}"</span>')
         h_min = specs.get("height_min_in")
         h_max = specs.get("height_max_in")
         if h_min and h_max:
-            spec_bits.append(f'<span>Height: {escape(str(h_min))}" – {escape(str(h_max))}"</span>')
+            spec_bits.append(f'<span>Height: {escape(str(h_min))}" \u2013 {escape(str(h_max))}"</span>')
         cap = specs.get("weight_capacity_lbs")
         if cap:
             spec_bits.append(f"<span>Capacity: {escape(str(cap))} lbs</span>")
@@ -471,7 +471,7 @@ def run_quality_gates():
             failures.append(f"[MISSING href=] {rel}: no links found (broken CTA?)")
 
         if "{{" in content and "}}" in content:
-            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
+            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw " + "{{...}}" + " found in output")
 
     for page in category_pages:
         rel = page.relative_to(GENERATED_DIR)
@@ -492,17 +492,17 @@ def run_quality_gates():
             failures.append(f"[MISSING <a href=] {rel}: no product links found")
 
         if "{{" in content and "}}" in content:
-            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw {{{{...}}}} found in output")
+            failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw " + "{{...}}" + " found in output")
 
     if failures:
-        print("\n❌ QUALITY GATE FAILURES:\n")
+        print("\n\u274c QUALITY GATE FAILURES:\n")
         for f in failures:
-            print(f"   • {f}")
+            print(f"   \u2022 {f}")
         print(f"\n   {len(failures)} failure(s) found. Build halted.\n")
         sys.exit(1)
 
     total = len(product_pages) + len(category_pages)
-    print(f"✅ Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages checked).")
+    print(f"\u2705 Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages checked).")
 
 
 # ----------------------------
@@ -579,3 +579,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
