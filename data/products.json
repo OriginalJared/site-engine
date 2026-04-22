@@ -1,34 +1,90 @@
 [
   {
-    "slug": "desk-a",
-    "name": "Standing Desk A",
-    "brand": "Brand A",
-    "price_usd": 499,
-    "network_ids": { "amazon": "B0XXXXXXXXA" },
+    "slug": "flexispot-e7-pro",
+    "name": "FlexiSpot E7 Pro Standing Desk",
+    "brand": "FlexiSpot",
+    "price_usd": 550,
+    "network_ids": {
+      "amazon": "B08B3X9CKH"
+    },
     "image_url": "",
-    "best_for": ["under-500", "small-spaces"],
+    "best_for": [
+      "best-overall",
+      "home-office"
+    ],
     "specs": {
-      "height_min_in": 24,
-      "height_max_in": 49,
-      "weight_capacity_lbs": 275,
+      "height_min_in": 22.8,
+      "height_max_in": 48.4,
+      "weight_capacity_lbs": 355,
       "desktop_width_in": 48,
-      "desktop_depth_in": 24,
+      "desktop_depth_in": 30,
+      "motors": 2,
+      "warranty_years": 5
+    }
+  },
+  {
+    "slug": "uplift-v2-commercial",
+    "name": "UPLIFT V2 Commercial Standing Desk",
+    "brand": "UPLIFT Desk",
+    "price_usd": 699,
+    "network_ids": {
+      "amazon": "B07T2N6G4Z"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "premium"
+    ],
+    "specs": {
+      "height_min_in": 22.6,
+      "height_max_in": 48.7,
+      "weight_capacity_lbs": 355,
+      "desktop_width_in": 60,
+      "desktop_depth_in": 30,
       "motors": 2,
       "warranty_years": 7
     }
   },
   {
-    "slug": "desk-b",
-    "name": "Standing Desk B",
-    "brand": "Brand B",
-    "price_usd": 699,
-    "network_ids": { "amazon": "B0XXXXXXXXB" },
+    "slug": "fully-jarvis-bamboo",
+    "name": "Fully Jarvis Bamboo Standing Desk",
+    "brand": "Fully",
+    "price_usd": 599,
+    "network_ids": {
+      "amazon": "B09322FB84"
+    },
     "image_url": "",
-    "best_for": ["best-overall", "tall-people"],
+    "best_for": [
+      "best-overall",
+      "tall-people"
+    ],
     "specs": {
-      "height_min_in": 23,
-      "height_max_in": 50,
-      "weight_capacity_lbs": 355,
+      "height_min_in": 25.5,
+      "height_max_in": 50.7,
+      "weight_capacity_lbs": 350,
+      "desktop_width_in": 60,
+      "desktop_depth_in": 30,
+      "motors": 2,
+      "warranty_years": 7
+    }
+  },
+  {
+    "slug": "vari-electric-60",
+    "name": "Vari Electric Standing Desk 60x30",
+    "brand": "Vari",
+    "price_usd": 650,
+    "network_ids": {
+      "amazon": "B0DC8S2887"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "home-office"
+    ],
+    "specs": {
+      "height_min_in": 25,
+      "height_max_in": 50.5,
+      "weight_capacity_lbs": 200,
       "desktop_width_in": 60,
       "desktop_depth_in": 30,
       "motors": 2,
@@ -36,147 +92,141 @@
     }
   },
   {
-    "slug": "desk-c",
-    "name": "Standing Desk C",
-    "brand": "Brand C",
-    "price_usd": 399,
-    "network_ids": { "amazon": "B0XXXXXXXXC" },
+    "slug": "secretlab-magnus-pro",
+    "name": "Secretlab Magnus Pro Sit-Stand Desk",
+    "brand": "Secretlab",
+    "price_usd": 799,
+    "network_ids": {
+      "amazon": "B0G1S75G2K"
+    },
     "image_url": "",
-    "best_for": ["budget", "under-500"],
+    "best_for": [
+      "premium",
+      "quiet-motor"
+    ],
     "specs": {
-      "height_min_in": 28,
-      "height_max_in": 47,
-      "weight_capacity_lbs": 220,
-      "desktop_width_in": 48,
-      "desktop_depth_in": 24,
-      "motors": 1,
+      "height_min_in": 25.6,
+      "height_max_in": 49.2,
+      "weight_capacity_lbs": 265,
+      "desktop_width_in": 59,
+      "desktop_depth_in": 27.6,
+      "motors": 2,
       "warranty_years": 5
     }
   },
   {
-    "slug": "desk-d",
-    "name": "Standing Desk D",
-    "brand": "Brand D",
-    "price_usd": 899,
-    "network_ids": { "amazon": "B0XXXXXXXXD" },
+    "slug": "apexdesk-elite-pro-60",
+    "name": "ApexDesk Elite Pro 60\" Standing Desk",
+    "brand": "ApexDesk",
+    "price_usd": 450,
+    "network_ids": {
+      "amazon": "B09CJJHJSJ"
+    },
     "image_url": "",
-    "best_for": ["premium", "best-overall"],
+    "best_for": [
+      "under-500",
+      "best-overall"
+    ],
     "specs": {
-      "height_min_in": 22,
-      "height_max_in": 50,
-      "weight_capacity_lbs": 400,
-      "desktop_width_in": 72,
-      "desktop_depth_in": 30,
+      "height_min_in": 30,
+      "height_max_in": 49,
+      "weight_capacity_lbs": 235,
+      "desktop_width_in": 60,
+      "desktop_depth_in": 27,
       "motors": 2,
-      "warranty_years": 12
+      "warranty_years": 5
     }
   },
   {
-    "slug": "desk-e",
-    "name": "Standing Desk E",
-    "brand": "Brand E",
-    "price_usd": 599,
-    "network_ids": { "amazon": "B0XXXXXXXXE" },
+    "slug": "autonomous-smartdesk-pro",
+    "name": "Autonomous SmartDesk Pro",
+    "brand": "Autonomous",
+    "price_usd": 499,
+    "network_ids": {
+      "amazon": "B0FL1WYTYQ"
+    },
     "image_url": "",
-    "best_for": ["small-spaces", "quiet-motor"],
+    "best_for": [
+      "under-500",
+      "home-office"
+    ],
     "specs": {
-      "height_min_in": 24,
-      "height_max_in": 49,
-      "weight_capacity_lbs": 300,
-      "desktop_width_in": 42,
-      "desktop_depth_in": 24,
+      "height_min_in": 29.5,
+      "height_max_in": 48.5,
+      "weight_capacity_lbs": 330,
+      "desktop_width_in": 53,
+      "desktop_depth_in": 29,
       "motors": 2,
       "warranty_years": 7
     }
   },
   {
-    "slug": "desk-f",
-    "name": "Standing Desk F",
-    "brand": "Brand F",
-    "price_usd": 749,
-    "network_ids": { "amazon": "B0XXXXXXXXF" },
+    "slug": "fezibo-48x24-electric",
+    "name": "FEZIBO 48x24 Electric Standing Desk",
+    "brand": "FEZIBO",
+    "price_usd": 200,
+    "network_ids": {
+      "amazon": "B0F8MHPVPH"
+    },
     "image_url": "",
-    "best_for": ["l-shaped", "home-office"],
+    "best_for": [
+      "budget",
+      "small-spaces"
+    ],
     "specs": {
-      "height_min_in": 23,
-      "height_max_in": 49,
-      "weight_capacity_lbs": 330,
+      "height_min_in": 28.3,
+      "height_max_in": 46.5,
+      "weight_capacity_lbs": 176,
+      "desktop_width_in": 48,
+      "desktop_depth_in": 24,
+      "motors": 1,
+      "warranty_years": 2
+    }
+  },
+  {
+    "slug": "shw-48-electric",
+    "name": "SHW 48\" Electric Standing Desk",
+    "brand": "SHW",
+    "price_usd": 160,
+    "network_ids": {
+      "amazon": "B0BS9GR47F"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "under-500"
+    ],
+    "specs": {
+      "height_min_in": 27,
+      "height_max_in": 46,
+      "weight_capacity_lbs": 110,
+      "desktop_width_in": 48,
+      "desktop_depth_in": 24,
+      "motors": 1,
+      "warranty_years": 1
+    }
+  },
+  {
+    "slug": "fezibo-l-shaped-63",
+    "name": "FEZIBO 63\" L-Shaped Standing Desk",
+    "brand": "FEZIBO",
+    "price_usd": 350,
+    "network_ids": {
+      "amazon": "B0BWR3KMYQ"
+    },
+    "image_url": "",
+    "best_for": [
+      "l-shaped",
+      "home-office"
+    ],
+    "specs": {
+      "height_min_in": 28.3,
+      "height_max_in": 46.8,
+      "weight_capacity_lbs": 176,
       "desktop_width_in": 63,
       "desktop_depth_in": 55,
-      "motors": 2,
-      "warranty_years": 10
-    }
-  },
-  {
-    "slug": "desk-g",
-    "name": "Standing Desk G",
-    "brand": "Brand G",
-    "price_usd": 329,
-    "network_ids": { "amazon": "B0XXXXXXXXG" },
-    "image_url": "",
-    "best_for": ["budget", "small-spaces"],
-    "specs": {
-      "height_min_in": 28,
-      "height_max_in": 46,
-      "weight_capacity_lbs": 176,
-      "desktop_width_in": 40,
-      "desktop_depth_in": 24,
       "motors": 1,
-      "warranty_years": 3
-    }
-  },
-  {
-    "slug": "desk-h",
-    "name": "Standing Desk H",
-    "brand": "Brand H",
-    "price_usd": 549,
-    "network_ids": { "amazon": "B0XXXXXXXXH" },
-    "image_url": "",
-    "best_for": ["under-600", "best-overall"],
-    "specs": {
-      "height_min_in": 24,
-      "height_max_in": 50,
-      "weight_capacity_lbs": 300,
-      "desktop_width_in": 55,
-      "desktop_depth_in": 28,
-      "motors": 2,
-      "warranty_years": 7
-    }
-  },
-  {
-    "slug": "desk-i",
-    "name": "Standing Desk I",
-    "brand": "Brand I",
-    "price_usd": 999,
-    "network_ids": { "amazon": "B0XXXXXXXXI" },
-    "image_url": "",
-    "best_for": ["premium", "executive"],
-    "specs": {
-      "height_min_in": 22,
-      "height_max_in": 50,
-      "weight_capacity_lbs": 350,
-      "desktop_width_in": 72,
-      "desktop_depth_in": 36,
-      "motors": 2,
-      "warranty_years": 15
-    }
-  },
-  {
-    "slug": "desk-j",
-    "name": "Standing Desk J",
-    "brand": "Brand J",
-    "price_usd": 459,
-    "network_ids": { "amazon": "B0XXXXXXXXJ" },
-    "image_url": "",
-    "best_for": ["under-500", "home-office"],
-    "specs": {
-      "height_min_in": 24,
-      "height_max_in": 48,
-      "weight_capacity_lbs": 264,
-      "desktop_width_in": 48,
-      "desktop_depth_in": 24,
-      "motors": 2,
-      "warranty_years": 5
+      "warranty_years": 2
     }
   }
 ]
