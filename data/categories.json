@@ -4,117 +4,153 @@
     "name": "Standing Desks",
     "niche": "standing-desks",
     "description": "Compare the best electric standing desks of 2026 side by side. We break down height range, weight capacity, desktop size, motor count, and warranty so you can find the right sit-stand desk for your workspace and budget.",
-    "tags": [
-      "best-overall",
-      "budget",
-      "under-500",
-      "small-spaces",
-      "tall-people",
-      "premium",
-      "quiet-motor",
-      "l-shaped",
-      "home-office",
-      "under-600",
-      "executive"
-    ]
+    "tags": ["best-overall","budget","under-500","small-spaces","tall-people","premium","quiet-motor","l-shaped","home-office","under-600","executive"]
   },
   {
     "slug": "best-standing-desks",
     "name": "Best Standing Desks 2026 (Top Picks)",
     "niche": "standing-desks",
     "description": "Our top-rated standing desks based on real specs, stability, and price-to-performance. These are the desks we recommend most often — whether you need a dual-motor powerhouse or a reliable everyday sit-stand setup.",
-    "tags": [
-      "best-overall"
-    ]
+    "tags": ["best-overall"]
   },
   {
     "slug": "standing-desks-under-500",
     "name": "Best Standing Desks Under $500",
     "niche": "standing-desks",
     "description": "You don't need to spend $700+ to get a great standing desk. These picks deliver dual motors, solid weight capacity, and reliable warranties — all under $500. We focus on the specs that actually matter so you get the most desk for your dollar.",
-    "tags": [
-      "under-500"
-    ]
+    "tags": ["under-500"]
   },
   {
     "slug": "budget-standing-desks",
     "name": "Budget Standing Desks (Under $250)",
     "niche": "standing-desks",
     "description": "Looking for a standing desk without breaking the bank? These budget-friendly options start under $200 and still cover the essentials — electric height adjustment, decent desktop space, and enough capacity for a monitor and laptop setup.",
-    "tags": [
-      "budget"
-    ]
+    "tags": ["budget"]
   },
   {
     "slug": "standing-desks-for-small-spaces",
     "name": "Best Standing Desks for Small Spaces",
     "niche": "standing-desks",
     "description": "Short on room? These compact standing desks max out at 48 inches wide or less, making them ideal for apartments, small home offices, and tight corners — without sacrificing electric adjustment or build quality.",
-    "tags": [
-      "small-spaces"
-    ]
+    "tags": ["small-spaces"]
   },
   {
     "slug": "standing-desks-for-tall-people",
     "name": "Best Standing Desks for Tall People",
     "niche": "standing-desks",
     "description": "If you're over 6 feet tall, most standing desks don't go high enough. These picks offer a max height of 50 inches or more, giving taller users the ergonomic range they need to stand and type comfortably.",
-    "tags": [
-      "tall-people"
-    ]
+    "tags": ["tall-people"]
   },
   {
     "slug": "standing-desks-under-600",
     "name": "Best Standing Desks Under $600",
     "niche": "standing-desks",
     "description": "The sweet spot for most buyers. Under $600 gets you dual motors, strong weight capacity, solid warranties, and name-brand reliability. These desks balance features and value better than almost any other price range.",
-    "tags": [
-      "under-600"
-    ]
+    "tags": ["under-600"]
   },
   {
     "slug": "premium-standing-desks",
     "name": "Premium Standing Desks",
     "niche": "standing-desks",
     "description": "When budget isn't the top concern, these premium standing desks deliver heavier weight capacity, quieter motors, longer warranties, and larger desktop surfaces. Built for users who want the best and plan to keep their desk for years.",
-    "tags": [
-      "premium"
-    ]
+    "tags": ["premium"]
   },
   {
     "slug": "quiet-standing-desks",
     "name": "Quietest Standing Desks",
     "niche": "standing-desks",
     "description": "Noise matters — especially in shared spaces, home offices, or during video calls. These standing desks are selected specifically for quiet motor operation and smooth height transitions so you can adjust without disrupting your environment.",
-    "tags": [
-      "quiet-motor"
-    ]
+    "tags": ["quiet-motor"]
   },
   {
     "slug": "l-shaped-standing-desks",
     "name": "Best L-Shaped Standing Desks",
     "niche": "standing-desks",
     "description": "Need more surface area for multi-monitor setups or dual workstations? L-shaped standing desks give you the room to spread out while still offering electric height adjustment. We compare the top options by size, capacity, and stability.",
-    "tags": [
-      "l-shaped"
-    ]
+    "tags": ["l-shaped"]
   },
   {
     "slug": "home-office-standing-desks",
     "name": "Best Standing Desks for Home Offices",
     "niche": "standing-desks",
     "description": "The best standing desks for working from home — balancing size, noise, aesthetics, and ergonomics. These picks fit naturally into a home office without looking like industrial equipment, while still delivering the specs that matter.",
-    "tags": [
-      "home-office"
-    ]
+    "tags": ["home-office"]
   },
   {
     "slug": "executive-standing-desks",
     "name": "Executive Standing Desks",
     "niche": "standing-desks",
     "description": "Large-surface, high-end standing desks built for executive offices and professional environments. These desks feature 72-inch tops, premium materials, heavy weight capacity, and extended warranties for long-term reliability.",
-    "tags": [
-      "executive"
-    ]
+    "tags": ["executive"]
+  },
+  {
+    "slug": "electric-toothbrushes",
+    "name": "Electric Toothbrushes",
+    "niche": "electric-toothbrushes",
+    "description": "Compare the best electric toothbrushes of 2026 side by side. We break down brushing modes, battery life, pressure sensors, brush heads included, and ADA acceptance so you can find the right brush for your oral health needs and budget.",
+    "tags": ["best-overall","budget","premium","sensitive-teeth","whitening","travel","gum-health","smart-features","braces"]
+  },
+  {
+    "slug": "best-electric-toothbrushes",
+    "name": "Best Electric Toothbrushes 2026 (Top Picks)",
+    "niche": "electric-toothbrushes",
+    "description": "Our top-rated electric toothbrushes based on cleaning performance, battery life, and value. These are the brushes we recommend most often — whether you want a simple ADA-accepted workhorse or a smart brush with AI tracking.",
+    "tags": ["best-overall"]
+  },
+  {
+    "slug": "budget-electric-toothbrushes",
+    "name": "Best Budget Electric Toothbrushes (Under $50)",
+    "niche": "electric-toothbrushes",
+    "description": "You don't need to spend $200 to get a great electric toothbrush. These picks deliver effective plaque removal, timers, and solid battery life — all under $50. Several are even ADA accepted, proving that budget doesn't mean compromise.",
+    "tags": ["budget"]
+  },
+  {
+    "slug": "premium-electric-toothbrushes",
+    "name": "Premium Electric Toothbrushes",
+    "niche": "electric-toothbrushes",
+    "description": "When you want the best oral care technology available — AI-powered brushing guidance, adaptive pressure sensors, interactive displays, and premium travel cases. These flagship brushes from Oral-B and Philips represent the cutting edge.",
+    "tags": ["premium"]
+  },
+  {
+    "slug": "electric-toothbrushes-for-sensitive-teeth",
+    "name": "Best Electric Toothbrushes for Sensitive Teeth",
+    "niche": "electric-toothbrushes",
+    "description": "Sensitive teeth and gums need gentle brushing without sacrificing cleaning power. These electric toothbrushes feature dedicated sensitive modes, ultra-soft bristles, and pressure sensors that automatically ease off when you push too hard.",
+    "tags": ["sensitive-teeth"]
+  },
+  {
+    "slug": "electric-toothbrushes-for-gum-health",
+    "name": "Best Electric Toothbrushes for Gum Health",
+    "niche": "electric-toothbrushes",
+    "description": "Bleeding gums and gingivitis affect nearly half of adults. These electric toothbrushes are clinically proven to reduce gum bleeding, remove plaque below the gumline, and improve overall gum health — some in as little as two weeks.",
+    "tags": ["gum-health"]
+  },
+  {
+    "slug": "best-travel-electric-toothbrushes",
+    "name": "Best Electric Toothbrushes for Travel",
+    "niche": "electric-toothbrushes",
+    "description": "Long battery life, compact design, and included travel cases make these electric toothbrushes ideal for frequent travelers. No more packing a charger — some of these brushes last weeks or even months on a single charge.",
+    "tags": ["travel"]
+  },
+  {
+    "slug": "whitening-electric-toothbrushes",
+    "name": "Best Electric Toothbrushes for Whitening",
+    "niche": "electric-toothbrushes",
+    "description": "Want a brighter smile without strips or trays? These electric toothbrushes feature dedicated whitening modes and high-frequency sonic action designed to remove surface stains and polish teeth with daily use.",
+    "tags": ["whitening"]
+  },
+  {
+    "slug": "smart-electric-toothbrushes",
+    "name": "Best Smart Electric Toothbrushes",
+    "niche": "electric-toothbrushes",
+    "description": "App-connected electric toothbrushes that track your brushing habits, map coverage across every tooth surface, and provide personalized coaching. If you want data-driven oral care, these smart brushes deliver.",
+    "tags": ["smart-features"]
+  },
+  {
+    "slug": "electric-toothbrushes-for-braces",
+    "name": "Best Electric Toothbrushes for Braces",
+    "niche": "electric-toothbrushes",
+    "description": "Braces trap food and plaque in hard-to-reach places. These electric toothbrushes combine gentle cleaning action with water flossing or specialized modes to keep teeth and brackets clean throughout orthodontic treatment.",
+    "tags": ["braces"]
   }
 ]
