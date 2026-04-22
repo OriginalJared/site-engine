@@ -179,6 +179,7 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
 
         name = as_str(p.get("name")) or slug
         brand = as_str(p.get("brand"))
+        description = as_str(p.get("description"))
         image_url = as_str(p.get("image_url"))
         price_usd = p.get("price_usd")
 
@@ -197,6 +198,7 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
             "slug": slug,
             "name": name,
             "brand": brand,
+            "description": description,
             "price_usd": price_usd,
             "network_ids": network_ids,
             "affiliate_url": "",
@@ -288,6 +290,7 @@ def safe_url(url: str) -> str:
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
+    description = as_str(p.get("description"))
     price = p.get("price_usd")
     affiliate_url = as_str(p.get("affiliate_url"))
     img_url = as_str(p.get("image_url"))
@@ -300,6 +303,7 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         template
         .replace("{{PRODUCT_NAME}}", escape(name))
         .replace("{{PRODUCT_BRAND}}", escape(brand))
+        .replace("{{PRODUCT_DESCRIPTION}}", escape(description))
         .replace("{{PRODUCT_PRICE}}", escape(price_txt))
         .replace("{{AFFILIATE_URL}}", safe_url(affiliate_url))
         .replace("{{IMAGE_URL}}", safe_url(img_url))
@@ -319,6 +323,7 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
     <p><strong>Brand:</strong> {{PRODUCT_BRAND}}</p>
     <p><strong>Price (USD):</strong> {{PRODUCT_PRICE}}</p>
     <p><a class="cta" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Buy / Check Price</a></p>
+    <div class="product-description">{{PRODUCT_DESCRIPTION}}</div>
     <h2>Best For</h2>
     <div>{{BEST_FOR}}</div>
     <h2>Specs</h2>
@@ -579,4 +584,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
