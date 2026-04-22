@@ -2,7 +2,7 @@
   {
     "slug": "standing-desks",
     "name": "Standing Desks",
-    "description": "Browse our current standing desk picks and compare key specs at a glance.",
+    "description": "Compare the best electric standing desks of 2026 side by side. We break down height range, weight capacity, desktop size, motor count, and warranty so you can find the right sit-stand desk for your workspace and budget.",
     "tags": [
       "best-overall",
       "budget",
@@ -19,68 +19,90 @@
   },
   {
     "slug": "best-standing-desks",
-    "name": "Best Standing Desks (Top Picks)",
-    "description": "Our strongest overall standing desk picks based on price-to-performance and specs.",
-    "tags": ["best-overall"]
+    "name": "Best Standing Desks 2026 (Top Picks)",
+    "description": "Our top-rated standing desks based on real specs, stability, and price-to-performance. These are the desks we recommend most often \u2014 whether you need a dual-motor powerhouse or a reliable everyday sit-stand setup.",
+    "tags": [
+      "best-overall"
+    ]
   },
   {
     "slug": "standing-desks-under-500",
     "name": "Best Standing Desks Under $500",
-    "description": "High-value standing desks under $500 with solid core specs.",
-    "tags": ["under-500"]
+    "description": "You don't need to spend $700+ to get a great standing desk. These picks deliver dual motors, solid weight capacity, and reliable warranties \u2014 all under $500. We focus on the specs that actually matter so you get the most desk for your dollar.",
+    "tags": [
+      "under-500"
+    ]
   },
   {
     "slug": "budget-standing-desks",
-    "name": "Budget Standing Desks",
-    "description": "Affordable standing desk options focused on essentials and value.",
-    "tags": ["budget"]
+    "name": "Budget Standing Desks (Under $250)",
+    "description": "Looking for a standing desk without breaking the bank? These budget-friendly options start under $200 and still cover the essentials \u2014 electric height adjustment, decent desktop space, and enough capacity for a monitor and laptop setup.",
+    "tags": [
+      "budget"
+    ]
   },
   {
     "slug": "standing-desks-for-small-spaces",
-    "name": "Standing Desks for Small Spaces",
-    "description": "Compact standing desks that fit tighter home office setups.",
-    "tags": ["small-spaces"]
+    "name": "Best Standing Desks for Small Spaces",
+    "description": "Short on room? These compact standing desks max out at 48 inches wide or less, making them ideal for apartments, small home offices, and tight corners \u2014 without sacrificing electric adjustment or build quality.",
+    "tags": [
+      "small-spaces"
+    ]
   },
   {
     "slug": "standing-desks-for-tall-people",
-    "name": "Standing Desks for Tall People",
-    "description": "Standing desks with height ranges that better accommodate taller users.",
-    "tags": ["tall-people"]
+    "name": "Best Standing Desks for Tall People",
+    "description": "If you're over 6 feet tall, most standing desks don't go high enough. These picks offer a max height of 50 inches or more, giving taller users the ergonomic range they need to stand and type comfortably.",
+    "tags": [
+      "tall-people"
+    ]
   },
   {
     "slug": "standing-desks-under-600",
     "name": "Best Standing Desks Under $600",
-    "description": "Our picks under $600 balancing features, stability, and warranty.",
-    "tags": ["under-600"]
+    "description": "The sweet spot for most buyers. Under $600 gets you dual motors, strong weight capacity, solid warranties, and name-brand reliability. These desks balance features and value better than almost any other price range.",
+    "tags": [
+      "under-600"
+    ]
   },
   {
     "slug": "premium-standing-desks",
     "name": "Premium Standing Desks",
-    "description": "Higher-end standing desks with stronger specs, stability, and warranties.",
-    "tags": ["premium"]
+    "description": "When budget isn't the top concern, these premium standing desks deliver heavier weight capacity, quieter motors, longer warranties, and larger desktop surfaces. Built for users who want the best and plan to keep their desk for years.",
+    "tags": [
+      "premium"
+    ]
   },
   {
     "slug": "quiet-standing-desks",
-    "name": "Quiet Standing Desks",
-    "description": "Standing desks selected for quieter motor operation and smooth movement.",
-    "tags": ["quiet-motor"]
+    "name": "Quietest Standing Desks",
+    "description": "Noise matters \u2014 especially in shared spaces, home offices, or during video calls. These standing desks are selected specifically for quiet motor operation and smooth height transitions so you can adjust without disrupting your environment.",
+    "tags": [
+      "quiet-motor"
+    ]
   },
   {
     "slug": "l-shaped-standing-desks",
-    "name": "L-Shaped Standing Desks",
-    "description": "L-shaped standing desk picks for larger work surfaces and multi-monitor setups.",
-    "tags": ["l-shaped"]
+    "name": "Best L-Shaped Standing Desks",
+    "description": "Need more surface area for multi-monitor setups or dual workstations? L-shaped standing desks give you the room to spread out while still offering electric height adjustment. We compare the top options by size, capacity, and stability.",
+    "tags": [
+      "l-shaped"
+    ]
   },
   {
     "slug": "home-office-standing-desks",
-    "name": "Home Office Standing Desks",
-    "description": "Standing desks selected for everyday home office use and balanced ergonomics.",
-    "tags": ["home-office"]
+    "name": "Best Standing Desks for Home Offices",
+    "description": "The best standing desks for working from home \u2014 balancing size, noise, aesthetics, and ergonomics. These picks fit naturally into a home office without looking like industrial equipment, while still delivering the specs that matter.",
+    "tags": [
+      "home-office"
+    ]
   },
   {
     "slug": "executive-standing-desks",
     "name": "Executive Standing Desks",
-    "description": "Executive-class standing desks with larger surfaces and premium positioning.",
-    "tags": ["executive"]
+    "description": "Large-surface, high-end standing desks built for executive offices and professional environments. These desks feature 72-inch tops, premium materials, heavy weight capacity, and extended warranties for long-term reliability.",
+    "tags": [
+      "executive"
+    ]
   }
 ]
