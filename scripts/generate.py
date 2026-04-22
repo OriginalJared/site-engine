@@ -47,14 +47,14 @@ def load_all_products() -> List[Any]:
         try:
             data = json.loads(f.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError) as e:
-            print(f"⚠️  Skipping {f.name}: {e}")
+            print(f"\u26a0\ufe0f  Skipping {f.name}: {e}")
             continue
         if isinstance(data, list):
             all_products.extend(data)
         elif isinstance(data, dict):
             all_products.append(data)
         else:
-            print(f"⚠️  Skipping {f.name}: unexpected root type {type(data).__name__}")
+            print(f"\u26a0\ufe0f  Skipping {f.name}: unexpected root type {type(data).__name__}")
     return all_products
 
 
@@ -137,43 +137,34 @@ def load_affiliates_config() -> Dict[str, Any]:
 def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any]) -> str:
     if not aff_config:
         return "#"
-
     active = as_str(aff_config.get("active_network"))
     if not active:
         return "#"
-
     networks = aff_config.get("networks") or {}
     net_cfg = networks.get(active)
     if not net_cfg:
         return "#"
-
     product_id = as_str((network_ids or {}).get(active))
     if not product_id:
         return "#"
-
     pattern = as_str(net_cfg.get("url_pattern"))
     if not pattern:
         return "#"
-
     subs = {k: as_str(v) for k, v in net_cfg.items()}
     subs["product_id"] = product_id
-
     try:
         url = pattern.format_map(subs)
     except (KeyError, ValueError):
         return "#"
-
     tracking = aff_config.get("tracking") or {}
     utm_parts = []
     for key in ("utm_source", "utm_medium", "sub_id"):
         val = as_str(tracking.get(key))
         if val:
             utm_parts.append(f"{key}={val}")
-
     if utm_parts:
         separator = "&" if "?" in url else "?"
         url += separator + "&".join(utm_parts)
-
     return url
 
 
@@ -184,36 +175,30 @@ def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any])
 def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
     products = require_list(raw_products, "products")
     out: List[Dict[str, Any]] = []
-
     for i, p in enumerate(products):
         if not isinstance(p, dict):
             continue
-
         slug = normalize_slug(p.get("slug"))
         if not slug:
             continue
-
         name = as_str(p.get("name")) or slug
         brand = as_str(p.get("brand"))
+        category = as_str(p.get("category"))
         description = as_str(p.get("description"))
         image_url = as_str(p.get("image_url"))
         price_usd = p.get("price_usd")
-
-        network_ids = require_dict(
-            p.get("network_ids"), f"products[{i}].network_ids"
-        )
-
+        network_ids = require_dict(p.get("network_ids"), f"products[{i}].network_ids")
         best_for = [
             normalize_slug(x)
             for x in require_list(p.get("best_for"), f"products[{i}].best_for")
             if as_str(x)
         ]
         specs = require_dict(p.get("specs"), f"products[{i}].specs")
-
         out.append({
             "slug": slug,
             "name": name,
             "brand": brand,
+            "category": category,
             "description": description,
             "price_usd": price_usd,
             "network_ids": network_ids,
@@ -222,7 +207,6 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
             "best_for": best_for,
             "specs": specs,
         })
-
     out.sort(key=lambda x: x["slug"])
     assert_unique_slugs(out, "product")
     return out
@@ -231,18 +215,15 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
 def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
     cats = require_list(raw_categories, "categories")
     out: List[Dict[str, Any]] = []
-
     for i, c in enumerate(cats):
         if not isinstance(c, dict):
             continue
-
         slug = normalize_slug(c.get("slug"))
         if not slug:
             continue
-
         name = as_str(c.get("name")) or slug
+        niche = as_str(c.get("niche"))
         description = as_str(c.get("description"))
-
         tags_raw = c.get("tags", None)
         tags: List[str] = []
         if tags_raw is not None:
@@ -251,17 +232,37 @@ def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
                 for x in require_list(tags_raw, f"categories[{i}].tags")
                 if as_str(x)
             ]
-
         out.append({
             "slug": slug,
             "name": name,
+            "niche": niche,
             "description": description,
             "tags": tags,
         })
-
     out.sort(key=lambda x: x["slug"])
     assert_unique_slugs(out, "category")
     return out
+
+
+# ----------------------------
+# Dynamic sidebar builder
+# ----------------------------
+
+def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_slug: str = "") -> str:
+    """Build HTML <li> items for all categories in the same niche."""
+    niche_cats = [
+        c for c in categories
+        if as_str(c.get("niche")) == niche and as_str(c.get("slug")) != exclude_slug
+    ]
+    if not niche_cats:
+        return '<li>No related categories yet.</li>'
+    items = []
+    for c in niche_cats:
+        slug = as_str(c.get("slug"))
+        name = as_str(c.get("name"))
+        href = escape(f"/generated/categories/{slug}/", quote=True)
+        items.append(f'<li><a href="{href}">{escape(name)}</a></li>')
+    return "\n            ".join(items)
 
 
 # ----------------------------
@@ -281,7 +282,6 @@ def specs_table_html(specs: Dict[str, Any]) -> str:
     specs = require_dict(specs, "specs")
     if not specs:
         return "<p>No specs available.</p>"
-
     rows = []
     for k in sorted(specs.keys(), key=lambda x: str(x).lower()):
         rows.append(f"<tr><th>{escape(str(k))}</th><td>{escape(str(specs[k]))}</td></tr>")
@@ -292,8 +292,8 @@ def best_for_html(best_for: Any) -> str:
     tags = require_list(best_for, "best_for")
     tags = [as_str(t) for t in tags if as_str(t)]
     if not tags:
-        return "<p>\u2014</p>"
-    return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
+        return '<p>\u2014</p>'
+    return '<ul>' + ''.join(f'<li>{escape(t)}</li>' for t in tags) + '</ul>'
 
 
 def safe_url(url: str) -> str:
@@ -312,6 +312,9 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
     img_url = as_str(p.get("image_url"))
     best_for = p.get("best_for") or []
     specs = p.get("specs") or {}
+    primary_category_url = as_str(p.get("primary_category_url"))
+    primary_category_name = as_str(p.get("primary_category_name"))
+    sidebar_links = as_str(p.get("sidebar_links"))
 
     price_txt = "" if price is None else str(price)
 
@@ -325,6 +328,9 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{IMAGE_URL}}", safe_url(img_url))
         .replace("{{BEST_FOR}}", best_for_html(best_for))
         .replace("{{SPECS_TABLE}}", specs_table_html(specs))
+        .replace("{{PRIMARY_CATEGORY_URL}}", escape(primary_category_url))
+        .replace("{{PRIMARY_CATEGORY_NAME}}", escape(primary_category_name))
+        .replace("{{SIDEBAR_LINKS}}", sidebar_links)
     )
 
 
@@ -339,11 +345,14 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
     <p><strong>Brand:</strong> {{PRODUCT_BRAND}}</p>
     <p><strong>Price (USD):</strong> {{PRODUCT_PRICE}}</p>
     <p><a class="cta" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Buy / Check Price</a></p>
+    <p><a class="secondary" href="{{PRIMARY_CATEGORY_URL}}">Browse {{PRIMARY_CATEGORY_NAME}}</a></p>
     <div class="product-description">{{PRODUCT_DESCRIPTION}}</div>
     <h2>Best For</h2>
     <div>{{BEST_FOR}}</div>
     <h2>Specs</h2>
     <div>{{SPECS_TABLE}}</div>
+    <h2>Related Categories</h2>
+    <ul>{{SIDEBAR_LINKS}}</ul>
   </body>
 </html>
 """
@@ -364,7 +373,6 @@ def product_matches(product: Dict[str, Any], match_tags: List[str]) -> bool:
 def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
     if not matched:
         return "<p>No products yet.</p>"
-
     cards = []
     for p in matched:
         slug = as_str(p.get("slug"))
@@ -405,25 +413,20 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         detail_href = escape(f"/generated/products/{slug}/", quote=True)
         name_href = escape(f"/generated/products/{slug}/", quote=True)
 
-        card = (
-            f'<div class="product-card">'
-            f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
-        )
+        card = f'<div class="product-card">'
+        card += f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
         if meta_html:
             card += f'<p class="card-meta">{meta_html}</p>'
         if specs_html:
             card += f'<div class="card-specs">{specs_html}</div>'
-        card += (
-            f'<div class="card-actions">'
-            f'<a class="cta" href="{aff_href}" target="_blank" rel="nofollow sponsored noopener">Buy / Check Price</a>'
-            f'<a class="secondary" href="{detail_href}">View Details</a>'
-            f'</div>'
-            f'</div>'
-        )
+        card += f'<div class="card-actions">'
+        card += f'<a class="cta" href="{aff_href}" target="_blank" rel="nofollow sponsored noopener">Buy / Check Price</a>'
+        card += f'<a class="secondary" href="{detail_href}">View Details</a>'
+        card += f'</div>'
+        card += f'</div>'
         cards.append(card)
 
     html = "\n".join(cards)
-
     if matched and "product-card" not in html:
         raise RuntimeError("Category product list rendered without product cards.")
     return html
@@ -469,49 +472,38 @@ def build_robots(site_url: str) -> str:
 
 def run_quality_gates():
     failures: List[str] = []
-
     product_pages = sorted(GENERATED_DIR.glob("products/*/index.html"))
     category_pages = sorted(GENERATED_DIR.glob("categories/*/index.html"))
 
     for page in product_pages:
         rel = page.relative_to(GENERATED_DIR)
         content = page.read_text(encoding="utf-8")
-
         for line in content.splitlines():
             if line.startswith("import ") or line.startswith("from "):
                 failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
                 break
-
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
-
         if "<title>" not in content.lower():
             failures.append(f"[MISSING <title>] {rel}")
-
         if "href=" not in content.lower():
             failures.append(f"[MISSING href=] {rel}: no links found (broken CTA?)")
-
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw " + "{{...}}" + " found in output")
 
     for page in category_pages:
         rel = page.relative_to(GENERATED_DIR)
         content = page.read_text(encoding="utf-8")
-
         for line in content.splitlines():
             if line.startswith("import ") or line.startswith("from "):
                 failures.append(f"[PYTHON LEAK] {rel}: line starts with '{line[:40]}...'")
                 break
-
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
-
         if "<title>" not in content.lower():
             failures.append(f"[MISSING <title>] {rel}")
-
         if "<a href=" not in content.lower():
             failures.append(f"[MISSING <a href=] {rel}: no product links found")
-
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw " + "{{...}}" + " found in output")
 
@@ -540,13 +532,34 @@ def main():
     raw_products = load_all_products()
     products = normalize_products(raw_products)
 
-    print(f"Loaded {len(products)} product(s) from {len(list(PRODUCTS_DIR.glob('*.json')))} file(s) in data/products/")
+    file_count = len(list(PRODUCTS_DIR.glob("*.json"))) if PRODUCTS_DIR.exists() else 0
+    print(f"Loaded {len(products)} product(s) from {file_count} file(s) in data/products/")
 
+    # Build category lookups for dynamic templates
+    category_by_slug = {as_str(c.get("slug")): c for c in categories}
+
+    # Set affiliate URLs and category context for each product
     for p in products:
         p["affiliate_url"] = build_affiliate_url(
             p.get("network_ids", {}), aff_config
         )
 
+        # Resolve primary category and niche for dynamic sidebar
+        cat_slug = as_str(p.get("category"))
+        cat = category_by_slug.get(cat_slug)
+
+        if cat:
+            p["primary_category_url"] = f"/generated/categories/{cat_slug}/"
+            p["primary_category_name"] = as_str(cat.get("name"))
+            niche = as_str(cat.get("niche"))
+        else:
+            p["primary_category_url"] = "#"
+            p["primary_category_name"] = cat_slug or "All Products"
+            niche = cat_slug
+
+        p["sidebar_links"] = build_sidebar_links(niche, categories, exclude_slug=cat_slug)
+
+    # Generate product pages
     product_count = 0
     for p in products:
         slug = as_str(p.get("slug"))
@@ -557,6 +570,7 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
+    # Generate category pages
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -577,17 +591,15 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
+    # SEO files
     site_url = get_site_url()
     urls = [f"{site_url}/"]
-
     for cat in categories:
         cslug = as_str(cat.get("slug"))
         urls.append(f"{site_url}/generated/categories/{cslug}/")
-
     for p in products:
         pslug = as_str(p.get("slug"))
         urls.append(f"{site_url}/generated/products/{pslug}/")
-
     urls = sorted(set(urls))
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
