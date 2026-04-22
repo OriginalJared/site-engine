@@ -13,7 +13,7 @@ TEMPLATES_DIR = ROOT / "templates"
 GENERATED_DIR = ROOT / "generated"
 
 CATEGORIES_JSON = DATA_DIR / "categories.json"
-PRODUCTS_JSON = DATA_DIR / "products.json"
+PRODUCTS_DIR = DATA_DIR / "products"
 AFFILIATES_JSON = DATA_DIR / "affiliates.json"
 
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
@@ -36,6 +36,26 @@ def load_json(path: Path) -> Any:
         raise FileNotFoundError(f"Missing required file: {path}")
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_all_products() -> List[Any]:
+    """Load and merge all product JSON files from data/products/."""
+    if not PRODUCTS_DIR.exists():
+        return []
+    all_products = []
+    for f in sorted(PRODUCTS_DIR.glob("*.json")):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"⚠️  Skipping {f.name}: {e}")
+            continue
+        if isinstance(data, list):
+            all_products.extend(data)
+        elif isinstance(data, dict):
+            all_products.append(data)
+        else:
+            print(f"⚠️  Skipping {f.name}: unexpected root type {type(data).__name__}")
+    return all_products
 
 
 def read_text_required(path: Path) -> str:
@@ -115,10 +135,6 @@ def load_affiliates_config() -> Dict[str, Any]:
 
 
 def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any]) -> str:
-    """
-    Build a full affiliate URL from per-product network IDs + central config.
-    Returns '#' if anything is missing so pages still render safely.
-    """
     if not aff_config:
         return "#"
 
@@ -521,9 +537,10 @@ def main():
 
     aff_config = load_affiliates_config()
 
-    products: List[Dict[str, Any]] = []
-    if PRODUCTS_JSON.exists():
-        products = normalize_products(load_json(PRODUCTS_JSON))
+    raw_products = load_all_products()
+    products = normalize_products(raw_products)
+
+    print(f"Loaded {len(products)} product(s) from {len(list(PRODUCTS_DIR.glob('*.json')))} file(s) in data/products/")
 
     for p in products:
         p["affiliate_url"] = build_affiliate_url(
