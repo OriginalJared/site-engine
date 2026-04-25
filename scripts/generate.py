@@ -6,6 +6,7 @@ from datetime import date
 from pathlib import Path
 from html import escape
 from typing import Any, Dict, List
+from collections import OrderedDict
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -18,9 +19,11 @@ AFFILIATES_JSON = DATA_DIR / "affiliates.json"
 
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
 PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
+INDEX_TEMPLATE = TEMPLATES_DIR / "index.html"
 
 SITEMAP_XML = ROOT / "sitemap.xml"
 ROBOTS_TXT = ROOT / "robots.txt"
+INDEX_HTML = ROOT / "index.html"
 
 DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
 
@@ -249,7 +252,7 @@ def normalize_categories(raw_categories: Any) -> List[Dict[str, Any]]:
 # ----------------------------
 
 def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_slug: str = "") -> str:
-    """Build HTML <li> items for all categories in the same niche."""
+    """Build HTML li items for all categories in the same niche."""
     niche_cats = [
         c for c in categories
         if as_str(c.get("niche")) == niche and as_str(c.get("slug")) != exclude_slug
@@ -263,6 +266,98 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
         href = escape(f"/generated/categories/{slug}/", quote=True)
         items.append(f'<li><a href="{href}">{escape(name)}</a></li>')
     return "\n            ".join(items)
+
+
+# ----------------------------
+# Homepage builder
+# ----------------------------
+
+def niche_display_name(niche_slug: str) -> str:
+    """Convert a niche slug like 'standing-desks' into 'Standing Desks'."""
+    return niche_slug.replace("-", " ").title()
+
+
+def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]]) -> Dict[str, str]:
+    """Build the two placeholder values for the homepage template."""
+
+    # Group categories by niche, preserving insertion order
+    niches: Dict[str, List[Dict[str, Any]]] = OrderedDict()
+    for c in categories:
+        niche = as_str(c.get("niche"))
+        if niche not in niches:
+            niches[niche] = []
+        niches[niche].append(c)
+
+    # Build niche sections
+    niche_sections = []
+    for niche, cats in niches.items():
+        display = niche_display_name(niche)
+        product_count = len(products_by_niche.get(niche, []))
+
+        # Find the hub category (slug matches niche) for the main link
+        hub_cat = None
+        for c in cats:
+            if as_str(c.get("slug")) == niche:
+                hub_cat = c
+                break
+        hub_slug = as_str(hub_cat.get("slug")) if hub_cat else niche
+        hub_href = escape(f"/generated/categories/{hub_slug}/", quote=True)
+
+        # Build featured cards — up to 3 sub-categories per niche
+        sub_cats = [c for c in cats if as_str(c.get("slug")) != niche][:3]
+        cards = []
+        for sc in sub_cats:
+            sc_slug = as_str(sc.get("slug"))
+            sc_name = as_str(sc.get("name"))
+            sc_desc = as_str(sc.get("description"))
+            if len(sc_desc) > 120:
+                sc_desc = sc_desc[:117].rsplit(" ", 1)[0] + "..."
+            sc_href = escape(f"/generated/categories/{sc_slug}/", quote=True)
+            card = '<div class="card" style="flex:1;min-width:220px;">'
+            card += f'<h3>{escape(sc_name)}</h3>'
+            card += f'<p>{escape(sc_desc)}</p>'
+            card += f'<a class="cta" href="{sc_href}">Browse</a>'
+            card += '</div>'
+            cards.append(card)
+        cards_html = "\n".join(cards)
+
+        # Build sub-category list for remaining categories
+        remaining_cats = [c for c in cats if as_str(c.get("slug")) != niche and c not in sub_cats]
+        more_html = ""
+        if remaining_cats:
+            more_items = []
+            for rc in remaining_cats:
+                rc_slug = as_str(rc.get("slug"))
+                rc_name = as_str(rc.get("name"))
+                rc_href = escape(f"/generated/categories/{rc_slug}/", quote=True)
+                more_items.append(f'<li><a href="{rc_href}">{escape(rc_name)}</a></li>')
+            more_list = "\n".join(more_items)
+            more_html = f'<div style="margin-top:12px;"><strong>More {escape(display)}:</strong><ul style="margin:6px 0 0 18px;">{more_list}</ul></div>'
+
+        section = f'<section style="margin-bottom:32px;">'
+        section += f'<h2><a href="{hub_href}" style="text-decoration:none;color:inherit;">{escape(display)}</a> <span style="font-size:0.6em;color:#888;">({product_count} products)</span></h2>'
+        section += f'<div style="display:flex;gap:16px;flex-wrap:wrap;">{cards_html}</div>'
+        section += more_html
+        section += '</section>'
+        niche_sections.append(section)
+
+    # Build All Categories flat list grouped by niche
+    all_cats_parts = []
+    for niche, cats in niches.items():
+        display = niche_display_name(niche)
+        all_cats_parts.append(f'<h3>{escape(display)}</h3>')
+        all_cats_parts.append('<ul style="margin:6px 0 18px 18px;">')
+        for c in cats:
+            c_slug = as_str(c.get("slug"))
+            c_name = as_str(c.get("name"))
+            c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
+            all_cats_parts.append(f'<li><a href="{c_href}">{escape(c_name)}</a></li>')
+        all_cats_parts.append('</ul>')
+
+    return {
+        "NICHE_SECTIONS": "\n".join(niche_sections),
+        "ALL_CATEGORIES_LIST": "\n".join(all_cats_parts),
+    }
 
 
 # ----------------------------
@@ -353,6 +448,21 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
     <div>{{SPECS_TABLE}}</div>
     <h2>Related Categories</h2>
     <ul>{{SIDEBAR_LINKS}}</ul>
+  </body>
+</html>
+"""
+
+DEFAULT_INDEX_TEMPLATE = """<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Site Engine</title>
+  </head>
+  <body>
+    <h1>Site Engine</h1>
+    {{NICHE_SECTIONS}}
+    <h2>All Categories</h2>
+    {{ALL_CATEGORIES_LIST}}
   </body>
 </html>
 """
@@ -507,6 +617,14 @@ def run_quality_gates():
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}: raw " + "{{...}}" + " found in output")
 
+    # Check homepage
+    if INDEX_HTML.exists():
+        hp = INDEX_HTML.read_text(encoding="utf-8")
+        if "<html" not in hp.lower():
+            failures.append("[MISSING <html>] index.html")
+        if "{{" in hp and "}}" in hp:
+            failures.append("[UNREPLACED PLACEHOLDER] index.html: raw {{...}} found")
+
     if failures:
         print("\n\u274c QUALITY GATE FAILURES:\n")
         for f in failures:
@@ -515,7 +633,7 @@ def run_quality_gates():
         sys.exit(1)
 
     total = len(product_pages) + len(category_pages)
-    print(f"\u2705 Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages checked).")
+    print(f"\u2705 Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages, homepage checked).")
 
 
 # ----------------------------
@@ -526,6 +644,7 @@ def main():
     categories = normalize_categories(load_json(CATEGORIES_JSON))
     category_template = read_text_required(CATEGORY_TEMPLATE)
     product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
+    index_template = read_text_optional(INDEX_TEMPLATE, DEFAULT_INDEX_TEMPLATE)
 
     aff_config = load_affiliates_config()
 
@@ -602,6 +721,14 @@ def main():
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
+
+    # Generate homepage from template
+    hp_data = build_homepage(categories, products_by_niche)
+    homepage_html = index_template
+    for key, val in hp_data.items():
+        homepage_html = homepage_html.replace("{{" + key + "}}", val)
+    write_text(INDEX_HTML, homepage_html)
+    print("Generated index.html (homepage).")
 
     # SEO files
     site_url = get_site_url()
