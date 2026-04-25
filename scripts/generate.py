@@ -538,6 +538,14 @@ def main():
     # Build category lookups for dynamic templates
     category_by_slug = {as_str(c.get("slug")): c for c in categories}
 
+    # Build niche-to-products index for scoped category matching
+    products_by_niche: Dict[str, List[Dict[str, Any]]] = {}
+    for p in products:
+        niche = as_str(p.get("category"))
+        if niche not in products_by_niche:
+            products_by_niche[niche] = []
+        products_by_niche[niche].append(p)
+
     # Set affiliate URLs and category context for each product
     for p in products:
         p["affiliate_url"] = build_affiliate_url(
@@ -570,19 +578,23 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages
+    # Generate category pages — scoped to niche
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
         name = as_str(cat.get("name")) or cslug
         description = as_str(cat.get("description"))
+        niche = as_str(cat.get("niche"))
 
         tags = cat.get("tags") or []
         match_tags = [normalize_slug(t) for t in tags if as_str(t)] or [cslug]
 
-        matched = [p for p in products if product_matches(p, match_tags)]
-        if not matched and products:
-            matched = products
+        # Only match products from the SAME niche
+        niche_products = products_by_niche.get(niche, [])
+
+        matched = [p for p in niche_products if product_matches(p, match_tags)]
+        if not matched and niche_products:
+            matched = niche_products
 
         product_list_html = build_category_product_list(matched)
 
