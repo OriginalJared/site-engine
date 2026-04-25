@@ -46,9 +46,10 @@ jobs:
           # Always stage generated site output
           git add -A generated
 
-          # Also stage root SEO files if they exist (generator creates these)
+          # Also stage root-level files the generator creates
           if [ -f sitemap.xml ]; then git add sitemap.xml; fi
           if [ -f robots.txt ]; then git add robots.txt; fi
+          if [ -f index.html ]; then git add index.html; fi
 
           # Commit only if there are changes
           if [ -n "$(git status --porcelain)" ]; then
