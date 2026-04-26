@@ -1,1 +1,523 @@
-
+[
+  {
+    "slug": "lectric-xp4-750",
+    "name": "Lectric XP4 750W Folding Electric Bike",
+    "brand": "Lectric",
+    "category": "electric-bikes",
+    "price_usd": 999,
+    "rating": 4.7,
+    "verdict": "The best value electric bike — folds to fit in a trunk, 750W motor, and 55+ mile range for under $1,000.",
+    "description": "The Lectric XP4 750 is the e-bike that changed the market. At under $1,000, it packs a 750W motor, 48V battery with 55+ mile range, fat tires for all-terrain capability, and a folding frame that fits in a car trunk. GearLab rates it their top value pick after lab-testing over 100 e-bikes. The step-through frame accommodates all riders, the pedal assist is smooth with 5 levels, and the throttle provides instant power when needed. It can even carry a passenger on the rear rack. For commuting, camping, or just cruising, nothing else delivers this much bike for this little money.",
+    "features": [
+      "750W rear hub motor — 28 MPH top speed",
+      "55+ mile range on pedal assist",
+      "Folds to fit in car trunk",
+      "Fat tires for all-terrain riding",
+      "Passenger-capable rear rack"
+    ],
+    "pros": [
+      "Best value e-bike — flagship features under $1,000",
+      "Folding design fits anywhere",
+      "55+ mile range is class-leading",
+      "Fat tires handle any surface"
+    ],
+    "cons": [
+      "Heavy at 65 lbs — hard to carry folded",
+      "Single-speed gearing limits steep hills",
+      "Brakes could be better",
+      "Customer service can be slow"
+    ],
+    "network_ids": {
+      "amazon": "B0DPL3W2P1"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "budget",
+      "folding",
+      "commuting"
+    ],
+    "specs": {
+      "motor_watts": 750,
+      "battery_volts": 48,
+      "range_miles": 55,
+      "top_speed_mph": 28,
+      "weight_lbs": 65,
+      "tire_size": "20x3 fat tire",
+      "frame": "Folding step-through",
+      "brakes": "Mechanical disc",
+      "gears": "Single-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "aventon-level-3",
+    "name": "Aventon Level 3 Commuter Electric Bike",
+    "brand": "Aventon",
+    "category": "electric-bikes",
+    "price_usd": 1899,
+    "rating": 4.8,
+    "verdict": "The best everyday commuter e-bike — torque sensor, integrated lights, and a refined ride that feels like a real bicycle.",
+    "description": "The Aventon Level 3 is GearLab's top-rated everyday e-bike, and riding it you understand why. Unlike cheaper hub-motor bikes, the Level 3 uses a torque sensor that responds to how hard you pedal — it feels natural, like the wind is always at your back. Integrated front and rear lights, fenders, and a rear rack make it commute-ready out of the box. The 750W motor handles hills effortlessly, and the 60+ mile range covers a full week of commuting on one charge. The step-through frame, hydraulic disc brakes, and Shimano 8-speed drivetrain make this feel like a premium bicycle that happens to be electric.",
+    "features": [
+      "Torque sensor for natural pedal assist",
+      "750W motor with 60+ mile range",
+      "Integrated lights, fenders, and rear rack",
+      "Hydraulic disc brakes",
+      "Shimano 8-speed drivetrain"
+    ],
+    "pros": [
+      "Best-riding commuter e-bike tested",
+      "Torque sensor feels natural and intuitive",
+      "Commute-ready out of the box",
+      "Hydraulic brakes provide confident stopping"
+    ],
+    "cons": [
+      "$1,899 is a significant investment",
+      "Heavy at 62 lbs",
+      "No folding option",
+      "Aventon customer service is mixed"
+    ],
+    "network_ids": {
+      "amazon": "B0DPL43ZHT"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "commuting",
+      "premium"
+    ],
+    "specs": {
+      "motor_watts": 750,
+      "battery_volts": 48,
+      "range_miles": 60,
+      "top_speed_mph": 28,
+      "weight_lbs": 62,
+      "tire_size": "27.5x2.2",
+      "frame": "Step-through",
+      "brakes": "Hydraulic disc",
+      "gears": "Shimano 8-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "rad-power-radrunner-max",
+    "name": "Rad Power Bikes RadRunner Max",
+    "brand": "Rad Power Bikes",
+    "category": "electric-bikes",
+    "price_usd": 1599,
+    "rating": 4.6,
+    "verdict": "The best utility e-bike — carries passengers, cargo, and kids with a powerful motor and comfortable ride.",
+    "description": "The RadRunner Max is the SUV of electric bikes. Its long rear rack carries a passenger (with optional passenger kit), cargo, or kid seats. The 750W motor and 48V battery provide 45+ miles of range, and the step-through frame makes mounting easy even with a loaded bike. Fat tires absorb bumps, and the front suspension fork smooths out rough roads. Rad Power is the largest e-bike brand in North America with dedicated customer support centers. For families, delivery workers, and anyone who needs to haul stuff, the RadRunner Max replaces car trips.",
+    "features": [
+      "Passenger and cargo capable rear platform",
+      "750W motor with 45+ mile range",
+      "Step-through frame for easy mounting",
+      "Front suspension fork",
+      "Rad Power's US-based customer support"
+    ],
+    "pros": [
+      "Most versatile utility e-bike",
+      "Carries passengers, cargo, or kid seats",
+      "Rad Power's support infrastructure",
+      "Comfortable ride with suspension"
+    ],
+    "cons": [
+      "Heavy at 77 lbs",
+      "45-mile range is average",
+      "Single-speed gearing",
+      "Accessories add up in cost"
+    ],
+    "network_ids": {
+      "amazon": "B0DQY78NVK"
+    },
+    "image_url": "",
+    "best_for": [
+      "cargo",
+      "family",
+      "commuting"
+    ],
+    "specs": {
+      "motor_watts": 750,
+      "battery_volts": 48,
+      "range_miles": 45,
+      "top_speed_mph": 20,
+      "weight_lbs": 77,
+      "tire_size": "20x3.3 fat tire",
+      "frame": "Step-through",
+      "brakes": "Hydraulic disc",
+      "gears": "Single-speed",
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "aventon-aventure-3",
+    "name": "Aventon Aventure 3 Fat Tire Electric Bike",
+    "brand": "Aventon",
+    "category": "electric-bikes",
+    "price_usd": 1799,
+    "rating": 4.7,
+    "verdict": "The best fat tire e-bike — go anywhere capability with 4-inch tires, torque sensor, and 60+ mile range.",
+    "description": "The Aventon Aventure 3 is built for riders who refuse to stick to pavement. 4-inch fat tires roll over sand, snow, gravel, and mud with confidence, while the torque sensor provides natural pedal assist that adapts to terrain. The 750W motor with 85Nm of torque powers through steep hills, and the 60+ mile range handles full-day adventures. Hydraulic disc brakes provide reliable stopping power even in wet conditions. The integrated display, lights, and fenders make it practical for daily use too. GearLab scored it 87/100 — their highest-rated fat tire e-bike.",
+    "features": [
+      "4-inch fat tires for all-terrain riding",
+      "Torque sensor with 85Nm motor",
+      "60+ mile range",
+      "Hydraulic disc brakes",
+      "Integrated display, lights, and fenders"
+    ],
+    "pros": [
+      "Best fat tire e-bike tested by GearLab",
+      "Torque sensor is rare in fat tire category",
+      "60+ mile range handles full-day rides",
+      "Hydraulic brakes inspire confidence"
+    ],
+    "cons": [
+      "$1,799 is premium pricing",
+      "Heavy at 77 lbs",
+      "Fat tires create more road noise",
+      "Limited color options"
+    ],
+    "network_ids": {
+      "amazon": "B0DPL4GLVT"
+    },
+    "image_url": "",
+    "best_for": [
+      "off-road",
+      "fat-tire",
+      "adventure"
+    ],
+    "specs": {
+      "motor_watts": 750,
+      "battery_volts": 48,
+      "range_miles": 60,
+      "top_speed_mph": 28,
+      "weight_lbs": 77,
+      "tire_size": "26x4 fat tire",
+      "frame": "Step-over",
+      "brakes": "Hydraulic disc",
+      "gears": "Shimano 8-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "ride1up-roadster-v3",
+    "name": "Ride1Up Roadster V3 Lightweight Electric Bike",
+    "brand": "Ride1Up",
+    "category": "electric-bikes",
+    "price_usd": 1195,
+    "rating": 4.5,
+    "verdict": "The lightest e-bike on this list — 33 lbs with a sleek design that doesn't look electric.",
+    "description": "The Ride1Up Roadster V3 is for riders who want an e-bike that looks and feels like a regular bicycle. At just 33 lbs, it's lighter than most non-electric bikes. The belt drive is silent and maintenance-free, and the internal hub motor is invisible — no one will know it's electric unless you tell them. The slim battery hides inside the downtube. 500W motor provides enough boost for city riding and moderate hills, with 30-60 miles of range depending on assist level. If you want the e-bike experience without the e-bike look, the Roadster V3 is the only choice.",
+    "features": [
+      "Just 33 lbs — lightest e-bike available",
+      "Belt drive — silent and maintenance-free",
+      "Hidden internal hub motor",
+      "Battery concealed in downtube",
+      "Sleek road bike aesthetic"
+    ],
+    "pros": [
+      "Lightest e-bike — easy to carry and store",
+      "Doesn't look like an e-bike",
+      "Belt drive eliminates chain maintenance",
+      "Clean, minimalist design"
+    ],
+    "cons": [
+      "500W motor struggles on steep hills",
+      "No throttle — pedal assist only",
+      "No suspension — road only",
+      "Limited range vs heavier competitors"
+    ],
+    "network_ids": {
+      "amazon": "B0CYW7QQ9Z"
+    },
+    "image_url": "",
+    "best_for": [
+      "lightweight",
+      "commuting",
+      "stealth"
+    ],
+    "specs": {
+      "motor_watts": 500,
+      "battery_volts": 36,
+      "range_miles": 45,
+      "top_speed_mph": 28,
+      "weight_lbs": 33,
+      "tire_size": "700x35c",
+      "frame": "Step-over",
+      "brakes": "Mechanical disc",
+      "gears": "Belt drive single-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "heybike-venus",
+    "name": "Heybike Venus Foldable Electric Bike",
+    "brand": "Heybike",
+    "category": "electric-bikes",
+    "price_usd": 600,
+    "rating": 4.3,
+    "verdict": "The cheapest folding e-bike worth buying — 500W motor, 40-mile range, and folds flat for $600.",
+    "description": "The Heybike Venus makes electric biking accessible to everyone. At $600, it's the most affordable folding e-bike that doesn't feel like a toy. The 500W motor provides enough power for flat terrain and gentle hills, and the 40-mile range covers most commutes. The folding mechanism is quick and secure, and the 20-inch fat tires provide stability. The LCD display shows speed, battery, and assist level. It's not as refined as the Lectric XP4, but at $400 less, it's the entry point for anyone curious about e-bikes without committing to a bigger investment.",
+    "features": [
+      "500W motor at just $600",
+      "40-mile range on pedal assist",
+      "Quick-fold mechanism",
+      "20\" fat tires for stability",
+      "LCD display with 3 assist levels"
+    ],
+    "pros": [
+      "Cheapest worthwhile folding e-bike",
+      "Folds quickly and securely",
+      "Fat tires provide stable ride",
+      "Good entry point for e-bike curious"
+    ],
+    "cons": [
+      "500W motor is underpowered for hills",
+      "Build quality trails pricier options",
+      "Single-speed gearing",
+      "Brakes are basic"
+    ],
+    "network_ids": {
+      "amazon": "B0CR6JKNFM"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "folding",
+      "commuting"
+    ],
+    "specs": {
+      "motor_watts": 500,
+      "battery_volts": 48,
+      "range_miles": 40,
+      "top_speed_mph": 20,
+      "weight_lbs": 55,
+      "tire_size": "20x3 fat tire",
+      "frame": "Folding",
+      "brakes": "Mechanical disc",
+      "gears": "Single-speed",
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "segway-xafari",
+    "name": "Segway Xafari Electric Bike",
+    "brand": "Segway",
+    "category": "electric-bikes",
+    "price_usd": 3499,
+    "rating": 4.8,
+    "verdict": "The most advanced e-bike tested — auto-shifting, integrated radar, and a connected app that rivals a Tesla dashboard.",
+    "description": "The Segway Xafari is what happens when a tech company builds a bicycle. GearLab gave it their highest score ever (93/100). Auto-shifting adjusts gears based on your speed and terrain — no shifter needed. Integrated rear radar warns you of approaching vehicles. The full-color display shows navigation, fitness data, and bike diagnostics. The 1000W mid-drive motor with torque sensor provides the most natural riding experience tested. 75+ mile range handles multi-day touring. At $3,499, it's the most expensive bike on this list, but it's also the most technically advanced e-bike ever produced.",
+    "features": [
+      "Auto-shifting transmission",
+      "Integrated rear radar for vehicle detection",
+      "1000W mid-drive motor with torque sensor",
+      "Full-color navigation display",
+      "Connected app with diagnostics"
+    ],
+    "pros": [
+      "Most technically advanced e-bike available",
+      "GearLab's highest score ever (93/100)",
+      "Auto-shifting is revolutionary",
+      "Integrated radar adds real safety"
+    ],
+    "cons": [
+      "$3,499 is a major investment",
+      "Heavy at 70 lbs",
+      "Complex tech means complex repairs",
+      "Overkill for casual riders"
+    ],
+    "network_ids": {
+      "amazon": "B0DK7SBBQS"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "tech",
+      "commuting"
+    ],
+    "specs": {
+      "motor_watts": 1000,
+      "battery_volts": 48,
+      "range_miles": 75,
+      "top_speed_mph": 28,
+      "weight_lbs": 70,
+      "tire_size": "27.5x2.4",
+      "frame": "Step-over",
+      "brakes": "Hydraulic disc",
+      "gears": "Auto-shifting",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "velotric-discover-3",
+    "name": "Velotric Discover 3 Commuter Electric Bike",
+    "brand": "Velotric",
+    "category": "electric-bikes",
+    "price_usd": 1899,
+    "rating": 4.6,
+    "verdict": "The best e-bike for seniors — low step-through, smooth torque sensor, and an upright riding position.",
+    "description": "The Velotric Discover 3 is designed for comfort above all else. The ultra-low step-through frame lets riders mount without lifting their leg high — ideal for seniors and anyone with mobility limitations. The upright riding position reduces back and neck strain, and the wide comfort saddle supports longer rides. The torque sensor provides smooth, natural assist, and the 750W motor handles hills without drama. 80+ mile range is the longest in this roundup. Integrated lights, fenders, and a rear rack make it practical for errands and commuting. If comfort is your priority, this is the bike.",
+    "features": [
+      "Ultra-low step-through frame",
+      "80+ mile range — longest in roundup",
+      "Torque sensor for smooth assist",
+      "Upright comfort riding position",
+      "Integrated lights, fenders, and rack"
+    ],
+    "pros": [
+      "Most comfortable e-bike for seniors",
+      "80+ mile range is exceptional",
+      "Ultra-low step-through is accessible",
+      "Smooth, natural pedal assist"
+    ],
+    "cons": [
+      "$1,899 is premium pricing",
+      "Heavy at 65 lbs",
+      "Limited off-road capability",
+      "Comfort saddle may not suit all riders"
+    ],
+    "network_ids": {
+      "amazon": "B0DQHX7NVB"
+    },
+    "image_url": "",
+    "best_for": [
+      "seniors",
+      "comfort",
+      "commuting"
+    ],
+    "specs": {
+      "motor_watts": 750,
+      "battery_volts": 48,
+      "range_miles": 80,
+      "top_speed_mph": 28,
+      "weight_lbs": 65,
+      "tire_size": "27.5x2.2",
+      "frame": "Step-through",
+      "brakes": "Hydraulic disc",
+      "gears": "Shimano 7-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "lectric-xp-lite-2",
+    "name": "Lectric XP Lite 2 Folding Electric Bike",
+    "brand": "Lectric",
+    "category": "electric-bikes",
+    "price_usd": 799,
+    "rating": 4.4,
+    "verdict": "The lightest folding e-bike under $1,000 — 46 lbs with a sleek design and 40+ mile range.",
+    "description": "The Lectric XP Lite 2 strips the XP4 down to essentials for a lighter, sleeker package. At 46 lbs (vs 65 for the XP4), it's significantly easier to carry and store. The 300W motor is adequate for flat terrain and gentle hills, and the 40+ mile range covers daily commuting. The folding mechanism is quick, and the standard tires (not fat) make it feel more like a regular bike. At $799, it's the lightest affordable folding e-bike available. Perfect for apartment dwellers and train commuters who need to carry their bike.",
+    "features": [
+      "Just 46 lbs — lightest folding e-bike under $1K",
+      "300W motor with 40+ mile range",
+      "Quick-fold mechanism",
+      "Standard tires for road feel",
+      "5 levels of pedal assist"
+    ],
+    "pros": [
+      "Light enough to actually carry",
+      "$200 less than XP4",
+      "Feels like a real bike",
+      "Perfect for apartment storage"
+    ],
+    "cons": [
+      "300W motor is underpowered for hills",
+      "No throttle on some models",
+      "Standard tires limit off-road use",
+      "Less range than XP4"
+    ],
+    "network_ids": {
+      "amazon": "B0D9VT5S5R"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "folding",
+      "lightweight"
+    ],
+    "specs": {
+      "motor_watts": 300,
+      "battery_volts": 48,
+      "range_miles": 40,
+      "top_speed_mph": 20,
+      "weight_lbs": 46,
+      "tire_size": "20x2.4",
+      "frame": "Folding",
+      "brakes": "Mechanical disc",
+      "gears": "Single-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "aventon-soltera-3-adv",
+    "name": "Aventon Soltera 3 ADV Electric Road Bike",
+    "brand": "Aventon",
+    "category": "electric-bikes",
+    "price_usd": 1399,
+    "rating": 4.5,
+    "verdict": "The best e-bike for fitness — lightweight with a torque sensor that rewards your effort, not replaces it.",
+    "description": "The Aventon Soltera 3 ADV is for riders who want exercise, not a motorcycle. The torque sensor multiplies your pedal effort rather than replacing it — ride harder, get more assist. At 42 lbs, it's light enough to ride without power and still enjoy it. The road bike geometry and 700c tires make it fast on pavement, and the hidden battery maintains a clean aesthetic. 50+ mile range handles long fitness rides. If you want an e-bike that makes you fitter rather than lazier, the Soltera is designed exactly for that purpose.",
+    "features": [
+      "Torque sensor rewards pedal effort",
+      "42 lbs — rides well without power",
+      "Road bike geometry for speed",
+      "Hidden battery for clean aesthetic",
+      "50+ mile range"
+    ],
+    "pros": [
+      "Best e-bike for actual exercise",
+      "Light enough to ride unpowered",
+      "Torque sensor encourages effort",
+      "Sleek road bike appearance"
+    ],
+    "cons": [
+      "$1,399 for a fitness bike is steep",
+      "No throttle — pedal only",
+      "Road tires limit off-road use",
+      "No suspension"
+    ],
+    "network_ids": {
+      "amazon": "B0DPL3GXVZ"
+    },
+    "image_url": "",
+    "best_for": [
+      "fitness",
+      "lightweight",
+      "road"
+    ],
+    "specs": {
+      "motor_watts": 500,
+      "battery_volts": 36,
+      "range_miles": 50,
+      "top_speed_mph": 28,
+      "weight_lbs": 42,
+      "tire_size": "700x40c",
+      "frame": "Step-over",
+      "brakes": "Hydraulic disc",
+      "gears": "Shimano 8-speed",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
