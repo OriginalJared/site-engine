@@ -1,1 +1,500 @@
-
+[
+  {
+    "slug": "herman-miller-aeron",
+    "name": "Herman Miller Aeron Remastered Ergonomic Chair",
+    "brand": "Herman Miller",
+    "category": "office-chairs",
+    "price_usd": 1495,
+    "rating": 4.8,
+    "verdict": "The gold standard of ergonomic chairs — 12-year warranty, all-mesh breathability, and PostureFit SL lumbar support.",
+    "description": "The Herman Miller Aeron has been the benchmark for ergonomic seating for over 25 years, and the remastered version improves on a legend. The all-mesh 8Z Pellicle suspension distributes weight evenly while allowing airflow — no more sweaty back during long sessions. PostureFit SL supports both the lumbar and sacral regions of your spine, and every adjustment (arms, tilt, height, forward lean) is intuitive. Available in three sizes (A, B, C) to fit different body types. The 12-year warranty covers everything. It's expensive, but people keep these chairs for a decade or more.",
+    "features": [
+      "8Z Pellicle mesh — breathable and weight-distributing",
+      "PostureFit SL lumbar + sacral support",
+      "Available in 3 sizes (A, B, C)",
+      "12-year comprehensive warranty",
+      "Fully adjustable arms, tilt, height, and forward lean"
+    ],
+    "pros": [
+      "12-year warranty — best in the industry",
+      "All-mesh construction prevents overheating",
+      "PostureFit SL is the best lumbar system tested",
+      "Holds resale value extremely well"
+    ],
+    "cons": [
+      "$1,495 is a major investment",
+      "Mesh may feel too firm for some users",
+      "No headrest option on standard model",
+      "Assembly options are limited"
+    ],
+    "network_ids": {
+      "amazon": "B01N0ZTXF5"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "best-overall",
+      "long-sessions"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 350,
+      "seat_height_min_in": 16,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "PostureFit SL",
+      "material": "Mesh (8Z Pellicle)",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Kinemat",
+      "warranty_years": 12
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "steelcase-leap-v2",
+    "name": "Steelcase Leap V2 Ergonomic Office Chair",
+    "brand": "Steelcase",
+    "category": "office-chairs",
+    "price_usd": 1279,
+    "rating": 4.7,
+    "verdict": "The best chair for back pain — LiveBack technology flexes with your spine throughout the day.",
+    "description": "The Steelcase Leap V2 is the chair physical therapists recommend. Its LiveBack technology allows the backrest to flex and adapt to your spine's natural movement as you shift positions throughout the day — no manual adjustment needed. The lower back firmness control lets you dial in exactly how much lumbar pressure you want. Unlike mesh chairs, the Leap uses a high-density foam seat that many find more comfortable for 8+ hour days. The 12-year warranty matches Herman Miller, and Steelcase's build quality is legendary. If you have back problems, this is the chair to try first.",
+    "features": [
+      "LiveBack technology adapts to spine movement",
+      "Adjustable lower back firmness control",
+      "High-density foam seat for all-day comfort",
+      "Natural Glide System for smooth recline",
+      "12-year warranty"
+    ],
+    "pros": [
+      "Best chair for existing back pain",
+      "LiveBack eliminates constant readjustment",
+      "Foam seat is more comfortable than mesh for many",
+      "12-year warranty matches Herman Miller"
+    ],
+    "cons": [
+      "$1,279 is a significant investment",
+      "Foam seat retains more heat than mesh",
+      "Heavier than mesh competitors — harder to move",
+      "Fabric options are limited on Amazon"
+    ],
+    "network_ids": {
+      "amazon": "B006H1QYBA"
+    },
+    "image_url": "",
+    "best_for": [
+      "back-pain",
+      "premium",
+      "long-sessions"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 400,
+      "seat_height_min_in": 15.5,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "LiveBack + adjustable firmness",
+      "material": "Fabric over foam",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Natural Glide",
+      "warranty_years": 12
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "secretlab-titan-evo-2026",
+    "name": "Secretlab Titan Evo 2026 Series",
+    "brand": "Secretlab",
+    "category": "office-chairs",
+    "price_usd": 549,
+    "rating": 4.7,
+    "verdict": "The best gaming/office hybrid — 4-way L-ADAPT lumbar, magnetic accessories, and a 5-year warranty at half the price of Herman Miller.",
+    "description": "Secretlab bridged the gap between gaming and office chairs, and the Titan Evo 2026 is their best yet. The 4-way L-ADAPT lumbar system provides depth and height adjustment that rivals chairs twice its price. The magnetic headrest pillow and armrest tops snap on and off for easy customization. Build quality is exceptional — the cold-cure foam seat maintains its shape for years, and the multi-tilt mechanism locks at any angle. Available in Regular, Small, and XL sizes. At $549 with a 5-year warranty, it's the value play for anyone who wants premium ergonomics without the $1,500 price tag.",
+    "features": [
+      "4-way L-ADAPT lumbar support system",
+      "Magnetic headrest and armrest accessories",
+      "Cold-cure foam seat retains shape for years",
+      "Available in 3 sizes (S, R, XL)",
+      "5-year warranty with 49-day return policy"
+    ],
+    "pros": [
+      "Premium ergonomics at half the price of Herman Miller",
+      "Magnetic accessories are innovative and convenient",
+      "Cold-cure foam outlasts standard foam by years",
+      "5-year warranty with generous return policy"
+    ],
+    "cons": [
+      "Gaming aesthetic may not suit all offices",
+      "Faux leather can peel after 3-4 years",
+      "Heavier than mesh alternatives",
+      "Limited recline compared to dedicated recliners"
+    ],
+    "network_ids": {
+      "amazon": "B0D9H26V35"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "gaming",
+      "budget-premium"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 395,
+      "seat_height_min_in": 17.7,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "4-way L-ADAPT",
+      "material": "NEO Hybrid Leatherette / SoftWeave Plus",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Multi-tilt",
+      "warranty_years": 5
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "branch-ergonomic-chair",
+    "name": "Branch Ergonomic Chair",
+    "brand": "Branch",
+    "category": "office-chairs",
+    "price_usd": 399,
+    "rating": 4.5,
+    "verdict": "The best office chair under $500 — clean design, 7 adjustment points, and a 7-year warranty from a DTC brand.",
+    "description": "Branch disrupted the office furniture market by selling direct-to-consumer, cutting out the retail markup that inflates chair prices. The result is a chair with 7 points of adjustment (height, depth, tilt, tension, lumbar, armrest height, armrest width), breathable Italian mesh, and a 7-year warranty — all for $399. The design is clean and minimal, fitting any office aesthetic. It's not as refined as a $1,500 Herman Miller, but for the vast majority of desk workers, it provides 85% of the ergonomic benefit at 25% of the cost. Branch also offers a 30-day free trial.",
+    "features": [
+      "7 points of ergonomic adjustment",
+      "Italian mesh back — breathable and supportive",
+      "7-year warranty — exceptional at this price",
+      "30-day free trial with free returns",
+      "Direct-to-consumer pricing"
+    ],
+    "pros": [
+      "Best value ergonomic chair under $500",
+      "7-year warranty rivals premium brands",
+      "Clean, office-appropriate design",
+      "30-day risk-free trial"
+    ],
+    "cons": [
+      "Lumbar support isn't as adjustable as premium chairs",
+      "Seat cushion can flatten after 2-3 years",
+      "Armrests feel basic compared to Steelcase Gesture",
+      "Limited color/fabric options"
+    ],
+    "network_ids": {
+      "amazon": "B0CPM1RJMV"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget-premium",
+      "home-office",
+      "best-overall"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 300,
+      "seat_height_min_in": 17,
+      "seat_height_max_in": 21,
+      "lumbar_support": "Adjustable lumbar pad",
+      "material": "Italian mesh back, foam seat",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Synchro-tilt",
+      "warranty_years": 7
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "sihoo-m18",
+    "name": "SIHOO M18 Ergonomic Office Chair",
+    "brand": "SIHOO",
+    "category": "office-chairs",
+    "price_usd": 200,
+    "rating": 4.3,
+    "verdict": "The best office chair under $250 — adjustable lumbar, headrest, and breathable mesh at an entry-level price.",
+    "description": "The SIHOO M18 is the chair you buy when you need real ergonomic features but can't justify $400+. Adjustable lumbar support (height and depth), a 2D adjustable headrest, flip-up armrests, and full mesh construction make it feel like a chair twice its price. The 330 lb weight capacity handles larger users, and the S-shaped backrest follows the natural curve of your spine. At $200, it's the most-recommended budget ergonomic chair on Amazon with 16,000+ reviews. It won't last 12 years like a Herman Miller, but for the price of two nice dinners out, you get a legitimate ergonomic chair.",
+    "features": [
+      "Adjustable lumbar support (height + depth)",
+      "2D adjustable headrest",
+      "Flip-up armrests — save space when not needed",
+      "Full mesh back and seat",
+      "330 lb weight capacity"
+    ],
+    "pros": [
+      "Best ergonomic features under $250",
+      "Flip-up armrests are uniquely practical",
+      "Full mesh keeps you cool all day",
+      "16,000+ reviews with strong ratings"
+    ],
+    "cons": [
+      "Build quality won't match premium chairs long-term",
+      "Lumbar pad can slip over time",
+      "Armrest padding is thin",
+      "3-year warranty is shorter than competitors"
+    ],
+    "network_ids": {
+      "amazon": "B08QXY5Z46"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "home-office"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 330,
+      "seat_height_min_in": 17.3,
+      "seat_height_max_in": 21.3,
+      "lumbar_support": "Adjustable (height + depth)",
+      "material": "Breathable mesh",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Tilt lock",
+      "warranty_years": 3
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "steelcase-gesture",
+    "name": "Steelcase Gesture Ergonomic Office Chair",
+    "brand": "Steelcase",
+    "category": "office-chairs",
+    "price_usd": 1229,
+    "rating": 4.7,
+    "verdict": "The best armrests in any chair — 360-degree arm movement supports every work posture from typing to tablet to phone.",
+    "description": "The Steelcase Gesture was designed for the modern multi-device worker. Its signature feature is the 360-degree armrests that move in every direction — up, down, in, out, forward, back, and pivoting — to support your arms whether you're typing on a keyboard, swiping a tablet, holding a phone to your ear, or sketching on paper. No other chair offers this range of arm support. The seat and back adjust together for a natural recline, and the core equalizer adapts to different spine shapes. 12-year warranty, Steelcase build quality, and the most innovative armrest system on the market.",
+    "features": [
+      "360-degree armrests — support any work posture",
+      "Core Equalizer adapts to different spine shapes",
+      "Seat and back adjust together for natural recline",
+      "Available in multiple sizes and fabrics",
+      "12-year warranty"
+    ],
+    "pros": [
+      "Armrests are genuinely revolutionary — nothing else compares",
+      "Core Equalizer fits a wider range of body types",
+      "12-year warranty with Steelcase reliability",
+      "Excellent for multi-device workers"
+    ],
+    "cons": [
+      "$1,229 is premium pricing",
+      "Lumbar support is less pronounced than Leap V2",
+      "Seat edge can feel firm initially",
+      "Heavy — not easy to move between rooms"
+    ],
+    "network_ids": {
+      "amazon": "B016OIF2JU"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "multi-device",
+      "long-sessions"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 400,
+      "seat_height_min_in": 16,
+      "seat_height_max_in": 21,
+      "lumbar_support": "Core Equalizer",
+      "material": "Fabric over foam",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Weight-activated",
+      "warranty_years": 12
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "felixking-ergonomic-mesh",
+    "name": "FelixKing Ergonomic Mesh Office Chair",
+    "brand": "FelixKing",
+    "category": "office-chairs",
+    "price_usd": 130,
+    "rating": 4.3,
+    "verdict": "The best office chair under $150 — adjustable headrest, lumbar pillow, and breathable mesh at a rock-bottom price.",
+    "description": "The FelixKing is the most popular budget office chair on Amazon for a reason. At $130, you get an adjustable headrest, a removable lumbar pillow, breathable mesh back, flip-up armrests, and a smooth tilt mechanism. It's not going to win awards for build quality or long-term durability, but for a home office, dorm, or secondary workstation where you need a comfortable chair without a big investment, it delivers more ergonomic features than any other chair at this price. Assembly takes about 20 minutes, and the 250 lb weight capacity covers most users.",
+    "features": [
+      "Adjustable headrest and removable lumbar pillow",
+      "Breathable mesh back",
+      "Flip-up armrests for space saving",
+      "Smooth tilt mechanism with lock",
+      "250 lb weight capacity"
+    ],
+    "pros": [
+      "Most features per dollar under $150",
+      "Flip-up armrests are genuinely useful",
+      "Breathable mesh keeps you cool",
+      "Quick and easy 20-minute assembly"
+    ],
+    "cons": [
+      "250 lb capacity is limiting",
+      "Lumbar pillow attaches with velcro — can slip",
+      "Seat cushion compresses after 1-2 years",
+      "1-year warranty is short"
+    ],
+    "network_ids": {
+      "amazon": "B08QXY1NW5"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "home-office",
+      "small-spaces"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 250,
+      "seat_height_min_in": 17,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "Removable lumbar pillow",
+      "material": "Breathable mesh",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Tilt with lock",
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "autonomous-ergochair-pro",
+    "name": "Autonomous ErgoChair Pro",
+    "brand": "Autonomous",
+    "category": "office-chairs",
+    "price_usd": 449,
+    "rating": 4.4,
+    "verdict": "A DTC ergonomic chair with 11 adjustment points — more customizable than chairs twice its price.",
+    "description": "Autonomous' ErgoChair Pro offers 11 points of adjustment — more than any other chair under $500. Seat height, depth, tilt, tilt tension, tilt range, back recline, back height, lumbar support, headrest height, headrest tilt, and armrest position are all independently adjustable. The woven mesh back provides excellent airflow, and the molded foam seat stays comfortable through 8-hour days. At $449 direct from Autonomous, it undercuts comparable chairs from Branch and Steelcase. The 2-year warranty is shorter than competitors, but the adjustability range is unmatched at this price.",
+    "features": [
+      "11 points of independent adjustment",
+      "Woven mesh back for airflow",
+      "Molded foam seat for all-day comfort",
+      "Adjustable headrest with tilt",
+      "300 lb weight capacity"
+    ],
+    "pros": [
+      "Most adjustable chair under $500",
+      "Woven mesh back is breathable and supportive",
+      "Direct-to-consumer pricing",
+      "Good for a wide range of body types"
+    ],
+    "cons": [
+      "2-year warranty is shorter than competitors",
+      "Armrest padding is basic",
+      "Brand is newer — less reliability data",
+      "Assembly is more complex than average"
+    ],
+    "network_ids": {
+      "amazon": "B0BRK5LBCX"
+    },
+    "image_url": "",
+    "best_for": [
+      "adjustability",
+      "home-office",
+      "budget-premium"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 300,
+      "seat_height_min_in": 17,
+      "seat_height_max_in": 21,
+      "lumbar_support": "Adjustable (height + depth)",
+      "material": "Woven mesh back, foam seat",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Multi-tilt with lock",
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "hbada-e3-ergonomic",
+    "name": "Hbada E3 Ergonomic Office Chair",
+    "brand": "Hbada",
+    "category": "office-chairs",
+    "price_usd": 230,
+    "rating": 4.4,
+    "verdict": "A sleek mid-range pick — adjustable lumbar, 2D armrests, and a modern design that looks good in any office.",
+    "description": "The Hbada E3 hits the sweet spot between budget and premium. At $230, you get a built-in adjustable lumbar support system (not a removable pillow), 2D armrests, an adjustable headrest, and a modern curved design that looks professional. The mesh back and seat provide full breathability, and the 300 lb capacity handles most users comfortably. The tilt mechanism is smooth with adjustable tension and a lock position. It's the chair you buy when the $130 options feel too cheap and the $400+ options feel too expensive. 3-year warranty and straightforward assembly.",
+    "features": [
+      "Built-in adjustable lumbar support",
+      "2D adjustable armrests",
+      "Adjustable headrest",
+      "Full mesh back and seat",
+      "300 lb weight capacity"
+    ],
+    "pros": [
+      "Built-in lumbar is more reliable than pillow-style",
+      "Modern design suits any office aesthetic",
+      "Full mesh keeps you cool",
+      "Good value at the $200-250 price point"
+    ],
+    "cons": [
+      "Seat mesh can feel firm initially",
+      "2D armrests are basic vs 4D competitors",
+      "3-year warranty is mid-range",
+      "Headrest angle adjustment is limited"
+    ],
+    "network_ids": {
+      "amazon": "B0CFXQJFYY"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget-premium",
+      "home-office"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 300,
+      "seat_height_min_in": 16.9,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "Built-in adjustable",
+      "material": "Full mesh",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Synchro-tilt with lock",
+      "warranty_years": 3
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "amazon-basics-ergonomic-executive",
+    "name": "Amazon Basics Ergonomic Executive Office Chair",
+    "brand": "Amazon Basics",
+    "category": "office-chairs",
+    "price_usd": 170,
+    "rating": 4.2,
+    "verdict": "The cheapest executive-style chair worth buying — padded leather, flip-up arms, and lumbar support under $200.",
+    "description": "If you want the look of an executive leather chair with basic ergonomic features, the Amazon Basics Ergonomic Executive is the safest budget pick. The bonded leather upholstery looks professional, the flip-up armrests save space, and the adjustable lumbar support provides basic lower back relief. At $170, it won't match the ergonomic performance of a mesh chair, but for an office where appearance matters and you're not sitting 10+ hours daily, it does the job. Amazon's return policy makes it risk-free to try, and the padded seat is comfortable for moderate use.",
+    "features": [
+      "Bonded leather executive styling",
+      "Flip-up padded armrests",
+      "Adjustable lumbar support",
+      "Padded waterfall seat edge",
+      "275 lb weight capacity"
+    ],
+    "pros": [
+      "Professional executive appearance",
+      "Amazon return policy makes it risk-free",
+      "Padded seat is comfortable for moderate use",
+      "Flip-up armrests are practical"
+    ],
+    "cons": [
+      "Bonded leather peels after 2-3 years",
+      "Not suitable for 8+ hour daily use",
+      "275 lb capacity is limiting",
+      "Lumbar support is basic"
+    ],
+    "network_ids": {
+      "amazon": "B0BQCCZ7TC"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "executive",
+      "appearance"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 275,
+      "seat_height_min_in": 17.5,
+      "seat_height_max_in": 21.5,
+      "lumbar_support": "Adjustable pad",
+      "material": "Bonded leather",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Tilt with lock",
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
