@@ -1,1 +1,509 @@
-
+[
+  {
+    "slug": "roborock-qrevo-curvx",
+    "name": "Roborock Qrevo CurvX Robot Vacuum and Mop",
+    "brand": "Roborock",
+    "category": "robot-vacuums",
+    "price_usd": 800,
+    "rating": 4.8,
+    "verdict": "The best mid-premium robot vacuum of 2026 — CurvX edge cleaning, 8000Pa suction, and a self-maintaining dock at under $900.",
+    "description": "The Roborock Qrevo CurvX brings a curved rubber side brush that reaches into corners and along baseboards better than any flat-edge competitor. With 8000Pa suction, dual spinning mop pads, and a dock that empties dust, washes mops with hot water, and refills the robot's tank automatically, this is about as close to truly hands-free floor care as it gets. LiDAR navigation maps your home in a single run, and the app lets you set no-go zones, schedule room-specific cleanings, and adjust suction per surface. At around $800, it undercuts the premium flagships while matching most of their performance.",
+    "features": [
+      "CurvX curved side brush for edge and corner cleaning",
+      "8000Pa suction power",
+      "Self-emptying, self-washing, self-refilling dock",
+      "LiDAR navigation with multi-floor mapping",
+      "Dual spinning mop pads with hot water washing"
+    ],
+    "pros": [
+      "Edge cleaning is best-in-class",
+      "Powerful suction handles pet hair and carpets",
+      "Dock handles all maintenance automatically",
+      "Excellent app with granular controls"
+    ],
+    "cons": [
+      "Dock is large — needs dedicated floor space",
+      "Mop performance on dried stains is average",
+      "Premium price point",
+      "Loud on max suction setting"
+    ],
+    "network_ids": {
+      "amazon": "B0DKQ9D3SL"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "pet-hair",
+      "carpet"
+    ],
+    "specs": {
+      "suction_pa": 8000,
+      "battery_life_min": 180,
+      "dustbin_ml": 400,
+      "water_tank_ml": 350,
+      "noise_db": 67,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "dreame-x50-ultra",
+    "name": "Dreame X50 Ultra Robot Vacuum and Mop",
+    "brand": "Dreame",
+    "category": "robot-vacuums",
+    "price_usd": 1100,
+    "rating": 4.9,
+    "verdict": "The most advanced robot vacuum of 2026 — retractable legs climb over door thresholds that stop every other robot cold.",
+    "description": "The Dreame X50 Ultra is the first robot vacuum with retractable ProLeap legs that physically climb over door tracks and raised thresholds up to 2.36 inches — a game-changer for multi-room homes. Pair that with 20,000Pa suction, a 220-minute battery, 80-degree hot water mopping built into the robot itself, and AI obstacle avoidance that recognizes 100+ object types, and you have the most complete robot vacuum package money can buy. The self-maintaining dock empties, washes, dries, and refills automatically. It's expensive, but nothing else can match what it does.",
+    "features": [
+      "ProLeap retractable legs — crosses 2.36\" thresholds",
+      "20,000Pa suction — strongest in class",
+      "Built-in 80°C hot water mop system",
+      "AI obstacle avoidance (100+ object types)",
+      "Self-maintaining dock with hot air drying"
+    ],
+    "pros": [
+      "Threshold crossing is revolutionary",
+      "Suction power is unmatched",
+      "Hot water mopping built into the robot",
+      "Best AI obstacle avoidance tested"
+    ],
+    "cons": [
+      "Most expensive robot vacuum on this list",
+      "Dock is very large",
+      "Overkill for small apartments",
+      "Complex app with steep learning curve"
+    ],
+    "network_ids": {
+      "amazon": "B0DTYB4GV1"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "large-homes",
+      "pet-hair"
+    ],
+    "specs": {
+      "suction_pa": 20000,
+      "battery_life_min": 220,
+      "dustbin_ml": 450,
+      "water_tank_ml": 400,
+      "noise_db": 65,
+      "navigation": "LiDAR + 3D",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "ecovacs-deebot-t30s-omni",
+    "name": "ECOVACS DEEBOT T30S Omni Robot Vacuum and Mop",
+    "brand": "ECOVACS",
+    "category": "robot-vacuums",
+    "price_usd": 600,
+    "rating": 4.6,
+    "verdict": "The best robot vacuum under $700 — TruEdge adaptive mopping, 11,000Pa suction, and a full self-maintaining dock.",
+    "description": "The DEEBOT T30S Omni hits the sweet spot between premium features and reasonable pricing. Its TruEdge adaptive mopping system extends the mop pad to reach right up to baseboards, and 11,000Pa suction handles everything from hardwood dust to embedded carpet dirt. The OMNI station empties the dustbin, washes and dries the mop pads with hot water and hot air, and refills the clean water tank. ECOVACS' YIKO voice assistant lets you give natural language commands without the app. At around $600, it delivers 90% of what $1000+ robots offer.",
+    "features": [
+      "TruEdge adaptive mopping reaches baseboards",
+      "11,000Pa suction power",
+      "OMNI station: empties, washes, dries, refills",
+      "YIKO voice assistant for natural commands",
+      "AIVI 3D obstacle avoidance"
+    ],
+    "pros": [
+      "Excellent value — premium features under $700",
+      "TruEdge mopping is genuinely effective",
+      "Quiet operation for a high-suction robot",
+      "Voice control without the app is convenient"
+    ],
+    "cons": [
+      "Mop pad lifting is limited on thick carpets",
+      "Dock is still quite large",
+      "App can be buggy after firmware updates",
+      "Mapping can struggle in very dark rooms"
+    ],
+    "network_ids": {
+      "amazon": "B0D1FMPJJG"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "hardwood",
+      "budget-premium"
+    ],
+    "specs": {
+      "suction_pa": 11000,
+      "battery_life_min": 180,
+      "dustbin_ml": 350,
+      "water_tank_ml": 300,
+      "noise_db": 63,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "irobot-roomba-combo-j9",
+    "name": "iRobot Roomba Combo j9+ Self-Emptying Robot Vacuum and Mop",
+    "brand": "iRobot",
+    "category": "robot-vacuums",
+    "price_usd": 700,
+    "rating": 4.5,
+    "verdict": "The smartest Roomba ever — auto-retracting mop pad, P.O.O.P. promise for pet owners, and iRobot's proven reliability.",
+    "description": "The Roomba Combo j9+ is iRobot's answer to the Chinese robot vacuum invasion, and it's a strong one. The headline feature is the auto-retracting mop pad that lifts completely onto the robot's top when it detects carpet — no wet carpet disasters. iRobot's P.O.O.P. (Pet Owner Official Promise) guarantees the robot will avoid pet waste or they'll replace it. The self-emptying Clean Base holds 60 days of debris. Navigation is excellent thanks to PrecisionVision and iRobot OS, which learns your home's layout over time and suggests cleaning schedules based on your habits.",
+    "features": [
+      "Auto-retracting mop pad — fully lifts off carpet",
+      "P.O.O.P. guarantee for pet waste avoidance",
+      "Clean Base holds 60 days of debris",
+      "PrecisionVision navigation learns your habits",
+      "iRobot OS suggests smart cleaning schedules"
+    ],
+    "pros": [
+      "Mop retraction is the best carpet-protection system",
+      "P.O.O.P. promise gives pet owners peace of mind",
+      "60-day self-empty base is very convenient",
+      "Excellent long-term reliability and support"
+    ],
+    "cons": [
+      "Suction is lower than Chinese competitors",
+      "No hot water mop washing in dock",
+      "Premium price for mid-range suction specs",
+      "App ecosystem feels dated vs competitors"
+    ],
+    "network_ids": {
+      "amazon": "B0C415HQPX"
+    },
+    "image_url": "",
+    "best_for": [
+      "pet-hair",
+      "carpet",
+      "smart-home"
+    ],
+    "specs": {
+      "suction_pa": 5000,
+      "battery_life_min": 120,
+      "dustbin_ml": 400,
+      "water_tank_ml": 300,
+      "noise_db": 65,
+      "navigation": "PrecisionVision + LiDAR",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "tp-link-tapo-rv30-max-plus",
+    "name": "TP-Link Tapo RV30 Max Plus Robot Vacuum and Mop",
+    "brand": "TP-Link",
+    "category": "robot-vacuums",
+    "price_usd": 230,
+    "rating": 4.4,
+    "verdict": "The best budget robot vacuum of 2026 — LiDAR navigation and a self-emptying dock for under $250.",
+    "description": "The Tapo RV30 Max Plus is a budget miracle. For around $230, you get LiDAR navigation (not camera-based or random-bounce), a self-emptying dock, 5300Pa suction, and a basic mopping system. Two years ago, this feature set cost $500+. The app supports multi-floor mapping, no-go zones, and scheduling. Suction won't match the $800+ robots, but for daily maintenance cleaning of hardwood and low-pile carpet, it's more than adequate. TP-Link's smart home ecosystem integration is a bonus if you already use their products.",
+    "features": [
+      "LiDAR navigation at a budget price",
+      "Self-emptying dock included",
+      "5300Pa suction — strong for the price",
+      "Multi-floor mapping with no-go zones",
+      "TP-Link smart home ecosystem integration"
+    ],
+    "pros": [
+      "Incredible value — LiDAR + self-empty under $250",
+      "Navigation is surprisingly accurate",
+      "App is clean and intuitive",
+      "Quiet operation on standard mode"
+    ],
+    "cons": [
+      "Mopping is basic — just a drag pad",
+      "Dock doesn't wash mops",
+      "5300Pa won't deep-clean thick carpet",
+      "Build quality is noticeably budget"
+    ],
+    "network_ids": {
+      "amazon": "B0DGB1LP4Z"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "hardwood",
+      "small-spaces"
+    ],
+    "specs": {
+      "suction_pa": 5300,
+      "battery_life_min": 150,
+      "dustbin_ml": 350,
+      "water_tank_ml": 200,
+      "noise_db": 60,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "shark-av2511ae-matrix-clean",
+    "name": "Shark Matrix Clean Robot Vacuum with Self-Empty Base",
+    "brand": "Shark",
+    "category": "robot-vacuums",
+    "price_usd": 350,
+    "rating": 4.3,
+    "verdict": "A trusted American brand at a mid-range price — Matrix Clean grid pattern ensures no missed spots.",
+    "description": "Shark's Matrix Clean system uses a precision grid pattern to ensure the robot covers every inch of floor space, eliminating the random missed patches common with cheaper robots. The self-emptying base holds 60 days of debris, and the bagless design saves on replacement costs. LiDAR navigation maps your home accurately, and the app supports room-specific cleaning and scheduling. At $350, it's positioned between budget and premium — you get reliable American brand support and solid performance without the bleeding-edge features (or prices) of the flagship Chinese robots.",
+    "features": [
+      "Matrix Clean grid pattern — no missed spots",
+      "60-day self-emptying base (bagless)",
+      "LiDAR navigation with room mapping",
+      "Anti-allergen complete seal technology",
+      "Voice control via Alexa and Google"
+    ],
+    "pros": [
+      "Trusted brand with US-based customer support",
+      "Matrix Clean pattern is genuinely thorough",
+      "Bagless self-empty saves on replacement costs",
+      "Good suction for the price"
+    ],
+    "cons": [
+      "No mop function",
+      "Suction is mid-range vs premium competitors",
+      "App is basic compared to Roborock/Dreame",
+      "Can struggle with high-pile carpet transitions"
+    ],
+    "network_ids": {
+      "amazon": "B0CXKZ4N21"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "allergies"
+    ],
+    "specs": {
+      "suction_pa": 4500,
+      "battery_life_min": 120,
+      "dustbin_ml": 500,
+      "water_tank_ml": 0,
+      "noise_db": 62,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "eufy-omni-e25",
+    "name": "eufy Robot Vacuum Omni E25",
+    "brand": "eufy",
+    "category": "robot-vacuums",
+    "price_usd": 400,
+    "rating": 4.5,
+    "verdict": "eufy's best all-rounder — 20,000Pa suction, roller mop, and an all-in-one dock at a competitive price.",
+    "description": "The eufy Omni E25 punches way above its $400 price tag. It packs 20,000Pa suction (matching robots twice its price), a HydroJet roller mop that scrubs rather than just drags, and an all-in-one dock that empties dust, washes the roller, and dries it with hot air. The zero-tangle roller brush is a genuine innovation for pet owners — hair wraps around a blade and gets cut automatically. AI obstacle avoidance keeps it from eating cables and socks. For $400, this is arguably the best value in robot vacuums right now.",
+    "features": [
+      "20,000Pa suction — matches premium robots",
+      "HydroJet always-clean roller mop",
+      "Zero-tangle roller brush with auto hair cutting",
+      "All-in-one dock: empties, washes, dries",
+      "AI obstacle avoidance"
+    ],
+    "pros": [
+      "Incredible suction for the price",
+      "Zero-tangle brush is a game-changer for pet owners",
+      "Roller mop actually scrubs vs drag-pad competitors",
+      "All-in-one dock at $400 is exceptional value"
+    ],
+    "cons": [
+      "Navigation isn't as refined as Roborock",
+      "Dock is large for the robot's size",
+      "App occasionally loses connection",
+      "Edge cleaning could be better"
+    ],
+    "network_ids": {
+      "amazon": "B0DPGWRX6F"
+    },
+    "image_url": "",
+    "best_for": [
+      "pet-hair",
+      "budget-premium",
+      "hardwood"
+    ],
+    "specs": {
+      "suction_pa": 20000,
+      "battery_life_min": 180,
+      "dustbin_ml": 400,
+      "water_tank_ml": 250,
+      "noise_db": 64,
+      "navigation": "LiDAR + AI",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "roborock-q10-s5-plus",
+    "name": "Roborock Q10 S5+ Robot Vacuum with Self-Empty Dock",
+    "brand": "Roborock",
+    "category": "robot-vacuums",
+    "price_usd": 280,
+    "rating": 4.3,
+    "verdict": "Roborock quality at a budget price — LiDAR navigation and self-emptying from a brand known for premium robots.",
+    "description": "The Q10 S5+ brings Roborock's excellent navigation and build quality down to an accessible price point. LiDAR mapping is fast and accurate, the app is the same polished experience as their $800 models, and the self-emptying dock holds weeks of debris. At 5500Pa suction, it won't match the flagships on raw power, but for daily maintenance of hardwood and low-pile carpet, it's more than enough. The rubber main brush resists hair tangles better than bristle alternatives. If you want the Roborock ecosystem without the premium price, this is your entry point.",
+    "features": [
+      "LiDAR navigation — same quality as premium Roborock models",
+      "Self-emptying dock included",
+      "5500Pa suction with rubber main brush",
+      "Roborock app — best-in-class controls",
+      "Multi-floor mapping and no-go zones"
+    ],
+    "pros": [
+      "Roborock app and navigation at a budget price",
+      "Rubber brush resists hair tangles",
+      "Self-emptying dock is reliable",
+      "Build quality exceeds the price point"
+    ],
+    "cons": [
+      "No mop function at this price",
+      "5500Pa is entry-level suction",
+      "Dock is basic — no washing/drying",
+      "Obstacle avoidance is reactive, not AI-powered"
+    ],
+    "network_ids": {
+      "amazon": "B0DB1LNFQX"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "hardwood"
+    ],
+    "specs": {
+      "suction_pa": 5500,
+      "battery_life_min": 150,
+      "dustbin_ml": 470,
+      "water_tank_ml": 0,
+      "noise_db": 61,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "dreame-d10-plus-gen2",
+    "name": "Dreame D10 Plus Gen 2 Robot Vacuum",
+    "brand": "Dreame",
+    "category": "robot-vacuums",
+    "price_usd": 200,
+    "rating": 4.2,
+    "verdict": "The cheapest good robot vacuum — LiDAR navigation and self-emptying for just $200.",
+    "description": "The Dreame D10 Plus Gen 2 is proof that the robot vacuum floor has risen dramatically. For $200 you get LiDAR navigation, a self-emptying base, and 6000Pa suction — features that cost $400+ just two years ago. It won't win any awards for mopping (it has a basic water tank and drag pad), but as a vacuum-first robot for daily floor maintenance, it's hard to beat at this price. The app supports scheduling, no-go zones, and room-specific settings. If you've never owned a robot vacuum and want to try one without committing $500+, this is where to start.",
+    "features": [
+      "LiDAR navigation at a sub-$250 price",
+      "Self-emptying base included",
+      "6000Pa suction — good for the price",
+      "Basic mopping with water tank",
+      "Dreame app with scheduling and no-go zones"
+    ],
+    "pros": [
+      "Absurdly cheap for LiDAR + self-emptying",
+      "Navigation is accurate and efficient",
+      "Good daily maintenance vacuum",
+      "Dreame app is solid"
+    ],
+    "cons": [
+      "Mopping is very basic",
+      "Build quality is noticeably budget",
+      "No obstacle avoidance — will bump furniture",
+      "Self-empty dock is loud"
+    ],
+    "network_ids": {
+      "amazon": "B0D6YXP7WH"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "small-spaces"
+    ],
+    "specs": {
+      "suction_pa": 6000,
+      "battery_life_min": 160,
+      "dustbin_ml": 400,
+      "water_tank_ml": 150,
+      "noise_db": 65,
+      "navigation": "LiDAR",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "narwal-freo-x-ultra",
+    "name": "Narwal Freo X Ultra Robot Vacuum and Mop",
+    "brand": "Narwal",
+    "category": "robot-vacuums",
+    "price_usd": 950,
+    "rating": 4.6,
+    "verdict": "The best robot for hard floors — triangular mop design reaches edges better than any round-pad competitor.",
+    "description": "Narwal made its name with mopping, and the Freo X Ultra shows why. Its unique triangular mop design reaches into corners and along edges where round mop pads leave dirty strips. The DirtSense system automatically detects dirty areas and re-mops them until the sensor reads clean. With 12,000Pa suction, it's no slouch as a vacuum either. The all-in-one dock handles emptying, mop washing with 65°C water, and hot air drying. The TwinAI system uses both a camera and LiDAR for the most reliable obstacle avoidance in our testing. Premium price, but if hard floor mopping is your priority, nothing else comes close.",
+    "features": [
+      "Triangular mop design — reaches edges and corners",
+      "DirtSense auto-detects and re-mops dirty areas",
+      "12,000Pa suction power",
+      "TwinAI: camera + LiDAR obstacle avoidance",
+      "All-in-one dock with 65°C hot water washing"
+    ],
+    "pros": [
+      "Best mopping performance on hard floors",
+      "DirtSense re-mopping is genuinely smart",
+      "TwinAI obstacle avoidance is very reliable",
+      "Triangular mop reaches where round pads can't"
+    ],
+    "cons": [
+      "Expensive — nearly $1000",
+      "Triangular shape can struggle in tight spaces",
+      "Vacuum suction is mid-range for the price",
+      "Less effective on thick carpet"
+    ],
+    "network_ids": {
+      "amazon": "B0DK7NWKNY"
+    },
+    "image_url": "",
+    "best_for": [
+      "hardwood",
+      "premium",
+      "mopping"
+    ],
+    "specs": {
+      "suction_pa": 12000,
+      "battery_life_min": 210,
+      "dustbin_ml": 400,
+      "water_tank_ml": 450,
+      "noise_db": 60,
+      "navigation": "LiDAR + Camera",
+      "self_empty": true,
+      "mop": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
