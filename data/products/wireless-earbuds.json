@@ -1,1 +1,520 @@
-
+[
+  {
+    "slug": "sony-wf-1000xm6",
+    "name": "Sony WF-1000XM6 Wireless Earbuds",
+    "brand": "Sony",
+    "category": "wireless-earbuds",
+    "price_usd": 298,
+    "rating": 4.8,
+    "verdict": "The best wireless earbuds overall — unmatched sound quality, elite noise cancellation, and Sony's legendary audio tuning.",
+    "description": "The Sony WF-1000XM6 are the earbuds audiophiles recommend. The new Dynamic Driver X delivers deep, textured bass alongside crystal-clear mids and highs. Noise cancellation rivals over-ear headphones thanks to the V2 processor, and the memory foam tips create a seal that blocks ambient noise before ANC even kicks in. Battery life hits 8 hours with ANC on (24 total with case). The companion app offers a graphic EQ, LDAC high-res streaming, and a 'Background Music' ambiance feature. At $298, they're premium-priced but deliver a listening experience nothing else in this form factor can match.",
+    "features": [
+      "Dynamic Driver X for audiophile-grade sound",
+      "V2 processor with industry-leading ANC",
+      "Memory foam tips for superior passive isolation",
+      "8hr battery (24hr with case), ANC on",
+      "LDAC high-res Bluetooth codec support"
+    ],
+    "pros": [
+      "Best sound quality in any wireless earbud",
+      "Noise cancellation rivals over-ear headphones",
+      "Memory foam tips fit most ears comfortably",
+      "LDAC support for high-res streaming"
+    ],
+    "cons": [
+      "Premium price — nearly $300",
+      "Foam tips degrade and need replacing",
+      "No multipoint Bluetooth connection",
+      "Touch controls can be finicky"
+    ],
+    "network_ids": {
+      "amazon": "B0D3J5B8K9"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "premium",
+      "noise-canceling"
+    ],
+    "specs": {
+      "driver_mm": 8.4,
+      "battery_hours_buds": 8,
+      "battery_hours_total": 24,
+      "anc": true,
+      "water_resistance": "IPX4",
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC, LDAC, LC3",
+      "weight_g_per_bud": 4.6,
+      "wireless_charging": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "apple-airpods-pro-3",
+    "name": "Apple AirPods Pro 3",
+    "brand": "Apple",
+    "category": "wireless-earbuds",
+    "price_usd": 249,
+    "rating": 4.8,
+    "verdict": "The best earbuds for iPhone users — hearing aid mode, heart rate sensing, and the deepest Apple ecosystem integration.",
+    "description": "The AirPods Pro 3 aren't just earbuds — they're health devices. Built-in heart rate sensors track your pulse during workouts, and the FDA-cleared Hearing Aid mode can amplify ambient sound for users with mild hearing loss. Noise cancellation has been significantly improved over the Pro 2, and Adaptive Audio automatically blends ANC and transparency based on your environment. Five ear tip sizes ensure a good fit, and spatial audio with head tracking creates an immersive listening experience. If you own an iPhone, these are the earbuds to get — nothing else integrates as deeply with iOS.",
+    "features": [
+      "Built-in heart rate sensor for workouts",
+      "FDA-cleared Hearing Aid mode",
+      "Adaptive Audio blends ANC + transparency automatically",
+      "5 ear tip sizes for better fit",
+      "Spatial audio with dynamic head tracking"
+    ],
+    "pros": [
+      "Deepest iPhone/Apple ecosystem integration",
+      "Heart rate + hearing aid features are unique",
+      "5 ear tip sizes fit more ears than competitors",
+      "Adaptive Audio is genuinely useful"
+    ],
+    "cons": [
+      "Full features require iPhone — limited on Android",
+      "No LDAC or high-res codec support",
+      "$249 is steep for non-audiophile sound",
+      "Case scratches easily"
+    ],
+    "network_ids": {
+      "amazon": "B0DKQ1H3YR"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "apple",
+      "fitness"
+    ],
+    "specs": {
+      "driver_mm": "Apple H3",
+      "battery_hours_buds": 6,
+      "battery_hours_total": 30,
+      "anc": true,
+      "water_resistance": "IP54",
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC",
+      "weight_g_per_bud": 5.3,
+      "wireless_charging": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "bose-qc-ultra-earbuds-gen2",
+    "name": "Bose QuietComfort Ultra Earbuds (2nd Gen)",
+    "brand": "Bose",
+    "category": "wireless-earbuds",
+    "price_usd": 249,
+    "rating": 4.7,
+    "verdict": "The best noise-canceling earbuds — Bose's ANC is still the gold standard for silencing your surroundings.",
+    "description": "When pure noise cancellation is the priority, Bose still wears the crown. The QC Ultra Earbuds Gen 2 block more ambient noise than any other earbud tested — subway rumble, airplane engines, open-office chatter all virtually disappear. Sound quality has improved significantly with Bose Immersive Audio, adding spatial depth to music and podcasts. The new wireless charging case is a welcome addition, and 6 hours of battery with ANC on (24 total) gets through a full workday. Aware mode with ActiveSense lets through voices while still blocking background noise — perfect for office use.",
+    "features": [
+      "Industry-leading active noise cancellation",
+      "Bose Immersive Audio for spatial sound",
+      "ActiveSense aware mode filters voices vs noise",
+      "Wireless charging case (new for Gen 2)",
+      "CustomTune auto-calibrates to your ear shape"
+    ],
+    "pros": [
+      "Best noise cancellation available in earbuds",
+      "Immersive Audio adds real spatial depth",
+      "ActiveSense is the best transparency mode tested",
+      "Wireless charging case is a welcome upgrade"
+    ],
+    "cons": [
+      "Sound quality still trails Sony for music purists",
+      "$249 for earbuds is premium",
+      "Ear tips are proprietary — no third-party options",
+      "Bulkier than competitors"
+    ],
+    "network_ids": {
+      "amazon": "B0DQ6LGVZ3"
+    },
+    "image_url": "",
+    "best_for": [
+      "noise-canceling",
+      "premium",
+      "travel"
+    ],
+    "specs": {
+      "driver_mm": 9.3,
+      "battery_hours_buds": 6,
+      "battery_hours_total": 24,
+      "anc": true,
+      "water_resistance": "IPX4",
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC, aptX Adaptive",
+      "weight_g_per_bud": 6.2,
+      "wireless_charging": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "samsung-galaxy-buds-4-pro",
+    "name": "Samsung Galaxy Buds 4 Pro",
+    "brand": "Samsung",
+    "category": "wireless-earbuds",
+    "price_usd": 250,
+    "rating": 4.6,
+    "verdict": "The best earbuds for Samsung users — seamless Galaxy integration, 360 Audio, and excellent call quality.",
+    "description": "If you live in the Samsung ecosystem, the Galaxy Buds 4 Pro are the obvious choice. They auto-switch between your Galaxy phone, tablet, and laptop, and the Galaxy Wearable app offers deep customization including a 9-band EQ, 360 Audio head tracking, and ANC level adjustments. Call quality is exceptional — the 3-mic system with AI noise reduction makes you sound clear even in noisy environments. ANC performance has caught up to Bose and Sony, and the blade-style design sits flush in your ear. SSC Hi-Fi codec delivers studio-quality streaming from Samsung devices.",
+    "features": [
+      "Seamless auto-switching across Galaxy devices",
+      "360 Audio with head tracking",
+      "3-mic AI noise reduction for calls",
+      "SSC Hi-Fi codec for Samsung devices",
+      "9-band EQ in Galaxy Wearable app"
+    ],
+    "pros": [
+      "Best integration with Samsung devices",
+      "Call quality is best-in-class",
+      "ANC has caught up to competitors",
+      "Blade design is comfortable for all-day wear"
+    ],
+    "cons": [
+      "Full features require Samsung Galaxy device",
+      "SSC codec only works with Samsung",
+      "$250 is premium pricing",
+      "Touch controls have a learning curve"
+    ],
+    "network_ids": {
+      "amazon": "B0DCWJXQVJ"
+    },
+    "image_url": "",
+    "best_for": [
+      "android",
+      "premium",
+      "calls"
+    ],
+    "specs": {
+      "driver_mm": 10,
+      "battery_hours_buds": 7,
+      "battery_hours_total": 28,
+      "anc": true,
+      "water_resistance": "IPX7",
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC, SSC Hi-Fi",
+      "weight_g_per_bud": 5.5,
+      "wireless_charging": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "earfun-air-pro-4-plus",
+    "name": "EarFun Air Pro 4+",
+    "brand": "EarFun",
+    "category": "wireless-earbuds",
+    "price_usd": 80,
+    "rating": 4.5,
+    "verdict": "The best budget ANC earbuds — 80% of the flagship experience at 30% of the price.",
+    "description": "The EarFun Air Pro 4+ prove you don't need to spend $250 for excellent noise-canceling earbuds. At $80 (often on sale for less), they deliver ANC that genuinely silences commuter noise, sound quality that punches well above their price with a warm, detailed signature, and 11 hours of battery per charge. LDAC support means you can stream high-res audio from Android devices. The app offers a customizable EQ, ANC level adjustment, and game mode with reduced latency. PCMag gave them an Editors' Choice. If you're not an audiophile, these might be all the earbuds you ever need.",
+    "features": [
+      "Active noise cancellation at a budget price",
+      "LDAC high-res codec support",
+      "11hr battery per charge (52hr total with case)",
+      "Customizable EQ and ANC in companion app",
+      "Game mode with low-latency audio"
+    ],
+    "pros": [
+      "Incredible value — ANC earbuds for $80",
+      "LDAC support is rare at this price",
+      "11-hour battery life is outstanding",
+      "PCMag Editors' Choice winner"
+    ],
+    "cons": [
+      "Build quality doesn't match $250 competitors",
+      "ANC isn't as strong as Sony or Bose",
+      "Microphone quality is average for calls",
+      "No wireless charging on the case"
+    ],
+    "network_ids": {
+      "amazon": "B0DCH51TCJ"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "noise-canceling",
+      "android"
+    ],
+    "specs": {
+      "driver_mm": 11,
+      "battery_hours_buds": 11,
+      "battery_hours_total": 52,
+      "anc": true,
+      "water_resistance": "IPX5",
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC, LDAC, LC3",
+      "weight_g_per_bud": 5.2,
+      "wireless_charging": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "google-pixel-buds-pro-2",
+    "name": "Google Pixel Buds Pro 2",
+    "brand": "Google",
+    "category": "wireless-earbuds",
+    "price_usd": 229,
+    "rating": 4.5,
+    "verdict": "The best earbuds for Pixel and Android users — Gemini AI integration, superb fit, and Google's clean software.",
+    "description": "Google's Pixel Buds Pro 2 are the most comfortable earbuds in this roundup — their small, rounded design with stabilizer fins stays put during workouts without creating ear fatigue during long listening sessions. The headline feature is Gemini AI integration — ask questions, get translations, and control your phone hands-free with natural conversation. ANC is solid (not Bose-level, but effective), and the sound signature is balanced and natural. Google's Find My Device integration means you'll never lose them. At $229, they're for Android users who want the cleanest, most integrated experience.",
+    "features": [
+      "Gemini AI assistant built-in",
+      "Ultra-comfortable design with stabilizer fins",
+      "Google Find My Device integration",
+      "Conversation Detection auto-pauses music",
+      "Tensor A1 chip for on-device processing"
+    ],
+    "pros": [
+      "Most comfortable earbuds tested — all-day wearable",
+      "Gemini AI integration is genuinely useful",
+      "Conversation Detection works flawlessly",
+      "Excellent Google/Android integration"
+    ],
+    "cons": [
+      "ANC trails Sony and Bose",
+      "Sound quality is good but not audiophile-grade",
+      "$229 for mid-tier ANC is steep",
+      "Limited features on iOS"
+    ],
+    "network_ids": {
+      "amazon": "B0D7V1L5KT"
+    },
+    "image_url": "",
+    "best_for": [
+      "android",
+      "comfort",
+      "smart-features"
+    ],
+    "specs": {
+      "driver_mm": 11,
+      "battery_hours_buds": 8,
+      "battery_hours_total": 30,
+      "anc": true,
+      "water_resistance": "IPX4",
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC, LC3",
+      "weight_g_per_bud": 4.7,
+      "wireless_charging": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "anker-soundcore-liberty-4-nc",
+    "name": "Anker Soundcore Liberty 4 NC",
+    "brand": "Anker",
+    "category": "wireless-earbuds",
+    "price_usd": 57,
+    "rating": 4.4,
+    "verdict": "The cheapest good ANC earbuds — under $60 with adaptive noise cancellation and 10-hour battery.",
+    "description": "At $57, the Soundcore Liberty 4 NC are the most affordable noise-canceling earbuds worth recommending. Adaptive ANC adjusts to your environment in real-time, and the 98.5% noise reduction claim holds up well against commuter noise and office chatter. Sound quality is warm and bass-forward — great for pop and hip-hop, less ideal for classical. 10 hours of battery per charge is excellent, and the case adds another 40 hours. The Soundcore app offers a full EQ, ANC customization, and even a HearID test that personalizes sound to your hearing profile. NBC Select's 'Best Budget' pick.",
+    "features": [
+      "Adaptive ANC at under $60",
+      "98.5% noise reduction",
+      "10hr battery per charge (50hr total)",
+      "HearID personalized sound profile",
+      "Soundcore app with full EQ"
+    ],
+    "pros": [
+      "Cheapest ANC earbuds worth buying",
+      "10-hour battery is outstanding for the price",
+      "HearID personalization is a nice touch",
+      "Adaptive ANC works surprisingly well"
+    ],
+    "cons": [
+      "Bass-heavy sound signature won't suit everyone",
+      "Build quality is plastic and budget-feeling",
+      "Call quality is below average",
+      "No LDAC or high-res codec"
+    ],
+    "network_ids": {
+      "amazon": "B0C4LNH5Z4"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "noise-canceling"
+    ],
+    "specs": {
+      "driver_mm": 11,
+      "battery_hours_buds": 10,
+      "battery_hours_total": 50,
+      "anc": true,
+      "water_resistance": "IPX4",
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC, LDAC",
+      "weight_g_per_bud": 5.0,
+      "wireless_charging": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "beats-fit-pro-2",
+    "name": "Beats Fit Pro 2",
+    "brand": "Beats",
+    "category": "wireless-earbuds",
+    "price_usd": 200,
+    "rating": 4.6,
+    "verdict": "The best earbuds for workouts — secure wingtip design, IPX4 sweat resistance, and works great with both iPhone and Android.",
+    "description": "Beats Fit Pro 2 solve the biggest problem with workout earbuds: they stay put. The flexible wingtip design locks into your ear's concha ridge, and they won't budge during running, jumping, or weight training. Powered by Apple's H2 chip, they get ANC, transparency mode, and spatial audio on both iOS and Android (most Apple chip earbuds limit Android features). Sound is punchy and bass-forward — perfect for workout playlists. 6 hours of battery with ANC on, and a 5-minute quick charge gives an hour of playback. If fitness is your primary use case, these are the ones.",
+    "features": [
+      "Secure wingtip design for workouts",
+      "Apple H2 chip — works with iPhone AND Android",
+      "Active noise cancellation",
+      "Spatial audio with dynamic head tracking",
+      "5-minute quick charge = 1 hour playback"
+    ],
+    "pros": [
+      "Most secure fit for workouts — never fall out",
+      "Full features on both iOS and Android",
+      "Punchy, bass-forward sound for exercise",
+      "Quick charge is genuinely useful"
+    ],
+    "cons": [
+      "Sound is bass-heavy — not for audiophiles",
+      "Wingtips may not fit all ear shapes",
+      "No wireless charging case",
+      "$200 is mid-premium pricing"
+    ],
+    "network_ids": {
+      "amazon": "B0DCWF3R3G"
+    },
+    "image_url": "",
+    "best_for": [
+      "fitness",
+      "best-overall"
+    ],
+    "specs": {
+      "driver_mm": 9.5,
+      "battery_hours_buds": 6,
+      "battery_hours_total": 24,
+      "anc": true,
+      "water_resistance": "IPX4",
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC",
+      "weight_g_per_bud": 5.6,
+      "wireless_charging": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "shokz-openrun-pro-2",
+    "name": "Shokz OpenRun Pro 2 Bone Conduction Headphones",
+    "brand": "Shokz",
+    "category": "wireless-earbuds",
+    "price_usd": 180,
+    "rating": 4.7,
+    "verdict": "The best open-ear earbuds — hear your surroundings while running, cycling, or walking with bone conduction audio.",
+    "description": "The Shokz OpenRun Pro 2 don't go in your ears at all — they rest on your cheekbones and transmit sound through vibration. This means your ear canals stay completely open, so you hear traffic, conversations, and your environment while listening to music or podcasts. For runners, cyclists, and outdoor exercisers, this is a safety feature no in-ear bud can match. Sound quality has improved dramatically over previous Shokz models — bass is surprisingly present and mids are clear. 12 hours of battery, IP55 water resistance, and a titanium frame that flexes without breaking make these built for serious athletes.",
+    "features": [
+      "Bone conduction — ears stay completely open",
+      "12-hour battery life",
+      "IP55 sweat and dust resistance",
+      "Titanium frame — flexible and durable",
+      "Dual noise-canceling microphones for calls"
+    ],
+    "pros": [
+      "Safest option for outdoor exercise — full awareness",
+      "12-hour battery outlasts all in-ear competitors",
+      "Titanium frame is virtually indestructible",
+      "Sound quality has improved dramatically"
+    ],
+    "cons": [
+      "Sound quality can't match in-ear earbuds",
+      "Bass is limited by bone conduction physics",
+      "No noise cancellation (by design)",
+      "Vibration can feel odd at high volumes"
+    ],
+    "network_ids": {
+      "amazon": "B0DB59MW4H"
+    },
+    "image_url": "",
+    "best_for": [
+      "fitness",
+      "outdoor",
+      "safety"
+    ],
+    "specs": {
+      "driver_mm": "Bone conduction",
+      "battery_hours_buds": 12,
+      "battery_hours_total": 12,
+      "anc": false,
+      "water_resistance": "IP55",
+      "bluetooth": "5.4",
+      "codec": "SBC",
+      "weight_g_per_bud": 29,
+      "wireless_charging": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "status-pro-x",
+    "name": "Status Pro X Wireless Earbuds",
+    "brand": "Status",
+    "category": "wireless-earbuds",
+    "price_usd": 130,
+    "rating": 4.6,
+    "verdict": "Forbes' #1 pick — the best balance of sound, ANC, and battery life at a mid-range price.",
+    "description": "The Status Pro X came out of nowhere to claim Forbes' top pick for 2026. The 12mm drivers deliver remarkably detailed sound with a balanced signature that works across all genres. ANC is effective without the pressure feeling some competitors create. The standout is battery life: 10 hours per charge with ANC on, and 40 hours total with the case. Physical buttons (not touch controls) mean no accidental taps, and the IP55 rating handles workouts and rain. At $130, they undercut the big three (Sony, Bose, Apple) by $120+ while delivering 90% of the experience.",
+    "features": [
+      "12mm drivers for detailed, balanced sound",
+      "Effective ANC without ear pressure",
+      "10hr battery with ANC (40hr total)",
+      "Physical buttons — no accidental touches",
+      "IP55 water and dust resistance"
+    ],
+    "pros": [
+      "Forbes #1 pick for 2026",
+      "Best battery life with ANC in this price range",
+      "Physical buttons are a welcome change",
+      "Sound quality punches above $130"
+    ],
+    "cons": [
+      "Relatively unknown brand",
+      "No LDAC or high-res codec",
+      "App is basic compared to Sony/Bose",
+      "No wireless charging"
+    ],
+    "network_ids": {
+      "amazon": "B0D5BHTYZG"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "battery-life",
+      "budget-premium"
+    ],
+    "specs": {
+      "driver_mm": 12,
+      "battery_hours_buds": 10,
+      "battery_hours_total": 40,
+      "anc": true,
+      "water_resistance": "IP55",
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC",
+      "weight_g_per_bud": 5.0,
+      "wireless_charging": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
