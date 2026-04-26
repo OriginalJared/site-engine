@@ -1,1 +1,500 @@
-
+[
+  {
+    "slug": "breville-barista-express",
+    "name": "Breville Barista Express Espresso Machine",
+    "brand": "Breville",
+    "category": "espresso-machines",
+    "price_usd": 650,
+    "rating": 4.7,
+    "verdict": "The best espresso machine overall — built-in grinder, PID temperature control, and 15-bar pump in one package.",
+    "description": "The Breville Barista Express has been the most recommended home espresso machine for years, and it still earns that title. The built-in conical burr grinder means you're grinding fresh for every shot — the single biggest factor in espresso quality. PID temperature control ensures consistent extraction, and the 15-bar Italian pump delivers proper pressure. The dose-control grinding and manual tamping give you full control over your shots. The steam wand produces microfoam for latte art. CNET, Forbes, and Food Network all name it their top pick. At $650, it replaces $5 daily cafe visits in about 4 months.",
+    "features": [
+      "Built-in conical burr grinder",
+      "PID temperature control for consistency",
+      "15-bar Italian pump",
+      "Dose-control grinding with adjustable grind size",
+      "Steam wand for microfoam milk"
+    ],
+    "pros": [
+      "Best all-in-one espresso machine",
+      "Built-in grinder is a game-changer",
+      "PID temperature control ensures consistency",
+      "Pays for itself in 4 months vs cafe visits"
+    ],
+    "cons": [
+      "Learning curve for beginners",
+      "Cleaning is more involved than pod machines",
+      "Counter space required — it's large",
+      "Grinder retention can waste some beans"
+    ],
+    "network_ids": {
+      "amazon": "B00CH9QWOU"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "home-barista",
+      "grinder"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "Built-in conical burr",
+      "boiler": "Thermocoil with PID",
+      "portafilter_mm": 54,
+      "water_tank_oz": 67,
+      "steam_wand": true,
+      "cup_warmer": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "breville-bambino-plus",
+    "name": "Breville Bambino Plus Espresso Machine",
+    "brand": "Breville",
+    "category": "espresso-machines",
+    "price_usd": 400,
+    "rating": 4.6,
+    "verdict": "The best compact espresso machine — 3-second heat-up, automatic milk steaming, and Breville quality in a tiny footprint.",
+    "description": "The Bambino Plus is Breville's answer for small kitchens. It heats up in just 3 seconds (vs 30+ for most machines), automatically steams milk to your preferred temperature, and delivers the same 15-bar extraction as larger Breville machines. The compact footprint takes up less counter space than a toaster. The auto-purge function cleans the group head between shots. No built-in grinder means you'll need a separate one, but that also means a smaller machine. Food Network's 'Best Overall' pick and Forbes' 'Best Compact.' At $400, it's the premium compact choice.",
+    "features": [
+      "3-second heat-up time",
+      "Automatic milk steaming to set temperature",
+      "15-bar extraction",
+      "Auto-purge between shots",
+      "Compact footprint"
+    ],
+    "pros": [
+      "3-second heat-up is incredible",
+      "Automatic milk steaming is foolproof",
+      "Compact enough for any kitchen",
+      "Food Network's #1 pick"
+    ],
+    "cons": [
+      "No built-in grinder — need separate",
+      "$400 without grinder is premium",
+      "54mm portafilter limits aftermarket accessories",
+      "Water tank is small (64oz)"
+    ],
+    "network_ids": {
+      "amazon": "B0B1GV2BZK"
+    },
+    "image_url": "",
+    "best_for": [
+      "compact",
+      "best-overall",
+      "automatic-milk"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "None (external required)",
+      "boiler": "Thermojet",
+      "portafilter_mm": 54,
+      "water_tank_oz": 64,
+      "steam_wand": true,
+      "cup_warmer": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "casabrews-cm5418",
+    "name": "CASABREWS CM5418 Espresso Machine",
+    "brand": "CASABREWS",
+    "category": "espresso-machines",
+    "price_usd": 122,
+    "rating": 4.4,
+    "verdict": "The best budget espresso machine — 20-bar pump, steam wand, and stainless steel build for $122.",
+    "description": "The CASABREWS CM5418 is Amazon's #1 best-selling espresso machine, and at $122 it's easy to see why. The 20-bar pump (more than enough for proper extraction), stainless steel construction, and functional steam wand deliver real espresso at a fraction of premium prices. The 34oz removable water tank is easy to fill, and the drip tray catches spills cleanly. It won't match a Breville in temperature stability or grind precision, but for someone who wants to make real espresso (not pod coffee) without spending $500+, this is the starting point. CNET's 'Best Budget' pick.",
+    "features": [
+      "20-bar pump — more than adequate pressure",
+      "Stainless steel construction",
+      "Steam milk frother wand",
+      "34oz removable water tank",
+      "CNET's Best Budget pick"
+    ],
+    "pros": [
+      "Real espresso for $122",
+      "Amazon's #1 best-selling espresso machine",
+      "Stainless steel looks and feels premium",
+      "Steam wand makes real microfoam"
+    ],
+    "cons": [
+      "Temperature consistency is variable",
+      "No built-in grinder",
+      "Plastic internals behind the steel exterior",
+      "Steam wand takes practice to master"
+    ],
+    "network_ids": {
+      "amazon": "B0BTKX6233"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "beginner"
+    ],
+    "specs": {
+      "pump_bars": 20,
+      "grinder": "None",
+      "boiler": "Thermoblock",
+      "portafilter_mm": 51,
+      "water_tank_oz": 34,
+      "steam_wand": true,
+      "cup_warmer": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "delonghi-rivelia",
+    "name": "De'Longhi Rivelia Fully Automatic Espresso Machine",
+    "brand": "De'Longhi",
+    "category": "espresso-machines",
+    "price_usd": 1100,
+    "rating": 4.7,
+    "verdict": "The best fully automatic — 18 drink recipes, built-in grinder, automatic milk, and one-touch operation.",
+    "description": "The De'Longhi Rivelia does everything automatically. Drop in beans, press a button, and it grinds, tamps, extracts, and froths milk for 18 different drink recipes — from espresso to flat white to cold brew. The LatteCrema system produces cafe-quality microfoam automatically, and the color touchscreen makes drink selection intuitive. The bean hopper is removable and sealed to keep beans fresh, and the entire brew group is removable for easy cleaning. Forbes' 'Best Fully Automatic' pick. At $1,100, it's expensive, but it replaces both a grinder and espresso machine while requiring zero barista skill.",
+    "features": [
+      "18 pre-programmed drink recipes",
+      "LatteCrema automatic milk system",
+      "Built-in conical burr grinder",
+      "Color touchscreen interface",
+      "Removable brew group for easy cleaning"
+    ],
+    "pros": [
+      "True one-touch operation — zero skill needed",
+      "18 drinks including cold brew",
+      "LatteCrema milk foam is cafe-quality",
+      "Easy to clean with removable brew group"
+    ],
+    "cons": [
+      "$1,100 is a major investment",
+      "Large countertop footprint",
+      "Bean hopper is small",
+      "Less control than manual machines"
+    ],
+    "network_ids": {
+      "amazon": "B0CZ9HN3S6"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "automatic",
+      "one-touch"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "Built-in conical burr",
+      "boiler": "Thermoblock",
+      "portafilter_mm": "N/A (internal)",
+      "water_tank_oz": 61,
+      "steam_wand": "Automatic LatteCrema",
+      "cup_warmer": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "nespresso-essenza-mini",
+    "name": "Nespresso Essenza Mini Espresso Machine",
+    "brand": "Nespresso",
+    "category": "espresso-machines",
+    "price_usd": 150,
+    "rating": 4.6,
+    "verdict": "The best pod espresso machine — consistent shots every time with zero cleanup and a tiny footprint.",
+    "description": "The Nespresso Essenza Mini is for people who want espresso without any effort or learning curve. Insert a pod, press a button, get consistent espresso in 30 seconds. The 19-bar pump extracts properly from Nespresso's aluminum capsules, and the results are remarkably consistent — every shot tastes the same. The machine is tiny (barely bigger than a water bottle) and heats up in 25 seconds. Nespresso offers 30+ capsule varieties from intense ristretto to mild lungo. At $150 (often bundled with a milk frother), it's the easiest path to real espresso. Food Network's 'Best Capsule' pick.",
+    "features": [
+      "19-bar pump for proper extraction",
+      "30+ Nespresso capsule varieties",
+      "Heats up in 25 seconds",
+      "Tiny footprint — fits anywhere",
+      "Two cup size buttons (espresso + lungo)"
+    ],
+    "pros": [
+      "Easiest espresso machine to use — period",
+      "Perfectly consistent every time",
+      "Tiny footprint fits any counter",
+      "25-second heat-up"
+    ],
+    "cons": [
+      "Capsules cost $0.70-1.10 each — adds up",
+      "Limited to Nespresso Original pods",
+      "No milk frother built-in",
+      "Capsule waste is an environmental concern"
+    ],
+    "network_ids": {
+      "amazon": "B073ZGWN12"
+    },
+    "image_url": "",
+    "best_for": [
+      "beginner",
+      "compact",
+      "pod"
+    ],
+    "specs": {
+      "pump_bars": 19,
+      "grinder": "N/A (pods)",
+      "boiler": "Thermoblock",
+      "portafilter_mm": "N/A (pods)",
+      "water_tank_oz": 20,
+      "steam_wand": false,
+      "cup_warmer": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "breville-barista-express-impress",
+    "name": "Breville Barista Express Impress Espresso Machine",
+    "brand": "Breville",
+    "category": "espresso-machines",
+    "price_usd": 700,
+    "rating": 4.7,
+    "verdict": "The best for beginners — auto-tamping takes the guesswork out of espresso making while still using fresh-ground beans.",
+    "description": "The Barista Express Impress adds one critical feature to the beloved Barista Express: automatic tamping. The Impress system doses and tamps with consistent pressure every time — eliminating the most common beginner mistake (inconsistent tamping). An extraction feedback gauge tells you if your shot is running too fast or slow, teaching you to adjust grind size. Everything else matches the original: built-in burr grinder, PID temperature control, 15-bar pump, and steam wand. Forbes' 'Best for Beginners' pick. At $700, the $50 premium over the original is worth it for the learning assistance.",
+    "features": [
+      "Automatic tamping system (Impress)",
+      "Extraction feedback gauge",
+      "Built-in conical burr grinder",
+      "PID temperature control",
+      "15-bar Italian pump"
+    ],
+    "pros": [
+      "Auto-tamping eliminates biggest beginner mistake",
+      "Extraction gauge teaches proper technique",
+      "Forbes' #1 pick for beginners",
+      "Same proven Barista Express platform"
+    ],
+    "cons": [
+      "$700 is premium pricing",
+      "Still has a learning curve beyond tamping",
+      "Large countertop footprint",
+      "Auto-tamp mechanism adds a failure point"
+    ],
+    "network_ids": {
+      "amazon": "B0CS1MVBDP"
+    },
+    "image_url": "",
+    "best_for": [
+      "beginner",
+      "best-overall",
+      "home-barista"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "Built-in conical burr",
+      "boiler": "Thermocoil with PID",
+      "portafilter_mm": 54,
+      "water_tank_oz": 67,
+      "steam_wand": true,
+      "cup_warmer": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "delonghi-stilosa",
+    "name": "De'Longhi Stilosa Manual Espresso Machine",
+    "brand": "De'Longhi",
+    "category": "espresso-machines",
+    "price_usd": 100,
+    "rating": 4.3,
+    "verdict": "The cheapest real espresso machine — 15-bar pump and manual steam wand from a trusted Italian brand for $100.",
+    "description": "The De'Longhi Stilosa is the absolute entry point for real espresso. At $100, you get a 15-bar pump, a manual steam wand, and De'Longhi's Italian engineering heritage. It uses pre-ground coffee or ESE pods, so no grinder is needed. The learning curve is steeper than a Nespresso, but the reward is genuine espresso you made yourself. The steam wand produces passable foam for lattes and cappuccinos. It's small, simple, and gets the job done. For anyone who wants to learn espresso without a big investment, the Stilosa is where to start.",
+    "features": [
+      "15-bar pump from a trusted brand",
+      "Manual steam wand",
+      "Uses pre-ground coffee or ESE pods",
+      "Compact design",
+      "$100 price point"
+    ],
+    "pros": [
+      "Cheapest real espresso machine from a trusted brand",
+      "Teaches manual espresso skills",
+      "Compact footprint",
+      "Simple operation"
+    ],
+    "cons": [
+      "Temperature stability is basic",
+      "No grinder — need pre-ground or separate grinder",
+      "Steam wand pressure is weak",
+      "Plastic construction"
+    ],
+    "network_ids": {
+      "amazon": "B07WL98F2T"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "beginner"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "None",
+      "boiler": "Thermoblock",
+      "portafilter_mm": 51,
+      "water_tank_oz": 33,
+      "steam_wand": true,
+      "cup_warmer": false,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "breville-oracle-jet",
+    "name": "Breville Oracle Jet Espresso Machine",
+    "brand": "Breville",
+    "category": "espresso-machines",
+    "price_usd": 2500,
+    "rating": 4.8,
+    "verdict": "The ultimate home espresso machine — automatic grinding, dosing, tamping, AND milk texturing with manual override for purists.",
+    "description": "The Breville Oracle Jet is the most advanced home espresso machine you can buy. It automates every step — grinding, dosing, tamping, extraction, and milk texturing — while still allowing manual override for each parameter. The dual boiler system means you can extract and steam simultaneously (no waiting). The ThermoJet heating system reaches temperature in 3 seconds. The 6-inch touchscreen displays extraction pressure in real-time. At $2,500, it's a serious investment, but it produces shots that rival commercial cafe machines. For the home barista who wants the absolute best, this is the endgame.",
+    "features": [
+      "Fully automatic OR manual control",
+      "Dual boiler — extract and steam simultaneously",
+      "3-second ThermoJet heat-up",
+      "6-inch touchscreen with real-time pressure",
+      "Auto-grind, dose, tamp, and texture"
+    ],
+    "pros": [
+      "Best espresso quality from any home machine",
+      "Dual boiler enables simultaneous operations",
+      "Manual override for enthusiasts",
+      "3-second heat-up"
+    ],
+    "cons": [
+      "$2,500 is a major investment",
+      "Large countertop footprint",
+      "Complex — many things can go wrong",
+      "Maintenance requirements are significant"
+    ],
+    "network_ids": {
+      "amazon": "B0DCVJ37B5"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "home-barista",
+      "enthusiast"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "Built-in conical burr",
+      "boiler": "Dual boiler with ThermoJet",
+      "portafilter_mm": 54,
+      "water_tank_oz": 84,
+      "steam_wand": "Automatic + manual override",
+      "cup_warmer": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "philips-5500-lattego",
+    "name": "Philips 5500 Series LatteGo Fully Automatic Espresso Machine",
+    "brand": "Philips",
+    "category": "espresso-machines",
+    "price_usd": 900,
+    "rating": 4.5,
+    "verdict": "The easiest to clean fully automatic — LatteGo system has only 2 parts to rinse, vs 8+ for competitors.",
+    "description": "The Philips 5500 LatteGo's killer feature is cleaning simplicity. The LatteGo milk system has just 2 parts that rinse under the faucet in 15 seconds — competitors require disassembling 8+ components. The machine brews 20 hot and iced drinks with one touch, and the ceramic burr grinder preserves bean flavor better than steel grinders. The intuitive touchscreen makes drink selection easy, and the SilentBrew technology reduces noise significantly. At $900, it slots between the budget CASABREWS and the premium Rivelia — offering fully automatic convenience with the easiest maintenance.",
+    "features": [
+      "LatteGo: 2-part milk system — 15 second cleanup",
+      "20 hot and iced drink recipes",
+      "Ceramic burr grinder — preserves flavor",
+      "SilentBrew technology",
+      "Intuitive color touchscreen"
+    ],
+    "pros": [
+      "Easiest to clean fully automatic machine",
+      "Ceramic grinder preserves bean flavor",
+      "SilentBrew is noticeably quieter",
+      "20 drink recipes cover everything"
+    ],
+    "cons": [
+      "$900 is mid-premium pricing",
+      "LatteGo foam is good but not cafe-level",
+      "Bean hopper is small",
+      "Fewer customization options than Rivelia"
+    ],
+    "network_ids": {
+      "amazon": "B0DCQQ3NVS"
+    },
+    "image_url": "",
+    "best_for": [
+      "automatic",
+      "easy-clean",
+      "one-touch"
+    ],
+    "specs": {
+      "pump_bars": 15,
+      "grinder": "Built-in ceramic burr",
+      "boiler": "Thermoblock",
+      "portafilter_mm": "N/A (internal)",
+      "water_tank_oz": 60,
+      "steam_wand": "Automatic LatteGo",
+      "cup_warmer": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "ninja-luxe-cafe",
+    "name": "Ninja Luxe Café Espresso Machine",
+    "brand": "Ninja",
+    "category": "espresso-machines",
+    "price_usd": 600,
+    "rating": 4.5,
+    "verdict": "The most versatile coffee machine — makes espresso, drip coffee, cold brew, and frothy milk in one device.",
+    "description": "The Ninja Luxe Café isn't just an espresso machine — it's an entire coffee system. It makes espresso with a 20-bar pump, brews drip coffee, creates cold brew concentrate, and froths milk with an automatic frother — all in one machine. The built-in grinder handles everything from fine espresso to coarse cold brew. The touchscreen interface guides you through each drink type. CNET's 'Best for Espresso and Drip' pick. At $600, it replaces 3-4 separate devices. If your household has different coffee preferences (espresso for you, drip for your partner, cold brew for summer), the Luxe Café covers everyone.",
+    "features": [
+      "Espresso + drip + cold brew in one machine",
+      "Built-in grinder with adjustable settings",
+      "Automatic milk frother",
+      "20-bar pump for espresso",
+      "Touchscreen interface"
+    ],
+    "pros": [
+      "Most versatile coffee machine available",
+      "Replaces 3-4 separate devices",
+      "Built-in grinder handles all grind sizes",
+      "CNET's top pick for versatility"
+    ],
+    "cons": [
+      "Jack of all trades — espresso isn't as good as dedicated machines",
+      "Large countertop footprint",
+      "Cleaning multiple systems is involved",
+      "Cold brew takes 12+ hours"
+    ],
+    "network_ids": {
+      "amazon": "B0D9J3K5LT"
+    },
+    "image_url": "",
+    "best_for": [
+      "versatile",
+      "drip-and-espresso",
+      "family"
+    ],
+    "specs": {
+      "pump_bars": 20,
+      "grinder": "Built-in conical burr",
+      "boiler": "Thermoblock",
+      "portafilter_mm": 54,
+      "water_tank_oz": 50,
+      "steam_wand": "Automatic frother",
+      "cup_warmer": true,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
