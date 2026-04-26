@@ -1,1 +1,511 @@
-
+[
+  {
+    "slug": "keychron-q5-max",
+    "name": "Keychron Q5 Max Wireless Mechanical Keyboard",
+    "brand": "Keychron",
+    "category": "mechanical-keyboards",
+    "price_usd": 210,
+    "rating": 4.8,
+    "verdict": "The best mechanical keyboard overall — premium aluminum build, wireless, hot-swappable, and QMK/VIA programmable.",
+    "description": "The Keychron Q5 Max is what happens when enthusiast-grade build quality meets everyday usability. The full CNC aluminum case weighs over 4 lbs and feels like a premium tool. Double-gasket mounting absorbs keystroke vibrations for a satisfying, thocky sound. Hot-swappable sockets let you change switches in seconds without soldering. Triple connectivity (Bluetooth, 2.4GHz dongle, USB-C) covers every use case. QMK/VIA firmware means every key is fully programmable. At $210, it costs less than many premium keyboards while outperforming most of them.",
+    "features": [
+      "Full CNC aluminum case — premium build",
+      "Double-gasket mount for thocky sound",
+      "Hot-swappable switches — no soldering",
+      "Triple connectivity: BT, 2.4GHz, USB-C",
+      "QMK/VIA fully programmable firmware"
+    ],
+    "pros": [
+      "Best build quality under $250",
+      "Double-gasket mount sounds incredible",
+      "Hot-swap + QMK means infinite customization",
+      "Triple wireless is ultra-versatile"
+    ],
+    "cons": [
+      "Heavy — not portable",
+      "Keycap legends can fade over time",
+      "Learning curve for QMK programming",
+      "No built-in display or knob"
+    ],
+    "network_ids": {
+      "amazon": "B0CRXCLZ7R"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "premium",
+      "programming"
+    ],
+    "specs": {
+      "layout": "96% compact",
+      "switches": "Gateron Jupiter (hot-swap)",
+      "keycaps": "Double-shot PBT",
+      "connectivity": "BT 5.1, 2.4GHz, USB-C",
+      "battery_mah": 4000,
+      "backlight": "South-facing RGB",
+      "polling_rate_hz": 1000,
+      "weight_g": 1800,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "keychron-c3-pro",
+    "name": "Keychron C3 Pro Wired Mechanical Keyboard",
+    "brand": "Keychron",
+    "category": "mechanical-keyboards",
+    "price_usd": 37,
+    "rating": 4.5,
+    "verdict": "The best budget mechanical keyboard — QMK/VIA support, hot-swap, and gasket mount for just $37.",
+    "description": "The Keychron C3 Pro rewrites what's possible at $37. It has features that cost $100+ just two years ago: a gasket-mounted design for a softer typing feel, hot-swappable switches, QMK/VIA firmware for full key remapping, and red backlight LEDs. The pre-lubed Keychron mechanical switches feel smooth out of the box, and the double-shot ABS keycaps are durable enough for daily use. The wired USB-C connection means zero latency and no battery to charge. PCMag gave it an Editors' Choice as the best budget mechanical keyboard. If you've never tried a mechanical keyboard, this is where to start.",
+    "features": [
+      "Gasket mount at a $37 price point",
+      "Hot-swappable switches",
+      "QMK/VIA programmable firmware",
+      "Pre-lubed Keychron switches",
+      "USB-C wired connection"
+    ],
+    "pros": [
+      "Absurd value — gasket mount + hot-swap for $37",
+      "QMK/VIA support at this price is unheard of",
+      "Pre-lubed switches feel smooth out of box",
+      "PCMag Editors' Choice winner"
+    ],
+    "cons": [
+      "Wired only — no Bluetooth",
+      "Red backlight only — no RGB",
+      "ABS keycaps will develop shine over time",
+      "Plastic case — no premium feel"
+    ],
+    "network_ids": {
+      "amazon": "B0CYG2M7PM"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "first-keyboard",
+      "typing"
+    ],
+    "specs": {
+      "layout": "TKL (87 keys)",
+      "switches": "Keychron mechanical (hot-swap)",
+      "keycaps": "Double-shot ABS",
+      "connectivity": "USB-C wired",
+      "battery_mah": 0,
+      "backlight": "Red LED",
+      "polling_rate_hz": 1000,
+      "weight_g": 800,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "razer-pro-type-ultra",
+    "name": "Razer Pro Type Ultra Wireless Mechanical Keyboard",
+    "brand": "Razer",
+    "category": "mechanical-keyboards",
+    "price_usd": 160,
+    "rating": 4.5,
+    "verdict": "The best mechanical keyboard for office productivity — silent switches, clean white design, and multi-device Bluetooth.",
+    "description": "Most mechanical keyboards scream 'gamer,' but the Razer Pro Type Ultra is built for the office. The silent Yellow mechanical switches have the tactile feel of mechanical keys without the clicky noise that annoys coworkers. The clean white-and-silver design blends into any professional workspace. Bluetooth connects to up to 4 devices simultaneously, and the USB dongle provides a low-latency connection for your primary machine. The ergonomic wrist rest is included, and the white backlight is subtle and functional. Razer Synapse software offers full macro programming. PCMag's top pick for office mechanical keyboards.",
+    "features": [
+      "Silent Yellow switches — mechanical feel, minimal noise",
+      "Multi-device Bluetooth (4 devices) + USB dongle",
+      "Clean white-and-silver professional design",
+      "Included ergonomic wrist rest",
+      "Razer Synapse macro programming"
+    ],
+    "pros": [
+      "Quietest mechanical keyboard tested — office-friendly",
+      "Multi-device Bluetooth is excellent for productivity",
+      "Included wrist rest adds comfort",
+      "PCMag's top office keyboard pick"
+    ],
+    "cons": [
+      "$160 is mid-premium pricing",
+      "Synapse software requires account registration",
+      "White keycaps can discolor over time",
+      "Battery life is average at ~2 weeks"
+    ],
+    "network_ids": {
+      "amazon": "B09RFR1TBS"
+    },
+    "image_url": "",
+    "best_for": [
+      "office",
+      "quiet",
+      "productivity"
+    ],
+    "specs": {
+      "layout": "Full-size (104 keys)",
+      "switches": "Razer Yellow (silent)",
+      "keycaps": "Doubleshot ABS",
+      "connectivity": "BT 5.0 (x4), 2.4GHz, USB-C",
+      "battery_mah": 4000,
+      "backlight": "White LED",
+      "polling_rate_hz": 1000,
+      "weight_g": 910,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "aula-f75-pro",
+    "name": "AULA F75 Pro Wireless Mechanical Keyboard",
+    "brand": "AULA",
+    "category": "mechanical-keyboards",
+    "price_usd": 66,
+    "rating": 4.6,
+    "verdict": "Amazon's best-selling mechanical keyboard — gasket mount, knob, hot-swap, and wireless for $66.",
+    "description": "The AULA F75 Pro has been Amazon's #1 selling mechanical keyboard, and the value proposition is absurd. For $66 you get a gasket-mounted 75% layout with a volume knob, hot-swappable switches, pre-lubed Reaper linear switches, RGB backlighting, triple connectivity (BT/2.4GHz/USB-C), and PBT keycaps. The sound profile out of the box is surprisingly good — creamy and thocky without any modifications. The build is plastic, but the typing experience rivals keyboards twice its price. 3,000+ units sold per month on Amazon. If you want a great wireless mechanical keyboard without spending $200, this is it.",
+    "features": [
+      "Gasket mount with 5-layer sound dampening",
+      "Volume knob + 75% layout",
+      "Pre-lubed Reaper linear switches",
+      "Triple connectivity: BT, 2.4GHz, USB-C",
+      "PBT side-printed keycaps"
+    ],
+    "pros": [
+      "Best value wireless mechanical keyboard on Amazon",
+      "Gasket mount sounds premium out of box",
+      "Hot-swap + pre-lubed switches = great typing feel",
+      "Volume knob is genuinely useful"
+    ],
+    "cons": [
+      "Plastic case — no premium weight",
+      "Side-printed legends can be hard to read",
+      "Software is basic",
+      "Battery life is average (~40 hours)"
+    ],
+    "network_ids": {
+      "amazon": "B0CVL87T69"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "gaming",
+      "wireless"
+    ],
+    "specs": {
+      "layout": "75% (82 keys)",
+      "switches": "AULA Reaper Linear (hot-swap)",
+      "keycaps": "PBT side-printed",
+      "connectivity": "BT 5.0, 2.4GHz, USB-C",
+      "battery_mah": 3750,
+      "backlight": "RGB",
+      "polling_rate_hz": 1000,
+      "weight_g": 780,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "logitech-mx-mechanical",
+    "name": "Logitech MX Mechanical Wireless Keyboard",
+    "brand": "Logitech",
+    "category": "mechanical-keyboards",
+    "price_usd": 168,
+    "rating": 4.3,
+    "verdict": "The best mechanical keyboard for Mac users — Logi Options+ software, multi-OS layout, and quiet tactile switches.",
+    "description": "Logitech's MX Mechanical brings mechanical key feel to their beloved MX productivity line. The low-profile tactile switches provide satisfying feedback without the height and noise of traditional mechanical keyboards. Logi Options+ software is the best keyboard customization app available — per-app key remapping, macros, and Logitech Flow lets you move your cursor seamlessly between multiple computers. The keyboard works with Windows, Mac, Linux, iOS, and Android, with printed legends for both Mac and Windows. Bluetooth connects to 3 devices with easy switching. The smart backlight activates when your hands approach.",
+    "features": [
+      "Low-profile tactile mechanical switches",
+      "Logi Options+ software — per-app customization",
+      "Multi-OS support (Win, Mac, Linux, iOS, Android)",
+      "Bluetooth x3 + USB-C receiver",
+      "Smart backlight activates on proximity"
+    ],
+    "pros": [
+      "Best software ecosystem (Logi Options+)",
+      "Multi-OS support is seamless",
+      "Low-profile design reduces wrist strain",
+      "Logitech Flow multi-computer support"
+    ],
+    "cons": [
+      "$168 for Logitech switches is premium",
+      "Low-profile feel may disappoint mech enthusiasts",
+      "Battery life drops with backlight on",
+      "Plastic build doesn't feel premium"
+    ],
+    "network_ids": {
+      "amazon": "B09LK2DC4S"
+    },
+    "image_url": "",
+    "best_for": [
+      "office",
+      "mac",
+      "productivity"
+    ],
+    "specs": {
+      "layout": "Full-size (104 keys)",
+      "switches": "Logitech Tactile Quiet (low-profile)",
+      "keycaps": "Laser-etched ABS",
+      "connectivity": "BT 5.0 (x3), 2.4GHz Logi Bolt, USB-C",
+      "battery_mah": "AAA batteries (not rechargeable)",
+      "backlight": "White LED (smart)",
+      "polling_rate_hz": 1000,
+      "weight_g": 828,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "corsair-k70-pro-tkl",
+    "name": "Corsair K70 PRO TKL Wired Gaming Keyboard",
+    "brand": "Corsair",
+    "category": "mechanical-keyboards",
+    "price_usd": 140,
+    "rating": 4.6,
+    "verdict": "The best wired gaming keyboard — 8000Hz polling rate, per-key RGB, and Corsair's tournament-proven build quality.",
+    "description": "The Corsair K70 PRO TKL is built for competitive gaming. Its 8000Hz polling rate (8x faster than standard) means your keystrokes register in 0.125ms — imperceptible to humans but measurably faster in competitive scenarios. The TKL (tenkeyless) layout gives you more desk space for mouse movement, and the detachable USB-C cable makes it tournament-portable. Per-key RGB backlighting is fully customizable through iCUE software, and the PBT double-shot keycaps won't develop shine. The aluminum top plate adds rigidity and premium feel. Corsair has been a trusted name in competitive peripherals for over a decade.",
+    "features": [
+      "8000Hz polling rate — fastest available",
+      "TKL layout for maximum desk space",
+      "Detachable USB-C cable",
+      "Per-key RGB with iCUE software",
+      "PBT double-shot keycaps"
+    ],
+    "pros": [
+      "Fastest polling rate for competitive advantage",
+      "PBT keycaps won't develop shine",
+      "Detachable cable for portability",
+      "Corsair iCUE is powerful and mature"
+    ],
+    "cons": [
+      "Wired only — no wireless option",
+      "iCUE software is resource-heavy",
+      "$140 for a wired TKL is premium",
+      "No hot-swap — switches are soldered"
+    ],
+    "network_ids": {
+      "amazon": "B0CQVJG68Q"
+    },
+    "image_url": "",
+    "best_for": [
+      "gaming",
+      "esports",
+      "competitive"
+    ],
+    "specs": {
+      "layout": "TKL (87 keys)",
+      "switches": "Cherry MX (soldered)",
+      "keycaps": "PBT double-shot",
+      "connectivity": "USB-C wired (detachable)",
+      "battery_mah": 0,
+      "backlight": "Per-key RGB",
+      "polling_rate_hz": 8000,
+      "weight_g": 820,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "keychron-k10-pro",
+    "name": "Keychron K10 Pro Wireless Mechanical Keyboard",
+    "brand": "Keychron",
+    "category": "mechanical-keyboards",
+    "price_usd": 115,
+    "rating": 4.5,
+    "verdict": "The best wireless mechanical keyboard under $120 — hot-swap, QMK/VIA, and full-size layout.",
+    "description": "The K10 Pro fills a gap: a full-size wireless mechanical keyboard with enthusiast features at a reasonable price. Hot-swappable switches, QMK/VIA firmware, Bluetooth to 3 devices, and a full 104-key layout with numpad — all for $115. The aluminum bezel adds a premium touch to the otherwise plastic case. The pre-lubed K Pro switches are smooth, and the OSA-profile PBT keycaps have a satisfying sculpted feel. Battery life reaches 200+ hours with backlight off. For anyone who needs a numpad and wants wireless with full programmability, this is the pick.",
+    "features": [
+      "Full-size 104-key layout with numpad",
+      "Hot-swappable switches",
+      "QMK/VIA fully programmable",
+      "Bluetooth x3 + USB-C wired",
+      "200+ hour battery (backlight off)"
+    ],
+    "pros": [
+      "Only full-size QMK/VIA wireless keyboard at this price",
+      "Hot-swap makes switch changes effortless",
+      "200+ hour battery is excellent",
+      "PBT keycaps feel premium"
+    ],
+    "cons": [
+      "Plastic case with aluminum bezel — mixed feel",
+      "Full-size layout takes significant desk space",
+      "RGB drains battery quickly",
+      "Stock stabilizers could be smoother"
+    ],
+    "network_ids": {
+      "amazon": "B0BW6GZSS4"
+    },
+    "image_url": "",
+    "best_for": [
+      "office",
+      "numpad",
+      "wireless"
+    ],
+    "specs": {
+      "layout": "Full-size (104 keys)",
+      "switches": "K Pro mechanical (hot-swap)",
+      "keycaps": "OSA-profile PBT",
+      "connectivity": "BT 5.1 (x3), USB-C",
+      "battery_mah": 4000,
+      "backlight": "South-facing RGB",
+      "polling_rate_hz": 1000,
+      "weight_g": 1100,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "logitech-g413-se",
+    "name": "Logitech G413 SE Mechanical Gaming Keyboard",
+    "brand": "Logitech",
+    "category": "mechanical-keyboards",
+    "price_usd": 55,
+    "rating": 4.6,
+    "verdict": "The best budget gaming keyboard — aluminum-top build, tactile switches, and Logitech reliability for $55.",
+    "description": "The Logitech G413 SE proves that budget doesn't have to mean cheap. The aluminum-top plate gives it a rigidity and premium feel that plastic keyboards can't match, and the tactile mechanical switches provide satisfying feedback for both gaming and typing. White backlighting is clean and functional. Anti-ghosting with 6-key rollover ensures your inputs register during intense gaming sessions. At $55, it's the most popular mechanical gaming keyboard on Amazon with 2,000+ monthly sales. No hot-swap, no wireless, no RGB — just a solid, reliable mechanical keyboard from a trusted brand.",
+    "features": [
+      "Aluminum-top plate for premium feel",
+      "Tactile mechanical switches",
+      "White backlighting",
+      "6-key rollover anti-ghosting",
+      "USB passthrough port"
+    ],
+    "pros": [
+      "Aluminum build quality at a budget price",
+      "Logitech reliability and support",
+      "Tactile switches feel great for gaming and typing",
+      "2,000+ monthly sales — proven popularity"
+    ],
+    "cons": [
+      "No hot-swap — switches are permanent",
+      "Wired only",
+      "White backlight only — no RGB",
+      "No software customization"
+    ],
+    "network_ids": {
+      "amazon": "B09NCLQFGP"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "gaming"
+    ],
+    "specs": {
+      "layout": "Full-size (104 keys)",
+      "switches": "Logitech tactile (soldered)",
+      "keycaps": "PBT",
+      "connectivity": "USB wired",
+      "battery_mah": 0,
+      "backlight": "White LED",
+      "polling_rate_hz": 1000,
+      "weight_g": 820,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "asus-rog-strix-scope-ii-96",
+    "name": "ASUS ROG Strix Scope II 96 Wireless Gaming Keyboard",
+    "brand": "ASUS",
+    "category": "mechanical-keyboards",
+    "price_usd": 180,
+    "rating": 4.6,
+    "verdict": "The best gaming keyboard for esports — ROG NX Snow switches, tri-mode wireless, and a compact 96% layout.",
+    "description": "ASUS' ROG Strix Scope II 96 is built for competitive gamers who want wireless freedom. The ROG NX Snow switches are fast and linear with a short 1.8mm actuation point, and the 96% layout keeps the numpad while freeing up mouse space. Tri-mode connectivity (2.4GHz at 1000Hz, Bluetooth, USB-C) covers every scenario, and the 2.4GHz mode delivers the low latency competitive gamers demand. Per-key RGB, hot-swappable switches, and ROG Armoury Crate software for full customization. The aluminum frame and PBT keycaps add durability. At $180, it's a complete competitive gaming keyboard.",
+    "features": [
+      "ROG NX Snow switches — 1.8mm fast actuation",
+      "96% layout — numpad + compact size",
+      "Tri-mode: 2.4GHz (1000Hz), BT, USB-C",
+      "Hot-swappable switches",
+      "ROG Armoury Crate software"
+    ],
+    "pros": [
+      "Fast actuation for competitive gaming",
+      "96% layout is the best of both worlds",
+      "Hot-swap at this build quality is great",
+      "Per-key RGB is vibrant"
+    ],
+    "cons": [
+      "$180 is premium for a gaming keyboard",
+      "Armoury Crate software can be bloated",
+      "ROG NX switches are proprietary",
+      "Battery life is average with RGB on"
+    ],
+    "network_ids": {
+      "amazon": "B0CJL6GYFZ"
+    },
+    "image_url": "",
+    "best_for": [
+      "gaming",
+      "esports",
+      "wireless"
+    ],
+    "specs": {
+      "layout": "96% (98 keys)",
+      "switches": "ROG NX Snow (hot-swap)",
+      "keycaps": "PBT double-shot",
+      "connectivity": "2.4GHz, BT 5.3, USB-C",
+      "battery_mah": 4000,
+      "backlight": "Per-key RGB",
+      "polling_rate_hz": 1000,
+      "weight_g": 1050,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "redragon-k552-kumara",
+    "name": "Redragon K552 Kumara Mechanical Gaming Keyboard",
+    "brand": "Redragon",
+    "category": "mechanical-keyboards",
+    "price_usd": 30,
+    "rating": 4.4,
+    "verdict": "The absolute cheapest mechanical keyboard worth buying — under $30 with real mechanical switches and RGB.",
+    "description": "The Redragon K552 is the entry point to mechanical keyboards. At $30, it costs less than most membrane keyboards while delivering the satisfying click and tactile feedback of real mechanical switches. The compact TKL layout saves desk space, and the rainbow RGB backlight adds visual flair. The aluminum base plate adds surprising rigidity for the price, and the keycaps are double-injection molded for durability. It's loud (blue switches), it's basic (wired only, no software), but it's a real mechanical keyboard for the price of a pizza dinner. 4,000+ reviews at 4.4 stars.",
+    "features": [
+      "Real mechanical blue switches",
+      "TKL compact layout",
+      "Rainbow RGB backlight",
+      "Aluminum base plate",
+      "Double-injection keycaps"
+    ],
+    "pros": [
+      "Cheapest real mechanical keyboard available",
+      "Aluminum base adds unexpected rigidity",
+      "4,000+ positive reviews",
+      "Good first mechanical keyboard experience"
+    ],
+    "cons": [
+      "Blue switches are LOUD",
+      "No software customization",
+      "Wired only",
+      "Keycaps are thin ABS"
+    ],
+    "network_ids": {
+      "amazon": "B016MAK38U"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "first-keyboard",
+      "gaming"
+    ],
+    "specs": {
+      "layout": "TKL (87 keys)",
+      "switches": "Outemu Blue (soldered)",
+      "keycaps": "Double-injection ABS",
+      "connectivity": "USB wired",
+      "battery_mah": 0,
+      "backlight": "Rainbow RGB",
+      "polling_rate_hz": 1000,
+      "weight_g": 680,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
