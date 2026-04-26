@@ -1,1 +1,522 @@
-
+[
+  {
+    "slug": "levoit-core-300",
+    "name": "LEVOIT Core 300 True HEPA Air Purifier",
+    "brand": "LEVOIT",
+    "category": "air-purifiers",
+    "price_usd": 100,
+    "rating": 4.6,
+    "verdict": "The best-selling air purifier on Amazon — proven HEPA filtration for bedrooms and small rooms at a price anyone can afford.",
+    "description": "The LEVOIT Core 300 has been Amazon's #1 best-selling air purifier for years, and for good reason. Its true H13 HEPA filter captures 99.97% of particles down to 0.3 microns — dust, pollen, pet dander, smoke, and mold spores. The 360-degree air intake pulls air from all sides, and the three fan speeds plus sleep mode cover everything from quick purge to whisper-quiet overnight operation at just 24 dB. It handles rooms up to 1,095 sq ft per hour. At $100, it's the safest recommendation for anyone who wants cleaner air without overthinking it.",
+    "features": [
+      "True H13 HEPA filter — 99.97% particle capture",
+      "360-degree air intake design",
+      "3 fan speeds + ultra-quiet sleep mode (24 dB)",
+      "Covers up to 1,095 sq ft/hour",
+      "Filter replacement indicator light"
+    ],
+    "pros": [
+      "Best-selling air purifier on Amazon for a reason",
+      "Excellent price-to-performance ratio",
+      "Whisper-quiet sleep mode at 24 dB",
+      "Compact footprint fits anywhere"
+    ],
+    "cons": [
+      "No smart/app features",
+      "No air quality sensor or auto mode",
+      "Filter replacements run ~$20 every 6-8 months",
+      "No washable pre-filter option"
+    ],
+    "network_ids": {
+      "amazon": "B07VVK39F7"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "best-overall",
+      "bedroom"
+    ],
+    "specs": {
+      "filter_type": "True HEPA H13",
+      "cadr_smoke": 141,
+      "cadr_dust": 140,
+      "cadr_pollen": 145,
+      "coverage_sqft": 1095,
+      "noise_min_db": 24,
+      "noise_max_db": 50,
+      "smart_features": false,
+      "energy_star": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "levoit-vital-200s",
+    "name": "LEVOIT Vital 200S Smart True HEPA Air Purifier",
+    "brand": "LEVOIT",
+    "category": "air-purifiers",
+    "price_usd": 150,
+    "rating": 4.7,
+    "verdict": "The best smart air purifier under $200 — app control, auto mode with air quality sensor, and coverage for large rooms.",
+    "description": "The Vital 200S takes everything good about the Core 300 and adds smart features. The built-in air quality sensor automatically adjusts fan speed based on real-time particle readings, and the VeSync app lets you monitor air quality, set schedules, and control the purifier remotely. It covers up to 1,875 sq ft per hour — enough for open-concept living areas. The washable pre-filter extends HEPA filter life, and the U-shaped air intake maximizes airflow efficiency. Alexa and Google Assistant compatible. At $150, it's the sweet spot between budget and premium.",
+    "features": [
+      "Built-in air quality sensor with auto mode",
+      "VeSync app for remote control and monitoring",
+      "Covers up to 1,875 sq ft/hour",
+      "Washable pre-filter extends HEPA life",
+      "Alexa and Google Assistant compatible"
+    ],
+    "pros": [
+      "Auto mode genuinely works — adjusts to cooking, pets, etc.",
+      "Large room coverage at a mid-range price",
+      "App is clean and responsive",
+      "Washable pre-filter saves money long-term"
+    ],
+    "cons": [
+      "Larger footprint than the Core 300",
+      "Auto mode can be aggressive — ramps up loudly",
+      "Carbon filter is thin — limited odor removal",
+      "Display light can't be fully dimmed in sleep mode"
+    ],
+    "network_ids": {
+      "amazon": "B0BJJ9QZ6M"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "large-rooms",
+      "smart-home"
+    ],
+    "specs": {
+      "filter_type": "True HEPA H13",
+      "cadr_smoke": 150,
+      "cadr_dust": 152,
+      "cadr_pollen": 153,
+      "coverage_sqft": 1875,
+      "noise_min_db": 26,
+      "noise_max_db": 52,
+      "smart_features": true,
+      "energy_star": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "coway-airmega-ap1512hh",
+    "name": "Coway Airmega AP-1512HH True HEPA Air Purifier",
+    "brand": "Coway",
+    "category": "air-purifiers",
+    "price_usd": 160,
+    "rating": 4.7,
+    "verdict": "The Wirecutter's top pick for 6 years running — proven performance, eco mode, and a 4-stage filtration system.",
+    "description": "The Coway AP-1512HH has been the most recommended air purifier by independent reviewers for half a decade, and the reason is consistency. Its 4-stage filtration (pre-filter, deodorization filter, True HEPA, vital ionizer) handles particles, odors, and VOCs. The eco mode automatically shuts off the fan when air quality is good for 30 minutes, saving energy. The air quality indicator ring changes color in real-time so you can see the purifier working. At $160, it's slightly more than budget picks but the track record of reliability and performance justifies every penny.",
+    "features": [
+      "4-stage filtration: pre-filter, carbon, True HEPA, ionizer",
+      "Eco mode auto-shuts fan when air is clean",
+      "Real-time air quality indicator ring",
+      "Covers up to 361 sq ft (2 ACH)",
+      "Filter replacement indicator"
+    ],
+    "pros": [
+      "Most recommended air purifier by independent reviewers",
+      "Eco mode saves significant energy",
+      "Air quality ring provides instant visual feedback",
+      "Compact and attractive design"
+    ],
+    "cons": [
+      "Coverage area is smaller than competitors at this price",
+      "Ionizer feature is controversial — some prefer it off",
+      "No app or smart features",
+      "Replacement filters are pricey (~$50)"
+    ],
+    "network_ids": {
+      "amazon": "B01728NLRG"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "allergies",
+      "bedroom"
+    ],
+    "specs": {
+      "filter_type": "True HEPA",
+      "cadr_smoke": 233,
+      "cadr_dust": 246,
+      "cadr_pollen": 240,
+      "coverage_sqft": 361,
+      "noise_min_db": 24,
+      "noise_max_db": 53,
+      "smart_features": false,
+      "energy_star": true,
+      "warranty_years": 3
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "blueair-blue-pure-211i-max",
+    "name": "Blueair Blue Pure 211i Max Air Purifier",
+    "brand": "Blueair",
+    "category": "air-purifiers",
+    "price_usd": 300,
+    "rating": 4.6,
+    "verdict": "The best air purifier for large spaces — cleans 3,048 sq ft in one hour with HEPASilent technology.",
+    "description": "When you need to clean a massive space — open-concept living rooms, lofts, basements — the Blue Pure 211i Max delivers. It processes 3,048 sq ft of air per hour using Blueair's proprietary HEPASilent technology, which combines mechanical and electrostatic filtration to capture 99.97% of particles while maintaining lower noise and energy use than pure HEPA systems. The app provides real-time AQI monitoring, auto mode, and filter life tracking. The washable pre-filter comes in multiple colors so you can match your decor. At $300, it's the large-room king.",
+    "features": [
+      "HEPASilent technology — 99.97% particle capture",
+      "Cleans 3,048 sq ft in one hour",
+      "Smart app with real-time AQI monitoring",
+      "Washable, color-customizable pre-filter",
+      "Auto mode adjusts to air quality"
+    ],
+    "pros": [
+      "Massive coverage area — best for large/open spaces",
+      "HEPASilent runs quieter than pure HEPA at same output",
+      "App and auto mode work reliably",
+      "Washable pre-filter reduces ongoing costs"
+    ],
+    "cons": [
+      "Large unit — takes significant floor space",
+      "Replacement filters are expensive (~$70)",
+      "HEPASilent ionizer component may concern some users",
+      "Overkill for bedrooms or small rooms"
+    ],
+    "network_ids": {
+      "amazon": "B0CL7P3PZ4"
+    },
+    "image_url": "",
+    "best_for": [
+      "large-rooms",
+      "premium",
+      "open-concept"
+    ],
+    "specs": {
+      "filter_type": "HEPASilent (HEPA + Electrostatic)",
+      "cadr_smoke": 350,
+      "cadr_dust": 350,
+      "cadr_pollen": 350,
+      "coverage_sqft": 3048,
+      "noise_min_db": 23,
+      "noise_max_db": 56,
+      "smart_features": true,
+      "energy_star": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "winix-5500-2",
+    "name": "Winix 5500-2 Air Purifier with True HEPA and PlasmaWave",
+    "brand": "Winix",
+    "category": "air-purifiers",
+    "price_usd": 160,
+    "rating": 4.7,
+    "verdict": "A top-rated workhorse with PlasmaWave technology — neutralizes viruses, bacteria, and odors beyond what HEPA alone can do.",
+    "description": "The Winix 5500-2 pairs a True HEPA filter with Winix's proprietary PlasmaWave technology, which creates hydroxyls that break down pollutants at the molecular level — something passive HEPA filters can't do. This makes it especially effective against odors, VOCs, and airborne pathogens. The washable AOC (Advanced Odor Control) carbon filter is a cost-saver — just rinse it instead of replacing it. Smart sensors automatically adjust the fan speed, and the sleep mode drops noise to a barely audible 27.8 dB. Consistently rated among the top 3 air purifiers by every major review outlet.",
+    "features": [
+      "True HEPA + PlasmaWave technology",
+      "Washable AOC carbon filter — no replacement needed",
+      "Smart sensor with auto fan speed adjustment",
+      "Sleep mode at 27.8 dB",
+      "Covers up to 360 sq ft"
+    ],
+    "pros": [
+      "PlasmaWave adds pathogen and odor neutralization",
+      "Washable carbon filter saves money long-term",
+      "Smart sensor auto mode is responsive and accurate",
+      "Excellent build quality for the price"
+    ],
+    "cons": [
+      "PlasmaWave produces trace ozone — some prefer it off",
+      "Coverage area is moderate",
+      "No app or WiFi connectivity",
+      "Design is dated compared to newer competitors"
+    ],
+    "network_ids": {
+      "amazon": "B01D8F60ME"
+    },
+    "image_url": "",
+    "best_for": [
+      "allergies",
+      "odors",
+      "best-overall"
+    ],
+    "specs": {
+      "filter_type": "True HEPA + PlasmaWave",
+      "cadr_smoke": 232,
+      "cadr_dust": 243,
+      "cadr_pollen": 246,
+      "coverage_sqft": 360,
+      "noise_min_db": 27.8,
+      "noise_max_db": 54,
+      "smart_features": false,
+      "energy_star": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "levoit-core-mini",
+    "name": "LEVOIT Core Mini Air Purifier",
+    "brand": "LEVOIT",
+    "category": "air-purifiers",
+    "price_usd": 45,
+    "rating": 4.4,
+    "verdict": "The cheapest real air purifier worth buying — HEPA filtration, aroma pad, and whisper-quiet operation for $45.",
+    "description": "The LEVOIT Core Mini is the entry point to air purification. At just $45, it's small enough for a desk or nightstand and quiet enough to sleep next to. The 3-in-1 filter (pre-filter, HEPA, activated carbon) captures dust, pollen, and pet dander effectively in small spaces up to 178 sq ft. The built-in aroma pad lets you add essential oils for a pleasant scent. Three fan speeds and a noise floor of just 25 dB make it unobtrusive. It won't purify a living room, but for a bedroom, dorm, nursery, or home office, it does exactly what you need for the price of a nice dinner.",
+    "features": [
+      "3-in-1 HEPA filtration for small spaces",
+      "Aroma pad for essential oils",
+      "Ultra-quiet operation — 25 dB minimum",
+      "Covers up to 178 sq ft",
+      "Compact desktop/nightstand size"
+    ],
+    "pros": [
+      "Cheapest real HEPA purifier available",
+      "Whisper-quiet — perfect for nightstands",
+      "Aroma pad is a nice bonus",
+      "Tiny footprint fits anywhere"
+    ],
+    "cons": [
+      "Very small coverage area — bedroom only",
+      "Not true H13 HEPA — less effective than larger models",
+      "No auto mode or air quality sensor",
+      "Filter replacements are frequent for the size"
+    ],
+    "network_ids": {
+      "amazon": "B09LGZ1SNB"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "bedroom",
+      "desktop"
+    ],
+    "specs": {
+      "filter_type": "HEPA (3-in-1)",
+      "cadr_smoke": 45,
+      "cadr_dust": 46,
+      "cadr_pollen": 50,
+      "coverage_sqft": 178,
+      "noise_min_db": 25,
+      "noise_max_db": 42,
+      "smart_features": false,
+      "energy_star": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "puroair-240-hepa",
+    "name": "PuroAir 240 HEPA Air Purifier",
+    "brand": "PuroAir",
+    "category": "air-purifiers",
+    "price_usd": 120,
+    "rating": 4.5,
+    "verdict": "A rising Amazon favorite — automatic air quality sensing, 1,115 sq ft coverage, and a USA-based brand.",
+    "description": "PuroAir has quickly become one of Amazon's top-selling air purifier brands, and the 240 shows why. The built-in air quality sensor automatically adjusts fan speed based on real-time readings, and the LED display shows your current AQI so you always know what you're breathing. Coverage reaches 1,115 sq ft — enough for most living rooms. The H13 HEPA filter captures 99.97% of particles, and the activated carbon layer handles odors. PuroAir is a USA-based company with responsive customer service. At $120, it slots between the budget Core 300 and the smart Vital 200S.",
+    "features": [
+      "Auto mode with built-in air quality sensor",
+      "LED AQI display — see your air quality in real-time",
+      "H13 HEPA filter — 99.97% particle capture",
+      "Covers up to 1,115 sq ft",
+      "USA-based brand with responsive support"
+    ],
+    "pros": [
+      "Auto mode and AQI display at a competitive price",
+      "Large coverage area for a $120 purifier",
+      "USA-based customer support",
+      "8K+ bought per month on Amazon"
+    ],
+    "cons": [
+      "No app or WiFi — display only",
+      "Carbon filter is basic",
+      "Sleep mode isn't as quiet as LEVOIT",
+      "Newer brand — less long-term reliability data"
+    ],
+    "network_ids": {
+      "amazon": "B0C4LPY3FV"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "large-rooms",
+      "allergies"
+    ],
+    "specs": {
+      "filter_type": "True HEPA H13",
+      "cadr_smoke": 195,
+      "cadr_dust": 196,
+      "cadr_pollen": 200,
+      "coverage_sqft": 1115,
+      "noise_min_db": 25,
+      "noise_max_db": 52,
+      "smart_features": false,
+      "energy_star": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "shark-hp152-neverchange",
+    "name": "Shark NeverChange Air Purifier HP152",
+    "brand": "Shark",
+    "category": "air-purifiers",
+    "price_usd": 200,
+    "rating": 4.4,
+    "verdict": "Never replace a filter again — Shark's 5-year HEPA filter eliminates the biggest ongoing cost of air purifiers.",
+    "description": "The Shark HP152's killer feature is right in the name: NeverChange. The HEPA filter is rated for 5 years of use before replacement — compared to 6-12 months for every competitor. Over 5 years, that saves $150-400 in filter costs. The Clean Sense IQ technology automatically adjusts fan speed based on air quality, and the purifier covers up to 650 sq ft. It captures 99.98% of particles down to 0.1 microns (smaller than standard HEPA's 0.3 micron rating). At $200 with virtually zero ongoing costs for 5 years, the total cost of ownership is lower than a $50 purifier with $30 semi-annual filter replacements.",
+    "features": [
+      "5-year HEPA filter — no replacements for years",
+      "99.98% capture down to 0.1 microns",
+      "Clean Sense IQ auto-adjusts to air quality",
+      "Covers up to 650 sq ft",
+      "Odor Neutralizer Technology"
+    ],
+    "pros": [
+      "5-year filter life eliminates ongoing costs",
+      "0.1 micron capture exceeds standard HEPA",
+      "Auto mode works well",
+      "Lowest total cost of ownership over 5 years"
+    ],
+    "cons": [
+      "Moderate coverage area — not for large rooms",
+      "No app or WiFi connectivity",
+      "Upfront cost is higher than budget options",
+      "When you do replace the filter, it's expensive"
+    ],
+    "network_ids": {
+      "amazon": "B0C4HL53DC"
+    },
+    "image_url": "",
+    "best_for": [
+      "low-maintenance",
+      "bedroom",
+      "allergies"
+    ],
+    "specs": {
+      "filter_type": "HEPA (5-year)",
+      "cadr_smoke": 140,
+      "cadr_dust": 142,
+      "cadr_pollen": 145,
+      "coverage_sqft": 650,
+      "noise_min_db": 26,
+      "noise_max_db": 50,
+      "smart_features": false,
+      "energy_star": false,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "rabbit-air-a3",
+    "name": "Rabbit Air A3 Ultra Quiet Air Purifier",
+    "brand": "Rabbit Air",
+    "category": "air-purifiers",
+    "price_usd": 550,
+    "rating": 4.8,
+    "verdict": "The best premium air purifier — 6-layer filtration, customizable filters, wall-mountable, and whisper-quiet.",
+    "description": "The Rabbit Air A3 is the air purifier you buy when you want the absolute best. Its 6-layer filtration system includes a customizable filter that you choose based on your specific concern — germ defense, toxin absorber, odor remover, or pet allergy. The BioGS HEPA filter is designed to maintain efficiency over time rather than degrading like standard HEPA filters. At 20.3 dB on its lowest setting, it's the quietest purifier in this roundup. It covers up to 1,070 sq ft, mounts on the wall to save floor space, and can even be customized with art panels. Forbes' #1 pick for 2026.",
+    "features": [
+      "6-layer filtration with customizable filter",
+      "BioGS HEPA — maintains efficiency over time",
+      "Wall-mountable design saves floor space",
+      "Ultra-quiet — 20.3 dB minimum",
+      "Negative ion generator"
+    ],
+    "pros": [
+      "Customizable filter targets your specific concern",
+      "Quietest air purifier tested — 20.3 dB",
+      "Wall mounting is a unique space-saver",
+      "Forbes #1 pick for 2026"
+    ],
+    "cons": [
+      "Expensive — over $500",
+      "Replacement filters are pricey",
+      "No real-time AQI display on the unit",
+      "Wall mounting requires installation"
+    ],
+    "network_ids": {
+      "amazon": "B0BVKF7B7L"
+    },
+    "image_url": "",
+    "best_for": [
+      "premium",
+      "bedroom",
+      "allergies"
+    ],
+    "specs": {
+      "filter_type": "BioGS HEPA (6-layer)",
+      "cadr_smoke": 200,
+      "cadr_dust": 210,
+      "cadr_pollen": 215,
+      "coverage_sqft": 1070,
+      "noise_min_db": 20.3,
+      "noise_max_db": 51,
+      "smart_features": true,
+      "energy_star": true,
+      "warranty_years": 5
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "levoit-core-400s",
+    "name": "LEVOIT Core 400S Smart True HEPA Air Purifier",
+    "brand": "LEVOIT",
+    "category": "air-purifiers",
+    "price_usd": 190,
+    "rating": 4.6,
+    "verdict": "LEVOIT's best for allergies — medical-grade H13 HEPA, smart controls, and a laser dust sensor for precise air quality readings.",
+    "description": "The Core 400S is LEVOIT's allergy-focused flagship. Its medical-grade H13 HEPA filter captures 99.97% of particles at 0.3 microns, and the laser dust sensor provides precise PM2.5 readings displayed on the unit and in the app. Auto mode uses these readings to adjust fan speed in real-time — it noticeably ramps up when you cook or vacuum, then quietly settles back down. The VeSync app offers scheduling, air quality history, and voice control via Alexa/Google. At $190, it's the most feature-complete purifier under $200 for allergy sufferers.",
+    "features": [
+      "Medical-grade H13 HEPA filter",
+      "Laser dust sensor with PM2.5 display",
+      "VeSync app with air quality history",
+      "Auto mode based on real-time readings",
+      "Alexa and Google Assistant compatible"
+    ],
+    "pros": [
+      "Laser dust sensor is more accurate than LED-based sensors",
+      "App shows air quality trends over time",
+      "Auto mode is responsive and effective",
+      "Strong brand with proven reliability"
+    ],
+    "cons": [
+      "Coverage area (403 sq ft) is smaller than the Vital 200S",
+      "Carbon filter is basic for odors",
+      "Laser sensor can be sensitive to steam/humidity",
+      "Night light can't be fully disabled"
+    ],
+    "network_ids": {
+      "amazon": "B08R794ZMH"
+    },
+    "image_url": "",
+    "best_for": [
+      "allergies",
+      "smart-home",
+      "bedroom"
+    ],
+    "specs": {
+      "filter_type": "True HEPA H13",
+      "cadr_smoke": 260,
+      "cadr_dust": 261,
+      "cadr_pollen": 265,
+      "coverage_sqft": 403,
+      "noise_min_db": 24,
+      "noise_max_db": 52,
+      "smart_features": true,
+      "energy_star": true,
+      "warranty_years": 2
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  }
+]
