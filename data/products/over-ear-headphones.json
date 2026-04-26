@@ -1,518 +1,517 @@
 [
   {
-    "slug": "apple-ipad-11th-gen",
-    "name": "Apple iPad (11th Generation, 2025)",
-    "brand": "Apple",
-    "category": "tablets",
-    "price_usd": 329,
-    "rating": 4.7,
-    "verdict": "The best tablet for most people — 11-inch display, A16 chip, 128GB storage, and the full iPad experience at the lowest price.",
-    "description": "The 11th-gen iPad is the tablet Apple sells the most, and for good reason. The A16 chip handles everything from streaming to light photo editing without breaking a sweat. The 11-inch Liquid Retina display is bright and color-accurate, and 128GB base storage (doubled from the previous gen) means you won't run out of space. It supports Apple Pencil, works with the Magic Keyboard Folio, and runs the full iPadOS with Stage Manager multitasking. At $329, it's the most iPad you can get for the least money. CNET's top pick for most people.",
-    "features": [
-      "A16 Bionic chip",
-      "11-inch Liquid Retina display",
-      "128GB base storage (doubled)",
-      "Apple Pencil and keyboard support",
-      "iPadOS with Stage Manager"
-    ],
-    "pros": [
-      "Best value iPad — most tablet for the money",
-      "128GB base storage is generous",
-      "A16 chip handles everything most people need",
-      "Full iPadOS with multitasking"
-    ],
-    "cons": [
-      "60Hz display (no ProMotion)",
-      "No Face ID — uses Touch ID",
-      "Slow charging — no brick included",
-      "Apple Pencil Pro not supported"
-    ],
-    "network_ids": {
-      "amazon": "B0DP6HCWPZ"
-    },
-    "image_url": "",
-    "best_for": [
-      "best-overall",
-      "budget",
-      "students"
-    ],
-    "specs": {
-      "display": "11\" Liquid Retina",
-      "resolution": "2360x1640",
-      "processor": "A16 Bionic",
-      "storage_gb": 128,
-      "ram_gb": 6,
-      "battery_hours": 10,
-      "weight_lbs": 1.05,
-      "os": "iPadOS 18",
-      "camera_mp": 12,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "apple-ipad-air-m3",
-    "name": "Apple iPad Air M3 (2025)",
-    "brand": "Apple",
-    "category": "tablets",
-    "price_usd": 599,
+    "slug": "sony-wh-1000xm6",
+    "name": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
+    "brand": "Sony",
+    "category": "over-ear-headphones",
+    "price_usd": 430,
     "rating": 4.8,
-    "verdict": "The best mid-range tablet — M3 chip, 11\" or 13\" options, and Apple Pencil Pro support make this a true laptop replacement.",
-    "description": "The iPad Air M3 occupies the sweet spot between the base iPad and the Pro. The M3 chip delivers laptop-class performance — video editing, illustration, 3D modeling all run smoothly. Available in 11-inch and 13-inch sizes, it supports Apple Pencil Pro with haptic feedback and barrel roll. The Liquid Retina display is excellent (though not the Pro's OLED), and 128GB base storage is adequate. With the Magic Keyboard, it's a genuine laptop replacement for most workflows. At $599, it's $400 less than the Pro while delivering 90% of its capability.",
+    "verdict": "The best over-ear headphones overall — new driver tuning, foldable design, and noise cancellation that rivals Bose.",
+    "description": "The Sony WH-1000XM6 represent the latest evolution of the most popular premium headphone line. The HD Noise Canceling Processor QN3 uses 12 microphones for 7x faster ANC processing than the XM5. Co-created with mastering engineers, the sound signature is detailed and balanced across all frequencies. The foldable design (new for this generation) makes them travel-friendly, and 30+ hours of battery with ANC on gets through transcontinental flights. LDAC support streams high-res audio wirelessly. RTINGS' #1 noise-cancelling headphone for 2026.",
     "features": [
-      "M3 chip — laptop-class performance",
-      "Available in 11\" and 13\" sizes",
-      "Apple Pencil Pro support with haptics",
-      "Liquid Retina display",
-      "Magic Keyboard compatible"
+      "HD NC Processor QN3 with 12 microphones",
+      "Foldable design — new for XM6",
+      "30+ hour battery with ANC on",
+      "LDAC high-res wireless audio",
+      "Adaptive Sound Control adjusts to environment"
     ],
     "pros": [
-      "Best balance of performance and price",
-      "M3 handles professional workflows",
-      "Two size options",
-      "Apple Pencil Pro support"
+      "Best noise cancellation tested (ties Bose)",
+      "Foldable design is a welcome upgrade",
+      "30-hour battery is class-leading",
+      "Sound quality is audiophile-grade"
     ],
     "cons": [
-      "60Hz display (no ProMotion)",
-      "No Face ID",
-      "128GB base may limit power users",
-      "Accessories sold separately (expensive)"
+      "$430 is premium pricing",
+      "Touch controls have a learning curve",
+      "Can feel warm during long sessions",
+      "Multipoint connection can be finicky"
     ],
     "network_ids": {
-      "amazon": "B0DHHND2R7"
+      "amazon": "B0DGHM7L1S"
     },
     "image_url": "",
     "best_for": [
       "best-overall",
-      "productivity",
-      "creative"
+      "noise-canceling",
+      "audiophile"
     ],
     "specs": {
-      "display": "11\" Liquid Retina",
-      "resolution": "2360x1640",
-      "processor": "Apple M3",
-      "storage_gb": 128,
-      "ram_gb": 8,
-      "battery_hours": 10,
-      "weight_lbs": 1.02,
-      "os": "iPadOS 18",
-      "camera_mp": 12,
+      "driver_mm": 30,
+      "battery_hours": 30,
+      "anc": true,
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC, LDAC, LC3",
+      "weight_g": 252,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 12,
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
     "date_updated": "2026-04-22"
   },
   {
-    "slug": "samsung-galaxy-tab-s10-ultra",
-    "name": "Samsung Galaxy Tab S10 Ultra",
-    "brand": "Samsung",
-    "category": "tablets",
-    "price_usd": 1000,
+    "slug": "bose-qc-ultra-headphones-2",
+    "name": "Bose QuietComfort Ultra Headphones 2",
+    "brand": "Bose",
+    "category": "over-ear-headphones",
+    "price_usd": 449,
+    "rating": 4.8,
+    "verdict": "The best noise cancellation money can buy — Bose's ANC is still the gold standard, now with Immersive Audio and wireless charging.",
+    "description": "Bose wrote the book on noise cancellation, and the QC Ultra 2 is the latest chapter. ANC performance is the best available — it silences low-frequency airplane rumble, mid-range office chatter, and high-frequency fan whine more effectively than any competitor. Immersive Audio adds spatial depth to music, and CustomTune calibrates the sound to your ear shape on every wear. The Gen 2 adds auto power-on (put them on, they turn on) and wireless charging case compatibility. 30 hours of battery, premium comfort, and the best ANC make these the headphones for frequent travelers.",
+    "features": [
+      "Best-in-class active noise cancellation",
+      "Immersive Audio for spatial sound",
+      "CustomTune auto-calibrates to your ears",
+      "Auto power-on when worn",
+      "30-hour battery with ANC"
+    ],
+    "pros": [
+      "Best noise cancellation available — period",
+      "Immersive Audio adds real spatial depth",
+      "Most comfortable headphones for long wear",
+      "Auto power-on is a nice Gen 2 touch"
+    ],
+    "cons": [
+      "$449 is the highest price on this list",
+      "Sound trails Sony for music purists",
+      "Proprietary ear cushions",
+      "Plastic build feels less premium than price suggests"
+    ],
+    "network_ids": {
+      "amazon": "B0DQ6KG4ZS"
+    },
+    "image_url": "",
+    "best_for": [
+      "noise-canceling",
+      "premium",
+      "travel"
+    ],
+    "specs": {
+      "driver_mm": "Bose proprietary",
+      "battery_hours": 30,
+      "anc": true,
+      "bluetooth": "5.4",
+      "codec": "SBC, AAC, aptX Adaptive",
+      "weight_g": 250,
+      "foldable": false,
+      "wired_option": true,
+      "microphones": 8,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "sennheiser-momentum-4",
+    "name": "Sennheiser Momentum 4 Wireless Headphones",
+    "brand": "Sennheiser",
+    "category": "over-ear-headphones",
+    "price_usd": 300,
     "rating": 4.7,
-    "verdict": "The best Android tablet — 14.6-inch Super AMOLED, S Pen included, and Samsung DeX turns it into a desktop.",
-    "description": "The Galaxy Tab S10 Ultra is Samsung's everything tablet. The 14.6-inch Super AMOLED display with 120Hz refresh rate is the largest and most beautiful tablet screen available. The S Pen is included (Apple charges extra), and Samsung's DeX mode transforms the tablet into a full desktop experience with resizable windows. The Snapdragon 8 Gen 3 handles any Android app or game without hesitation. At $1,000 for the base model, it's expensive, but you're getting a tablet that genuinely replaces a laptop for most tasks. The dual front cameras make it the best tablet for video calls.",
+    "verdict": "The best-sounding wireless headphones — Sennheiser's legendary audio tuning delivers the most natural, detailed sound in this roundup.",
+    "description": "If sound quality is your top priority, the Sennheiser Momentum 4 wins. Sennheiser has been making audiophile equipment for 80 years, and that expertise shows. The 42mm drivers deliver the most natural, detailed sound of any wireless headphone — instruments have texture, vocals have presence, and the soundstage is wide and immersive. ANC is good (not Bose-level, but effective), and 60 hours of battery life is absurd — charge once every two weeks. The foldable design and premium materials make them travel-ready. At $300 (down from $350 launch), they're the value pick for audio enthusiasts.",
     "features": [
-      "14.6\" Super AMOLED 120Hz display",
-      "S Pen included in box",
-      "Samsung DeX desktop mode",
-      "Snapdragon 8 Gen 3 processor",
-      "Dual front cameras for video calls"
+      "42mm Sennheiser drivers — audiophile-grade sound",
+      "60-hour battery life — best in class",
+      "Adaptive ANC with transparency mode",
+      "Foldable design with premium materials",
+      "Sennheiser Smart Control app with EQ"
     ],
     "pros": [
-      "Largest, most beautiful tablet display",
-      "S Pen included — not an extra purchase",
-      "DeX mode is a genuine productivity tool",
-      "Best Android tablet, period"
+      "Best sound quality in wireless headphones",
+      "60-hour battery is unmatched",
+      "Premium materials and build quality",
+      "$300 is great value for this sound"
     ],
     "cons": [
-      "$1,000+ is premium pricing",
-      "14.6\" is too big for one-handed use",
-      "Samsung keyboard cover sold separately",
-      "Some apps aren't optimized for tablet"
+      "ANC trails Sony and Bose",
+      "Touch controls on earcup can be imprecise",
+      "No spatial audio feature",
+      "Earcups can feel warm"
     ],
     "network_ids": {
-      "amazon": "B0DCQZJW3X"
+      "amazon": "B0BYM4P2WF"
     },
     "image_url": "",
     "best_for": [
-      "premium",
-      "productivity",
-      "android"
-    ],
-    "specs": {
-      "display": "14.6\" Super AMOLED 120Hz",
-      "resolution": "2960x1848",
-      "processor": "Snapdragon 8 Gen 3",
-      "storage_gb": 256,
-      "ram_gb": 12,
-      "battery_hours": 14,
-      "weight_lbs": 1.55,
-      "os": "Android 14 / One UI 6.1",
-      "camera_mp": 13,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "apple-ipad-pro-m4",
-    "name": "Apple iPad Pro 13-inch (M4)",
-    "brand": "Apple",
-    "category": "tablets",
-    "price_usd": 1299,
-    "rating": 4.9,
-    "verdict": "The most powerful tablet ever made — M4 chip, Ultra Retina XDR OLED display, and performance that embarrasses most laptops.",
-    "description": "The iPad Pro M4 is the most powerful tablet ever created — and it's not close. The M4 chip benchmarks faster than many MacBook Pros, the Ultra Retina XDR OLED display with ProMotion 120Hz is the best screen on any mobile device, and at just 5.1mm thin, it's thinner than an iPod nano. Professional video editors, 3D artists, and music producers use this as their primary creation device. Thunderbolt connectivity, Face ID, and up to 2TB storage complete the picture. At $1,299, it's expensive, but it's also the only tablet that can truly replace a laptop for professional creative work.",
-    "features": [
-      "M4 chip — faster than many laptops",
-      "Ultra Retina XDR OLED with ProMotion 120Hz",
-      "5.1mm thin — thinnest Apple device ever",
-      "Thunderbolt / USB 4 connectivity",
-      "Face ID and LiDAR scanner"
-    ],
-    "pros": [
-      "Most powerful tablet in existence",
-      "OLED display is stunning",
-      "Incredibly thin and light for its power",
-      "Thunderbolt enables pro peripherals"
-    ],
-    "cons": [
-      "$1,299 starting price is steep",
-      "Overkill for casual users",
-      "iPadOS still limits some pro workflows",
-      "Accessories add $400+"
-    ],
-    "network_ids": {
-      "amazon": "B0D3J6L2SC"
-    },
-    "image_url": "",
-    "best_for": [
-      "premium",
-      "creative",
-      "professional"
-    ],
-    "specs": {
-      "display": "13\" Ultra Retina XDR OLED 120Hz",
-      "resolution": "2752x2064",
-      "processor": "Apple M4",
-      "storage_gb": 256,
-      "ram_gb": 16,
-      "battery_hours": 10,
-      "weight_lbs": 1.28,
-      "os": "iPadOS 18",
-      "camera_mp": 12,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "amazon-fire-hd-10",
-    "name": "Amazon Fire HD 10 Tablet (2023)",
-    "brand": "Amazon",
-    "category": "tablets",
-    "price_usd": 140,
-    "rating": 4.2,
-    "verdict": "The best budget tablet for streaming — 10.1-inch display, Alexa built-in, and all-day battery for $140.",
-    "description": "The Amazon Fire HD 10 is the tablet you buy for the couch, the kitchen, and the kids. At $140, it delivers a 10.1-inch 1080p display, 10+ hours of battery, and deep Alexa integration — ask it to control your smart home, play music, or check the weather hands-free. It runs Amazon's Fire OS with access to Netflix, Disney+, YouTube, Kindle, and most streaming apps. It won't win any performance awards, but for media consumption, web browsing, and casual games, it does exactly what most people need a tablet to do. The microSD slot adds up to 1TB of storage.",
-    "features": [
-      "10.1\" 1080p display",
-      "10+ hour battery life",
-      "Alexa hands-free built-in",
-      "microSD slot up to 1TB",
-      "Show Mode turns it into an Echo Show"
-    ],
-    "pros": [
-      "Best value tablet for streaming",
-      "Alexa integration is genuinely useful",
-      "microSD expansion up to 1TB",
-      "Great for kids with parental controls"
-    ],
-    "cons": [
-      "Fire OS — no Google Play Store",
-      "Performance is sluggish for multitasking",
-      "Camera quality is poor",
-      "Ads on lock screen (pay $15 to remove)"
-    ],
-    "network_ids": {
-      "amazon": "B0BHZT4PLC"
-    },
-    "image_url": "",
-    "best_for": [
-      "budget",
-      "streaming",
-      "kids"
-    ],
-    "specs": {
-      "display": "10.1\" 1080p IPS",
-      "resolution": "1920x1200",
-      "processor": "MediaTek MT8186",
-      "storage_gb": 32,
-      "ram_gb": 3,
-      "battery_hours": 13,
-      "weight_lbs": 1.05,
-      "os": "Fire OS",
-      "camera_mp": 5,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "samsung-galaxy-tab-a9-plus",
-    "name": "Samsung Galaxy Tab A9+ Wi-Fi Tablet",
-    "brand": "Samsung",
-    "category": "tablets",
-    "price_usd": 200,
-    "rating": 4.3,
-    "verdict": "The best budget Android tablet — 11-inch display, expandable storage, and full Google Play Store for $200.",
-    "description": "The Galaxy Tab A9+ fills the gap between cheap Fire tablets and expensive flagships. At $200, you get an 11-inch 1920x1200 display, Snapdragon 695 processor, and the full Google Play Store — something Amazon's Fire tablets don't offer. Samsung's One UI provides a clean, familiar Android experience with split-screen multitasking. The microSD slot expands storage up to 1TB, and the metal build feels premium for the price. For students, casual users, and anyone who wants a real Android tablet without spending $500+, the Tab A9+ is the obvious choice.",
-    "features": [
-      "11\" 1920x1200 display",
-      "Full Google Play Store",
-      "Snapdragon 695 processor",
-      "microSD expansion up to 1TB",
-      "Samsung One UI with split-screen"
-    ],
-    "pros": [
-      "Best budget Android tablet with Google Play",
-      "11-inch display at $200 is excellent value",
-      "Metal build feels premium",
-      "Samsung software is polished"
-    ],
-    "cons": [
-      "Performance is mid-range",
-      "No S Pen support",
-      "Single speaker — audio is average",
-      "No keyboard accessory option"
-    ],
-    "network_ids": {
-      "amazon": "B0CL6CWTQJ"
-    },
-    "image_url": "",
-    "best_for": [
-      "budget",
-      "android",
-      "students"
-    ],
-    "specs": {
-      "display": "11\" IPS LCD",
-      "resolution": "1920x1200",
-      "processor": "Snapdragon 695",
-      "storage_gb": 64,
-      "ram_gb": 4,
-      "battery_hours": 12,
-      "weight_lbs": 1.06,
-      "os": "Android 14 / One UI",
-      "camera_mp": 8,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "microsoft-surface-pro-11",
-    "name": "Microsoft Surface Pro 11",
-    "brand": "Microsoft",
-    "category": "tablets",
-    "price_usd": 1000,
-    "rating": 4.5,
-    "verdict": "The best Windows tablet — Snapdragon X Plus, full Windows 11, and Copilot+ AI features make this a true laptop replacement.",
-    "description": "The Surface Pro 11 is Microsoft's vision of what a tablet should be: a full Windows 11 computer in a tablet form factor. The Snapdragon X Plus processor delivers excellent performance with outstanding battery life, and Copilot+ AI features bring on-device intelligence. The 13-inch PixelSense display with 120Hz is beautiful for both work and media. With the Type Cover keyboard (sold separately), it becomes a genuine laptop. Unlike iPads, it runs full desktop applications — Photoshop, Visual Studio, Excel with macros. For professionals who need Windows in a portable form, nothing else competes.",
-    "features": [
-      "Full Windows 11 with Copilot+ AI",
-      "Snapdragon X Plus — excellent battery life",
-      "13\" PixelSense 120Hz display",
-      "Surface Pen support",
-      "Kickstand with infinite angle adjustment"
-    ],
-    "pros": [
-      "Full Windows 11 — runs desktop apps",
-      "Copilot+ AI features are genuinely useful",
-      "Excellent battery life with Snapdragon",
-      "Best kickstand design in any tablet"
-    ],
-    "cons": [
-      "$1,000 before keyboard and pen",
-      "Type Cover sold separately ($180)",
-      "Some x86 apps need emulation",
-      "Heavier than iPad alternatives"
-    ],
-    "network_ids": {
-      "amazon": "B0D5Y2PCKM"
-    },
-    "image_url": "",
-    "best_for": [
-      "productivity",
-      "premium",
-      "windows"
-    ],
-    "specs": {
-      "display": "13\" PixelSense 120Hz",
-      "resolution": "2880x1920",
-      "processor": "Snapdragon X Plus",
-      "storage_gb": 256,
-      "ram_gb": 16,
-      "battery_hours": 14,
-      "weight_lbs": 1.97,
-      "os": "Windows 11",
-      "camera_mp": 10,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "oneplust-pad-2",
-    "name": "OnePlus Pad 2",
-    "brand": "OnePlus",
-    "category": "tablets",
-    "price_usd": 500,
-    "rating": 4.5,
-    "verdict": "The best mid-range Android tablet — Snapdragon 8 Gen 3, 12.1-inch display, and flagship performance at half the Samsung price.",
-    "description": "The OnePlus Pad 2 is the Android tablet that makes Samsung nervous. Snapdragon 8 Gen 3 — the same chip in Samsung's $1,000 Tab S10 Ultra — powers this $500 tablet. The 12.1-inch 2.8K display with 144Hz refresh rate is gorgeous for gaming and media. 9,510mAh battery with 67W fast charging means 0-100% in about an hour. OnePlus' OxygenOS provides a clean, near-stock Android experience without Samsung's bloatware. At $500, you're getting flagship Android tablet performance for half the price of Samsung's best. The included stylus support (pen sold separately) adds productivity capability.",
-    "features": [
-      "Snapdragon 8 Gen 3 — flagship chip",
-      "12.1\" 2.8K 144Hz display",
-      "9,510mAh battery with 67W fast charging",
-      "OxygenOS — clean Android experience",
-      "Dolby Vision and Atmos support"
-    ],
-    "pros": [
-      "Flagship chip at half Samsung's price",
-      "144Hz display is buttery smooth",
-      "67W fast charging is class-leading",
-      "Clean software without bloatware"
-    ],
-    "cons": [
-      "Pen and keyboard sold separately",
-      "Fewer tablet-optimized Android apps",
-      "No S Pen-level stylus features",
-      "Brand is less established in tablets"
-    ],
-    "network_ids": {
-      "amazon": "B0D7V7D3PT"
-    },
-    "image_url": "",
-    "best_for": [
+      "audiophile",
       "best-overall",
-      "android",
-      "gaming"
+      "battery-life"
     ],
     "specs": {
-      "display": "12.1\" 2.8K LCD 144Hz",
-      "resolution": "2120x1600",
-      "processor": "Snapdragon 8 Gen 3",
-      "storage_gb": 256,
-      "ram_gb": 12,
-      "battery_hours": 12,
-      "weight_lbs": 1.24,
-      "os": "OxygenOS 14",
-      "camera_mp": 13,
-      "warranty_years": 1
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "amazon-fire-7-kids",
-    "name": "Amazon Fire 7 Kids Tablet",
-    "brand": "Amazon",
-    "category": "tablets",
-    "price_usd": 100,
-    "rating": 4.2,
-    "verdict": "The best tablet for young kids — kid-proof case, 2-year worry-free guarantee, and Amazon Kids+ parental controls for $100.",
-    "description": "The Fire 7 Kids is the tablet parents buy without worrying. The kid-proof case survives drops, spills, and the general chaos of childhood. Amazon's 2-year worry-free guarantee means if your kid breaks it, Amazon replaces it — no questions asked. Amazon Kids+ provides age-appropriate content, games, and videos with robust parental controls. Parents can set time limits, bedtime schedules, and educational goals. The 7-inch size is perfect for small hands. At $100, it's cheap enough that you don't stress about it. The best first tablet for kids ages 3-7.",
-    "features": [
-      "Kid-proof protective case included",
-      "2-year worry-free replacement guarantee",
-      "Amazon Kids+ with parental controls",
-      "7\" display — perfect for small hands",
-      "Time limits and educational goals"
-    ],
-    "pros": [
-      "2-year worry-free guarantee is unbeatable",
-      "Kid-proof case survives anything",
-      "Parental controls are comprehensive",
-      "$100 is stress-free pricing"
-    ],
-    "cons": [
-      "Very slow performance",
-      "7\" display is small",
-      "No Google Play Store",
-      "1-year Amazon Kids+ included, then $5/month"
-    ],
-    "network_ids": {
-      "amazon": "B0BL6FTFY1"
-    },
-    "image_url": "",
-    "best_for": [
-      "kids",
-      "budget"
-    ],
-    "specs": {
-      "display": "7\" IPS",
-      "resolution": "1024x600",
-      "processor": "MediaTek MT8168",
-      "storage_gb": 16,
-      "ram_gb": 2,
-      "battery_hours": 10,
-      "weight_lbs": 0.97,
-      "os": "Fire OS + Kids+",
-      "camera_mp": 2,
+      "driver_mm": 42,
+      "battery_hours": 60,
+      "anc": true,
+      "bluetooth": "5.2",
+      "codec": "SBC, AAC, aptX, aptX Adaptive",
+      "weight_g": 293,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 4,
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
     "date_updated": "2026-04-22"
   },
   {
-    "slug": "apple-ipad-mini-7",
-    "name": "Apple iPad mini (7th Generation)",
+    "slug": "apple-airpods-max-2",
+    "name": "Apple AirPods Max 2",
     "brand": "Apple",
-    "category": "tablets",
-    "price_usd": 499,
+    "category": "over-ear-headphones",
+    "price_usd": 549,
     "rating": 4.6,
-    "verdict": "The best small tablet — 8.3-inch display, A17 Pro chip, and Apple Pencil Pro support in a pocketable size.",
-    "description": "The iPad mini is for people who think regular tablets are too big. The 8.3-inch Liquid Retina display fits in a jacket pocket or small bag while still delivering the full iPad experience. The A17 Pro chip (same as iPhone 15 Pro) provides more than enough power for any app, and Apple Pencil Pro support makes it a capable note-taking device. It's the preferred tablet for pilots (fits cockpit mounts), doctors (fits lab coat pockets), and readers (best e-reader with color). At $499, it's not cheap, but nothing else offers this much capability in this small a form factor.",
+    "verdict": "The best headphones for Apple users — USB-C, adaptive audio, and the deepest integration with iPhone, iPad, and Mac.",
+    "description": "The AirPods Max 2 finally address the original's biggest criticism: the Lightning port is gone, replaced by USB-C. Adaptive Audio intelligently blends ANC and transparency based on your environment — walk into a noisy cafe and it adjusts automatically. The H2 chip enables Personalized Spatial Audio with head tracking for immersive movie and music experiences. The anodized aluminum cups and stainless steel frame look and feel premium. At $549, they're expensive, but for users deep in the Apple ecosystem, the seamless switching between iPhone, iPad, Mac, and Apple TV is unmatched.",
     "features": [
-      "8.3\" Liquid Retina display — pocketable",
-      "A17 Pro chip — iPhone 15 Pro performance",
-      "Apple Pencil Pro support",
-      "USB-C connectivity",
-      "Wi-Fi 6E + optional 5G"
+      "USB-C charging (finally)",
+      "Adaptive Audio blends ANC + transparency",
+      "Personalized Spatial Audio with head tracking",
+      "Anodized aluminum and stainless steel build",
+      "Seamless switching across Apple devices"
     ],
     "pros": [
-      "Most capable small tablet available",
-      "Fits in pockets and small bags",
-      "A17 Pro chip is powerful",
-      "Apple Pencil Pro support"
+      "Best Apple ecosystem integration",
+      "Adaptive Audio is genuinely smart",
+      "Premium build quality and materials",
+      "Spatial Audio with head tracking is immersive"
     ],
     "cons": [
-      "$499 is expensive for an 8.3\" screen",
-      "No Face ID — uses Touch ID",
-      "No keyboard accessory",
-      "Jelly scrolling still present for some users"
+      "$549 is the most expensive on this list",
+      "Heavy at 384g — noticeable on long flights",
+      "No foldable design — bulky to carry",
+      "Smart Case doesn't fully protect"
     ],
     "network_ids": {
-      "amazon": "B0DHK3Y5MK"
+      "amazon": "B0DGHSL5ST"
     },
     "image_url": "",
     "best_for": [
       "premium",
-      "portable",
-      "reading"
+      "apple",
+      "spatial-audio"
     ],
     "specs": {
-      "display": "8.3\" Liquid Retina",
-      "resolution": "2266x1488",
-      "processor": "A17 Pro",
-      "storage_gb": 128,
-      "ram_gb": 8,
-      "battery_hours": 10,
-      "weight_lbs": 0.65,
-      "os": "iPadOS 18",
-      "camera_mp": 12,
+      "driver_mm": 40,
+      "battery_hours": 20,
+      "anc": true,
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC",
+      "weight_g": 384,
+      "foldable": false,
+      "wired_option": true,
+      "microphones": 9,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "anker-soundcore-q20i",
+    "name": "Anker Soundcore Q20i Wireless Headphones",
+    "brand": "Anker",
+    "category": "over-ear-headphones",
+    "price_usd": 35,
+    "rating": 4.4,
+    "verdict": "The cheapest ANC headphones worth buying — hybrid noise cancellation, 40-hour battery, and Hi-Res Audio for $35.",
+    "description": "The Soundcore Q20i are the headphones that make you question why anyone spends $400. At $35, you get hybrid active noise cancellation (not just passive), 40 hours of battery with ANC on, Hi-Res Audio certification, and a comfortable over-ear design. The bass is emphasized (great for pop and hip-hop, less ideal for classical), and the ANC won't match Sony or Bose, but it genuinely reduces background noise on commutes and in offices. Amazon's #1 best-seller with 10K+ bought monthly. For the price of a nice lunch, you get legitimate wireless ANC headphones.",
+    "features": [
+      "Hybrid ANC at just $35",
+      "40-hour battery with ANC on",
+      "Hi-Res Audio certified",
+      "Soundcore app with custom EQ",
+      "Foldable design for portability"
+    ],
+    "pros": [
+      "Absurd value — ANC headphones for $35",
+      "40-hour battery is excellent",
+      "Hi-Res Audio support at this price is rare",
+      "Amazon's #1 best-seller — proven"
+    ],
+    "cons": [
+      "ANC is basic compared to premium brands",
+      "Bass-heavy sound signature",
+      "Build quality is noticeably plastic",
+      "Microphone quality is poor for calls"
+    ],
+    "network_ids": {
+      "amazon": "B0CHZ38B4Z"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "commute"
+    ],
+    "specs": {
+      "driver_mm": 40,
+      "battery_hours": 40,
+      "anc": true,
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC",
+      "weight_g": 268,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 2,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "sony-wh-ch720n",
+    "name": "Sony WH-CH720N Wireless Noise Cancelling Headphones",
+    "brand": "Sony",
+    "category": "over-ear-headphones",
+    "price_usd": 98,
+    "rating": 4.5,
+    "verdict": "The best mid-range ANC headphones — Sony's noise cancellation and sound quality at under $100.",
+    "description": "The WH-CH720N brings Sony's noise cancellation technology down to an accessible price. The same Integrated Processor V1 from previous flagship models handles ANC duties, and the sound quality carries Sony's signature warm, detailed tuning. At just 192g, they're the lightest headphones on this list — you barely feel them during long sessions. 35 hours of battery with ANC, multipoint Bluetooth for two devices, and Alexa/Google Assistant support round out a compelling mid-range package. At under $100 on sale, they're the sweet spot between budget and premium.",
+    "features": [
+      "Sony Integrated Processor V1 for ANC",
+      "Lightest headphones at 192g",
+      "35-hour battery with ANC on",
+      "Multipoint Bluetooth (2 devices)",
+      "Alexa and Google Assistant built-in"
+    ],
+    "pros": [
+      "Sony ANC quality at under $100",
+      "Lightest headphones — barely noticeable",
+      "35-hour battery is excellent",
+      "Multipoint Bluetooth is convenient"
+    ],
+    "cons": [
+      "No LDAC support (AAC only)",
+      "Plastic build feels budget",
+      "No foldable design",
+      "Earcups are on-ear, not fully over-ear for some"
+    ],
+    "network_ids": {
+      "amazon": "B09NB5G4WG"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "commute",
+      "lightweight"
+    ],
+    "specs": {
+      "driver_mm": 30,
+      "battery_hours": 35,
+      "anc": true,
+      "bluetooth": "5.2",
+      "codec": "SBC, AAC",
+      "weight_g": 192,
+      "foldable": false,
+      "wired_option": true,
+      "microphones": 2,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "jbl-tune-770nc",
+    "name": "JBL Tune 770NC Wireless Headphones",
+    "brand": "JBL",
+    "category": "over-ear-headphones",
+    "price_usd": 80,
+    "rating": 4.4,
+    "verdict": "The best headphones under $100 — adaptive ANC, 70-hour battery, and JBL's fun sound signature.",
+    "description": "JBL's Tune 770NC pack a staggering 70 hours of battery life into a sub-$100 package. Adaptive noise cancellation adjusts to your environment, and Smart Ambient mode lets you control how much outside sound you hear. The JBL sound signature is bass-forward and energetic — great for workout playlists and pop music. The foldable design and lightweight build make them travel-friendly. The JBL Headphones app offers a full EQ, ANC customization, and a 'find my headphones' feature. At $80, they compete with headphones twice their price on battery life alone.",
+    "features": [
+      "70-hour battery life — longest in roundup",
+      "Adaptive ANC with Smart Ambient",
+      "JBL Headphones app with full EQ",
+      "Foldable, lightweight design",
+      "Multipoint Bluetooth (2 devices)"
+    ],
+    "pros": [
+      "70-hour battery is unmatched at any price",
+      "Adaptive ANC works well for the price",
+      "JBL's fun, bass-forward sound",
+      "Foldable and lightweight for travel"
+    ],
+    "cons": [
+      "Sound lacks detail compared to premium brands",
+      "ANC isn't as strong as Sony or Bose",
+      "Plastic build quality",
+      "Microphone is average for calls"
+    ],
+    "network_ids": {
+      "amazon": "B0CT6BKR2J"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "battery-life",
+      "commute"
+    ],
+    "specs": {
+      "driver_mm": 40,
+      "battery_hours": 70,
+      "anc": true,
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC",
+      "weight_g": 252,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 2,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "beats-studio-pro",
+    "name": "Beats Studio Pro Wireless Headphones",
+    "brand": "Beats",
+    "category": "over-ear-headphones",
+    "price_usd": 250,
+    "rating": 4.5,
+    "verdict": "The best headphones for both iPhone and Android — USB-C, lossless audio, and full features on both platforms.",
+    "description": "Beats Studio Pro solve a common problem: most premium headphones favor either Apple or Android. The Studio Pro work equally well with both. iPhone users get Apple's spatial audio and seamless pairing. Android users get enhanced codec support and the Beats app. USB-C lossless audio (when wired) delivers studio-quality sound regardless of platform. ANC is effective, the sound is balanced with Beats' signature punch, and 40 hours of battery handles a work week. At $250 (frequently on sale for less), they're the best cross-platform premium headphones.",
+    "features": [
+      "Full features on both iPhone AND Android",
+      "USB-C lossless audio when wired",
+      "Personalized Spatial Audio (Apple) + enhanced Android codec",
+      "40-hour battery with ANC",
+      "Foldable with premium carrying case"
+    ],
+    "pros": [
+      "True cross-platform — equal features on iOS and Android",
+      "USB-C lossless audio is excellent",
+      "40-hour battery is generous",
+      "Frequently on sale under $200"
+    ],
+    "cons": [
+      "ANC trails Sony and Bose",
+      "Sound can be bass-heavy for some genres",
+      "On-head detection is occasionally unreliable",
+      "Beats brand perception as 'bass-only' is outdated but persists"
+    ],
+    "network_ids": {
+      "amazon": "B0C8PSRWFM"
+    },
+    "image_url": "",
+    "best_for": [
+      "best-overall",
+      "cross-platform",
+      "calls"
+    ],
+    "specs": {
+      "driver_mm": 40,
+      "battery_hours": 40,
+      "anc": true,
+      "bluetooth": "5.3",
+      "codec": "SBC, AAC, USB-C lossless",
+      "weight_g": 260,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 6,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "soundcore-q30",
+    "name": "Anker Soundcore Life Q30 Wireless Headphones",
+    "brand": "Anker",
+    "category": "over-ear-headphones",
+    "price_usd": 56,
+    "rating": 4.4,
+    "verdict": "The best budget ANC headphones for sound quality — hybrid ANC, custom EQ, and 50-hour battery for under $60.",
+    "description": "The Soundcore Life Q30 have been a budget ANC staple for years, and they remain one of the best values in headphones. Hybrid ANC with three modes (Transport, Indoor, Outdoor) adapts to your environment. The Soundcore app offers a full parametric EQ so you can tune the sound exactly to your preference — a feature missing from most budget headphones. 50 hours of battery in ANC mode, 60 hours without, means you charge them twice a month at most. Business Insider's 'Best Budget' pick. At $56, they're the headphones to beat under $100.",
+    "features": [
+      "Hybrid ANC with 3 environmental modes",
+      "Soundcore app with parametric EQ",
+      "50-hour battery with ANC on",
+      "Hi-Res Audio certified (wired)",
+      "Foldable design with travel case"
+    ],
+    "pros": [
+      "Best sound customization under $100 (parametric EQ)",
+      "50-hour battery is outstanding",
+      "Three ANC modes adapt well",
+      "Business Insider's top budget pick"
+    ],
+    "cons": [
+      "Build quality is plastic",
+      "ANC is mid-tier",
+      "Bass can be boomy without EQ adjustment",
+      "Earcup padding compresses over time"
+    ],
+    "network_ids": {
+      "amazon": "B08HMWZBXC"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "commute"
+    ],
+    "specs": {
+      "driver_mm": 40,
+      "battery_hours": 50,
+      "anc": true,
+      "bluetooth": "5.0",
+      "codec": "SBC, AAC",
+      "weight_g": 262,
+      "foldable": true,
+      "wired_option": true,
+      "microphones": 2,
+      "warranty_years": 1
+    },
+    "date_added": "2026-04-22",
+    "date_updated": "2026-04-22"
+  },
+  {
+    "slug": "steelseries-arctis-nova-pro",
+    "name": "SteelSeries Arctis Nova Pro Wireless Gaming Headset",
+    "brand": "SteelSeries",
+    "category": "over-ear-headphones",
+    "price_usd": 350,
+    "rating": 4.7,
+    "verdict": "The best headset for gaming — dual wireless (2.4GHz + Bluetooth), hot-swappable batteries, and ANC that works for both gaming and music.",
+    "description": "The Arctis Nova Pro Wireless is the headset gamers and remote workers dream about. Dual wireless lets you connect to your PC/console via low-latency 2.4GHz AND your phone via Bluetooth simultaneously — game audio and phone calls at the same time. The hot-swappable battery system means zero downtime: swap a dead battery for a charged one in seconds. ANC is effective for both gaming immersion and office noise reduction. The retractable ClearCast Gen 2 mic is certified Discord-compatible with AI noise reduction. Premium drivers deliver detailed spatial audio for competitive gaming.",
+    "features": [
+      "Dual wireless: 2.4GHz + Bluetooth simultaneously",
+      "Hot-swappable battery system — zero downtime",
+      "Active noise cancellation",
+      "Retractable ClearCast Gen 2 mic",
+      "Hi-Res Audio certified"
+    ],
+    "pros": [
+      "Dual wireless is a game-changer",
+      "Hot-swap batteries eliminate charging downtime",
+      "ANC works great for gaming AND office",
+      "Best microphone quality in a gaming headset"
+    ],
+    "cons": [
+      "$350 is expensive for a gaming headset",
+      "Base station required for full features",
+      "Heavier than standard headphones",
+      "Software can be complex"
+    ],
+    "network_ids": {
+      "amazon": "B0B15QMY1K"
+    },
+    "image_url": "",
+    "best_for": [
+      "gaming",
+      "premium",
+      "calls"
+    ],
+    "specs": {
+      "driver_mm": 40,
+      "battery_hours": 22,
+      "anc": true,
+      "bluetooth": "5.0 + 2.4GHz",
+      "codec": "SBC, AAC, 2.4GHz lossless",
+      "weight_g": 338,
+      "foldable": false,
+      "wired_option": true,
+      "microphones": 4,
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
