@@ -1,0 +1,478 @@
+{
+  "products": [
+    {
+      "slug": "logitech-g-pro-x-superlight-2",
+      "name": "Logitech G Pro X Superlight 2",
+      "brand": "Logitech",
+      "category": "gaming-mice",
+      "price_usd": 159,
+      "rating": 4.8,
+      "verdict": "The gold standard for competitive FPS gaming \u2014 featherlight at 60g with flawless tracking.",
+      "description": "The Logitech G Pro X Superlight 2 is the go-to mouse for esports professionals worldwide. Weighing just 60 grams, it pairs the HERO 2 sensor with LIGHTFORCE hybrid switches for zero-compromise speed and precision. The refined shape, extended battery life up to 95 hours, and LIGHTSPEED wireless ensure tournament-grade reliability without the cable.",
+      "features": [
+        "HERO 2 sensor \u2014 44K DPI",
+        "LIGHTFORCE hybrid switches",
+        "60g ultralight design",
+        "95-hour battery life",
+        "LIGHTSPEED wireless",
+        "Zero-additive PTFE feet"
+      ],
+      "pros": [
+        "Best-in-class sensor accuracy",
+        "Incredibly light without feeling fragile",
+        "95-hour battery is exceptional",
+        "Universally safe shape for most grip styles"
+      ],
+      "cons": [
+        "Premium price for a simple design",
+        "No RGB lighting",
+        "Only one scroll wheel mode (no infinite scroll)"
+      ],
+      "network_ids": {
+        "amazon": "B0CFC5G8BP"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "lightweight",
+        "fps-gaming"
+      ],
+      "specs": {
+        "Sensor": "HERO 2",
+        "DPI": "44,000",
+        "Weight": "60g",
+        "Connection": "LIGHTSPEED Wireless",
+        "Battery Life": "95 hours",
+        "Switches": "LIGHTFORCE Hybrid"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "razer-deathadder-v3-hyperspeed",
+      "name": "Razer DeathAdder V3 HyperSpeed",
+      "brand": "Razer",
+      "category": "gaming-mice",
+      "price_usd": 99,
+      "rating": 4.7,
+      "verdict": "The best ergonomic gaming mouse \u2014 classic DeathAdder shape perfected for wireless play.",
+      "description": "The Razer DeathAdder V3 HyperSpeed brings the iconic ergonomic shape into the modern wireless era at a more accessible price. The Focus Pro 36K sensor delivers flawless tracking on any surface, while the ultra-lightweight 55g body and HyperSpeed wireless keep you competitive. Up to 235 hours on a single AA battery makes charging worries a thing of the past.",
+      "features": [
+        "Focus Pro 36K optical sensor",
+        "55g ultra-lightweight",
+        "HyperSpeed wireless + Bluetooth",
+        "235 hours battery (AA)",
+        "Ergonomic right-hand shape",
+        "Gen-3 mechanical switches"
+      ],
+      "pros": [
+        "Legendary ergonomic comfort for palm grip",
+        "Incredible battery life on a single AA",
+        "Dual wireless modes (HyperSpeed + BT)",
+        "Light for an ergonomic mouse"
+      ],
+      "cons": [
+        "Right-hand only \u2014 no left-hand option",
+        "AA battery adds slight weight vs rechargeable",
+        "No RGB lighting"
+      ],
+      "network_ids": {
+        "amazon": "B0CY6RNTF6"
+      },
+      "image_url": "",
+      "best_for": [
+        "ergonomic",
+        "palm-grip",
+        "budget"
+      ],
+      "specs": {
+        "Sensor": "Focus Pro 36K",
+        "DPI": "36,000",
+        "Weight": "55g",
+        "Connection": "HyperSpeed Wireless / BT",
+        "Battery Life": "235 hours (AA)",
+        "Switches": "Gen-3 Mechanical"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "razer-viper-v3-pro",
+      "name": "Razer Viper V3 Pro",
+      "brand": "Razer",
+      "category": "gaming-mice",
+      "price_usd": 159,
+      "rating": 4.8,
+      "verdict": "Razer's lightest and fastest wireless mouse ever \u2014 built for esports dominance.",
+      "description": "The Razer Viper V3 Pro pushes the boundaries of competitive gaming mice with a stunning 54g weight and the Focus Pro 36K sensor. Its symmetrical ambidextrous shape works for claw and fingertip grips, while the new Gen-3 optical switches deliver zero-bounce actuation. With 95 hours of wireless battery life and 8000Hz HyperPolling support, this is Razer's flagship without compromise.",
+      "features": [
+        "Focus Pro 36K sensor",
+        "54g ultra-lightweight",
+        "Gen-3 optical switches",
+        "8000Hz HyperPolling ready",
+        "95-hour battery life",
+        "Symmetrical ambidextrous shape"
+      ],
+      "pros": [
+        "54g is absurdly light for a full-featured mouse",
+        "8000Hz polling for the smoothest tracking possible",
+        "Excellent build quality despite low weight",
+        "Works for both claw and fingertip grips"
+      ],
+      "cons": [
+        "Very expensive at $159",
+        "Ambidextrous shape may not suit palm grip",
+        "Side buttons only on left side"
+      ],
+      "network_ids": {
+        "amazon": "B0D2YBD2S7"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "lightweight",
+        "fps-gaming"
+      ],
+      "specs": {
+        "Sensor": "Focus Pro 36K",
+        "DPI": "36,000",
+        "Weight": "54g",
+        "Connection": "HyperSpeed Wireless",
+        "Battery Life": "95 hours",
+        "Polling Rate": "Up to 8000Hz"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "logitech-g502-x-plus",
+      "name": "Logitech G502 X Plus",
+      "brand": "Logitech",
+      "category": "gaming-mice",
+      "price_usd": 159,
+      "rating": 4.6,
+      "verdict": "The feature-packed powerhouse \u2014 customizable everything with a premium wireless experience.",
+      "description": "The G502 X Plus is the wireless evolution of Logitech's most popular gaming mouse ever. It packs the HERO 25K sensor, LIGHTFORCE hybrid switches, a reversible DPI-shift button, and a free-spinning scroll wheel into a sculpted ergonomic body. Full RGB LIGHTSYNC and up to 130 hours of battery life round out a mouse that does everything well.",
+      "features": [
+        "HERO 25K sensor",
+        "LIGHTFORCE hybrid switches",
+        "Dual-mode scroll wheel (ratchet + free-spin)",
+        "Reversible DPI-shift button",
+        "Full RGB LIGHTSYNC",
+        "130-hour battery life"
+      ],
+      "pros": [
+        "Incredible customization and button count",
+        "Dual-mode scroll wheel is addictive",
+        "130-hour battery life",
+        "Premium build and materials"
+      ],
+      "cons": [
+        "Heavy at 106g compared to modern ultralights",
+        "Complex shape isn't for everyone",
+        "Expensive for a non-ultralight mouse"
+      ],
+      "network_ids": {
+        "amazon": "B0B7CJHX7G"
+      },
+      "image_url": "",
+      "best_for": [
+        "mmo-gaming",
+        "premium"
+      ],
+      "specs": {
+        "Sensor": "HERO 25K",
+        "DPI": "25,600",
+        "Weight": "106g",
+        "Connection": "LIGHTSPEED Wireless",
+        "Battery Life": "130 hours",
+        "Buttons": "13 programmable"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "steelseries-aerox-5-wireless",
+      "name": "SteelSeries Aerox 5 Wireless",
+      "brand": "SteelSeries",
+      "category": "gaming-mice",
+      "price_usd": 109,
+      "rating": 4.4,
+      "verdict": "A versatile multi-genre mouse with extra buttons, light weight, and solid wireless performance.",
+      "description": "The SteelSeries Aerox 5 Wireless bridges the gap between ultralight FPS mice and button-heavy MMO mice. At 74g with 9 programmable buttons (including a side rocker switch), it handles everything from shooters to strategy games. The TrueMove Air sensor, dual wireless connectivity, and IP54 water resistance make it a practical all-rounder for gamers who play across genres.",
+      "features": [
+        "TrueMove Air sensor \u2014 18K DPI",
+        "74g lightweight",
+        "9 programmable buttons with side rocker",
+        "Dual wireless (2.4GHz + BT)",
+        "IP54 water and dust resistance",
+        "180-hour battery life"
+      ],
+      "pros": [
+        "Great button count without heavy weight",
+        "IP54 rating is rare for gaming mice",
+        "180-hour battery is outstanding",
+        "Works well across multiple game genres"
+      ],
+      "cons": [
+        "Side rocker switch takes getting used to",
+        "Honeycomb holes collect dust over time",
+        "Sensor not as cutting-edge as competitors"
+      ],
+      "network_ids": {
+        "amazon": "B09VBHZVQZ"
+      },
+      "image_url": "",
+      "best_for": [
+        "mmo-gaming",
+        "wireless"
+      ],
+      "specs": {
+        "Sensor": "TrueMove Air",
+        "DPI": "18,000",
+        "Weight": "74g",
+        "Connection": "2.4GHz / Bluetooth",
+        "Battery Life": "180 hours",
+        "Buttons": "9 programmable"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "razer-basilisk-v3",
+      "name": "Razer Basilisk V3",
+      "brand": "Razer",
+      "category": "gaming-mice",
+      "price_usd": 69,
+      "rating": 4.6,
+      "verdict": "The best wired gaming mouse for the money \u2014 feature-loaded with a smart scroll wheel.",
+      "description": "The Razer Basilisk V3 delivers a premium wired experience at a mid-range price. Its Focus Pro 26K sensor, HyperScroll tilt wheel with smart-shift, and 11 programmable buttons make it one of the most versatile wired mice available. Razer Chroma RGB adds flair, while the ergonomic thumb rest keeps long sessions comfortable.",
+      "features": [
+        "Focus Pro 26K sensor",
+        "HyperScroll tilt wheel with smart-shift",
+        "11 programmable buttons",
+        "Razer Chroma RGB (13 zones)",
+        "Ergonomic thumb rest",
+        "100% PTFE feet"
+      ],
+      "pros": [
+        "Smart scroll wheel is a game-changer",
+        "Excellent sensor at this price",
+        "Comfortable ergonomic shape",
+        "Tons of programmable buttons"
+      ],
+      "cons": [
+        "Wired only \u2014 no wireless option",
+        "101g is heavy by modern standards",
+        "Scroll wheel can be noisy in ratchet mode"
+      ],
+      "network_ids": {
+        "amazon": "B09BC1MHPY"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "ergonomic"
+      ],
+      "specs": {
+        "Sensor": "Focus Pro 26K",
+        "DPI": "26,000",
+        "Weight": "101g",
+        "Connection": "Wired USB",
+        "Switches": "Optical Gen-2",
+        "Buttons": "11 programmable"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "logitech-g305-lightspeed",
+      "name": "Logitech G305 Lightspeed",
+      "brand": "Logitech",
+      "category": "gaming-mice",
+      "price_usd": 49,
+      "rating": 4.5,
+      "verdict": "The unbeatable budget wireless gaming mouse \u2014 LIGHTSPEED tech at half the price.",
+      "description": "The Logitech G305 proves you don't need to spend $150 for wireless gaming. Powered by the HERO sensor and Logitech's LIGHTSPEED wireless technology, it delivers lag-free performance indistinguishable from wired mice. A single AA battery lasts up to 250 hours, and the compact shape suits claw and fingertip grips perfectly. It's the best value in wireless gaming mice, period.",
+      "features": [
+        "HERO 12K sensor",
+        "LIGHTSPEED wireless",
+        "250-hour battery (AA)",
+        "99g lightweight",
+        "Compact ambidextrous shape",
+        "On-board memory for 5 profiles"
+      ],
+      "pros": [
+        "Unbeatable price for wireless gaming performance",
+        "250-hour battery life on one AA",
+        "LIGHTSPEED wireless is tournament-grade",
+        "Available in multiple colors"
+      ],
+      "cons": [
+        "Sensor maxes at 12K DPI (fine for most, not pros)",
+        "AA battery adds weight",
+        "Basic build \u2014 no rubber grips or premium materials"
+      ],
+      "network_ids": {
+        "amazon": "B07CMS5Q6N"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "wireless"
+      ],
+      "specs": {
+        "Sensor": "HERO 12K",
+        "DPI": "12,000",
+        "Weight": "99g",
+        "Connection": "LIGHTSPEED Wireless",
+        "Battery Life": "250 hours (AA)",
+        "Buttons": "6"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "corsair-m75-air-wireless",
+      "name": "Corsair M75 Air Wireless",
+      "brand": "Corsair",
+      "category": "gaming-mice",
+      "price_usd": 129,
+      "rating": 4.6,
+      "verdict": "Corsair's ultralight contender \u2014 60g with top-tier wireless and a comfortable ergonomic shape.",
+      "description": "The Corsair M75 Air Wireless enters the ultralight arena with a 60g ergonomic body, the Marksman 26K sensor, and Corsair's SLIPSTREAM wireless technology. Its comfortable right-hand shape sets it apart from the ambidextrous ultralights, making it ideal for palm and relaxed claw grip users who want minimal weight without sacrificing comfort. Up to 100 hours of battery life seals the deal.",
+      "features": [
+        "Marksman 26K sensor",
+        "60g ultralight ergonomic",
+        "SLIPSTREAM wireless + Bluetooth",
+        "100-hour battery life",
+        "Omron optical switches",
+        "PTFE glide pads"
+      ],
+      "pros": [
+        "60g in a comfortable ergonomic shape is rare",
+        "SLIPSTREAM wireless is low-latency",
+        "Great for palm grip users wanting ultralight",
+        "Solid 100-hour battery"
+      ],
+      "cons": [
+        "No USB-C dongle storage in mouse",
+        "Side grips could be grippier",
+        "iCUE software can be bloated"
+      ],
+      "network_ids": {
+        "amazon": "B0D7PVJFL1"
+      },
+      "image_url": "",
+      "best_for": [
+        "lightweight",
+        "ergonomic",
+        "wireless"
+      ],
+      "specs": {
+        "Sensor": "Marksman 26K",
+        "DPI": "26,000",
+        "Weight": "60g",
+        "Connection": "SLIPSTREAM / Bluetooth",
+        "Battery Life": "100 hours",
+        "Switches": "Omron Optical"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "pulsar-x2v2-mini",
+      "name": "Pulsar X2V2 Mini",
+      "brand": "Pulsar",
+      "category": "gaming-mice",
+      "price_usd": 99,
+      "rating": 4.7,
+      "verdict": "The claw grip king \u2014 ultra-refined symmetrical shape at just 52g for precision gaming.",
+      "description": "The Pulsar X2V2 Mini is a favorite among competitive FPS players who prefer claw grip. At just 52g with the PixArt PAW3395 sensor, it offers raw precision in a clean symmetrical shell with zero holes. The shape is carefully contoured for aggressive claw and fingertip control, and the build quality punches well above its price. Dual wireless modes and 70 hours of battery round it out.",
+      "features": [
+        "PixArt PAW3395 sensor",
+        "52g ultra-lightweight",
+        "Symmetrical shape (no holes)",
+        "Dual wireless (2.4GHz + BT)",
+        "70-hour battery life",
+        "Encoder-based scroll wheel"
+      ],
+      "pros": [
+        "52g with a solid shell \u2014 no honeycomb holes",
+        "Perfect shape for claw grip players",
+        "PAW3395 sensor is flawless",
+        "Clean, minimal design"
+      ],
+      "cons": [
+        "Too small for large hands or palm grip",
+        "Side buttons could be clickier",
+        "70-hour battery is decent but not class-leading"
+      ],
+      "network_ids": {
+        "amazon": "B0CRSN3QG3"
+      },
+      "image_url": "",
+      "best_for": [
+        "claw-grip",
+        "lightweight"
+      ],
+      "specs": {
+        "Sensor": "PixArt PAW3395",
+        "DPI": "26,000",
+        "Weight": "52g",
+        "Connection": "2.4GHz / Bluetooth",
+        "Battery Life": "70 hours",
+        "Shape": "Symmetrical Mini"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "glorious-model-o-2-wireless",
+      "name": "Glorious Model O 2 Wireless",
+      "brand": "Glorious",
+      "category": "gaming-mice",
+      "price_usd": 79,
+      "rating": 4.5,
+      "verdict": "A polished ultralight wireless mouse at an aggressive price \u2014 great for fingertip and claw grip.",
+      "description": "The Glorious Model O 2 Wireless refines the original Model O formula with a solid shell (no holes), the BAMF 2.0 sensor, and Glorious' improved wireless technology. At 68g with a low-profile ambidextrous shape, it's excellent for fingertip and claw grip players. The aggressive $79 price undercuts most competitors while delivering comparable performance and a premium feel.",
+      "features": [
+        "BAMF 2.0 sensor \u2014 26K DPI",
+        "68g solid shell (no holes)",
+        "2.4GHz wireless + Bluetooth",
+        "80-hour battery life",
+        "Low-profile ambidextrous shape",
+        "Glorious CORE software"
+      ],
+      "pros": [
+        "Excellent value at $79 for wireless",
+        "Solid shell feels premium",
+        "Low-profile shape great for fingertip grip",
+        "Good battery life for the weight"
+      ],
+      "cons": [
+        "Side buttons are a bit mushy",
+        "Scroll wheel steps feel light",
+        "Less refined than Logitech/Razer flagships"
+      ],
+      "network_ids": {
+        "amazon": "B0CP7CYWRY"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "fps-gaming"
+      ],
+      "specs": {
+        "Sensor": "BAMF 2.0",
+        "DPI": "26,000",
+        "Weight": "68g",
+        "Connection": "2.4GHz / Bluetooth",
+        "Battery Life": "80 hours",
+        "Shape": "Ambidextrous Low-Profile"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    }
+  ]
+}
