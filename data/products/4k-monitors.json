@@ -1,0 +1,478 @@
+{
+  "products": [
+    {
+      "slug": "dell-ultrasharp-u2723qe",
+      "name": "Dell UltraSharp U2723QE",
+      "brand": "Dell",
+      "category": "4k-monitors",
+      "price_usd": 619,
+      "rating": 4.7,
+      "verdict": "The best all-around 4K monitor \u2014 IPS Black panel, USB-C hub, and factory-calibrated color accuracy.",
+      "description": "The Dell UltraSharp U2723QE sets the standard for professional 4K monitors. Its IPS Black panel delivers a 2000:1 contrast ratio \u2014 double typical IPS monitors \u2014 for deeper blacks and richer colors. Factory calibrated to Delta E < 2, it's ready for color-critical work out of the box. The built-in USB-C hub with 90W Power Delivery, RJ45 Ethernet, and KVM switch make it a one-cable docking station for your laptop.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "IPS Black panel \u2014 2000:1 contrast",
+        "USB-C with 90W Power Delivery",
+        "Built-in KVM switch",
+        "Factory calibrated Delta E < 2",
+        "RJ45 Ethernet + USB hub"
+      ],
+      "pros": [
+        "IPS Black panel has noticeably deeper blacks",
+        "USB-C hub replaces a separate dock",
+        "Excellent factory calibration",
+        "Premium build with thin bezels"
+      ],
+      "cons": [
+        "60Hz only \u2014 not for gaming",
+        "Expensive at $619",
+        "Stand is large and takes up desk space"
+      ],
+      "network_ids": {
+        "amazon": "B09TQZP9CL"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "office",
+        "usb-c"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS Black",
+        "Refresh Rate": "60Hz",
+        "Response Time": "5ms",
+        "Size": "27 inches",
+        "Ports": "USB-C 90W, HDMI, DP, RJ45, USB Hub"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "samsung-odyssey-g7-s28bg70",
+      "name": "Samsung Odyssey G7 S28BG700",
+      "brand": "Samsung",
+      "category": "4k-monitors",
+      "price_usd": 599,
+      "rating": 4.6,
+      "verdict": "The best 4K gaming monitor \u2014 144Hz, HDMI 2.1, and Samsung's vibrant IPS panel.",
+      "description": "The Samsung Odyssey G7 28\" brings 4K gaming to life with a 144Hz refresh rate and HDMI 2.1 for next-gen consoles. The IPS panel delivers wide viewing angles and vibrant colors, while 1ms response time keeps motion blur at bay. G-Sync and FreeSync Premium Pro compatibility ensures tear-free gameplay. It's the sweet spot for gamers who want both 4K detail and high refresh rate without breaking the bank.",
+      "features": [
+        "28\" 4K UHD (3840x2160)",
+        "144Hz refresh rate",
+        "HDMI 2.1 for PS5/Xbox",
+        "1ms response time (GtG)",
+        "G-Sync + FreeSync Premium Pro",
+        "HDR400 certified"
+      ],
+      "pros": [
+        "144Hz at 4K is buttery smooth",
+        "HDMI 2.1 works perfectly with consoles",
+        "Great color accuracy for an IPS gaming panel",
+        "Reasonable price for 4K 144Hz"
+      ],
+      "cons": [
+        "HDR400 is entry-level HDR \u2014 not impressive",
+        "No USB-C connectivity",
+        "Stand lacks height adjustment on base model"
+      ],
+      "network_ids": {
+        "amazon": "B0B3DPVMHZ"
+      },
+      "image_url": "",
+      "best_for": [
+        "gaming",
+        "best-overall"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "144Hz",
+        "Response Time": "1ms GtG",
+        "Size": "28 inches",
+        "Ports": "HDMI 2.1 x2, DP 1.4, USB Hub"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "asus-proart-pa279crv",
+      "name": "ASUS ProArt PA279CRV",
+      "brand": "ASUS",
+      "category": "4k-monitors",
+      "price_usd": 449,
+      "rating": 4.6,
+      "verdict": "The best color-accurate monitor for creatives \u2014 Calman Verified with USB-C and hardware calibration.",
+      "description": "The ASUS ProArt PA279CRV is built for photographers, video editors, and designers who demand accurate colors. It covers 99% DCI-P3 and 99% Adobe RGB, comes Calman Verified for out-of-box accuracy, and supports hardware calibration via the ProArt Calibration app. USB-C with 96W Power Delivery and a built-in KVM switch add practical productivity features at a price that undercuts Dell and BenQ rivals.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "99% DCI-P3, 99% Adobe RGB",
+        "Calman Verified \u2014 Delta E < 2",
+        "USB-C with 96W Power Delivery",
+        "Hardware calibration support",
+        "Built-in KVM switch"
+      ],
+      "pros": [
+        "Outstanding color accuracy at this price",
+        "96W USB-C charges even large laptops",
+        "Hardware calibration maintains accuracy over time",
+        "Covers both DCI-P3 and Adobe RGB"
+      ],
+      "cons": [
+        "60Hz \u2014 not suitable for gaming",
+        "OSD menu navigation is clunky",
+        "Slightly less contrast than Dell IPS Black"
+      ],
+      "network_ids": {
+        "amazon": "B0C4TW7WCV"
+      },
+      "image_url": "",
+      "best_for": [
+        "creative-work",
+        "color-accuracy"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "Color Gamut": "99% DCI-P3, 99% Adobe RGB",
+        "Size": "27 inches",
+        "Ports": "USB-C 96W, HDMI x2, DP, USB Hub"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "lg-27gp950-b",
+      "name": "LG 27GP950-B",
+      "brand": "LG",
+      "category": "4k-monitors",
+      "price_usd": 799,
+      "rating": 4.5,
+      "verdict": "The HDR gaming powerhouse \u2014 Nano IPS, HDMI 2.1, and DisplayHDR 600 for immersive visuals.",
+      "description": "The LG 27GP950-B is designed for gamers who want the best HDR experience at 4K. Its Nano IPS panel delivers 98% DCI-P3 coverage with DisplayHDR 600 certification for genuine HDR impact. HDMI 2.1 with 4K@120Hz support makes it ideal for PS5 and Xbox Series X, while 160Hz over DisplayPort handles PC gaming. NVIDIA G-Sync Compatible and AMD FreeSync Premium Pro keep things tear-free.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "Nano IPS \u2014 98% DCI-P3",
+        "VESA DisplayHDR 600",
+        "160Hz (DP) / 120Hz (HDMI 2.1)",
+        "1ms response time",
+        "G-Sync Compatible + FreeSync Premium Pro"
+      ],
+      "pros": [
+        "DisplayHDR 600 provides genuine HDR improvement",
+        "Nano IPS colors are vivid and accurate",
+        "HDMI 2.1 at 4K 120Hz for consoles",
+        "160Hz over DisplayPort for PC gaming"
+      ],
+      "cons": [
+        "$799 is a premium price",
+        "Local dimming zones are limited",
+        "IPS glow visible in dark scenes"
+      ],
+      "network_ids": {
+        "amazon": "B09QG51JB3"
+      },
+      "image_url": "",
+      "best_for": [
+        "hdr",
+        "gaming",
+        "premium"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "Nano IPS",
+        "Refresh Rate": "160Hz (DP) / 120Hz (HDMI)",
+        "HDR": "DisplayHDR 600",
+        "Size": "27 inches",
+        "Ports": "HDMI 2.1 x2, DP 1.4, USB Hub"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "gigabyte-m28u",
+      "name": "Gigabyte M28U",
+      "brand": "Gigabyte",
+      "category": "4k-monitors",
+      "price_usd": 649,
+      "rating": 4.5,
+      "verdict": "The best budget 4K gaming monitor \u2014 144Hz, HDMI 2.1, and a built-in KVM at a competitive price.",
+      "description": "The Gigabyte M28U packs 4K gaming essentials into an affordable package. Its 28\" SS IPS panel hits 144Hz with HDMI 2.1 for console gaming and 1ms response time for competitive play. The built-in KVM switch lets you control two PCs with one keyboard and mouse. At $649, it significantly undercuts LG and Samsung while matching their core specs. It's the smart choice for value-conscious 4K gamers.",
+      "features": [
+        "28\" 4K UHD (3840x2160)",
+        "144Hz refresh rate",
+        "HDMI 2.1 for consoles",
+        "1ms response time (MPRT)",
+        "Built-in KVM switch",
+        "FreeSync Premium Pro"
+      ],
+      "pros": [
+        "Great 4K 144Hz performance for the price",
+        "KVM switch is a rare and useful feature",
+        "HDMI 2.1 works great with PS5/Xbox",
+        "Solid color accuracy out of the box"
+      ],
+      "cons": [
+        "HDR support is minimal (HDR400)",
+        "Stand is basic \u2014 no swivel",
+        "Speakers are poor quality"
+      ],
+      "network_ids": {
+        "amazon": "B09VH1FJP7"
+      },
+      "image_url": "",
+      "best_for": [
+        "gaming",
+        "budget"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "SS IPS",
+        "Refresh Rate": "144Hz",
+        "Response Time": "1ms MPRT",
+        "Size": "28 inches",
+        "Ports": "HDMI 2.1 x2, DP 1.4, USB-C, KVM"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "dell-s2722qc",
+      "name": "Dell S2722QC",
+      "brand": "Dell",
+      "category": "4k-monitors",
+      "price_usd": 309,
+      "rating": 4.6,
+      "verdict": "The best budget 4K monitor \u2014 sharp 27\" display with USB-C connectivity at an unbeatable price.",
+      "description": "The Dell S2722QC proves 4K doesn't have to be expensive. For just $309, you get a crisp 27\" 4K IPS panel with USB-C connectivity and 65W Power Delivery \u2014 enough to charge most ultrabooks. AMD FreeSync support handles light gaming, and the fully adjustable stand tilts, swivels, pivots, and adjusts height. It's the best entry point into 4K for office workers and students.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "USB-C with 65W Power Delivery",
+        "AMD FreeSync",
+        "Fully adjustable stand",
+        "Built-in speakers (3W x2)",
+        "HDMI 2.0 x2 + USB-C"
+      ],
+      "pros": [
+        "Incredible value at $309 for 4K USB-C",
+        "65W USB-C charges most laptops",
+        "Fully adjustable stand included",
+        "Sharp, clear 4K image quality"
+      ],
+      "cons": [
+        "60Hz only \u2014 not for serious gaming",
+        "Colors are decent but not pro-grade",
+        "65W may not charge larger laptops"
+      ],
+      "network_ids": {
+        "amazon": "B09DTDRJWX"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "office",
+        "usb-c"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "Response Time": "4ms",
+        "Size": "27 inches",
+        "Ports": "USB-C 65W, HDMI 2.0 x2"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "benq-pd2706ua",
+      "name": "BenQ PD2706UA",
+      "brand": "BenQ",
+      "category": "4k-monitors",
+      "price_usd": 549,
+      "rating": 4.6,
+      "verdict": "The best 4K monitor for Mac users \u2014 factory-calibrated, USB-C hub, and macOS-friendly design.",
+      "description": "The BenQ PD2706UA is purpose-built for creative professionals, especially Mac users. Its AQCOLOR technology delivers factory-calibrated accuracy (Delta E \u2264 3) covering 99% sRGB and 95% DCI-P3. The USB-C connection with 90W Power Delivery and daisy-chain support makes it a clean one-cable solution for MacBooks. M-Book mode optimizes color rendering to match Apple's display profiles.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "AQCOLOR \u2014 99% sRGB, 95% DCI-P3",
+        "USB-C 90W + daisy-chain support",
+        "M-Book mode for Mac color matching",
+        "KVM switch built-in",
+        "Ergonomic stand with cable management"
+      ],
+      "pros": [
+        "M-Book mode perfectly matches MacBook colors",
+        "Daisy-chain lets you connect two monitors with one cable",
+        "Factory calibrated and accurate",
+        "KVM switch for multi-device workflows"
+      ],
+      "cons": [
+        "60Hz \u2014 no gaming utility",
+        "Slightly less DCI-P3 coverage than ASUS ProArt",
+        "Premium price for non-gaming features"
+      ],
+      "network_ids": {
+        "amazon": "B0BN6M3DJ5"
+      },
+      "image_url": "",
+      "best_for": [
+        "creative-work",
+        "usb-c"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "Color Gamut": "99% sRGB, 95% DCI-P3",
+        "Size": "27 inches",
+        "Ports": "USB-C 90W, DP 1.4, HDMI 2.0, USB Hub"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "hp-z27k-g3",
+      "name": "HP Z27k G3",
+      "brand": "HP",
+      "category": "4k-monitors",
+      "price_usd": 539,
+      "rating": 4.5,
+      "verdict": "The best business 4K monitor \u2014 enterprise-grade features, USB-C hub, and HP's reliability.",
+      "description": "The HP Z27k G3 is built for corporate environments and power users who need a reliable 4K display with enterprise connectivity. Its USB-C hub with 100W Power Delivery, RJ45 Ethernet, and four USB-A ports replaces a docking station entirely. Factory calibrated for sRGB accuracy, VESA-mountable, and backed by HP's business warranty, it's the monitor IT departments love to deploy.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "USB-C with 100W Power Delivery",
+        "RJ45 Ethernet + 4x USB-A hub",
+        "Factory calibrated \u2014 98% DCI-P3",
+        "VESA mount compatible",
+        "HP Eye Ease (low blue light)"
+      ],
+      "pros": [
+        "100W USB-C charges even powerful laptops",
+        "Built-in Ethernet eliminates Wi-Fi issues",
+        "Enterprise-grade reliability and warranty",
+        "Replaces a docking station completely"
+      ],
+      "cons": [
+        "60Hz \u2014 strictly for productivity",
+        "Design is functional, not flashy",
+        "Slightly lower contrast than Dell IPS Black"
+      ],
+      "network_ids": {
+        "amazon": "B09CLF7C8Q"
+      },
+      "image_url": "",
+      "best_for": [
+        "office",
+        "premium"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "Color Gamut": "98% DCI-P3",
+        "Size": "27 inches",
+        "Ports": "USB-C 100W, DP 1.4, HDMI 2.0, RJ45, 4x USB-A"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "lg-27ul850-w",
+      "name": "LG 27UL850-W",
+      "brand": "LG",
+      "category": "4k-monitors",
+      "price_usd": 449,
+      "rating": 4.5,
+      "verdict": "A well-rounded 4K monitor with HDR10, USB-C, and VESA DisplayHDR 400 at a fair price.",
+      "description": "The LG 27UL850-W offers a balanced mix of features for users who want 4K quality without overspending. Its IPS panel covers 99% sRGB with HDR10 and VESA DisplayHDR 400 support for improved contrast in HDR content. USB-C with 60W Power Delivery handles laptop charging, while the ergonomic stand provides full adjustability. It's the reliable mid-range choice for mixed use.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "99% sRGB with HDR10",
+        "VESA DisplayHDR 400",
+        "USB-C with 60W Power Delivery",
+        "Fully adjustable ergonomic stand",
+        "AMD FreeSync"
+      ],
+      "pros": [
+        "Good balance of features and price",
+        "HDR10 + DisplayHDR 400 adds visual punch",
+        "USB-C charging is convenient",
+        "Reliable LG IPS panel quality"
+      ],
+      "cons": [
+        "60W USB-C may not charge all laptops",
+        "HDR400 is entry-level HDR",
+        "Superseded by newer LG models"
+      ],
+      "network_ids": {
+        "amazon": "B08FPHWMHX"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "hdr"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "HDR": "DisplayHDR 400",
+        "Size": "27 inches",
+        "Ports": "USB-C 60W, HDMI 2.0 x2, DP 1.4"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "viewsonic-vp2786-4k",
+      "name": "ViewSonic VP2786-4K",
+      "brand": "ViewSonic",
+      "category": "4k-monitors",
+      "price_usd": 699,
+      "rating": 4.5,
+      "verdict": "The most precisely calibrated 4K monitor \u2014 Pantone Validated with a built-in colorimeter.",
+      "description": "The ViewSonic VP2786-4K takes color accuracy to the extreme with a built-in hardware colorimeter that automatically recalibrates the panel on a schedule you set. Pantone Validated and covering 100% Adobe RGB and 98% DCI-P3, it's designed for photographers and print professionals who demand absolute color fidelity. USB-C with 90W PD, Thunderbolt 4, and a KVM switch round out the professional feature set.",
+      "features": [
+        "27\" 4K UHD (3840x2160)",
+        "Built-in hardware colorimeter",
+        "Pantone Validated \u2014 100% Adobe RGB",
+        "Thunderbolt 4 + USB-C 90W PD",
+        "Auto-calibration scheduling",
+        "Built-in KVM switch"
+      ],
+      "pros": [
+        "Built-in colorimeter saves buying a separate tool",
+        "Auto-calibration maintains accuracy forever",
+        "Thunderbolt 4 for maximum bandwidth",
+        "100% Adobe RGB is print-perfect"
+      ],
+      "cons": [
+        "$699 is expensive",
+        "60Hz only \u2014 productivity focused",
+        "Colorimeter bump on top adds bulk"
+      ],
+      "network_ids": {
+        "amazon": "B0BKLGBZ5Z"
+      },
+      "image_url": "",
+      "best_for": [
+        "color-accuracy",
+        "creative-work",
+        "premium"
+      ],
+      "specs": {
+        "Resolution": "3840x2160",
+        "Panel": "IPS",
+        "Refresh Rate": "60Hz",
+        "Color Gamut": "100% Adobe RGB, 98% DCI-P3",
+        "Size": "27 inches",
+        "Ports": "Thunderbolt 4, USB-C 90W, HDMI 2.0, DP 1.4"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    }
+  ]
+}
