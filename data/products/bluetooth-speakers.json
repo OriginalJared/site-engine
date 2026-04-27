@@ -1,0 +1,476 @@
+{
+  "products": [
+    {
+      "slug": "jbl-charge-5",
+      "name": "JBL Charge 5",
+      "brand": "JBL",
+      "category": "bluetooth-speakers",
+      "price_usd": 179,
+      "rating": 4.8,
+      "verdict": "The best all-around portable speaker \u2014 powerful sound, long battery, and it charges your phone.",
+      "description": "The JBL Charge 5 remains the portable speaker to beat. It delivers rich, room-filling JBL Pro Sound with a dedicated tweeter and dual bass radiators, wrapped in an IP67 waterproof and dustproof body. The built-in power bank charges your devices via USB-A, and the 20-hour battery means all-day listening. PartyBoost lets you link multiple JBL speakers for bigger sound.",
+      "features": [
+        "JBL Pro Sound with tweeter + dual bass radiators",
+        "20-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Built-in power bank (USB-A out)",
+        "JBL PartyBoost for multi-speaker pairing",
+        "Bluetooth 5.1"
+      ],
+      "pros": [
+        "Powerful, balanced sound for its size",
+        "20-hour battery is class-leading",
+        "Built-in power bank is genuinely useful",
+        "Fully waterproof and dustproof"
+      ],
+      "cons": [
+        "No speakerphone/microphone",
+        "Heavier than ultra-portable options at 960g",
+        "No Wi-Fi or smart assistant support"
+      ],
+      "network_ids": {
+        "amazon": "B08PJ7JMQM"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "outdoor",
+        "party"
+      ],
+      "specs": {
+        "Battery Life": "20 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "960g",
+        "Output Power": "40W",
+        "Bluetooth": "5.1",
+        "Driver Size": "52mm woofer + tweeter"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "bose-soundlink-flex-2nd-gen",
+      "name": "Bose SoundLink Flex (2nd Gen)",
+      "brand": "Bose",
+      "category": "bluetooth-speakers",
+      "price_usd": 149,
+      "rating": 4.7,
+      "verdict": "Bose's best portable speaker yet \u2014 stunning clarity and deep bass in a rugged, pocketable design.",
+      "description": "The Bose SoundLink Flex 2nd Gen packs Bose's signature clear, detailed audio into a rugged IP67-rated body that fits in a cargo pocket. PositionIQ technology automatically optimizes sound whether the speaker is upright, hung, or lying flat. With 12 hours of battery life, a built-in microphone for calls, and a surprisingly deep low-end for its size, it's the premium compact choice.",
+      "features": [
+        "Bose PositionIQ auto sound optimization",
+        "12-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Built-in microphone for calls",
+        "USB-C charging",
+        "Bose SimpleSync multi-speaker pairing"
+      ],
+      "pros": [
+        "Best-in-class audio clarity for the size",
+        "PositionIQ is genuinely useful",
+        "Incredibly rugged and portable",
+        "Built-in mic for speakerphone"
+      ],
+      "cons": [
+        "12-hour battery is shorter than JBL Charge 5",
+        "Bass is good but not thumping",
+        "No power bank feature"
+      ],
+      "network_ids": {
+        "amazon": "B099TJGJ91"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "portable",
+        "compact"
+      ],
+      "specs": {
+        "Battery Life": "12 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "590g",
+        "Bluetooth": "5.3",
+        "Charging": "USB-C",
+        "Special Feature": "PositionIQ"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "jbl-flip-6",
+      "name": "JBL Flip 6",
+      "brand": "JBL",
+      "category": "bluetooth-speakers",
+      "price_usd": 129,
+      "rating": 4.7,
+      "verdict": "The most popular portable speaker for good reason \u2014 punchy sound, full waterproofing, and easy portability.",
+      "description": "The JBL Flip 6 is the sweet spot of portable speakers \u2014 big enough to fill a room, small enough to toss in a backpack. The 2-way driver system with a separate tweeter delivers crisp highs and punchy mids, while IP67 protection means pool parties and beach trips are no problem. 12 hours of battery life and JBL PartyBoost support make it a no-brainer at this price.",
+      "features": [
+        "2-way driver system with separate tweeter",
+        "12-hour battery life",
+        "IP67 waterproof and dustproof",
+        "JBL PartyBoost multi-speaker pairing",
+        "USB-C charging",
+        "Available in 12+ colors"
+      ],
+      "pros": [
+        "Punchy, clear sound with real stereo separation",
+        "Truly portable \u2014 fits in a water bottle pocket",
+        "12 colors to match your style",
+        "PartyBoost links unlimited speakers"
+      ],
+      "cons": [
+        "No built-in microphone for calls",
+        "Bass could be deeper for bass-heads",
+        "No aux input"
+      ],
+      "network_ids": {
+        "amazon": "B09JB8KQNB"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "portable"
+      ],
+      "specs": {
+        "Battery Life": "12 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "550g",
+        "Output Power": "30W",
+        "Bluetooth": "5.1",
+        "Driver Size": "44mm woofer + tweeter"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "sonos-roam-2",
+      "name": "Sonos Roam 2",
+      "brand": "Sonos",
+      "category": "bluetooth-speakers",
+      "price_usd": 179,
+      "rating": 4.5,
+      "verdict": "The smartest portable speaker \u2014 seamless Wi-Fi and Bluetooth with Sonos multi-room magic.",
+      "description": "The Sonos Roam 2 is unique: it works as both a Bluetooth portable speaker and a Wi-Fi smart speaker that integrates with your Sonos home system. Take it to the park on Bluetooth, bring it home and it auto-switches to Wi-Fi for multi-room audio. Trueplay tuning adapts sound to your environment, and Alexa/Google Assistant voice control is built in. It's the smartest portable speaker money can buy.",
+      "features": [
+        "Wi-Fi + Bluetooth dual connectivity",
+        "Sonos multi-room ecosystem",
+        "Automatic Trueplay tuning",
+        "Alexa + Google Assistant built-in",
+        "IP67 waterproof",
+        "10-hour battery life"
+      ],
+      "pros": [
+        "Seamless Wi-Fi/BT switching is magical",
+        "Integrates with Sonos whole-home audio",
+        "Trueplay auto-tuning sounds great",
+        "Voice assistant support is handy"
+      ],
+      "cons": [
+        "10-hour battery is below average",
+        "Expensive for its size and output",
+        "Sonos app required for full features"
+      ],
+      "network_ids": {
+        "amazon": "B0CX5GX9MN"
+      },
+      "image_url": "",
+      "best_for": [
+        "smart-home",
+        "premium"
+      ],
+      "specs": {
+        "Battery Life": "10 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "430g",
+        "Connectivity": "Wi-Fi + Bluetooth 5.2",
+        "Voice Assistants": "Alexa + Google",
+        "Special Feature": "Sonos Multi-Room"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "ultimate-ears-boom-3",
+      "name": "Ultimate Ears Boom 3",
+      "brand": "Ultimate Ears",
+      "category": "bluetooth-speakers",
+      "price_usd": 149,
+      "rating": 4.6,
+      "verdict": "360-degree sound in a bombproof design \u2014 the adventure-proof speaker that floats.",
+      "description": "The UE Boom 3 delivers immersive 360-degree sound from a cylindrical design that sounds great no matter where you're sitting. It's IP67 rated, drop-tested from 5 feet, and it actually floats in water. The Magic Button on top lets you play, pause, and skip tracks without touching your phone. 15 hours of battery life and PartyUp pairing for 150+ speakers make it the ultimate adventure companion.",
+      "features": [
+        "360-degree immersive sound",
+        "15-hour battery life",
+        "IP67 waterproof \u2014 floats in water",
+        "Magic Button for one-touch controls",
+        "Drop-proof from 5 feet",
+        "PartyUp pairing (150+ speakers)"
+      ],
+      "pros": [
+        "360 sound means no bad listening position",
+        "Floats in water \u2014 great for pools",
+        "15-hour battery is strong",
+        "Bombproof durability"
+      ],
+      "cons": [
+        "Bass is present but not chest-thumping",
+        "No speakerphone mic",
+        "Cylindrical shape can roll on flat surfaces"
+      ],
+      "network_ids": {
+        "amazon": "B07DD7ZJ6X"
+      },
+      "image_url": "",
+      "best_for": [
+        "outdoor",
+        "waterproof"
+      ],
+      "specs": {
+        "Battery Life": "15 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "608g",
+        "Sound": "360-degree",
+        "Bluetooth": "5.0",
+        "Special Feature": "Floats in water"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "sony-srs-xb100",
+      "name": "Sony SRS-XB100",
+      "brand": "Sony",
+      "category": "bluetooth-speakers",
+      "price_usd": 59,
+      "rating": 4.5,
+      "verdict": "The best budget Bluetooth speaker \u2014 surprisingly full sound and 16-hour battery at an unbeatable price.",
+      "description": "The Sony SRS-XB100 punches way above its $59 price tag. Its compact puck shape hides a full-range speaker with passive radiator that delivers clear vocals and surprisingly present bass. The IP67 rating, 16-hour battery, built-in mic for calls, and included strap make it the perfect everyday carry speaker. It proves you don't need to spend $150 for great portable audio.",
+      "features": [
+        "Full-range speaker with passive radiator",
+        "16-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Built-in microphone for calls",
+        "Included carrying strap",
+        "USB-C fast charging"
+      ],
+      "pros": [
+        "Incredible value at $59",
+        "16-hour battery outlasts most premium speakers",
+        "Compact enough to clip onto a bag",
+        "Built-in mic is a nice bonus"
+      ],
+      "cons": [
+        "Sound lacks volume for outdoor parties",
+        "No multi-speaker pairing",
+        "Bass is present but not deep"
+      ],
+      "network_ids": {
+        "amazon": "B0C8PSRWFG"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Battery Life": "16 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "274g",
+        "Bluetooth": "5.3",
+        "Charging": "USB-C",
+        "Special Feature": "Built-in strap"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "marshall-emberton-ii",
+      "name": "Marshall Emberton II",
+      "brand": "Marshall",
+      "category": "bluetooth-speakers",
+      "price_usd": 149,
+      "rating": 4.6,
+      "verdict": "The best-looking Bluetooth speaker \u2014 iconic rock-and-roll design with 30 hours of battery life.",
+      "description": "The Marshall Emberton II looks like a miniature guitar amp and sounds like one too. Its True Stereophonic 360-degree sound fills rooms with warm, rich audio that has a distinctly musical character. The 30-hour battery life is simply outstanding \u2014 nearly double most competitors. IP67 waterproofing, a multi-directional control knob, and the iconic Marshall aesthetic make it a statement piece.",
+      "features": [
+        "True Stereophonic 360-degree sound",
+        "30-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Multi-directional control knob",
+        "Iconic Marshall design",
+        "Bluetooth 5.1 with Stack Mode"
+      ],
+      "pros": [
+        "30-hour battery is best-in-class",
+        "Gorgeous design that looks premium anywhere",
+        "Warm, musical sound signature",
+        "Stack Mode for multi-speaker pairing"
+      ],
+      "cons": [
+        "No built-in microphone",
+        "Sound signature may be too warm for some",
+        "No app EQ customization"
+      ],
+      "network_ids": {
+        "amazon": "B0B2J8KX7M"
+      },
+      "image_url": "",
+      "best_for": [
+        "bass",
+        "outdoor"
+      ],
+      "specs": {
+        "Battery Life": "30 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "700g",
+        "Sound": "True Stereophonic 360\u00b0",
+        "Bluetooth": "5.1",
+        "Special Feature": "Stack Mode"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "jbl-xtreme-4",
+      "name": "JBL Xtreme 4",
+      "brand": "JBL",
+      "category": "bluetooth-speakers",
+      "price_usd": 349,
+      "rating": 4.7,
+      "verdict": "The party machine \u2014 massive sound, 24-hour battery, and a shoulder strap for taking the bass anywhere.",
+      "description": "The JBL Xtreme 4 is for when you need serious volume. Dual woofers and dual tweeters pump out 100W of JBL Pro Sound that can fill a backyard or drown out a beach. The 24-hour battery, IP67 waterproofing, built-in power bank, and included shoulder strap make it the ultimate portable party speaker. Auracast support lets you broadcast audio to unlimited compatible speakers simultaneously.",
+      "features": [
+        "Dual woofers + dual tweeters (100W)",
+        "24-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Built-in power bank",
+        "Auracast Bluetooth broadcasting",
+        "Included shoulder strap"
+      ],
+      "pros": [
+        "Massive, room-filling sound output",
+        "24-hour battery for all-day events",
+        "Power bank charges your devices",
+        "Auracast is future-proof Bluetooth tech"
+      ],
+      "cons": [
+        "Heavy at 2kg \u2014 not truly portable",
+        "Premium price at $349",
+        "Overkill for personal/indoor listening"
+      ],
+      "network_ids": {
+        "amazon": "B0CTD2TK9R"
+      },
+      "image_url": "",
+      "best_for": [
+        "party",
+        "bass"
+      ],
+      "specs": {
+        "Battery Life": "24 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "2.0kg",
+        "Output Power": "100W",
+        "Bluetooth": "5.3 + Auracast",
+        "Drivers": "2x woofers + 2x tweeters"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "bose-soundlink-max",
+      "name": "Bose SoundLink Max",
+      "brand": "Bose",
+      "category": "bluetooth-speakers",
+      "price_usd": 399,
+      "rating": 4.7,
+      "verdict": "Bose's biggest portable speaker \u2014 audiophile-grade clarity with deep, controlled bass.",
+      "description": "The Bose SoundLink Max is Bose's flagship portable speaker, delivering the brand's signature clear, detailed sound at serious volume levels. Dual custom transducers and dual passive radiators produce deep, articulate bass that stays clean even at max volume. The 20-hour battery, IP67 rating, Bose SimpleSync, and Bluetooth 5.3 with Auracast make it the premium choice for discerning listeners who want the best sound quality in a portable package.",
+      "features": [
+        "Dual custom transducers + dual passive radiators",
+        "20-hour battery life",
+        "IP67 waterproof and dustproof",
+        "Bluetooth 5.3 with Auracast",
+        "Bose SimpleSync multi-speaker",
+        "USB-C + aux input"
+      ],
+      "pros": [
+        "Best sound quality in the large portable category",
+        "Deep, controlled bass without distortion",
+        "20-hour battery in a big speaker is impressive",
+        "Aux input for wired connections"
+      ],
+      "cons": [
+        "$399 is the most expensive option",
+        "Heavy at 2.1kg",
+        "Bose app needed for EQ customization"
+      ],
+      "network_ids": {
+        "amazon": "B0DCZYN3S1"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "party"
+      ],
+      "specs": {
+        "Battery Life": "20 hours",
+        "Waterproof Rating": "IP67",
+        "Weight": "2.1kg",
+        "Bluetooth": "5.3 + Auracast",
+        "Charging": "USB-C",
+        "Inputs": "USB-C + 3.5mm aux"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "anker-soundcore-motion-300",
+      "name": "Anker Soundcore Motion 300",
+      "brand": "Anker",
+      "category": "bluetooth-speakers",
+      "price_usd": 79,
+      "rating": 4.5,
+      "verdict": "The best value mid-range speaker \u2014 hi-res audio certification and smart features at a budget price.",
+      "description": "The Anker Soundcore Motion 300 delivers features you'd expect at twice the price. It's one of the few budget speakers with Hi-Res Audio Wireless certification (LDAC codec support), and its SmartTune technology auto-adjusts EQ based on speaker orientation. The 13-hour battery, IPX7 waterproofing, and customizable EQ via the Soundcore app make it a ridiculously good deal at $79.",
+      "features": [
+        "Hi-Res Audio Wireless (LDAC codec)",
+        "SmartTune adaptive EQ",
+        "13-hour battery life",
+        "IPX7 waterproof",
+        "Soundcore app with custom EQ",
+        "Bluetooth 5.3"
+      ],
+      "pros": [
+        "LDAC support at this price is unheard of",
+        "SmartTune auto-EQ works well",
+        "Excellent app with deep EQ controls",
+        "Great value at $79"
+      ],
+      "cons": [
+        "IPX7 not IP67 \u2014 no dust rating",
+        "13 hours is average",
+        "Build feels plasticky compared to JBL/Bose"
+      ],
+      "network_ids": {
+        "amazon": "B0CYX4M2CD"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "portable"
+      ],
+      "specs": {
+        "Battery Life": "13 hours",
+        "Waterproof Rating": "IPX7",
+        "Weight": "650g",
+        "Bluetooth": "5.3 + LDAC",
+        "Charging": "USB-C",
+        "Special Feature": "SmartTune Adaptive EQ"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    }
+  ]
+}
