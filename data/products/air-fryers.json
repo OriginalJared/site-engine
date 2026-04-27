@@ -1,0 +1,476 @@
+{
+  "products": [
+    {
+      "slug": "ninja-dz201-foodi-dualzone",
+      "name": "Ninja DZ201 Foodi 6-in-1 DualZone",
+      "brand": "Ninja",
+      "category": "air-fryers",
+      "price_usd": 189,
+      "rating": 4.8,
+      "verdict": "The best air fryer overall \u2014 dual independent baskets let you cook two foods at two temps simultaneously.",
+      "description": "The Ninja Foodi DualZone changes the game with two independent 4-quart baskets that can cook different foods at different temperatures and times, finishing together with the Smart Finish feature. DualZone technology means you can air fry chicken in one basket and roast veggies in the other \u2014 no juggling, no waiting. Six cooking functions, dishwasher-safe baskets, and a 8-quart total capacity make it the most versatile air fryer available.",
+      "features": [
+        "Dual independent baskets (4 qt each, 8 qt total)",
+        "6 cooking functions (Air Fry, Roast, Reheat, Dehydrate, Bake, Broil)",
+        "Smart Finish syncs both baskets",
+        "Match Cook duplicates settings across baskets",
+        "Dishwasher-safe baskets and crisper plates",
+        "Wide temperature range: 105\u00b0F\u2013450\u00b0F"
+      ],
+      "pros": [
+        "Two baskets cooking simultaneously saves massive time",
+        "Smart Finish ensures both foods are done together",
+        "8 qt total capacity feeds a family of 4-6",
+        "Dishwasher-safe parts make cleanup easy"
+      ],
+      "cons": [
+        "Large footprint takes up counter space",
+        "Individual baskets are only 4 qt each",
+        "Can be loud during operation"
+      ],
+      "network_ids": {
+        "amazon": "B09LGKMKFX"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "dual-basket",
+        "large-family"
+      ],
+      "specs": {
+        "Capacity": "8 qt (2x 4 qt)",
+        "Wattage": "1690W",
+        "Functions": "6-in-1",
+        "Temperature Range": "105\u00b0F\u2013450\u00b0F",
+        "Dimensions": "17.1 x 13.6 x 12.7 in",
+        "Weight": "17.6 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "cosori-pro-le-l501",
+      "name": "COSORI Pro LE Air Fryer L501",
+      "brand": "COSORI",
+      "category": "air-fryers",
+      "price_usd": 99,
+      "rating": 4.7,
+      "verdict": "The best value air fryer \u2014 5 qt capacity, 9 presets, and foolproof results at under $100.",
+      "description": "The COSORI Pro LE L501 is the best-selling air fryer on Amazon for good reason. It delivers consistent, crispy results with minimal oil across 9 one-touch cooking presets. The 5-quart basket handles meals for 2-4 people, the shake reminder buzzes mid-cook to prompt flipping, and the non-stick basket is dishwasher safe. At under $100, it's the easiest entry point into air frying.",
+      "features": [
+        "5 qt basket capacity",
+        "9 one-touch cooking presets",
+        "Shake reminder notification",
+        "Preheat function",
+        "Dishwasher-safe non-stick basket",
+        "Compact footprint"
+      ],
+      "pros": [
+        "Incredible value at under $100",
+        "9 presets cover most common foods",
+        "Shake reminder prevents uneven cooking",
+        "Compact enough for small kitchens"
+      ],
+      "cons": [
+        "5 qt is too small for large families",
+        "No dual-basket functionality",
+        "Preset temps aren't adjustable on some presets"
+      ],
+      "network_ids": {
+        "amazon": "B0916ZSG44"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Capacity": "5 qt",
+        "Wattage": "1700W",
+        "Presets": "9",
+        "Temperature Range": "170\u00b0F\u2013400\u00b0F",
+        "Dimensions": "11.8 x 14.3 x 12.6 in",
+        "Weight": "11.9 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "instant-vortex-plus-6-in-1",
+      "name": "Instant Vortex Plus 6-in-1",
+      "brand": "Instant",
+      "category": "air-fryers",
+      "price_usd": 119,
+      "rating": 4.6,
+      "verdict": "The most versatile single-basket air fryer \u2014 air fry, broil, roast, dehydrate, bake, and reheat in one unit.",
+      "description": "From the makers of the Instant Pot, the Vortex Plus 6-in-1 brings the same reliability to air frying. Its 6-quart capacity handles meals for the whole family, while EvenCrisp technology circulates hot air for uniform results. The clear-view window lets you monitor food without opening the basket, and the one-touch smart programs take the guesswork out of cooking. ClearCook and OdorErase features set it apart.",
+      "features": [
+        "6 qt capacity",
+        "6 cooking functions",
+        "EvenCrisp technology",
+        "ClearCook window for monitoring",
+        "OdorErase built-in filter",
+        "One-touch smart programs"
+      ],
+      "pros": [
+        "6 qt feeds a family comfortably",
+        "ClearCook window is genuinely useful",
+        "OdorErase reduces cooking smells",
+        "Trusted Instant brand quality"
+      ],
+      "cons": [
+        "Single basket only",
+        "Bulkier than basic models",
+        "Smart programs aren't app-connected"
+      ],
+      "network_ids": {
+        "amazon": "B07WGMDQHC"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "versatile"
+      ],
+      "specs": {
+        "Capacity": "6 qt",
+        "Wattage": "1700W",
+        "Functions": "6-in-1",
+        "Temperature Range": "95\u00b0F\u2013400\u00b0F",
+        "Dimensions": "12.7 x 14.1 x 13.8 in",
+        "Weight": "13.9 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "philips-premium-xxl-airfryer",
+      "name": "Philips Premium XXL Airfryer HD9867",
+      "brand": "Philips",
+      "category": "air-fryers",
+      "price_usd": 349,
+      "rating": 4.6,
+      "verdict": "The premium choice \u2014 Philips' fat-removal technology and 7 qt capacity for health-conscious families.",
+      "description": "The Philips Premium XXL is the flagship air fryer from the brand that invented the category. Its patented Fat Removal technology captures and drains excess fat into a separate drawer, making meals measurably healthier. The 7-quart capacity handles a whole chicken, the Rapid Air starfish design ensures even cooking, and the Smart Sensing technology auto-adjusts time and temperature. It's expensive, but it's the gold standard.",
+      "features": [
+        "7 qt XXL capacity",
+        "Fat Removal technology",
+        "Rapid Air starfish design",
+        "Smart Sensing auto-adjustment",
+        "NutriU app with guided recipes",
+        "Dishwasher-safe parts"
+      ],
+      "pros": [
+        "Fat Removal tech genuinely reduces fat content",
+        "7 qt fits a whole chicken",
+        "Smart Sensing takes the guesswork out",
+        "Philips invented air frying \u2014 they know what they're doing"
+      ],
+      "cons": [
+        "$349 is the most expensive basket-style option",
+        "Large footprint for counter space",
+        "Premium price for features you can live without"
+      ],
+      "network_ids": {
+        "amazon": "B0936FGFB3"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "large-family"
+      ],
+      "specs": {
+        "Capacity": "7 qt",
+        "Wattage": "2225W",
+        "Technology": "Rapid Air + Smart Sensing",
+        "Temperature Range": "150\u00b0F\u2013400\u00b0F",
+        "Dimensions": "16.5 x 13.4 x 11.8 in",
+        "Weight": "19.4 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "cuisinart-toa-60-toaster-oven-air-fryer",
+      "name": "Cuisinart TOA-60 Air Fryer Toaster Oven",
+      "brand": "Cuisinart",
+      "category": "air-fryers",
+      "price_usd": 229,
+      "rating": 4.5,
+      "verdict": "The best air fryer toaster oven \u2014 replaces your toaster, oven, and air fryer in one countertop unit.",
+      "description": "The Cuisinart TOA-60 combines a full-size toaster oven with a powerful air fryer in one stainless steel package. It fits 6 slices of bread or a 12-inch pizza, and the air fry function delivers crispy results with the same convection heating. Seven cooking functions (air fry, convection bake, convection broil, bake, broil, warm, toast) make it the ultimate countertop multitasker. If you want one appliance to rule them all, this is it.",
+      "features": [
+        "7 cooking functions",
+        "0.6 cu ft interior",
+        "Air fry + full toaster oven",
+        "Fits 12\" pizza or 6 toast slices",
+        "60-minute timer with auto-shutoff",
+        "Stainless steel construction"
+      ],
+      "pros": [
+        "Replaces toaster AND air fryer \u2014 saves counter space",
+        "Full toaster oven functionality",
+        "Stainless steel looks premium",
+        "Large enough for family-size meals"
+      ],
+      "cons": [
+        "Takes up more space than a basket air fryer",
+        "Air fry capacity is smaller than dedicated units",
+        "No digital display \u2014 analog dials only"
+      ],
+      "network_ids": {
+        "amazon": "B01K0MHWB8"
+      },
+      "image_url": "",
+      "best_for": [
+        "toaster-oven",
+        "versatile"
+      ],
+      "specs": {
+        "Capacity": "0.6 cu ft",
+        "Wattage": "1800W",
+        "Functions": "7-in-1",
+        "Temperature Range": "Warm\u2013450\u00b0F",
+        "Dimensions": "15.5 x 16.0 x 14.0 in",
+        "Weight": "21 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "cosori-dual-blaze-turboblaze",
+      "name": "COSORI Dual Blaze TurboBlaze",
+      "brand": "COSORI",
+      "category": "air-fryers",
+      "price_usd": 119,
+      "rating": 4.7,
+      "verdict": "The best even-cooking air fryer \u2014 dual heating elements eliminate the need to flip food mid-cook.",
+      "description": "The COSORI Dual Blaze solves the biggest air fryer annoyance: having to shake or flip food halfway through cooking. Dual top-and-bottom heating elements with 360\u00b0 TurboBlaze technology cook food evenly from all sides without intervention. The 6.8 qt capacity is generous, the touchscreen is responsive, and 12 one-touch presets cover everything from fries to steak. It's the set-it-and-forget-it air fryer.",
+      "features": [
+        "Dual top + bottom heating elements",
+        "360\u00b0 TurboBlaze even cooking",
+        "6.8 qt capacity",
+        "12 one-touch presets",
+        "Responsive touchscreen display",
+        "Dishwasher-safe basket"
+      ],
+      "pros": [
+        "No need to flip food \u2014 dual elements cook evenly",
+        "6.8 qt handles large portions",
+        "12 presets cover nearly every food type",
+        "TurboBlaze is noticeably more even than single-element"
+      ],
+      "cons": [
+        "Slightly more expensive than basic models",
+        "Basket shape is wide but shallow",
+        "App connectivity requires Wi-Fi setup"
+      ],
+      "network_ids": {
+        "amazon": "B0CVMML2H1"
+      },
+      "image_url": "",
+      "best_for": [
+        "even-cooking",
+        "best-overall"
+      ],
+      "specs": {
+        "Capacity": "6.8 qt",
+        "Wattage": "1750W",
+        "Heating": "Dual top + bottom elements",
+        "Presets": "12",
+        "Temperature Range": "170\u00b0F\u2013450\u00b0F",
+        "Weight": "13.2 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "ninja-af101-air-fryer",
+      "name": "Ninja AF101 Air Fryer",
+      "brand": "Ninja",
+      "category": "air-fryers",
+      "price_usd": 89,
+      "rating": 4.7,
+      "verdict": "The best budget Ninja \u2014 simple, reliable, and delivers crispy results at the lowest Ninja price point.",
+      "description": "The Ninja AF101 is the entry-level Ninja air fryer and it's all most people need. The 4-quart ceramic-coated basket handles meals for 1-3 people, and four cooking functions (Air Fry, Roast, Reheat, Dehydrate) cover the essentials. Wide temperature range from 105\u00b0F to 400\u00b0F means you can dehydrate jerky or crisp up fries. It's simple, affordable, and backed by Ninja's build quality.",
+      "features": [
+        "4 qt ceramic-coated basket",
+        "4 cooking functions",
+        "Wide temp range: 105\u00b0F\u2013400\u00b0F",
+        "Dishwasher-safe basket and crisper plate",
+        "Compact design",
+        "Easy-to-use controls"
+      ],
+      "pros": [
+        "Under $90 for genuine Ninja quality",
+        "Ceramic coating is durable and non-stick",
+        "Dehydrate function is a nice bonus",
+        "Compact enough for small kitchens"
+      ],
+      "cons": [
+        "4 qt is small for families",
+        "No presets \u2014 manual temp/time only",
+        "Basic design with no smart features"
+      ],
+      "network_ids": {
+        "amazon": "B07FDJMC9Q"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Capacity": "4 qt",
+        "Wattage": "1550W",
+        "Functions": "4-in-1",
+        "Temperature Range": "105\u00b0F\u2013400\u00b0F",
+        "Dimensions": "13.1 x 11.0 x 13.6 in",
+        "Weight": "10.5 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "breville-smart-oven-air-fryer-pro",
+      "name": "Breville Smart Oven Air Fryer Pro",
+      "brand": "Breville",
+      "category": "air-fryers",
+      "price_usd": 399,
+      "rating": 4.7,
+      "verdict": "The ultimate countertop oven \u2014 13 functions including air fry, slow cook, dehydrate, and proof dough.",
+      "description": "The Breville Smart Oven Air Fryer Pro is less an air fryer and more a countertop kitchen replacement. With 13 cooking functions including air fry, slow cook, dehydrate, proof, bake, roast, broil, toast, bagel, pizza, cookies, reheat, and warm, it can handle virtually any cooking task. Element IQ technology directs heat precisely where needed, and the 1 cu ft interior fits a 14-lb turkey. If you want one appliance that does everything, this is the pinnacle.",
+      "features": [
+        "13 cooking functions",
+        "1 cu ft interior capacity",
+        "Element IQ smart heat distribution",
+        "Fits 14-lb turkey or 9x13 pan",
+        "Super convection for air frying",
+        "Slow cook + dehydrate + proof dough"
+      ],
+      "pros": [
+        "13 functions replace multiple appliances",
+        "Element IQ produces remarkably even results",
+        "Massive 1 cu ft interior fits anything",
+        "Build quality is outstanding \u2014 brushed steel"
+      ],
+      "cons": [
+        "$399 is a significant investment",
+        "Huge footprint \u2014 needs dedicated counter space",
+        "Overkill if you just want basic air frying"
+      ],
+      "network_ids": {
+        "amazon": "B085L43K6S"
+      },
+      "image_url": "",
+      "best_for": [
+        "toaster-oven",
+        "premium"
+      ],
+      "specs": {
+        "Capacity": "1 cu ft",
+        "Wattage": "1800W",
+        "Functions": "13-in-1",
+        "Temperature Range": "Warm\u2013480\u00b0F",
+        "Dimensions": "21.4 x 17.2 x 12.7 in",
+        "Weight": "28.5 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "ninja-af150amz-air-fryer-xl",
+      "name": "Ninja AF150AMZ Air Fryer XL",
+      "brand": "Ninja",
+      "category": "air-fryers",
+      "price_usd": 119,
+      "rating": 4.6,
+      "verdict": "The best mid-size air fryer \u2014 5.5 qt hits the sweet spot between compact and family-size.",
+      "description": "The Ninja AF150AMZ XL steps up from the AF101 with a 5.5-quart capacity that comfortably feeds 3-5 people. It keeps the same reliable Ninja performance with 5 cooking functions (adding Bake to the lineup) and a wide 105\u00b0F\u2013400\u00b0F temperature range. The XL crisper plate ensures airflow around food for maximum crispiness, and the dishwasher-safe parts make cleanup painless. It's the Goldilocks air fryer.",
+      "features": [
+        "5.5 qt XL capacity",
+        "5 cooking functions (Air Fry, Roast, Reheat, Dehydrate, Bake)",
+        "XL crisper plate for max airflow",
+        "Wide temp range: 105\u00b0F\u2013400\u00b0F",
+        "Dishwasher-safe parts",
+        "Programmable timer"
+      ],
+      "pros": [
+        "5.5 qt is the perfect mid-size capacity",
+        "Bake function adds versatility over AF101",
+        "Ninja reliability at a reasonable price",
+        "Dishwasher-safe everything"
+      ],
+      "cons": [
+        "Single basket \u2014 no dual-zone cooking",
+        "No smart features or app",
+        "Basic digital controls"
+      ],
+      "network_ids": {
+        "amazon": "B0BJ3FJR36"
+      },
+      "image_url": "",
+      "best_for": [
+        "mid-size",
+        "versatile"
+      ],
+      "specs": {
+        "Capacity": "5.5 qt",
+        "Wattage": "1750W",
+        "Functions": "5-in-1",
+        "Temperature Range": "105\u00b0F\u2013400\u00b0F",
+        "Dimensions": "14.0 x 11.6 x 14.2 in",
+        "Weight": "12.5 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    },
+    {
+      "slug": "chefman-turbofry-air-fryer",
+      "name": "Chefman TurboFry 3.6 Qt Air Fryer",
+      "brand": "Chefman",
+      "category": "air-fryers",
+      "price_usd": 49,
+      "rating": 4.4,
+      "verdict": "The cheapest air fryer worth buying \u2014 simple, compact, and delivers surprisingly good results under $50.",
+      "description": "The Chefman TurboFry proves air frying doesn't require a big investment. At just $49, it delivers crispy fries, wings, and veggies with minimal oil. The 3.6-quart basket handles meals for 1-2 people, the analog dial is dead simple, and the dishwasher-safe basket makes cleanup fast. It's not fancy, but it works \u2014 and at this price, it's a no-brainer for anyone curious about air frying.",
+      "features": [
+        "3.6 qt basket capacity",
+        "Analog temperature dial (200\u00b0F\u2013400\u00b0F)",
+        "60-minute timer",
+        "Dishwasher-safe basket",
+        "Ultra-compact footprint",
+        "Cool-touch handle"
+      ],
+      "pros": [
+        "Under $50 \u2014 lowest price for a decent air fryer",
+        "Dead simple to operate",
+        "Compact enough for dorm rooms or RVs",
+        "Dishwasher-safe for easy cleanup"
+      ],
+      "cons": [
+        "3.6 qt is small \u2014 serves 1-2 people max",
+        "Analog controls feel cheap",
+        "No presets or digital display",
+        "Limited cooking functions"
+      ],
+      "network_ids": {
+        "amazon": "B0813FSGMB"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Capacity": "3.6 qt",
+        "Wattage": "1200W",
+        "Controls": "Analog dial",
+        "Temperature Range": "200\u00b0F\u2013400\u00b0F",
+        "Dimensions": "10.4 x 10.8 x 11.7 in",
+        "Weight": "7.3 lbs"
+      },
+      "date_added": "2026-04-26",
+      "date_updated": "2026-04-26"
+    }
+  ]
+}
