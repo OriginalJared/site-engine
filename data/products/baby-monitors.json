@@ -1,0 +1,486 @@
+{
+  "products": [
+    {
+      "slug": "nanit-pro-camera",
+      "name": "Nanit Pro Smart Baby Monitor",
+      "brand": "Nanit",
+      "category": "baby-monitors",
+      "price_usd": 299,
+      "rating": 4.7,
+      "verdict": "The smartest baby monitor \u2014 AI sleep tracking, breathing motion monitoring, and HD streaming in one overhead camera.",
+      "description": "The Nanit Pro is the Tesla of baby monitors. Its overhead camera provides a bird's-eye view of your baby's crib, while AI-powered sleep tracking analyzes sleep patterns and gives you a nightly Sleep Score. The Breathing Wear system (sold separately) monitors breathing motion through your baby's clothing \u2014 no chest clips or sensors touching skin. 1080p HD streaming, background audio, split-screen for two cameras, and real-time alerts make it the most data-rich monitor available.",
+      "features": [
+        "1080p HD streaming with night vision",
+        "AI sleep tracking with Sleep Score",
+        "Breathing Wear motion monitoring",
+        "Bird's-eye overhead mount",
+        "Background audio on your phone",
+        "Temperature and humidity sensors"
+      ],
+      "pros": [
+        "Sleep tracking insights are genuinely valuable",
+        "Breathing Wear is non-contact and non-invasive",
+        "Overhead view covers the entire crib",
+        "App is polished and feature-rich"
+      ],
+      "cons": [
+        "$299 plus optional subscription for full features",
+        "Breathing Wear sold separately ($29+)",
+        "Requires Wi-Fi \u2014 no local-only option",
+        "Subscription needed for sleep analytics history"
+      ],
+      "network_ids": {
+        "amazon": "B07SX1KQMB"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "smart-features",
+        "sleep-tracking"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "Night Vision": "Yes",
+        "Mount": "Overhead wall mount",
+        "Sensors": "Temperature + humidity",
+        "Audio": "Two-way",
+        "Connectivity": "Wi-Fi (2.4GHz)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "eufy-spaceview-pro",
+      "name": "eufy SpaceView Pro Baby Monitor",
+      "brand": "eufy",
+      "category": "baby-monitors",
+      "price_usd": 179,
+      "rating": 4.6,
+      "verdict": "The best non-Wi-Fi monitor \u2014 a dedicated 5\" screen with 720p video and zero hacking risk.",
+      "description": "The eufy SpaceView Pro is for parents who want reliable video monitoring without connecting to the internet. Its encrypted FHSS signal streams directly to a dedicated 5\" 720p display \u2014 no Wi-Fi, no app, no hacking risk. The wide-angle lens with remote pan, tilt, and zoom covers the whole room, and the 460-foot range handles large homes. Night vision is sharp, two-way audio lets you soothe remotely, and the dedicated monitor means no phone battery drain.",
+      "features": [
+        "5\" 720p dedicated display",
+        "Encrypted FHSS \u2014 no Wi-Fi needed",
+        "Remote pan, tilt, and 2x zoom",
+        "460-foot range",
+        "Two-way audio",
+        "Night vision + temperature alert"
+      ],
+      "pros": [
+        "No Wi-Fi = no hacking risk",
+        "Dedicated screen doesn't drain your phone",
+        "Pan/tilt/zoom covers entire room remotely",
+        "Long 460-foot range"
+      ],
+      "cons": [
+        "No smart features or app",
+        "720p is lower resolution than Wi-Fi monitors",
+        "Dedicated screen is another device to carry",
+        "No sleep tracking or AI features"
+      ],
+      "network_ids": {
+        "amazon": "B09PNKNCJ7"
+      },
+      "image_url": "",
+      "best_for": [
+        "non-wifi",
+        "secure",
+        "budget"
+      ],
+      "specs": {
+        "Video": "720p",
+        "Display": "5\" dedicated screen",
+        "Range": "460 feet",
+        "Night Vision": "Yes",
+        "Audio": "Two-way",
+        "Connectivity": "Encrypted FHSS (no Wi-Fi)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "owlet-dream-duo-2",
+      "name": "Owlet Dream Duo 2",
+      "brand": "Owlet",
+      "category": "baby-monitors",
+      "price_usd": 399,
+      "rating": 4.5,
+      "verdict": "The most comprehensive health monitor \u2014 HD camera plus Dream Sock tracks heart rate and oxygen while baby sleeps.",
+      "description": "The Owlet Dream Duo 2 combines an HD video monitor with the Owlet Dream Sock \u2014 a wearable that tracks your baby's heart rate and oxygen level in real time. If readings fall outside preset ranges, the base station alerts you immediately. The HD camera streams 1080p with night vision, and the Owlet Dream App provides sleep trends and wellness data. For parents who want peace of mind about their baby's vitals, nothing else comes close.",
+      "features": [
+        "Dream Sock \u2014 heart rate + oxygen tracking",
+        "1080p HD camera with night vision",
+        "Real-time health alerts on base station",
+        "Owlet Dream App with sleep trends",
+        "Room temperature monitoring",
+        "Two-way audio"
+      ],
+      "pros": [
+        "Heart rate + oxygen monitoring is unmatched peace of mind",
+        "Base station alerts without needing your phone",
+        "HD camera quality is excellent",
+        "Sleep trend data helps establish routines"
+      ],
+      "cons": [
+        "$399 is the most expensive monitor",
+        "Dream Sock must be charged daily",
+        "Sock can be finicky on wiggly babies",
+        "Subscription for extended data history"
+      ],
+      "network_ids": {
+        "amazon": "B0BYQ4DW1Y"
+      },
+      "image_url": "",
+      "best_for": [
+        "health-monitoring",
+        "premium"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "Health Tracking": "Heart rate + blood oxygen",
+        "Night Vision": "Yes",
+        "Wearable": "Dream Sock (included)",
+        "Audio": "Two-way",
+        "Connectivity": "Wi-Fi + Bluetooth"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "infant-optics-dxr-8-pro",
+      "name": "Infant Optics DXR-8 Pro",
+      "brand": "Infant Optics",
+      "category": "baby-monitors",
+      "price_usd": 189,
+      "rating": 4.5,
+      "verdict": "The most reliable dedicated monitor \u2014 5\" display with interchangeable lenses and a rock-solid signal.",
+      "description": "The Infant Optics DXR-8 Pro is the updated version of the best-selling baby monitor in America. Its 5\" 720p display connects via encrypted FHSS with zero interference, and the unique interchangeable optical lens system lets you swap between a standard lens and a wide-angle lens (included). Active Noise Reduction filters white noise machines so you only hear your baby. It's the no-frills, supremely reliable monitor that millions of parents trust.",
+      "features": [
+        "5\" 720p dedicated display",
+        "Interchangeable optical lenses (2 included)",
+        "Active Noise Reduction",
+        "Encrypted FHSS signal",
+        "Remote pan, tilt, zoom",
+        "Temperature sensor"
+      ],
+      "pros": [
+        "Interchangeable lenses are unique and useful",
+        "Active Noise Reduction is a smart feature",
+        "Rock-solid encrypted signal",
+        "Proven reliability \u2014 best-seller for years"
+      ],
+      "cons": [
+        "No Wi-Fi or app \u2014 dedicated screen only",
+        "720p resolution is showing its age",
+        "Battery life on parent unit is average",
+        "No smart features or sleep tracking"
+      ],
+      "network_ids": {
+        "amazon": "B0BWXL9WLP"
+      },
+      "image_url": "",
+      "best_for": [
+        "non-wifi",
+        "best-overall"
+      ],
+      "specs": {
+        "Video": "720p",
+        "Display": "5\" dedicated screen",
+        "Lenses": "Interchangeable (2 included)",
+        "Night Vision": "Yes",
+        "Audio": "Active Noise Reduction + two-way",
+        "Connectivity": "Encrypted FHSS"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "vtech-rm5764hd",
+      "name": "VTech RM5764HD Smart Baby Monitor",
+      "brand": "VTech",
+      "category": "baby-monitors",
+      "price_usd": 119,
+      "rating": 4.4,
+      "verdict": "The best value smart monitor \u2014 1080p, pan/tilt/zoom, and app access at an affordable price.",
+      "description": "The VTech RM5764HD offers smart monitor features at a budget-friendly price. It streams 1080p video to both a dedicated 5\" parent unit AND your phone via the V-Sight app \u2014 giving you the flexibility of both worlds. Remote pan, tilt, and 2x zoom cover the room, and the night light with lullabies helps soothe your baby back to sleep. At $119, it undercuts most smart monitors while matching their core features.",
+      "features": [
+        "1080p HD with 5\" parent unit + app",
+        "Remote pan, tilt, and 2x zoom",
+        "V-Sight app for phone viewing",
+        "Night light with lullabies",
+        "Temperature sensor",
+        "Two-way talk-back"
+      ],
+      "pros": [
+        "Dedicated screen AND phone app \u2014 best of both",
+        "1080p at $119 is outstanding value",
+        "Night light and lullabies are handy extras",
+        "VTech reliability and brand trust"
+      ],
+      "cons": [
+        "App can be sluggish",
+        "Wi-Fi connection needed for app features",
+        "No sleep tracking or health monitoring",
+        "Pan/tilt motor can be audible"
+      ],
+      "network_ids": {
+        "amazon": "B0C16VJNHR"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "value"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "Display": "5\" parent unit + phone app",
+        "Night Vision": "Yes",
+        "Audio": "Two-way + lullabies",
+        "Extras": "Night light",
+        "Connectivity": "FHSS + Wi-Fi (dual)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "babysense-hd-s2",
+      "name": "Babysense HD S2 Video Monitor",
+      "brand": "Babysense",
+      "category": "baby-monitors",
+      "price_usd": 159,
+      "rating": 4.5,
+      "verdict": "The best split-screen monitor \u2014 view two cameras simultaneously on a single 5\" display.",
+      "description": "The Babysense HD S2 is ideal for families with two kids in separate rooms. It supports up to 4 cameras with a split-screen view on the dedicated 5\" display, so you can monitor multiple rooms at once. Each camera offers remote pan, tilt, and zoom with 1080p resolution and excellent night vision. The long 960-foot range handles large homes, and the encrypted signal means no Wi-Fi and no hacking risk. It's the multi-room monitoring champion.",
+      "features": [
+        "Split-screen view (up to 4 cameras)",
+        "1080p HD per camera",
+        "5\" dedicated display",
+        "960-foot range",
+        "Remote pan, tilt, 4x zoom",
+        "Encrypted \u2014 no Wi-Fi needed"
+      ],
+      "pros": [
+        "Split-screen for monitoring multiple rooms",
+        "960-foot range is exceptional",
+        "1080p per camera \u2014 sharp and clear",
+        "No Wi-Fi means no hacking risk"
+      ],
+      "cons": [
+        "Additional cameras sold separately",
+        "No app or smart features",
+        "Parent unit is bulky",
+        "No temperature sensor on base model"
+      ],
+      "network_ids": {
+        "amazon": "B0CN7LHN9G"
+      },
+      "image_url": "",
+      "best_for": [
+        "multi-room",
+        "non-wifi"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "Display": "5\" dedicated screen",
+        "Cameras": "Up to 4 (1 included)",
+        "Range": "960 feet",
+        "Night Vision": "Yes",
+        "Connectivity": "Encrypted FHSS"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "google-nest-cam-indoor",
+      "name": "Google Nest Cam (Indoor, 2nd Gen)",
+      "brand": "Google",
+      "category": "baby-monitors",
+      "price_usd": 99,
+      "rating": 4.4,
+      "verdict": "The best repurposable monitor \u2014 a smart security camera that doubles as a baby monitor with Google Home integration.",
+      "description": "The Google Nest Cam Indoor isn't marketed as a baby monitor, but thousands of parents use it as one \u2014 and it's excellent. 1080p HDR video, person/motion detection, and 3 hours of free event recording make it capable out of the box. Integration with Google Home means you can view the feed on Nest Hub displays, smart TVs, or your phone. When your kids outgrow monitoring, it becomes a security camera. It's the pragmatic, future-proof choice.",
+      "features": [
+        "1080p HDR video",
+        "Google Home integration",
+        "Person + motion detection",
+        "3 hours free event recording",
+        "Night vision",
+        "Magnetic mount for flexible placement"
+      ],
+      "pros": [
+        "Repurpose as a security camera later",
+        "Google Home ecosystem integration",
+        "HDR video looks great",
+        "Cheapest option at $99"
+      ],
+      "cons": [
+        "Not designed specifically for babies",
+        "No dedicated parent unit \u2014 phone/tablet only",
+        "Requires Wi-Fi \u2014 internet-dependent",
+        "No two-way audio optimization for baby use"
+      ],
+      "network_ids": {
+        "amazon": "B09LQDH3S6"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "smart-home"
+      ],
+      "specs": {
+        "Video": "1080p HDR",
+        "Night Vision": "Yes",
+        "Audio": "Two-way",
+        "Storage": "3 hours free / Nest Aware subscription",
+        "Mount": "Magnetic",
+        "Connectivity": "Wi-Fi (2.4 + 5 GHz)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "cubo-ai-plus",
+      "name": "Cubo Ai Plus Smart Baby Monitor",
+      "brand": "Cubo Ai",
+      "category": "baby-monitors",
+      "price_usd": 279,
+      "rating": 4.4,
+      "verdict": "The best face-detection monitor \u2014 AI alerts when baby's face is covered or rolls to a dangerous position.",
+      "description": "The Cubo Ai Plus uses computer vision AI to detect potentially dangerous situations that other monitors miss. It alerts you when your baby's face is covered by a blanket, when they roll over to a face-down position, or when they enter a designated danger zone in the crib. 1080p HD video with 18-hour playback, temperature/humidity sensors, and cry detection add standard smart features on top of the AI safety layer. It's the monitor for safety-conscious parents.",
+      "features": [
+        "AI face-covered detection",
+        "AI rollover alert",
+        "AI danger zone detection",
+        "1080p HD with 18-hour playback",
+        "Cry detection",
+        "Temperature + humidity sensors"
+      ],
+      "pros": [
+        "Face-covered and rollover AI alerts are unique",
+        "Danger zone detection adds peace of mind",
+        "18-hour video playback for reviewing sleep",
+        "Comprehensive sensor suite"
+      ],
+      "cons": [
+        "$279 is premium for a single camera",
+        "AI alerts can produce false positives",
+        "Requires good Wi-Fi for reliable alerts",
+        "Subscription for extended features"
+      ],
+      "network_ids": {
+        "amazon": "B0BMGH3PML"
+      },
+      "image_url": "",
+      "best_for": [
+        "smart-features",
+        "safety"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "AI Features": "Face cover + rollover + danger zone",
+        "Night Vision": "Yes",
+        "Audio": "Two-way + cry detection",
+        "Sensors": "Temperature + humidity",
+        "Playback": "18 hours"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "hellobaby-hb6550",
+      "name": "HelloBaby HB6550 Monitor",
+      "brand": "HelloBaby",
+      "category": "baby-monitors",
+      "price_usd": 69,
+      "rating": 4.4,
+      "verdict": "The best ultra-budget monitor \u2014 a reliable 5\" video monitor with all the basics for under $70.",
+      "description": "The HelloBaby HB6550 proves you don't need to spend $300 for a good baby monitor. For under $70, you get a 5\" color display, infrared night vision, two-way audio, temperature monitoring, and up to 4 camera support. The 1000-foot range covers most homes, and 8 lullabies help soothe your baby remotely. It's not smart, it's not fancy, and that's the point \u2014 it reliably shows you your baby, and it costs less than dinner for two.",
+      "features": [
+        "5\" color display",
+        "1000-foot range",
+        "Infrared night vision",
+        "Two-way audio",
+        "Temperature monitoring",
+        "8 built-in lullabies"
+      ],
+      "pros": [
+        "Under $70 \u2014 cheapest reliable video monitor",
+        "1000-foot range is impressive for the price",
+        "Simple to set up and use",
+        "Lullabies are a nice bonus"
+      ],
+      "cons": [
+        "Low resolution \u2014 not HD",
+        "No pan/tilt/zoom",
+        "No smart features or app",
+        "Build quality is budget-grade"
+      ],
+      "network_ids": {
+        "amazon": "B07Y4GBKN5"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Video": "Standard definition",
+        "Display": "5\" color screen",
+        "Range": "1000 feet",
+        "Night Vision": "Infrared",
+        "Audio": "Two-way + 8 lullabies",
+        "Connectivity": "FHSS (no Wi-Fi)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "miku-pro",
+      "name": "Miku Pro Smart Baby Monitor",
+      "brand": "Miku",
+      "category": "baby-monitors",
+      "price_usd": 299,
+      "rating": 4.3,
+      "verdict": "The most advanced contactless monitor \u2014 tracks breathing and sleep without any wearable on your baby.",
+      "description": "The Miku Pro monitors your baby's breathing without any wearable device at all. Its SensorFusion technology uses the camera itself to detect breathing patterns, sleep position, and room conditions \u2014 no sock, no clip, no mat under the mattress. 1080p HD video with night vision, real-time breathing visualization in the app, and cry/sound detection provide comprehensive monitoring. If you want breathing data without putting anything on your baby, Miku is the only option.",
+      "features": [
+        "Contactless breathing monitoring (no wearable)",
+        "SensorFusion camera-based tracking",
+        "1080p HD with night vision",
+        "Real-time breathing visualization",
+        "Cry and sound detection",
+        "Temperature + humidity sensors"
+      ],
+      "pros": [
+        "No wearable needed \u2014 completely contactless",
+        "Breathing data without touching your baby",
+        "1080p video quality is excellent",
+        "No ongoing subscription required"
+      ],
+      "cons": [
+        "$299 for a single camera",
+        "Breathing detection can lose tracking if baby moves a lot",
+        "Requires strong Wi-Fi",
+        "Less proven than Owlet for health data"
+      ],
+      "network_ids": {
+        "amazon": "B0BTXJR32D"
+      },
+      "image_url": "",
+      "best_for": [
+        "health-monitoring",
+        "sleep-tracking"
+      ],
+      "specs": {
+        "Video": "1080p HD",
+        "Health Tracking": "Contactless breathing (camera-based)",
+        "Night Vision": "Yes",
+        "Audio": "Two-way + cry detection",
+        "Sensors": "Temperature + humidity",
+        "Subscription": "Not required"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    }
+  ]
+}
