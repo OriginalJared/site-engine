@@ -1,0 +1,489 @@
+{
+  "products": [
+    {
+      "slug": "segway-ninebot-max-g2",
+      "name": "Segway Ninebot KickScooter Max G2",
+      "brand": "Segway",
+      "category": "electric-scooters",
+      "price_usd": 999,
+      "rating": 4.7,
+      "verdict": "The best electric scooter overall \u2014 43-mile range, Apple Find My, and built-in turn signals in a tank-like build.",
+      "description": "The Segway Ninebot Max G2 is the electric scooter that does everything well. Its 43-mile max range is the longest in the commuter class, powered by a 551Wh battery and a 450W motor that hits 22 mph. Built-in turn signals, a front suspension fork, and Apple Find My tracking add safety and peace of mind. The 10\" pneumatic tires absorb bumps, and the IPX5 water resistance handles rain. It's the scooter that turns a commute into a joy ride.",
+      "features": [
+        "450W motor \u2014 22 mph top speed",
+        "43-mile max range (551Wh battery)",
+        "Built-in turn signals",
+        "Apple Find My + Segway app",
+        "10\" pneumatic tires",
+        "Front suspension fork"
+      ],
+      "pros": [
+        "43-mile range eliminates range anxiety",
+        "Built-in turn signals are a huge safety upgrade",
+        "Apple Find My for theft tracking",
+        "Tank-like build quality"
+      ],
+      "cons": [
+        "$999 is premium pricing",
+        "Heavy at 44 lbs \u2014 hard to carry upstairs",
+        "22 mph feels slow for experienced riders",
+        "Charges in 6+ hours (no fast charging)"
+      ],
+      "network_ids": {
+        "amazon": "B0C7KXJM5R"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "commuting",
+        "long-range"
+      ],
+      "specs": {
+        "Motor": "450W",
+        "Top Speed": "22 mph",
+        "Range": "43 miles",
+        "Battery": "551Wh",
+        "Tires": "10\" pneumatic",
+        "Weight": "44 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "xiaomi-electric-scooter-4-pro",
+      "name": "Xiaomi Electric Scooter 4 Pro",
+      "brand": "Xiaomi",
+      "category": "electric-scooters",
+      "price_usd": 799,
+      "rating": 4.6,
+      "verdict": "The best value premium scooter \u2014 30-mile range, dual brakes, and a sleek design at a competitive price.",
+      "description": "The Xiaomi Electric Scooter 4 Pro delivers premium performance at a mid-range price. Its 700W peak motor pushes to 20 mph, and the 446Wh battery provides up to 30 miles of range. The 10\" tubeless pneumatic tires are puncture-resistant, and dual braking (regenerative + disc) stops you quickly and safely. The minimalist design with an LED dashboard, app connectivity, and cruise control makes it the most refined scooter in its price range.",
+      "features": [
+        "700W peak motor \u2014 20 mph",
+        "30-mile range (446Wh battery)",
+        "10\" tubeless pneumatic tires",
+        "Dual braking (regenerative + disc)",
+        "LED dashboard display",
+        "Xiaomi app with cruise control"
+      ],
+      "pros": [
+        "30-mile range at $799 is excellent value",
+        "Tubeless tires resist punctures",
+        "Dual braking provides confident stopping",
+        "Sleek, minimalist design"
+      ],
+      "cons": [
+        "20 mph top speed is moderate",
+        "Heavy at 37 lbs",
+        "No suspension \u2014 relies on tire absorption",
+        "Charging takes 9 hours"
+      ],
+      "network_ids": {
+        "amazon": "B0CPQ5Y8PP"
+      },
+      "image_url": "",
+      "best_for": [
+        "commuting",
+        "value"
+      ],
+      "specs": {
+        "Motor": "700W peak",
+        "Top Speed": "20 mph",
+        "Range": "30 miles",
+        "Battery": "446Wh",
+        "Tires": "10\" tubeless pneumatic",
+        "Weight": "37 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "gotrax-g4",
+      "name": "GOTRAX G4",
+      "brand": "GOTRAX",
+      "category": "electric-scooters",
+      "price_usd": 499,
+      "rating": 4.4,
+      "verdict": "The best budget commuter scooter \u2014 25-mile range and 20 mph speed for under $500.",
+      "description": "The GOTRAX G4 packs impressive specs into a budget-friendly package. Its 350W motor reaches 20 mph, and the 375Wh battery delivers up to 25 miles of range \u2014 more than enough for most daily commutes. 10\" pneumatic tires provide a comfortable ride, the dual braking system (electronic + rear disc) stops safely, and the foldable design makes it easy to carry on public transit. At under $500, it's the smartest entry into electric scooter commuting.",
+      "features": [
+        "350W motor \u2014 20 mph",
+        "25-mile range (375Wh battery)",
+        "10\" pneumatic tires",
+        "Dual braking (electronic + disc)",
+        "Foldable design",
+        "LED headlight + tail light"
+      ],
+      "pros": [
+        "Under $500 for 25 miles of range",
+        "10\" pneumatic tires are comfortable",
+        "Foldable for public transit and storage",
+        "Decent 20 mph top speed"
+      ],
+      "cons": [
+        "350W motor struggles on steep hills",
+        "Build quality is adequate, not premium",
+        "No suspension",
+        "App features are basic"
+      ],
+      "network_ids": {
+        "amazon": "B0BFBT36WP"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "commuting"
+      ],
+      "specs": {
+        "Motor": "350W",
+        "Top Speed": "20 mph",
+        "Range": "25 miles",
+        "Battery": "375Wh",
+        "Tires": "10\" pneumatic",
+        "Weight": "36 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "apollo-city-pro-2023",
+      "name": "Apollo City Pro (2023)",
+      "brand": "Apollo",
+      "category": "electric-scooters",
+      "price_usd": 1599,
+      "rating": 4.6,
+      "verdict": "The best performance commuter \u2014 dual suspension, 28 mph, and a 38-mile range in a foldable package.",
+      "description": "The Apollo City Pro bridges the gap between commuter scooters and performance machines. Its 500W sustained (1000W peak) motor pushes to 28 mph, and the 748Wh battery provides up to 38 miles of range. Dual spring suspension front and rear absorbs city potholes, and the triple braking system (regenerative + dual disc) provides confident stopping power. IP66 water resistance handles any weather, and the foldable design makes it practical for mixed commutes.",
+      "features": [
+        "500W sustained / 1000W peak motor",
+        "28 mph top speed",
+        "38-mile range (748Wh battery)",
+        "Dual spring suspension",
+        "Triple braking (regen + dual disc)",
+        "IP66 water resistance"
+      ],
+      "pros": [
+        "28 mph and 38-mile range is outstanding",
+        "Dual suspension smooths out rough roads",
+        "Triple braking inspires real confidence",
+        "IP66 handles rain without worry"
+      ],
+      "cons": [
+        "$1,599 is a significant investment",
+        "Heavy at 53 lbs \u2014 awkward to carry",
+        "Overkill for short commutes",
+        "Requires more maintenance than budget scooters"
+      ],
+      "network_ids": {
+        "amazon": "B0BX9JC4B4"
+      },
+      "image_url": "",
+      "best_for": [
+        "performance",
+        "premium",
+        "long-range"
+      ],
+      "specs": {
+        "Motor": "500W / 1000W peak",
+        "Top Speed": "28 mph",
+        "Range": "38 miles",
+        "Battery": "748Wh",
+        "Suspension": "Dual spring",
+        "Weight": "53 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "unagi-model-one-voyager",
+      "name": "Unagi Model One Voyager",
+      "brand": "Unagi",
+      "category": "electric-scooters",
+      "price_usd": 1090,
+      "rating": 4.4,
+      "verdict": "The most beautiful electric scooter \u2014 dual motors, carbon fiber stem, and a design that turns heads.",
+      "description": "The Unagi Model One Voyager is the scooter for people who care about aesthetics as much as performance. Its magnesium alloy deck, carbon fiber handlebar stem, and Japanese-designed silhouette make it the best-looking scooter on the market. Dual 250W motors (front + rear) provide all-wheel traction and hill-climbing ability, and the 500Wh battery delivers up to 25 miles of range. At 26 lbs, it's one of the lightest dual-motor scooters available.",
+      "features": [
+        "Dual 250W motors (front + rear)",
+        "25-mile range (500Wh battery)",
+        "Carbon fiber handlebar stem",
+        "Magnesium alloy deck",
+        "26 lbs ultralight",
+        "Electronic + foot brake"
+      ],
+      "pros": [
+        "Stunningly beautiful design",
+        "26 lbs is light for a dual-motor scooter",
+        "Dual motors provide great hill performance",
+        "Premium materials throughout"
+      ],
+      "cons": [
+        "$1,090 for 20 mph and 25-mile range",
+        "Solid tires \u2014 harsher ride on rough roads",
+        "No suspension",
+        "Electronic brake stopping distance is longer"
+      ],
+      "network_ids": {
+        "amazon": "B0CFXR96PP"
+      },
+      "image_url": "",
+      "best_for": [
+        "design",
+        "lightweight",
+        "premium"
+      ],
+      "specs": {
+        "Motor": "Dual 250W (500W total)",
+        "Top Speed": "20 mph",
+        "Range": "25 miles",
+        "Battery": "500Wh",
+        "Tires": "7.5\" solid",
+        "Weight": "26 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "hiboy-s2-pro",
+      "name": "Hiboy S2 Pro",
+      "brand": "Hiboy",
+      "category": "electric-scooters",
+      "price_usd": 459,
+      "rating": 4.4,
+      "verdict": "The best budget scooter with solid tires \u2014 maintenance-free 10\" solids and 25-mile range at a low price.",
+      "description": "The Hiboy S2 Pro is perfect for riders who never want to deal with flat tires. Its 10\" solid honeycomb tires are puncture-proof and maintenance-free, while the 350W motor delivers 19 mph and the 36V battery provides up to 25 miles of range. The rear dual suspension absorbs bumps that solid tires would otherwise transmit, and the foldable design with app connectivity makes it a practical daily commuter. At $459, it's outstanding value for a solid-tire scooter.",
+      "features": [
+        "350W motor \u2014 19 mph",
+        "25-mile range",
+        "10\" solid honeycomb tires (puncture-proof)",
+        "Rear dual suspension",
+        "Foldable design",
+        "Hiboy app connectivity"
+      ],
+      "pros": [
+        "Puncture-proof tires = zero tire maintenance",
+        "Rear suspension compensates for solid tires",
+        "25-mile range at this price is competitive",
+        "Foldable and relatively light at 36 lbs"
+      ],
+      "cons": [
+        "Solid tires transmit more vibration than pneumatic",
+        "19 mph is slower than competitors",
+        "350W struggles on steep hills",
+        "Build quality is budget-tier"
+      ],
+      "network_ids": {
+        "amazon": "B08DKY2TRG"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "maintenance-free"
+      ],
+      "specs": {
+        "Motor": "350W",
+        "Top Speed": "19 mph",
+        "Range": "25 miles",
+        "Battery": "36V 11.6Ah",
+        "Tires": "10\" solid honeycomb",
+        "Weight": "36 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "segway-ninebot-f2-pro",
+      "name": "Segway Ninebot F2 Pro",
+      "brand": "Segway",
+      "category": "electric-scooters",
+      "price_usd": 649,
+      "rating": 4.5,
+      "verdict": "The best mid-range Segway \u2014 33-mile range, front suspension, and Segway reliability at a reasonable price.",
+      "description": "The Segway Ninebot F2 Pro slots between budget scooters and the flagship Max G2, hitting a sweet spot of price and performance. Its 400W motor reaches 20 mph, and the 460Wh battery provides an impressive 33 miles of range. The front suspension fork smooths out bumps, 10\" pneumatic tires grip well, and the Segway app provides ride stats, speed mode settings, and firmware updates. At $649, it's the best Segway for riders who want great range without the Max G2 price tag.",
+      "features": [
+        "400W motor \u2014 20 mph",
+        "33-mile range (460Wh battery)",
+        "Front suspension fork",
+        "10\" pneumatic tires",
+        "Segway app connectivity",
+        "LED dashboard + headlight"
+      ],
+      "pros": [
+        "33-mile range at $649 is excellent",
+        "Front suspension adds comfort",
+        "Segway build quality and reliability",
+        "App provides useful ride data"
+      ],
+      "cons": [
+        "20 mph feels slow for $649",
+        "No rear suspension",
+        "Heavy at 42 lbs",
+        "Charging takes 7.5 hours"
+      ],
+      "network_ids": {
+        "amazon": "B0CJ3KMPX8"
+      },
+      "image_url": "",
+      "best_for": [
+        "commuting",
+        "value",
+        "long-range"
+      ],
+      "specs": {
+        "Motor": "400W",
+        "Top Speed": "20 mph",
+        "Range": "33 miles",
+        "Battery": "460Wh",
+        "Tires": "10\" pneumatic",
+        "Weight": "42 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "gotrax-xr-ultra",
+      "name": "GOTRAX XR Ultra",
+      "brand": "GOTRAX",
+      "category": "electric-scooters",
+      "price_usd": 349,
+      "rating": 4.3,
+      "verdict": "The best ultra-budget scooter \u2014 a foldable commuter with 17-mile range for under $350.",
+      "description": "The GOTRAX XR Ultra is the cheapest electric scooter worth buying for daily use. Its 300W motor reaches 15.5 mph, and the 187Wh battery provides up to 17 miles of range \u2014 enough for short commutes and errands. The 8.5\" pneumatic tires provide a smoother ride than solid alternatives, and the foldable design makes it easy to store under a desk or carry onto a bus. At $349, it's the gateway into electric scooter commuting.",
+      "features": [
+        "300W motor \u2014 15.5 mph",
+        "17-mile range (187Wh battery)",
+        "8.5\" pneumatic tires",
+        "Foldable design \u2014 26 lbs",
+        "LED headlight",
+        "Disc + electronic braking"
+      ],
+      "pros": [
+        "$349 \u2014 cheapest usable commuter scooter",
+        "26 lbs is easy to carry",
+        "Pneumatic tires ride smoother than solids",
+        "Foldable for easy storage"
+      ],
+      "cons": [
+        "15.5 mph is slow for road use",
+        "17-mile range limits longer commutes",
+        "No suspension at all",
+        "8.5\" tires feel every bump"
+      ],
+      "network_ids": {
+        "amazon": "B08BFHQVR6"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "lightweight"
+      ],
+      "specs": {
+        "Motor": "300W",
+        "Top Speed": "15.5 mph",
+        "Range": "17 miles",
+        "Battery": "187Wh",
+        "Tires": "8.5\" pneumatic",
+        "Weight": "26 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "niu-kqi3-max",
+      "name": "NIU KQi3 Max",
+      "brand": "NIU",
+      "category": "electric-scooters",
+      "price_usd": 799,
+      "rating": 4.5,
+      "verdict": "The best-riding mid-range scooter \u2014 front + rear suspension, 40-mile range, and a refined riding experience.",
+      "description": "The NIU KQi3 Max comes from NIU, the world's largest electric two-wheeler company, and the engineering shows. Dual front and rear suspension provide the smoothest ride in the mid-range category, and the 450W motor with 40-mile range handles extended commutes without range anxiety. 9.5\" tubeless pneumatic tires resist punctures, the regenerative braking + drum brake system stops confidently, and the NIU app provides ride tracking and firmware updates.",
+      "features": [
+        "450W motor \u2014 20 mph",
+        "40-mile range (608Wh battery)",
+        "Front + rear suspension",
+        "9.5\" tubeless pneumatic tires",
+        "Regenerative + drum braking",
+        "NIU app connectivity"
+      ],
+      "pros": [
+        "Dual suspension provides the smoothest ride",
+        "40-mile range is exceptional for the price",
+        "Tubeless tires resist punctures",
+        "NIU's two-wheeler expertise shows in ride quality"
+      ],
+      "cons": [
+        "$799 puts it in competitive territory",
+        "Heavy at 46 lbs",
+        "20 mph top speed is average",
+        "Less brand recognition than Segway"
+      ],
+      "network_ids": {
+        "amazon": "B0B4NTNFQL"
+      },
+      "image_url": "",
+      "best_for": [
+        "commuting",
+        "comfort",
+        "long-range"
+      ],
+      "specs": {
+        "Motor": "450W",
+        "Top Speed": "20 mph",
+        "Range": "40 miles",
+        "Battery": "608Wh",
+        "Suspension": "Front + rear",
+        "Weight": "46 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "razor-e-prime-iii",
+      "name": "Razor E Prime III",
+      "brand": "Razor",
+      "category": "electric-scooters",
+      "price_usd": 399,
+      "rating": 4.2,
+      "verdict": "The best lightweight commuter \u2014 just 22 lbs with a foldable design for easy last-mile transit connections.",
+      "description": "The Razor E Prime III is built for the last-mile problem \u2014 getting from the bus stop or train station to your office. At just 22 lbs and foldable, it's the lightest adult electric scooter that's actually usable. The 250W hub motor reaches 18 mph, and the tubeless pneumatic front tire provides some cushion. The anti-rattle folding mechanism stays tight over time, and the rear fender brake provides simple, reliable stopping. It's not the fastest or longest-range, but it's the easiest to carry.",
+      "features": [
+        "250W hub motor \u2014 18 mph",
+        "15-mile range",
+        "Tubeless pneumatic front tire",
+        "22 lbs ultralight",
+        "Anti-rattle foldable design",
+        "Rear fender brake"
+      ],
+      "pros": [
+        "22 lbs is lightest in class \u2014 easy to carry",
+        "Foldable design is compact for transit",
+        "18 mph is decent for last-mile use",
+        "Anti-rattle mechanism stays tight"
+      ],
+      "cons": [
+        "15-mile range is short",
+        "250W motor struggles on hills",
+        "Rear solid tire transmits bumps",
+        "Fender brake is less effective than disc"
+      ],
+      "network_ids": {
+        "amazon": "B086KCCQBJ"
+      },
+      "image_url": "",
+      "best_for": [
+        "lightweight",
+        "portable"
+      ],
+      "specs": {
+        "Motor": "250W",
+        "Top Speed": "18 mph",
+        "Range": "15 miles",
+        "Battery": "36V Li-ion",
+        "Tires": "Pneumatic front / solid rear",
+        "Weight": "22 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    }
+  ]
+}
