@@ -50,7 +50,10 @@ def load_all_products() -> List[Any]:
         if isinstance(data, list):
             all_products.extend(data)
         elif isinstance(data, dict):
-            all_products.append(data)
+            if "products" in data and isinstance(data["products"], list):
+                all_products.extend(data["products"])
+            else:
+                all_products.append(data)
     return all_products
 
 
