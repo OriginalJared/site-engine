@@ -1,0 +1,486 @@
+{
+  "products": [
+    {
+      "slug": "breville-barista-express-impress",
+      "name": "Breville Barista Express Impress",
+      "brand": "Breville",
+      "category": "coffee-makers",
+      "price_usd": 749,
+      "rating": 4.7,
+      "verdict": "The best semi-auto espresso machine \u2014 assisted tamping and built-in grinder take the guesswork out of espresso.",
+      "description": "The Breville Barista Express Impress is the espresso machine for people who want caf\u00e9-quality shots without years of barista training. Its Impress Puck system uses an assisted tamping mechanism that applies exactly the right pressure every time, eliminating the most inconsistent variable in home espresso. The built-in conical burr grinder, PID temperature control, and 15-bar Italian pump deliver shots that rival your local coffee shop. It's the fastest path from beans to espresso.",
+      "features": [
+        "Impress assisted tamping system",
+        "Built-in conical burr grinder (30 settings)",
+        "PID digital temperature control",
+        "15-bar Italian pump",
+        "54mm portafilter",
+        "Steam wand for milk frothing"
+      ],
+      "pros": [
+        "Assisted tamping makes consistent shots easy",
+        "Built-in grinder eliminates a separate purchase",
+        "PID temp control for precise extraction",
+        "All-in-one design saves counter space"
+      ],
+      "cons": [
+        "$749 is a significant investment",
+        "54mm portafilter limits third-party accessories",
+        "Learning curve for grind adjustments",
+        "Water tank is on the small side"
+      ],
+      "network_ids": {
+        "amazon": "B0CS9VVZ1H"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "espresso",
+        "premium"
+      ],
+      "specs": {
+        "Type": "Semi-automatic espresso",
+        "Grinder": "Built-in conical burr (30 settings)",
+        "Pump": "15-bar Italian",
+        "Portafilter": "54mm",
+        "Water Tank": "67 oz",
+        "Dimensions": "12.5 x 13.5 x 15.8 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "technivorm-moccamaster-kbgv-select",
+      "name": "Technivorm Moccamaster KBGV Select",
+      "brand": "Technivorm",
+      "category": "coffee-makers",
+      "price_usd": 349,
+      "rating": 4.7,
+      "verdict": "The gold standard drip coffee maker \u2014 SCA-certified, handmade in the Netherlands, and built to last 10+ years.",
+      "description": "The Technivorm Moccamaster is the drip coffee maker coffee snobs swear by. SCA-certified (Specialty Coffee Association) for optimal brewing temperature and time, it extracts the full flavor potential of any bean. Handmade in the Netherlands with a copper boiling element, it brews a full 40oz pot in just 6 minutes. The 5-year warranty is almost unnecessary \u2014 these machines routinely last a decade or more. It's not cheap, but it's the last drip machine you'll ever buy.",
+      "features": [
+        "SCA-certified optimal brewing",
+        "Copper boiling element (196-205\u00b0F)",
+        "Brews 40oz in 6 minutes",
+        "Handmade in the Netherlands",
+        "Auto-drip stop for mid-brew pouring",
+        "5-year warranty"
+      ],
+      "pros": [
+        "SCA-certified \u2014 objectively the best drip coffee",
+        "Brews a full pot in just 6 minutes",
+        "Built to last 10+ years",
+        "Available in 20+ colors"
+      ],
+      "cons": [
+        "$349 for a drip coffee maker is hard to swallow",
+        "No programmable timer",
+        "No built-in grinder",
+        "Simple design \u2014 no smart features"
+      ],
+      "network_ids": {
+        "amazon": "B08RCH5GHB"
+      },
+      "image_url": "",
+      "best_for": [
+        "drip-coffee",
+        "premium"
+      ],
+      "specs": {
+        "Type": "Drip coffee maker",
+        "Capacity": "40 oz (10 cups)",
+        "Brew Time": "6 minutes",
+        "Temperature": "196-205\u00b0F (SCA certified)",
+        "Carafe": "Glass",
+        "Warranty": "5 years"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "ninja-cfp307-dualbrew-pro",
+      "name": "Ninja CFP307 DualBrew Pro",
+      "brand": "Ninja",
+      "category": "coffee-makers",
+      "price_usd": 179,
+      "rating": 4.6,
+      "verdict": "The most versatile coffee maker \u2014 brews K-Cups, ground coffee, and specialty drinks all in one machine.",
+      "description": "The Ninja DualBrew Pro does it all: K-Cup pods, ground coffee, and specialty concentrate for lattes and cappuccinos. It brews a single cup or a full 12-cup carafe, with separate brew baskets for pods and grounds. The Fold-Away frother creates creamy milk foam for specialty drinks, and the adjustable brew strength (Classic, Rich, Over Ice, Specialty) means every cup is customized to your taste. It's the Swiss Army knife of coffee makers.",
+      "features": [
+        "K-Cup and ground coffee compatible",
+        "12-cup thermal carafe",
+        "Fold-Away milk frother",
+        "4 brew styles (Classic, Rich, Over Ice, Specialty)",
+        "Single serve or full carafe",
+        "Adjustable cup sizes"
+      ],
+      "pros": [
+        "Brews both K-Cups and ground coffee",
+        "Built-in frother for specialty drinks",
+        "12-cup thermal carafe keeps coffee hot",
+        "4 brew styles cover every preference"
+      ],
+      "cons": [
+        "Large footprint on the counter",
+        "K-Cup brew is average \u2014 not as good as ground",
+        "Frother can be finicky with plant milks",
+        "Lots of parts to clean"
+      ],
+      "network_ids": {
+        "amazon": "B09DKFMVQ9"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "versatile"
+      ],
+      "specs": {
+        "Type": "Dual brew (K-Cup + ground)",
+        "Capacity": "12 cups (carafe) or single serve",
+        "Brew Styles": "4 (Classic, Rich, Over Ice, Specialty)",
+        "Frother": "Fold-Away built-in",
+        "Carafe": "Thermal",
+        "Dimensions": "11.2 x 9.4 x 15.0 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "keurig-k-supreme-plus-smart",
+      "name": "Keurig K-Supreme Plus SMART",
+      "brand": "Keurig",
+      "category": "coffee-makers",
+      "price_usd": 169,
+      "rating": 4.4,
+      "verdict": "The smartest single-serve brewer \u2014 BrewID reads each K-Cup and auto-adjusts settings for optimal flavor.",
+      "description": "The Keurig K-Supreme Plus SMART brings intelligence to pod brewing. Its BrewID technology scans each K-Cup and automatically adjusts temperature, brew size, and strength to the manufacturer's recommended settings \u2014 ensuring every pod brews at its best. MultiStream Technology uses 5 entry points instead of one for more even extraction. Wi-Fi connectivity enables firmware updates and usage tracking via the Keurig app. If you're committed to K-Cups, this is the best way to brew them.",
+      "features": [
+        "BrewID auto-recognition technology",
+        "MultiStream 5-point extraction",
+        "Wi-Fi connected with app",
+        "78 oz removable water reservoir",
+        "6 brew sizes (4-12 oz)",
+        "Over Ice brew setting"
+      ],
+      "pros": [
+        "BrewID optimizes every pod automatically",
+        "MultiStream extraction noticeably improves flavor",
+        "78 oz reservoir means less refilling",
+        "Over Ice setting brews stronger for iced coffee"
+      ],
+      "cons": [
+        "K-Cups are expensive vs. ground coffee",
+        "Pod waste is an environmental concern",
+        "Wi-Fi features feel gimmicky",
+        "Can't brew a full carafe"
+      ],
+      "network_ids": {
+        "amazon": "B09WR1MV6V"
+      },
+      "image_url": "",
+      "best_for": [
+        "single-serve",
+        "smart-home"
+      ],
+      "specs": {
+        "Type": "Single-serve K-Cup",
+        "Reservoir": "78 oz",
+        "Brew Sizes": "6 (4, 6, 8, 10, 12 oz + carafe)",
+        "Technology": "BrewID + MultiStream",
+        "Connectivity": "Wi-Fi",
+        "Dimensions": "11.3 x 8.7 x 14.3 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "bonavita-connoisseur-bv1901ts",
+      "name": "Bonavita Connoisseur BV1901TS",
+      "brand": "Bonavita",
+      "category": "coffee-makers",
+      "price_usd": 149,
+      "rating": 4.5,
+      "verdict": "The best SCA-certified value \u2014 pour-over quality from a drip machine at half the Moccamaster price.",
+      "description": "The Bonavita Connoisseur delivers SCA-certified brewing at nearly half the price of a Moccamaster. Its 1500W heater reaches the optimal 195-205\u00b0F range quickly, and a wide showerhead distributes water evenly over the coffee bed for balanced extraction. The pre-infusion mode blooms grounds before full brewing \u2014 a technique borrowed from manual pour-over. The thermal carafe keeps coffee hot for hours without a hot plate burning it. Simple, effective, and fairly priced.",
+      "features": [
+        "SCA-certified brewing temperature",
+        "1500W rapid heating element",
+        "Pre-infusion bloom mode",
+        "Wide showerhead for even saturation",
+        "Thermal carafe (8-cup)",
+        "One-touch brewing"
+      ],
+      "pros": [
+        "SCA-certified at $149 \u2014 incredible value",
+        "Pre-infusion bloom improves flavor extraction",
+        "Thermal carafe keeps coffee fresh without burning",
+        "Simple one-touch operation"
+      ],
+      "cons": [
+        "8-cup capacity is smaller than 12-cup competitors",
+        "No programmable timer",
+        "Plastic components feel less premium",
+        "No grind or strength settings"
+      ],
+      "network_ids": {
+        "amazon": "B07FKT3LPX"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "drip-coffee"
+      ],
+      "specs": {
+        "Type": "Drip coffee maker",
+        "Capacity": "8 cups",
+        "Temperature": "195-205\u00b0F (SCA certified)",
+        "Carafe": "Thermal stainless steel",
+        "Wattage": "1500W",
+        "Special Feature": "Pre-infusion bloom"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "nespresso-vertuo-next",
+      "name": "Nespresso Vertuo Next",
+      "brand": "Nespresso",
+      "category": "coffee-makers",
+      "price_usd": 179,
+      "rating": 4.3,
+      "verdict": "The best capsule coffee system \u2014 barcode-reading tech and centrifusion brewing for espresso to full-cup coffee.",
+      "description": "The Nespresso Vertuo Next uses centrifusion technology \u2014 spinning each capsule at up to 7,000 RPM to extract coffee with a rich, crema-topped finish. The barcode reader on each Vertuo capsule automatically adjusts brewing parameters for that specific coffee. Five cup sizes from espresso to full 18oz carafe mean one machine covers every coffee need. The slim, eco-friendly design (made with 54% recycled plastic) fits small kitchens beautifully.",
+      "features": [
+        "Centrifusion barcode-reading technology",
+        "5 cup sizes (espresso to 18oz carafe)",
+        "One-touch brewing",
+        "30-second heat-up time",
+        "54% recycled plastic body",
+        "Automatic capsule ejection"
+      ],
+      "pros": [
+        "Barcode system means perfectly brewed every time",
+        "5 sizes from espresso to full cup",
+        "30-second heat-up is nearly instant",
+        "Nespresso capsule variety is excellent"
+      ],
+      "cons": [
+        "Locked to Nespresso Vertuo capsules",
+        "Capsules are expensive per cup",
+        "No milk frother included (sold separately)",
+        "Environmental concerns despite recycling program"
+      ],
+      "network_ids": {
+        "amazon": "B084GY58FS"
+      },
+      "image_url": "",
+      "best_for": [
+        "single-serve",
+        "compact"
+      ],
+      "specs": {
+        "Type": "Capsule (Nespresso Vertuo)",
+        "Cup Sizes": "5 (1.35, 2.7, 5, 8, 18 oz)",
+        "Heat-Up Time": "30 seconds",
+        "Technology": "Centrifusion",
+        "Water Tank": "37 oz",
+        "Dimensions": "5.5 x 16.9 x 12.4 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "cuisinart-dgb-800-burr-grind-brew",
+      "name": "Cuisinart DGB-800 Burr Grind & Brew",
+      "brand": "Cuisinart",
+      "category": "coffee-makers",
+      "price_usd": 199,
+      "rating": 4.4,
+      "verdict": "The best grind-and-brew \u2014 built-in burr grinder and 12-cup carafe for the freshest possible drip coffee.",
+      "description": "The Cuisinart DGB-800 grinds beans fresh for every pot with its built-in conical burr grinder \u2014 the single biggest upgrade you can make for drip coffee flavor. The 12-cup thermal carafe keeps a full pot hot for hours, and the 24-hour programmable timer means you wake up to freshly ground, freshly brewed coffee. Strength control (Mild, Medium, Bold) and auto-rinse for the grinder make daily use effortless.",
+      "features": [
+        "Built-in conical burr grinder",
+        "12-cup thermal carafe",
+        "24-hour programmable timer",
+        "Strength control (Mild/Medium/Bold)",
+        "Auto-rinse grinder cleaning",
+        "Grind-off option for pre-ground coffee"
+      ],
+      "pros": [
+        "Fresh-ground coffee every pot \u2014 massive flavor upgrade",
+        "24-hour timer for wake-up coffee",
+        "Thermal carafe doesn't burn coffee",
+        "Grind-off lets you use pre-ground too"
+      ],
+      "cons": [
+        "Grinder can be loud in the morning",
+        "Grinder retention wastes some beans",
+        "Thermal carafe harder to clean than glass",
+        "Build quality is adequate, not premium"
+      ],
+      "network_ids": {
+        "amazon": "B01N6T5QNO"
+      },
+      "image_url": "",
+      "best_for": [
+        "grind-and-brew",
+        "versatile"
+      ],
+      "specs": {
+        "Type": "Grind and brew drip",
+        "Grinder": "Conical burr (built-in)",
+        "Capacity": "12 cups",
+        "Carafe": "Thermal stainless steel",
+        "Timer": "24-hour programmable",
+        "Dimensions": "10.0 x 7.6 x 16.4 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "oxo-brew-9-cup",
+      "name": "OXO Brew 9-Cup Coffee Maker",
+      "brand": "OXO",
+      "category": "coffee-makers",
+      "price_usd": 199,
+      "rating": 4.6,
+      "verdict": "The most user-friendly SCA-certified brewer \u2014 intuitive design and perfect extraction in one elegant package.",
+      "description": "The OXO Brew 9-Cup brings SCA-certified brewing into an intuitive, beautifully designed package. Its microprocessor-controlled brewing cycle maintains optimal water temperature throughout extraction, and the rainmaker showerhead evenly saturates the coffee bed. A simple one-button interface with an LED brew-time indicator keeps things dead simple. The double-wall thermal carafe pours cleanly and keeps coffee hot. It's the drip machine for design-conscious coffee lovers.",
+      "features": [
+        "SCA-certified brewing",
+        "Microprocessor temperature control",
+        "Rainmaker showerhead",
+        "Double-wall thermal carafe (9-cup)",
+        "LED brew-time indicator",
+        "One-button operation"
+      ],
+      "pros": [
+        "SCA-certified with excellent extraction",
+        "Rainmaker showerhead for even saturation",
+        "Beautiful, intuitive design",
+        "Double-wall carafe retains heat well"
+      ],
+      "cons": [
+        "9-cup capacity is mid-range",
+        "No programmable timer",
+        "$199 for a drip machine without a grinder",
+        "Replacement carafe is expensive"
+      ],
+      "network_ids": {
+        "amazon": "B07GBR1BNF"
+      },
+      "image_url": "",
+      "best_for": [
+        "drip-coffee",
+        "premium"
+      ],
+      "specs": {
+        "Type": "Drip coffee maker",
+        "Capacity": "9 cups",
+        "Temperature": "SCA certified (197.6-204.8\u00b0F)",
+        "Carafe": "Double-wall thermal",
+        "Interface": "One-button LED",
+        "Dimensions": "12.4 x 7.2 x 15.6 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "hamilton-beach-flexbrew-trio",
+      "name": "Hamilton Beach FlexBrew Trio",
+      "brand": "Hamilton Beach",
+      "category": "coffee-makers",
+      "price_usd": 89,
+      "rating": 4.3,
+      "verdict": "The best budget multi-brew \u2014 K-Cup pods and ground coffee with a full 12-cup carafe at under $90.",
+      "description": "The Hamilton Beach FlexBrew Trio packs surprising versatility into a budget package. It brews K-Cup pods on one side and a full 12-cup carafe on the other \u2014 simultaneously if you want. The single-serve side is compatible with K-Cups and ground coffee (with the included single-serve pack), and the carafe side has programmable auto-brew. At under $90, it's the cheapest way to get dual-brew flexibility without sacrificing a full-size carafe.",
+      "features": [
+        "Dual brew: K-Cup + 12-cup carafe",
+        "Programmable auto-brew timer",
+        "Single-serve ground coffee adapter",
+        "Bold brew option",
+        "12-cup glass carafe",
+        "Adjustable cup rest"
+      ],
+      "pros": [
+        "Under $90 for dual-brew capability",
+        "Brews K-Cups AND ground coffee",
+        "Programmable timer for morning convenience",
+        "Full 12-cup carafe for families"
+      ],
+      "cons": [
+        "Glass carafe \u2014 no thermal option",
+        "Single-serve brew is mediocre",
+        "Plastic build feels cheap",
+        "Hot plate can burn coffee if left on"
+      ],
+      "network_ids": {
+        "amazon": "B0B5T6HXMV"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "versatile"
+      ],
+      "specs": {
+        "Type": "Dual brew (K-Cup + carafe)",
+        "Capacity": "12 cups (carafe) or single serve",
+        "Carafe": "Glass",
+        "Timer": "Programmable",
+        "Compatible": "K-Cup + ground coffee",
+        "Dimensions": "12.0 x 10.6 x 14.0 in"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "aeropress-original",
+      "name": "AeroPress Original Coffee Maker",
+      "brand": "AeroPress",
+      "category": "coffee-makers",
+      "price_usd": 39,
+      "rating": 4.8,
+      "verdict": "The cult-favorite manual brewer \u2014 makes espresso-style coffee anywhere in 2 minutes for under $40.",
+      "description": "The AeroPress is the most beloved manual coffee maker in the world, with a fanatical following and its own World Championship competition. It uses air pressure to push water through finely ground coffee, producing a smooth, rich, low-acidity cup in about 2 minutes. It's virtually indestructible, weighs almost nothing, and works anywhere \u2014 kitchen, camping, office, hotel room. At $39, it's the cheapest path to genuinely excellent coffee.",
+      "features": [
+        "Air-pressure brewing",
+        "Makes 1-3 cups per press",
+        "Brews in 2 minutes",
+        "Virtually indestructible (BPA-free plastic)",
+        "Ultra-portable and lightweight",
+        "Includes 350 paper micro-filters"
+      ],
+      "pros": [
+        "$39 for the best manual coffee many have ever tasted",
+        "Brews in 2 minutes flat",
+        "Virtually unbreakable \u2014 perfect for travel",
+        "Low acidity \u2014 easy on the stomach"
+      ],
+      "cons": [
+        "Manual process \u2014 not for set-and-forget people",
+        "Makes only 1-3 cups at a time",
+        "Requires a separate kettle for hot water",
+        "Paper filters are an ongoing (small) cost"
+      ],
+      "network_ids": {
+        "amazon": "B0047BIWSK"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact",
+        "travel"
+      ],
+      "specs": {
+        "Type": "Manual air-pressure brewer",
+        "Capacity": "1-3 cups per press",
+        "Brew Time": "~2 minutes",
+        "Material": "BPA-free polypropylene",
+        "Weight": "6.4 oz",
+        "Filters": "350 micro-filters included"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    }
+  ]
+}
