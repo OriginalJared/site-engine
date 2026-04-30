@@ -1,0 +1,487 @@
+{
+  "products": [
+    {
+      "slug": "vitamix-e310-explorian",
+      "name": "Vitamix E310 Explorian",
+      "brand": "Vitamix",
+      "category": "blenders",
+      "price_usd": 349,
+      "rating": 4.8,
+      "verdict": "The best blender, period \u2014 Vitamix power and durability at the most accessible Vitamix price.",
+      "description": "The Vitamix E310 Explorian is the entry point into the world of professional-grade blending. Its 2 HP motor and aircraft-grade stainless steel blades pulverize anything \u2014 frozen fruit, whole vegetables, nuts, ice \u2014 into silky-smooth results in seconds. The 48oz container handles family-size batches, variable speed control gives you precision, and the legendary Vitamix durability means this blender will outlast your kitchen. The 5-year warranty backs it up.",
+      "features": [
+        "2 HP motor",
+        "Aircraft-grade stainless steel blades",
+        "Variable speed control (10 speeds)",
+        "48 oz container",
+        "Self-cleaning (soap + water + 60 sec)",
+        "5-year full warranty"
+      ],
+      "pros": [
+        "Vitamix quality at the lowest Vitamix price",
+        "Pulverizes literally anything",
+        "Variable speed gives precise control",
+        "Self-cleaning takes 60 seconds"
+      ],
+      "cons": [
+        "$349 is still expensive vs. consumer blenders",
+        "48oz is smaller than full-size Vitamix models",
+        "No preset programs \u2014 manual control only",
+        "Loud during operation"
+      ],
+      "network_ids": {
+        "amazon": "B0758JHZM3"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "smoothies",
+        "premium"
+      ],
+      "specs": {
+        "Motor": "2 HP",
+        "Capacity": "48 oz",
+        "Speeds": "Variable (10) + Pulse",
+        "Blades": "Stainless steel",
+        "Warranty": "5 years",
+        "Weight": "7.9 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "ninja-professional-plus-bn701",
+      "name": "Ninja Professional Plus BN701",
+      "brand": "Ninja",
+      "category": "blenders",
+      "price_usd": 89,
+      "rating": 4.7,
+      "verdict": "The best value full-size blender \u2014 1400W Auto-iQ programs deliver one-touch convenience at under $100.",
+      "description": "The Ninja Professional Plus BN701 brings serious power at a fraction of Vitamix pricing. Its 1400W motor with Auto-iQ technology provides one-touch programs for smoothies, frozen drinks, and ice crushing \u2014 no guessing on speed or time. The 72oz pitcher handles large batches, and the stacked blade assembly blends evenly from top to bottom. At under $100, it's the best blender for most households and the one Consumer Reports consistently recommends.",
+      "features": [
+        "1400W motor",
+        "Auto-iQ one-touch programs",
+        "72 oz total crushing pitcher",
+        "Stacked blade assembly",
+        "BPA-free and dishwasher safe",
+        "4 preset programs"
+      ],
+      "pros": [
+        "Under $100 for a genuinely powerful blender",
+        "Auto-iQ programs take the guesswork out",
+        "72oz pitcher is huge",
+        "Dishwasher-safe parts"
+      ],
+      "cons": [
+        "Not as smooth as Vitamix for fibrous greens",
+        "Loud at full power",
+        "Pitcher is tall \u2014 check cabinet clearance",
+        "Preset programs aren't customizable"
+      ],
+      "network_ids": {
+        "amazon": "B08QB6BMBR"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "budget"
+      ],
+      "specs": {
+        "Motor": "1400W",
+        "Capacity": "72 oz",
+        "Programs": "4 Auto-iQ presets",
+        "Blades": "Stacked assembly",
+        "Dishwasher Safe": "Yes",
+        "Weight": "8.5 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "blendjet-2",
+      "name": "BlendJet 2 Portable Blender",
+      "brand": "BlendJet",
+      "category": "blenders",
+      "price_usd": 49,
+      "rating": 4.4,
+      "verdict": "The best portable blender \u2014 rechargeable, self-cleaning, and blends smoothies anywhere you go.",
+      "description": "The BlendJet 2 is the blender that goes everywhere. Rechargeable via USB-C, it blends 15+ smoothies per charge with enough power to handle frozen fruit, protein powder, and ice. The 16oz jar doubles as a travel cup, and the self-cleaning cycle (water + soap + blend) means zero cleanup hassle. At $49, it's the perfect gym bag, office desk, or travel companion. Over 10 million sold \u2014 it's the most popular portable blender in the world.",
+      "features": [
+        "USB-C rechargeable",
+        "15+ blends per charge",
+        "16 oz jar/travel cup",
+        "Self-cleaning cycle",
+        "6 stainless steel blades",
+        "Available in 30+ colors/patterns"
+      ],
+      "pros": [
+        "$49 and genuinely useful",
+        "15+ blends per charge is impressive",
+        "Self-cleaning makes it zero-effort",
+        "30+ colors for personalization"
+      ],
+      "cons": [
+        "Can't handle hard frozen chunks alone",
+        "16oz is small for meal-size smoothies",
+        "Motor isn't powerful enough for nut butters",
+        "Blending takes longer than full-size blenders"
+      ],
+      "network_ids": {
+        "amazon": "B09H6QHXGK"
+      },
+      "image_url": "",
+      "best_for": [
+        "portable",
+        "budget",
+        "travel"
+      ],
+      "specs": {
+        "Motor": "Rechargeable (USB-C)",
+        "Capacity": "16 oz",
+        "Blends Per Charge": "15+",
+        "Blades": "6 stainless steel",
+        "Weight": "1.34 lbs",
+        "Cleaning": "Self-cleaning"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "vitamix-a3500",
+      "name": "Vitamix Ascent A3500",
+      "brand": "Vitamix",
+      "category": "blenders",
+      "price_usd": 649,
+      "rating": 4.8,
+      "verdict": "The ultimate smart blender \u2014 touchscreen, 5 presets, wireless connectivity, and the full Vitamix power plant.",
+      "description": "The Vitamix Ascent A3500 is the flagship of the Vitamix lineup. It combines the brand's legendary 2.2 HP motor with a digital touchscreen timer, 5 program presets (Smoothie, Hot Soup, Frozen Dessert, Dips, Self-Clean), and wireless container recognition that auto-adjusts blending for different container sizes. The 64oz low-profile container fits under cabinets, and the 10-year warranty is the best in the industry. It's the blender for people who want Vitamix perfection with modern convenience.",
+      "features": [
+        "2.2 HP motor",
+        "Digital touchscreen timer",
+        "5 program presets",
+        "Wireless container recognition",
+        "64 oz low-profile container",
+        "10-year full warranty"
+      ],
+      "pros": [
+        "Most powerful and feature-rich home blender",
+        "Touchscreen and presets add real convenience",
+        "10-year warranty is unmatched",
+        "Container recognition is smart and seamless"
+      ],
+      "cons": [
+        "$649 is a serious investment",
+        "Large footprint on the counter",
+        "Very loud during operation",
+        "Overkill for casual smoothie makers"
+      ],
+      "network_ids": {
+        "amazon": "B074Z5HMZ5"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "smoothies"
+      ],
+      "specs": {
+        "Motor": "2.2 HP",
+        "Capacity": "64 oz",
+        "Programs": "5 presets + variable speed",
+        "Display": "Digital touchscreen",
+        "Warranty": "10 years",
+        "Weight": "11.5 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "nutribullet-pro-900",
+      "name": "NutriBullet Pro 900",
+      "brand": "NutriBullet",
+      "category": "blenders",
+      "price_usd": 79,
+      "rating": 4.6,
+      "verdict": "The best personal blender \u2014 blend and go in the same cup with 900W of extraction power.",
+      "description": "The NutriBullet Pro 900 is the personal blender that started the extraction revolution. Blend directly in the 32oz or 24oz travel cups, twist on a lid, and take your smoothie out the door. 900 watts of power handles frozen fruit, seeds, and leafy greens with ease. The simple twist-and-blend operation means there are no buttons to press \u2014 just load, twist, and go. It's the fastest path from ingredients to smoothie, every single morning.",
+      "features": [
+        "900W motor",
+        "32 oz and 24 oz cups included",
+        "Blend-and-go design",
+        "Stainless steel extractor blade",
+        "BPA-free cups with to-go lids",
+        "Simple twist operation"
+      ],
+      "pros": [
+        "Blend and drink from the same cup",
+        "900W handles frozen fruit easily",
+        "Dead simple \u2014 no buttons, just twist",
+        "Compact footprint for small kitchens"
+      ],
+      "cons": [
+        "32oz max \u2014 no large batch blending",
+        "Not powerful enough for nut butters",
+        "Single-serve only",
+        "No variable speed control"
+      ],
+      "network_ids": {
+        "amazon": "B07CTBHQZK"
+      },
+      "image_url": "",
+      "best_for": [
+        "personal",
+        "compact",
+        "smoothies"
+      ],
+      "specs": {
+        "Motor": "900W",
+        "Capacity": "32 oz (max cup)",
+        "Cups Included": "32 oz + 24 oz",
+        "Blades": "Stainless steel extractor",
+        "Operation": "Twist-and-blend",
+        "Weight": "5.1 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "ninja-detect-duo-power-blender-pro",
+      "name": "Ninja Detect Duo Power Blender Pro",
+      "brand": "Ninja",
+      "category": "blenders",
+      "price_usd": 179,
+      "rating": 4.7,
+      "verdict": "The best dual-purpose blender \u2014 full-size pitcher AND personal cups with BlendSense auto-detection.",
+      "description": "The Ninja Detect Duo Power Blender Pro gives you two blenders in one base. It auto-detects whether you've attached the 72oz pitcher or the 24oz single-serve cup and adjusts power accordingly via BlendSense technology. The 1800W motor is one of the most powerful in the consumer market, and 6 preset programs handle everything from smoothies to soup to frozen drinks. It's the best of both worlds \u2014 family batches and personal blends from one machine.",
+      "features": [
+        "1800W peak motor",
+        "BlendSense auto-detection",
+        "72 oz pitcher + 24 oz single-serve cup",
+        "6 preset programs",
+        "Stacked blade assembly",
+        "Dishwasher-safe parts"
+      ],
+      "pros": [
+        "Two blenders in one \u2014 pitcher + personal cup",
+        "BlendSense auto-adjusts \u2014 very smart",
+        "1800W is incredibly powerful",
+        "6 presets cover every use case"
+      ],
+      "cons": [
+        "$179 is mid-premium pricing",
+        "Large base takes counter space",
+        "Loud at full power",
+        "Single-serve cup is only 24oz"
+      ],
+      "network_ids": {
+        "amazon": "B0CKXDBML3"
+      },
+      "image_url": "",
+      "best_for": [
+        "versatile",
+        "best-overall"
+      ],
+      "specs": {
+        "Motor": "1800W peak",
+        "Capacity": "72 oz pitcher + 24 oz cup",
+        "Programs": "6 presets",
+        "Technology": "BlendSense auto-detection",
+        "Dishwasher Safe": "Yes",
+        "Weight": "10.1 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "kitchenaid-k400-variable-speed",
+      "name": "KitchenAid K400 Variable Speed Blender",
+      "brand": "KitchenAid",
+      "category": "blenders",
+      "price_usd": 199,
+      "rating": 4.5,
+      "verdict": "The best-looking blender \u2014 KitchenAid design meets a powerful asymmetric blade and self-cleaning cycle.",
+      "description": "The KitchenAid K400 brings the brand's iconic design aesthetic to the countertop blender. Its asymmetric blade creates a vortex that pulls ingredients down for smoother results without a tamper, and the soft-start feature ramps up gradually to prevent splashing. The 56oz BPA-free pitcher, 5-speed control with pulse, and self-cleaning cycle make it practical, while the die-cast metal base and 10+ color options make it a kitchen centerpiece.",
+      "features": [
+        "Asymmetric blade \u2014 no tamper needed",
+        "Soft-start feature",
+        "56 oz BPA-free pitcher",
+        "5-speed control + pulse",
+        "Self-cleaning cycle",
+        "Die-cast metal base in 10+ colors"
+      ],
+      "pros": [
+        "Gorgeous design in many colors",
+        "Asymmetric blade blends without a tamper",
+        "Soft-start prevents splashing",
+        "Solid die-cast metal build quality"
+      ],
+      "cons": [
+        "$199 for a non-Vitamix blender",
+        "Not as powerful as Vitamix or Ninja flagships",
+        "56oz pitcher is mid-range capacity",
+        "Variable speed isn't as precise as Vitamix"
+      ],
+      "network_ids": {
+        "amazon": "B08BZ41MPR"
+      },
+      "image_url": "",
+      "best_for": [
+        "design",
+        "premium"
+      ],
+      "specs": {
+        "Motor": "1200W",
+        "Capacity": "56 oz",
+        "Speeds": "5 + Pulse",
+        "Blades": "Asymmetric stainless steel",
+        "Base": "Die-cast metal",
+        "Colors": "10+"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "hamilton-beach-wave-crusher",
+      "name": "Hamilton Beach Wave Crusher",
+      "brand": "Hamilton Beach",
+      "category": "blenders",
+      "price_usd": 39,
+      "rating": 4.3,
+      "verdict": "The best ultra-budget blender \u2014 40oz glass jar and 700W motor for basic blending at the lowest possible price.",
+      "description": "The Hamilton Beach Wave Crusher does exactly what a blender should do at the lowest possible price. Its 700W motor with Wave Action system continuously pulls ingredients down into the blades for smooth results without manual intervention. The 40oz glass jar is more durable and scratch-resistant than plastic, and 14 blending functions cover smoothies, shakes, purees, and ice crushing. At $39, it's the blender for people who just want a blender that works.",
+      "features": [
+        "700W motor",
+        "Wave Action blending system",
+        "40 oz glass jar",
+        "14 blending functions",
+        "Easy-pour spout",
+        "Dishwasher-safe jar and lid"
+      ],
+      "pros": [
+        "$39 \u2014 cheapest decent full-size blender",
+        "Glass jar is durable and BPA-free",
+        "Wave Action system blends without tamper",
+        "14 functions cover all basics"
+      ],
+      "cons": [
+        "700W struggles with tough frozen items",
+        "Loud plastic base",
+        "No variable speed \u2014 preset buttons only",
+        "Build quality is strictly budget"
+      ],
+      "network_ids": {
+        "amazon": "B00EI7DPOO"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "compact"
+      ],
+      "specs": {
+        "Motor": "700W",
+        "Capacity": "40 oz (glass)",
+        "Functions": "14 presets",
+        "Jar": "Glass",
+        "Dishwasher Safe": "Jar and lid",
+        "Weight": "5.5 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "breville-super-q",
+      "name": "Breville Super Q",
+      "brand": "Breville",
+      "category": "blenders",
+      "price_usd": 499,
+      "rating": 4.7,
+      "verdict": "The quietest premium blender \u2014 noise suppression technology makes it half as loud as competitors.",
+      "description": "The Breville Super Q matches Vitamix performance while solving the biggest blender complaint: noise. Its Noise Suppression technology makes it measurably quieter than any competitor at full power. The 2 HP motor with 12-speed control and 5 one-touch programs (Green Smoothie, Frozen Dessert, Soup, Crushed Ice, Auto Clean) deliver Vitamix-level results. The 68oz Tritan pitcher, LCD timer, and auto-pur\u00e9e feature round out a blender that's genuinely a pleasure to use.",
+      "features": [
+        "2 HP motor with noise suppression",
+        "12-speed control + 5 presets",
+        "68 oz Tritan pitcher",
+        "LCD countdown timer",
+        "Auto-pur\u00e9e detection",
+        "Noise suppression technology"
+      ],
+      "pros": [
+        "Noticeably quieter than Vitamix and Ninja",
+        "2 HP motor matches Vitamix power",
+        "LCD timer and auto-pur\u00e9e are smart features",
+        "68oz pitcher handles large batches"
+      ],
+      "cons": [
+        "$499 is nearly Vitamix territory",
+        "Less brand cachet than Vitamix",
+        "Noise suppression adds bulk to the base",
+        "Pitcher is Tritan plastic, not glass"
+      ],
+      "network_ids": {
+        "amazon": "B07GKQV1MY"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "quiet"
+      ],
+      "specs": {
+        "Motor": "2 HP",
+        "Capacity": "68 oz",
+        "Speeds": "12 + 5 presets",
+        "Noise": "Suppression technology",
+        "Display": "LCD timer",
+        "Warranty": "7 years"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "ninja-ss101-foodi-smoothie-bowl-maker",
+      "name": "Ninja Foodi Smoothie Bowl Maker SS101",
+      "brand": "Ninja",
+      "category": "blenders",
+      "price_usd": 99,
+      "rating": 4.5,
+      "verdict": "The best smoothie bowl blender \u2014 purpose-built thick-blend programs for spoonable smoothie bowls and frozen treats.",
+      "description": "The Ninja Foodi SS101 is designed specifically for smoothie bowls, thick blends, and frozen desserts that regular blenders can't handle. Its Ninja Thick-Spread Technology and unique paddle attachment create thick, spoonable textures without over-blending into liquid. Four programs (Smoothie Bowl, Spread, Extract, Smoothie) and a 14oz single-serve cup handle both thick and thin blends. If smoothie bowls are your thing, this is the only blender designed to make them perfectly.",
+      "features": [
+        "Thick-Spread Technology",
+        "Unique paddle attachment for thick blends",
+        "4 one-touch programs",
+        "14 oz smoothie bowl maker + 24 oz cup",
+        "700W motor",
+        "Compact footprint"
+      ],
+      "pros": [
+        "Makes perfect thick smoothie bowls",
+        "Paddle attachment is unique and effective",
+        "Compact enough for any counter",
+        "Two cup sizes for different needs"
+      ],
+      "cons": [
+        "700W is underpowered for tough ingredients",
+        "14oz bowl is small",
+        "Single-purpose \u2014 not a full-size blender replacement",
+        "Limited to personal servings"
+      ],
+      "network_ids": {
+        "amazon": "B09PV2FN7P"
+      },
+      "image_url": "",
+      "best_for": [
+        "smoothie-bowls",
+        "personal"
+      ],
+      "specs": {
+        "Motor": "700W",
+        "Capacity": "14 oz bowl + 24 oz cup",
+        "Programs": "4 presets",
+        "Special Feature": "Paddle attachment for thick blends",
+        "Weight": "4.2 lbs",
+        "Dishwasher Safe": "Yes"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    }
+  ]
+}
