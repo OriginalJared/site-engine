@@ -1,0 +1,491 @@
+{
+  "products": [
+    {
+      "slug": "weber-spirit-ii-e-310",
+      "name": "Weber Spirit II E-310",
+      "brand": "Weber",
+      "category": "outdoor-grills",
+      "price_usd": 499,
+      "rating": 4.7,
+      "verdict": "The best gas grill for most people \u2014 Weber quality, 3 burners, and the GS4 grilling system at a fair price.",
+      "description": "The Weber Spirit II E-310 is the gas grill that grilling experts recommend more than any other. Its GS4 grilling system \u2014 Infinity Ignition, burners, Flavorizer bars, and grease management \u2014 is engineered for consistent, flavorful results every time. Three burners provide 529 sq in of cooking space (enough for 15 burgers), and the open-cart design with side tables keeps tools within reach. Weber's 10-year warranty and massive accessory ecosystem seal the deal.",
+      "features": [
+        "GS4 grilling system",
+        "3 burners \u2014 30,000 BTU",
+        "529 sq in total cooking area",
+        "Porcelain-enameled Flavorizer bars",
+        "Infinity Ignition system",
+        "10-year limited warranty"
+      ],
+      "pros": [
+        "GS4 system delivers consistently great results",
+        "529 sq in handles family-size cookouts",
+        "Weber build quality is legendary",
+        "Huge accessory ecosystem"
+      ],
+      "cons": [
+        "$499 is mid-range pricing",
+        "No sear zone or infrared burner",
+        "Open cart \u2014 no enclosed storage",
+        "Assembly takes 1-2 hours"
+      ],
+      "network_ids": {
+        "amazon": "B077JMV13J"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "gas"
+      ],
+      "specs": {
+        "Fuel": "Propane gas",
+        "Burners": "3 (30,000 BTU)",
+        "Cooking Area": "529 sq in",
+        "Material": "Porcelain-enameled steel",
+        "Ignition": "Infinity electronic",
+        "Warranty": "10 years"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "traeger-ironwood-650",
+      "name": "Traeger Ironwood 650",
+      "brand": "Traeger",
+      "category": "outdoor-grills",
+      "price_usd": 1299,
+      "rating": 4.6,
+      "verdict": "The best pellet grill \u2014 WiFIRE smart control, D2 drivetrain, and Super Smoke mode for competition-level results.",
+      "description": "The Traeger Ironwood 650 is the pellet grill that turns backyard cooks into pitmasters. Its D2 Direct Drive drivetrain maintains precise temperature within 5\u00b0F, and WiFIRE connectivity lets you monitor and adjust from your phone anywhere. Super Smoke mode maximizes wood-fired flavor at low temperatures, and the downdraft exhaust system ensures even heat across all 650 sq in of cooking space. If you want set-it-and-forget-it smoking with smart features, Traeger wrote the book.",
+      "features": [
+        "D2 Direct Drive drivetrain",
+        "WiFIRE smart connectivity",
+        "Super Smoke mode",
+        "650 sq in cooking area",
+        "Downdraft exhaust for even heat",
+        "Pellet sensor + meat probe included"
+      ],
+      "pros": [
+        "WiFIRE lets you control from anywhere",
+        "Super Smoke mode adds incredible flavor",
+        "D2 drivetrain maintains \u00b15\u00b0F precision",
+        "650 sq in handles large cooks"
+      ],
+      "cons": [
+        "$1,299 is a premium investment",
+        "Requires electricity \u2014 not fully portable",
+        "Pellet consumption adds ongoing cost",
+        "Doesn't sear as well as gas or charcoal"
+      ],
+      "network_ids": {
+        "amazon": "B0BTDDLV58"
+      },
+      "image_url": "",
+      "best_for": [
+        "pellet",
+        "smoking",
+        "smart-features"
+      ],
+      "specs": {
+        "Fuel": "Wood pellets",
+        "Cooking Area": "650 sq in",
+        "Temperature Range": "165-500\u00b0F",
+        "Connectivity": "WiFIRE (Wi-Fi)",
+        "Drivetrain": "D2 Direct Drive",
+        "Hopper Capacity": "20 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "weber-master-touch-22",
+      "name": "Weber Master-Touch 22\"",
+      "brand": "Weber",
+      "category": "outdoor-grills",
+      "price_usd": 219,
+      "rating": 4.8,
+      "verdict": "The best charcoal grill \u2014 the iconic Weber kettle perfected with a hinged grate and ash catcher.",
+      "description": "The Weber Master-Touch is the charcoal grill that's been the backyard standard for decades, refined to near-perfection. The 22\" kettle provides 363 sq in of cooking space with a hinged cooking grate that lets you add charcoal without removing food. The One-Touch cleaning system sweeps ash into a removable catcher below, and the built-in thermometer monitors dome temperature. It's simple, effective, and produces that unmistakable charcoal flavor no gas grill can replicate.",
+      "features": [
+        "22\" porcelain-enameled kettle",
+        "363 sq in cooking area",
+        "Hinged cooking grate for easy charcoal access",
+        "One-Touch cleaning system",
+        "Built-in lid thermometer",
+        "10-year limited warranty"
+      ],
+      "pros": [
+        "Unmistakable charcoal flavor",
+        "Hinged grate is a game-changer for charcoal",
+        "One-Touch ash cleanup is easy",
+        "Incredibly durable \u2014 lasts decades"
+      ],
+      "cons": [
+        "Charcoal requires more effort than gas",
+        "Temperature control takes practice",
+        "No side burner or work surface",
+        "363 sq in is smaller than gas grills"
+      ],
+      "network_ids": {
+        "amazon": "B01LWI0JL4"
+      },
+      "image_url": "",
+      "best_for": [
+        "charcoal",
+        "best-overall",
+        "budget"
+      ],
+      "specs": {
+        "Fuel": "Charcoal",
+        "Cooking Area": "363 sq in",
+        "Diameter": "22 inches",
+        "Material": "Porcelain-enameled steel",
+        "Cleaning": "One-Touch ash system",
+        "Warranty": "10 years"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "napoleon-prestige-500",
+      "name": "Napoleon Prestige 500",
+      "brand": "Napoleon",
+      "category": "outdoor-grills",
+      "price_usd": 1599,
+      "rating": 4.7,
+      "verdict": "The luxury gas grill \u2014 infrared rear burner, 900 sq in of space, and stainless steel construction throughout.",
+      "description": "The Napoleon Prestige 500 is what happens when you apply premium engineering to a gas grill. Four main burners plus an infrared rear rotisserie burner and an infrared sear station deliver 80,000+ BTU across 900 sq in of total cooking space. Stainless steel construction, iconic WAVE reversible cast-iron grids, and the JETFIRE ignition system ensure restaurant-quality results. It's the grill for serious cooks who want the best and don't mind paying for it.",
+      "features": [
+        "4 main burners + infrared rear + sear station",
+        "900 sq in total cooking area",
+        "80,000+ BTU total",
+        "Stainless steel construction",
+        "WAVE reversible cast-iron grids",
+        "JETFIRE ignition system"
+      ],
+      "pros": [
+        "Infrared sear station produces steakhouse-quality sears",
+        "900 sq in handles the biggest parties",
+        "Stainless steel build is durable and beautiful",
+        "Reversible grids for different cooking styles"
+      ],
+      "cons": [
+        "$1,599 is a serious investment",
+        "Heavy \u2014 not easily moved",
+        "Propane consumption is high at full power",
+        "Assembly is complex"
+      ],
+      "network_ids": {
+        "amazon": "B01NARQ2TH"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "gas",
+        "large-family"
+      ],
+      "specs": {
+        "Fuel": "Propane gas",
+        "Burners": "6 total (80,000+ BTU)",
+        "Cooking Area": "900 sq in",
+        "Material": "Stainless steel",
+        "Sear Station": "Infrared",
+        "Warranty": "Limited lifetime"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "weber-go-anywhere-charcoal",
+      "name": "Weber Go-Anywhere Charcoal Grill",
+      "brand": "Weber",
+      "category": "outdoor-grills",
+      "price_usd": 59,
+      "rating": 4.5,
+      "verdict": "The best portable grill \u2014 foldable legs, 160 sq in of cooking space, and classic Weber quality for under $60.",
+      "description": "The Weber Go-Anywhere is the grill you throw in the car for camping, tailgating, or beach trips. Its rectangular design provides 160 sq in of cooking space \u2014 enough for 6 burgers \u2014 and the foldable legs lock the lid shut for easy transport. Porcelain-enameled steel resists rust and retains heat, and the adjustable dampers give you temperature control. At $59, it's the cheapest Weber and the best portable charcoal grill by a wide margin.",
+      "features": [
+        "160 sq in cooking area",
+        "Foldable legs lock lid for transport",
+        "Porcelain-enameled steel",
+        "Adjustable air dampers",
+        "Plated steel cooking grate",
+        "Compact rectangular design"
+      ],
+      "pros": [
+        "$59 for genuine Weber quality",
+        "Foldable design is truly portable",
+        "160 sq in fits 6 burgers",
+        "Adjustable dampers for temp control"
+      ],
+      "cons": [
+        "160 sq in is small for groups",
+        "No built-in thermometer",
+        "Charcoal-only \u2014 requires more effort",
+        "Grate isn't hinged"
+      ],
+      "network_ids": {
+        "amazon": "B00FKA12K2"
+      },
+      "image_url": "",
+      "best_for": [
+        "portable",
+        "budget",
+        "camping"
+      ],
+      "specs": {
+        "Fuel": "Charcoal",
+        "Cooking Area": "160 sq in",
+        "Material": "Porcelain-enameled steel",
+        "Portability": "Foldable legs",
+        "Weight": "14.5 lbs",
+        "Warranty": "10 years"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "camp-chef-woodwind-wifi-24",
+      "name": "Camp Chef Woodwind Wi-Fi 24",
+      "brand": "Camp Chef",
+      "category": "outdoor-grills",
+      "price_usd": 799,
+      "rating": 4.6,
+      "verdict": "The best value pellet grill \u2014 Slide and Grill technology lets you smoke AND sear on one machine.",
+      "description": "The Camp Chef Woodwind Wi-Fi 24 solves the biggest pellet grill weakness: searing. Its patented Slide and Grill technology opens a direct-flame zone so you can sear steaks over real fire \u2014 something most pellet grills can't do. Wi-Fi connectivity with the Camp Chef app lets you monitor cooks remotely, and PID temperature control maintains \u00b15\u00b0F accuracy. The Ash Kickin cleanout system makes post-cook cleanup a breeze. At $799, it undercuts Traeger while adding sear capability.",
+      "features": [
+        "Slide and Grill direct-flame searing",
+        "Wi-Fi connectivity + Camp Chef app",
+        "PID temperature control (\u00b15\u00b0F)",
+        "570 sq in cooking area",
+        "Ash Kickin cleanout system",
+        "Pellet hopper holds 22 lbs"
+      ],
+      "pros": [
+        "Slide and Grill searing is a game-changer",
+        "Wi-Fi monitoring from your phone",
+        "PID control is precise and reliable",
+        "Ash cleanout is the easiest in the industry"
+      ],
+      "cons": [
+        "570 sq in is smaller than Traeger Ironwood",
+        "Sear zone doesn't get as hot as dedicated gas",
+        "Requires electricity",
+        "Build quality is good but not premium"
+      ],
+      "network_ids": {
+        "amazon": "B0BV2DZ67C"
+      },
+      "image_url": "",
+      "best_for": [
+        "pellet",
+        "smoking",
+        "value"
+      ],
+      "specs": {
+        "Fuel": "Wood pellets",
+        "Cooking Area": "570 sq in",
+        "Temperature Range": "160-500\u00b0F",
+        "Connectivity": "Wi-Fi",
+        "Sear Feature": "Slide and Grill",
+        "Hopper Capacity": "22 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "big-green-egg-large",
+      "name": "Big Green Egg Large",
+      "brand": "Big Green Egg",
+      "category": "outdoor-grills",
+      "price_usd": 1299,
+      "rating": 4.8,
+      "verdict": "The ultimate kamado grill \u2014 ceramic insulation holds heat for hours and produces the best smoked and grilled food possible.",
+      "description": "The Big Green Egg is the kamado grill that started a cult following. Its thick ceramic shell retains heat incredibly efficiently, maintaining temperature for 12+ hours on a single load of charcoal. It grills, smokes, roasts, bakes, and even makes pizza \u2014 all with superior heat retention and moisture that produces the juiciest results of any grill type. The Large size handles a 20 lb turkey or 12 burgers. It's an investment, but owners universally say it's the last grill they'll ever buy.",
+      "features": [
+        "Ceramic kamado construction",
+        "262 sq in cooking grid (Large)",
+        "Temperature range: 200-700\u00b0F+",
+        "12+ hours on a single charcoal load",
+        "Grill, smoke, roast, bake, pizza",
+        "Lifetime ceramic warranty"
+      ],
+      "pros": [
+        "Ceramic retains heat better than any material",
+        "12+ hours of cooking on one load of charcoal",
+        "Produces the juiciest, most flavorful food",
+        "Lasts a lifetime \u2014 ceramic is nearly indestructible"
+      ],
+      "cons": [
+        "$1,299 before accessories and stand",
+        "262 sq in is small for the price",
+        "Very heavy (140 lbs) \u2014 not portable",
+        "Accessories are expensive"
+      ],
+      "network_ids": {
+        "amazon": "B001DIVYRE"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "kamado",
+        "smoking"
+      ],
+      "specs": {
+        "Fuel": "Lump charcoal",
+        "Cooking Area": "262 sq in (grid)",
+        "Material": "Ceramic",
+        "Temperature Range": "200-700\u00b0F+",
+        "Weight": "140 lbs",
+        "Warranty": "Lifetime (ceramic)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "char-broil-performance-4-burner",
+      "name": "Char-Broil Performance Series 4-Burner",
+      "brand": "Char-Broil",
+      "category": "outdoor-grills",
+      "price_usd": 299,
+      "rating": 4.4,
+      "verdict": "The best budget gas grill \u2014 4 burners, 425 sq in, and a side burner for under $300.",
+      "description": "The Char-Broil Performance Series proves you can get a full-featured gas grill without breaking the bank. Four stainless steel burners plus a side burner deliver 36,000 BTU across 425 sq in of primary cooking space. The lidded side burner handles sauces and sides, porcelain-coated grates resist sticking, and the electronic ignition starts every time. At under $300 with a side burner and enclosed cart, it's the most grill you can get for the money.",
+      "features": [
+        "4 stainless steel burners (36,000 BTU)",
+        "425 sq in primary cooking area",
+        "Lidded side burner",
+        "Electronic ignition",
+        "Porcelain-coated cast-iron grates",
+        "Enclosed cart with storage"
+      ],
+      "pros": [
+        "Under $300 for a 4-burner with side burner",
+        "Enclosed cart provides storage",
+        "Porcelain grates resist sticking",
+        "Electronic ignition is reliable"
+      ],
+      "cons": [
+        "Build quality is adequate, not premium",
+        "Temperature consistency varies across grates",
+        "Grease management could be better",
+        "Rust can develop if not covered"
+      ],
+      "network_ids": {
+        "amazon": "B09KNBP8MJ"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "gas"
+      ],
+      "specs": {
+        "Fuel": "Propane gas",
+        "Burners": "4 + side burner (36,000 BTU)",
+        "Cooking Area": "425 sq in (primary)",
+        "Material": "Painted steel",
+        "Grates": "Porcelain-coated cast iron",
+        "Warranty": "5 years (burner)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "blackstone-36-inch-griddle",
+      "name": "Blackstone 36\" Outdoor Griddle",
+      "brand": "Blackstone",
+      "category": "outdoor-grills",
+      "price_usd": 349,
+      "rating": 4.7,
+      "verdict": "The best outdoor griddle \u2014 720 sq in of flat-top cooking surface for breakfast, smash burgers, and stir-fry.",
+      "description": "The Blackstone 36\" Griddle isn't a traditional grill \u2014 it's a flat-top griddle that opens up an entirely different world of outdoor cooking. Smash burgers, eggs, pancakes, stir-fry, fajitas, fried rice \u2014 anything you'd cook on a restaurant flat-top, you can cook here. Four independently controlled burners provide 60,000 BTU across a massive 720 sq in cooking surface. The cold-rolled steel top develops a natural non-stick seasoning over time, getting better with every cook.",
+      "features": [
+        "720 sq in cold-rolled steel cooking surface",
+        "4 independent burners (60,000 BTU)",
+        "Rear grease management system",
+        "Paper towel holder + side shelves",
+        "Foldable legs for transport",
+        "Electronic ignition"
+      ],
+      "pros": [
+        "720 sq in is the largest cooking surface available",
+        "Flat-top opens up cooking options grills can't do",
+        "Seasoning builds natural non-stick over time",
+        "4 heat zones for different temperatures"
+      ],
+      "cons": [
+        "Not a traditional grill \u2014 no grill marks",
+        "Requires seasoning and maintenance",
+        "Heavy and large \u2014 needs dedicated space",
+        "No lid \u2014 can't do indirect/convection cooking"
+      ],
+      "network_ids": {
+        "amazon": "B0C2CMP8H3"
+      },
+      "image_url": "",
+      "best_for": [
+        "griddle",
+        "large-family"
+      ],
+      "specs": {
+        "Fuel": "Propane gas",
+        "Burners": "4 (60,000 BTU)",
+        "Cooking Area": "720 sq in",
+        "Surface": "Cold-rolled steel",
+        "Features": "Rear grease trap, side shelves",
+        "Weight": "120 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "weber-q-2200",
+      "name": "Weber Q 2200",
+      "brand": "Weber",
+      "category": "outdoor-grills",
+      "price_usd": 289,
+      "rating": 4.6,
+      "verdict": "The best portable gas grill \u2014 one-burner simplicity with Weber quality for patios, balconies, and tailgates.",
+      "description": "The Weber Q 2200 is the premium portable gas grill for people who want propane convenience in a compact package. Its single burner delivers 12,000 BTU across 280 sq in of porcelain-enameled cast-iron cooking grates \u2014 enough for 8 burgers. The push-button ignition, built-in thermometer, and infinite burner control make it dead simple to use. Compact enough for apartment balconies yet capable enough for tailgates and camping trips, it's the go-anywhere gas grill.",
+      "features": [
+        "Single burner \u2014 12,000 BTU",
+        "280 sq in cooking area",
+        "Porcelain-enameled cast-iron grates",
+        "Push-button electronic ignition",
+        "Built-in lid thermometer",
+        "Compatible with Weber Q stand (sold separately)"
+      ],
+      "pros": [
+        "Weber quality in a portable gas format",
+        "Cast-iron grates produce great grill marks",
+        "Simple one-burner operation",
+        "Perfect for balconies and small spaces"
+      ],
+      "cons": [
+        "$289 for a single-burner portable",
+        "280 sq in limits crowd cooking",
+        "Stand sold separately",
+        "Propane canisters add ongoing cost"
+      ],
+      "network_ids": {
+        "amazon": "B00FGEHGEM"
+      },
+      "image_url": "",
+      "best_for": [
+        "portable",
+        "gas",
+        "compact"
+      ],
+      "specs": {
+        "Fuel": "Propane gas",
+        "Burners": "1 (12,000 BTU)",
+        "Cooking Area": "280 sq in",
+        "Grates": "Porcelain-enameled cast iron",
+        "Ignition": "Electronic push-button",
+        "Warranty": "5 years"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    }
+  ]
+}
