@@ -1,0 +1,487 @@
+{
+  "products": [
+    {
+      "slug": "epson-home-cinema-2350",
+      "name": "Epson Home Cinema 2350",
+      "brand": "Epson",
+      "category": "projectors",
+      "price_usd": 999,
+      "rating": 4.7,
+      "verdict": "The best home theater projector \u2014 bright, sharp 4K PRO-UHD with Android TV built in.",
+      "description": "The Epson Home Cinema 2350 delivers a true cinematic experience at home. Its 3LCD technology produces 2,800 lumens of equal color and white brightness, meaning vibrant images even with some ambient light. 4K PRO-UHD resolution with pixel-shifting creates a sharp, detailed picture, and built-in Android TV with Google Assistant means streaming apps are ready out of the box \u2014 no external device needed. Lens shift and keystone correction make setup flexible.",
+      "features": [
+        "4K PRO-UHD resolution (pixel-shifting)",
+        "2,800 lumens color/white brightness",
+        "3LCD technology \u2014 no rainbow effect",
+        "Built-in Android TV + Google Assistant",
+        "Lens shift (vertical + horizontal)",
+        "Bluetooth audio output"
+      ],
+      "pros": [
+        "Bright enough for rooms with some light",
+        "3LCD eliminates DLP rainbow effect",
+        "Android TV built-in is genuinely convenient",
+        "Flexible placement with lens shift"
+      ],
+      "cons": [
+        "Not true native 4K \u2014 pixel-shifting",
+        "Fan noise is audible in quiet scenes",
+        "No HDR tone mapping",
+        "Lamp replacement costs ~$200"
+      ],
+      "network_ids": {
+        "amazon": "B0C1GZDPQG"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "home-theater"
+      ],
+      "specs": {
+        "Resolution": "4K PRO-UHD",
+        "Brightness": "2,800 lumens",
+        "Technology": "3LCD",
+        "Smart TV": "Android TV built-in",
+        "Lamp Life": "Up to 12,000 hours (ECO)",
+        "Throw Ratio": "1.32\u20132.15:1"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "benq-tk700sti",
+      "name": "BenQ TK700STi",
+      "brand": "BenQ",
+      "category": "projectors",
+      "price_usd": 1299,
+      "rating": 4.6,
+      "verdict": "The best gaming projector \u2014 true 4K, 16ms input lag, and short-throw design for immersive big-screen gaming.",
+      "description": "The BenQ TK700STi is purpose-built for gamers who want a massive screen without the massive price of a 100\"+ TV. True 4K resolution at 16ms input lag at 1080p/240Hz means responsive gameplay on a screen up to 150\". The short-throw lens projects a 100\" image from just 6.5 feet away, and 3,000 lumens keeps the image vibrant even with lights on. Built-in Android TV and dedicated Game Mode HDR round out the ultimate gaming projector.",
+      "features": [
+        "True 4K UHD (3840x2160)",
+        "16ms input lag at 1080p/240Hz",
+        "Short-throw lens (100\" from 6.5 ft)",
+        "3,000 lumens brightness",
+        "Built-in Android TV",
+        "Game Mode HDR"
+      ],
+      "pros": [
+        "16ms input lag is competitive for gaming",
+        "Short-throw is great for small rooms",
+        "True 4K \u2014 not pixel-shifted",
+        "3,000 lumens handles ambient light well"
+      ],
+      "cons": [
+        "$1,299 is premium pricing",
+        "DLP technology can produce rainbow effect",
+        "Fan noise is noticeable during gaming sessions",
+        "HDR performance is limited"
+      ],
+      "network_ids": {
+        "amazon": "B09WZQ7KM7"
+      },
+      "image_url": "",
+      "best_for": [
+        "gaming",
+        "short-throw"
+      ],
+      "specs": {
+        "Resolution": "3840x2160 (native 4K)",
+        "Brightness": "3,000 lumens",
+        "Technology": "DLP",
+        "Input Lag": "16ms (1080p/240Hz)",
+        "Throw": "Short-throw (100\" @ 6.5ft)",
+        "Smart TV": "Android TV built-in"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "hisense-px2-pro",
+      "name": "Hisense PX2-Pro UST Laser Projector",
+      "brand": "Hisense",
+      "category": "projectors",
+      "price_usd": 2799,
+      "rating": 4.6,
+      "verdict": "The best ultra-short-throw laser \u2014 replaces your TV entirely with a 130\" 4K image from inches away.",
+      "description": "The Hisense PX2-Pro is a TV replacement disguised as a projector. Its ultra-short-throw laser engine projects a 130\" 4K image from just inches away from the wall \u2014 no ceiling mount or dark room required. TriChroma laser technology produces 107% BT.2020 color coverage for cinema-grade color accuracy, and 2,400 lumens of brightness means it works in daylight. Dolby Vision, IMAX Enhanced, and Dolby Atmos decoding make it a complete home cinema system.",
+      "features": [
+        "Ultra-short-throw (130\" from inches away)",
+        "TriChroma laser \u2014 107% BT.2020",
+        "4K UHD resolution",
+        "Dolby Vision + IMAX Enhanced",
+        "2,400 lumens brightness",
+        "Google TV built-in"
+      ],
+      "pros": [
+        "Replaces a TV \u2014 sits on a shelf below the screen",
+        "TriChroma colors are stunning",
+        "Dolby Vision + IMAX Enhanced support",
+        "Laser light source lasts 25,000 hours"
+      ],
+      "cons": [
+        "$2,799 is a major investment",
+        "Requires an ALR screen for best results",
+        "Placement must be precise",
+        "Built-in speakers are mediocre"
+      ],
+      "network_ids": {
+        "amazon": "B0CN8T4GYZ"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "ultra-short-throw",
+        "home-theater"
+      ],
+      "specs": {
+        "Resolution": "3840x2160 (native 4K)",
+        "Brightness": "2,400 lumens",
+        "Technology": "TriChroma Laser",
+        "Throw": "Ultra-short-throw",
+        "HDR": "Dolby Vision + HDR10+",
+        "Light Source Life": "25,000 hours"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "xgimi-horizon-ultra",
+      "name": "XGIMI Horizon Ultra",
+      "brand": "XGIMI",
+      "category": "projectors",
+      "price_usd": 1699,
+      "rating": 4.5,
+      "verdict": "The smartest projector \u2014 dual-light technology, auto keystone, and auto focus make setup completely hands-free.",
+      "description": "The XGIMI Horizon Ultra uses a groundbreaking dual-light system combining LED and laser for the best of both worlds \u2014 laser brightness with LED color accuracy. Intelligent Screen Adaption automatically adjusts keystone, focus, and screen alignment every time you turn it on \u2014 zero manual setup. The Harman Kardon speakers are surprisingly good, and the XGIMI OS based on Android TV provides seamless streaming. Dolby Vision support and 2,300 lumens handle HDR content beautifully.",
+      "features": [
+        "Dual Light (LED + Laser hybrid)",
+        "2,300 lumens brightness",
+        "Intelligent Screen Adaption (auto everything)",
+        "Native 4K resolution",
+        "Harman Kardon speakers",
+        "Dolby Vision + Dolby Atmos"
+      ],
+      "pros": [
+        "Auto setup is truly hands-free \u2014 incredible",
+        "Dual-light tech delivers excellent color + brightness",
+        "Harman Kardon speakers eliminate need for soundbar",
+        "Dolby Vision support is rare in projectors"
+      ],
+      "cons": [
+        "$1,699 is mid-premium pricing",
+        "Fan noise is present at full brightness",
+        "XGIMI OS has fewer apps than Google TV",
+        "No lens shift \u2014 relies on digital correction"
+      ],
+      "network_ids": {
+        "amazon": "B0CHPM3DDG"
+      },
+      "image_url": "",
+      "best_for": [
+        "smart-features",
+        "premium"
+      ],
+      "specs": {
+        "Resolution": "3840x2160 (native 4K)",
+        "Brightness": "2,300 lumens",
+        "Technology": "Dual Light (LED + Laser)",
+        "HDR": "Dolby Vision + HDR10",
+        "Speakers": "Harman Kardon 2x 12W",
+        "Auto Setup": "Keystone + Focus + Alignment"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "optoma-uhd38x",
+      "name": "Optoma UHD38x",
+      "brand": "Optoma",
+      "category": "projectors",
+      "price_usd": 1199,
+      "rating": 4.5,
+      "verdict": "The best value 4K projector \u2014 true 4K, 4,000 lumens, and 240Hz gaming support at a competitive price.",
+      "description": "The Optoma UHD38x delivers flagship specs at a mid-range price. True 4K UHD resolution with 4,000 lumens means a bright, sharp image even in well-lit rooms \u2014 the brightest in this roundup. 240Hz refresh rate support with 4.2ms input lag at 1080p makes it genuinely competitive for gaming. The DLP chip with 8.3 million on-screen pixels produces razor-sharp detail, and the 1.1\u20131.3x zoom provides placement flexibility. It's the best spec-for-dollar 4K projector available.",
+      "features": [
+        "True 4K UHD (8.3M pixels)",
+        "4,000 lumens \u2014 brightest in class",
+        "240Hz support / 4.2ms input lag (1080p)",
+        "DLP single-chip technology",
+        "1.1\u20131.3x zoom",
+        "15,000-hour lamp life (Dynamic mode)"
+      ],
+      "pros": [
+        "4,000 lumens is exceptionally bright",
+        "4.2ms input lag is excellent for gaming",
+        "True 4K at this price is outstanding value",
+        "15,000-hour lamp life reduces replacement cost"
+      ],
+      "cons": [
+        "DLP rainbow effect may bother sensitive viewers",
+        "No smart TV built-in",
+        "No lens shift \u2014 keystone only",
+        "Fan is audible in full brightness mode"
+      ],
+      "network_ids": {
+        "amazon": "B0B8BWHGZ4"
+      },
+      "image_url": "",
+      "best_for": [
+        "bright-room",
+        "gaming",
+        "budget"
+      ],
+      "specs": {
+        "Resolution": "3840x2160 (native 4K)",
+        "Brightness": "4,000 lumens",
+        "Technology": "DLP",
+        "Input Lag": "4.2ms (1080p/240Hz)",
+        "Zoom": "1.1\u20131.3x",
+        "Lamp Life": "15,000 hours (Dynamic)"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "samsung-the-freestyle-2nd-gen",
+      "name": "Samsung The Freestyle 2nd Gen",
+      "brand": "Samsung",
+      "category": "projectors",
+      "price_usd": 799,
+      "rating": 4.3,
+      "verdict": "The most portable projector \u2014 a 360\u00b0 speaker and 100\" screen in a device the size of a water bottle.",
+      "description": "Samsung's Freestyle 2nd Gen is a projector, smart speaker, and ambient light all in one ultra-portable package. It projects up to 100\" in Full HD from nearly any angle, auto-levels and auto-focuses instantly, and runs Samsung's Tizen smart TV OS with every major streaming app built in. The 360\u00b0 speaker sounds surprisingly good, and the included battery base lets you use it completely wire-free outdoors. It's not a home theater replacement \u2014 it's the ultimate portable entertainment device.",
+      "features": [
+        "Full HD 1080p resolution",
+        "360\u00b0 Bluetooth speaker",
+        "Samsung Tizen smart TV OS",
+        "Auto-level and auto-focus",
+        "100\" screen from 8.2 ft",
+        "Battery base compatible (sold separately)"
+      ],
+      "pros": [
+        "Ultra-portable \u2014 take it anywhere",
+        "Tizen OS has every streaming app",
+        "360\u00b0 speaker doubles as a Bluetooth speaker",
+        "Auto setup is instant"
+      ],
+      "cons": [
+        "Only 1080p \u2014 no 4K",
+        "550 lumens is dim \u2014 needs a dark room",
+        "Battery base sold separately",
+        "Not bright enough for daytime viewing"
+      ],
+      "network_ids": {
+        "amazon": "B0BTQZW5NX"
+      },
+      "image_url": "",
+      "best_for": [
+        "portable",
+        "compact"
+      ],
+      "specs": {
+        "Resolution": "1920x1080 (Full HD)",
+        "Brightness": "550 lumens",
+        "Technology": "DLP",
+        "Smart TV": "Samsung Tizen OS",
+        "Speaker": "360\u00b0 Bluetooth",
+        "Max Screen": "100 inches"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "nebula-capsule-3-laser",
+      "name": "Anker Nebula Capsule 3 Laser",
+      "brand": "Anker",
+      "category": "projectors",
+      "price_usd": 799,
+      "rating": 4.4,
+      "verdict": "The best pocketable projector \u2014 a soda-can-sized laser projector with 2.5 hours of battery life.",
+      "description": "The Nebula Capsule 3 Laser is a full-featured laser projector that fits in your hand. At just 1.9 lbs and roughly the size of a soda can, it packs 300 ANSI lumens of laser brightness, Google TV with all major streaming apps, and a built-in speaker. The laser light source means instant on/off with no warm-up, and 2.5 hours of battery life makes it truly portable. Auto-keystone and auto-focus mean zero setup fuss. It's the ultimate travel projector.",
+      "features": [
+        "Laser light source \u2014 instant on",
+        "300 ANSI lumens",
+        "Google TV built-in",
+        "2.5-hour battery life",
+        "Auto-keystone + auto-focus",
+        "1.9 lbs ultralight"
+      ],
+      "pros": [
+        "Incredibly portable \u2014 fits in a bag pocket",
+        "Laser light source is bright and instant",
+        "Google TV for seamless streaming",
+        "2.5-hour battery for movie night anywhere"
+      ],
+      "cons": [
+        "300 lumens needs a dark room",
+        "Only 1080p resolution",
+        "Small built-in speaker is tinny",
+        "Not a home theater replacement"
+      ],
+      "network_ids": {
+        "amazon": "B0BXDP1VHM"
+      },
+      "image_url": "",
+      "best_for": [
+        "portable",
+        "budget",
+        "travel"
+      ],
+      "specs": {
+        "Resolution": "1920x1080 (Full HD)",
+        "Brightness": "300 ANSI lumens",
+        "Technology": "Laser",
+        "Battery": "2.5 hours",
+        "Smart TV": "Google TV",
+        "Weight": "1.9 lbs"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "benq-ht2060",
+      "name": "BenQ HT2060",
+      "brand": "BenQ",
+      "category": "projectors",
+      "price_usd": 699,
+      "rating": 4.5,
+      "verdict": "The best budget home theater projector \u2014 1080p with HDR10 and BenQ's CinematicColor at under $700.",
+      "description": "The BenQ HT2060 proves you don't need 4K for a great home theater experience. Its 1080p DLP engine with HDR10 and HLG support produces a sharp, color-accurate image that fills a 120\" screen beautifully. BenQ's CinematicColor technology covers 96% of Rec.709 for film-accurate colors, and 2,300 lumens handles moderately lit rooms. Lens shift and 1.3x zoom provide flexible placement. At under $700, it's the best entry into dedicated home theater projection.",
+      "features": [
+        "1080p Full HD with HDR10 + HLG",
+        "2,300 lumens brightness",
+        "CinematicColor \u2014 96% Rec.709",
+        "1.3x zoom + vertical lens shift",
+        "Low input lag gaming mode",
+        "15,000-hour lamp life"
+      ],
+      "pros": [
+        "Outstanding image quality for 1080p",
+        "CinematicColor is film-accurate",
+        "Lens shift is rare at this price",
+        "Great starting point for home theater"
+      ],
+      "cons": [
+        "Only 1080p \u2014 no 4K",
+        "DLP rainbow effect possible",
+        "No smart TV built-in",
+        "Fan noise in full brightness mode"
+      ],
+      "network_ids": {
+        "amazon": "B09YYC4MXK"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "home-theater"
+      ],
+      "specs": {
+        "Resolution": "1920x1080 (Full HD)",
+        "Brightness": "2,300 lumens",
+        "Technology": "DLP",
+        "HDR": "HDR10 + HLG",
+        "Zoom": "1.3x",
+        "Lamp Life": "15,000 hours"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "lg-cinebeam-hu710pb",
+      "name": "LG CineBeam HU710PB",
+      "brand": "LG",
+      "category": "projectors",
+      "price_usd": 1499,
+      "rating": 4.5,
+      "verdict": "The best hybrid laser/LED projector \u2014 2,000 lumens of vibrant, accurate color with LG's webOS smart platform.",
+      "description": "The LG CineBeam HU710PB uses a hybrid laser/LED light source for exceptional color accuracy and a 30,000-hour light source life \u2014 that's over 20 years of typical use. The 4K UHD resolution with HDR10 and HLG produces detailed, vibrant images, and LG's webOS smart platform provides direct access to Netflix, Disney+, and other apps without an external device. Lens shift, 1.6x zoom, and a quiet 30dB operation in Eco mode make it a refined home theater choice.",
+      "features": [
+        "4K UHD resolution",
+        "Hybrid Laser/LED light source",
+        "2,000 lumens brightness",
+        "LG webOS smart platform",
+        "30,000-hour light source life",
+        "1.6x zoom + lens shift"
+      ],
+      "pros": [
+        "30,000-hour light source eliminates lamp replacements",
+        "webOS is the best built-in smart TV platform",
+        "1.6x zoom + lens shift for flexible placement",
+        "30dB in Eco mode is whisper-quiet"
+      ],
+      "cons": [
+        "$1,499 is premium pricing",
+        "2,000 lumens needs some light control",
+        "HDR performance is modest",
+        "Larger form factor than DLP competitors"
+      ],
+      "network_ids": {
+        "amazon": "B0B3H4MN21"
+      },
+      "image_url": "",
+      "best_for": [
+        "home-theater",
+        "smart-features"
+      ],
+      "specs": {
+        "Resolution": "3840x2160 (native 4K)",
+        "Brightness": "2,000 lumens",
+        "Technology": "Hybrid Laser/LED",
+        "Smart TV": "LG webOS",
+        "Light Source Life": "30,000 hours",
+        "Zoom": "1.6x + lens shift"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    },
+    {
+      "slug": "vankyo-leisure-470-pro",
+      "name": "VANKYO Leisure 470 Pro",
+      "brand": "VANKYO",
+      "category": "projectors",
+      "price_usd": 159,
+      "rating": 4.2,
+      "verdict": "The best ultra-budget projector \u2014 native 1080p and decent brightness for casual movie nights under $160.",
+      "description": "The VANKYO Leisure 470 Pro delivers a surprisingly watchable picture for under $160. Native 1080p resolution is sharp enough for a 120\" screen, and 250 ANSI lumens works well in a dark room. Built-in speakers, HDMI/USB inputs, and a 5W LED lamp that lasts 60,000 hours make it a simple, affordable choice for casual movie nights, kids' rooms, or outdoor screenings. It's not competing with Epson or BenQ \u2014 it's competing with your TV, and at this price, it wins on screen size.",
+      "features": [
+        "Native 1080p resolution",
+        "250 ANSI lumens",
+        "Built-in stereo speakers",
+        "HDMI + USB + AV inputs",
+        "60,000-hour LED lamp",
+        "\u00b150\u00b0 keystone correction"
+      ],
+      "pros": [
+        "Under $160 for a 1080p projector",
+        "60,000-hour lamp never needs replacement",
+        "Simple setup with multiple inputs",
+        "Great for casual use and outdoor movies"
+      ],
+      "cons": [
+        "250 lumens requires a dark room",
+        "No smart TV \u2014 needs external streaming device",
+        "Color accuracy is basic",
+        "Fan noise is noticeable"
+      ],
+      "network_ids": {
+        "amazon": "B0BXN9CTFB"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "outdoor"
+      ],
+      "specs": {
+        "Resolution": "1920x1080 (native)",
+        "Brightness": "250 ANSI lumens",
+        "Technology": "LED/LCD",
+        "Lamp Life": "60,000 hours",
+        "Inputs": "HDMI, USB, AV",
+        "Max Screen": "120 inches"
+      },
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
+    }
+  ]
+}
