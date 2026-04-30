@@ -1,1 +1,488 @@
-
+{
+  "products": [
+    {
+      "slug": "saatva-classic",
+      "name": "Saatva Classic Mattress",
+      "brand": "Saatva",
+      "category": "mattresses",
+      "price_usd": 1395,
+      "rating": 4.8,
+      "verdict": "The best overall mattress \u2014 luxury innerspring-hybrid comfort with free white-glove delivery and old mattress removal.",
+      "description": "The Saatva Classic is the most awarded online mattress for good reason. Its dual-coil system combines individually wrapped comfort coils with a durable support base for responsive, buoyant support that memory foam can't match. A Euro pillow top adds plush surface comfort, and the organic cotton cover is breathable and soft. Three firmness options and two height options mean you can dial in exactly the feel you want. Free white-glove delivery and mattress removal seal the deal.",
+      "features": [
+        "Dual steel coil system (innerspring hybrid)",
+        "Euro pillow top",
+        "Organic cotton cover",
+        "3 firmness options (Plush Soft, Luxury Firm, Firm)",
+        "2 height options (11.5\" or 14.5\")",
+        "Free white-glove delivery + old mattress removal"
+      ],
+      "pros": [
+        "Responsive innerspring feel \u2014 no 'stuck in' sensation",
+        "Three firmness levels cover every preference",
+        "White-glove delivery and removal is rare",
+        "365-night trial with free returns"
+      ],
+      "cons": [
+        "$1,395 is mid-premium pricing",
+        "Heavier than foam mattresses \u2014 hard to move",
+        "Edge support could be stronger on Plush Soft",
+        "Not compressed \u2014 can't easily transport yourself"
+      ],
+      "network_ids": {
+        "amazon": "B0BQZSQHQX"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "innerspring",
+        "luxury"
+      ],
+      "specs": {
+        "Type": "Innerspring hybrid",
+        "Height": "11.5\" or 14.5\"",
+        "Firmness": "3 options",
+        "Trial": "365 nights",
+        "Warranty": "Lifetime",
+        "Delivery": "Free white-glove"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "nectar-premier",
+      "name": "Nectar Premier Mattress",
+      "brand": "Nectar",
+      "category": "mattresses",
+      "price_usd": 949,
+      "rating": 4.6,
+      "verdict": "The best memory foam mattress \u2014 gel-infused foam and a quilted cool cover for pressure relief without overheating.",
+      "description": "The Nectar Premier is for memory foam lovers who don't want to sleep hot. Its gel-infused memory foam layer contours to your body for excellent pressure relief, while the phase-change cooling cover actively regulates surface temperature. The ActiveComfort transition layer adds responsiveness so you don't feel trapped, and the 12\" profile provides substantial support. A 365-night trial and forever warranty make it a risk-free purchase.",
+      "features": [
+        "Gel-infused memory foam",
+        "Phase-change cooling cover",
+        "ActiveComfort transition layer",
+        "12\" profile",
+        "365-night trial",
+        "Forever warranty"
+      ],
+      "pros": [
+        "Excellent pressure relief for side sleepers",
+        "Cooling cover noticeably reduces heat",
+        "365-night trial is the longest available",
+        "Forever warranty shows brand confidence"
+      ],
+      "cons": [
+        "Memory foam feel isn't for everyone",
+        "Heavier sleepers may sink too deep",
+        "Off-gassing smell for first few days",
+        "Edge support is average"
+      ],
+      "network_ids": {
+        "amazon": "B0BVHHHXLZ"
+      },
+      "image_url": "",
+      "best_for": [
+        "memory-foam",
+        "side-sleepers",
+        "cooling"
+      ],
+      "specs": {
+        "Type": "Memory foam",
+        "Height": "12 inches",
+        "Firmness": "Medium (6/10)",
+        "Trial": "365 nights",
+        "Warranty": "Forever",
+        "Cooling": "Phase-change cover + gel foam"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "helix-midnight-luxe",
+      "name": "Helix Midnight Luxe",
+      "brand": "Helix",
+      "category": "mattresses",
+      "price_usd": 1374,
+      "rating": 4.6,
+      "verdict": "The best mattress for side sleepers \u2014 zoned lumbar support and premium pillow top cradle your pressure points.",
+      "description": "The Helix Midnight Luxe is engineered specifically for side sleepers. Its zoned lumbar support system provides firmer support under your hips and softer cushioning under your shoulders \u2014 exactly where side sleepers need it. The Tencel pillow top adds a luxury surface feel, and over 1,000 individually wrapped coils minimize motion transfer so your partner's tossing doesn't wake you. GlacioTex cooling cover keeps the surface cool all night.",
+      "features": [
+        "Zoned lumbar support",
+        "1,000+ individually wrapped coils",
+        "GlacioTex cooling cover",
+        "Tencel breathable pillow top",
+        "Memory foam comfort layer",
+        "100-night trial"
+      ],
+      "pros": [
+        "Zoned support is perfect for side sleepers",
+        "Excellent motion isolation for couples",
+        "GlacioTex cover is noticeably cool",
+        "Pillow top adds luxury feel"
+      ],
+      "cons": [
+        "100-night trial is shorter than competitors",
+        "Premium pricing at $1,374",
+        "Firmness may be too soft for stomach sleepers",
+        "Heavier mattress \u2014 hard to move"
+      ],
+      "network_ids": {
+        "amazon": "B0BQMVQB8J"
+      },
+      "image_url": "",
+      "best_for": [
+        "side-sleepers",
+        "couples",
+        "luxury"
+      ],
+      "specs": {
+        "Type": "Hybrid (coils + foam)",
+        "Height": "13 inches",
+        "Firmness": "Medium (5.5/10)",
+        "Trial": "100 nights",
+        "Warranty": "15 years",
+        "Coils": "1,000+ individually wrapped"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "purple-original",
+      "name": "Purple Original Mattress",
+      "brand": "Purple",
+      "category": "mattresses",
+      "price_usd": 1099,
+      "rating": 4.4,
+      "verdict": "The most unique mattress \u2014 Purple's GelFlex Grid delivers a bouncy, temperature-neutral feel unlike anything else.",
+      "description": "The Purple Original Mattress uses a proprietary GelFlex Grid \u2014 a hyper-elastic polymer grid that flexes under pressure points (shoulders, hips) while staying firm under your back. The result is a unique feel that's neither memory foam nor innerspring \u2014 it's bouncy, supportive, and naturally temperature-neutral because air flows through the grid's open cells. If you've tried foam and springs and loved neither, Purple's grid technology might be your answer.",
+      "features": [
+        "GelFlex Grid (hyper-elastic polymer)",
+        "Naturally temperature-neutral",
+        "No-pressure support technology",
+        "CertiPUR-US foam base",
+        "100-night trial",
+        "10-year warranty"
+      ],
+      "pros": [
+        "Unique feel unlike any other mattress",
+        "Naturally cool \u2014 no gel or phase-change needed",
+        "Excellent for combination sleepers (easy to reposition)",
+        "No off-gassing issues"
+      ],
+      "cons": [
+        "GelFlex Grid feel is polarizing \u2014 love or hate",
+        "Lighter sleepers may not compress the grid enough",
+        "Edge support is weak",
+        "Heavier than comparable foam mattresses"
+      ],
+      "network_ids": {
+        "amazon": "B08JQCH4T1"
+      },
+      "image_url": "",
+      "best_for": [
+        "cooling",
+        "combination-sleepers"
+      ],
+      "specs": {
+        "Type": "Polymer grid + foam",
+        "Height": "9.5 inches",
+        "Firmness": "Medium-Firm (6.5/10)",
+        "Trial": "100 nights",
+        "Warranty": "10 years",
+        "Cooling": "GelFlex Grid airflow"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "casper-original",
+      "name": "Casper Original Mattress",
+      "brand": "Casper",
+      "category": "mattresses",
+      "price_usd": 1095,
+      "rating": 4.5,
+      "verdict": "The crowd-pleaser \u2014 three foam layers deliver balanced comfort that works for nearly every sleeper.",
+      "description": "The Casper Original is the mattress that launched the bed-in-a-box revolution, and it's been refined into a well-rounded choice for almost any sleeper. Three layers of foam \u2014 AirScape perforated cooling foam, zoned support foam, and a durable base \u2014 create a balanced medium feel that's soft enough for side sleepers yet supportive enough for back sleepers. It's the safe choice: unlikely to blow your mind, but very unlikely to disappoint.",
+      "features": [
+        "AirScape perforated cooling foam",
+        "Zoned support for spinal alignment",
+        "3-layer all-foam construction",
+        "Breathable knit cover",
+        "100-night trial",
+        "10-year warranty"
+      ],
+      "pros": [
+        "Balanced feel works for most sleep positions",
+        "AirScape foam sleeps cooler than solid foam",
+        "Zoned support helps spinal alignment",
+        "Trusted brand with easy returns"
+      ],
+      "cons": [
+        "Not exceptional in any single category",
+        "All-foam construction may sleep warm for hot sleepers",
+        "Edge support is average",
+        "100-night trial is shorter than some competitors"
+      ],
+      "network_ids": {
+        "amazon": "B0BY3T7T18"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "back-sleepers"
+      ],
+      "specs": {
+        "Type": "All-foam",
+        "Height": "11 inches",
+        "Firmness": "Medium (5.5/10)",
+        "Trial": "100 nights",
+        "Warranty": "10 years",
+        "Cooling": "AirScape perforated foam"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "brooklyn-bedding-signature-hybrid",
+      "name": "Brooklyn Bedding Signature Hybrid",
+      "brand": "Brooklyn Bedding",
+      "category": "mattresses",
+      "price_usd": 799,
+      "rating": 4.6,
+      "verdict": "The best value hybrid \u2014 factory-direct pricing delivers premium coil+foam construction at a mid-range price.",
+      "description": "Brooklyn Bedding owns their own factory, and the Signature Hybrid is the proof. By cutting out the middleman, they deliver a premium hybrid mattress at a price that undercuts every major competitor. Individually wrapped coils provide responsive support, TitanFlex foam offers contouring comfort, and the quilted top adds a plush surface feel. Three firmness options (Soft, Medium, Firm) cover every preference. It's the best mattress under $1,000.",
+      "features": [
+        "Individually wrapped coils",
+        "TitanFlex comfort foam",
+        "Quilted top cover",
+        "3 firmness options",
+        "120-night trial",
+        "10-year warranty"
+      ],
+      "pros": [
+        "Incredible value \u2014 hybrid quality under $800",
+        "Three firmness options cover all preferences",
+        "Factory-direct means no markup",
+        "120-night trial is generous"
+      ],
+      "cons": [
+        "Less name recognition than Casper/Purple",
+        "Edge support is good but not great",
+        "Motion transfer is moderate",
+        "Cover fabric could be more breathable"
+      ],
+      "network_ids": {
+        "amazon": "B09DPTBFK6"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "value"
+      ],
+      "specs": {
+        "Type": "Hybrid (coils + foam)",
+        "Height": "11.5 inches",
+        "Firmness": "3 options (Soft, Medium, Firm)",
+        "Trial": "120 nights",
+        "Warranty": "10 years",
+        "Construction": "Coils + TitanFlex foam"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "tempur-pedic-adapt-medium",
+      "name": "Tempur-Pedic TEMPUR-Adapt Medium",
+      "brand": "Tempur-Pedic",
+      "category": "mattresses",
+      "price_usd": 1699,
+      "rating": 4.5,
+      "verdict": "The original memory foam icon \u2014 TEMPUR material delivers the deepest pressure relief money can buy.",
+      "description": "Tempur-Pedic invented memory foam mattresses, and the TEMPUR-Adapt Medium is their most accessible model. The proprietary TEMPUR material responds to your body's temperature, weight, and shape for personalized support that improves over time. The SmartClimate cover wicks moisture and feels cool to the touch, and the all-foam construction eliminates motion transfer almost completely. If you want the deepest, most body-conforming pressure relief available, nothing beats TEMPUR.",
+      "features": [
+        "Proprietary TEMPUR material",
+        "SmartClimate cooling cover",
+        "All-foam construction",
+        "Motion cancellation technology",
+        "Medium feel (5/10)",
+        "10-year warranty"
+      ],
+      "pros": [
+        "Deepest pressure relief of any mattress",
+        "TEMPUR material adapts to your unique body",
+        "Near-zero motion transfer for couples",
+        "SmartClimate cover is cool to the touch"
+      ],
+      "cons": [
+        "$1,699 is premium pricing",
+        "Dense foam sleeps warmer than hybrids",
+        "Heavy and hard to move (70+ lbs)",
+        "Only 90-night trial"
+      ],
+      "network_ids": {
+        "amazon": "B0D4QSLNFR"
+      },
+      "image_url": "",
+      "best_for": [
+        "memory-foam",
+        "premium",
+        "couples"
+      ],
+      "specs": {
+        "Type": "All-foam (TEMPUR)",
+        "Height": "11 inches",
+        "Firmness": "Medium (5/10)",
+        "Trial": "90 nights",
+        "Warranty": "10 years",
+        "Material": "Proprietary TEMPUR foam"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "dreamcloud-premier",
+      "name": "DreamCloud Premier Mattress",
+      "brand": "DreamCloud",
+      "category": "mattresses",
+      "price_usd": 799,
+      "rating": 4.5,
+      "verdict": "The best budget luxury hybrid \u2014 cashmere-blend cover and 5-zone coils deliver a premium feel at a mid-range price.",
+      "description": "The DreamCloud Premier looks and feels like a $1,500 mattress but sells for under $800. Its cashmere-blend quilted Euro top creates a luxury surface feel, while 5-zone individually wrapped coils provide targeted support for different body zones. Gel-infused memory foam handles pressure relief, and the 14\" profile gives it a substantial, hotel-bed presence. A 365-night trial and lifetime warranty add serious peace of mind.",
+      "features": [
+        "Cashmere-blend Euro top",
+        "5-zone individually wrapped coils",
+        "Gel-infused memory foam",
+        "14\" luxury profile",
+        "365-night trial",
+        "Lifetime warranty"
+      ],
+      "pros": [
+        "Luxury feel at a mid-range price",
+        "365-night trial is extremely generous",
+        "Lifetime warranty shows durability confidence",
+        "14\" profile looks and feels premium"
+      ],
+      "cons": [
+        "Heavy at 14\" \u2014 hard to move",
+        "Gel foam may not cool enough for hot sleepers",
+        "Brand is newer \u2014 less track record",
+        "Firmness is one option only (Luxury Firm)"
+      ],
+      "network_ids": {
+        "amazon": "B0BWXNVFHF"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "luxury"
+      ],
+      "specs": {
+        "Type": "Hybrid (coils + foam)",
+        "Height": "14 inches",
+        "Firmness": "Luxury Firm (6.5/10)",
+        "Trial": "365 nights",
+        "Warranty": "Lifetime",
+        "Cover": "Cashmere-blend quilted Euro top"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "winkbed",
+      "name": "WinkBed Mattress",
+      "brand": "WinkBeds",
+      "category": "mattresses",
+      "price_usd": 1149,
+      "rating": 4.6,
+      "verdict": "The best mattress for back pain \u2014 Lumbar Layer technology provides targeted lower back support in a luxury hybrid.",
+      "description": "The WinkBed is designed with back pain sufferers in mind. Its exclusive Lumbar Layer \u2014 a gel-infused foam pad positioned directly under the lower back \u2014 provides extra support exactly where most sleepers need it. The Euro pillow top is hand-tufted for durability, and the 3-zone pocketed coil system keeps your spine aligned regardless of sleep position. Four firmness options from Softer to Plus (for heavier sleepers) cover every body type. Handmade in the USA with a 120-night trial.",
+      "features": [
+        "Lumbar Layer back support technology",
+        "Hand-tufted Euro pillow top",
+        "3-zone pocketed coil system",
+        "4 firmness options",
+        "Handmade in USA",
+        "120-night trial"
+      ],
+      "pros": [
+        "Lumbar Layer genuinely helps back pain",
+        "Four firmness options cover every body type",
+        "Hand-tufted construction is durable",
+        "Made in USA with quality materials"
+      ],
+      "cons": [
+        "$1,149 is mid-premium pricing",
+        "Heavy \u2014 difficult to set up alone",
+        "Plus firmness only available for heavier sleepers",
+        "Less brand awareness than big names"
+      ],
+      "network_ids": {
+        "amazon": "B09HK7XVYM"
+      },
+      "image_url": "",
+      "best_for": [
+        "back-pain",
+        "back-sleepers"
+      ],
+      "specs": {
+        "Type": "Hybrid (coils + foam)",
+        "Height": "13.5 inches",
+        "Firmness": "4 options (Softer to Plus)",
+        "Trial": "120 nights",
+        "Warranty": "Lifetime",
+        "Special Feature": "Lumbar Layer support"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "tuft-and-needle-original",
+      "name": "Tuft & Needle Original Mattress",
+      "brand": "Tuft & Needle",
+      "category": "mattresses",
+      "price_usd": 595,
+      "rating": 4.5,
+      "verdict": "The best budget mattress \u2014 T&N Adaptive foam delivers surprising comfort at the lowest price from a trusted brand.",
+      "description": "The Tuft & Needle Original proved that a great mattress doesn't need to cost $1,000. Their proprietary T&N Adaptive foam is infused with graphite and cooling gel for heat dissipation, and the open-cell structure allows airflow that solid memory foam blocks. It's firmer than most foam mattresses (7/10), making it ideal for back and stomach sleepers who need support. At $595 for a queen, it's the best no-frills mattress from a brand you can trust.",
+      "features": [
+        "T&N Adaptive foam with graphite + gel",
+        "Open-cell structure for airflow",
+        "CertiPUR-US certified",
+        "100-night trial",
+        "10-year warranty",
+        "Minimal 2-layer design"
+      ],
+      "pros": [
+        "Under $600 for a quality foam mattress",
+        "Graphite + gel cooling works well",
+        "Firmer feel great for back/stomach sleepers",
+        "Simple design \u2014 nothing to break down"
+      ],
+      "cons": [
+        "Too firm for most side sleepers",
+        "Only one firmness option",
+        "All-foam \u2014 no coil support",
+        "Thinner profile (10\") than competitors"
+      ],
+      "network_ids": {
+        "amazon": "B0C99J3WY2"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "stomach-sleepers"
+      ],
+      "specs": {
+        "Type": "All-foam",
+        "Height": "10 inches",
+        "Firmness": "Medium-Firm (7/10)",
+        "Trial": "100 nights",
+        "Warranty": "10 years",
+        "Cooling": "Graphite + gel infused foam"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    }
+  ]
+}
