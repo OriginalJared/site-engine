@@ -1,0 +1,484 @@
+{
+  "products": [
+    {
+      "slug": "apple-macbook-air-m3",
+      "name": "Apple MacBook Air 15\" M3",
+      "brand": "Apple",
+      "category": "laptops",
+      "price_usd": 1299,
+      "rating": 4.8,
+      "verdict": "The best laptop for most people \u2014 M3 power, 18-hour battery, and a stunning 15\" display in a fanless design.",
+      "description": "The MacBook Air 15\" M3 is the laptop Apple perfected. The M3 chip handles everything from browsing to photo editing without breaking a sweat \u2014 or making a sound, thanks to the fanless design. The 15.3\" Liquid Retina display is gorgeous, 18 hours of battery life means you can leave the charger at home, and it weighs just 3.3 lbs. For the vast majority of users, this is the only laptop you need to consider.",
+      "features": [
+        "Apple M3 chip (8-core CPU, 10-core GPU)",
+        "15.3\" Liquid Retina display",
+        "18-hour battery life",
+        "8GB unified memory (configurable to 24GB)",
+        "256GB SSD (configurable to 2TB)",
+        "Fanless silent design"
+      ],
+      "pros": [
+        "18-hour battery is unmatched",
+        "Fanless \u2014 completely silent",
+        "M3 handles everyday tasks effortlessly",
+        "Gorgeous 15\" display at just 3.3 lbs"
+      ],
+      "cons": [
+        "8GB base RAM feels low for 2026",
+        "Only 2 USB-C ports",
+        "No touchscreen"
+      ],
+      "network_ids": {
+        "amazon": "B0CX23V2ZK"
+      },
+      "image_url": "",
+      "best_for": [
+        "best-overall",
+        "students",
+        "portable"
+      ],
+      "specs": {
+        "Processor": "Apple M3",
+        "RAM": "8GB unified",
+        "Storage": "256GB SSD",
+        "Display": "15.3\" Liquid Retina",
+        "Battery": "18 hours",
+        "Weight": "3.3 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "lenovo-thinkpad-x1-carbon-gen-12",
+      "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "price_usd": 1549,
+      "rating": 4.7,
+      "verdict": "The best business laptop \u2014 legendary ThinkPad reliability with Intel Core Ultra and a phenomenal keyboard.",
+      "description": "The ThinkPad X1 Carbon Gen 12 continues the legacy of the world's most respected business laptop. Intel Core Ultra processors bring AI acceleration, the 14\" 2.8K OLED display option is stunning, and the legendary ThinkPad keyboard remains the best in the industry. At just 2.48 lbs with up to 15 hours of battery, it's built for professionals who live on their laptop. MIL-STD-810H durability means it survives the road warrior lifestyle.",
+      "features": [
+        "Intel Core Ultra 7 155H",
+        "14\" 2.8K OLED display option",
+        "Up to 64GB LPDDR5X RAM",
+        "MIL-STD-810H durability",
+        "ThinkPad keyboard with TrackPoint",
+        "Up to 15 hours battery"
+      ],
+      "pros": [
+        "Best keyboard on any laptop, period",
+        "2.48 lbs is incredibly light for a business machine",
+        "OLED display option is gorgeous",
+        "Legendary ThinkPad durability and reliability"
+      ],
+      "cons": [
+        "Expensive \u2014 especially with OLED upgrade",
+        "Integrated graphics only \u2014 not for gaming",
+        "16:10 aspect ratio may feel narrow to some"
+      ],
+      "network_ids": {
+        "amazon": "B0D1FVCQ3Y"
+      },
+      "image_url": "",
+      "best_for": [
+        "business",
+        "portable",
+        "premium"
+      ],
+      "specs": {
+        "Processor": "Intel Core Ultra 7 155H",
+        "RAM": "16GB LPDDR5X",
+        "Storage": "512GB SSD",
+        "Display": "14\" 2.8K OLED",
+        "Battery": "Up to 15 hours",
+        "Weight": "2.48 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "dell-xps-14-2024",
+      "name": "Dell XPS 14 (2024)",
+      "brand": "Dell",
+      "category": "laptops",
+      "price_usd": 1499,
+      "rating": 4.5,
+      "verdict": "A premium ultrabook with a stunning edge-to-edge display and Intel Core Ultra performance.",
+      "description": "The Dell XPS 14 pushes design boundaries with a near-borderless InfinityEdge display that extends to the very edges of the chassis. Intel Core Ultra processors handle demanding workloads, and the 14.5\" 3.2K OLED touchscreen makes content creation a joy. The zero-lattice keyboard and seamless glass trackpad are visually striking, though they take some adjustment. For users who want the most futuristic-looking laptop available, this is it.",
+      "features": [
+        "Intel Core Ultra 7 155H",
+        "14.5\" 3.2K OLED touchscreen",
+        "16GB LPDDR5X RAM",
+        "512GB SSD",
+        "Thunderbolt 4 ports",
+        "Zero-lattice keyboard design"
+      ],
+      "pros": [
+        "Jaw-dropping edge-to-edge display",
+        "OLED touchscreen is vibrant and accurate",
+        "Premium build quality throughout",
+        "Thunderbolt 4 connectivity"
+      ],
+      "cons": [
+        "Zero-lattice keyboard is polarizing",
+        "Function row is a capacitive touch bar",
+        "Webcam is only 1080p",
+        "Fan noise under load"
+      ],
+      "network_ids": {
+        "amazon": "B0CWJRHFP4"
+      },
+      "image_url": "",
+      "best_for": [
+        "creative-work",
+        "premium"
+      ],
+      "specs": {
+        "Processor": "Intel Core Ultra 7 155H",
+        "RAM": "16GB LPDDR5X",
+        "Storage": "512GB SSD",
+        "Display": "14.5\" 3.2K OLED Touch",
+        "Battery": "Up to 13 hours",
+        "Weight": "3.8 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "asus-rog-zephyrus-g14-2024",
+      "name": "ASUS ROG Zephyrus G14 (2024)",
+      "brand": "ASUS",
+      "category": "laptops",
+      "price_usd": 1599,
+      "rating": 4.7,
+      "verdict": "The best gaming laptop \u2014 RTX 4060 power in a slim 3.3 lb body with an incredible OLED display.",
+      "description": "The ROG Zephyrus G14 defies the gaming laptop stereotype. At just 3.3 lbs and 0.63\" thin, it looks like an ultrabook but packs an AMD Ryzen 9 8945HS and NVIDIA RTX 4060 for serious gaming performance. The 14\" 3K OLED display with 120Hz refresh rate delivers stunning visuals for both gaming and creative work. 10+ hours of battery life for non-gaming tasks means it doubles as a daily driver. It's the laptop that proves you don't need a tank to game.",
+      "features": [
+        "AMD Ryzen 9 8945HS",
+        "NVIDIA RTX 4060 Laptop GPU",
+        "14\" 3K 120Hz OLED display",
+        "16GB DDR5 RAM",
+        "1TB PCIe 4.0 SSD",
+        "10+ hour battery (non-gaming)"
+      ],
+      "pros": [
+        "RTX 4060 in a 3.3 lb body is remarkable",
+        "OLED display is best-in-class for a gaming laptop",
+        "Doubles as a premium ultrabook for daily use",
+        "Excellent keyboard and trackpad"
+      ],
+      "cons": [
+        "Webcam is only 1080p with no IR",
+        "Fan noise is audible during gaming",
+        "RTX 4060 can't max out all AAA games at 3K",
+        "Soldered RAM \u2014 not upgradeable"
+      ],
+      "network_ids": {
+        "amazon": "B0CSD6YTTD"
+      },
+      "image_url": "",
+      "best_for": [
+        "gaming",
+        "creative-work"
+      ],
+      "specs": {
+        "Processor": "AMD Ryzen 9 8945HS",
+        "GPU": "NVIDIA RTX 4060",
+        "RAM": "16GB DDR5",
+        "Storage": "1TB SSD",
+        "Display": "14\" 3K 120Hz OLED",
+        "Weight": "3.3 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "acer-aspire-go-15",
+      "name": "Acer Aspire Go 15",
+      "brand": "Acer",
+      "category": "laptops",
+      "price_usd": 299,
+      "rating": 4.3,
+      "verdict": "The best budget laptop \u2014 a capable 15.6\" daily driver for under $300.",
+      "description": "The Acer Aspire Go 15 proves you can get a perfectly usable laptop for under $300. The AMD Ryzen 3 7320U handles web browsing, Office documents, and streaming without issue. The 15.6\" Full HD display is sharp for the price, 8GB of RAM keeps multitasking smooth, and the 128GB SSD boots Windows in seconds. It's not glamorous, but for students, basic office work, or a secondary machine, it's unbeatable value.",
+      "features": [
+        "AMD Ryzen 3 7320U",
+        "15.6\" Full HD (1920x1080) IPS",
+        "8GB LPDDR5 RAM",
+        "128GB NVMe SSD",
+        "Windows 11 Home",
+        "Up to 11 hours battery"
+      ],
+      "pros": [
+        "Under $300 for a functional laptop",
+        "Full HD IPS display \u2014 no 768p compromise",
+        "11-hour battery is strong for the price",
+        "Lightweight at 3.75 lbs"
+      ],
+      "cons": [
+        "128GB SSD fills up fast",
+        "Plastic build feels cheap",
+        "No backlit keyboard",
+        "Integrated graphics only \u2014 no gaming"
+      ],
+      "network_ids": {
+        "amazon": "B0CV5ZMDBH"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "students"
+      ],
+      "specs": {
+        "Processor": "AMD Ryzen 3 7320U",
+        "RAM": "8GB LPDDR5",
+        "Storage": "128GB SSD",
+        "Display": "15.6\" FHD IPS",
+        "Battery": "Up to 11 hours",
+        "Weight": "3.75 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "hp-spectre-x360-14",
+      "name": "HP Spectre x360 14 (2024)",
+      "brand": "HP",
+      "category": "laptops",
+      "price_usd": 1449,
+      "rating": 4.6,
+      "verdict": "The best 2-in-1 laptop \u2014 a convertible that works as a laptop, tablet, and creative canvas.",
+      "description": "The HP Spectre x360 14 is the most elegant 2-in-1 on the market. Its 360-degree hinge transforms it from a traditional laptop to a tablet or tent-mode display, and the 14\" 2.8K OLED touchscreen with pen support makes it a creative powerhouse. Intel Core Ultra processors, 16GB RAM, and a gem-cut design with diamond-cut edges make it feel genuinely premium. If you want a laptop that also works as a drawing tablet, this is the one.",
+      "features": [
+        "Intel Core Ultra 7 155H",
+        "14\" 2.8K OLED touchscreen",
+        "360-degree convertible hinge",
+        "HP Rechargeable MPP2.0 Pen included",
+        "16GB LPDDR5X RAM",
+        "Thunderbolt 4 + USB-A"
+      ],
+      "pros": [
+        "Stunning gem-cut design is head-turning",
+        "OLED touchscreen with pen support",
+        "Versatile 2-in-1 form factor",
+        "Includes rechargeable stylus in the box"
+      ],
+      "cons": [
+        "Heavy for a 14\" at 3.19 lbs",
+        "Fan noise during sustained loads",
+        "Battery drops faster in tablet mode with OLED"
+      ],
+      "network_ids": {
+        "amazon": "B0CXJD56GP"
+      },
+      "image_url": "",
+      "best_for": [
+        "2-in-1",
+        "creative-work"
+      ],
+      "specs": {
+        "Processor": "Intel Core Ultra 7 155H",
+        "RAM": "16GB LPDDR5X",
+        "Storage": "1TB SSD",
+        "Display": "14\" 2.8K OLED Touch",
+        "Battery": "Up to 15 hours",
+        "Weight": "3.19 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "framework-laptop-16",
+      "name": "Framework Laptop 16",
+      "brand": "Framework",
+      "category": "laptops",
+      "price_usd": 1399,
+      "rating": 4.4,
+      "verdict": "The most repairable laptop ever made \u2014 fully modular with upgradeable GPU, RAM, ports, and keyboard.",
+      "description": "The Framework Laptop 16 is a revolution in laptop design. Every component is user-replaceable: RAM, SSD, battery, keyboard, trackpad, screen, and even the GPU via a dedicated expansion bay. Choose your own port configuration with swappable expansion cards, and upgrade your GPU years later without buying a new laptop. It's the anti-disposable laptop, built for people who want to buy once and upgrade forever.",
+      "features": [
+        "AMD Ryzen 7 7840HS",
+        "Modular GPU expansion bay",
+        "User-replaceable everything",
+        "Swappable port expansion cards",
+        "16\" 2560x1600 display",
+        "Up to 64GB DDR5 RAM"
+      ],
+      "pros": [
+        "Most repairable and upgradeable laptop in existence",
+        "Modular GPU bay is genuinely innovative",
+        "Swap ports to match your needs",
+        "Strong community and open-source ethos"
+      ],
+      "cons": [
+        "Build quality lags behind Dell/Apple",
+        "Battery life is average (8-10 hours)",
+        "GPU module selection is still limited",
+        "Heavier than competitors at 4.63 lbs"
+      ],
+      "network_ids": {
+        "amazon": "B0CV5ZGP87"
+      },
+      "image_url": "",
+      "best_for": [
+        "upgradeable",
+        "gaming"
+      ],
+      "specs": {
+        "Processor": "AMD Ryzen 7 7840HS",
+        "RAM": "16GB DDR5 (up to 64GB)",
+        "Storage": "512GB NVMe SSD",
+        "Display": "16\" 2560x1600 165Hz",
+        "GPU": "Modular expansion bay",
+        "Weight": "4.63 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "apple-macbook-pro-14-m3-pro",
+      "name": "Apple MacBook Pro 14\" M3 Pro",
+      "brand": "Apple",
+      "category": "laptops",
+      "price_usd": 1999,
+      "rating": 4.8,
+      "verdict": "The professional workhorse \u2014 M3 Pro crushes creative workloads with all-day battery and a pro-grade display.",
+      "description": "The MacBook Pro 14\" M3 Pro is the tool professionals reach for when performance matters. The M3 Pro chip with 12-core CPU and 18-core GPU tears through video editing, 3D rendering, and software development. The Liquid Retina XDR display with 1600 nits peak HDR brightness is the best screen on any laptop. 17 hours of battery life, 18GB unified memory, and a full suite of ports (HDMI, SD card, MagSafe, Thunderbolt 4) make it the complete package for power users.",
+      "features": [
+        "Apple M3 Pro (12-core CPU, 18-core GPU)",
+        "14.2\" Liquid Retina XDR (1600 nits HDR)",
+        "18GB unified memory",
+        "512GB SSD",
+        "17-hour battery life",
+        "HDMI 2.1, SD card, MagSafe, 3x Thunderbolt 4"
+      ],
+      "pros": [
+        "M3 Pro handles any creative workload",
+        "Best display on any laptop \u2014 1600 nits HDR",
+        "17-hour battery is extraordinary for a pro machine",
+        "Full port selection eliminates dongles"
+      ],
+      "cons": [
+        "$1,999 starting price is steep",
+        "18GB RAM may limit very heavy workflows",
+        "No touchscreen",
+        "macOS only \u2014 no Windows option"
+      ],
+      "network_ids": {
+        "amazon": "B0CM5JVNZ9"
+      },
+      "image_url": "",
+      "best_for": [
+        "premium",
+        "creative-work"
+      ],
+      "specs": {
+        "Processor": "Apple M3 Pro",
+        "RAM": "18GB unified",
+        "Storage": "512GB SSD",
+        "Display": "14.2\" Liquid Retina XDR",
+        "Battery": "17 hours",
+        "Weight": "3.4 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "lenovo-ideapad-flex-5i-14",
+      "name": "Lenovo IdeaPad Flex 5i 14\"",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "price_usd": 549,
+      "rating": 4.5,
+      "verdict": "The best mid-range 2-in-1 \u2014 Intel Core i5, 14\" touchscreen, and pen support at a great price.",
+      "description": "The Lenovo IdeaPad Flex 5i hits the sweet spot between price and versatility. Its 14\" Full HD touchscreen with 360-degree hinge works as a laptop, tablet, or tent, and the Intel Core i5-1335U handles everyday tasks and light creative work with ease. 16GB RAM and a 512GB SSD provide plenty of room, and the included digital pen adds note-taking and sketching capabilities. It's the affordable 2-in-1 that doesn't feel cheap.",
+      "features": [
+        "Intel Core i5-1335U",
+        "14\" FHD IPS touchscreen",
+        "360-degree convertible hinge",
+        "16GB DDR4 RAM",
+        "512GB SSD",
+        "Includes digital pen"
+      ],
+      "pros": [
+        "Excellent value for a 2-in-1 with pen",
+        "16GB RAM and 512GB SSD at $549",
+        "Solid build quality for the price",
+        "Good keyboard for a convertible"
+      ],
+      "cons": [
+        "Display is FHD \u2014 no OLED at this price",
+        "Battery is average at 10 hours",
+        "Integrated graphics limit creative work",
+        "Pen doesn't store inside the laptop"
+      ],
+      "network_ids": {
+        "amazon": "B0CX2G1FXV"
+      },
+      "image_url": "",
+      "best_for": [
+        "budget",
+        "2-in-1",
+        "students"
+      ],
+      "specs": {
+        "Processor": "Intel Core i5-1335U",
+        "RAM": "16GB DDR4",
+        "Storage": "512GB SSD",
+        "Display": "14\" FHD IPS Touch",
+        "Battery": "Up to 10 hours",
+        "Weight": "3.64 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    },
+    {
+      "slug": "samsung-galaxy-book4-ultra",
+      "name": "Samsung Galaxy Book4 Ultra",
+      "brand": "Samsung",
+      "category": "laptops",
+      "price_usd": 2399,
+      "rating": 4.5,
+      "verdict": "Samsung's powerhouse \u2014 RTX 4070 and Intel Core Ultra 9 in a sleek, AMOLED-equipped ultrabook.",
+      "description": "The Samsung Galaxy Book4 Ultra is Samsung's answer to the MacBook Pro. It pairs an Intel Core Ultra 9 185H with an NVIDIA RTX 4070 Laptop GPU for workstation-class performance in a sleek chassis. The 16\" 3K AMOLED display with 120Hz is vivid and smooth, and Galaxy AI features integrate with Samsung phones for a connected ecosystem. At 3.4 lbs for a 16\" machine with a discrete GPU, the weight-to-power ratio is impressive.",
+      "features": [
+        "Intel Core Ultra 9 185H",
+        "NVIDIA RTX 4070 Laptop GPU",
+        "16\" 3K AMOLED 120Hz display",
+        "32GB LPDDR5X RAM",
+        "1TB SSD",
+        "Galaxy AI features"
+      ],
+      "pros": [
+        "RTX 4070 in an ultrabook form factor",
+        "AMOLED display is stunning",
+        "32GB RAM standard is generous",
+        "Great Samsung ecosystem integration"
+      ],
+      "cons": [
+        "$2,399 is very expensive",
+        "Battery life drops fast under GPU load",
+        "Samsung bloatware out of the box",
+        "Speakers are average for the price"
+      ],
+      "network_ids": {
+        "amazon": "B0CS6C1S39"
+      },
+      "image_url": "",
+      "best_for": [
+        "gaming",
+        "premium"
+      ],
+      "specs": {
+        "Processor": "Intel Core Ultra 9 185H",
+        "GPU": "NVIDIA RTX 4070",
+        "RAM": "32GB LPDDR5X",
+        "Storage": "1TB SSD",
+        "Display": "16\" 3K AMOLED 120Hz",
+        "Weight": "3.4 lbs"
+      },
+      "date_added": "2026-04-27",
+      "date_updated": "2026-04-27"
+    }
+  ]
+}
