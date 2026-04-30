@@ -1,53 +1,53 @@
 {
   "products": [
     {
-      "slug": "breville-barista-express-impress",
-      "name": "Breville Barista Express Impress",
+      "slug": "breville-precision-brewer",
+      "name": "Breville Precision Brewer",
       "brand": "Breville",
       "category": "coffee-makers",
-      "price_usd": 749,
+      "price_usd": 299,
       "rating": 4.7,
-      "verdict": "The best semi-auto espresso machine \u2014 assisted tamping and built-in grinder take the guesswork out of espresso.",
-      "description": "The Breville Barista Express Impress is the espresso machine for people who want caf\u00e9-quality shots without years of barista training. Its Impress Puck system uses an assisted tamping mechanism that applies exactly the right pressure every time, eliminating the most inconsistent variable in home espresso. The built-in conical burr grinder, PID temperature control, and 15-bar Italian pump deliver shots that rival your local coffee shop. It's the fastest path from beans to espresso.",
+      "verdict": "The most customizable drip brewer \u2014 6 brew modes, gold-cup SCA certification, and precise temperature control.",
+      "description": "The Breville Precision Brewer gives coffee enthusiasts full control over every variable in drip brewing. Six brew modes \u2014 Gold, Fast, Strong, Iced, Cold Brew, and My Brew (fully custom) \u2014 cover every style imaginable. SCA-certified Gold Cup brewing ensures optimal water temperature and contact time, and the flat-bottom brew basket with adjustable flow rate lets you fine-tune extraction. A thermal carafe keeps coffee hot without burning, and the 60oz capacity handles large households.",
       "features": [
-        "Impress assisted tamping system",
-        "Built-in conical burr grinder (30 settings)",
-        "PID digital temperature control",
-        "15-bar Italian pump",
-        "54mm portafilter",
-        "Steam wand for milk frothing"
+        "6 brew modes including Cold Brew and Custom",
+        "SCA Gold Cup certified",
+        "PID temperature control",
+        "Adjustable flow rate",
+        "60 oz thermal carafe",
+        "Flat-bottom and cone filter compatible"
       ],
       "pros": [
-        "Assisted tamping makes consistent shots easy",
-        "Built-in grinder eliminates a separate purchase",
-        "PID temp control for precise extraction",
-        "All-in-one design saves counter space"
+        "Most customizable drip brewer available",
+        "SCA certified for optimal extraction",
+        "Cold Brew mode is a unique bonus",
+        "My Brew mode lets you dial in every variable"
       ],
       "cons": [
-        "$749 is a significant investment",
-        "54mm portafilter limits third-party accessories",
-        "Learning curve for grind adjustments",
-        "Water tank is on the small side"
+        "$299 is premium for a drip machine",
+        "Complex controls have a learning curve",
+        "Large footprint on the counter",
+        "Thermal carafe lid can be tricky to clean"
       ],
       "network_ids": {
-        "amazon": "B0CS9VVZ1H"
+        "amazon": "B078RQVQF1"
       },
       "image_url": "",
       "best_for": [
         "best-overall",
-        "espresso",
+        "drip-coffee",
         "premium"
       ],
       "specs": {
-        "Type": "Semi-automatic espresso",
-        "Grinder": "Built-in conical burr (30 settings)",
-        "Pump": "15-bar Italian",
-        "Portafilter": "54mm",
-        "Water Tank": "67 oz",
-        "Dimensions": "12.5 x 13.5 x 15.8 in"
+        "Type": "Drip coffee maker",
+        "Capacity": "60 oz (12 cups)",
+        "Brew Modes": "6 (Gold, Fast, Strong, Iced, Cold Brew, My Brew)",
+        "Temperature": "SCA certified (197-205\u00b0F)",
+        "Carafe": "Thermal stainless steel",
+        "Dimensions": "12.4 x 6.7 x 15.7 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "technivorm-moccamaster-kbgv-select",
@@ -94,8 +94,8 @@
         "Carafe": "Glass",
         "Warranty": "5 years"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "ninja-cfp307-dualbrew-pro",
@@ -142,8 +142,8 @@
         "Carafe": "Thermal",
         "Dimensions": "11.2 x 9.4 x 15.0 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "keurig-k-supreme-plus-smart",
@@ -190,8 +190,8 @@
         "Connectivity": "Wi-Fi",
         "Dimensions": "11.3 x 8.7 x 14.3 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "bonavita-connoisseur-bv1901ts",
@@ -238,8 +238,8 @@
         "Wattage": "1500W",
         "Special Feature": "Pre-infusion bloom"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "nespresso-vertuo-next",
@@ -286,8 +286,8 @@
         "Water Tank": "37 oz",
         "Dimensions": "5.5 x 16.9 x 12.4 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "cuisinart-dgb-800-burr-grind-brew",
@@ -334,8 +334,8 @@
         "Timer": "24-hour programmable",
         "Dimensions": "10.0 x 7.6 x 16.4 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "oxo-brew-9-cup",
@@ -382,8 +382,8 @@
         "Interface": "One-button LED",
         "Dimensions": "12.4 x 7.2 x 15.6 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "hamilton-beach-flexbrew-trio",
@@ -430,8 +430,8 @@
         "Compatible": "K-Cup + ground coffee",
         "Dimensions": "12.0 x 10.6 x 14.0 in"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     },
     {
       "slug": "aeropress-original",
@@ -479,8 +479,8 @@
         "Weight": "6.4 oz",
         "Filters": "350 micro-filters included"
       },
-      "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_added": "2026-04-30",
+      "date_updated": "2026-04-30"
     }
   ]
 }
