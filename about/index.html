@@ -3,134 +3,97 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Halcott Magazine</title>
-    <meta name="description" content="Halcott Magazine is an independent product review publication. Meet the team of specialists behind every review." />
+    <title>{{PRODUCT_NAME}} Review | {{SITE_NAME}}</title>
+    <meta name="description" content="{{PRODUCT_VERDICT}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <a href="/" class="site-logo">Halcott Magazine</a>
-            <p class="site-tagline">Expert reviews from people who actually use the products.</p>
+            <a href="/" class="site-logo">{{SITE_NAME}}</a>
+            <nav class="site-nav">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/editorial-policy/">Editorial Policy</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container about-page">
+    <main class="container product-page">
         <nav class="breadcrumb">
-            <a href="/">Home</a> <span class="breadcrumb-sep">&rsaquo;</span> <span>About Us</span>
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <a href="{{PRIMARY_CATEGORY_URL}}">{{PRIMARY_CATEGORY_NAME}}</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span>{{PRODUCT_NAME}}</span>
         </nav>
 
-        <section class="about-hero">
-            <h1>About Halcott Magazine</h1>
-            <p class="about-lede">We started Halcott Magazine because we were tired of product reviews that felt like they were written by someone who never touched the product.</p>
-        </section>
+        <article class="product-review">
+            <header class="product-header">
+                <p class="product-brand-label">{{PRODUCT_BRAND}}</p>
+                <h1>{{PRODUCT_NAME}}</h1>
+                <p class="product-verdict">{{PRODUCT_VERDICT}}</p>
+                <div class="product-meta-bar">
+                    <span class="product-rating">&starf; {{PRODUCT_RATING}} / 5</span>
+                    <span class="product-price">${{PRODUCT_PRICE}}</span>
+                </div>
+                <div class="product-cta-bar">
+                    <a class="cta" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon</a>
+                    <a class="secondary" href="{{PRIMARY_CATEGORY_URL}}">Compare All {{PRIMARY_CATEGORY_NAME}}</a>
+                </div>
+            </header>
 
-        <section class="about-story">
-            <h2>How We Got Here</h2>
-            <p>Halcott Magazine grew out of a simple frustration: too many review sites rank products based on spec sheets and press releases. Nobody was actually <em>using</em> these things in their daily lives and reporting back honestly.</p>
-            <p>We started as a small group of friends and colleagues who kept texting each other the same question: <em>&ldquo;Which one should I actually buy?&rdquo;</em> The standing desk for a home office. The air fryer that doesn&rsquo;t just collect dust. The laptop that lasts more than two years. We were already doing the research for each other &mdash; so we decided to do it for everyone.</p>
-            <p>Today, Halcott Magazine covers over 30 product categories with a team of five specialist editors. Every product on this site has been evaluated by someone who genuinely understands the category &mdash; not a generalist rewriting manufacturer copy, but an actual expert with years of hands-on experience in their field.</p>
-            <p>We don&rsquo;t accept free products in exchange for reviews. We don&rsquo;t let affiliate relationships influence our rankings. And we never will.</p>
-        </section>
+            <section class="product-body">
+                <h2>Our Review</h2>
+                <div class="product-description">{{PRODUCT_DESCRIPTION}}</div>
+            </section>
 
-        <section class="about-principles">
-            <h2>What We Believe</h2>
-            <div class="principles-grid">
-                <div class="principle-card">
-                    <h3>Real expertise, not algorithms</h3>
-                    <p>Every review is written by a specialist who lives and breathes their category. Our technology editor has 15 years in IT. Our kitchen editor actually cooks dinner every night. That experience shows up in every recommendation.</p>
-                </div>
-                <div class="principle-card">
-                    <h3>Honest assessments, always</h3>
-                    <p>We list the cons alongside the pros because you deserve the full picture. If a product isn&rsquo;t worth your money, we&rsquo;ll say so &mdash; even if it&rsquo;s popular or from a brand we like.</p>
-                </div>
-                <div class="principle-card">
-                    <h3>Independence first</h3>
-                    <p>We earn revenue through affiliate links, which means we get a small commission when you buy something through our site. This never influences what we recommend. Our editorial team evaluates every product independently of our business team.</p>
-                </div>
-                <div class="principle-card">
-                    <h3>Clarity over cleverness</h3>
-                    <p>We write for real people making real purchasing decisions. No jargon for jargon&rsquo;s sake, no filler paragraphs, no SEO-stuffed fluff. Just clear, useful information that helps you decide.</p>
-                </div>
+            <section class="product-pros-cons">
+                {{PROS_CONS}}
+            </section>
+
+            <section class="product-features">
+                <h2>Key Features</h2>
+                {{FEATURES}}
+            </section>
+
+            <section class="product-specs">
+                <h2>Specifications</h2>
+                {{SPECS_TABLE}}
+            </section>
+
+            <section class="product-best-for">
+                <h2>Best For</h2>
+                {{BEST_FOR}}
+            </section>
+
+            <div class="reviewer-byline">
+                <p>Reviewed by <strong>{{REVIEWER_NAME}}</strong>, {{REVIEWER_ROLE}}</p>
+                <p class="reviewer-bio-text">{{REVIEWER_BIO}}</p>
             </div>
-        </section>
+        </article>
 
-        <section class="about-team">
-            <h2>Meet the Team</h2>
-            <p class="section-intro">Each member of our editorial team specializes in the categories they know best. Here&rsquo;s who&rsquo;s behind the reviews.</p>
+        <hr class="section-divider" />
 
-            <div class="team-profiles">
-                <div class="team-profile">
-                    <div class="team-avatar-lg">D</div>
-                    <div class="team-profile-info">
-                        <h3>Daniel Cole</h3>
-                        <p class="team-role">Technology Editor</p>
-                        <p class="team-profile-bio">Daniel spent 15 years as an IT consultant before joining Halcott Magazine. He&rsquo;s deployed thousands of devices across enterprise environments, which gives him a uniquely practical perspective on consumer tech. He doesn&rsquo;t care about spec sheet wars &mdash; he cares about whether the thing actually works well six months after you buy it. Daniel leads our coverage of laptops, monitors, keyboards, mice, headphones, earbuds, smartwatches, tablets, dash cams, and networking equipment.</p>
-                        <p class="team-covers"><strong>Covers:</strong> Laptops, 4K Monitors, Mechanical Keyboards, Gaming Mice, Wireless Earbuds, Over-Ear Headphones, Smartwatches, Tablets, Dash Cams, Mesh Wi-Fi Routers</p>
-                    </div>
-                </div>
-
-                <div class="team-profile">
-                    <div class="team-avatar-lg">R</div>
-                    <div class="team-profile-info">
-                        <h3>Rachel Morse</h3>
-                        <p class="team-role">Home &amp; Kitchen Editor</p>
-                        <p class="team-profile-bio">Rachel is the person her entire extended family calls before buying anything for their kitchen or home. She&rsquo;s tested hundreds of appliances over the years &mdash; not in a lab, but in her actual kitchen, feeding her actual family. She has strong opinions about air fryer baskets, blender noise levels, and which robot vacuums actually handle pet hair. Her reviews focus on what matters in daily use: reliability, cleanup, noise, and whether the thing earns its counter space.</p>
-                        <p class="team-covers"><strong>Covers:</strong> Air Fryers, Blenders, Coffee Makers, Espresso Machines, Robot Vacuums, Cordless Stick Vacuums, Air Purifiers</p>
-                    </div>
-                </div>
-
-                <div class="team-profile">
-                    <div class="team-avatar-lg">M</div>
-                    <div class="team-profile-info">
-                        <h3>Marcus Webb</h3>
-                        <p class="team-role">Outdoor &amp; Active Editor</p>
-                        <p class="team-profile-bio">Marcus tests gear the way it&rsquo;s meant to be used &mdash; outside, in motion, and often in weather that would void most warranties. A former bike shop mechanic and weekend trail runner, he brings a hands-on, no-nonsense approach to every review. He&rsquo;s particularly good at spotting the difference between products that look great in marketing photos and products that actually hold up after three months of real use.</p>
-                        <p class="team-covers"><strong>Covers:</strong> Electric Bikes, Electric Scooters, Outdoor Grills, Portable Power Stations, Running Shoes</p>
-                    </div>
-                </div>
-
-                <div class="team-profile">
-                    <div class="team-avatar-lg">S</div>
-                    <div class="team-profile-info">
-                        <h3>Sarah Lin</h3>
-                        <p class="team-role">Family &amp; Home Editor</p>
-                        <p class="team-profile-bio">Sarah is a parent of three who approaches product reviews with the skepticism of someone who&rsquo;s been burned by too many &ldquo;top-rated&rdquo; products that fell apart in a month. Before joining Halcott, she spent five years researching child safety products and contributing to parenting publications. She tests products the way families actually use them &mdash; which means her reviews account for things like &ldquo;can you set this up while holding a toddler?&rdquo;</p>
-                        <p class="team-covers"><strong>Covers:</strong> Baby Monitors, Home Security Cameras, Mattresses</p>
-                    </div>
-                </div>
-
-                <div class="team-profile">
-                    <div class="team-avatar-lg">J</div>
-                    <div class="team-profile-info">
-                        <h3>James Ashworth</h3>
-                        <p class="team-role">Office &amp; Productivity Editor</p>
-                        <p class="team-profile-bio">James has been working remotely since 2012 &mdash; long before it was trendy &mdash; and has spent a frankly unreasonable amount of time and money optimizing his home office. He&rsquo;s sat in over 50 office chairs, stood at over 30 standing desks, and has opinions about monitor arms that he&rsquo;ll share whether you ask or not. His reviews focus on long-term comfort, build quality, and whether a product genuinely improves your workday or just looks good on Instagram.</p>
-                        <p class="team-covers"><strong>Covers:</strong> Standing Desks, Office Chairs, Projectors</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-contact">
-            <h2>Get in Touch</h2>
-            <p>Have a question about a review? Think we missed a product that deserves a look? We&rsquo;d love to hear from you.</p>
-            <p>Email us at <strong>hello@halcottmagazine.com</strong></p>
-            <p class="about-note">We read every email, though we can&rsquo;t always respond individually. We do not accept payment for reviews or guaranteed placement in our rankings.</p>
-        </section>
+        <aside class="category-sidebar">
+            <h2>More in {{PRIMARY_CATEGORY_NAME}}</h2>
+            <ul class="sidebar-list">
+                {{SIDEBAR_LINKS}}
+            </ul>
+        </aside>
     </main>
 
     <footer class="site-footer">
         <div class="footer-inner">
-            <p class="footer-brand">Halcott Magazine</p>
-            <p class="footer-tagline">Expert reviews from people who actually use the products.</p>
+            <p class="footer-brand">{{SITE_NAME}}</p>
+            <p class="footer-tagline">{{SITE_TAGLINE}}</p>
             <nav class="footer-links">
                 <a href="/">Home</a>
                 <a href="/about/">About Us</a>
                 <a href="/editorial-policy/">Editorial Policy</a>
             </nav>
             <p class="footer-disclosure">As an affiliate, we may earn a commission from qualifying purchases. This never influences our recommendations &mdash; our editorial team evaluates every product independently.</p>
-            <p class="footer-copy">&copy; 2026 Halcott Magazine. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 {{SITE_NAME}}. All rights reserved.</p>
         </div>
     </footer>
 </body>
