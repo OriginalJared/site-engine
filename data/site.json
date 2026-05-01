@@ -1,0 +1,43 @@
+{
+  "name": "Halcott Magazine",
+  "tagline": "Expert reviews from people who actually use the products.",
+  "description": "Halcott Magazine is an independent product review publication. Our team of specialists tests and evaluates products across every category — from kitchen to tech to outdoor — so you can buy with confidence.",
+  "url": "https://site-engine-9gr.pages.dev",
+  "team": [
+    {
+      "slug": "daniel-cole",
+      "name": "Daniel Cole",
+      "role": "Technology Editor",
+      "bio": "Former IT consultant with 15 years in enterprise tech. Now he tears apart consumer gadgets so you don't waste money on the wrong one.",
+      "covers": ["laptops", "4k-monitors", "mechanical-keyboards", "gaming-mice", "wireless-earbuds", "over-ear-headphones", "smartwatches", "tablets", "dash-cams", "mesh-wifi-routers"]
+    },
+    {
+      "slug": "rachel-morse",
+      "name": "Rachel Morse",
+      "role": "Home & Kitchen Editor",
+      "bio": "Home cook, kitchen obsessive, and the person your friends text before buying an appliance. If it plugs in and lives on a countertop, she's tested it.",
+      "covers": ["air-fryers", "blenders", "coffee-makers", "espresso-machines", "robot-vacuums", "cordless-stick-vacuums", "air-purifiers"]
+    },
+    {
+      "slug": "marcus-webb",
+      "name": "Marcus Webb",
+      "role": "Outdoor & Active Editor",
+      "bio": "Weekend warrior, garage tinkerer, and the guy who actually uses the gear before writing about it. If it belongs outside or in motion, it's his beat.",
+      "covers": ["electric-bikes", "electric-scooters", "outdoor-grills", "portable-power-stations", "running-shoes"]
+    },
+    {
+      "slug": "sarah-lin",
+      "name": "Sarah Lin",
+      "role": "Family & Home Editor",
+      "bio": "Parent of three, safety researcher, and the team member who tests products the way families actually use them — which is to say, relentlessly.",
+      "covers": ["baby-monitors", "home-security-cameras", "mattresses"]
+    },
+    {
+      "slug": "james-ashworth",
+      "name": "James Ashworth",
+      "role": "Office & Productivity Editor",
+      "bio": "Remote worker since 2012 and former office furniture reviewer. He's sat in more chairs and stood at more desks than anyone should admit publicly.",
+      "covers": ["standing-desks", "office-chairs", "projectors"]
+    }
+  ]
+}
