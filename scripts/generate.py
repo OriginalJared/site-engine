@@ -145,7 +145,6 @@ def load_site_config() -> Dict[str, Any]:
 
 
 def build_niche_to_reviewer(site_config: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
-    """Build a mapping of niche-slug -> reviewer info dict."""
     mapping: Dict[str, Dict[str, str]] = {}
     for member in site_config.get("team", []):
         reviewer_info = {
@@ -344,7 +343,6 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         reviewer = niche_to_reviewer.get(niche, {})
         reviewer_name = reviewer.get("name", "")
         reviewer_role = reviewer.get("role", "")
-        reviewer_bio = reviewer.get("bio", "")
         hub_cat = None
         for c in cats:
             if as_str(c.get("slug")) == niche:
@@ -404,7 +402,6 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     # Build team section
     team_parts = []
     team_parts.append('<div class="team-grid">')
-    # We deduplicate by slug since multiple niches map to the same reviewer
     seen_reviewers = set()
     for niche in sorted(niche_to_reviewer.keys()):
         r = niche_to_reviewer[niche]
@@ -763,7 +760,7 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages — inject site name and reviewer into template
+    # Generate category pages
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -778,14 +775,16 @@ def main():
             matched = niche_products
         product_list_html = build_category_product_list(matched)
         html = render_category_page(category_template, name, description, product_list_html)
-        # Inject site-level and reviewer placeholders into category pages
+        # Inject site-level, reviewer, and sidebar placeholders into category pages
         reviewer = niche_to_reviewer.get(niche, {})
+        sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
         html = (html
             .replace("{{SITE_NAME}}", escape(site_name))
             .replace("{{SITE_TAGLINE}}", escape(site_tagline))
             .replace("{{REVIEWER_NAME}}", escape(reviewer.get("name", "")))
             .replace("{{REVIEWER_ROLE}}", escape(reviewer.get("role", "")))
-            .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", ""))))
+            .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", "")))
+            .replace("{{SIDEBAR_LINKS}}", sidebar))
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
