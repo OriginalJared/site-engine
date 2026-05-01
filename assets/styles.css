@@ -48,7 +48,7 @@ img { max-width: 100%; height: auto; display: block; }
 .site-header {
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
-    padding: 28px 0;
+    padding: 24px 0 20px;
     text-align: center;
 }
 .header-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
@@ -61,11 +61,23 @@ img { max-width: 100%; height: auto; display: block; }
     text-decoration: none;
 }
 .site-logo:hover { color: var(--color-accent); }
-.site-tagline {
-    font-size: 0.95rem;
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.site-nav {
+    margin-top: 12px;
+}
+.site-nav a {
     color: var(--color-text-muted);
-    margin-top: 4px;
-    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.site-nav a:hover {
+    color: var(--color-accent);
 }
 
 /* ============================================================
@@ -438,7 +450,6 @@ td { color: var(--color-text-muted); }
 .about-lede {
     font-size: 1.15rem; color: var(--color-text-muted); line-height: 1.7; font-style: italic;
 }
-
 .about-story { margin-bottom: 40px; }
 .about-story h2 {
     font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text); margin-bottom: 16px;
@@ -572,6 +583,7 @@ td { color: var(--color-text-muted); }
     .team-profile { flex-direction: column; align-items: center; text-align: center; }
     .team-avatar-lg { margin-bottom: 8px; }
     .about-hero h1 { font-size: 1.7rem; }
+    .site-nav a { margin: 0 8px; font-size: 0.85rem; }
 }
 
 @media (max-width: 480px) {
@@ -581,4 +593,5 @@ td { color: var(--color-text-muted); }
     .product-header h1 { font-size: 1.4rem; }
     .product-price { font-size: 1.1rem; }
     .category-hero h1 { font-size: 1.4rem; }
+    .site-nav a { margin: 0 6px; font-size: 0.8rem; }
 }
