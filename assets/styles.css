@@ -1,5 +1,5 @@
 /* ============================================================
-   HALCOTT MAGAZINE — Global Stylesheet
+   HALCOTT MAGAZINE — Global Stylesheet (Complete)
    ============================================================ */
 
 /* --- Reset & Base --- */
@@ -39,9 +39,7 @@ body {
 
 a { color: var(--color-accent); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--color-accent-hover); }
-
 img { max-width: 100%; height: auto; display: block; }
-
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
 /* ============================================================
@@ -418,7 +416,8 @@ td { color: var(--color-text-muted); }
    ALL CATEGORIES LIST (Homepage)
    ============================================================ */
 .all-categories h3 {
-    font-family: var(--font-heading); font-size: 1.15rem; margin-top: 20px; margin-bottom: 6px; text-align: left;
+    font-family: var(--font-heading); font-size: 1.15rem; margin-top: 20px;
+    margin-bottom: 6px; text-align: left;
 }
 .all-categories ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
 .all-categories li { padding: 4px 0; font-size: 0.9rem; }
@@ -439,11 +438,14 @@ td { color: var(--color-text-muted); }
 .about-lede {
     font-size: 1.15rem; color: var(--color-text-muted); line-height: 1.7; font-style: italic;
 }
+
 .about-story { margin-bottom: 40px; }
 .about-story h2 {
     font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text); margin-bottom: 16px;
 }
-.about-story p { font-size: 1.05rem; line-height: 1.8; color: var(--color-text); margin-bottom: 16px; }
+.about-story p {
+    font-size: 1.05rem; line-height: 1.8; color: var(--color-text); margin-bottom: 16px;
+}
 .about-story em { color: var(--color-text-muted); }
 
 .about-principles { margin-bottom: 48px; }
@@ -480,7 +482,9 @@ td { color: var(--color-text-muted); }
     font-family: var(--font-heading); font-size: 1.2rem; color: var(--color-text); margin-bottom: 2px;
 }
 .team-profile-info .team-role { margin-bottom: 10px; }
-.team-profile-bio { font-size: 0.95rem; color: var(--color-text); line-height: 1.7; margin-bottom: 10px; }
+.team-profile-bio {
+    font-size: 0.95rem; color: var(--color-text); line-height: 1.7; margin-bottom: 10px;
+}
 .team-covers { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; }
 
 .about-contact {
@@ -490,8 +494,37 @@ td { color: var(--color-text-muted); }
 .about-contact h2 {
     font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-text); margin-bottom: 12px;
 }
-.about-contact p { font-size: 0.95rem; color: var(--color-text); line-height: 1.6; margin-bottom: 8px; }
-.about-note { font-size: 0.85rem; color: var(--color-text-muted); font-style: italic; margin-top: 8px; }
+.about-contact p {
+    font-size: 0.95rem; color: var(--color-text); line-height: 1.6; margin-bottom: 8px;
+}
+.about-note {
+    font-size: 0.85rem; color: var(--color-text-muted); font-style: italic; margin-top: 8px;
+}
+
+/* ============================================================
+   EDITORIAL LIST (Editorial Policy page)
+   ============================================================ */
+.editorial-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 20px;
+}
+.editorial-list li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding: 8px 0 8px 24px;
+    position: relative;
+    border-bottom: 1px solid var(--color-border-light);
+}
+.editorial-list li:last-child { border-bottom: none; }
+.editorial-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 8px;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+.editorial-list li strong { color: var(--color-text); }
 
 /* ============================================================
    FOOTER
@@ -509,7 +542,9 @@ td { color: var(--color-text-muted); }
 }
 .footer-tagline { font-size: 0.9rem; color: #999; font-style: italic; margin-bottom: 20px; }
 .footer-links { margin-bottom: 24px; }
-.footer-links a { color: var(--color-footer-text); margin: 0 14px; font-size: 0.9rem; font-weight: 500; }
+.footer-links a {
+    color: var(--color-footer-text); margin: 0 14px; font-size: 0.9rem; font-weight: 500;
+}
 .footer-links a:hover { color: #ffffff; }
 .footer-disclosure {
     font-size: 0.8rem; color: #777; max-width: 600px; margin: 0 auto 16px; line-height: 1.6;
