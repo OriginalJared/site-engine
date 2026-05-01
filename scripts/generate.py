@@ -31,10 +31,6 @@ DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
 _slug_re = re.compile(r"[^a-z0-9-]+")
 
 
-# ---------------------------------------------------------------------------
-# Utility helpers
-# ---------------------------------------------------------------------------
-
 def load_json(path: Path) -> Any:
     if not path.exists():
         raise FileNotFoundError(f"Missing required file: {path}")
@@ -128,19 +124,9 @@ def assert_unique_slugs(items: List[Dict[str, Any]], kind: str):
         raise ValueError(f"Duplicate {kind} slug(s) found: {sorted(dups)}")
 
 
-# ---------------------------------------------------------------------------
-# Site config (site.json)
-# ---------------------------------------------------------------------------
-
 def load_site_config() -> Dict[str, Any]:
     if not SITE_JSON.exists():
-        return {
-            "name": "Site Engine",
-            "tagline": "",
-            "description": "",
-            "url": DEFAULT_SITE_URL,
-            "team": []
-        }
+        return {"name": "Site Engine", "tagline": "", "description": "", "url": DEFAULT_SITE_URL, "team": []}
     return load_json(SITE_JSON)
 
 
@@ -157,10 +143,6 @@ def build_niche_to_reviewer(site_config: Dict[str, Any]) -> Dict[str, Dict[str, 
             mapping[normalize_slug(niche_slug)] = reviewer_info
     return mapping
 
-
-# ---------------------------------------------------------------------------
-# Affiliates
-# ---------------------------------------------------------------------------
 
 def load_affiliates_config() -> Dict[str, Any]:
     if not AFFILIATES_JSON.exists():
@@ -202,10 +184,6 @@ def build_affiliate_url(network_ids: Dict[str, str], aff_config: Dict[str, Any])
     return url
 
 
-# ---------------------------------------------------------------------------
-# Product normalization
-# ---------------------------------------------------------------------------
-
 def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
     products = require_list(raw_products, "products")
     out: List[Dict[str, Any]] = []
@@ -240,10 +218,6 @@ def normalize_products(raw_products: Any) -> List[Dict[str, Any]]:
     assert_unique_slugs(out, "product")
     return out
 
-
-# ---------------------------------------------------------------------------
-# Category auto-generation
-# ---------------------------------------------------------------------------
 
 TAG_CATEGORY_TEMPLATES = {
     "best-overall": {"slug_pattern": "best-{niche_slug}", "name": "Best {niche} {year} (Top Picks)", "description": "Our top-rated {niche} based on performance, features, and value. These are the products we recommend most often."},
@@ -308,10 +282,6 @@ def merge_categories(auto_cats: List[Dict[str, Any]], manual_cats: List[Dict[str
     return out
 
 
-# ---------------------------------------------------------------------------
-# Sidebar
-# ---------------------------------------------------------------------------
-
 def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_slug: str = "") -> str:
     niche_cats = [c for c in categories if as_str(c.get("niche")) == niche and as_str(c.get("slug")) != exclude_slug]
     if not niche_cats:
@@ -324,10 +294,6 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
         items.append(f'<li><a href="{href}">{escape(name)}</a></li>')
     return "\n            ".join(items)
 
-
-# ---------------------------------------------------------------------------
-# Homepage builder
-# ---------------------------------------------------------------------------
 
 def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]], niche_to_reviewer: Dict[str, Dict[str, str]]) -> Dict[str, str]:
     niches: Dict[str, List[Dict[str, Any]]] = OrderedDict()
@@ -398,8 +364,6 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
             all_cats_parts.append(f'<li><a href="{c_href}">{escape(c_name)}</a></li>')
         all_cats_parts.append('</ul>')
-
-    # Build team section
     team_parts = []
     team_parts.append('<div class="team-grid">')
     seen_reviewers = set()
@@ -419,17 +383,12 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         team_parts.append(f'<p class="team-bio">{rbio}</p>')
         team_parts.append(f'</div>')
     team_parts.append('</div>')
-
     return {
         "NICHE_SECTIONS": "\n".join(niche_sections),
         "ALL_CATEGORIES_LIST": "\n".join(all_cats_parts),
         "TEAM_SECTION": "\n".join(team_parts),
     }
 
-
-# ---------------------------------------------------------------------------
-# Rendering helpers
-# ---------------------------------------------------------------------------
 
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return template.replace("{{CATEGORY_NAME}}", escape(name)).replace("{{CATEGORY_DESCRIPTION}}", escape(description)).replace("{{PRODUCT_LIST}}", product_list_html)
@@ -450,7 +409,7 @@ def best_for_html(best_for: Any) -> str:
     tags = [as_str(t) for t in tags if as_str(t)]
     if not tags:
         return "<p>\u2014</p>"
-    return "<ul>" + "".join(f"<li>{escape(t)}</li>" for t in tags) + "</ul>"
+    return "<ul>" + "".join(f"<li>{escape(slug_to_display(t))}</li>" for t in tags) + "</ul>"
 
 
 def features_html(features: Any) -> str:
@@ -464,7 +423,10 @@ def features_html(features: Any) -> str:
 def pros_cons_html(pros: Any, cons: Any) -> str:
     pro_list = [as_str(p) for p in require_list(pros, "pros") if as_str(p)]
     con_list = [as_str(c) for c in require_list(cons, "cons") if as_str(c)]
+    if not pro_list and not con_list:
+        return ""
     parts = []
+    parts.append('<div class="pros-cons">')
     if pro_list:
         parts.append('<div class="pros"><h3>\u2705 What We Like</h3><ul>')
         parts.extend(f"<li>{escape(p)}</li>" for p in pro_list)
@@ -473,6 +435,7 @@ def pros_cons_html(pros: Any, cons: Any) -> str:
         parts.append('<div class="cons"><h3>\u26a0\ufe0f Worth Noting</h3><ul>')
         parts.extend(f"<li>{escape(c)}</li>" for c in con_list)
         parts.append('</ul></div>')
+    parts.append('</div>')
     return "\n".join(parts)
 
 
@@ -541,7 +504,7 @@ DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
 <p><a class="secondary" href="{{PRIMARY_CATEGORY_URL}}">Browse {{PRIMARY_CATEGORY_NAME}}</a></p>
 <div class="product-description">{{PRODUCT_DESCRIPTION}}</div>
 <h2>Key Features</h2><div>{{FEATURES}}</div>
-<div class="pros-cons">{{PROS_CONS}}</div>
+{{PROS_CONS}}
 <h2>Best For</h2><div>{{BEST_FOR}}</div>
 <h2>Specs</h2><div>{{SPECS_TABLE}}</div>
 <div class="reviewer-byline"><p>Reviewed by <strong>{{REVIEWER_NAME}}</strong>, {{REVIEWER_ROLE}}</p></div>
@@ -613,10 +576,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
     return html
 
 
-# ---------------------------------------------------------------------------
-# SEO files
-# ---------------------------------------------------------------------------
-
 def get_site_url() -> str:
     return (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
 
@@ -637,10 +596,6 @@ def build_sitemap(urls: List[str]) -> str:
 def build_robots(site_url: str) -> str:
     return "\n".join(["User-agent: *", "Allow: /", f"Sitemap: {site_url}/sitemap.xml", ""])
 
-
-# ---------------------------------------------------------------------------
-# Quality gates
-# ---------------------------------------------------------------------------
 
 def run_quality_gates():
     failures: List[str] = []
@@ -684,12 +639,7 @@ def run_quality_gates():
     print(f"Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages, homepage checked).")
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
-
 def main():
-    # Load site config
     site_config = load_site_config()
     site_name = as_str(site_config.get("name")) or "Site Engine"
     site_tagline = as_str(site_config.get("tagline"))
@@ -698,19 +648,16 @@ def main():
     print(f"Site: {site_name}")
     print(f"Team: {len(site_config.get('team', []))} reviewer(s) covering {len(niche_to_reviewer)} niche(s)")
 
-    # Load templates
     category_template = read_text_required(CATEGORY_TEMPLATE)
     product_template = read_text_optional(PRODUCT_TEMPLATE, DEFAULT_PRODUCT_TEMPLATE)
     index_template = read_text_optional(INDEX_TEMPLATE, DEFAULT_INDEX_TEMPLATE)
     aff_config = load_affiliates_config()
 
-    # Load and normalize products
     raw_products = load_all_products()
     products = normalize_products(raw_products)
     file_count = len(list(PRODUCTS_DIR.glob("*.json"))) if PRODUCTS_DIR.exists() else 0
     print(f"Loaded {len(products)} product(s) from {file_count} file(s) in data/products/")
 
-    # Group by niche
     products_by_niche: Dict[str, List[Dict[str, Any]]] = {}
     for p in products:
         niche = as_str(p.get("category"))
@@ -718,7 +665,6 @@ def main():
             products_by_niche[niche] = []
         products_by_niche[niche].append(p)
 
-    # Build categories
     auto_cats = auto_generate_categories(products_by_niche)
     manual_cats = load_manual_categories()
     categories = merge_categories(auto_cats, manual_cats)
@@ -726,7 +672,6 @@ def main():
     assert_unique_slugs(categories, "category")
     category_by_slug = {as_str(c.get("slug")): c for c in categories}
 
-    # Enrich products with affiliate URLs, categories, reviewer info, and site info
     for p in products:
         p["affiliate_url"] = build_affiliate_url(p.get("network_ids", {}), aff_config)
         cat_slug = as_str(p.get("category"))
@@ -740,16 +685,13 @@ def main():
             p["primary_category_name"] = cat_slug or "All Products"
             niche = cat_slug
         p["sidebar_links"] = build_sidebar_links(niche, categories, exclude_slug=cat_slug)
-        # Attach reviewer info
         reviewer = niche_to_reviewer.get(cat_slug, {})
         p["reviewer_name"] = reviewer.get("name", "")
         p["reviewer_role"] = reviewer.get("role", "")
         p["reviewer_bio"] = reviewer.get("bio", "")
-        # Attach site info
         p["site_name"] = site_name
         p["site_tagline"] = site_tagline
 
-    # Generate product pages
     product_count = 0
     for p in products:
         slug = as_str(p.get("slug"))
@@ -760,7 +702,6 @@ def main():
         write_text(out_path, html)
         product_count += 1
 
-    # Generate category pages
     category_count = 0
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -775,7 +716,6 @@ def main():
             matched = niche_products
         product_list_html = build_category_product_list(matched)
         html = render_category_page(category_template, name, description, product_list_html)
-        # Inject site-level, reviewer, and sidebar placeholders into category pages
         reviewer = niche_to_reviewer.get(niche, {})
         sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
         html = (html
@@ -789,7 +729,6 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
-    # Generate homepage
     hp_data = build_homepage(categories, products_by_niche, niche_to_reviewer)
     homepage_html = index_template
     for key, val in hp_data.items():
@@ -800,7 +739,6 @@ def main():
     write_text(INDEX_HTML, homepage_html)
     print("Generated index.html (homepage).")
 
-    # Generate SEO files
     site_url = get_site_url()
     urls = [f"{site_url}/"]
     for cat in categories:
@@ -813,7 +751,6 @@ def main():
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
 
-    # Quality gates
     run_quality_gates()
     print(f"Generated {category_count} category page(s).")
     print(f"Generated {product_count} product page(s).")
