@@ -2,6 +2,7 @@ import json
 import os
 import re
 import sys
+import shutil
 from datetime import date
 from pathlib import Path
 from html import escape
@@ -27,6 +28,12 @@ ROBOTS_TXT = ROOT / "robots.txt"
 INDEX_HTML = ROOT / "index.html"
 
 DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
+
+# A niche only gets an auto-generated "Best {niche} for {tag}" page when at least
+# this many products in that niche share the tag. Prevents thin, single-product
+# category pages (the dominant "AI slop" signal). Curated categories defined in
+# categories.json are always kept regardless of this threshold.
+MIN_AUTO_TAG_CATEGORY_PRODUCTS = 2
 
 _slug_re = re.compile(r"[^a-z0-9-]+")
 
@@ -236,15 +243,17 @@ def auto_generate_categories(products_by_niche: Dict[str, List[Dict[str, Any]]])
             continue
         niche_display = slug_to_display(niche_slug)
         niche_products = products_by_niche[niche_slug]
-        all_tags = set()
+        tag_counts: Dict[str, int] = {}
         for p in niche_products:
             for t in (p.get("best_for") or []):
                 tag = normalize_slug(t)
                 if tag:
-                    all_tags.add(tag)
-        all_tags_sorted = sorted(all_tags)
+                    tag_counts[tag] = tag_counts.get(tag, 0) + 1
+        all_tags_sorted = sorted(tag_counts.keys())
         auto_cats.append({"slug": niche_slug, "name": niche_display, "niche": niche_slug, "description": f"Compare the best {niche_display.lower()} of {year} side by side. Browse all categories and find the right product for your needs and budget.", "tags": all_tags_sorted, "_auto": True})
         for tag_slug in all_tags_sorted:
+            if tag_counts[tag_slug] < MIN_AUTO_TAG_CATEGORY_PRODUCTS:
+                continue
             tag_display = slug_to_display(tag_slug)
             tmpl = TAG_CATEGORY_TEMPLATES.get(tag_slug, DEFAULT_TAG_TEMPLATE)
             cat_slug = tmpl["slug_pattern"].format(niche_slug=niche_slug, tag_slug=tag_slug)
@@ -665,6 +674,11 @@ def validate_product_filenames():
 
 def main():
     validate_product_filenames()
+    # Rebuild generated/ from scratch each run so that renamed or removed
+    # categories/products do not leave orphaned, unlinked "ghost" pages behind.
+    if GENERATED_DIR.exists():
+        shutil.rmtree(GENERATED_DIR)
+        print("Cleared previous generated/ output (prevents orphaned/stale pages).")
     site_config = load_site_config()
     site_name = as_str(site_config.get("name")) or "Site Engine"
     site_tagline = as_str(site_config.get("tagline"))
