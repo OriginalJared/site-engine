@@ -225,7 +225,7 @@ TAG_CATEGORY_TEMPLATES = {
     "premium": {"slug_pattern": "premium-{niche_slug}", "name": "Premium {niche}", "description": "Top-of-the-line {niche} with the best features, build quality, and warranties available. For those who want the absolute best."},
 }
 
-DEFAULT_TAG_TEMPLATE = {"slug_pattern": "{niche_slug}-for-{tag_slug}", "name": "Best {niche} for {tag}", "description": "The best {niche} for {tag} \u2014 curated based on real specs, reviews, and performance data."}
+DEFAULT_TAG_TEMPLATE = {"slug_pattern": "{niche_slug}-for-{tag_slug}", "name": "Best {niche} for {tag}", "description": "The best {niche} for {tag} — curated based on real specs, reviews, and performance data."}
 
 
 def auto_generate_categories(products_by_niche: Dict[str, List[Dict[str, Any]]]) -> List[Dict[str, Any]]:
@@ -408,7 +408,7 @@ def best_for_html(best_for: Any) -> str:
     tags = require_list(best_for, "best_for")
     tags = [as_str(t) for t in tags if as_str(t)]
     if not tags:
-        return "<p>\u2014</p>"
+        return "<p>—</p>"
     return "<ul>" + "".join(f"<li>{escape(slug_to_display(t))}</li>" for t in tags) + "</ul>"
 
 
@@ -428,11 +428,11 @@ def pros_cons_html(pros: Any, cons: Any) -> str:
     parts = []
     parts.append('<div class="pros-cons">')
     if pro_list:
-        parts.append('<div class="pros"><h3>\u2705 What We Like</h3><ul>')
+        parts.append('<div class="pros"><h3>✅ What We Like</h3><ul>')
         parts.extend(f"<li>{escape(p)}</li>" for p in pro_list)
         parts.append('</ul></div>')
     if con_list:
-        parts.append('<div class="cons"><h3>\u26a0\ufe0f Worth Noting</h3><ul>')
+        parts.append('<div class="cons"><h3>⚠️ Worth Noting</h3><ul>')
         parts.extend(f"<li>{escape(c)}</li>" for c in con_list)
         parts.append('</ul></div>')
     parts.append('</div>')
@@ -546,7 +546,7 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
         if rating is not None:
             meta_parts.append(f"<strong>Rating:</strong> {escape(str(rating))}/5")
-        meta_html = " &nbsp;\u2022&nbsp; ".join(meta_parts) if meta_parts else ""
+        meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
         spec_bits = []
         for sk, sv in specs.items():
             if sv and sk != "warranty_years":
@@ -639,7 +639,32 @@ def run_quality_gates():
     print(f"Quality gates passed ({len(product_pages)} product, {len(category_pages)} category pages, homepage checked).")
 
 
+PRODUCT_FILENAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*\.json$")
+
+
+def validate_product_filenames():
+    """Halt the build if any file in data/products/ breaks the naming
+    convention (lowercase, hyphen-separated, .json). Prevents a mis-cased or
+    mis-extensioned file from being silently skipped by the *.json glob, which
+    would drop an entire niche from the site with no error."""
+    if not PRODUCTS_DIR.exists():
+        return
+    offenders = [f.name for f in sorted(PRODUCTS_DIR.iterdir())
+                 if f.is_file() and f.name != ".gitkeep"
+                 and not PRODUCT_FILENAME_RE.match(f.name)]
+    if offenders:
+        print("")
+        print("FILENAME CONVENTION FAILURES in data/products/:")
+        for name in offenders:
+            print("   - " + name + "  (expected lowercase, hyphen-separated, .json)")
+        print("")
+        print(str(len(offenders)) + " file(s) violate the convention. Build halted.")
+        sys.exit(1)
+    print("Product filenames OK (" + str(len(list(PRODUCTS_DIR.glob("*.json")))) + " file(s)).")
+
+
 def main():
+    validate_product_filenames()
     site_config = load_site_config()
     site_name = as_str(site_config.get("name")) or "Site Engine"
     site_tagline = as_str(site_config.get("tagline"))
