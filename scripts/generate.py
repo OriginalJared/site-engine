@@ -499,7 +499,8 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{REVIEWER_ROLE}}", escape(reviewer_role))
         .replace("{{REVIEWER_BIO}}", escape(reviewer_bio))
         .replace("{{SITE_NAME}}", escape(site_name))
-        .replace("{{SITE_TAGLINE}}", escape(site_tagline)))
+        .replace("{{SITE_TAGLINE}}", escape(site_tagline))
+        .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra"))))
 
 
 DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
@@ -672,6 +673,107 @@ def validate_product_filenames():
     print("Product filenames OK (" + str(len(list(PRODUCTS_DIR.glob("*.json")))) + " file(s)).")
 
 
+def _jsonld_script(obj: Dict[str, Any]) -> str:
+    payload = json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
+    return '<script type="application/ld+json">' + payload + "</script>"
+
+
+def _og_meta(title: str, desc: str, url: str, site_name: str, og_type: str = "website", image: str = "") -> List[str]:
+    parts = [
+        f'<link rel="canonical" href="{escape(url, quote=True)}" />',
+        f'<meta property="og:type" content="{escape(og_type, quote=True)}" />',
+        f'<meta property="og:title" content="{escape(title, quote=True)}" />',
+        f'<meta property="og:description" content="{escape(desc, quote=True)}" />',
+        f'<meta property="og:url" content="{escape(url, quote=True)}" />',
+        f'<meta property="og:site_name" content="{escape(site_name, quote=True)}" />',
+        '<meta name="twitter:card" content="summary_large_image" />',
+        f'<meta name="twitter:title" content="{escape(title, quote=True)}" />',
+        f'<meta name="twitter:description" content="{escape(desc, quote=True)}" />',
+    ]
+    if image:
+        parts.append(f'<meta property="og:image" content="{escape(image, quote=True)}" />')
+        parts.append(f'<meta name="twitter:image" content="{escape(image, quote=True)}" />')
+    return parts
+
+
+def build_product_head_extra(p: Dict[str, Any], site_url: str, site_name: str) -> str:
+    slug = as_str(p.get("slug"))
+    name = as_str(p.get("name"))
+    verdict = as_str(p.get("verdict"))
+    desc = as_str(p.get("description")) or verdict
+    brand = as_str(p.get("brand"))
+    rating = p.get("rating")
+    price = p.get("price_usd")
+    image = as_str(p.get("image_url"))
+    reviewer = as_str(p.get("reviewer_name")) or site_name
+    canonical = f"{site_url}/generated/products/{slug}/"
+    cat_name = as_str(p.get("primary_category_name"))
+    cat_url = site_url + as_str(p.get("primary_category_url"))
+
+    product_ld: Dict[str, Any] = {"@context": "https://schema.org", "@type": "Product", "name": name}
+    if desc:
+        product_ld["description"] = desc
+    if brand:
+        product_ld["brand"] = {"@type": "Brand", "name": brand}
+    if image:
+        product_ld["image"] = image
+    if rating is not None:
+        review = {
+            "@type": "Review",
+            "reviewRating": {"@type": "Rating", "ratingValue": rating, "bestRating": 5, "worstRating": 1},
+            "author": {"@type": "Person", "name": reviewer},
+            "publisher": {"@type": "Organization", "name": site_name},
+        }
+        if verdict:
+            review["reviewBody"] = verdict
+        product_ld["review"] = review
+    if price is not None:
+        product_ld["offers"] = {"@type": "Offer", "priceCurrency": "USD", "price": price,
+                                "availability": "https://schema.org/InStock", "url": canonical}
+
+    breadcrumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": site_url + "/"},
+        {"@type": "ListItem", "position": 2, "name": cat_name, "item": cat_url},
+        {"@type": "ListItem", "position": 3, "name": name, "item": canonical},
+    ]}
+
+    parts = _og_meta(f"{name} Review", verdict or desc, canonical, site_name, og_type="article", image=image)
+    parts.append(_jsonld_script(product_ld))
+    parts.append(_jsonld_script(breadcrumb_ld))
+    return "\n    ".join(parts)
+
+
+def build_category_head_extra(cat: Dict[str, Any], matched: List[Dict[str, Any]], site_url: str, site_name: str) -> str:
+    cslug = as_str(cat.get("slug"))
+    name = as_str(cat.get("name"))
+    desc = as_str(cat.get("description"))
+    canonical = f"{site_url}/generated/categories/{cslug}/"
+    items = []
+    for i, p in enumerate(matched, start=1):
+        items.append({"@type": "ListItem", "position": i,
+                      "url": f"{site_url}/generated/products/{as_str(p.get('slug'))}/",
+                      "name": as_str(p.get("name"))})
+    itemlist_ld = {"@context": "https://schema.org", "@type": "ItemList", "name": name, "itemListElement": items}
+    breadcrumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": site_url + "/"},
+        {"@type": "ListItem", "position": 2, "name": name, "item": canonical},
+    ]}
+    parts = _og_meta(name, desc, canonical, site_name, og_type="website")
+    parts.append(_jsonld_script(itemlist_ld))
+    parts.append(_jsonld_script(breadcrumb_ld))
+    return "\n    ".join(parts)
+
+
+def build_home_head_extra(site_config: Dict[str, Any], site_url: str, site_name: str) -> str:
+    desc = as_str(site_config.get("description"))
+    org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": site_name, "url": site_url + "/"}
+    website_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": site_name, "url": site_url + "/"}
+    parts = _og_meta(site_name, desc, site_url + "/", site_name, og_type="website")
+    parts.append(_jsonld_script(org_ld))
+    parts.append(_jsonld_script(website_ld))
+    return "\n    ".join(parts)
+
+
 def main():
     validate_product_filenames()
     # Rebuild generated/ from scratch each run so that renamed or removed
@@ -683,6 +785,7 @@ def main():
     site_name = as_str(site_config.get("name")) or "Site Engine"
     site_tagline = as_str(site_config.get("tagline"))
     site_description = as_str(site_config.get("description"))
+    site_url = get_site_url()
     niche_to_reviewer = build_niche_to_reviewer(site_config)
     print(f"Site: {site_name}")
     print(f"Team: {len(site_config.get('team', []))} reviewer(s) covering {len(niche_to_reviewer)} niche(s)")
@@ -730,6 +833,7 @@ def main():
         p["reviewer_bio"] = reviewer.get("bio", "")
         p["site_name"] = site_name
         p["site_tagline"] = site_tagline
+        p["head_extra"] = build_product_head_extra(p, site_url, site_name)
 
     product_count = 0
     for p in products:
@@ -763,7 +867,8 @@ def main():
             .replace("{{REVIEWER_NAME}}", escape(reviewer.get("name", "")))
             .replace("{{REVIEWER_ROLE}}", escape(reviewer.get("role", "")))
             .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", "")))
-            .replace("{{SIDEBAR_LINKS}}", sidebar))
+            .replace("{{SIDEBAR_LINKS}}", sidebar)
+            .replace("{{HEAD_EXTRA}}", build_category_head_extra(cat, matched, site_url, site_name)))
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
@@ -775,11 +880,13 @@ def main():
     homepage_html = homepage_html.replace("{{SITE_NAME}}", escape(site_name))
     homepage_html = homepage_html.replace("{{SITE_TAGLINE}}", escape(site_tagline))
     homepage_html = homepage_html.replace("{{SITE_DESCRIPTION}}", escape(site_description))
+    homepage_html = homepage_html.replace("{{HEAD_EXTRA}}", build_home_head_extra(site_config, site_url, site_name))
     write_text(INDEX_HTML, homepage_html)
     print("Generated index.html (homepage).")
 
-    site_url = get_site_url()
     urls = [f"{site_url}/"]
+    for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
+        urls.append(f"{site_url}{sp}")
     for cat in categories:
         cslug = as_str(cat.get("slug"))
         urls.append(f"{site_url}/generated/categories/{cslug}/")
