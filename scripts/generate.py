@@ -27,7 +27,7 @@ SITEMAP_XML = ROOT / "sitemap.xml"
 ROBOTS_TXT = ROOT / "robots.txt"
 INDEX_HTML = ROOT / "index.html"
 
-DEFAULT_SITE_URL = "https://site-engine-9gr.pages.dev"
+DEFAULT_SITE_URL = "https://halcottmagazine.com"
 
 # A niche only gets an auto-generated "Best {niche} for {tag}" page when at least
 # this many products in that niche share the tag. Prevents thin, single-product
@@ -455,6 +455,35 @@ def safe_url(url: str) -> str:
     return escape(url, quote=True)
 
 
+# --- Image-free "cover tile" treatment ---------------------------------------
+# Product data has no images yet, so instead of blank space we render a branded
+# monogram tile with a deterministic accent color. Reads as an intentional
+# design choice rather than a missing image, at zero cost/legal risk.
+COVER_PALETTE = [
+    "#33658a", "#55828b", "#3b6064", "#2f4858", "#5e503f",
+    "#6b4e71", "#4a5759", "#7d4f50", "#3d5a45", "#8a6d3b",
+]
+
+
+def _accent_for(key: str) -> str:
+    key = key or "x"
+    h = 0
+    for ch in key:
+        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+    return COVER_PALETTE[h % len(COVER_PALETTE)]
+
+
+def cover_tile_html(p: Dict[str, Any], large: bool = False) -> str:
+    brand = as_str(p.get("brand"))
+    name = as_str(p.get("name"))
+    label = brand or name or "?"
+    initial = escape(label[:1].upper())
+    accent = _accent_for(brand or as_str(p.get("slug")) or name)
+    cls = "cover-tile cover-tile-lg" if large else "cover-tile"
+    return (f'<div class="{cls}" style="--cover-accent:{accent}" aria-hidden="true">'
+            f'<span class="cover-mono">{initial}</span></div>')
+
+
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
@@ -500,7 +529,8 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{REVIEWER_BIO}}", escape(reviewer_bio))
         .replace("{{SITE_NAME}}", escape(site_name))
         .replace("{{SITE_TAGLINE}}", escape(site_tagline))
-        .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra"))))
+        .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra")))
+        .replace("{{COVER_TILE}}", as_str(p.get("cover_tile"))))
 
 
 DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
@@ -568,6 +598,7 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         detail_href = escape(f"/generated/products/{slug}/", quote=True)
         name_href = escape(f"/generated/products/{slug}/", quote=True)
         card = f'<div class="product-card">'
+        card += cover_tile_html(p)
         card += f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
         if verdict:
             card += f'<p class="card-verdict"><em>{escape(verdict)}</em></p>'
@@ -834,6 +865,7 @@ def main():
         p["site_name"] = site_name
         p["site_tagline"] = site_tagline
         p["head_extra"] = build_product_head_extra(p, site_url, site_name)
+        p["cover_tile"] = cover_tile_html(p, large=True)
 
     product_count = 0
     for p in products:
