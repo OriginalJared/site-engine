@@ -538,6 +538,63 @@ td { color: var(--color-text-muted); }
 .editorial-list li strong { color: var(--color-text); }
 
 /* ============================================================
+   LEGAL PAGES (Privacy / Terms / Contact)
+   ============================================================ */
+.legal-page { max-width: 780px; }
+.legal-page h1 {
+    font-family: var(--font-heading); font-size: 2rem; color: var(--color-text);
+    margin: 20px 0 6px;
+}
+.legal-updated { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 24px; }
+.legal-page h2 {
+    font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-text);
+    margin: 28px 0 10px;
+}
+.legal-page p, .legal-page li { font-size: 1rem; line-height: 1.75; color: var(--color-text); }
+.legal-page ul { margin: 10px 0 10px 22px; }
+.legal-page li { margin-bottom: 6px; }
+
+/* ============================================================
+   IMAGE-FREE COVER TILES (product cards + product page header)
+   Deterministic monogram tile stands in for a product photo so pages
+   read as intentionally designed rather than missing an image.
+   ============================================================ */
+.cover-tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 118px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: var(--cover-accent, #3b6064);
+    overflow: hidden;
+}
+.cover-tile::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(0,0,0,0.24));
+}
+.cover-tile::after {
+    content: "";
+    position: absolute; right: -26px; top: -26px;
+    width: 110px; height: 110px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.16), transparent 70%);
+}
+.cover-mono {
+    position: relative; z-index: 1;
+    font-family: var(--font-heading);
+    font-size: 2.8rem; font-weight: 700; line-height: 1;
+    color: rgba(255,255,255,0.94);
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+}
+.cover-tile-lg {
+    height: 200px; border-radius: 12px; margin-bottom: 22px;
+}
+.cover-tile-lg .cover-mono { font-size: 4.4rem; }
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
@@ -584,6 +641,8 @@ td { color: var(--color-text-muted); }
     .team-avatar-lg { margin-bottom: 8px; }
     .about-hero h1 { font-size: 1.7rem; }
     .site-nav a { margin: 0 8px; font-size: 0.85rem; }
+    .cover-tile-lg { height: 150px; }
+    .cover-tile-lg .cover-mono { font-size: 3.2rem; }
 }
 
 @media (max-width: 480px) {
