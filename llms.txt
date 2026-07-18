@@ -1,0 +1,43 @@
+# Halcott Magazine
+
+> Halcott Magazine is an independent product review publication. A team of specialist editors tests and evaluates products across 30+ categories — technology, home, kitchen, and outdoor — and writes honest reviews with clear pros and cons. Reviews are written by category experts; we do not accept payment for placement, and we disclose our affiliate relationships. As an Amazon Associate we earn from qualifying purchases.
+
+## About
+- [About Us](https://halcottmagazine.com/about/): The team and how we work
+- [Editorial Policy](https://halcottmagazine.com/editorial-policy/): How we review, test, and earn revenue
+- [Contact](https://halcottmagazine.com/contact): Reach the editorial team
+
+## Product category hubs
+- [Standing Desks](https://halcottmagazine.com/generated/categories/standing-desks/)
+- [Office Chairs](https://halcottmagazine.com/generated/categories/office-chairs/)
+- [Laptops](https://halcottmagazine.com/generated/categories/laptops/)
+- [4K Monitors](https://halcottmagazine.com/generated/categories/4k-monitors/)
+- [Mechanical Keyboards](https://halcottmagazine.com/generated/categories/mechanical-keyboards/)
+- [Gaming Mice](https://halcottmagazine.com/generated/categories/gaming-mice/)
+- [Wireless Earbuds](https://halcottmagazine.com/generated/categories/wireless-earbuds/)
+- [Over-Ear Headphones](https://halcottmagazine.com/generated/categories/over-ear-headphones/)
+- [Bluetooth Speakers](https://halcottmagazine.com/generated/categories/bluetooth-speakers/)
+- [Smartwatches](https://halcottmagazine.com/generated/categories/smartwatches/)
+- [Tablets](https://halcottmagazine.com/generated/categories/tablets/)
+- [Dash Cams](https://halcottmagazine.com/generated/categories/dash-cams/)
+- [Mesh Wi-Fi Routers](https://halcottmagazine.com/generated/categories/mesh-wifi-routers/)
+- [Projectors](https://halcottmagazine.com/generated/categories/projectors/)
+- [Home Security Cameras](https://halcottmagazine.com/generated/categories/home-security-cameras/)
+- [Baby Monitors](https://halcottmagazine.com/generated/categories/baby-monitors/)
+- [Mattresses](https://halcottmagazine.com/generated/categories/mattresses/)
+- [Air Purifiers](https://halcottmagazine.com/generated/categories/air-purifiers/)
+- [Air Fryers](https://halcottmagazine.com/generated/categories/air-fryers/)
+- [Blenders](https://halcottmagazine.com/generated/categories/blenders/)
+- [Coffee Makers](https://halcottmagazine.com/generated/categories/coffee-makers/)
+- [Espresso Machines](https://halcottmagazine.com/generated/categories/espresso-machines/)
+- [Robot Vacuums](https://halcottmagazine.com/generated/categories/robot-vacuums/)
+- [Cordless Stick Vacuums](https://halcottmagazine.com/generated/categories/cordless-stick-vacuums/)
+- [Outdoor Grills](https://halcottmagazine.com/generated/categories/outdoor-grills/)
+- [Electric Bikes](https://halcottmagazine.com/generated/categories/electric-bikes/)
+- [Electric Scooters](https://halcottmagazine.com/generated/categories/electric-scooters/)
+- [Portable Power Stations](https://halcottmagazine.com/generated/categories/portable-power-stations/)
+- [Running Shoes](https://halcottmagazine.com/generated/categories/running-shoes/)
+- [Electric Toothbrushes](https://halcottmagazine.com/generated/categories/electric-toothbrushes/)
+
+## Full index
+- [Sitemap](https://halcottmagazine.com/sitemap.xml): Complete list of all category and product pages
