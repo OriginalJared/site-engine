@@ -16,12 +16,14 @@ GENERATED_DIR = ROOT / "generated"
 
 CATEGORIES_JSON = DATA_DIR / "categories.json"
 PRODUCTS_DIR = DATA_DIR / "products"
+GUIDES_DIR = DATA_DIR / "guides"
 AFFILIATES_JSON = DATA_DIR / "affiliates.json"
 SITE_JSON = DATA_DIR / "site.json"
 
 CATEGORY_TEMPLATE = TEMPLATES_DIR / "category.html"
 PRODUCT_TEMPLATE = TEMPLATES_DIR / "product.html"
 INDEX_TEMPLATE = TEMPLATES_DIR / "index.html"
+GUIDE_TEMPLATE = TEMPLATES_DIR / "guide.html"
 
 SITEMAP_XML = ROOT / "sitemap.xml"
 ROBOTS_TXT = ROOT / "robots.txt"
@@ -769,6 +771,79 @@ def build_faq_ld(faqs: List[tuple]) -> Dict[str, Any]:
                             "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
 
 
+GUIDE_URL_BASE = "/generated/guides"
+
+
+def load_guides() -> List[Dict[str, Any]]:
+    if not GUIDES_DIR.exists():
+        return []
+    out = []
+    for f in sorted(GUIDES_DIR.glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        slug = normalize_slug(d.get("slug"))
+        if not slug:
+            continue
+        faqs = []
+        for x in (d.get("faqs") or []):
+            if isinstance(x, (list, tuple)) and len(x) >= 2:
+                faqs.append([as_str(x[0]), as_str(x[1])])
+        out.append({"slug": slug, "title": as_str(d.get("title")) or slug,
+                    "description": as_str(d.get("description")), "niche": normalize_slug(d.get("niche")),
+                    "intro": as_str(d.get("intro")), "sections": d.get("sections") or [], "faqs": faqs})
+    return out
+
+
+def guide_body_html(sections: Any) -> str:
+    parts = []
+    for s in (sections or []):
+        if not isinstance(s, dict):
+            continue
+        h = as_str(s.get("heading"))
+        b = as_str(s.get("body"))
+        paras = "".join(f"<p>{escape(p.strip())}</p>" for p in b.split("\n\n") if p.strip())
+        parts.append(f'<section class="guide-section"><h2>{escape(h)}</h2>{paras}</section>')
+    return "".join(parts)
+
+
+def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str, faqs=None) -> str:
+    slug = as_str(guide.get("slug"))
+    title = as_str(guide.get("title"))
+    desc = as_str(guide.get("description"))
+    canonical = f"{site_url}{GUIDE_URL_BASE}/{slug}/" if slug else f"{site_url}{GUIDE_URL_BASE}/"
+    article_ld = {"@context": "https://schema.org", "@type": "Article", "headline": title,
+                  "description": desc, "author": {"@type": "Organization", "name": site_name},
+                  "publisher": {"@type": "Organization", "name": site_name}, "mainEntityOfPage": canonical}
+    breadcrumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": site_url + "/"},
+        {"@type": "ListItem", "position": 2, "name": "Buying Guides", "item": f"{site_url}{GUIDE_URL_BASE}/"},
+        {"@type": "ListItem", "position": 3, "name": title, "item": canonical}]}
+    parts = list(FAVICON_LINKS) + _og_meta(title, desc, canonical, site_name, og_type="article")
+    parts.append(_jsonld_script(article_ld))
+    parts.append(_jsonld_script(breadcrumb_ld))
+    if faqs:
+        parts.append(_jsonld_script(build_faq_ld(faqs)))
+    return "\n    ".join(parts)
+
+
+def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
+                      related_cta: str, faq_html: str, head_extra: str, body_override=None) -> str:
+    body = body_override if body_override is not None else guide_body_html(guide.get("sections"))
+    return (template
+        .replace("{{GUIDE_TITLE}}", escape(as_str(guide.get("title"))))
+        .replace("{{GUIDE_DESCRIPTION}}", escape(as_str(guide.get("description"))))
+        .replace("{{GUIDE_INTRO}}", escape(as_str(guide.get("intro"))))
+        .replace("{{GUIDE_BODY}}", body)
+        .replace("{{RELATED_CTA}}", related_cta or "")
+        .replace("{{FAQ_SECTION}}", faq_html or "")
+        .replace("{{HEAD_EXTRA}}", head_extra or "")
+        .replace("{{UPDATED}}", UPDATED_LABEL)
+        .replace("{{SITE_NAME}}", escape(site_name))
+        .replace("{{SITE_TAGLINE}}", escape(site_tagline)))
+
+
 def get_site_url() -> str:
     return (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
 
@@ -1018,6 +1093,8 @@ def main():
     print(f"Categories: {len(categories)} total ({len(manual_cats)} manual overrides from categories.json, remainder auto-generated)")
     assert_unique_slugs(categories, "category")
     category_by_slug = {as_str(c.get("slug")): c for c in categories}
+    guides = load_guides()
+    guide_by_niche = {g["niche"]: g for g in guides if g.get("niche")}
 
     for p in products:
         p["affiliate_url"] = build_affiliate_url(p.get("network_ids", {}), aff_config)
@@ -1068,7 +1145,12 @@ def main():
         faqs = build_category_faqs(name, matched, reviewer.get("name", ""), reviewer.get("role", ""))
         html = render_category_page(category_template, name, description, product_list_html)
         sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
+        _g = guide_by_niche.get(niche)
+        guide_link = ""
+        if _g:
+            guide_link = f'<p class="category-guide-link"><a href="{GUIDE_URL_BASE}/{_g["slug"]}/">Read our {escape(slug_to_display(niche))} buying guide &rarr;</a></p>'
         html = (html
+            .replace("{{GUIDE_LINK}}", guide_link)
             .replace("{{TOP_PICK}}", build_top_pick_html(matched))
             .replace("{{FAQ_SECTION}}", build_faq_section_html(faqs))
             .replace("{{SITE_NAME}}", escape(site_name))
@@ -1093,6 +1175,42 @@ def main():
     write_text(INDEX_HTML, homepage_html)
     print("Generated index.html (homepage).")
 
+    guide_urls: List[str] = []
+    guide_template = read_text_optional(GUIDE_TEMPLATE, "")
+    if guides and guide_template:
+        hub_by_niche = {}
+        for c in categories:
+            if as_str(c.get("slug")) == as_str(c.get("niche")):
+                hub_by_niche[as_str(c.get("niche"))] = (as_str(c.get("slug")), as_str(c.get("name")))
+        for g in guides:
+            gslug = g["slug"]
+            related_cta = ""
+            hub = hub_by_niche.get(g.get("niche"))
+            if hub:
+                hub_href = escape(f"/generated/categories/{hub[0]}/", quote=True)
+                related_cta = (f'<div class="guide-cta"><strong>Ready to compare the top {escape(hub[1].lower())}?</strong>'
+                               f'<a class="cta cta-lg" href="{hub_href}">See our {escape(hub[1])} picks &rarr;</a></div>')
+            faqs = g.get("faqs") or []
+            faq_html = build_faq_section_html([(q, a) for q, a in faqs])
+            head_extra = build_guide_head_extra(g, site_url, site_name, faqs)
+            html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra)
+            write_text(GENERATED_DIR / "guides" / gslug / "index.html", html)
+            guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/{gslug}/")
+        items = []
+        for g in guides:
+            href = escape(f"{GUIDE_URL_BASE}/{g['slug']}/", quote=True)
+            items.append(f'<li class="guide-index-item"><h2><a href="{href}">{escape(g["title"])}</a></h2><p>{escape(g["description"])}</p></li>')
+        idx_body = '<ul class="guides-index-list">' + "".join(items) + "</ul>"
+        idx_desc = "In-depth buying guides from the " + site_name + " editorial team to help you choose the right product before you buy."
+        idx_guide = {"slug": "", "title": "Buying Guides", "description": idx_desc,
+                     "intro": "Practical, jargon-free guides to help you pick the right product with confidence."}
+        idx_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("Buying Guides", idx_desc, f"{site_url}{GUIDE_URL_BASE}/", site_name, og_type="website"))
+        idx_html = render_guide_page(guide_template, idx_guide, site_name, site_tagline, "", "", idx_head, body_override=idx_body)
+        write_text(GENERATED_DIR / "guides" / "index.html", idx_html)
+        guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/")
+        print(f"Generated {len(guides)} buying guide(s) + guides index.")
+
+
     urls = [f"{site_url}/"]
     for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
         urls.append(f"{site_url}{sp}")
@@ -1102,6 +1220,7 @@ def main():
     for p in products:
         pslug = as_str(p.get("slug"))
         urls.append(f"{site_url}/generated/products/{pslug}/")
+    urls.extend(guide_urls)
     urls = sorted(set(urls))
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
