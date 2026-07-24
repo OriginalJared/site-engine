@@ -617,6 +617,101 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
     return html
 
 
+def _best_pick(matched: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    best = None
+    best_rating = None
+    for p in matched:
+        try:
+            rv = float(p.get("rating"))
+        except (TypeError, ValueError):
+            continue
+        if best_rating is None or rv > best_rating:
+            best_rating, best = rv, p
+    return best
+
+
+def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
+    p = _best_pick(matched)
+    if not p:
+        return ""
+    slug = as_str(p.get("slug"))
+    name = as_str(p.get("name")) or slug
+    brand = as_str(p.get("brand"))
+    verdict = as_str(p.get("verdict"))
+    rating = p.get("rating")
+    price = p.get("price_usd")
+    aff_href = safe_url(as_str(p.get("affiliate_url")))
+    detail_href = escape(f"/generated/products/{slug}/", quote=True)
+    meta = []
+    if brand:
+        meta.append(f"<strong>Brand:</strong> {escape(brand)}")
+    if price is not None:
+        meta.append(f"<strong>Price:</strong> ${escape(str(price))}")
+    if rating is not None:
+        meta.append(f"<strong>Rating:</strong> {escape(str(rating))}/5")
+    meta_html = " &nbsp;\u2022&nbsp; ".join(meta)
+    parts = ['<aside class="top-pick" aria-label="Top pick">']
+    parts.append('<div class="top-pick-badge">\u2605 Our Top Pick</div>')
+    parts.append('<div class="top-pick-body">')
+    parts.append(cover_tile_html(p))
+    parts.append('<div class="top-pick-info">')
+    parts.append(f'<h2 class="top-pick-name"><a href="{detail_href}">{escape(name)}</a></h2>')
+    if verdict:
+        parts.append(f'<p class="top-pick-verdict">{escape(verdict)}</p>')
+    if meta_html:
+        parts.append(f'<p class="top-pick-meta">{meta_html}</p>')
+    parts.append('<div class="top-pick-actions">')
+    parts.append(f'<a class="cta" href="{aff_href}" target="_blank" rel="nofollow sponsored noopener">Check Price</a>')
+    parts.append(f'<a class="secondary" href="{detail_href}">Read Full Review</a>')
+    parts.append('</div></div></div></aside>')
+    return "".join(parts)
+
+
+def build_category_faqs(name: str, matched: List[Dict[str, Any]], reviewer_name: str, reviewer_role: str) -> List[tuple]:
+    n = len(matched)
+    if not n:
+        return []
+    year = date.today().year
+    low = name.lower()
+    best = _best_pick(matched)
+    top_name = as_str(best.get("name")) if best else ""
+    faqs = []
+    a1 = f"Our editors compared {n} {low} on real-world performance, specifications, build quality, and value to choose the models featured in this guide"
+    a1 += f", with the {top_name} earning our top pick." if top_name else "."
+    faqs.append((f"How did we choose the best {low}?", a1))
+    faqs.append((f"How many {low} are compared in this guide?",
+                 f"This guide compares {n} {low} side by side, updated for {year}."))
+    if reviewer_name:
+        role = f", {reviewer_role}," if reviewer_role else ""
+        faqs.append((f"Who reviews the {low} featured here?",
+                     f"{reviewer_name}{role} leads our coverage in this category."))
+    faqs.append(("Do you earn a commission from these picks?",
+                 "As an Amazon Associate we earn from qualifying purchases, and we may earn from "
+                 "other affiliate programs. This never influences our recommendations \u2014 our "
+                 "editorial team evaluates every product independently."))
+    return faqs
+
+
+def build_faq_section_html(faqs: List[tuple]) -> str:
+    if not faqs:
+        return ""
+    parts = ['<section class="faq-section" aria-label="Frequently asked questions">']
+    parts.append("<h2>Frequently Asked Questions</h2>")
+    for q, a in faqs:
+        parts.append('<div class="faq-item">')
+        parts.append(f'<h3 class="faq-q">{escape(q)}</h3>')
+        parts.append(f'<p class="faq-a">{escape(a)}</p>')
+        parts.append("</div>")
+    parts.append("</section>")
+    return "".join(parts)
+
+
+def build_faq_ld(faqs: List[tuple]) -> Dict[str, Any]:
+    return {"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q,
+                            "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
+
+
 def get_site_url() -> str:
     return (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
 
@@ -704,6 +799,13 @@ def validate_product_filenames():
     print("Product filenames OK (" + str(len(list(PRODUCTS_DIR.glob("*.json")))) + " file(s)).")
 
 
+FAVICON_LINKS = [
+    '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />',
+    '<link rel="icon" href="/favicon.ico" sizes="any" />',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png" />',
+]
+
+
 def _jsonld_script(obj: Dict[str, Any]) -> str:
     payload = json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
     return '<script type="application/ld+json">' + payload + "</script>"
@@ -768,13 +870,13 @@ def build_product_head_extra(p: Dict[str, Any], site_url: str, site_name: str) -
         {"@type": "ListItem", "position": 3, "name": name, "item": canonical},
     ]}
 
-    parts = _og_meta(f"{name} Review", verdict or desc, canonical, site_name, og_type="article", image=image)
+    parts = list(FAVICON_LINKS) + _og_meta(f"{name} Review", verdict or desc, canonical, site_name, og_type="article", image=image)
     parts.append(_jsonld_script(product_ld))
     parts.append(_jsonld_script(breadcrumb_ld))
     return "\n    ".join(parts)
 
 
-def build_category_head_extra(cat: Dict[str, Any], matched: List[Dict[str, Any]], site_url: str, site_name: str) -> str:
+def build_category_head_extra(cat: Dict[str, Any], matched: List[Dict[str, Any]], site_url: str, site_name: str, faqs=None) -> str:
     cslug = as_str(cat.get("slug"))
     name = as_str(cat.get("name"))
     desc = as_str(cat.get("description"))
@@ -789,9 +891,11 @@ def build_category_head_extra(cat: Dict[str, Any], matched: List[Dict[str, Any]]
         {"@type": "ListItem", "position": 1, "name": "Home", "item": site_url + "/"},
         {"@type": "ListItem", "position": 2, "name": name, "item": canonical},
     ]}
-    parts = _og_meta(name, desc, canonical, site_name, og_type="website")
+    parts = list(FAVICON_LINKS) + _og_meta(name, desc, canonical, site_name, og_type="website")
     parts.append(_jsonld_script(itemlist_ld))
     parts.append(_jsonld_script(breadcrumb_ld))
+    if faqs:
+        parts.append(_jsonld_script(build_faq_ld(faqs)))
     return "\n    ".join(parts)
 
 
@@ -799,7 +903,7 @@ def build_home_head_extra(site_config: Dict[str, Any], site_url: str, site_name:
     desc = as_str(site_config.get("description"))
     org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": site_name, "url": site_url + "/"}
     website_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": site_name, "url": site_url + "/"}
-    parts = _og_meta(site_name, desc, site_url + "/", site_name, og_type="website")
+    parts = list(FAVICON_LINKS) + _og_meta(site_name, desc, site_url + "/", site_name, og_type="website")
     parts.append(_jsonld_script(org_ld))
     parts.append(_jsonld_script(website_ld))
     return "\n    ".join(parts)
@@ -890,17 +994,20 @@ def main():
         if not matched and niche_products:
             matched = niche_products
         product_list_html = build_category_product_list(matched)
-        html = render_category_page(category_template, name, description, product_list_html)
         reviewer = niche_to_reviewer.get(niche, {})
+        faqs = build_category_faqs(name, matched, reviewer.get("name", ""), reviewer.get("role", ""))
+        html = render_category_page(category_template, name, description, product_list_html)
         sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
         html = (html
+            .replace("{{TOP_PICK}}", build_top_pick_html(matched))
+            .replace("{{FAQ_SECTION}}", build_faq_section_html(faqs))
             .replace("{{SITE_NAME}}", escape(site_name))
             .replace("{{SITE_TAGLINE}}", escape(site_tagline))
             .replace("{{REVIEWER_NAME}}", escape(reviewer.get("name", "")))
             .replace("{{REVIEWER_ROLE}}", escape(reviewer.get("role", "")))
             .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", "")))
             .replace("{{SIDEBAR_LINKS}}", sidebar)
-            .replace("{{HEAD_EXTRA}}", build_category_head_extra(cat, matched, site_url, site_name)))
+            .replace("{{HEAD_EXTRA}}", build_category_head_extra(cat, matched, site_url, site_name, faqs)))
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
