@@ -375,24 +375,18 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
             all_cats_parts.append(f'<li><a href="{c_href}">{escape(c_name)}</a></li>')
         all_cats_parts.append('</ul>')
-    team_parts = []
-    team_parts.append('<div class="team-grid">')
-    seen_reviewers = set()
-    for niche in sorted(niche_to_reviewer.keys()):
-        r = niche_to_reviewer[niche]
-        rslug = r.get("slug", "")
-        if rslug in seen_reviewers:
-            continue
-        seen_reviewers.add(rslug)
-        rname = escape(r.get("name", ""))
-        rrole = escape(r.get("role", ""))
-        rbio = escape(r.get("bio", ""))
-        team_parts.append(f'<div class="team-card">')
-        team_parts.append(f'<div class="team-avatar">{escape(rname[:1])}</div>')
-        team_parts.append(f'<h3>{rname}</h3>')
-        team_parts.append(f'<p class="team-role">{rrole}</p>')
-        team_parts.append(f'<p class="team-bio">{rbio}</p>')
-        team_parts.append(f'</div>')
+    standards = [
+        ("Research-driven", "We compare specifications, expert consensus, and verified owner feedback to reach each recommendation."),
+        ("Independent", "We don't accept payment for placement, and we don't take free products in exchange for coverage. Rankings are earned on merit."),
+        ("Transparent", "We earn affiliate commissions when you buy through our links, at no extra cost to you. It never changes our picks."),
+        ("Kept current", "We update our guides and picks as products change and new models arrive."),
+    ]
+    team_parts = ['<div class="team-grid">']
+    for _t, _b in standards:
+        team_parts.append('<div class="team-card">')
+        team_parts.append(f'<h3>{escape(_t)}</h3>')
+        team_parts.append(f'<p class="team-bio">{escape(_b)}</p>')
+        team_parts.append('</div>')
     team_parts.append('</div>')
     return {
         "NICHE_SECTIONS": "\n".join(niche_sections),
