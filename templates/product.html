@@ -31,24 +31,38 @@
         </nav>
 
         <article class="product-review">
-            <header class="product-header">
-                {{COVER_TILE}}
-                <p class="product-brand-label">{{PRODUCT_BRAND}}</p>
-                <h1>{{PRODUCT_NAME}}</h1>
-                <p class="product-verdict">{{PRODUCT_VERDICT}}</p>
-                <div class="product-meta-bar">
-                    <span class="product-rating">&starf; {{PRODUCT_RATING}} / 5</span>
-                    <span class="product-price">${{PRODUCT_PRICE}}</span>
+            <div class="product-hero">
+                <div class="product-hero-media">
+                    {{COVER_TILE}}
+                    {{BADGE}}
                 </div>
-                <div class="product-cta-bar">
-                    <a class="cta" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon</a>
-                    <a class="secondary" href="{{PRIMARY_CATEGORY_URL}}">Compare All {{PRIMARY_CATEGORY_NAME}}</a>
+                <div class="product-hero-info">
+                    <p class="product-brand-label">{{PRODUCT_BRAND}}</p>
+                    <h1>{{PRODUCT_NAME}}</h1>
+                    <div class="product-rating-row">
+                        {{STARS}}
+                        <span class="product-rating-num">{{PRODUCT_RATING}} / 5</span>
+                    </div>
+                    <p class="product-verdict">{{PRODUCT_VERDICT}}</p>
+                    <div class="product-buybox">
+                        <div class="buybox-top">
+                            <div class="buybox-price">{{PRICE_DISPLAY}}</div>
+                            <a class="cta cta-lg" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon &rarr;</a>
+                        </div>
+                        <p class="buybox-disclosure">As an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Prices are accurate as of the review date &mdash; check Amazon for the current price.</p>
+                    </div>
+                    <p class="product-byline">Reviewed by <strong>{{REVIEWER_NAME}}</strong>, {{REVIEWER_ROLE}} &middot; Updated {{UPDATED}}</p>
                 </div>
-            </header>
+            </div>
 
             <section class="product-body">
                 <h2>Our Review</h2>
                 <div class="product-description">{{PRODUCT_DESCRIPTION}}</div>
+            </section>
+
+            <section class="product-ataglance">
+                <h2>At a Glance</h2>
+                {{KEY_SPECS_GRID}}
             </section>
 
             <section class="product-pros-cons">
@@ -61,7 +75,7 @@
             </section>
 
             <section class="product-specs">
-                <h2>Specifications</h2>
+                <h2>Full Specifications</h2>
                 {{SPECS_TABLE}}
             </section>
 
@@ -69,6 +83,14 @@
                 <h2>Best For</h2>
                 {{BEST_FOR}}
             </section>
+
+            <div class="product-cta-bottom">
+                <div class="cta-bottom-text">
+                    <strong>Ready to buy the {{PRODUCT_NAME}}?</strong>
+                    <span class="price-note-inline">{{PRICE_INLINE}}</span>
+                </div>
+                <a class="cta cta-lg" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon &rarr;</a>
+            </div>
 
             <div class="reviewer-byline">
                 <p>Reviewed by <strong>{{REVIEWER_NAME}}</strong>, {{REVIEWER_ROLE}}</p>
