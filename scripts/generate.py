@@ -484,6 +484,57 @@ def cover_tile_html(p: Dict[str, Any], large: bool = False) -> str:
             f'<span class="cover-mono">{initial}</span></div>')
 
 
+UPDATED_LABEL = date.today().strftime("%B %Y")
+
+
+def stars_html(rating: Any) -> str:
+    try:
+        rv = float(rating)
+    except (TypeError, ValueError):
+        return ""
+    pct = max(0.0, min(100.0, rv / 5.0 * 100.0))
+    stars = "\u2605\u2605\u2605\u2605\u2605"
+    return ('<span class="star-rating" role="img" aria-label="' + escape(str(rating))
+            + ' out of 5 stars"><span class="star-rating-base">' + stars + '</span>'
+            + '<span class="star-rating-fill" style="width:' + f"{pct:.0f}" + '%">' + stars
+            + '</span></span>')
+
+
+BADGE_CLASS = {"Editor's Choice": "badge-editor", "Best Value": "badge-value", "Premium Pick": "badge-premium"}
+
+
+def badge_html(badge: Any) -> str:
+    b = as_str(badge)
+    if not b:
+        return ""
+    return f'<span class="product-badge {BADGE_CLASS.get(b, "badge-generic")}">{escape(b)}</span>'
+
+
+def price_display_html(price: Any) -> str:
+    if price is None or as_str(price) == "":
+        return '<span class="price-note">See Amazon for price</span>'
+    return (f'<span class="price-amount">${escape(str(price))}</span>'
+            f'<span class="price-note">at time of review</span>')
+
+
+def price_inline_text(price: Any) -> str:
+    if price is None or as_str(price) == "":
+        return ""
+    return f'${escape(str(price))} at time of review'
+
+
+def key_specs_grid(specs: Any) -> str:
+    specs = require_dict(specs, "specs")
+    items = [(k, v) for k, v in specs.items() if as_str(v)]
+    if not items:
+        return '<p class="specs-empty">Full specifications below.</p>'
+    cells = []
+    for k, v in items[:6]:
+        label = escape(str(k).replace("_", " ").title())
+        cells.append(f'<div class="spec-cell"><span class="spec-label">{label}</span><span class="spec-value">{escape(str(v))}</span></div>')
+    return '<div class="spec-grid">' + "".join(cells) + "</div>"
+
+
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
@@ -530,7 +581,13 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{SITE_NAME}}", escape(site_name))
         .replace("{{SITE_TAGLINE}}", escape(site_tagline))
         .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra")))
-        .replace("{{COVER_TILE}}", as_str(p.get("cover_tile"))))
+        .replace("{{COVER_TILE}}", as_str(p.get("cover_tile")))
+        .replace("{{STARS}}", stars_html(p.get("rating")))
+        .replace("{{BADGE}}", badge_html(p.get("badge")))
+        .replace("{{KEY_SPECS_GRID}}", key_specs_grid(p.get("specs") or {}))
+        .replace("{{PRICE_DISPLAY}}", price_display_html(p.get("price_usd")))
+        .replace("{{PRICE_INLINE}}", price_inline_text(p.get("price_usd")))
+        .replace("{{UPDATED}}", UPDATED_LABEL))
 
 
 DEFAULT_PRODUCT_TEMPLATE = """<!doctype html>
@@ -584,8 +641,6 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
             meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
         if price is not None:
             meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
-        if rating is not None:
-            meta_parts.append(f"<strong>Rating:</strong> {escape(str(rating))}/5")
         meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
         spec_bits = []
         for sk, sv in specs.items():
@@ -600,6 +655,8 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         card = f'<div class="product-card">'
         card += cover_tile_html(p)
         card += f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
+        if rating is not None:
+            card += f'<div class="card-rating">{stars_html(rating)}<span class="card-rating-num">{escape(str(rating))}/5</span></div>' 
         if verdict:
             card += f'<p class="card-verdict"><em>{escape(verdict)}</em></p>'
         if meta_html:
@@ -647,8 +704,6 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
         meta.append(f"<strong>Brand:</strong> {escape(brand)}")
     if price is not None:
         meta.append(f"<strong>Price:</strong> ${escape(str(price))}")
-    if rating is not None:
-        meta.append(f"<strong>Rating:</strong> {escape(str(rating))}/5")
     meta_html = " &nbsp;\u2022&nbsp; ".join(meta)
     parts = ['<aside class="top-pick" aria-label="Top pick">']
     parts.append('<div class="top-pick-badge">\u2605 Our Top Pick</div>')
@@ -656,6 +711,8 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
     parts.append(cover_tile_html(p))
     parts.append('<div class="top-pick-info">')
     parts.append(f'<h2 class="top-pick-name"><a href="{detail_href}">{escape(name)}</a></h2>')
+    if rating is not None:
+        parts.append(f'<div class="top-pick-rating">{stars_html(rating)}<span class="card-rating-num">{escape(str(rating))}/5</span></div>')
     if verdict:
         parts.append(f'<p class="top-pick-verdict">{escape(verdict)}</p>')
     if meta_html:
@@ -941,6 +998,19 @@ def main():
         if niche not in products_by_niche:
             products_by_niche[niche] = []
         products_by_niche[niche].append(p)
+
+    for _niche, _plist in products_by_niche.items():
+        _top = _best_pick(_plist)
+        for _p in _plist:
+            _bf = _p.get("best_for") or []
+            if _top is not None and _p is _top:
+                _p["badge"] = "Editor's Choice"
+            elif "budget" in _bf:
+                _p["badge"] = "Best Value"
+            elif "premium" in _bf:
+                _p["badge"] = "Premium Pick"
+            else:
+                _p["badge"] = ""
 
     auto_cats = auto_generate_categories(products_by_niche)
     manual_cats = load_manual_categories()
