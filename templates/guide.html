@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{CATEGORY_NAME}} | {{SITE_NAME}}</title>
-    <meta name="description" content="{{CATEGORY_DESCRIPTION}}" />
+    <title>{{GUIDE_TITLE}} | {{SITE_NAME}}</title>
+    <meta name="description" content="{{GUIDE_DESCRIPTION}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
 {{HEAD_EXTRA}}
 </head>
@@ -21,37 +21,23 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container guide-page">
         <nav class="breadcrumb">
-            <a href="/">Home</a> <span class="breadcrumb-sep">&rsaquo;</span> <span>{{CATEGORY_NAME}}</span>
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <a href="/generated/guides/">Buying Guides</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span>{{GUIDE_TITLE}}</span>
         </nav>
 
-        <section class="category-hero">
-            <h1>{{CATEGORY_NAME}}</h1>
-            <p class="category-description">{{CATEGORY_DESCRIPTION}}</p>
-            <div class="category-reviewer">
-                <p>Reviewed by <strong>{{REVIEWER_NAME}}</strong>, {{REVIEWER_ROLE}}</p>
-            </div>
-            {{GUIDE_LINK}}
-            <p class="affiliate-note">Some links on this page are affiliate links. <strong>As an Amazon Associate we earn from qualifying purchases</strong>, at no extra cost to you. Prices are accurate as of the review date &mdash; check Amazon for current pricing.</p>
-        </section>
-
-        {{TOP_PICK}}
-
-        <section class="product-list">
-            {{PRODUCT_LIST}}
-        </section>
-
-        {{FAQ_SECTION}}
-
-        <hr class="section-divider" />
-
-        <aside class="category-sidebar">
-            <h2>Related Categories</h2>
-            <ul class="sidebar-list">
-                {{SIDEBAR_LINKS}}
-            </ul>
-        </aside>
+        <article class="guide-article">
+            <h1>{{GUIDE_TITLE}}</h1>
+            <p class="guide-byline">By the {{SITE_NAME}} editorial team &middot; Updated {{UPDATED}}</p>
+            <p class="guide-intro">{{GUIDE_INTRO}}</p>
+            {{GUIDE_BODY}}
+            {{RELATED_CTA}}
+            {{FAQ_SECTION}}
+        </article>
     </main>
 
     <footer class="site-footer">
@@ -60,6 +46,7 @@
             <p class="footer-tagline">{{SITE_TAGLINE}}</p>
             <nav class="footer-links">
                 <a href="/">Home</a>
+                <a href="/generated/guides/">Buying Guides</a>
                 <a href="/about/">About Us</a>
                 <a href="/editorial-policy/">Editorial Policy</a>
                 <a href="/contact">Contact</a>
