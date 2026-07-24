@@ -3,7 +3,7 @@
   "networks": {
     "amazon": {
       "base_url": "https://www.amazon.com/dp/",
-      "tag": "yourtag-20",
+      "tag": "halcottmag-20",
       "url_pattern": "{base_url}{product_id}?tag={tag}&linkCode=ll1&ref_=nosim"
     },
     "impact": {
