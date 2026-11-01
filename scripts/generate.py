@@ -1136,7 +1136,7 @@ def main():
             matched = niche_products
         product_list_html = build_category_product_list(matched)
         reviewer = niche_to_reviewer.get(niche, {})
-        faqs = build_category_faqs(name, matched, reviewer.get("name", ""), reviewer.get("role", ""))
+        faqs = build_category_faqs(slug_to_display(niche), matched, reviewer.get("name", ""), reviewer.get("role", ""))
         html = render_category_page(category_template, name, description, product_list_html)
         sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
         _g = guide_by_niche.get(niche)
