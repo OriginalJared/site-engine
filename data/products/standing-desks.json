@@ -47,53 +47,6 @@
     "date_updated": "2026-04-22"
   },
   {
-    "slug": "uplift-v2-commercial",
-    "name": "UPLIFT V2 Commercial Standing Desk",
-    "brand": "UPLIFT Desk",
-    "category": "standing-desks",
-    "price_usd": 699,
-    "rating": 4.8,
-    "verdict": "The gold standard for commercial-grade sit-stand desks — built to last a decade in busy offices and home setups alike.",
-    "description": "The UPLIFT V2 Commercial is a workhorse built for people who demand the best. It pairs a 60-inch desktop with a dual-motor frame rated for 355 lbs, meaning even the heaviest multi-monitor battlestation won't faze it. The height range spans 22.6 to 48.7 inches, and the advanced keypad lets you save four presets for quick transitions. UPLIFT backs it with a 7-year warranty and one of the best customer-service reputations in the industry. If your budget allows it, this is the desk you keep for years.",
-    "features": [
-      "Commercial-grade steel frame rated to 355 lbs",
-      "Advanced keypad with 4 memory presets and anti-collision",
-      "60\" x 30\" desktop — room for dual ultrawide monitors",
-      "Wire grommets and cable channel included",
-      "BIFMA-certified for commercial use"
-    ],
-    "pros": [
-      "Outstanding build quality and stability",
-      "7-year warranty — one of the longest in the category",
-      "Wide range of desktop material and size options",
-      "BIFMA commercial certification"
-    ],
-    "cons": [
-      "Premium price point",
-      "Heavy — two-person assembly recommended",
-      "Some configurations ship with long lead times"
-    ],
-    "network_ids": {
-      "amazon": "B07T2N6G4Z"
-    },
-    "image_url": "",
-    "best_for": [
-      "best-overall",
-      "premium"
-    ],
-    "specs": {
-      "height_min_in": 22.6,
-      "height_max_in": 48.7,
-      "weight_capacity_lbs": 355,
-      "desktop_width_in": 60,
-      "desktop_depth_in": 30,
-      "motors": 2,
-      "warranty_years": 7
-    },
-    "date_added": "2026-04-21",
-    "date_updated": "2026-04-22"
-  },
-  {
     "slug": "fully-jarvis-bamboo",
     "name": "Fully Jarvis Bamboo Standing Desk",
     "brand": "Fully",
