@@ -348,5 +348,103 @@
     },
     "date_added": "2026-04-22",
     "date_updated": "2026-11-06"
+  },
+  {
+    "slug": "sihoo-m57",
+    "name": "SIHOO M57 Ergonomic Office Chair",
+    "brand": "SIHOO",
+    "category": "office-chairs",
+    "price_usd": 190,
+    "rating": 4.3,
+    "verdict": "The best office chair under $250 — adjustable lumbar, headrest, and 3D armrests on a breathable mesh back.",
+    "description": "The SIHOO M57 is the chair you buy when you need real ergonomic features but can't justify $400+. Adjustable lumbar support, an adjustable headrest, 3D armrests, and a breathable mesh back make it feel like a chair twice its price. The 330 lb weight capacity handles larger users, and the high-back design follows the natural curve of your spine. It's one of the most-reviewed budget ergonomic chairs on Amazon with thousands of positive ratings. It won't last 12 years like a Herman Miller, but for the price it's a legitimate ergonomic chair.",
+    "features": [
+      "Adjustable lumbar support",
+      "Adjustable headrest",
+      "3D adjustable armrests",
+      "Breathable high-back mesh",
+      "330 lb weight capacity"
+    ],
+    "pros": [
+      "Strong ergonomic features under $250",
+      "330 lb capacity suits larger users",
+      "Breathable mesh keeps you cool all day",
+      "Thousands of positive reviews"
+    ],
+    "cons": [
+      "Build quality won't match premium chairs long-term",
+      "Armrest padding is thin",
+      "Seat can feel firm at first",
+      "Shorter warranty than premium competitors"
+    ],
+    "network_ids": {
+      "amazon": "B07GN4H96T"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "home-office"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 330,
+      "seat_height_min_in": 17.3,
+      "seat_height_max_in": 21.3,
+      "lumbar_support": "Adjustable",
+      "material": "Breathable mesh",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Tilt lock",
+      "warranty_years": 3
+    },
+    "date_added": "2026-11-06",
+    "date_updated": "2026-11-06"
+  },
+  {
+    "slug": "nouhaus-ergo3d",
+    "name": "Nouhaus Ergo3D Ergonomic Office Chair",
+    "brand": "Nouhaus",
+    "category": "office-chairs",
+    "price_usd": 280,
+    "rating": 4.3,
+    "verdict": "A popular mid-range mesh chair — 4D armrests, adjustable headrest, and a sleek high-back design under $300.",
+    "description": "The Nouhaus Ergo3D is one of the most popular mid-range ergonomic chairs on Amazon, with thousands of reviews. You get 4D adjustable armrests, a dynamic lumbar system, an adjustable headrest, and a breathable ElastoMesh back that keeps airflow moving during long sessions. The blade wheels roll smoothly on hard floors without a mat. It sits comfortably between the sub-$200 budget options and the $400+ premium chairs, offering genuine adjustability and a clean, modern look for a home office.",
+    "features": [
+      "4D adjustable armrests",
+      "Dynamic lumbar support system",
+      "Adjustable headrest",
+      "Breathable ElastoMesh back",
+      "Blade wheels — smooth on hard floors"
+    ],
+    "pros": [
+      "4D armrests are rare at this price",
+      "Breathable mesh back stays cool",
+      "Thousands of positive reviews",
+      "Blade wheels work mat-free on hard floors"
+    ],
+    "cons": [
+      "Seat padding is on the firm side",
+      "Assembly takes some time",
+      "Headrest angle range is limited",
+      "275 lb capacity is mid-range"
+    ],
+    "network_ids": {
+      "amazon": "B07L4ZQMDX"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget-premium",
+      "home-office"
+    ],
+    "specs": {
+      "weight_capacity_lbs": 275,
+      "seat_height_min_in": 17,
+      "seat_height_max_in": 20.5,
+      "lumbar_support": "Dynamic adjustable",
+      "material": "ElastoMesh",
+      "adjustable_arms": true,
+      "tilt_mechanism": "Tilt with lock",
+      "warranty_years": 2
+    },
+    "date_added": "2026-11-06",
+    "date_updated": "2026-11-06"
   }
 ]
