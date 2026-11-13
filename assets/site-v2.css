@@ -110,6 +110,83 @@
 .aside-trust { background: #faf6ec; border-color: #ead9ad; }
 .aside-trust p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin: 0; }
 
+/* ===== Bigger, bolder site logo ===== */
+.site-header { padding-top: 26px; padding-bottom: 18px; }
+.site-logo {
+  font-size: 2.9rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.05;
+  display: inline-block;
+}
+
+/* ===== Header "Contents" dropdown (category + guide pages) ===== */
+html { scroll-behavior: smooth; }
+.top-pick[id], .product-card[id], .guide-section[id], .faq-section[id] { scroll-margin-top: 24px; }
+
+.nav-contents {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 14px;
+  padding-bottom: 8px;   /* bridges the hover gap to the menu */
+  text-align: left;
+}
+.nav-contents-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-contents-btn:hover { color: var(--color-text); }
+.nav-caret { font-size: 0.7em; transition: transform 0.18s; }
+.nav-contents:hover .nav-caret,
+.nav-contents:focus-within .nav-caret { transform: rotate(180deg); }
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 250px;
+  max-width: 340px;
+  max-height: 64vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+  z-index: 60;
+  text-align: left;
+}
+.nav-contents:hover .nav-dropdown,
+.nav-contents:focus-within .nav-dropdown { display: block; }
+.nav-dropdown li { margin: 0; padding: 0; }
+.nav-dropdown a {
+  display: block;
+  margin: 0;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-dropdown a:hover { background: #faf6ec; color: var(--color-accent); }
+
 /* ===== Responsive ===== */
 @media (max-width: 1000px) {
   .cat-layout { grid-template-columns: 1fr; gap: 28px; }
@@ -121,4 +198,6 @@
   .home-hero h1 { font-size: 1.9rem; }
   .guide-hero h1 { font-size: 1.7rem; }
   .cat-products .product-list { grid-template-columns: 1fr; }
+  .site-logo { font-size: 2.1rem; }
+  .nav-dropdown { left: 0; transform: none; }
 }
