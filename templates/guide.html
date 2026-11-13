@@ -6,6 +6,7 @@
     <title>{{GUIDE_TITLE}} | {{SITE_NAME}}</title>
     <meta name="description" content="{{GUIDE_DESCRIPTION}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/site-v2.css" />
 {{HEAD_EXTRA}}
 </head>
 <body>
@@ -21,18 +22,22 @@
         </div>
     </header>
 
-    <main class="container guide-page">
-        <nav class="breadcrumb">
-            <a href="/">Home</a>
-            <span class="breadcrumb-sep">&rsaquo;</span>
-            <a href="/generated/guides/">Buying Guides</a>
-            <span class="breadcrumb-sep">&rsaquo;</span>
-            <span>{{GUIDE_TITLE}}</span>
-        </nav>
-
-        <article class="guide-article">
+    <section class="hero-band guide-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-sep">&rsaquo;</span>
+                <a href="/generated/guides/">Buying Guides</a>
+                <span class="breadcrumb-sep">&rsaquo;</span>
+                <span>{{GUIDE_TITLE}}</span>
+            </nav>
             <h1>{{GUIDE_TITLE}}</h1>
             <p class="guide-byline">By the {{SITE_NAME}} editorial team &middot; Updated {{UPDATED}}</p>
+        </div>
+    </section>
+
+    <main class="container guide-page guide-main">
+        <article class="guide-article">
             <p class="guide-intro">{{GUIDE_INTRO}}</p>
             {{GUIDE_BODY}}
             {{RELATED_CTA}}
