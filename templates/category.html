@@ -6,6 +6,7 @@
     <title>{{CATEGORY_NAME}} | {{SITE_NAME}}</title>
     <meta name="description" content="{{CATEGORY_DESCRIPTION}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/category-v2.css" />
 {{HEAD_EXTRA}}
 </head>
 <body>
@@ -21,37 +22,47 @@
         </div>
     </header>
 
-    <main class="container">
-        <nav class="breadcrumb">
-            <a href="/">Home</a> <span class="breadcrumb-sep">&rsaquo;</span> <span>{{CATEGORY_NAME}}</span>
-        </nav>
-
-        <section class="category-hero">
+    <section class="cat-hero-band">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">Home</a> <span class="breadcrumb-sep">&rsaquo;</span> <span>{{CATEGORY_NAME}}</span>
+            </nav>
             <h1>{{CATEGORY_NAME}}</h1>
             <p class="category-description">{{CATEGORY_DESCRIPTION}}</p>
             <div class="category-reviewer">
                 <p>By the <strong>{{SITE_NAME}}</strong> editorial team</p>
             </div>
             {{GUIDE_LINK}}
-            <p class="affiliate-note">Some links on this page are affiliate links. <strong>As an Amazon Associate we earn from qualifying purchases</strong>, at no extra cost to you. Prices are accurate as of the review date &mdash; check Amazon for current pricing.</p>
-        </section>
+        </div>
+    </section>
+
+    <main class="container cat-main">
+        <p class="affiliate-note">Some links on this page are affiliate links. <strong>As an Amazon Associate we earn from qualifying purchases</strong>, at no extra cost to you. Prices are accurate as of the review date &mdash; check Amazon for current pricing.</p>
 
         {{TOP_PICK}}
 
-        <section class="product-list">
-            {{PRODUCT_LIST}}
-        </section>
+        <div class="cat-layout">
+            <div class="cat-products">
+                <h2 class="cat-products-head">All picks, compared</h2>
+                <section class="product-list">
+                    {{PRODUCT_LIST}}
+                </section>
+                {{FAQ_SECTION}}
+            </div>
 
-        {{FAQ_SECTION}}
-
-        <hr class="section-divider" />
-
-        <aside class="category-sidebar">
-            <h2>Related Categories</h2>
-            <ul class="sidebar-list">
-                {{SIDEBAR_LINKS}}
-            </ul>
-        </aside>
+            <aside class="cat-aside">
+                <div class="aside-box aside-trust">
+                    <h2>How we choose</h2>
+                    <p>Our editors compare every product on real-world performance, specs, build quality, and value &mdash; then name a single top pick. We only feature items you can actually buy, and our picks are never influenced by commissions.</p>
+                </div>
+                <div class="aside-box">
+                    <h2>Related Categories</h2>
+                    <ul class="sidebar-list">
+                        {{SIDEBAR_LINKS}}
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer class="site-footer">
