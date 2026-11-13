@@ -648,7 +648,7 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         aff_href = safe_url(affiliate_url)
         detail_href = escape(f"/generated/products/{slug}/", quote=True)
         name_href = escape(f"/generated/products/{slug}/", quote=True)
-        card = f'<div class="product-card">'
+        card = f'<div class="product-card" id="p-{escape(slug, quote=True)}">'
         card += cover_tile_html(p)
         card += f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
         if rating is not None:
@@ -701,7 +701,7 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
     if price is not None:
         meta.append(f"<strong>Price:</strong> ${escape(str(price))}")
     meta_html = " &nbsp;\u2022&nbsp; ".join(meta)
-    parts = ['<aside class="top-pick" aria-label="Top pick">']
+    parts = ['<aside class="top-pick" id="top-pick" aria-label="Top pick">']
     parts.append('<div class="top-pick-badge">\u2605 Our Top Pick</div>')
     parts.append('<div class="top-pick-body">')
     parts.append(cover_tile_html(p))
@@ -748,7 +748,7 @@ def build_category_faqs(name: str, matched: List[Dict[str, Any]], reviewer_name:
 def build_faq_section_html(faqs: List[tuple]) -> str:
     if not faqs:
         return ""
-    parts = ['<section class="faq-section" aria-label="Frequently asked questions">']
+    parts = ['<section class="faq-section" id="faq" aria-label="Frequently asked questions">']
     parts.append("<h2>Frequently Asked Questions</h2>")
     for q, a in faqs:
         parts.append('<div class="faq-item">')
@@ -790,16 +790,65 @@ def load_guides() -> List[Dict[str, Any]]:
     return out
 
 
+def guide_section_anchor(heading: str, idx: int) -> str:
+    base = normalize_slug(heading) or f"section-{idx + 1}"
+    return f"s-{base}"
+
+
 def guide_body_html(sections: Any) -> str:
     parts = []
-    for s in (sections or []):
+    for i, s in enumerate(sections or []):
         if not isinstance(s, dict):
             continue
         h = as_str(s.get("heading"))
         b = as_str(s.get("body"))
         paras = "".join(f"<p>{escape(p.strip())}</p>" for p in b.split("\n\n") if p.strip())
-        parts.append(f'<section class="guide-section"><h2>{escape(h)}</h2>{paras}</section>')
+        anchor = guide_section_anchor(h, i)
+        parts.append(f'<section class="guide-section" id="{escape(anchor, quote=True)}"><h2>{escape(h)}</h2>{paras}</section>')
     return "".join(parts)
+
+
+def build_toc_nav(items: List[tuple]) -> str:
+    """Render a 'Contents' dropdown for the header nav. items = [(anchor, label), ...]."""
+    if not items:
+        return ""
+    lis = "".join(
+        f'<li><a href="#{escape(anchor, quote=True)}">{escape(label)}</a></li>'
+        for anchor, label in items
+    )
+    return ('<div class="nav-contents">'
+            '<button type="button" class="nav-contents-btn" aria-haspopup="true" aria-label="Jump to a section on this page">'
+            'Contents <span class="nav-caret" aria-hidden="true">&#9662;</span></button>'
+            f'<ul class="nav-dropdown">{lis}</ul></div>')
+
+
+def build_guide_toc_items(guide: Dict[str, Any], has_faq: bool) -> List[tuple]:
+    items: List[tuple] = []
+    for i, s in enumerate(guide.get("sections") or []):
+        if not isinstance(s, dict):
+            continue
+        h = as_str(s.get("heading"))
+        if not h:
+            continue
+        items.append((guide_section_anchor(h, i), h))
+    if has_faq:
+        items.append(("faq", "Frequently Asked Questions"))
+    return items
+
+
+def build_category_toc_items(matched: List[Dict[str, Any]], has_faq: bool) -> List[tuple]:
+    items: List[tuple] = []
+    if _best_pick(matched):
+        items.append(("top-pick", "★ Our Top Pick"))
+    for p in matched:
+        pslug = as_str(p.get("slug"))
+        if not pslug:
+            continue
+        pname = as_str(p.get("name")) or pslug
+        items.append((f"p-{pslug}", pname))
+    if has_faq:
+        items.append(("faq", "Frequently Asked Questions"))
+    return items
 
 
 def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str, faqs=None) -> str:
@@ -823,9 +872,11 @@ def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str,
 
 
 def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
-                      related_cta: str, faq_html: str, head_extra: str, body_override=None) -> str:
+                      related_cta: str, faq_html: str, head_extra: str, body_override=None,
+                      toc_nav: str = "") -> str:
     body = body_override if body_override is not None else guide_body_html(guide.get("sections"))
     return (template
+        .replace("{{TOC_NAV}}", toc_nav)
         .replace("{{GUIDE_TITLE}}", escape(as_str(guide.get("title"))))
         .replace("{{GUIDE_DESCRIPTION}}", escape(as_str(guide.get("description"))))
         .replace("{{GUIDE_INTRO}}", escape(as_str(guide.get("intro"))))
@@ -1143,7 +1194,9 @@ def main():
         guide_link = ""
         if _g:
             guide_link = f'<p class="category-guide-link"><a href="{GUIDE_URL_BASE}/{_g["slug"]}/">Read our {escape(slug_to_display(niche))} buying guide &rarr;</a></p>'
+        toc_nav = build_toc_nav(build_category_toc_items(matched, bool(faqs)))
         html = (html
+            .replace("{{TOC_NAV}}", toc_nav)
             .replace("{{GUIDE_LINK}}", guide_link)
             .replace("{{TOP_PICK}}", build_top_pick_html(matched))
             .replace("{{FAQ_SECTION}}", build_faq_section_html(faqs))
@@ -1187,7 +1240,8 @@ def main():
             faqs = g.get("faqs") or []
             faq_html = build_faq_section_html([(q, a) for q, a in faqs])
             head_extra = build_guide_head_extra(g, site_url, site_name, faqs)
-            html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra)
+            toc_nav = build_toc_nav(build_guide_toc_items(g, bool(faqs)))
+            html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra, toc_nav=toc_nav)
             write_text(GENERATED_DIR / "guides" / gslug / "index.html", html)
             guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/{gslug}/")
         items = []
