@@ -111,12 +111,12 @@
 .aside-trust p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin: 0; }
 
 /* ===== Bigger, bolder site logo ===== */
-.site-header { padding-top: 26px; padding-bottom: 18px; }
+.site-header { padding-top: 30px; padding-bottom: 20px; }
 .site-logo {
-  font-size: 2.9rem;
+  font-size: 4rem !important;
   font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 1.05;
+  letter-spacing: -1.5px;
+  line-height: 1.02;
   display: inline-block;
 }
 
@@ -198,6 +198,6 @@ html { scroll-behavior: smooth; }
   .home-hero h1 { font-size: 1.9rem; }
   .guide-hero h1 { font-size: 1.7rem; }
   .cat-products .product-list { grid-template-columns: 1fr; }
-  .site-logo { font-size: 2.1rem; }
-  .nav-dropdown { left: 0; transform: none; }
+  .site-logo { font-size: 2.6rem !important; }
+  .nav-dropdown { left: auto; right: 0; transform: none; }
 }
