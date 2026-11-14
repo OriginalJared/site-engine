@@ -78,7 +78,7 @@
       "Water tank is small (64oz)"
     ],
     "network_ids": {
-      "amazon": "B0B1GV2BZK"
+      "amazon": "B07JVD78TT"
     },
     "image_url": "",
     "best_for": [
@@ -97,7 +97,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "casabrews-cm5418",
@@ -128,7 +128,7 @@
       "Steam wand takes practice to master"
     ],
     "network_ids": {
-      "amazon": "B0BTKX6233"
+      "amazon": "B0BQ6PPQGZ"
     },
     "image_url": "",
     "best_for": [
@@ -146,7 +146,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "delonghi-rivelia",
@@ -177,7 +177,7 @@
       "Less control than manual machines"
     ],
     "network_ids": {
-      "amazon": "B0CZ9HN3S6"
+      "amazon": "B0F1GMCQPB"
     },
     "image_url": "",
     "best_for": [
@@ -196,7 +196,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "nespresso-essenza-mini",
@@ -277,7 +277,7 @@
       "Auto-tamp mechanism adds a failure point"
     ],
     "network_ids": {
-      "amazon": "B0CS1MVBDP"
+      "amazon": "B0BBYNPV33"
     },
     "image_url": "",
     "best_for": [
@@ -296,7 +296,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "delonghi-stilosa",
@@ -327,7 +327,7 @@
       "Plastic construction"
     ],
     "network_ids": {
-      "amazon": "B07WL98F2T"
+      "amazon": "B08C96BG9H"
     },
     "image_url": "",
     "best_for": [
@@ -345,7 +345,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "breville-oracle-jet",
@@ -376,7 +376,7 @@
       "Maintenance requirements are significant"
     ],
     "network_ids": {
-      "amazon": "B0DCVJ37B5"
+      "amazon": "B0HNR6CS7W"
     },
     "image_url": "",
     "best_for": [
@@ -395,7 +395,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "philips-5500-lattego",
@@ -426,7 +426,7 @@
       "Fewer customization options than Rivelia"
     ],
     "network_ids": {
-      "amazon": "B0DCQQ3NVS"
+      "amazon": "B0DBHTL3CN"
     },
     "image_url": "",
     "best_for": [
@@ -445,7 +445,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   },
   {
     "slug": "ninja-luxe-cafe",
@@ -476,7 +476,7 @@
       "Cold brew takes 12+ hours"
     ],
     "network_ids": {
-      "amazon": "B0D9J3K5LT"
+      "amazon": "B0F452YBW1"
     },
     "image_url": "",
     "best_for": [
@@ -495,6 +495,6 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-14"
   }
 ]
