@@ -7,8 +7,8 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 749,
       "rating": 4.7,
-      "verdict": "The smartest vacuum ever made \u2014 a laser reveals hidden dust and a sensor counts particles in real time.",
-      "description": "The Dyson V15 Detect is the pinnacle of cordless vacuum engineering. A green laser in the fluffy cleaner head illuminates microscopic dust you'd never see, while a piezo sensor counts and categorizes particles in real time \u2014 showing exactly how dirty your floor was and when it's truly clean. 240 AW of suction, up to 60 minutes of runtime, and automatic suction adjustment based on dust detection make it the most intelligent vacuum available.",
+      "verdict": "The smartest vacuum ever made — a laser reveals hidden dust and a sensor counts particles in real time.",
+      "description": "The Dyson V15 Detect is the pinnacle of cordless vacuum engineering. A green laser in the fluffy cleaner head illuminates microscopic dust you'd never see, while a piezo sensor counts and categorizes particles in real time — showing exactly how dirty your floor was and when it's truly clean. 240 AW of suction, up to 60 minutes of runtime, and automatic suction adjustment based on dust detection make it the most intelligent vacuum available.",
       "features": [
         "Green laser dust reveal",
         "Piezo sensor particle counting",
@@ -27,10 +27,10 @@
         "$749 is extremely expensive",
         "Heavy at 6.8 lbs for extended use",
         "Battery is not swappable",
-        "Bin capacity is small \u2014 frequent emptying"
+        "Bin capacity is small — frequent emptying"
       ],
       "network_ids": {
-        "amazon": "B0B2DC2X3T"
+        "amazon": "B0GXX8KQY7"
       },
       "image_url": "",
       "best_for": [
@@ -47,7 +47,7 @@
         "Special Feature": "Laser + particle counter"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "samsung-bespoke-jet-ai",
@@ -56,21 +56,21 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 899,
       "rating": 4.6,
-      "verdict": "The most complete package \u2014 powerful suction, auto-empty station, and AI-powered cleaning intelligence.",
-      "description": "The Samsung Bespoke Jet AI is the all-in-one cordless vacuum system. It pairs 280W of suction with an included Clean Station that auto-empties the dustbin, so you go weeks without touching dirt. AI-powered sensors detect floor type and adjust suction automatically, and the digital display shows battery, suction level, and filter status. Two batteries are included for up to 2 hours of total runtime. It's the closest thing to a self-managing vacuum.",
+      "verdict": "The most complete package — powerful suction, auto-empty station, and AI-powered cleaning intelligence.",
+      "description": "The Samsung Bespoke Jet AI is the all-in-one cordless vacuum system. It pairs 280AW of suction with an included Clean Station that auto-empties the dustbin, so you go weeks without touching dirt. AI-powered sensors detect floor type and adjust suction automatically, and the digital display shows battery, suction level, and filter status. The long-lasting battery delivers extended runtime. It's the closest thing to a self-managing vacuum.",
       "features": [
-        "280W suction power",
+        "280AW suction power",
         "Auto-empty Clean Station included",
         "AI floor detection and auto-adjustment",
-        "2 batteries included (120 min total)",
+        "Long-lasting removable battery",
         "Digital display dashboard",
         "5-layer HEPA filtration"
       ],
       "pros": [
         "Auto-empty station is a game-changer",
-        "Two batteries double the runtime",
         "AI floor detection works reliably",
-        "Strongest suction in its class"
+        "Strongest suction in its class",
+        "Lightweight, balanced design"
       ],
       "cons": [
         "$899 is the most expensive option",
@@ -79,7 +79,7 @@
         "Replacement bags add ongoing cost"
       ],
       "network_ids": {
-        "amazon": "B0CZ36BRYM"
+        "amazon": "B0CKJCJCDM"
       },
       "image_url": "",
       "best_for": [
@@ -87,15 +87,15 @@
         "auto-empty"
       ],
       "specs": {
-        "Suction": "280W",
-        "Runtime": "Up to 120 min (2 batteries)",
+        "Suction": "280AW",
+        "Runtime": "Up to 100 min",
         "Weight": "6.5 lbs",
         "Bin Capacity": "0.18 gal",
         "Filtration": "5-layer HEPA",
         "Special Feature": "Auto-empty Clean Station"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "tineco-floor-one-s5",
@@ -104,8 +104,8 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 299,
       "rating": 4.5,
-      "verdict": "The best wet-dry vacuum \u2014 vacuums and mops simultaneously for sparkling hard floors.",
-      "description": "The Tineco Floor One S5 isn't just a vacuum \u2014 it's a wet-dry floor washer that vacuums and mops in a single pass. iLoop smart sensors detect dirty spots and automatically boost suction and water flow, while the self-cleaning cycle cleans the brush roller and tubes after each use. It's purpose-built for hard floors (tile, hardwood, laminate) and delivers results that a regular vacuum plus a separate mop can't match.",
+      "verdict": "The best wet-dry vacuum — vacuums and mops simultaneously for sparkling hard floors.",
+      "description": "The Tineco Floor One S5 isn't just a vacuum — it's a wet-dry floor washer that vacuums and mops in a single pass. iLoop smart sensors detect dirty spots and automatically boost suction and water flow, while the self-cleaning cycle cleans the brush roller and tubes after each use. It's purpose-built for hard floors (tile, hardwood, laminate) and delivers results that a regular vacuum plus a separate mop can't match.",
       "features": [
         "Wet and dry cleaning simultaneously",
         "iLoop smart dirt sensor",
@@ -115,19 +115,19 @@
         "Up to 35 min runtime"
       ],
       "pros": [
-        "Vacuums and mops in one pass \u2014 huge time saver",
+        "Vacuums and mops in one pass — huge time saver",
         "iLoop sensor auto-boosts on dirty spots",
         "Self-cleaning keeps the machine fresh",
         "Excellent on hard floors"
       ],
       "cons": [
-        "Not for carpet \u2014 hard floors only",
+        "Not for carpet — hard floors only",
         "35-minute runtime is short",
         "Heavy at 10.3 lbs when filled with water",
         "Replacement brush rollers are an ongoing cost"
       ],
       "network_ids": {
-        "amazon": "B09FXH41LX"
+        "amazon": "B09P2RKRWX"
       },
       "image_url": "",
       "best_for": [
@@ -143,7 +143,7 @@
         "Special Feature": "Self-cleaning cycle"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "shark-stratos-cordless",
@@ -152,7 +152,7 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 399,
       "rating": 4.6,
-      "verdict": "The best anti-odor vacuum \u2014 Clean Sense IQ and anti-odor technology keep your vacuum and home fresh.",
+      "verdict": "The best anti-odor vacuum — Clean Sense IQ and anti-odor technology keep your vacuum and home fresh.",
       "description": "The Shark Stratos Cordless introduces odor-neutralizing technology that other vacuums ignore. Its anti-odor cartridge actively neutralizes odors trapped in the vacuum, while Clean Sense IQ automatically detects hidden debris and boosts suction. DuoClean PowerFins combines a soft roller and bristle brush for both hard floors and carpet, and up to 60 minutes of runtime handles large homes. It's the vacuum for pet owners and anyone tired of smelly dustbins.",
       "features": [
         "Anti-odor technology cartridge",
@@ -175,7 +175,7 @@
         "Bin is small for a full-home clean"
       ],
       "network_ids": {
-        "amazon": "B0BTQPKFG3"
+        "amazon": "B0B5JMNGNQ"
       },
       "image_url": "",
       "best_for": [
@@ -191,7 +191,7 @@
         "Special Feature": "Anti-odor + Clean Sense IQ"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "lg-cordzero-a9",
@@ -200,30 +200,30 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 599,
       "rating": 4.5,
-      "verdict": "The most hygienic vacuum \u2014 Kompressor technology compresses dust for 2.4x more bin capacity.",
-      "description": "The LG CordZero A9 Kompressor solves the small-bin problem that plagues cordless vacuums. Its unique Kompressor technology physically compresses dust and debris inside the bin, fitting 2.4x more before you need to empty it. Two swappable batteries deliver up to 120 minutes of total runtime, and the Aqua Spinner mop attachment adds wet cleaning capability. Power Drive Nozzle automatically adjusts suction for carpet and hard floors.",
+      "verdict": "The most hygienic vacuum — Kompressor technology compresses dust for 2.4x more bin capacity.",
+      "description": "The LG CordZero A9 Kompressor solves the small-bin problem that plagues cordless vacuums. Its unique Kompressor technology physically compresses dust and debris inside the bin, fitting 2.4x more before you need to empty it. Two swappable batteries deliver up to 120 minutes of total runtime, and the Power Drive Nozzle automatically adjusts suction for carpet and hard floors. A 10-year motor warranty backs the whole system.",
       "features": [
         "Kompressor dust compression (2.4x capacity)",
         "2 swappable batteries (120 min total)",
         "Power Drive auto-adjusting nozzle",
-        "Aqua Spinner mop attachment",
+        "10-year motor warranty",
         "HEPA filtration",
         "Charging stand with tool storage"
       ],
       "pros": [
         "Kompressor means far fewer bin empties",
         "Two batteries give outstanding runtime",
-        "Mop attachment adds versatility",
-        "Lightweight at 5.5 lbs"
+        "High-capacity dust bin for a stick vac",
+        "Lightweight and well balanced"
       ],
       "cons": [
         "Suction is good but not class-leading",
         "Kompressor mechanism adds complexity",
-        "Mop attachment is basic compared to Tineco",
+        "Expensive at $599",
         "Brand is less recognized in vacuums"
       ],
       "network_ids": {
-        "amazon": "B08LD5WD9C"
+        "amazon": "B0954PQDM8"
       },
       "image_url": "",
       "best_for": [
@@ -239,7 +239,7 @@
         "Special Feature": "Kompressor dust compression"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "dyson-v8",
@@ -248,7 +248,7 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 349,
       "rating": 4.5,
-      "verdict": "The best value Dyson \u2014 proven performance and whole-machine HEPA filtration at the lowest Dyson price.",
+      "verdict": "The best value Dyson — proven performance and whole-machine HEPA filtration at the lowest Dyson price.",
       "description": "The Dyson V8 is the entry point into Dyson's cordless lineup and it's all most people need. Whole-machine HEPA filtration captures 99.99% of particles, the direct-drive cleaner head digs deep into carpet, and 40 minutes of runtime handles apartments and small homes. At $349, it delivers the Dyson engineering and build quality without the flagship price. It's the smart Dyson for budget-conscious buyers.",
       "features": [
         "Whole-machine HEPA filtration",
@@ -268,10 +268,10 @@
         "40-minute runtime is shorter than competitors",
         "No laser or particle counter",
         "Battery isn't swappable",
-        "Bin is tiny \u2014 frequent emptying required"
+        "Bin is tiny — frequent emptying required"
       ],
       "network_ids": {
-        "amazon": "B0B8S3SX6S"
+        "amazon": "B09YS9N7H2"
       },
       "image_url": "",
       "best_for": [
@@ -287,27 +287,27 @@
         "Modes": "2 (Normal + Max)"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "samsung-jet-75-pet",
-      "name": "Samsung Jet 75 Pet",
+      "name": "Samsung Jet 75 Cordless Stick Vacuum",
       "brand": "Samsung",
       "category": "cordless-stick-vacuums",
       "price_usd": 299,
       "rating": 4.5,
-      "verdict": "The best pet hair vacuum \u2014 turbo brush and strong suction tackle embedded fur on every surface.",
-      "description": "The Samsung Jet 75 Pet is built specifically for pet households. Its turbo action brush with anti-tangle technology powers through pet hair on carpets, upholstery, and hard floors without wrapping around the roller. 200W of suction and a long-lasting removable battery deliver up to 60 minutes of cleaning. The lightweight 6 lb body and included pet multi-tool and mini motorized brush make reaching every fur-covered corner easy.",
+      "verdict": "A great pet-friendly vacuum — a turbo brush and strong suction tackle embedded fur on every surface.",
+      "description": "The Samsung Jet 75 is built for homes that need serious cleaning power, including pet households. Its turbo action brush powers through pet hair on carpets, upholstery, and hard floors, while 200W of suction and a long-lasting removable battery deliver up to 60 minutes of cleaning. The lightweight 6 lb body and included tools make reaching every corner easy, and the removable battery means you can keep a spare charged.",
       "features": [
-        "Turbo action brush with anti-tangle",
+        "Turbo action brush for pet hair",
         "200W suction power",
         "Up to 60 min runtime",
         "Removable/swappable battery",
-        "Pet multi-tool included",
+        "Multi-surface tools included",
         "5-layer filtration system"
       ],
       "pros": [
-        "Anti-tangle brush is a must for pet owners",
+        "Turbo brush handles pet hair well",
         "60-minute runtime handles whole homes",
         "Removable battery for easy swapping",
         "Lightweight at 6 lbs"
@@ -319,7 +319,7 @@
         "Suction drops in max mode"
       ],
       "network_ids": {
-        "amazon": "B09BFNQHFX"
+        "amazon": "B0BCZPNZ3D"
       },
       "image_url": "",
       "best_for": [
@@ -332,10 +332,10 @@
         "Weight": "6.0 lbs",
         "Bin Capacity": "0.12 gal",
         "Filtration": "5-layer",
-        "Special Feature": "Anti-tangle turbo brush"
+        "Special Feature": "Turbo action brush"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "dreame-r20",
@@ -344,18 +344,18 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 329,
       "rating": 4.5,
-      "verdict": "The best value high-suction vacuum \u2014 150 AW and a hair-tangle-free brush at a mid-range price.",
-      "description": "The Dreame R20 punches above its weight with 150 AW of suction \u2014 matching vacuums twice its price. The anti-tangle brush roller uses a V-shaped design that flings hair off instead of wrapping, and the HD color display shows battery, mode, and maintenance info. Up to 90 minutes of runtime on a single charge handles even large homes, and the included accessories cover everything from crevices to mattresses.",
+      "verdict": "The best value high-suction vacuum — 190 AW and a hair-tangle-free brush at a mid-range price.",
+      "description": "The Dreame R20 punches above its weight with 190 AW of suction — matching vacuums twice its price. The anti-tangle brush roller flings hair off instead of wrapping, and the HD color display shows battery, mode, and maintenance info. Up to 90 minutes of runtime on a single charge handles even large homes, and the included accessories cover everything from crevices to mattresses.",
       "features": [
-        "150 AW suction power",
-        "Anti-tangle V-shaped brush roller",
+        "190 AW suction power",
+        "Anti-tangle brush roller",
         "HD color LED display",
         "Up to 90 min runtime",
-        "7-stage HEPA filtration",
+        "Multi-stage HEPA filtration",
         "Versatile accessory kit"
       ],
       "pros": [
-        "150 AW suction at $329 is outstanding value",
+        "190 AW suction at $329 is outstanding value",
         "Anti-tangle brush actually works",
         "90-minute runtime is among the best",
         "HD display is informative and clear"
@@ -367,7 +367,7 @@
         "Dustbin could be larger"
       ],
       "network_ids": {
-        "amazon": "B0C4PHQVJ8"
+        "amazon": "B0BXD5L1M5"
       },
       "image_url": "",
       "best_for": [
@@ -375,15 +375,15 @@
         "large-home"
       ],
       "specs": {
-        "Suction": "150 AW",
+        "Suction": "190 AW",
         "Runtime": "Up to 90 min",
         "Weight": "5.7 lbs",
-        "Bin Capacity": "0.15 gal",
-        "Filtration": "7-stage HEPA",
-        "Special Feature": "Anti-tangle V-brush"
+        "Bin Capacity": "0.26 gal (1L)",
+        "Filtration": "Multi-stage HEPA",
+        "Special Feature": "Anti-tangle brush"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "bissell-iconpet-turbo",
@@ -392,30 +392,30 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 349,
       "rating": 4.3,
-      "verdict": "The edge-cleaning specialist \u2014 unique EdgeReach design gets into corners other vacuums miss.",
-      "description": "The Bissell ICONpet Turbo Edge focuses on what most vacuums neglect: edges and corners. Its unique EdgeReach foot design allows the brush roller to extend to the very edge of the vacuum head, cleaning right up against walls and baseboards. The tangle-free brush roll handles pet hair, 30 minutes of fade-free suction provides consistent power, and every purchase helps fund Bissell's pet rescue foundation. It's the vacuum for detail-oriented cleaners.",
+      "verdict": "The edge-cleaning specialist — unique EdgeReach design gets into corners other vacuums miss.",
+      "description": "The Bissell ICONpet Turbo Edge focuses on what most vacuums neglect: edges and corners. Its unique EdgeReach foot design allows the brush roller to extend to the very edge of the vacuum head, cleaning right up against walls and baseboards. The tangle-free brush roll handles pet hair, Turbo Boost suction provides extra power on demand, and every purchase helps fund Bissell's pet rescue foundation. It's the vacuum for detail-oriented cleaners.",
       "features": [
         "EdgeReach edge-cleaning design",
         "Tangle-free brush roll",
+        "Turbo Boost suction",
         "SmartSeal allergen system",
-        "Up to 30 min fade-free runtime",
         "LED headlights",
         "Supports Bissell Pet Foundation"
       ],
       "pros": [
         "Edge cleaning is noticeably better than competitors",
         "Tangle-free brush handles pet hair well",
-        "Fade-free suction maintains power throughout",
+        "Turbo Boost adds power on demand",
         "Each purchase supports pet rescue"
       ],
       "cons": [
-        "30-minute runtime is short",
+        "Runtime is shorter than premium rivals",
         "Suction is adequate but not class-leading",
-        "Bin is small at 0.13 gal",
+        "Bin is small",
         "Not as versatile as multi-floor competitors"
       ],
       "network_ids": {
-        "amazon": "B0BVTHSTPF"
+        "amazon": "B09M9219TZ"
       },
       "image_url": "",
       "best_for": [
@@ -423,7 +423,7 @@
         "hard-floors"
       ],
       "specs": {
-        "Runtime": "Up to 30 min (fade-free)",
+        "Runtime": "Up to 30 min",
         "Weight": "7.0 lbs",
         "Bin Capacity": "0.13 gal",
         "Filtration": "SmartSeal Allergen",
@@ -431,7 +431,7 @@
         "Charity": "Bissell Pet Foundation"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     },
     {
       "slug": "eureka-nec101-rapidclean",
@@ -440,7 +440,7 @@
       "category": "cordless-stick-vacuums",
       "price_usd": 129,
       "rating": 4.3,
-      "verdict": "The best ultra-budget stick vacuum \u2014 lightweight, capable, and under $130 for quick daily cleanups.",
+      "verdict": "The best ultra-budget stick vacuum — lightweight, capable, and under $130 for quick daily cleanups.",
       "description": "The Eureka RapidClean Pro is proof that a good cordless vacuum doesn't need to cost $500. At just $129 and 5.2 lbs, it's light enough for anyone to use comfortably. LED headlights illuminate dust, the high-efficiency brush roll handles both hard floors and low-pile carpet, and up to 40 minutes of runtime covers small to mid-size homes. It's not fancy, but for daily quick cleanups or as a secondary vacuum, the value is unmatched.",
       "features": [
         "LED headlights",
@@ -458,12 +458,12 @@
       ],
       "cons": [
         "Suction can't compete with premium brands",
-        "Filtration is basic \u2014 not HEPA",
+        "Filtration is basic — not HEPA",
         "Build quality feels budget",
         "Struggles with deep carpet cleaning"
       ],
       "network_ids": {
-        "amazon": "B09MFN8P7L"
+        "amazon": "B07SMJJTL7"
       },
       "image_url": "",
       "best_for": [
@@ -473,13 +473,13 @@
       "specs": {
         "Runtime": "Up to 40 min",
         "Weight": "5.2 lbs",
-        "Bin Capacity": "0.08 gal",
+        "Bin Capacity": "0.18 gal (0.7L)",
         "Filtration": "Standard",
         "Special Feature": "LED headlights",
         "Modes": "2 (Normal + Turbo)"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-15"
     }
   ]
 }
