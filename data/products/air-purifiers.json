@@ -80,7 +80,7 @@
       "Display light can't be fully dimmed in sleep mode"
     ],
     "network_ids": {
-      "amazon": "B0BJJ9QZ6M"
+      "amazon": "B0BGPF71Q6"
     },
     "image_url": "",
     "best_for": [
@@ -101,7 +101,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "coway-airmega-ap1512hh",
@@ -162,11 +162,11 @@
     "category": "air-purifiers",
     "price_usd": 300,
     "rating": 4.6,
-    "verdict": "The best air purifier for large spaces — cleans 3,048 sq ft in one hour with HEPASilent technology.",
-    "description": "When you need to clean a massive space — open-concept living rooms, lofts, basements — the Blue Pure 211i Max delivers. It processes 3,048 sq ft of air per hour using Blueair's proprietary HEPASilent technology, which combines mechanical and electrostatic filtration to capture 99.97% of particles while maintaining lower noise and energy use than pure HEPA systems. The app provides real-time AQI monitoring, auto mode, and filter life tracking. The washable pre-filter comes in multiple colors so you can match your decor. At $300, it's the large-room king.",
+    "verdict": "The best air purifier for large spaces — cleans 3,235 sq ft in one hour with HEPASilent technology.",
+    "description": "When you need to clean a massive space — open-concept living rooms, lofts, basements — the Blue Pure 211i Max delivers. It processes 3,235 sq ft of air per hour using Blueair's proprietary HEPASilent technology, which combines mechanical and electrostatic filtration to capture 99.97% of particles while maintaining lower noise and energy use than pure HEPA systems. The app provides real-time AQI monitoring, auto mode, and filter life tracking. The washable pre-filter comes in multiple colors so you can match your decor. At $300, it's the large-room king.",
     "features": [
       "HEPASilent technology — 99.97% particle capture",
-      "Cleans 3,048 sq ft in one hour",
+      "Cleans 3,235 sq ft in one hour",
       "Smart app with real-time AQI monitoring",
       "Washable, color-customizable pre-filter",
       "Auto mode adjusts to air quality"
@@ -184,7 +184,7 @@
       "Overkill for bedrooms or small rooms"
     ],
     "network_ids": {
-      "amazon": "B0CL7P3PZ4"
+      "amazon": "B0BN2MGV5H"
     },
     "image_url": "",
     "best_for": [
@@ -197,7 +197,7 @@
       "cadr_smoke": 350,
       "cadr_dust": 350,
       "cadr_pollen": 350,
-      "coverage_sqft": 3048,
+      "coverage_sqft": 3235,
       "noise_min_db": 23,
       "noise_max_db": 56,
       "smart_features": true,
@@ -205,7 +205,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "winix-5500-2",
@@ -236,7 +236,7 @@
       "Design is dated compared to newer competitors"
     ],
     "network_ids": {
-      "amazon": "B01D8F60ME"
+      "amazon": "B01D8DAYII"
     },
     "image_url": "",
     "best_for": [
@@ -257,7 +257,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "levoit-core-mini",
@@ -288,7 +288,7 @@
       "Filter replacements are frequent for the size"
     ],
     "network_ids": {
-      "amazon": "B09LGZ1SNB"
+      "amazon": "B09GTRVJQM"
     },
     "image_url": "",
     "best_for": [
@@ -309,7 +309,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "puroair-240-hepa",
@@ -318,29 +318,29 @@
     "category": "air-purifiers",
     "price_usd": 120,
     "rating": 4.5,
-    "verdict": "A rising Amazon favorite — automatic air quality sensing, 1,115 sq ft coverage, and a USA-based brand.",
-    "description": "PuroAir has quickly become one of Amazon's top-selling air purifier brands, and the 240 shows why. The built-in air quality sensor automatically adjusts fan speed based on real-time readings, and the LED display shows your current AQI so you always know what you're breathing. Coverage reaches 1,115 sq ft — enough for most living rooms. The H13 HEPA filter captures 99.97% of particles, and the activated carbon layer handles odors. PuroAir is a USA-based company with responsive customer service. At $120, it slots between the budget Core 300 and the smart Vital 200S.",
+    "verdict": "A rising Amazon favorite — automatic air quality sensing, 1,000 sq ft coverage, and a USA-based brand.",
+    "description": "PuroAir has quickly become one of Amazon's top-selling air purifier brands, and the 240 shows why. The built-in PuroIQ air quality sensor automatically adjusts fan speed based on real-time readings, and auto mode keeps your air clean without you thinking about it. Coverage reaches 1,000 sq ft — enough for most living rooms. The certified HEPA filter captures 99.9% of pollutants, and the CarbonTech layer handles odors. PuroAir is a USA-based company with responsive customer service. At $120, it slots between the budget Core 300 and the smart Vital 200S.",
     "features": [
-      "Auto mode with built-in air quality sensor",
-      "LED AQI display — see your air quality in real-time",
-      "H13 HEPA filter — 99.97% particle capture",
-      "Covers up to 1,115 sq ft",
+      "Auto mode with PuroIQ air quality sensor",
+      "360° air intake for faster cleaning",
+      "Certified HEPA + CarbonTech filter",
+      "Covers up to 1,000 sq ft",
       "USA-based brand with responsive support"
     ],
     "pros": [
-      "Auto mode and AQI display at a competitive price",
+      "Auto mode at a competitive price",
       "Large coverage area for a $120 purifier",
       "USA-based customer support",
-      "8K+ bought per month on Amazon"
+      "Thousands bought per month on Amazon"
     ],
     "cons": [
-      "No app or WiFi — display only",
+      "No app or WiFi — onboard controls only",
       "Carbon filter is basic",
       "Sleep mode isn't as quiet as LEVOIT",
       "Newer brand — less long-term reliability data"
     ],
     "network_ids": {
-      "amazon": "B0C4LPY3FV"
+      "amazon": "B0998FWTHP"
     },
     "image_url": "",
     "best_for": [
@@ -349,11 +349,11 @@
       "allergies"
     ],
     "specs": {
-      "filter_type": "True HEPA H13",
+      "filter_type": "True HEPA",
       "cadr_smoke": 195,
       "cadr_dust": 196,
       "cadr_pollen": 200,
-      "coverage_sqft": 1115,
+      "coverage_sqft": 1000,
       "noise_min_db": 25,
       "noise_max_db": 52,
       "smart_features": false,
@@ -361,7 +361,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "shark-hp152-neverchange",
@@ -371,7 +371,7 @@
     "price_usd": 200,
     "rating": 4.4,
     "verdict": "Never replace a filter again — Shark's 5-year HEPA filter eliminates the biggest ongoing cost of air purifiers.",
-    "description": "The Shark HP152's killer feature is right in the name: NeverChange. The HEPA filter is rated for 5 years of use before replacement — compared to 6-12 months for every competitor. Over 5 years, that saves $150-400 in filter costs. The Clean Sense IQ technology automatically adjusts fan speed based on air quality, and the purifier covers up to 650 sq ft. It captures 99.98% of particles down to 0.1 microns (smaller than standard HEPA's 0.3 micron rating). At $200 with virtually zero ongoing costs for 5 years, the total cost of ownership is lower than a $50 purifier with $30 semi-annual filter replacements.",
+    "description": "The Shark HP152's killer feature is right in the name: NeverChange. The HEPA-exceeding filter is rated for 5 years of use before replacement — compared to 6-12 months for every competitor. Over 5 years, that saves $150-400 in filter costs. The Clean Sense IQ technology automatically adjusts fan speed based on air quality, and the purifier covers up to 650 sq ft. It captures 99.98% of particles down to 0.1 microns (smaller than standard HEPA's 0.3 micron rating). At $200 with virtually zero ongoing costs for 5 years, the total cost of ownership is lower than a $50 purifier with $30 semi-annual filter replacements.",
     "features": [
       "5-year HEPA filter — no replacements for years",
       "99.98% capture down to 0.1 microns",
@@ -392,7 +392,7 @@
       "When you do replace the filter, it's expensive"
     ],
     "network_ids": {
-      "amazon": "B0C4HL53DC"
+      "amazon": "B0CM6VDKSQ"
     },
     "image_url": "",
     "best_for": [
@@ -413,7 +413,7 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "rabbit-air-a3",
@@ -444,7 +444,7 @@
       "Wall mounting requires installation"
     ],
     "network_ids": {
-      "amazon": "B0BVKF7B7L"
+      "amazon": "B096NB7TNY"
     },
     "image_url": "",
     "best_for": [
@@ -465,7 +465,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   },
   {
     "slug": "levoit-core-400s",
@@ -490,13 +490,13 @@
       "Strong brand with proven reliability"
     ],
     "cons": [
-      "Coverage area (403 sq ft) is smaller than the Vital 200S",
+      "Coverage area is smaller than the Vital 200S",
       "Carbon filter is basic for odors",
       "Laser sensor can be sensitive to steam/humidity",
       "Night light can't be fully disabled"
     ],
     "network_ids": {
-      "amazon": "B08R794ZMH"
+      "amazon": "B09BJN3CX4"
     },
     "image_url": "",
     "best_for": [
@@ -517,6 +517,6 @@
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-15"
   }
 ]
