@@ -1,34 +1,34 @@
 [
   {
     "slug": "arlo-pro-6",
-    "name": "Arlo Pro 6 Wireless Security Camera",
+    "name": "Arlo Pro 5S 2K Wireless Security Camera",
     "brand": "Arlo",
     "category": "home-security-cameras",
-    "price_usd": 150,
+    "price_usd": 160,
     "rating": 4.7,
     "verdict": "The best overall home security camera — 2K HDR, color night vision, and the most intelligent AI detection available.",
-    "description": "The Arlo Pro 6 is CNET's top pick for 2026, and it earns that title with the most intelligent detection system in any home camera. It distinguishes between people, animals, vehicles, and packages — sending specific alerts so you're not bombarded by every passing car. 2K HDR video captures sharp detail day and night, and the built-in spotlight enables full-color night vision. The magnetic mount goes anywhere in seconds, and the rechargeable battery lasts months. Works with Alexa, Google, and Apple HomeKit. Local storage via USB is free; cloud plans are optional.",
+    "description": "The Arlo Pro 5S is one of the most capable wireless security cameras you can buy, with the most intelligent detection system in any home camera. It distinguishes between people, animals, vehicles, and packages — sending specific alerts so you're not bombarded by every passing car. 2K HDR video captures sharp detail day and night, and the built-in spotlight enables full-color night vision. The magnetic mount goes anywhere in seconds, and the rechargeable battery lasts months. Works with Alexa, Google, and Apple HomeKit (via an Arlo hub). Dual-band Wi-Fi improves range; cloud plans are optional with a free trial included.",
     "features": [
       "2K HDR video with color night vision",
       "AI detection: people, animals, vehicles, packages",
       "Magnetic mount — installs in seconds",
-      "Works with Alexa, Google, and Apple HomeKit",
-      "Local storage option — no subscription required"
+      "Dual-band Wi-Fi and integrated siren",
+      "Works with Alexa, Google, and HomeKit (via hub)"
     ],
     "pros": [
       "Most intelligent AI detection available",
-      "CNET's #1 pick for 2026",
+      "Sharp 2K HDR with color night vision",
       "Magnetic mount is incredibly flexible",
       "Apple HomeKit support is rare"
     ],
     "cons": [
-      "$150 per camera adds up for multi-cam setups",
+      "Per-camera price adds up for multi-cam setups",
       "Best features require Arlo Secure subscription",
       "Battery needs recharging every 3-6 months",
-      "Wi-Fi range can be limiting"
+      "HomeKit requires an Arlo hub"
     ],
     "network_ids": {
-      "amazon": "B0DQL24Y5L"
+      "amazon": "B0BL215FRC"
     },
     "image_url": "",
     "best_for": [
@@ -42,13 +42,13 @@
       "night_vision": "Color (spotlight)",
       "power": "Rechargeable battery",
       "weather_rating": "IP65",
-      "storage": "Local USB + Cloud optional",
+      "storage": "Cloud (Arlo Secure) + local via hub",
       "two_way_audio": true,
       "smart_assistant": "Alexa, Google, HomeKit",
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "wyze-cam-v4",
@@ -58,7 +58,7 @@
     "price_usd": 36,
     "rating": 4.4,
     "verdict": "The best budget security camera — 2.5K resolution, color night vision, and local storage for just $36.",
-    "description": "The Wyze Cam v4 is proof that good security doesn't have to be expensive. At $36, it delivers 2.5K resolution, color night vision with a built-in spotlight, IP65 weather resistance for indoor or outdoor use, and free local storage via microSD card. Motion detection zones are customizable, and two-way audio lets you communicate through the camera. The Wyze app provides live viewing, playback, and smart alerts. No subscription is required for basic features. With 10K+ bought monthly on Amazon, it's the most popular budget security camera for a reason.",
+    "description": "The Wyze Cam v4 is proof that good security doesn't have to be expensive. At $36, it delivers 2.5K resolution, color night vision with a built-in spotlight, IP65 weather resistance for indoor or outdoor use, and free local storage via microSD card. Motion detection zones are customizable, and two-way audio lets you communicate through the camera. The Wyze app provides live viewing, playback, and smart alerts. No subscription is required for basic features. One of the most popular budget security cameras on Amazon for a reason.",
     "features": [
       "2.5K resolution at just $36",
       "Color night vision with spotlight",
@@ -79,7 +79,7 @@
       "No HomeKit support"
     ],
     "network_ids": {
-      "amazon": "B0CWL4JGMT"
+      "amazon": "B0CJ9Z22L5"
     },
     "image_url": "",
     "best_for": [
@@ -99,7 +99,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "ring-outdoor-cam-plus",
@@ -109,9 +109,9 @@
     "price_usd": 100,
     "rating": 4.6,
     "verdict": "The best Ring camera — 2K video, color night vision, and seamless Alexa integration with Ring's trusted ecosystem.",
-    "description": "Ring is the most recognized name in home security, and the Outdoor Cam Plus is their best all-around camera. 2K video provides clear detail for identifying faces and license plates. The battery-powered design means no wiring — mount it anywhere with the included tools. Ring's app is the most polished security camera app available, with easy live viewing, event timeline, and sharing. Alexa integration lets you view cameras on Echo Show devices with a voice command. Ring Protect subscription ($4/month) unlocks video history and person detection.",
+    "description": "Ring is the most recognized name in home security, and the Outdoor Cam Plus is their best all-around camera. 2K video provides clear detail for identifying faces and license plates. The battery-powered design means no wiring — mount it anywhere with the included tools. Ring's app is the most polished security camera app available, with easy live viewing, event timeline, and sharing. Alexa integration lets you view cameras on Echo Show devices with a voice command. Ring Protect subscription unlocks video history and person detection.",
     "features": [
-      "2K video with HDR",
+      "2K video with color night vision",
       "Battery-powered — no wiring needed",
       "Ring app — best security camera app",
       "Alexa integration for voice viewing",
@@ -130,7 +130,7 @@
       "2K is lower than some competitors"
     ],
     "network_ids": {
-      "amazon": "B0D7R8MHCS"
+      "amazon": "B0D241GHP5"
     },
     "image_url": "",
     "best_for": [
@@ -150,7 +150,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "google-nest-cam-battery",
@@ -160,13 +160,13 @@
     "price_usd": 180,
     "rating": 4.5,
     "verdict": "The best camera for Google Home — intelligent alerts, 3 hours free cloud storage, and seamless Google ecosystem integration.",
-    "description": "The Google Nest Cam Battery is the camera for Google Home households. Intelligent alerts distinguish between people, animals, and vehicles without a subscription. Three hours of free cloud event storage means you get basic recording without paying monthly. The magnetic mount attaches anywhere, and the weatherproof design works indoors or out. The Google Home app provides a unified view of all your Nest devices. The camera is also the only option that works with Google's Family Bell and household routines. HDR video quality is good but not the sharpest at 1080p.",
+    "description": "The Google Nest Cam Battery is the camera for Google Home households. Intelligent alerts distinguish between people, animals, and vehicles without a subscription. Three hours of free cloud event storage means you get basic recording without paying monthly. The magnetic mount attaches anywhere, and the weatherproof design works indoors or out. The Google Home app provides a unified view of all your Nest devices. HDR video quality is good at 1080p, with solid night vision.",
     "features": [
       "Intelligent alerts: people, animals, vehicles (free)",
       "3 hours free cloud event storage",
       "Magnetic quick-mount",
       "Google Home ecosystem integration",
-      "HDR video with night vision"
+      "1080p HDR video with night vision"
     ],
     "pros": [
       "Best Google Home integration",
@@ -181,7 +181,7 @@
       "Battery life is average"
     ],
     "network_ids": {
-      "amazon": "B09FCLPLWX"
+      "amazon": "B09FCMSJZG"
     },
     "image_url": "",
     "best_for": [
@@ -197,11 +197,11 @@
       "weather_rating": "IP54",
       "storage": "3hr free cloud + Nest Aware",
       "two_way_audio": true,
-      "smart_assistant": "Google",
+      "smart_assistant": "Google, Alexa",
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "blink-outdoor-4",
@@ -252,38 +252,38 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "eufy-solocam-s350",
-    "name": "eufy SoloCam S350 Outdoor Security Camera",
+    "name": "eufy SoloCam S340 Outdoor Security Camera",
     "brand": "eufy",
     "category": "home-security-cameras",
     "price_usd": 130,
     "rating": 4.5,
-    "verdict": "The best no-subscription camera — 4K dual-lens with 8x zoom, solar panel, and 100% local storage.",
-    "description": "eufy has built its brand on one promise: no subscriptions, ever. The SoloCam S350 delivers 4K resolution from dual lenses — a wide-angle lens for monitoring and a telephoto lens with 8x hybrid zoom for detail. The built-in solar panel keeps the battery topped up indefinitely in most climates. All footage stores locally on the 8GB built-in eMMC storage. AI person detection, auto-tracking, and two-way audio work without any monthly fee. For users who refuse to pay subscriptions, eufy is the only premium option.",
+    "verdict": "The best no-subscription camera — 3K dual-lens with 360° pan & tilt, solar panel, and 100% local storage.",
+    "description": "eufy has built its brand on one promise: no subscriptions, ever. The SoloCam S340 delivers 3K resolution from dual lenses — a wide-angle lens for monitoring and a telephoto lens with 8x hybrid zoom for detail — on a 360° pan-and-tilt body that covers an entire yard with no blind spots. The built-in solar panel keeps the battery topped up indefinitely in most climates. Footage stores locally with expandable microSD support. AI person detection, auto-tracking, and two-way audio work without any monthly fee. For users who refuse to pay subscriptions, eufy is the only premium option.",
     "features": [
-      "4K dual-lens with 8x hybrid zoom",
+      "3K dual-lens with 8x hybrid zoom",
+      "360° pan & tilt — no blind spots",
       "Built-in solar panel — never charge",
       "100% local storage — no subscription ever",
-      "AI person detection and auto-tracking",
-      "Two-way audio with noise cancellation"
+      "AI person detection and auto-tracking"
     ],
     "pros": [
       "Zero subscription costs — everything is free",
-      "4K dual-lens zoom is unique at this price",
+      "360° pan & tilt covers an entire yard",
       "Solar panel eliminates battery maintenance",
       "Auto-tracking follows motion"
     ],
     "cons": [
-      "8GB local storage fills up fast",
+      "Dual-lens stitching can look soft at the seam",
       "No cloud backup option",
       "Limited smart home integration",
       "Solar panel needs adequate sunlight"
     ],
     "network_ids": {
-      "amazon": "B0CPNFJKGX"
+      "amazon": "B0H825HRDJ"
     },
     "image_url": "",
     "best_for": [
@@ -292,40 +292,40 @@
       "solar"
     ],
     "specs": {
-      "resolution": "4K (dual-lens)",
-      "field_of_view": "135 wide + 8x zoom",
+      "resolution": "3K (dual-lens)",
+      "field_of_view": "360° pan & tilt + 8x zoom",
       "night_vision": "Color (spotlight)",
       "power": "Solar + battery",
       "weather_rating": "IP67",
-      "storage": "8GB local eMMC",
+      "storage": "Local microSD (expandable)",
       "two_way_audio": true,
       "smart_assistant": "Alexa, Google",
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "ring-indoor-cam-plus",
-    "name": "Ring Indoor Cam Plus (2nd Gen)",
+    "name": "Ring Indoor Cam (2nd Gen)",
     "brand": "Ring",
     "category": "home-security-cameras",
-    "price_usd": 50,
+    "price_usd": 60,
     "rating": 4.7,
-    "verdict": "The best indoor camera — compact, 2K video, privacy shutter, and Ring's trusted app for $50.",
-    "description": "The Ring Indoor Cam Plus is the simplest way to monitor inside your home. At $50, it delivers 2K video, a physical privacy shutter (flip it closed when you're home), two-way audio, and motion detection. The compact size fits on any shelf or mounts on a wall. Ring's app provides live viewing, event history, and the ability to share clips. Pre-roll video capture shows what happened before motion triggered — crucial for understanding events. It's wired (USB-C), so no battery concerns. The most popular indoor camera on Amazon with 40,000+ reviews.",
+    "verdict": "The best indoor camera — compact, 1080p video, privacy shutter, and Ring's trusted app.",
+    "description": "The Ring Indoor Cam (2nd Gen) is the simplest way to monitor inside your home. It delivers 1080p HD video, a physical privacy shutter (flip it closed when you're home), two-way audio, and motion detection. The compact size fits on any shelf or mounts on a wall. Ring's app provides live viewing, event history, and the ability to share clips. It's wired (Micro USB), so no battery concerns. One of the most popular indoor cameras on Amazon with tens of thousands of reviews.",
     "features": [
-      "2K video with pre-roll capture",
+      "1080p HD video",
       "Physical privacy shutter",
-      "Compact plug-in design (USB-C)",
+      "Compact plug-in design",
       "Ring app with live view and sharing",
       "Motion zones and scheduling"
     ],
     "pros": [
       "Physical privacy shutter builds trust",
-      "Pre-roll capture shows full context",
-      "$50 is very affordable",
-      "40,000+ reviews — proven reliability"
+      "Compact and easy to place anywhere",
+      "Very affordable",
+      "Tens of thousands of reviews — proven reliability"
     ],
     "cons": [
       "Wired only — no battery option",
@@ -334,7 +334,7 @@
       "Indoor only — not weatherproof"
     ],
     "network_ids": {
-      "amazon": "B0DGHCGJVQ"
+      "amazon": "B0B6GLQJMV"
     },
     "image_url": "",
     "best_for": [
@@ -343,10 +343,10 @@
       "privacy"
     ],
     "specs": {
-      "resolution": "2K",
-      "field_of_view": 140,
+      "resolution": "1080p",
+      "field_of_view": 143,
       "night_vision": "Infrared",
-      "power": "Wired (USB-C)",
+      "power": "Wired (Micro USB)",
       "weather_rating": "Indoor only",
       "storage": "Cloud (Ring Protect)",
       "two_way_audio": true,
@@ -354,7 +354,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "reolink-argus-4-pro",
@@ -363,29 +363,29 @@
     "category": "home-security-cameras",
     "price_usd": 140,
     "rating": 4.5,
-    "verdict": "The best 4K solar camera — 180-degree dual-lens view, solar powered, and no subscription with local + cloud storage.",
-    "description": "The Reolink Argus 4 Pro combines a 180-degree ultra-wide view with 4K resolution from dual lenses — it covers the area of two regular cameras in one. The included solar panel keeps it perpetually charged, and the 8GB onboard storage plus free Reolink Cloud (1GB) means no subscription is needed. Color night vision with spotlights, two-way audio, and smart person/vehicle detection complete the package. The Reolink app is straightforward and reliable. For users who want maximum coverage with minimum cameras and zero ongoing costs, this is the pick.",
+    "verdict": "The best 4K solar camera — 180-degree dual-lens view, solar powered, and no subscription with local storage.",
+    "description": "The Reolink Argus 4 Pro combines a 180-degree ultra-wide view with 4K resolution from dual lenses — it covers the area of two regular cameras in one. The included solar panel keeps it perpetually charged, and onboard local storage means no subscription is needed. ColorX color night vision, two-way audio, and smart person/vehicle/animal detection complete the package. The Reolink app is straightforward and reliable. For users who want maximum coverage with minimum cameras and zero ongoing costs, this is the pick.",
     "features": [
       "180-degree dual-lens 4K view",
       "Solar panel included — never charge",
-      "No subscription: 8GB local + free cloud",
-      "Color night vision with spotlights",
-      "Smart person and vehicle detection"
+      "No subscription: encrypted local storage",
+      "ColorX color night vision",
+      "Smart person, vehicle, and animal detection"
     ],
     "pros": [
       "180-degree view replaces two cameras",
       "Solar + local storage = zero ongoing costs",
       "4K resolution is excellent",
-      "Free cloud storage included"
+      "Strong low-light ColorX night vision"
     ],
     "cons": [
       "Dual-lens image can look distorted at edges",
-      "8GB local storage is limited",
+      "Local storage fills up with 4K footage",
       "Smart home integration is basic",
       "App is functional but not polished"
     ],
     "network_ids": {
-      "amazon": "B0CXKLMJML"
+      "amazon": "B0F189FV7K"
     },
     "image_url": "",
     "best_for": [
@@ -396,31 +396,31 @@
     "specs": {
       "resolution": "4K (dual-lens 180°)",
       "field_of_view": 180,
-      "night_vision": "Color (spotlight)",
+      "night_vision": "Color (ColorX)",
       "power": "Solar + battery",
-      "weather_rating": "IP65",
-      "storage": "8GB local + free Reolink Cloud",
+      "weather_rating": "IP66",
+      "storage": "Encrypted local storage",
       "two_way_audio": true,
       "smart_assistant": "Alexa, Google",
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "tp-link-tapo-c420",
-    "name": "TP-Link Tapo C420 Outdoor Security Camera",
+    "name": "TP-Link Tapo C420S1 Outdoor Security Camera",
     "brand": "TP-Link",
     "category": "home-security-cameras",
     "price_usd": 100,
     "rating": 4.4,
-    "verdict": "The best value outdoor camera — 2K QHD, starlight sensor, and local storage for $100 with no subscription.",
-    "description": "TP-Link's Tapo line has quickly become the go-to for budget security cameras, and the C420 is their best outdoor model. 2K QHD resolution with a starlight sensor captures usable footage even in near-darkness without spotlights. The rechargeable battery lasts 180 days, and the magnetic mount installs in seconds. All footage stores locally on a microSD card — no subscription needed. The Tapo app is clean and responsive with live view, playback, activity zones, and smart detection. At $100 with zero ongoing costs, it undercuts Ring and Blink while matching their core features.",
+    "verdict": "The best value outdoor camera — 2K QHD, starlight sensor, and local storage with no subscription.",
+    "description": "TP-Link's Tapo line has quickly become the go-to for budget security cameras, and the C420S1 kit (camera plus hub) is their best value outdoor setup. 2K QHD resolution with a starlight sensor captures usable footage even in near-darkness. The rechargeable battery lasts up to 180 days, and the magnetic mount installs in seconds. Footage stores locally — no subscription needed. The Tapo app is clean and responsive with live view, playback, activity zones, and smart detection. It undercuts Ring and Blink while matching their core features.",
     "features": [
       "2K QHD with starlight night sensor",
-      "180-day battery life",
-      "Magnetic quick-mount",
-      "Local microSD storage — no subscription",
+      "Up to 180-day battery life",
+      "Includes Tapo hub",
+      "Local storage — no subscription",
       "Tapo app with smart detection"
     ],
     "pros": [
@@ -430,13 +430,13 @@
       "TP-Link ecosystem integration"
     ],
     "cons": [
-      "Hub required for some features",
+      "Requires the included hub",
       "2K trails 4K competitors",
       "Smart detection is basic vs Arlo",
       "Limited smart home integration"
     ],
     "network_ids": {
-      "amazon": "B0CB4QX5CB"
+      "amazon": "B0C2JRFKKX"
     },
     "image_url": "",
     "best_for": [
@@ -450,23 +450,23 @@
       "night_vision": "Starlight sensor",
       "power": "Rechargeable battery (180 days)",
       "weather_rating": "IP65",
-      "storage": "microSD local",
+      "storage": "Local (hub) — no subscription",
       "two_way_audio": true,
       "smart_assistant": "Alexa, Google",
       "warranty_years": 2
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "ring-floodlight-cam-wired-plus",
     "name": "Ring Floodlight Cam Wired Plus",
     "brand": "Ring",
     "category": "home-security-cameras",
-    "price_usd": 180,
+    "price_usd": 140,
     "rating": 4.7,
     "verdict": "The best floodlight camera — 2000 lumens, 1080p video, and motion-activated security lighting in one device.",
-    "description": "The Ring Floodlight Cam replaces your existing outdoor floodlight with a security camera and smart lighting system. 2000 lumens of LED floodlights activate on motion, deterring intruders while the 1080p camera records everything. Two-way audio with a built-in siren adds another layer of security. The floodlights are adjustable for coverage angle, and motion zones let you customize sensitivity. Hardwired installation means no battery concerns. It's the most popular floodlight camera on Amazon with 42,000+ reviews. Replaces two devices (floodlight + camera) with one.",
+    "description": "The Ring Floodlight Cam Wired Plus replaces your existing outdoor floodlight with a security camera and smart lighting system. 2000 lumens of LED floodlights activate on motion, deterring intruders while the 1080p camera records everything. Two-way audio with a built-in siren adds another layer of security. The floodlights are adjustable for coverage angle, and motion zones let you customize sensitivity. Hardwired installation means no battery concerns. It's one of the most popular floodlight cameras on Amazon. Replaces two devices (floodlight + camera) with one.",
     "features": [
       "2000 lumens LED floodlights",
       "1080p video with motion activation",
@@ -478,7 +478,7 @@
       "Replaces floodlight + camera with one device",
       "2000 lumens is genuinely bright",
       "Built-in siren adds deterrence",
-      "42,000+ reviews — proven"
+      "Tens of thousands of reviews — proven"
     ],
     "cons": [
       "Requires hardwired installation",
@@ -487,7 +487,7 @@
       "Only works with Alexa"
     ],
     "network_ids": {
-      "amazon": "B09KC1Y4NR"
+      "amazon": "B08F6GPQQ7"
     },
     "image_url": "",
     "best_for": [
@@ -507,6 +507,6 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   }
 ]
