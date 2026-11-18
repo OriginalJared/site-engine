@@ -1,22 +1,22 @@
 [
   {
     "slug": "ecoflow-delta-2",
-    "name": "EcoFlow DELTA 2 Portable Power Station",
+    "name": "EcoFlow DELTA 3 Portable Power Station",
     "brand": "EcoFlow",
     "category": "portable-power-stations",
     "price_usd": 649,
     "rating": 4.7,
-    "verdict": "The best overall portable power station — 1024Wh LiFePO4, charges in 50 minutes to 80%, and X-Boost handles appliances up to 2200W.",
-    "description": "The EcoFlow DELTA 2 is the power station reviewers keep recommending. Its X-Stream technology charges from 0 to 80% in just 50 minutes via wall outlet — no other station in this class comes close. X-Boost technology lets it power appliances drawing up to 2200W despite a rated 1800W output, meaning it handles everything from full-size fridges to power tools. The LiFePO4 battery is rated for 3,000+ cycles, and the EcoFlow app provides real-time monitoring and control. At 27 lbs, it's portable enough for car camping while powerful enough for home backup. Outdoor Life and GearLab's top pick.",
+    "verdict": "The best overall portable power station — 1024Wh LiFePO4, full charge in under an hour, and X-Boost handles appliances well above its rated output.",
+    "description": "The EcoFlow DELTA 3 is the power station reviewers keep recommending (the successor to the popular DELTA 2). It charges from empty to full in about 56 minutes via wall outlet — among the fastest in its class. X-Boost technology lets it power appliances drawing more than its rated output, meaning it handles everything from full-size fridges to power tools. The LiFePO4 battery is rated for thousands of cycles, and the EcoFlow app provides real-time monitoring and control. At around 27 lbs, it's portable enough for car camping while powerful enough for home backup.",
     "features": [
-      "X-Stream: 0-80% charge in 50 minutes",
-      "X-Boost: powers appliances up to 2200W on 1800W rated",
-      "LiFePO4 battery — 3,000+ cycle lifespan",
+      "Full charge in about 56 minutes",
+      "X-Boost: powers high-draw appliances beyond rated output",
+      "LiFePO4 battery — long cycle lifespan",
       "EcoFlow app for real-time monitoring",
       "Expandable with extra batteries"
     ],
     "pros": [
-      "Fastest charging in its class",
+      "Among the fastest charging in its class",
       "X-Boost handles high-draw appliances",
       "5-year warranty",
       "Expandable capacity"
@@ -28,7 +28,7 @@
       "App requires account creation"
     ],
     "network_ids": {
-      "amazon": "B0B9XB57XM"
+      "amazon": "B0DCBYMC9D"
     },
     "image_url": "",
     "best_for": [
@@ -46,11 +46,11 @@
       "ac_outlets": 6,
       "usb_ports": 6,
       "solar_input_watts": 500,
-      "charge_time_wall_min": 80,
+      "charge_time_wall_min": 56,
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "jackery-explorer-1000-v2",
@@ -60,7 +60,7 @@
     "price_usd": 699,
     "rating": 4.7,
     "verdict": "The most user-friendly power station — 1070Wh LiFePO4, 1-hour fast charge, and Jackery's famously simple interface.",
-    "description": "Jackery is the Apple of portable power — everything just works without reading a manual. The Explorer 1000 v2 upgrades to LiFePO4 chemistry with 4,000+ cycle life, charges to full in just 1 hour with emergency mode via the app, and weighs only 23.8 lbs with a foldable handle. Three AC outlets, USB-C PD 100W, and a 12V car port cover every charging scenario. The interface is dead simple — a clear LCD shows input/output watts and remaining time. Jackery's #1 best-seller on Amazon for good reason.",
+    "description": "Jackery is the Apple of portable power — everything just works without reading a manual. The Explorer 1000 v2 upgrades to LiFePO4 chemistry with 4,000+ cycle life, charges to full in just 1 hour with emergency mode via the app, and weighs only 23.8 lbs with a foldable handle. Three AC outlets, USB-C PD 100W, and a 12V car port cover every charging scenario. The interface is dead simple — a clear LCD shows input/output watts and remaining time. One of Jackery's best-sellers on Amazon for good reason.",
     "features": [
       "1-hour emergency fast charge via app",
       "LiFePO4 — 4,000+ cycle life (10+ years)",
@@ -75,13 +75,13 @@
       "Jackery brand reliability and support"
     ],
     "cons": [
-      "1500W output is lower than EcoFlow DELTA 2",
+      "1500W output is lower than EcoFlow DELTA 3",
       "No dedicated app monitoring on base model",
       "Solar charging is slower than competitors",
       "Premium price for the capacity"
     ],
     "network_ids": {
-      "amazon": "B0CY5GN3G3"
+      "amazon": "B0DXF5L3B1"
     },
     "image_url": "",
     "best_for": [
@@ -103,7 +103,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "anker-solix-c1000",
@@ -112,10 +112,10 @@
     "category": "portable-power-stations",
     "price_usd": 399,
     "rating": 4.6,
-    "verdict": "The best value power station — 1056Wh LiFePO4 with 2000W output for under $400 on sale.",
-    "description": "The Anker SOLIX C1000 Gen 2 delivers flagship specs at a mid-range price. 1056Wh of LiFePO4 capacity, 2000W continuous output (2400W surge), and a 58-minute wall charge time make it competitive with stations costing $200 more. GearLab rated it 'Best for Most People' thanks to its balance of price, power, and portability. The Anker app provides remote monitoring and firmware updates. At frequently-on-sale prices under $400, it's the best value in the 1000Wh class. 5-year warranty from one of the most trusted names in charging.",
+    "verdict": "The best value power station — 1056Wh LiFePO4 with 1800W output and a 58-minute charge for under $400 on sale.",
+    "description": "The Anker SOLIX C1000 delivers flagship specs at a mid-range price. 1056Wh of LiFePO4 capacity, 1800W continuous output (2400W with SurgePad), and a 58-minute wall charge time make it competitive with stations costing $200 more. GearLab rated it 'Best for Most People' thanks to its balance of price, power, and portability. The Anker app provides remote monitoring and firmware updates. At frequently-on-sale prices under $400, it's one of the best values in the 1000Wh class. 5-year warranty from one of the most trusted names in charging.",
     "features": [
-      "2000W output — highest in its price class",
+      "1800W output (2400W SurgePad)",
       "58-minute fast wall charge",
       "LiFePO4 — 3,000+ cycle lifespan",
       "Anker app with remote monitoring",
@@ -123,9 +123,9 @@
     ],
     "pros": [
       "Best value — flagship specs under $400 on sale",
-      "2000W output beats most competitors",
+      "Fast 58-minute charge",
       "Anker brand trust and 5-year warranty",
-      "Fast 58-minute charge"
+      "1056Wh LiFePO4 with long lifespan"
     ],
     "cons": [
       "Heavier than Jackery at 27 lbs",
@@ -134,7 +134,7 @@
       "Solar charging is average"
     ],
     "network_ids": {
-      "amazon": "B0C5JVZ9Q1"
+      "amazon": "B0HP97DN2V"
     },
     "image_url": "",
     "best_for": [
@@ -144,7 +144,7 @@
     ],
     "specs": {
       "capacity_wh": 1056,
-      "output_watts": 2000,
+      "output_watts": 1800,
       "surge_watts": 2400,
       "battery_type": "LiFePO4",
       "cycle_life": 3000,
@@ -156,7 +156,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "bluetti-eb3a",
@@ -166,19 +166,19 @@
     "price_usd": 199,
     "rating": 4.4,
     "verdict": "The best budget power station — 268Wh LiFePO4 for under $200 with 600W output.",
-    "description": "The BLUETTI EB3A is the entry point to LiFePO4 portable power. At $199, it packs 268Wh of capacity, 600W continuous output, and charges from 0-80% in 30 minutes via wall outlet. It won't run a fridge, but it handles laptops, phones, CPAP machines, drones, and small appliances easily. The built-in wireless charging pad on top is a nice touch. At just 10.1 lbs, it's genuinely portable — throw it in a backpack for camping or keep it in a closet for emergencies. Outdoor Life's 'Best Budget' pick.",
+    "description": "The BLUETTI EB3A is the entry point to LiFePO4 portable power. At $199, it packs 268Wh of capacity, 600W continuous output, and charges from 0-80% in 30 minutes via wall outlet. It won't run a fridge, but it handles laptops, phones, CPAP machines, drones, and small appliances easily. At just 10.1 lbs, it's genuinely portable — throw it in a backpack for camping or keep it in a closet for emergencies. Outdoor Life's 'Best Budget' pick.",
     "features": [
       "LiFePO4 at a sub-$200 price",
       "0-80% charge in 30 minutes",
-      "Built-in wireless charging pad",
+      "2 AC outlets (600W / 1200W surge)",
       "10.1 lbs — truly portable",
       "600W output with 1200W surge"
     ],
     "pros": [
       "Cheapest LiFePO4 power station worth buying",
-      "Wireless charging pad is a nice bonus",
+      "Fast 30-minute charge to 80%",
       "Genuinely portable at 10.1 lbs",
-      "Fast 30-minute charge to 80%"
+      "Handles laptops, CPAP, and small devices"
     ],
     "cons": [
       "268Wh won't power large appliances",
@@ -187,7 +187,7 @@
       "App connectivity is basic"
     ],
     "network_ids": {
-      "amazon": "B09YRGMHWL"
+      "amazon": "B09WW3CTF4"
     },
     "image_url": "",
     "best_for": [
@@ -209,7 +209,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "jackery-explorer-300",
@@ -218,26 +218,26 @@
     "category": "portable-power-stations",
     "price_usd": 199,
     "rating": 4.5,
-    "verdict": "The lightest entry-level power station — 293Wh at just 7.1 lbs, perfect for camping and device charging.",
-    "description": "The Jackery Explorer 300 is the power station for people who value portability above all else. At 7.1 lbs, it's lighter than most laptops and small enough to fit in a daypack. 293Wh of capacity and 300W output handle phones, laptops, cameras, drones, and LED lights with ease. It won't power heavy appliances, but that's not its job — it's the ultimate device charger for camping, road trips, and emergency phone charging. Amazon's #1 best-selling portable power station with 7,000+ units sold monthly.",
+    "verdict": "The lightest entry-level power station — ~293Wh LiFePO4, perfect for camping and device charging.",
+    "description": "The Jackery Explorer 300 is the power station for people who value portability above all else. It's light and small enough to fit in a daypack. ~293Wh of capacity and 300W output handle phones, laptops, cameras, drones, and LED lights with ease. It won't power heavy appliances, but that's not its job — it's the ultimate device charger for camping, road trips, and emergency phone charging. One of Amazon's best-selling portable power stations.",
     "features": [
-      "Just 7.1 lbs — lightest in class",
-      "293Wh capacity for device charging",
+      "Lightweight and daypack-friendly",
+      "~293Wh LiFePO4 capacity for device charging",
       "Pure sine wave 300W AC output",
-      "2-hour wall charge time",
-      "Amazon's #1 best-seller in category"
+      "Fast wall charging",
+      "Amazon best-seller in category"
     ],
     "pros": [
-      "Lightest power station available",
+      "One of the lightest power stations available",
       "Perfect for camping and travel",
       "Jackery reliability and simplicity",
-      "#1 best-seller on Amazon"
+      "LiFePO4 battery for long lifespan"
     ],
     "cons": [
       "300W output limits what you can power",
-      "Lithium-ion (not LiFePO4)",
       "No app connectivity",
-      "Solar charging is slow"
+      "Solar charging is slow",
+      "One AC outlet"
     ],
     "network_ids": {
       "amazon": "B082TMBYR6"
@@ -252,17 +252,17 @@
       "capacity_wh": 293,
       "output_watts": 300,
       "surge_watts": 600,
-      "battery_type": "Lithium-ion",
-      "cycle_life": 500,
-      "weight_lbs": 7.1,
+      "battery_type": "LiFePO4",
+      "cycle_life": 3000,
+      "weight_lbs": 8.3,
       "ac_outlets": 1,
       "usb_ports": 3,
       "solar_input_watts": 65,
       "charge_time_wall_min": 120,
-      "warranty_years": 2
+      "warranty_years": 3
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "ecoflow-delta-pro-3",
@@ -272,28 +272,28 @@
     "price_usd": 1699,
     "rating": 4.8,
     "verdict": "The best power station for whole-home backup — 4kWh capacity, expandable to 48kWh, and can wire directly into your breaker panel.",
-    "description": "The DELTA Pro 3 is less a 'portable' power station and more a home energy system that happens to be movable. With 4,000Wh of LiFePO4 capacity (expandable to a staggering 48kWh with extra batteries), 4000W output, and the ability to wire directly into your home breaker panel via an optional transfer switch, this is serious home backup power. It handles everything — fridges, HVAC, sump pumps, medical equipment. The EcoFlow app provides detailed energy management, and solar input accepts up to 2600W for off-grid living. At $1,699, it's an investment, but it replaces a gas generator permanently.",
+    "description": "The DELTA Pro 3 is less a 'portable' power station and more a home energy system that happens to be movable. With 4,096Wh of LiFePO4 capacity (expandable to a staggering 48kWh with extra batteries), 4000W output, 120/240V capability, and the ability to wire directly into your home breaker panel via an optional transfer switch, this is serious home backup power. It handles everything — fridges, HVAC, sump pumps, medical equipment. The EcoFlow app provides detailed energy management, and large solar input supports off-grid living. At $1,699, it's an investment, but it replaces a gas generator permanently.",
     "features": [
-      "4,000Wh LiFePO4 — expandable to 48kWh",
-      "4000W output powers entire home circuits",
+      "4,096Wh LiFePO4 — expandable to 48kWh",
+      "4000W output with 120/240V capability",
       "Wires into breaker panel via transfer switch",
-      "2600W solar input for off-grid capability",
+      "Large solar input for off-grid capability",
       "EcoFlow app with energy management"
     ],
     "pros": [
       "Can replace a gas generator permanently",
       "Expandable to 48kWh for extended outages",
-      "Wires into home panel — no extension cords",
+      "120/240V wires into home panel",
       "5-year warranty"
     ],
     "cons": [
       "$1,699 is a major investment",
-      "68.3 lbs — not truly portable",
+      "Heavy — not truly portable",
       "Transfer switch kit sold separately",
       "Overkill for camping"
     ],
     "network_ids": {
-      "amazon": "B0DCR1SBM1"
+      "amazon": "B0D14FMFZD"
     },
     "image_url": "",
     "best_for": [
@@ -302,12 +302,12 @@
       "off-grid"
     ],
     "specs": {
-      "capacity_wh": 4000,
+      "capacity_wh": 4096,
       "output_watts": 4000,
       "surge_watts": 8000,
       "battery_type": "LiFePO4",
       "cycle_life": 4000,
-      "weight_lbs": 68.3,
+      "weight_lbs": 83,
       "ac_outlets": 5,
       "usb_ports": 6,
       "solar_input_watts": 2600,
@@ -315,7 +315,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "goal-zero-yeti-700",
@@ -324,29 +324,29 @@
     "category": "portable-power-stations",
     "price_usd": 500,
     "rating": 4.5,
-    "verdict": "The most rugged power station — built for harsh conditions with Goal Zero's legendary durability.",
-    "description": "Goal Zero pioneered portable solar power, and the Yeti 700 carries that legacy forward. 697Wh of lithium-ion capacity and 600W output handle camping, overlanding, and emergency use. What sets it apart is build quality — the Yeti feels like a tool, not an appliance. The stackable design lets you daisy-chain multiple units, and the integrated MPPT solar controller maximizes efficiency from Goal Zero's solar panels. It's heavier than competitors (18.3 lbs for its capacity) and lacks LiFePO4, but for users who prioritize durability and the Goal Zero ecosystem, it's the right choice. Outdoor Life's 'Most Reliable' pick.",
+    "verdict": "The most rugged power station — 677Wh LiFePO4 built for harsh conditions with Goal Zero's legendary durability.",
+    "description": "Goal Zero pioneered portable solar power, and the Yeti 700 carries that legacy forward. 677Wh of LiFePO4 capacity and 600W output (1000W surge) handle camping, overlanding, and emergency use, with a 4,000+ cycle battery rated to last for years. What sets it apart is build quality — the Yeti feels like a tool, not an appliance, with IPX4 water and dust resistance. The integrated solar charging and Goal Zero ecosystem make it a dependable off-grid companion. For users who prioritize durability and the Goal Zero ecosystem, it's the right choice. Outdoor Life's 'Most Reliable' pick.",
     "features": [
-      "697Wh capacity with 600W output",
-      "Stackable design for daisy-chaining",
-      "Integrated MPPT solar controller",
-      "Goal Zero ecosystem compatibility",
-      "Tank-like build quality"
+      "677Wh LiFePO4 with 600W output (1000W surge)",
+      "4,000+ cycle battery lifespan",
+      "IPX4 water and dust resistant",
+      "Solar ready with fast charging",
+      "Goal Zero ecosystem compatibility"
     ],
     "pros": [
       "Most durable build quality tested",
-      "Stackable for expandable power",
-      "Goal Zero solar panel ecosystem",
+      "LiFePO4 with 4,000+ cycle lifespan",
+      "IPX4 water and dust resistance",
       "Legendary brand reliability"
     ],
     "cons": [
-      "Lithium-ion (not LiFePO4)",
-      "Heavier than competitors for its capacity",
       "600W output is limiting",
-      "Premium price for the specs"
+      "Heavier than some competitors for its capacity",
+      "Premium price for the specs",
+      "Fewer outlets than rivals"
     ],
     "network_ids": {
-      "amazon": "B0CW1CJTZH"
+      "amazon": "B0CRCVKNHR"
     },
     "image_url": "",
     "best_for": [
@@ -355,20 +355,20 @@
       "solar"
     ],
     "specs": {
-      "capacity_wh": 697,
+      "capacity_wh": 677,
       "output_watts": 600,
-      "surge_watts": 1200,
-      "battery_type": "Lithium-ion",
-      "cycle_life": 500,
-      "weight_lbs": 18.3,
+      "surge_watts": 1000,
+      "battery_type": "LiFePO4",
+      "cycle_life": 4000,
+      "weight_lbs": 20.6,
       "ac_outlets": 2,
       "usb_ports": 4,
       "solar_input_watts": 200,
       "charge_time_wall_min": 300,
-      "warranty_years": 2
+      "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "ecoflow-river-2",
@@ -378,7 +378,7 @@
     "price_usd": 149,
     "rating": 4.4,
     "verdict": "The cheapest EcoFlow worth buying — 256Wh LiFePO4 with X-Boost for $149.",
-    "description": "The RIVER 2 brings EcoFlow's technology to the budget tier. At $149, you get 256Wh of LiFePO4 capacity, 300W output with X-Boost to handle devices up to 600W, and a 60-minute wall charge. At just 7.7 lbs, it's barely heavier than the Jackery 300 but with superior battery chemistry. The EcoFlow app works here too, providing monitoring and settings. For phone/laptop charging, camping lights, and small device power, it's the best budget option from a premium brand.",
+    "description": "The RIVER 2 brings EcoFlow's technology to the budget tier. At $149, you get 256Wh of LiFePO4 capacity, 300W output with X-Boost to handle devices up to 600W, and a 60-minute wall charge. At just 7.7 lbs, it's ultra-portable but with superior battery chemistry. The EcoFlow app works here too, providing monitoring and settings. For phone/laptop charging, camping lights, and small device power, it's the best budget option from a premium brand.",
     "features": [
       "LiFePO4 at just $149",
       "X-Boost handles devices up to 600W",
@@ -399,7 +399,7 @@
       "No wireless charging"
     ],
     "network_ids": {
-      "amazon": "B0BT3FLK3Q"
+      "amazon": "B0B8MXPRDB"
     },
     "image_url": "",
     "best_for": [
@@ -421,7 +421,7 @@
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "bluetti-ac200l",
@@ -431,19 +431,19 @@
     "price_usd": 999,
     "rating": 4.6,
     "verdict": "The best mid-range workhorse — 2048Wh LiFePO4 with 2400W output at under $1,000.",
-    "description": "The BLUETTI AC200L is the power station you buy when 1000Wh isn't enough but $1,700 for an EcoFlow DELTA Pro 3 is too much. 2048Wh of LiFePO4 capacity and 2400W continuous output (3600W surge) powers everything from fridges to power tools to window AC units. Dual charging lets you combine wall + solar for faster recharging. The built-in wireless charging pad and 7 AC outlets cover every scenario. At $999, it's the most capacity per dollar in the premium tier. 62 lbs means it stays in one place, but that's the tradeoff for this much power.",
+    "description": "The BLUETTI AC200L is the power station you buy when 1000Wh isn't enough but $1,700 for an EcoFlow DELTA Pro 3 is too much. 2048Wh of LiFePO4 capacity (expandable to 8192Wh) and 2400W continuous output (3600W power lifting) powers everything from fridges to power tools to window AC units. A 30A RV output and 4 AC outlets cover every scenario, and the BLUETTI app provides Bluetooth monitoring. At $999, it's one of the best capacity-per-dollar buys in the premium tier. 62 lbs means it stays in one place, but that's the tradeoff for this much power.",
     "features": [
-      "2048Wh LiFePO4 — massive capacity",
-      "2400W continuous / 3600W surge output",
-      "Dual charging: wall + solar simultaneously",
-      "7 AC outlets + wireless charging pad",
+      "2048Wh LiFePO4 — expandable to 8192Wh",
+      "2400W continuous / 3600W power lifting",
+      "30A RV output",
+      "4 AC outlets",
       "BLUETTI app with Bluetooth monitoring"
     ],
     "pros": [
-      "Best capacity per dollar in premium tier",
+      "Great capacity per dollar in premium tier",
       "2400W powers nearly any appliance",
-      "Dual charging cuts recharge time",
-      "7 AC outlets is most in class"
+      "Expandable to 8192Wh",
+      "30A RV output for campers"
     ],
     "cons": [
       "62 lbs — not portable",
@@ -452,7 +452,7 @@
       "Fan noise at high loads"
     ],
     "network_ids": {
-      "amazon": "B0CLFLR516"
+      "amazon": "B0HP9LC58M"
     },
     "image_url": "",
     "best_for": [
@@ -467,65 +467,13 @@
       "battery_type": "LiFePO4",
       "cycle_life": 3500,
       "weight_lbs": 62,
-      "ac_outlets": 7,
+      "ac_outlets": 4,
       "usb_ports": 5,
       "solar_input_watts": 1200,
       "charge_time_wall_min": 90,
       "warranty_years": 5
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
-  },
-  {
-    "slug": "grecell-t3000",
-    "name": "GRECELL T3000 Portable Power Station",
-    "brand": "GRECELL",
-    "category": "portable-power-stations",
-    "price_usd": 499,
-    "rating": 4.3,
-    "verdict": "The best power-per-dollar budget option — 2880Wh LiFePO4 with 3000W output for under $500.",
-    "description": "GRECELL isn't a household name, but the T3000 offers specs that make the big brands nervous. 2880Wh of LiFePO4 capacity and 3000W output for under $500 — that's roughly 3x the capacity of the Anker C1000 at a similar price. The catch is build quality and software aren't at EcoFlow or Jackery levels, and at 71.4 lbs it's essentially stationary. But for home backup on a budget, there's nothing else that delivers this much power for this little money. 3,500+ cycle LiFePO4 battery means it'll last a decade.",
-    "features": [
-      "2880Wh LiFePO4 — most capacity under $500",
-      "3000W continuous / 6000W surge",
-      "3,500+ cycle battery life",
-      "14 total output ports",
-      "UPS function for seamless power switching"
-    ],
-    "pros": [
-      "Unmatched capacity per dollar",
-      "3000W powers nearly anything",
-      "UPS function for home backup",
-      "3,500 cycle LiFePO4"
-    ],
-    "cons": [
-      "71.4 lbs — not portable at all",
-      "Build quality trails premium brands",
-      "No app connectivity",
-      "Brand is less established"
-    ],
-    "network_ids": {
-      "amazon": "B0D8T5RPSD"
-    },
-    "image_url": "",
-    "best_for": [
-      "budget",
-      "home-backup"
-    ],
-    "specs": {
-      "capacity_wh": 2880,
-      "output_watts": 3000,
-      "surge_watts": 6000,
-      "battery_type": "LiFePO4",
-      "cycle_life": 3500,
-      "weight_lbs": 71.4,
-      "ac_outlets": 6,
-      "usb_ports": 8,
-      "solar_input_watts": 1000,
-      "charge_time_wall_min": 150,
-      "warranty_years": 2
-    },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   }
 ]
