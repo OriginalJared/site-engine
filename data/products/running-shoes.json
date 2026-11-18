@@ -7,7 +7,7 @@
       "category": "running-shoes",
       "price_usd": 140,
       "rating": 4.7,
-      "verdict": "The best all-around running shoe \u2014 40 years of refinement make this the daily trainer that does everything well.",
+      "verdict": "The best all-around running shoe — 40 years of refinement make this the daily trainer that does everything well.",
       "description": "The Nike Pegasus 41 is the most trusted daily running shoe in the world, and for good reason. The ReactX foam midsole delivers 13% more energy return than React foam while being softer and more responsive underfoot. A redesigned Air Zoom unit in the forefoot adds a snappy toe-off, and the engineered mesh upper breathes while locking your foot in place. Whether you're running 3 miles or 13, the Pegasus handles it all.",
       "features": [
         "ReactX foam midsole",
@@ -24,13 +24,13 @@
         "Available in wide widths and many colors"
       ],
       "cons": [
-        "Not specialized \u2014 jack of all trades",
+        "Not specialized — jack of all trades",
         "Heavier than carbon-plated racers",
         "Break-in period for some runners",
         "Outsole wears faster than competitors"
       ],
       "network_ids": {
-        "amazon": "B0D4FMKYZ6"
+        "amazon": "B0D92D198P"
       },
       "image_url": "",
       "best_for": [
@@ -46,7 +46,7 @@
         "Category": "Neutral daily trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "brooks-ghost-16",
@@ -55,7 +55,7 @@
       "category": "running-shoes",
       "price_usd": 140,
       "rating": 4.7,
-      "verdict": "The smoothest ride in running \u2014 nitrogen-infused DNA LOFT v2 cushioning for buttery-soft daily miles.",
+      "verdict": "The smoothest ride in running — nitrogen-infused DNA LOFT v2 cushioning for buttery-soft daily miles.",
       "description": "The Brooks Ghost 16 is the go-to shoe for runners who want a plush, smooth ride. The nitrogen-infused DNA LOFT v2 midsole is 20% softer and 10% more responsive than the previous version, creating a cushioned experience that protects joints without feeling mushy. The 3D Fit Print upper wraps your foot securely, and the segmented crash pad in the outsole ensures smooth heel-to-toe transitions. It's the most comfortable daily trainer money can buy.",
       "features": [
         "Nitrogen-infused DNA LOFT v2 midsole",
@@ -78,7 +78,7 @@
         "Outsole rubber could be more durable"
       ],
       "network_ids": {
-        "amazon": "B0CK3RZ3HJ"
+        "amazon": "B0CLMHGPYP"
       },
       "image_url": "",
       "best_for": [
@@ -94,7 +94,7 @@
         "Category": "Neutral cushioned trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "asics-gel-kayano-31",
@@ -103,7 +103,7 @@
       "category": "running-shoes",
       "price_usd": 160,
       "rating": 4.6,
-      "verdict": "The best stability shoe \u2014 4D Guidance System supports overpronation without feeling restrictive.",
+      "verdict": "The best stability shoe — 4D Guidance System supports overpronation without feeling restrictive.",
       "description": "The ASICS Gel-Kayano 31 has been the king of stability running shoes for three decades. The new PureGEL technology in the heel absorbs impact at footstrike, while the FF Blast Plus Eco midsole returns energy on push-off. The 4D Guidance System provides medial support for overpronators without the rigid, heavy feel of traditional stability shoes. It's the shoe that proves stability and comfort aren't mutually exclusive.",
       "features": [
         "4D Guidance System for stability",
@@ -116,7 +116,7 @@
       "pros": [
         "Best stability shoe for overpronators",
         "PureGEL is softer than traditional GEL",
-        "Doesn't feel like a stability shoe \u2014 natural ride",
+        "Doesn't feel like a stability shoe — natural ride",
         "Durable AHARPLUS outsole lasts"
       ],
       "cons": [
@@ -126,7 +126,7 @@
         "Narrow toe box for some foot shapes"
       ],
       "network_ids": {
-        "amazon": "B0D1GLVY7X"
+        "amazon": "B0D82F4NQD"
       },
       "image_url": "",
       "best_for": [
@@ -142,7 +142,7 @@
         "Category": "Stability trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "hoka-clifton-9",
@@ -151,8 +151,8 @@
       "category": "running-shoes",
       "price_usd": 145,
       "rating": 4.6,
-      "verdict": "The lightest max-cushion shoe \u2014 marshmallow-soft with a meta-rocker for effortless forward momentum.",
-      "description": "The HOKA Clifton 9 is the shoe that made max cushioning mainstream. Despite its thick, pillowy midsole, it weighs just 8.9 oz \u2014 lighter than many traditional trainers. The compression-molded EVA foam is soft without being unstable, and HOKA's signature meta-rocker geometry creates a rolling sensation that propels you forward. The breathable engineered mesh upper and early-stage Meta-Rocker make every run feel easier than it should.",
+      "verdict": "The lightest max-cushion shoe — marshmallow-soft with a meta-rocker for effortless forward momentum.",
+      "description": "The HOKA Clifton 9 is the shoe that made max cushioning mainstream. Despite its thick, pillowy midsole, it weighs just 8.9 oz — lighter than many traditional trainers. The compression-molded EVA foam is soft without being unstable, and HOKA's signature meta-rocker geometry creates a rolling sensation that propels you forward. The breathable engineered mesh upper and early-stage Meta-Rocker make every run feel easier than it should.",
       "features": [
         "Compression-molded EVA midsole",
         "Early-stage Meta-Rocker geometry",
@@ -174,7 +174,7 @@
         "Narrow fit for wide feet"
       ],
       "network_ids": {
-        "amazon": "B0C71RFQSB"
+        "amazon": "B0C6XQ1WXJ"
       },
       "image_url": "",
       "best_for": [
@@ -190,7 +190,7 @@
         "Category": "Max-cushion neutral trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "new-balance-fresh-foam-x-1080v14",
@@ -199,7 +199,7 @@
       "category": "running-shoes",
       "price_usd": 160,
       "rating": 4.7,
-      "verdict": "The plushest daily trainer \u2014 Fresh Foam X midsole delivers a cloud-like ride for long-distance comfort.",
+      "verdict": "The plushest daily trainer — Fresh Foam X midsole delivers a cloud-like ride for long-distance comfort.",
       "description": "The New Balance 1080v14 is the ultimate comfort shoe for runners who want their daily miles to feel like running on clouds. The Fresh Foam X midsole is New Balance's softest and most responsive foam, and the Hypoknit upper wraps your foot in a seamless, sock-like fit. The strategic rubber outsole provides traction where you need it while keeping weight down. If your priority is comfort on runs of any distance, the 1080v14 is the answer.",
       "features": [
         "Fresh Foam X midsole",
@@ -222,7 +222,7 @@
         "Outsole coverage could be more extensive"
       ],
       "network_ids": {
-        "amazon": "B0CSBBM6BW"
+        "amazon": "B0CLB7N27W"
       },
       "image_url": "",
       "best_for": [
@@ -238,7 +238,7 @@
         "Category": "Premium cushioned trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "nike-vaporfly-3",
@@ -247,8 +247,8 @@
       "category": "running-shoes",
       "price_usd": 260,
       "rating": 4.7,
-      "verdict": "The fastest marathon shoe \u2014 carbon fiber plate and ZoomX foam have broken more records than any other shoe.",
-      "description": "The Nike Vaporfly 3 is the shoe that changed marathon running forever. Its full-length carbon fiber plate sits between layers of ZoomX foam \u2014 Nike's lightest, most responsive material \u2014 to create a propulsive sensation that makes you faster. Studies show it improves running economy by 4-5%. It's the shoe worn by the majority of elite marathoners and the holder of countless world records. If you're racing, this is the unfair advantage.",
+      "verdict": "The fastest marathon shoe — carbon fiber plate and ZoomX foam have broken more records than any other shoe.",
+      "description": "The Nike Vaporfly 3 is the shoe that changed marathon running forever. Its full-length carbon fiber plate sits between layers of ZoomX foam — Nike's lightest, most responsive material — to create a propulsive sensation that makes you faster. Studies show it improves running economy by 4-5%. It's the shoe worn by the majority of elite marathoners and the holder of countless world records. If you're racing, this is the unfair advantage.",
       "features": [
         "Full-length carbon fiber plate",
         "ZoomX foam midsole",
@@ -267,10 +267,10 @@
         "$260 is expensive for a race-only shoe",
         "Not durable enough for daily training",
         "Carbon plate can cause calf strain if not adapted",
-        "Narrow fit \u2014 not for wide feet"
+        "Narrow fit — not for wide feet"
       ],
       "network_ids": {
-        "amazon": "B0C17ZSNFX"
+        "amazon": "B0CWS9V158"
       },
       "image_url": "",
       "best_for": [
@@ -286,7 +286,7 @@
         "Category": "Carbon-plated racer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "saucony-ride-17",
@@ -295,8 +295,8 @@
       "category": "running-shoes",
       "price_usd": 140,
       "rating": 4.6,
-      "verdict": "The balanced daily trainer \u2014 PWRRUN+ foam delivers the perfect mix of cushion and responsiveness.",
-      "description": "The Saucony Ride 17 is the Goldilocks of daily trainers \u2014 not too soft, not too firm, just right. PWRRUN+ foam provides a balanced ride that cushions on easy days and responds on faster efforts. The FormFit upper adapts to your foot shape, and the durable rubber outsole handles road miles without premature wear. It's the versatile, reliable daily shoe for runners who don't want to think about which shoe to grab \u2014 the Ride 17 works for everything.",
+      "verdict": "The balanced daily trainer — PWRRUN+ foam delivers the perfect mix of cushion and responsiveness.",
+      "description": "The Saucony Ride 17 is the Goldilocks of daily trainers — not too soft, not too firm, just right. PWRRUN+ foam provides a balanced ride that cushions on easy days and responds on faster efforts. The FormFit upper adapts to your foot shape, and the durable rubber outsole handles road miles without premature wear. It's the versatile, reliable daily shoe for runners who don't want to think about which shoe to grab — the Ride 17 works for everything.",
       "features": [
         "PWRRUN+ foam midsole",
         "FormFit adaptive upper",
@@ -318,7 +318,7 @@
         "Design is functional, not flashy"
       ],
       "network_ids": {
-        "amazon": "B0CXL3TDN8"
+        "amazon": "B0C34XWKQR"
       },
       "image_url": "",
       "best_for": [
@@ -334,7 +334,7 @@
         "Category": "Neutral daily trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "on-cloudmonster-2",
@@ -343,8 +343,8 @@
       "category": "running-shoes",
       "price_usd": 170,
       "rating": 4.5,
-      "verdict": "The bounciest running shoe \u2014 On's CloudTec Phase cushioning creates a unique, trampoline-like ride.",
-      "description": "The On Cloudmonster 2 lives up to its name \u2014 it's On's most cushioned shoe with a ride that feels like bouncing on clouds. The CloudTec Phase pods compress sequentially from heel to toe, creating a rolling, springy sensation unlike any other shoe. Helion HF foam is soft yet durable, and the oversized design looks as bold as it runs. For runners who want maximum cushion with a playful, bouncy character, the Cloudmonster 2 delivers a one-of-a-kind experience.",
+      "verdict": "The bounciest running shoe — On's CloudTec Phase cushioning creates a unique, trampoline-like ride.",
+      "description": "The On Cloudmonster 2 lives up to its name — it's On's most cushioned shoe with a ride that feels like bouncing on clouds. The CloudTec Phase pods compress sequentially from heel to toe, creating a rolling, springy sensation unlike any other shoe. Helion HF foam is soft yet durable, and the oversized design looks as bold as it runs. For runners who want maximum cushion with a playful, bouncy character, the Cloudmonster 2 delivers a one-of-a-kind experience.",
       "features": [
         "CloudTec Phase cushioning",
         "Helion HF foam",
@@ -366,7 +366,7 @@
         "Not as stable as traditional trainers"
       ],
       "network_ids": {
-        "amazon": "B0CY3YKH7S"
+        "amazon": "B0DMYCF9V1"
       },
       "image_url": "",
       "best_for": [
@@ -382,7 +382,7 @@
         "Category": "Max-cushion daily trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "adidas-ultraboost-light",
@@ -391,8 +391,8 @@
       "category": "running-shoes",
       "price_usd": 190,
       "rating": 4.5,
-      "verdict": "The best running-to-casual crossover \u2014 Light BOOST midsole runs great and looks even better off the track.",
-      "description": "The Adidas Ultraboost Light is the lightest Ultraboost ever, using 30% less material in the midsole without sacrificing the signature Boost energy return. The result is a shoe that's genuinely good for running \u2014 responsive, cushioned, and smooth \u2014 while also being one of the most stylish sneakers you can wear with jeans. The Primeknit+ upper is soft and seamless, and Continental rubber on the outsole grips in any weather. It's the rare shoe that excels on the run and on the street.",
+      "verdict": "The best running-to-casual crossover — Light BOOST midsole runs great and looks even better off the track.",
+      "description": "The Adidas Ultraboost Light is the lightest Ultraboost ever, using 30% less material in the midsole without sacrificing the signature Boost energy return. The result is a shoe that's genuinely good for running — responsive, cushioned, and smooth — while also being one of the most stylish sneakers you can wear with jeans. The Primeknit+ upper is soft and seamless, and Continental rubber on the outsole grips in any weather. It's the rare shoe that excels on the run and on the street.",
       "features": [
         "Light BOOST midsole (30% lighter)",
         "Primeknit+ upper",
@@ -414,7 +414,7 @@
         "Boost foam compresses with heavy use"
       ],
       "network_ids": {
-        "amazon": "B0BX4R7VWR"
+        "amazon": "B0D3HZ2152"
       },
       "image_url": "",
       "best_for": [
@@ -430,7 +430,7 @@
         "Category": "Lifestyle running shoe"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "altra-torin-7",
@@ -439,7 +439,7 @@
       "category": "running-shoes",
       "price_usd": 150,
       "rating": 4.5,
-      "verdict": "The best zero-drop shoe \u2014 foot-shaped toe box and balanced cushioning for natural running form.",
+      "verdict": "The best zero-drop shoe — foot-shaped toe box and balanced cushioning for natural running form.",
       "description": "The Altra Torin 7 is for runners who believe in letting their feet move naturally. Its zero-drop platform places your heel and forefoot at the same height, encouraging a natural midfoot strike. The foot-shaped FootShape toe box lets your toes spread fully for better balance and power. Altra EGO midsole foam provides moderate cushioning without interfering with ground feel. If you want to run the way your body was designed to, the Torin 7 is the gateway.",
       "features": [
         "Zero-drop platform (0mm)",
@@ -462,7 +462,7 @@
         "Looks unconventional due to wide toe box"
       ],
       "network_ids": {
-        "amazon": "B0CHX2XWCN"
+        "amazon": "B0D17MFM24"
       },
       "image_url": "",
       "best_for": [
@@ -478,7 +478,7 @@
         "Category": "Zero-drop neutral trainer"
       },
       "date_added": "2026-04-27",
-      "date_updated": "2026-04-27"
+      "date_updated": "2026-11-18"
     }
   ]
 }
