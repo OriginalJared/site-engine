@@ -7,7 +7,7 @@
       "category": "mesh-wifi-routers",
       "price_usd": 299,
       "rating": 4.6,
-      "verdict": "The best overall mesh system \u2014 Wi-Fi 6E tri-band coverage for up to 7,200 sq ft at a fair price.",
+      "verdict": "The best overall mesh system — Wi-Fi 6E tri-band coverage for up to 7,200 sq ft at a fair price.",
       "description": "The TP-Link Deco XE75 brings Wi-Fi 6E to the masses at a price that doesn't sting. The 3-pack blankets up to 7,200 sq ft with tri-band coverage, using the dedicated 6GHz band as a wireless backhaul to keep your 2.4GHz and 5GHz bands free for devices. AI-Driven Mesh intelligently routes traffic, and the Deco app makes setup a breeze. With 200+ device support and built-in HomeShield security, it's the complete package.",
       "features": [
         "Wi-Fi 6E tri-band (AXE5400)",
@@ -29,7 +29,7 @@
         "HomeShield premium features require subscription"
       ],
       "network_ids": {
-        "amazon": "B0BCWBCY34"
+        "amazon": "B0B88T5RDY"
       },
       "image_url": "",
       "best_for": [
@@ -46,7 +46,7 @@
         "Ethernet": "3x Gigabit per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "eero-pro-6e",
@@ -55,7 +55,7 @@
       "category": "mesh-wifi-routers",
       "price_usd": 399,
       "rating": 4.5,
-      "verdict": "The easiest mesh system to set up \u2014 tri-band Wi-Fi 6E with TrueMesh and built-in Zigbee smart home hub.",
+      "verdict": "The easiest mesh system to set up — tri-band Wi-Fi 6E with TrueMesh and built-in Zigbee smart home hub.",
       "description": "The eero Pro 6E is the mesh system for people who hate networking. Setup takes literally 5 minutes via the eero app, and TrueMesh technology dynamically routes traffic through the fastest path. Tri-band Wi-Fi 6E covers up to 6,000 sq ft, and the built-in Zigbee smart home hub connects compatible devices without a separate bridge. Thread and Matter support future-proof your smart home ecosystem.",
       "features": [
         "Wi-Fi 6E tri-band",
@@ -66,7 +66,7 @@
         "eero Secure included (6 months)"
       ],
       "pros": [
-        "Easiest setup of any mesh system \u2014 5 minutes",
+        "Easiest setup of any mesh system — 5 minutes",
         "Built-in Zigbee hub eliminates separate bridges",
         "Thread + Matter support is future-proof",
         "TrueMesh routing is reliable and fast"
@@ -77,7 +77,7 @@
         "2x Ethernet ports per node limits wired devices"
       ],
       "network_ids": {
-        "amazon": "B09HJN9TYR"
+        "amazon": "B091G64GVK"
       },
       "image_url": "",
       "best_for": [
@@ -93,7 +93,7 @@
         "Smart Home": "Zigbee + Thread hub"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "google-nest-wifi-pro",
@@ -102,7 +102,7 @@
       "category": "mesh-wifi-routers",
       "price_usd": 399,
       "rating": 4.4,
-      "verdict": "The best mesh for Google homes \u2014 Wi-Fi 6E with Google Assistant, Matter support, and sleek design.",
+      "verdict": "The best mesh for Google homes — Wi-Fi 6E with Google Assistant, Matter support, and sleek design.",
       "description": "The Google Nest Wifi Pro integrates seamlessly into Google's smart home ecosystem. Each node covers up to 2,200 sq ft with Wi-Fi 6E tri-band performance, and the 3-pack blankets up to 6,600 sq ft. Matter and Thread support make it a smart home hub, and Google Home app management is intuitive. The minimalist design blends into any room, and automatic software updates keep security current without any effort.",
       "features": [
         "Wi-Fi 6E tri-band (AXE5400)",
@@ -121,10 +121,10 @@
       "cons": [
         "No Ethernet backhaul option on satellite nodes",
         "Only 1 Ethernet port per satellite",
-        "Google Home app required \u2014 no web interface"
+        "Google Home app required — no web interface"
       ],
       "network_ids": {
-        "amazon": "B0BCZ3PL1C"
+        "amazon": "B0BCQS55N6"
       },
       "image_url": "",
       "best_for": [
@@ -140,7 +140,7 @@
         "Smart Home": "Matter + Thread"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "netgear-orbi-rbk863s",
@@ -149,8 +149,8 @@
       "category": "mesh-wifi-routers",
       "price_usd": 1499,
       "rating": 4.4,
-      "verdict": "The ultimate no-compromise mesh system \u2014 10 Gbps backhaul, quad-band, and coverage for mansions.",
-      "description": "The Netgear Orbi RBKE963 is the most powerful mesh system money can buy. Its quad-band architecture dedicates an entire 6GHz band to wireless backhaul, leaving three bands free for devices. A 10 Gbps Ethernet port on the router handles multi-gig internet plans, and the 3-pack covers up to 9,000 sq ft. If you have a large home, gigabit+ internet, and demand the absolute fastest Wi-Fi everywhere, this is it \u2014 but you'll pay dearly for it.",
+      "verdict": "The ultimate no-compromise mesh system — 10 Gbps backhaul, quad-band, and coverage for mansions.",
+      "description": "The Netgear Orbi RBKE963 is the most powerful mesh system money can buy. Its quad-band architecture dedicates an entire 6GHz band to wireless backhaul, leaving three bands free for devices. A 10 Gbps Ethernet port on the router handles multi-gig internet plans, and the 3-pack covers up to 9,000 sq ft. If you have a large home, gigabit+ internet, and demand the absolute fastest Wi-Fi everywhere, this is it — but you'll pay dearly for it.",
       "features": [
         "Wi-Fi 6E quad-band (AXE11000)",
         "Covers up to 9,000 sq ft (3-pack)",
@@ -171,7 +171,7 @@
         "Netgear Armor subscription adds ongoing cost"
       ],
       "network_ids": {
-        "amazon": "B09GYN7CXR"
+        "amazon": "B09D8THD92"
       },
       "image_url": "",
       "best_for": [
@@ -188,7 +188,7 @@
         "Ethernet": "10G + 4x 1G per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "tp-link-deco-x55",
@@ -197,7 +197,7 @@
       "category": "mesh-wifi-routers",
       "price_usd": 179,
       "rating": 4.6,
-      "verdict": "The best value mesh system \u2014 reliable Wi-Fi 6 whole-home coverage for under $200.",
+      "verdict": "The best value mesh system — reliable Wi-Fi 6 whole-home coverage for under $200.",
       "description": "The TP-Link Deco X55 delivers rock-solid mesh Wi-Fi 6 at a price that's hard to argue with. The 3-pack covers up to 6,500 sq ft with dual-band AX3000 speeds, and each node has 3 Gigabit Ethernet ports for wired devices. AI-Driven Mesh learns your network habits and optimizes routing, while HomeShield provides basic network security. For homes that don't need Wi-Fi 6E, this is the sweet spot of price and performance.",
       "features": [
         "Wi-Fi 6 dual-band (AX3000)",
@@ -214,7 +214,7 @@
         "Deco app is beginner-friendly"
       ],
       "cons": [
-        "Dual-band only \u2014 no dedicated backhaul",
+        "Dual-band only — no dedicated backhaul",
         "No Wi-Fi 6E support",
         "HomeShield premium requires subscription"
       ],
@@ -235,7 +235,7 @@
         "Ethernet": "3x Gigabit per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "asus-zenwifi-xt9",
@@ -244,13 +244,13 @@
       "category": "mesh-wifi-routers",
       "price_usd": 379,
       "rating": 4.5,
-      "verdict": "The power user's mesh system \u2014 AiMesh, AiProtection Pro, and deep customization for networking enthusiasts.",
+      "verdict": "The power user's mesh system — AiMesh, AiProtection Pro, and deep customization for networking enthusiasts.",
       "description": "The ASUS ZenWiFi XT9 is built for users who want both ease of use and deep control. Tri-band AX7800 speeds with a dedicated 5GHz backhaul keep traffic flowing, while ASUS AiProtection Pro (powered by Trend Micro) provides lifetime free security without subscriptions. AiMesh compatibility means you can mix and match with other ASUS routers, and the ASUS Router app offers granular controls that rival full router firmware.",
       "features": [
         "Wi-Fi 6 tri-band (AX7800)",
         "Covers up to 5,700 sq ft (2-pack)",
         "Dedicated 5GHz backhaul",
-        "AiProtection Pro \u2014 lifetime free security",
+        "AiProtection Pro — lifetime free security",
         "AiMesh compatible with other ASUS routers",
         "2.5G Ethernet WAN port"
       ],
@@ -261,12 +261,12 @@
         "Deep customization via ASUS Router app"
       ],
       "cons": [
-        "Only 2 nodes \u2014 may need a 3rd for very large homes",
+        "Only 2 nodes — may need a 3rd for very large homes",
         "No Wi-Fi 6E",
         "Larger node size than competitors"
       ],
       "network_ids": {
-        "amazon": "B0BTMBWVNF"
+        "amazon": "B0BHL9T17Y"
       },
       "image_url": "",
       "best_for": [
@@ -282,7 +282,7 @@
         "Ethernet": "2.5G WAN + 3x Gigabit per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "amazon-eero-6-plus",
@@ -291,7 +291,7 @@
       "category": "mesh-wifi-routers",
       "price_usd": 199,
       "rating": 4.5,
-      "verdict": "The best budget mesh with smart home features \u2014 Wi-Fi 6, Zigbee hub, and dead-simple setup under $200.",
+      "verdict": "The best budget mesh with smart home features — Wi-Fi 6, Zigbee hub, and dead-simple setup under $200.",
       "description": "The eero 6+ brings the simplicity of eero to budget-conscious buyers. The 3-pack covers up to 4,500 sq ft with dual-band Wi-Fi 6, and each node includes a built-in Zigbee smart home hub for connecting compatible devices. Setup takes minutes via the eero app, and TrueMesh routing keeps connections stable as you move around the house. It's the easiest way to get whole-home Wi-Fi with smart home integration on a budget.",
       "features": [
         "Wi-Fi 6 dual-band",
@@ -308,12 +308,12 @@
         "Thread support for future smart home devices"
       ],
       "cons": [
-        "Dual-band only \u2014 no dedicated backhaul",
+        "Dual-band only — no dedicated backhaul",
         "4,500 sq ft is smaller than TP-Link competitors",
         "eero Secure subscription for advanced features"
       ],
       "network_ids": {
-        "amazon": "B09HJND3YC"
+        "amazon": "B08ZK2BHP2"
       },
       "image_url": "",
       "best_for": [
@@ -330,7 +330,7 @@
         "Smart Home": "Zigbee + Thread hub"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "tp-link-deco-be65",
@@ -339,14 +339,14 @@
       "category": "mesh-wifi-routers",
       "price_usd": 449,
       "rating": 4.4,
-      "verdict": "The first affordable Wi-Fi 7 mesh system \u2014 future-proof speeds with MLO and 320 MHz channels.",
-      "description": "The TP-Link Deco BE65 is one of the first Wi-Fi 7 mesh systems at a price that isn't stratospheric. BE11000 tri-band speeds, Multi-Link Operation (MLO) for simultaneous multi-band connections, and 320 MHz channel support deliver genuinely next-gen performance. The 3-pack covers up to 6,500 sq ft, and a 2.5G Ethernet port on each node handles faster internet plans. If you're future-proofing your home network, this is the entry point.",
+      "verdict": "An affordable Wi-Fi 7 mesh system — future-proof speeds with MLO and 320 MHz channels.",
+      "description": "The TP-Link Deco BE65 is one of the more affordable Wi-Fi 7 mesh systems. BE9300 tri-band speeds, Multi-Link Operation (MLO) for simultaneous multi-band connections, and 320 MHz channel support deliver genuinely next-gen performance. The 3-pack covers a large home, and 2.5 Gbps Ethernet ports on each node handle faster internet plans. If you're future-proofing your home network, this is a strong entry point.",
       "features": [
-        "Wi-Fi 7 tri-band (BE11000)",
-        "Covers up to 6,500 sq ft (3-pack)",
+        "Wi-Fi 7 tri-band (BE9300)",
+        "Covers a large home (3-pack)",
         "Multi-Link Operation (MLO)",
         "320 MHz channel support",
-        "2.5G Ethernet port per node",
+        "4x 2.5 Gbps Ethernet ports per node",
         "AI-Driven Mesh optimization"
       ],
       "pros": [
@@ -361,7 +361,7 @@
         "Benefits won't be fully realized until device ecosystem catches up"
       ],
       "network_ids": {
-        "amazon": "B0CX4V76RY"
+        "amazon": "B0BRRH519K"
       },
       "image_url": "",
       "best_for": [
@@ -369,15 +369,15 @@
         "premium"
       ],
       "specs": {
-        "Wi-Fi Standard": "Wi-Fi 7 (BE11000)",
-        "Coverage": "Up to 6,500 sq ft",
+        "Wi-Fi Standard": "Wi-Fi 7 (BE9300)",
+        "Coverage": "Large home (3-pack)",
         "Bands": "Tri-band (2.4 + 5 + 6 GHz)",
-        "Speed": "11,000 Mbps combined",
+        "Speed": "9300 Mbps combined",
         "Nodes": "3",
-        "Ethernet": "2.5G + 2x Gigabit per node"
+        "Ethernet": "4x 2.5 Gbps per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "linksys-velop-mx5300",
@@ -386,20 +386,20 @@
       "category": "mesh-wifi-routers",
       "price_usd": 699,
       "rating": 4.3,
-      "verdict": "Enterprise-grade mesh for large homes \u2014 Wi-Fi 6E with Qualcomm chipset and Cognitive Mesh technology.",
-      "description": "The Linksys Atlas Max 6E brings enterprise Qualcomm networking silicon to the home. Each node packs a quad-core Qualcomm processor and tri-band Wi-Fi 6E (AXE8400), with Cognitive Mesh technology that uses machine learning to optimize channel selection, band steering, and client routing. The 3-pack covers up to 9,000 sq ft, and a 5G Ethernet port handles ultra-fast internet plans. It's the choice for tech-savvy users who want maximum throughput.",
+      "verdict": "Enterprise-grade mesh for large homes — Wi-Fi 6E with Qualcomm chipset and Cognitive Mesh technology.",
+      "description": "The Linksys Atlas Max 6E brings enterprise Qualcomm networking silicon to the home. Each node packs a quad-core Qualcomm processor and tri-band Wi-Fi 6E, with Cognitive Mesh technology that uses machine learning to optimize channel selection, band steering, and client routing. The 3-pack covers up to 9,000 sq ft and handles ultra-fast internet plans. It's the choice for tech-savvy users who want maximum throughput.",
       "features": [
-        "Wi-Fi 6E tri-band (AXE8400)",
+        "Wi-Fi 6E tri-band",
         "Covers up to 9,000 sq ft (3-pack)",
         "Qualcomm quad-core processor",
         "Cognitive Mesh AI optimization",
-        "5 Gbps Ethernet port",
+        "Multi-gig Ethernet",
         "Linksys Aware motion sensing"
       ],
       "pros": [
         "Qualcomm chipset delivers top-tier performance",
         "9,000 sq ft coverage handles very large homes",
-        "5G Ethernet for multi-gig internet",
+        "Multi-gig Ethernet for fast internet",
         "Cognitive Mesh learns and optimizes over time"
       ],
       "cons": [
@@ -408,7 +408,7 @@
         "Linksys app is less polished than eero or Deco"
       ],
       "network_ids": {
-        "amazon": "B09JZL4TFQ"
+        "amazon": "B09DR9J6VB"
       },
       "image_url": "",
       "best_for": [
@@ -421,10 +421,10 @@
         "Bands": "Tri-band (2.4 + 5 + 6 GHz)",
         "Speed": "8400 Mbps combined",
         "Nodes": "3",
-        "Ethernet": "5G + 4x Gigabit per node"
+        "Ethernet": "Multi-gig + Gigabit per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     },
     {
       "slug": "asus-zenwifi-ax-xt8",
@@ -433,29 +433,29 @@
       "category": "mesh-wifi-routers",
       "price_usd": 249,
       "rating": 4.5,
-      "verdict": "The most reliable Wi-Fi 6 mesh \u2014 battle-tested with free lifetime security and strong Ethernet backhaul.",
+      "verdict": "The most reliable Wi-Fi 6 mesh — battle-tested with free lifetime security and strong Ethernet backhaul.",
       "description": "The ASUS ZenWiFi AX XT8 has been the go-to reliable mesh system since its launch and continues to deliver outstanding performance. Tri-band AX6600 with a dedicated 5GHz backhaul ensures satellites maintain full speed, and AiProtection Pro provides free lifetime network security without any subscription. With coverage up to 5,500 sq ft and a 2.5G WAN port, it remains one of the best values in tri-band mesh networking.",
       "features": [
         "Wi-Fi 6 tri-band (AX6600)",
         "Covers up to 5,500 sq ft (2-pack)",
         "Dedicated 5GHz backhaul",
-        "AiProtection Pro \u2014 free lifetime security",
+        "AiProtection Pro — free lifetime security",
         "2.5G WAN port",
         "AiMesh compatible"
       ],
       "pros": [
         "Battle-tested reliability over years of updates",
-        "Free lifetime security \u2014 no subscription",
+        "Free lifetime security — no subscription",
         "Dedicated backhaul keeps speeds consistent",
         "2.5G WAN for faster internet plans"
       ],
       "cons": [
-        "Wi-Fi 6 only \u2014 no 6E or 7",
+        "Wi-Fi 6 only — no 6E or 7",
         "2-pack may not cover very large homes",
         "Firmware updates can occasionally cause issues"
       ],
       "network_ids": {
-        "amazon": "B083Q2WHBK"
+        "amazon": "B083Q45V1V"
       },
       "image_url": "",
       "best_for": [
@@ -471,7 +471,7 @@
         "Ethernet": "2.5G WAN + 3x Gigabit per node"
       },
       "date_added": "2026-04-26",
-      "date_updated": "2026-04-26"
+      "date_updated": "2026-11-18"
     }
   ]
 }
