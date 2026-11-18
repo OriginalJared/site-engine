@@ -7,28 +7,28 @@
     "price_usd": 400,
     "rating": 4.7,
     "verdict": "The best overall dash cam — 4K video, built-in polarizer, and Garmin's driver-assist features in one package.",
-    "description": "The Garmin X310 combines best-in-class 4K video quality with Garmin's signature driver-assist features. The built-in Clarity Polarizer reduces windshield glare without needing a separate accessory — a feature unique to Garmin. Forward collision and lane departure warnings add a layer of safety, and the Garmin Drive app makes footage transfer easy via Wi-Fi. The 140-degree field of view captures the full road ahead, and the included 32GB microSD card means it works out of the box. MotorTrend's 'Best Overall' pick after hands-on testing of 9 dash cams.",
+    "description": "The Garmin X310 combines best-in-class 4K video quality with Garmin's signature driver-assist features. The built-in Clarity Polarizer reduces windshield glare without needing a separate accessory — a feature unique to Garmin. Voice control lets you start recording and save clips hands-free, and the Garmin Drive app makes footage transfer easy via Wi-Fi. The 140-degree field of view captures the full road ahead, and the compact body with a 2.4-inch touchscreen tucks neatly behind the mirror. MotorTrend's 'Best Overall' pick after hands-on testing of 9 dash cams.",
     "features": [
       "4K 30fps video recording",
       "Built-in Clarity Polarizer — reduces glare",
-      "Forward collision and lane departure warnings",
+      "Voice control for hands-free operation",
       "Garmin Drive app for Wi-Fi footage transfer",
       "140-degree field of view"
     ],
     "pros": [
       "Best video quality with built-in polarizer",
-      "Driver-assist features add safety value",
+      "Compact design hides behind the mirror",
       "Garmin app makes footage management easy",
       "MotorTrend's #1 pick"
     ],
     "cons": [
       "$400 is premium pricing",
-      "Lane departure warnings are overly sensitive",
       "No rear camera included",
-      "Parking mode requires hardwire kit"
+      "Parking mode requires hardwire kit",
+      "SD card not included"
     ],
     "network_ids": {
-      "amazon": "B0DHJ7P5S4"
+      "amazon": "B0DDM46B9R"
     },
     "image_url": "",
     "best_for": [
@@ -42,13 +42,13 @@
       "gps": true,
       "wifi": true,
       "parking_mode": true,
-      "display": "2-inch LCD",
-      "storage": "microSD (32GB included)",
+      "display": "2.4-inch touchscreen",
+      "storage": "microSD (not included)",
       "night_vision": "HDR",
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "viofo-a229-pro",
@@ -79,7 +79,7 @@
       "No built-in display (uses phone app)"
     ],
     "network_ids": {
-      "amazon": "B0CQZBG1FY"
+      "amazon": "B0CKYFSKNN"
     },
     "image_url": "",
     "best_for": [
@@ -99,38 +99,38 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "rove-r2-4k-pro",
     "name": "Rove R2-4K Dual Pro Dash Cam",
     "brand": "Rove",
     "category": "dash-cams",
-    "price_usd": 110,
+    "price_usd": 150,
     "rating": 4.5,
-    "verdict": "The best budget 4K dash cam — STARVIS 2 sensor, 128GB card included, and 5G Wi-Fi for $110.",
-    "description": "The Rove R2-4K Dual Pro delivers flagship video quality at a budget price. The Sony STARVIS 2 sensor captures sharp 4K footage day and night, and the included 128GB microSD card means zero extra costs out of the box. 5GHz Wi-Fi transfers footage to your phone quickly, and built-in GPS logs your speed and route. The 3-inch IPS display lets you review footage without a phone. Loop recording and G-sensor auto-lock ensure important footage is never overwritten. Amazon's #1 best-selling dash cam with 10K+ monthly sales. MotorTrend's 'Best Night Performance' pick.",
+    "verdict": "The best budget 4K dash cam — dual STARVIS 2 sensors, 128GB card included, and Wi-Fi 6 for a great price.",
+    "description": "The Rove R2-4K Dual Pro delivers flagship video quality at a budget price. Dual Sony STARVIS 2 sensors capture sharp 4K front and 2K rear footage day and night, and the included 128GB microSD card and CPL filter mean zero extra costs out of the box. Wi-Fi 6 transfers footage to your phone quickly, and built-in GPS logs your speed and route. The 3-inch IPS display lets you review footage without a phone. Loop recording and G-sensor auto-lock ensure important footage is never overwritten. One of Amazon's best-selling dash cams. MotorTrend's 'Best Night Performance' pick.",
     "features": [
-      "4K front + 1080p rear with STARVIS 2",
-      "128GB microSD card included",
-      "5GHz Wi-Fi for fast file transfer",
+      "4K front + 2K rear with dual STARVIS 2",
+      "128GB microSD card + CPL filter included",
+      "Wi-Fi 6 for fast file transfer",
       "Built-in GPS with speed logging",
       "3-inch IPS display for playback"
     ],
     "pros": [
-      "Incredible value — 4K + 128GB card for $110",
+      "Incredible value — 4K+2K + 128GB card for ~$150",
       "Best night performance for the price",
-      "GPS included — not an add-on",
-      "Amazon's #1 best-selling dash cam"
+      "GPS and CPL filter included — not add-ons",
+      "One of Amazon's best-selling dash cams"
     ],
     "cons": [
-      "Rear camera is 1080p (not 2K)",
       "Suction mount can slip in heat",
       "App is basic compared to Garmin/VIOFO",
-      "Parking mode is motion-only"
+      "Parking mode is motion-only",
+      "Rear camera cable routing takes time"
     ],
     "network_ids": {
-      "amazon": "B0D5K8B6HL"
+      "amazon": "B0F9SX3JB9"
     },
     "image_url": "",
     "best_for": [
@@ -139,7 +139,7 @@
       "night-vision"
     ],
     "specs": {
-      "resolution": "4K front + 1080p rear",
+      "resolution": "4K front + 2K rear",
       "field_of_view": 150,
       "gps": true,
       "wifi": true,
@@ -150,7 +150,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "nextbase-622gw",
@@ -181,7 +181,7 @@
       "Battery drains in parking mode without hardwire"
     ],
     "network_ids": {
-      "amazon": "B09GKF68JM"
+      "amazon": "B08CVN4CVD"
     },
     "image_url": "",
     "best_for": [
@@ -201,7 +201,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "nextbase-piqo",
@@ -211,28 +211,28 @@
     "price_usd": 100,
     "rating": 4.3,
     "verdict": "The most compact dash cam — barely bigger than a coin, mounts behind your mirror, and captures 1080p footage discreetly.",
-    "description": "The Nextbase Piqo is the dash cam you forget is there. At just 1.1 inches in diameter, it's the smallest dash cam on the market — it hides behind your rearview mirror completely. Despite its tiny size, it captures 1080p footage with a 140-degree field of view, has built-in GPS, and connects to the Nextbase app via Bluetooth. The magnetic mount pops on and off instantly. For drivers who want dash cam protection without a visible device on their windshield, the Piqo is the only real option. MotorTrend's 'Best Compact/Budget' pick.",
+    "description": "The Nextbase Piqo is the dash cam you forget is there. It's one of the smallest dash cams on the market — it hides behind your rearview mirror completely. Despite its tiny size, it captures 1080p ultra-wide footage, connects to the Nextbase app, and adds smart features like Emergency SOS and voice control. The magnetic mount pops on and off instantly. For drivers who want dash cam protection without a visible device on their windshield, the Piqo is the only real option. MotorTrend's 'Best Compact/Budget' pick.",
     "features": [
-      "Smallest dash cam — 1.1 inches diameter",
-      "Hides completely behind rearview mirror",
-      "1080p with 140-degree field of view",
+      "Ultra-compact — hides behind the mirror",
+      "1080p ultra-wide HD view",
+      "Emergency SOS + voice control",
       "Magnetic quick-mount",
-      "Built-in GPS"
+      "Nextbase app with smart parking"
     ],
     "pros": [
-      "Completely invisible to passengers and others",
+      "Completely discreet behind the mirror",
       "Magnetic mount is instant on/off",
       "MotorTrend's compact/budget pick",
-      "Built-in GPS at $100"
+      "Emergency SOS at $100"
     ],
     "cons": [
       "1080p only — no 4K",
       "No rear camera option",
       "No display — phone app only",
-      "Bluetooth transfer is slow"
+      "SD card not included"
     ],
     "network_ids": {
-      "amazon": "B0DFX4RKCS"
+      "amazon": "B0DD7X4LTC"
     },
     "image_url": "",
     "best_for": [
@@ -241,10 +241,10 @@
       "discreet"
     ],
     "specs": {
-      "resolution": "1080p 30fps",
+      "resolution": "1080p",
       "field_of_view": 140,
-      "gps": true,
-      "wifi": false,
+      "gps": false,
+      "wifi": true,
       "parking_mode": true,
       "display": "None (app-based)",
       "storage": "microSD (not included)",
@@ -252,7 +252,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "vantrue-n4s",
@@ -261,17 +261,17 @@
     "category": "dash-cams",
     "price_usd": 280,
     "rating": 4.5,
-    "verdict": "The best 3-channel dash cam — front, rear, and interior cameras for rideshare drivers and fleet vehicles.",
-    "description": "The Vantrue N4S covers every angle with three cameras: front (2.7K), cabin-facing (1440p with IR night vision), and rear (1440p). This makes it ideal for Uber/Lyft drivers, taxi operators, and fleet managers who need interior footage. The infrared cabin camera captures clear footage even in complete darkness — passengers are clearly visible. Sony STARVIS 2 sensors in all three cameras ensure quality across the board. 24-hour parking mode with buffered recording catches vandals and hit-and-runs. The 2-inch display is compact, and the app handles multi-camera footage management.",
+    "verdict": "The best 3-channel dash cam — front, interior, and rear cameras for rideshare drivers and fleet vehicles.",
+    "description": "The Vantrue N4S covers every angle with three cameras: front (2.7K), cabin-facing (1440p with IR night vision), and rear (1440p). This makes it ideal for Uber/Lyft drivers, taxi operators, and fleet managers who need interior footage. The infrared cabin camera captures clear footage even in complete darkness — passengers are clearly visible. Sony STARVIS 2 sensors ensure quality across the board. 24/7 parking mode with buffered recording catches vandals and hit-and-runs. The 2-inch display is compact, and the app handles multi-camera footage management.",
     "features": [
       "3-channel: front + cabin + rear recording",
       "IR night vision cabin camera",
-      "Sony STARVIS 2 sensors in all cameras",
-      "24-hour buffered parking mode",
+      "Sony STARVIS 2 sensors",
+      "24/7 buffered parking mode",
       "Supports up to 1TB microSD"
     ],
     "pros": [
-      "Only 3-channel cam with STARVIS 2 in all cameras",
+      "Triple STARVIS 2 night vision across cameras",
       "IR cabin camera is crystal clear in darkness",
       "Ideal for rideshare and fleet use",
       "1TB storage support for extended recording"
@@ -283,7 +283,7 @@
       "Hardwire kit required for parking mode"
     ],
     "network_ids": {
-      "amazon": "B0CRCM4JR6"
+      "amazon": "B0FXWYWM8L"
     },
     "image_url": "",
     "best_for": [
@@ -303,7 +303,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "redtiger-f7np",
@@ -312,29 +312,29 @@
     "category": "dash-cams",
     "price_usd": 110,
     "rating": 4.4,
-    "verdict": "The best budget dual dash cam — 4K front, 1080p rear, STARVIS 2 sensor, and free SD card for $110.",
-    "description": "The REDTIGER F7NP competes directly with the Rove R2-4K at the same $110 price point. The Sony STARVIS 2 sensor delivers sharp 4K footage with excellent night performance, and the included rear camera provides 1080p coverage behind your vehicle. 5.8GHz Wi-Fi transfers large files fast, and built-in GPS logs your routes and speed. The free SD card in the box means zero additional costs. WDR (Wide Dynamic Range) handles harsh lighting transitions like tunnel exits. With 6K+ monthly sales on Amazon, it's proven its reliability at scale.",
+    "verdict": "The best budget dual dash cam — 4K front, 1080p rear, STARVIS 2 sensor, and included hardwire kit.",
+    "description": "The REDTIGER F7NP competes directly with the Rove R2-4K at a similar budget price point. The Sony STARVIS 2 sensor delivers sharp 4K footage with excellent night performance, and the included rear camera provides 1080p coverage behind your vehicle. Fast Wi-Fi transfers large files quickly, and built-in GPS logs your routes and speed. The included OBD hardwire kit enables parking mode out of the box. WDR (Wide Dynamic Range) handles harsh lighting transitions like tunnel exits. It's an Amazon's Choice dash cam with proven reliability at scale.",
     "features": [
       "4K front + 1080p rear with STARVIS 2",
-      "5.8GHz Wi-Fi — fastest file transfers",
-      "Free SD card included",
+      "Fast Wi-Fi file transfers",
+      "OBD hardwire kit included",
       "WDR for harsh lighting transitions",
       "Built-in GPS with speed logging"
     ],
     "pros": [
-      "Excellent 4K quality for $110",
-      "5.8GHz Wi-Fi is fastest in class",
-      "SD card included — ready out of box",
-      "6K+ monthly sales — proven reliability"
+      "Excellent 4K quality for the price",
+      "Hardwire kit included — parking mode ready",
+      "Amazon's Choice — proven reliability",
+      "Built-in GPS included"
     ],
     "cons": [
       "Rear camera is 1080p only",
       "App needs improvement",
       "Adhesive mount — no suction option",
-      "Parking mode needs hardwire kit"
+      "SD card sold separately on base listing"
     ],
     "network_ids": {
-      "amazon": "B0CMX21DG3"
+      "amazon": "B0DKXQT2D1"
     },
     "image_url": "",
     "best_for": [
@@ -348,12 +348,12 @@
       "wifi": true,
       "parking_mode": true,
       "display": "3.18-inch IPS",
-      "storage": "microSD (included)",
+      "storage": "microSD (not included)",
       "night_vision": "Sony STARVIS 2 + WDR",
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "garmin-dash-cam-live",
@@ -363,28 +363,28 @@
     "price_usd": 400,
     "rating": 4.6,
     "verdict": "The best connected dash cam — live LTE monitoring, cloud storage, and remote access from anywhere.",
-    "description": "The Garmin Dash Cam Live is the first dash cam with built-in LTE connectivity. This means you can check your car's camera feed from anywhere via the Garmin Drive app — at work, on vacation, whenever you want to see what's happening around your vehicle. Cloud storage saves footage automatically without SD card management. Live view, event-triggered alerts, and remote parking monitoring make it the most connected dash cam available. 1440p recording, GPS, and Garmin's driver assists (collision/lane warnings) complete the package. The LTE subscription ($7/month after trial) is the ongoing cost. PCMag's Editors' Choice.",
+    "description": "The Garmin Dash Cam Live is the first dash cam with built-in LTE connectivity. This means you can check your car's camera feed from anywhere via the Garmin Drive app — at work, on vacation, whenever you want to see what's happening around your vehicle. Cloud storage saves footage automatically without SD card management. Live view, event-triggered alerts, and remote parking monitoring make it the most connected dash cam available. 1440p HDR recording, GPS, and incident detection complete the package. The LTE subscription (after trial) is the ongoing cost. PCMag's Editors' Choice.",
     "features": [
       "Built-in LTE — live monitoring from anywhere",
       "Cloud storage for automatic footage backup",
       "Remote parking monitoring via app",
-      "1440p recording with GPS",
-      "Driver-assist: collision and lane warnings"
+      "1440p HDR recording with GPS",
+      "Incident detection and theft alerts"
     ],
     "pros": [
       "Live monitoring from anywhere is revolutionary",
       "Cloud storage eliminates SD card management",
       "PCMag Editors' Choice",
-      "Garmin's driver assists add safety"
+      "Theft alerts add parking security"
     ],
     "cons": [
-      "$400 + $7/month LTE subscription",
+      "$400 + monthly LTE subscription",
       "1440p — not 4K",
       "Requires cellular coverage for live features",
       "No rear camera included"
     ],
     "network_ids": {
-      "amazon": "B0D5MMXWFP"
+      "amazon": "B0BPJL4KPY"
     },
     "image_url": "",
     "best_for": [
@@ -393,7 +393,7 @@
       "parking-security"
     ],
     "specs": {
-      "resolution": "1440p 30fps",
+      "resolution": "1440p HDR 30fps",
       "field_of_view": 140,
       "gps": true,
       "wifi": true,
@@ -404,7 +404,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "70mai-a810",
@@ -414,13 +414,13 @@
     "price_usd": 120,
     "rating": 4.4,
     "verdict": "The best value 4K dash cam — dual-channel, ADAS driver assists, and 70mai's proven reliability for $120.",
-    "description": "70mai is one of the world's largest dash cam brands (backed by Xiaomi), and the A810 shows why. 4K front recording with an optional 1080p rear camera, ADAS (Advanced Driver Assistance Systems) with forward collision and lane departure warnings, and built-in GPS — all for $120. The Sony STARVIS 2 sensor handles night recording well, and the companion app is one of the better dash cam apps available. 70mai has sold millions of dash cams globally, and the reliability data backs it up. Car and Driver highlighted 70mai as a strong value alternative to pricier options.",
+    "description": "70mai is one of the world's largest dash cam brands (backed by Xiaomi), and the A810 shows why. 4K front recording with an optional 1080p rear camera, ADAS (Advanced Driver Assistance Systems) with forward collision and lane departure warnings, and built-in GPS — all for $120. The Sony STARVIS 2 IMX678 sensor handles night recording well, and dual HDR plus 4G LTE support round out a feature-rich package. 70mai has sold millions of dash cams globally, and the reliability data backs it up. Car and Driver highlighted 70mai as a strong value alternative to pricier options.",
     "features": [
       "4K front with optional 1080p rear",
       "ADAS: collision and lane departure warnings",
-      "Sony STARVIS 2 sensor",
+      "Sony STARVIS 2 IMX678 sensor",
       "Built-in GPS with route logging",
-      "70mai app with footage management"
+      "Dual HDR + 4G LTE support"
     ],
     "pros": [
       "ADAS driver assists at $120 is rare",
@@ -431,11 +431,11 @@
     "cons": [
       "Rear camera sold separately",
       "ADAS alerts can be too frequent",
-      "No voice control",
+      "LTE features need a subscription",
       "SD card not included"
     ],
     "network_ids": {
-      "amazon": "B0CP5FQVJT"
+      "amazon": "B0HH18FFDY"
     },
     "image_url": "",
     "best_for": [
@@ -455,7 +455,7 @@
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   },
   {
     "slug": "wolfbox-g900",
@@ -465,10 +465,10 @@
     "price_usd": 370,
     "rating": 4.5,
     "verdict": "The best mirror dash cam — 12-inch touchscreen replaces your rearview mirror with a 4K display showing front, rear, and bumper cameras.",
-    "description": "The Wolfbox G900 TriPro is unlike any other dash cam — it replaces your rearview mirror entirely with a 12-inch touchscreen displaying live camera feeds. Three cameras cover front (4K), rear mirror view (1080p), and a bumper-mounted rear camera (1080p) for the widest coverage available. The mirror display eliminates rear blind spots by showing a wider field than any physical mirror. Touch the screen to switch views, pinch to zoom on footage, or swipe through recordings. MotorTrend called it a 'standout favorite' and staff members have used it for years to eliminate blind spots.",
+    "description": "The Wolfbox G900 TriPro is unlike any other dash cam — it replaces your rearview mirror entirely with a 12-inch touchscreen displaying live camera feeds. Three cameras cover front (4K), rear mirror view (2.5K), and a bumper-mounted rear camera (1080p) for the widest coverage available. The mirror display eliminates rear blind spots by showing a wider field than any physical mirror. Touch the screen to switch views, pinch to zoom on footage, or swipe through recordings. MotorTrend called it a 'standout favorite' and staff members have used it for years to eliminate blind spots.",
     "features": [
       "12-inch touchscreen replaces rearview mirror",
-      "3-channel: front 4K + mirror + bumper rear",
+      "3-channel: front 4K + mirror 2.5K + bumper 1080p",
       "Eliminates rear blind spots",
       "Touch/swipe/pinch controls on mirror",
       "GPS with speed display"
@@ -483,10 +483,10 @@
       "$370 is premium for a dash cam",
       "Installation is more involved",
       "Mirror display can glare at night",
-      "Learning curve for mirror replacement"
+      "SD card not included"
     ],
     "network_ids": {
-      "amazon": "B0CPDDYCPH"
+      "amazon": "B0GQSZ71RW"
     },
     "image_url": "",
     "best_for": [
@@ -495,17 +495,17 @@
       "3-channel"
     ],
     "specs": {
-      "resolution": "4K front + 1080p mirror + 1080p bumper",
+      "resolution": "4K front + 2.5K mirror + 1080p bumper",
       "field_of_view": "170 front / 160 rear",
       "gps": true,
       "wifi": true,
       "parking_mode": true,
       "display": "12-inch IPS touchscreen mirror",
-      "storage": "microSD (64GB included)",
-      "night_vision": "Sony STARVIS",
+      "storage": "microSD (not included)",
+      "night_vision": "Sony STARVIS 2",
       "warranty_years": 1
     },
     "date_added": "2026-04-22",
-    "date_updated": "2026-04-22"
+    "date_updated": "2026-11-18"
   }
 ]
