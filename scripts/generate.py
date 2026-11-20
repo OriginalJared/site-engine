@@ -15,6 +15,7 @@ TEMPLATES_DIR = ROOT / "templates"
 GENERATED_DIR = ROOT / "generated"
 
 CATEGORIES_JSON = DATA_DIR / "categories.json"
+COLLECTIONS_JSON = DATA_DIR / "collections.json"
 PRODUCTS_DIR = DATA_DIR / "products"
 GUIDES_DIR = DATA_DIR / "guides"
 AFFILIATES_JSON = DATA_DIR / "affiliates.json"
@@ -266,18 +267,23 @@ def auto_generate_categories(products_by_niche: Dict[str, List[Dict[str, Any]]])
 
 
 def load_manual_categories() -> List[Dict[str, Any]]:
-    if not CATEGORIES_JSON.exists():
-        return []
-    raw = load_json(CATEGORIES_JSON)
-    cats = require_list(raw, "categories")
     out = []
-    for i, c in enumerate(cats):
-        if not isinstance(c, dict):
+    for _path in (CATEGORIES_JSON, COLLECTIONS_JSON):
+        if not _path.exists():
             continue
-        slug = normalize_slug(c.get("slug"))
-        if not slug:
-            continue
-        out.append({"slug": slug, "name": as_str(c.get("name")) or slug, "niche": as_str(c.get("niche")), "description": as_str(c.get("description")), "tags": [normalize_slug(t) for t in require_list(c.get("tags"), f"categories[{i}].tags") if as_str(t)], "_auto": False})
+        raw = load_json(_path)
+        cats = require_list(raw, "categories")
+        for i, c in enumerate(cats):
+            if not isinstance(c, dict):
+                continue
+            slug = normalize_slug(c.get("slug"))
+            if not slug:
+                continue
+            entry = {"slug": slug, "name": as_str(c.get("name")) or slug, "niche": as_str(c.get("niche")), "description": as_str(c.get("description")), "tags": [normalize_slug(t) for t in require_list(c.get("tags"), f"categories[{i}].tags") if as_str(t)], "_auto": False}
+            prods = c.get("products")
+            if isinstance(prods, list):
+                entry["products"] = [as_str(s) for s in prods if as_str(s)]
+            out.append(entry)
     return out
 
 
@@ -358,7 +364,8 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         if reviewer_name:
             reviewer_html = f'<p class="niche-reviewer"><strong>Reviewed by {escape(reviewer_name)}</strong>, {escape(reviewer_role)}</p>'
         section = f'<section class="niche-section">'
-        section += f'<h2><a href="{hub_href}" style="text-decoration:none;color:inherit;">{escape(display)}</a> <span style="font-size:0.6em;color:#888;">({product_count} products)</span></h2>'
+        count_html = f' <span style="font-size:0.6em;color:#888;">({product_count} products)</span>' if product_count else ''
+        section += f'<h2><a href="{hub_href}" style="text-decoration:none;color:inherit;">{escape(display)}</a>{count_html}</h2>'
         section += reviewer_html
         section += f'<div style="display:flex;gap:16px;flex-wrap:wrap;">{cards_html}</div>'
         section += more_html
@@ -1174,6 +1181,7 @@ def main():
         product_count += 1
 
     category_count = 0
+    slug_to_product = {as_str(p.get("slug")): p for p in products if as_str(p.get("slug"))}
     for cat in categories:
         cslug = as_str(cat.get("slug"))
         name = as_str(cat.get("name")) or cslug
@@ -1181,13 +1189,18 @@ def main():
         niche = as_str(cat.get("niche"))
         tags = cat.get("tags") or []
         match_tags = [normalize_slug(t) for t in tags if as_str(t)] or [cslug]
-        niche_products = products_by_niche.get(niche, [])
-        matched = [p for p in niche_products if product_matches(p, match_tags)]
-        if not matched and niche_products:
-            matched = niche_products
+        explicit_slugs = cat.get("products") if isinstance(cat.get("products"), list) else None
+        if explicit_slugs:
+            matched = [slug_to_product[as_str(s)] for s in explicit_slugs if as_str(s) in slug_to_product]
+        else:
+            niche_products = products_by_niche.get(niche, [])
+            matched = [p for p in niche_products if product_matches(p, match_tags)]
+            if not matched and niche_products:
+                matched = niche_products
         product_list_html = build_category_product_list(matched)
         reviewer = niche_to_reviewer.get(niche, {})
-        faqs = build_category_faqs(slug_to_display(niche), matched, reviewer.get("name", ""), reviewer.get("role", ""))
+        faq_name = name if explicit_slugs else slug_to_display(niche)
+        faqs = build_category_faqs(faq_name, matched, reviewer.get("name", ""), reviewer.get("role", ""))
         html = render_category_page(category_template, name, description, product_list_html)
         sidebar = build_sidebar_links(niche, categories, exclude_slug=cslug)
         _g = guide_by_niche.get(niche)
