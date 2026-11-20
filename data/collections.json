@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "gifts",
+    "name": "Holiday Gift Guides 2026",
+    "niche": "gifts",
+    "description": "Our 2026 holiday gift guides, organized by who you're shopping for. Every pick is a product we've independently researched and verified in stock — no filler, no guesswork, just gifts people actually want. Great for Black Friday and Cyber Monday deal hunting.",
+    "tags": [],
+    "products": ["nike-pegasus-41", "ecoflow-delta-2", "blackstone-36-inch-griddle", "wyze-cam-v4", "segway-ninebot-max-g2", "hoka-clifton-9"]
+  },
+  {
+    "slug": "gifts-for-outdoor-lovers",
+    "name": "Gifts for the Outdoor & Adventure Lover",
+    "niche": "gifts",
+    "description": "The best gifts for campers, tailgaters, backyard cooks, and anyone who'd rather be outside. From portable power that keeps the campsite running to a griddle that turns a parking lot into a kitchen, these are the outdoor gifts worth giving in 2026.",
+    "tags": [],
+    "products": ["blackstone-36-inch-griddle", "weber-go-anywhere-charcoal", "ecoflow-delta-2", "jackery-explorer-300", "goal-zero-yeti-700", "segway-ninebot-max-g2"]
+  },
+  {
+    "slug": "gifts-for-runners",
+    "name": "Gifts for Runners & Fitness Lovers",
+    "niche": "gifts",
+    "description": "Shopping for a runner? These are the shoes they actually want — from the everyday trainer that does it all to the carbon-plated racer built for a PR. Our picks span daily training, max cushion, stability, and race day, so there's a match for every stride.",
+    "tags": [],
+    "products": ["nike-pegasus-41", "hoka-clifton-9", "brooks-ghost-16", "on-cloudmonster-2", "asics-gel-kayano-31", "nike-vaporfly-3"]
+  },
+  {
+    "slug": "gifts-for-smart-home",
+    "name": "Gifts for the Smart Home & Tech Fan",
+    "niche": "gifts",
+    "description": "The smart-home and tech gifts worth giving — security cameras that actually work at night, mesh WiFi that kills dead zones, and backup power for when the grid doesn't cooperate. Options from under $40 to premium, so you can match the gift to the budget.",
+    "tags": [],
+    "products": ["ring-outdoor-cam-plus", "wyze-cam-v4", "blink-outdoor-4", "google-nest-cam-battery", "tp-link-deco-xe75", "eero-pro-6e", "anker-solix-c1000"]
+  }
+]
