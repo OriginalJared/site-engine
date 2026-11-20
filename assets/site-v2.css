@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 /* ============================================================
    HALCOTT — Site redesign (v2), shared across all page types.
    Loaded after the global stylesheet. Adds full-width hero
@@ -110,14 +111,36 @@
 .aside-trust { background: #faf6ec; border-color: #ead9ad; }
 .aside-trust p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin: 0; }
 
-/* ===== Bigger, bolder site logo ===== */
-.site-header { padding-top: 30px; padding-bottom: 20px; }
+/* ===== Site logo lockup (H tile | HALCOTT MAGAZINE) ===== */
+.site-header { padding-top: 24px; padding-bottom: 18px; }
 .site-logo {
-  font-size: 4rem !important;
-  font-weight: 800;
-  letter-spacing: -1.5px;
-  line-height: 1.02;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+}
+.site-logo .logo-mark { display: inline-flex; line-height: 0; }
+.site-logo .logo-rule {
+  width: 1.5px;
+  height: 28px;
+  background: #111;
+  margin: 0 18px;
+  flex: none;
+}
+.site-logo .logo-word {
+  font-family: 'Jost', 'Century Gothic', 'Futura', var(--font-heading), sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  padding-left: 0.22em;
+  text-transform: uppercase;
+  color: #111;
+  white-space: nowrap;
+}
+.footer-brand {
+  font-family: 'Jost', 'Century Gothic', 'Futura', var(--font-heading), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 /* ===== Header "Contents" dropdown (category + guide pages) ===== */
@@ -198,6 +221,8 @@ html { scroll-behavior: smooth; }
   .home-hero h1 { font-size: 1.9rem; }
   .guide-hero h1 { font-size: 1.7rem; }
   .cat-products .product-list { grid-template-columns: 1fr; }
-  .site-logo { font-size: 2.6rem !important; }
+  .site-logo .logo-mark svg { width: 30px; height: 30px; }
+  .site-logo .logo-rule { height: 22px; margin: 0 12px; }
+  .site-logo .logo-word { font-size: 1.1rem; letter-spacing: 0.16em; padding-left: 0.16em; }
   .nav-dropdown { left: auto; right: 0; transform: none; }
 }
