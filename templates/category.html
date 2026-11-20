@@ -7,12 +7,17 @@
     <meta name="description" content="{{CATEGORY_DESCRIPTION}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="stylesheet" href="/assets/site-v2.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 {{HEAD_EXTRA}}
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <a href="/" class="site-logo">{{SITE_NAME}}</a>
+            <a href="/" class="site-logo" aria-label="{{SITE_NAME}} home">
+                <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" width="36" height="36"><rect width="64" height="64" rx="14" fill="#111"/><rect x="19" y="17" width="7" height="30" fill="#fff"/><rect x="38" y="17" width="7" height="30" fill="#fff"/><rect x="19" y="29" width="26" height="6" fill="#fff"/></svg></span>
+                <span class="logo-rule" aria-hidden="true"></span>
+                <span class="logo-word">{{SITE_NAME}}</span>
+            </a>
             <nav class="site-nav">
                 <a href="/">Home</a>
                 <a href="/about/">About</a>
