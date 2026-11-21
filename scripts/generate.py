@@ -313,7 +313,7 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
 
 
 DEPARTMENTS = OrderedDict([
-    ("Tech", ["wireless-earbuds", "laptops", "mesh-wifi-routers", "mechanical-keyboards", "gaming-mice", "4k-monitors", "monitors", "projectors", "dash-cams", "home-security-cameras", "baby-monitors", "portable-power-stations"]),
+    ("Tech", ["wireless-earbuds", "over-ear-headphones", "headphones", "bluetooth-speakers", "laptops", "tablets", "smartwatches", "smart-watches", "mesh-wifi-routers", "mechanical-keyboards", "gaming-mice", "4k-monitors", "monitors", "projectors", "dash-cams", "home-security-cameras", "baby-monitors", "portable-power-stations"]),
     ("Home", ["robot-vacuums", "cordless-stick-vacuums", "stick-vacuums", "air-purifiers", "mattresses", "office-chairs", "standing-desks"]),
     ("Kitchen", ["coffee-makers", "espresso-machines", "blenders", "air-fryers"]),
     ("Outdoor", ["outdoor-grills", "running-shoes", "electric-bikes", "electric-scooters"]),
