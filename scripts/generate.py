@@ -312,7 +312,12 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
     return "\n            ".join(items)
 
 
-FEATURED_NAV_NICHES = ["wireless-earbuds", "robot-vacuums", "coffee-makers", "mattresses", "laptops", "office-chairs", "running-shoes", "outdoor-grills"]
+DEPARTMENTS = OrderedDict([
+    ("Tech", ["wireless-earbuds", "laptops", "mesh-wifi-routers", "mechanical-keyboards", "gaming-mice", "4k-monitors", "monitors", "projectors", "dash-cams", "home-security-cameras", "baby-monitors", "portable-power-stations"]),
+    ("Home", ["robot-vacuums", "cordless-stick-vacuums", "stick-vacuums", "air-purifiers", "mattresses", "office-chairs", "standing-desks"]),
+    ("Kitchen", ["coffee-makers", "espresso-machines", "blenders", "air-fryers"]),
+    ("Outdoor", ["outdoor-grills", "running-shoes", "electric-bikes", "electric-scooters"]),
+])
 
 
 def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]], niche_to_reviewer: Dict[str, Dict[str, str]], guides: Optional[List[Dict[str, Any]]] = None) -> Dict[str, str]:
@@ -333,14 +338,30 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         slug = as_str(hub.get("slug")) if hub else niche
         return escape(f"/generated/categories/{slug}/", quote=True)
 
+    def dept_dropdown(label, members):
+        links = "".join(f'<a href="{hub_href_for(n)}">{escape(slug_to_display(n))}</a>' for n in members)
+        return ('<div class="catnav-dd">'
+                f'<button type="button" class="catnav-link catnav-dd-btn">{escape(label)} <span class="catnav-caret" aria-hidden="true">&#9662;</span></button>'
+                f'<div class="catnav-dd-menu">{links}</div></div>')
+
+    assigned = set()
+    dept_items = []
+    for dept, members in DEPARTMENTS.items():
+        present = [n for n in members if n in niches]
+        for n in present:
+            assigned.add(n)
+        if present:
+            dept_items.append(dept_dropdown(dept, present))
+    leftovers = [n for n in niches.keys() if n and n != "gifts" and n not in assigned]
+    if leftovers:
+        dept_items.append(dept_dropdown("More", sorted(leftovers)))
+
     nav_items = []
     if "gifts" in niches:
         nav_items.append(f'<a class="catnav-link catnav-accent" href="{hub_href_for("gifts")}">Gift Guides</a>')
     if guides:
         nav_items.append('<a class="catnav-link" href="/generated/guides/">Buying Guides</a>')
-    for n in FEATURED_NAV_NICHES:
-        if n in niches:
-            nav_items.append(f'<a class="catnav-link" href="{hub_href_for(n)}">{escape(slug_to_display(n))}</a>')
+    nav_items.extend(dept_items)
     nav_items.append('<a class="catnav-link catnav-all" href="#all-categories">All Categories</a>')
     category_nav = '<nav class="category-nav" aria-label="Browse categories"><div class="container catnav-inner">' + "".join(nav_items) + '</div></nav>'
 
