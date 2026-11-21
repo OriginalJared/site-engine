@@ -221,12 +221,24 @@ html { scroll-behavior: smooth; }
 
 /* ===== Category nav bar (Wirecutter-style) ===== */
 .category-nav { background: #111; border-bottom: 3px solid var(--color-accent); }
-.category-nav .catnav-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; padding: 12px 0; }
+.category-nav .catnav-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px; padding: 13px 0; }
 .catnav-link { color: rgba(255,255,255,0.82); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.02em; text-decoration: none; white-space: nowrap; text-transform: uppercase; }
 .catnav-link:hover { color: #fff; }
 .catnav-accent { color: #ffd98a; }
 .catnav-accent:hover { color: #fff; }
-.catnav-all { margin-left: auto; color: rgba(255,255,255,0.6); }
+
+/* dark-bar department dropdowns */
+.catnav-dd { position: relative; display: inline-flex; }
+.catnav-dd-btn { background: none; border: none; cursor: pointer; font: inherit; display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: rgba(255,255,255,0.82); padding: 0; }
+.catnav-dd-btn:hover { color: #fff; }
+.catnav-caret { font-size: 0.7em; transition: transform 0.18s; }
+.catnav-dd:hover .catnav-caret, .catnav-dd:focus-within .catnav-caret { transform: rotate(180deg); }
+.catnav-dd-menu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 13px; min-width: 210px; background: #fff; border: 1px solid var(--color-border); border-top: 3px solid var(--color-accent); border-radius: var(--radius); box-shadow: 0 12px 30px rgba(0,0,0,0.22); padding: 6px 0; z-index: 70; }
+.catnav-dd::after { content: ""; position: absolute; top: 100%; left: 0; right: 0; height: 15px; }
+.catnav-dd:hover .catnav-dd-menu, .catnav-dd:focus-within .catnav-dd-menu { display: block; }
+.catnav-dd-menu a { display: block; padding: 8px 18px; font-size: 0.9rem; font-weight: 500; color: var(--color-text); white-space: nowrap; text-transform: none; letter-spacing: 0; }
+.catnav-dd-menu a:hover { background: #faf6ec; color: var(--color-accent); }
+.catnav-all { color: rgba(255,255,255,0.58); }
 
 /* ===== Homepage modular blocks ===== */
 .home-block { margin: 0; }
