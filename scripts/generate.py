@@ -401,6 +401,53 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                         '<p class="block-sub">What actually matters before you buy &mdash; no jargon, no fluff.</p>'
                         '<div class="guide-grid">' + "".join(cards) + '</div></section>')
 
+    # ---- Featured highlights (Wirecutter-style top block) ----
+    MARQUEE = ["wireless-earbuds", "robot-vacuums", "mattresses", "coffee-makers", "running-shoes", "outdoor-grills", "mesh-wifi-routers", "air-purifiers", "laptops", "office-chairs"]
+    def _fprice(p):
+        v = p.get("price_usd")
+        try:
+            v = float(v)
+        except (TypeError, ValueError):
+            return ""
+        if v <= 0:
+            return ""
+        return "$" + (str(int(v)) if v == int(v) else f"{v:.2f}")
+    def _fpick(n):
+        pl = products_by_niche.get(n) or []
+        return _best_pick(pl) if pl else None
+    marquee_picks = []
+    for _n in MARQUEE:
+        _p = _fpick(_n)
+        if _p and as_str(_p.get("slug")):
+            marquee_picks.append((_n, _p))
+    featured_block = ""
+    if marquee_picks:
+        latest_items = ""
+        for g in (guides or [])[:5]:
+            latest_items += f'<li><a href="/generated/guides/{as_str(g.get("slug"))}/">{escape(as_str(g.get("title")))}</a></li>'
+        latest_html = (f'<div class="home-latest"><h2>Buying Guides</h2><ul class="latest-list">{latest_items}</ul>'
+                       '<a class="home-latest-more" href="/generated/guides/">See all guides &rarr;</a></div>') if latest_items else '<div class="home-latest"></div>'
+        ln, lp = marquee_picks[0]
+        lslug = as_str(lp.get("slug"))
+        lprice = _fprice(lp)
+        price_tag = f'<span class="feat-price">{lprice}</span>' if lprice else ''
+        feature_html = (f'<div class="home-feature">'
+                        f'<a class="feat-eyebrow" href="{hub_href_for(ln)}">{escape(slug_to_display(ln))}</a>'
+                        f'<h2 class="feat-title"><a href="/generated/products/{lslug}/">{escape(as_str(lp.get("name")))}</a></h2>'
+                        f'<p class="feat-verdict">{escape(as_str(lp.get("verdict")))}</p>'
+                        f'<div class="feat-foot">{price_tag}<a class="feat-cta" href="/generated/products/{lslug}/">Read our review &rarr;</a></div>'
+                        f'</div>')
+        rail = ""
+        for _n, _p in marquee_picks[1:5]:
+            _ps = as_str(_p.get("slug"))
+            _pp = _fprice(_p)
+            _pt = f'<span class="pick-price">{_pp}</span>' if _pp else ''
+            rail += (f'<a class="pick-card" href="/generated/products/{_ps}/">'
+                     f'<span class="pick-eyebrow">{escape(slug_to_display(_n))}</span>'
+                     f'<span class="pick-name">{escape(as_str(_p.get("name")))}</span>{_pt}</a>')
+        rail_html = f'<div class="home-picks"><h2>Top Picks</h2>{rail}</div>'
+        featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
+
     niche_sections = []
     for niche, cats in niches.items():
         if niche == "gifts" or not niche:
@@ -483,6 +530,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     team_parts.append('</div>')
     return {
         "CATEGORY_NAV": category_nav,
+        "FEATURED_BLOCK": featured_block,
         "GIFT_BLOCK": gift_block,
         "GUIDES_BLOCK": guides_block,
         "NICHE_SECTIONS": "\n".join(niche_sections),
@@ -1321,6 +1369,22 @@ def main():
     homepage_html = homepage_html.replace("{{HEAD_EXTRA}}", build_home_head_extra(site_config, site_url, site_name))
     write_text(INDEX_HTML, homepage_html)
     print("Generated index.html (homepage).")
+
+    search_index = []
+    for _p in products:
+        _s = as_str(_p.get("slug"))
+        if _s:
+            search_index.append({"t": as_str(_p.get("name")), "u": f"/generated/products/{_s}/", "k": "Review"})
+    for _c in categories:
+        _s = as_str(_c.get("slug"))
+        if _s:
+            search_index.append({"t": as_str(_c.get("name")), "u": f"/generated/categories/{_s}/", "k": "Category"})
+    for _g in guides:
+        _s = as_str(_g.get("slug"))
+        if _s:
+            search_index.append({"t": as_str(_g.get("title")), "u": f"/generated/guides/{_s}/", "k": "Guide"})
+    write_text(ROOT / "search-index.json", json.dumps(search_index, ensure_ascii=False))
+    print(f"Generated search-index.json ({len(search_index)} entries).")
 
     guide_urls: List[str] = []
     guide_template = read_text_optional(GUIDE_TEMPLATE, "")
