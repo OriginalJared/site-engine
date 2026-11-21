@@ -312,15 +312,78 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
     return "\n            ".join(items)
 
 
-def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]], niche_to_reviewer: Dict[str, Dict[str, str]]) -> Dict[str, str]:
+FEATURED_NAV_NICHES = ["wireless-earbuds", "robot-vacuums", "coffee-makers", "mattresses", "laptops", "office-chairs", "running-shoes", "outdoor-grills"]
+
+
+def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]], niche_to_reviewer: Dict[str, Dict[str, str]], guides: Optional[List[Dict[str, Any]]] = None) -> Dict[str, str]:
+    guides = guides or []
     niches: Dict[str, List[Dict[str, Any]]] = OrderedDict()
     for c in categories:
         niche = as_str(c.get("niche"))
         if niche not in niches:
             niches[niche] = []
         niches[niche].append(c)
+
+    def hub_href_for(niche: str) -> str:
+        hub = None
+        for c in niches.get(niche, []):
+            if as_str(c.get("slug")) == niche:
+                hub = c
+                break
+        slug = as_str(hub.get("slug")) if hub else niche
+        return escape(f"/generated/categories/{slug}/", quote=True)
+
+    nav_items = []
+    if "gifts" in niches:
+        nav_items.append(f'<a class="catnav-link catnav-accent" href="{hub_href_for("gifts")}">Gift Guides</a>')
+    if guides:
+        nav_items.append('<a class="catnav-link" href="/generated/guides/">Buying Guides</a>')
+    for n in FEATURED_NAV_NICHES:
+        if n in niches:
+            nav_items.append(f'<a class="catnav-link" href="{hub_href_for(n)}">{escape(slug_to_display(n))}</a>')
+    nav_items.append('<a class="catnav-link catnav-all" href="#all-categories">All Categories</a>')
+    category_nav = '<nav class="category-nav" aria-label="Browse categories"><div class="container catnav-inner">' + "".join(nav_items) + '</div></nav>'
+
+    gift_block = ""
+    gift_cats = niches.get("gifts", [])
+    if gift_cats:
+        gift_subs = [c for c in gift_cats if as_str(c.get("slug")) != "gifts"]
+        cards = []
+        for sc in gift_subs:
+            sc_slug = as_str(sc.get("slug"))
+            sc_name = as_str(sc.get("name"))
+            sc_desc = as_str(sc.get("description"))
+            if len(sc_desc) > 140:
+                sc_desc = sc_desc[:137].rsplit(" ", 1)[0] + "..."
+            href = escape(f"/generated/categories/{sc_slug}/", quote=True)
+            cards.append(f'<a class="gift-card" href="{href}"><h3>{escape(sc_name)}</h3><p>{escape(sc_desc)}</p><span class="gift-card-cta">Shop this guide &rarr;</span></a>')
+        gift_block = ('<section class="home-block gift-block">'
+                      '<div class="block-head"><h2>Holiday Gift Guides</h2>'
+                      f'<a class="block-head-link" href="{hub_href_for("gifts")}">See all gift guides &rarr;</a></div>'
+                      '<p class="block-sub">Hand-picked, verified-in-stock gifts for everyone on your list &mdash; ready for Black Friday.</p>'
+                      '<div class="gift-grid">' + "".join(cards) + '</div></section>')
+
+    guides_block = ""
+    if guides:
+        cards = []
+        for g in guides[:6]:
+            gslug = as_str(g.get("slug"))
+            gtitle = as_str(g.get("title"))
+            gdesc = as_str(g.get("description"))
+            if len(gdesc) > 130:
+                gdesc = gdesc[:127].rsplit(" ", 1)[0] + "..."
+            href = escape(f"/generated/guides/{gslug}/", quote=True)
+            cards.append(f'<a class="guide-card" href="{href}"><h3>{escape(gtitle)}</h3><p>{escape(gdesc)}</p></a>')
+        guides_block = ('<section class="home-block guides-block">'
+                        '<div class="block-head"><h2>Buying Guides</h2>'
+                        '<a class="block-head-link" href="/generated/guides/">See all guides &rarr;</a></div>'
+                        '<p class="block-sub">What actually matters before you buy &mdash; no jargon, no fluff.</p>'
+                        '<div class="guide-grid">' + "".join(cards) + '</div></section>')
+
     niche_sections = []
     for niche, cats in niches.items():
+        if niche == "gifts" or not niche:
+            continue
         display = slug_to_display(niche)
         product_count = len(products_by_niche.get(niche, []))
         reviewer = niche_to_reviewer.get(niche, {})
@@ -371,6 +434,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         section += more_html
         section += '</section>'
         niche_sections.append(section)
+
     all_cats_parts = []
     for niche, cats in niches.items():
         display = slug_to_display(niche)
@@ -382,6 +446,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
             all_cats_parts.append(f'<li><a href="{c_href}">{escape(c_name)}</a></li>')
         all_cats_parts.append('</ul>')
+
     standards = [
         ("Research-driven", "We compare specifications, expert consensus, and verified owner feedback to reach each recommendation."),
         ("Independent", "We don't accept payment for placement, and we don't take free products in exchange for coverage. Rankings are earned on merit."),
@@ -396,12 +461,13 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         team_parts.append('</div>')
     team_parts.append('</div>')
     return {
+        "CATEGORY_NAV": category_nav,
+        "GIFT_BLOCK": gift_block,
+        "GUIDES_BLOCK": guides_block,
         "NICHE_SECTIONS": "\n".join(niche_sections),
         "ALL_CATEGORIES_LIST": "\n".join(all_cats_parts),
         "TEAM_SECTION": "\n".join(team_parts),
     }
-
-
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return template.replace("{{CATEGORY_NAME}}", escape(name)).replace("{{CATEGORY_DESCRIPTION}}", escape(description)).replace("{{PRODUCT_LIST}}", product_list_html)
 
@@ -1224,7 +1290,7 @@ def main():
         write_text(out_path, html)
         category_count += 1
 
-    hp_data = build_homepage(categories, products_by_niche, niche_to_reviewer)
+    hp_data = build_homepage(categories, products_by_niche, niche_to_reviewer, guides)
     homepage_html = index_template
     for key, val in hp_data.items():
         homepage_html = homepage_html.replace("{{" + key + "}}", val)
