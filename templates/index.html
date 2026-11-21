@@ -27,6 +27,8 @@
         </div>
     </header>
 
+    {{CATEGORY_NAV}}
+
     <section class="hero-band">
         <div class="container">
             <div class="home-hero">
@@ -37,11 +39,11 @@
     </section>
 
     <main class="container home-main">
-        <section class="team-section">
-            <h2>How We Evaluate Products</h2>
-            <p class="section-intro">We research and compare products so you don't have to &mdash; analyzing specifications, expert consensus, and verified owner feedback. No pay-for-placement, no sponsored rankings, and every affiliate link is disclosed. <a href="/editorial-policy/">Read our full methodology &rarr;</a></p>
-            {{TEAM_SECTION}}
-        </section>
+        {{GIFT_BLOCK}}
+
+        <hr class="section-divider" />
+
+        {{GUIDES_BLOCK}}
 
         <hr class="section-divider" />
 
@@ -52,9 +54,17 @@
 
         <hr class="section-divider" />
 
-        <section class="all-categories">
+        <section class="all-categories" id="all-categories">
             <h2>Browse All Categories</h2>
             {{ALL_CATEGORIES_LIST}}
+        </section>
+
+        <hr class="section-divider" />
+
+        <section class="team-section">
+            <h2>How We Evaluate Products</h2>
+            <p class="section-intro">We research and compare products so you don't have to &mdash; analyzing specifications, expert consensus, and verified owner feedback. No pay-for-placement, no sponsored rankings, and every affiliate link is disclosed. <a href="/editorial-policy/">Read our full methodology &rarr;</a></p>
+            {{TEAM_SECTION}}
         </section>
     </main>
 
