@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
 /* ============================================================
    HALCOTT — Site redesign (v2), shared across all page types.
    Loaded after the global stylesheet. Adds full-width hero
@@ -111,7 +112,7 @@
 .aside-trust { background: #faf6ec; border-color: #ead9ad; }
 .aside-trust p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin: 0; }
 
-/* ===== Site logo lockup (H tile | HALCOTT MAGAZINE) ===== */
+/* ===== Logo lockup (drawn H monogram + Jost wordmark) ===== */
 .site-header { padding-top: 24px; padding-bottom: 18px; }
 .site-logo {
   display: inline-flex;
@@ -120,15 +121,9 @@
   line-height: 1;
 }
 .site-logo .logo-mark { display: inline-flex; line-height: 0; }
-.site-logo .logo-rule {
-  width: 1.5px;
-  height: 28px;
-  background: #111;
-  margin: 0 18px;
-  flex: none;
-}
+.site-logo .logo-rule { width: 1.5px; height: 28px; background: #111; margin: 0 18px; flex: none; }
 .site-logo .logo-word {
-  font-family: 'Jost', 'Century Gothic', 'Futura', var(--font-heading), sans-serif;
+  font-family: 'Jost','Century Gothic','Futura',sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   letter-spacing: 0.22em;
@@ -137,11 +132,7 @@
   color: #111;
   white-space: nowrap;
 }
-.footer-brand {
-  font-family: 'Jost', 'Century Gothic', 'Futura', var(--font-heading), sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
+.footer-brand { font-family: 'Jost','Century Gothic','Futura',sans-serif; text-transform: uppercase; letter-spacing: 0.2em; }
 
 /* ===== Header "Contents" dropdown (category + guide pages) ===== */
 html { scroll-behavior: smooth; }
@@ -221,8 +212,47 @@ html { scroll-behavior: smooth; }
   .home-hero h1 { font-size: 1.9rem; }
   .guide-hero h1 { font-size: 1.7rem; }
   .cat-products .product-list { grid-template-columns: 1fr; }
+  .site-logo .logo-word { font-size: 1.25rem; letter-spacing: 0.16em; padding-left: 0.16em; }
+  .site-logo .logo-rule { height: 24px; margin: 0 12px; }
   .site-logo .logo-mark svg { width: 30px; height: 30px; }
-  .site-logo .logo-rule { height: 22px; margin: 0 12px; }
-  .site-logo .logo-word { font-size: 1.1rem; letter-spacing: 0.16em; padding-left: 0.16em; }
   .nav-dropdown { left: auto; right: 0; transform: none; }
+}
+
+
+/* ===== Category nav bar (Wirecutter-style) ===== */
+.category-nav { background: #111; border-bottom: 3px solid var(--color-accent); }
+.category-nav .catnav-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; padding: 12px 0; }
+.catnav-link { color: rgba(255,255,255,0.82); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.02em; text-decoration: none; white-space: nowrap; text-transform: uppercase; }
+.catnav-link:hover { color: #fff; }
+.catnav-accent { color: #ffd98a; }
+.catnav-accent:hover { color: #fff; }
+.catnav-all { margin-left: auto; color: rgba(255,255,255,0.6); }
+
+/* ===== Homepage modular blocks ===== */
+.home-block { margin: 0; }
+.block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 2px solid var(--color-accent); padding-bottom: 8px; margin-bottom: 6px; }
+.block-head h2 { margin: 0; border: none; font-family: var(--font-heading); font-size: 1.6rem; }
+.block-head-link { font-size: 0.92rem; font-weight: 600; color: var(--color-accent); white-space: nowrap; }
+.block-sub { color: var(--color-text-muted); margin: 0 0 18px; font-size: 1rem; }
+
+.gift-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.gift-card { display: flex; flex-direction: column; background: #faf6ec; border: 1px solid #ead9ad; border-radius: var(--radius); padding: 20px 22px; text-decoration: none; color: var(--color-text); transition: box-shadow 0.15s, transform 0.15s; }
+.gift-card:hover { box-shadow: 0 10px 26px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.gift-card h3 { margin: 0 0 8px; font-family: var(--font-heading); font-size: 1.2rem; color: var(--color-text); }
+.gift-card p { margin: 0 0 14px; font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.55; }
+.gift-card-cta { margin-top: auto; font-weight: 700; color: var(--color-accent); font-size: 0.92rem; }
+
+.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.guide-card { display: flex; flex-direction: column; background: var(--color-surface); border: 1px solid var(--color-border); border-top: 3px solid var(--color-accent); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; color: var(--color-text); transition: box-shadow 0.15s, transform 0.15s; }
+.guide-card:hover { box-shadow: 0 10px 26px rgba(0,0,0,0.1); transform: translateY(-2px); }
+.guide-card h3 { margin: 0 0 8px; font-family: var(--font-heading); font-size: 1.08rem; line-height: 1.25; color: var(--color-text); }
+.guide-card p { margin: 0; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.5; }
+
+@media (max-width: 860px) {
+  .gift-grid, .guide-grid { grid-template-columns: 1fr 1fr; }
+  .catnav-all { margin-left: 0; }
+}
+@media (max-width: 560px) {
+  .gift-grid, .guide-grid { grid-template-columns: 1fr; }
+  .block-head { flex-direction: column; gap: 4px; }
 }
