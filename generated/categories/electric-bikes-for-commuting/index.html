@@ -102,19 +102,19 @@
             <p class="footer-copy">&copy; 2026 Halcott Magazine. All rights reserved.</p>
         </div>
     </footer>
+    <script src="/assets/search-index.js"></script>
     <script>
     (function(){
       var input=document.getElementById('siteSearch');
       var box=document.getElementById('siteSearchResults');
       if(!input||!box)return;
-      var idx=[],loaded=false,active=-1,items=[];
-      function load(){if(loaded)return;loaded=true;fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){idx=d;}).catch(function(){});}
-      input.addEventListener('focus',load);
+      var active=-1,items=[];
       function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
       function render(q){
         q=q.trim().toLowerCase();
         if(!q){box.className='site-search-results';box.innerHTML='';items=[];return;}
-        items=idx.filter(function(it){return it.t.toLowerCase().indexOf(q)>-1;}).slice(0,8);active=-1;
+        var data=window.__HALCOTT_SEARCH__||[];
+        items=data.filter(function(it){return it.t.toLowerCase().indexOf(q)>-1;}).slice(0,8);active=-1;
         if(!items.length){box.innerHTML='<div class="ss-empty">No matches found</div>';box.className='site-search-results open';return;}
         box.innerHTML=items.map(function(it){return '<a href="'+it.u+'"><span class="ss-kind">'+esc(it.k)+'</span>'+esc(it.t)+'</a>';}).join('');
         box.className='site-search-results open';
