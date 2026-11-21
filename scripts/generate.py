@@ -1383,8 +1383,8 @@ def main():
         _s = as_str(_g.get("slug"))
         if _s:
             search_index.append({"t": as_str(_g.get("title")), "u": f"/generated/guides/{_s}/", "k": "Guide"})
-    write_text(ROOT / "search-index.json", json.dumps(search_index, ensure_ascii=False))
-    print(f"Generated search-index.json ({len(search_index)} entries).")
+    write_text(ROOT / "assets" / "search-index.js", "window.__HALCOTT_SEARCH__=" + json.dumps(search_index, ensure_ascii=False) + ";")
+    print(f"Generated assets/search-index.js ({len(search_index)} entries).")
 
     guide_urls: List[str] = []
     guide_template = read_text_optional(GUIDE_TEMPLATE, "")
