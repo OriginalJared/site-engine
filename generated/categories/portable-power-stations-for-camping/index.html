@@ -6,7 +6,7 @@
     <title>Best Portable Power Stations for Camping | Halcott Magazine</title>
     <meta name="description" content="The best portable power stations for camping — curated based on real specs, reviews, and performance data." />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="/assets/site-v2.css?v=2" />
+    <link rel="stylesheet" href="/assets/site-v2.css?v=3" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -32,6 +32,10 @@
                 <span class="logo-rule" aria-hidden="true"></span>
                 <span class="logo-word">Halcott Magazine</span>
             </a>
+            <div class="site-search">
+                <input type="search" id="siteSearch" class="site-search-input" placeholder="Search reviews…" autocomplete="off" aria-label="Search reviews" />
+                <div class="site-search-results" id="siteSearchResults" role="listbox"></div>
+            </div>
             <nav class="site-nav">
                 <div class="nav-contents"><button type="button" class="nav-contents-btn" aria-haspopup="true" aria-label="Jump to a section on this page">Contents <span class="nav-caret" aria-hidden="true">&#9662;</span></button><ul class="nav-dropdown"><li><a href="#top-pick">★ Our Top Pick</a></li><li><a href="#p-bluetti-eb3a">BLUETTI EB3A Portable Power Station</a></li><li><a href="#p-ecoflow-river-2">EcoFlow RIVER 2 Portable Power Station</a></li><li><a href="#p-goal-zero-yeti-700">Goal Zero Yeti 700 Portable Power Station</a></li><li><a href="#p-jackery-explorer-1000-v2">Jackery Explorer 1000 v2 Portable Power Station</a></li><li><a href="#p-jackery-explorer-300">Jackery Explorer 300 Portable Power Station</a></li><li><a href="#faq">Frequently Asked Questions</a></li></ul></div>
             </nav>
@@ -108,5 +112,35 @@
             <p class="footer-copy">&copy; 2026 Halcott Magazine. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    (function(){
+      var input=document.getElementById('siteSearch');
+      var box=document.getElementById('siteSearchResults');
+      if(!input||!box)return;
+      var idx=[],loaded=false,active=-1,items=[];
+      function load(){if(loaded)return;loaded=true;fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){idx=d;}).catch(function(){});}
+      input.addEventListener('focus',load);
+      function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+      function render(q){
+        q=q.trim().toLowerCase();
+        if(!q){box.className='site-search-results';box.innerHTML='';items=[];return;}
+        items=idx.filter(function(it){return it.t.toLowerCase().indexOf(q)>-1;}).slice(0,8);active=-1;
+        if(!items.length){box.innerHTML='<div class="ss-empty">No matches found</div>';box.className='site-search-results open';return;}
+        box.innerHTML=items.map(function(it){return '<a href="'+it.u+'"><span class="ss-kind">'+esc(it.k)+'</span>'+esc(it.t)+'</a>';}).join('');
+        box.className='site-search-results open';
+      }
+      input.addEventListener('input',function(){render(input.value);});
+      input.addEventListener('keydown',function(e){
+        var links=box.querySelectorAll('a');
+        if(e.key==='ArrowDown'){e.preventDefault();active=Math.min(active+1,links.length-1);}
+        else if(e.key==='ArrowUp'){e.preventDefault();active=Math.max(active-1,0);}
+        else if(e.key==='Enter'){if(active>-1&&links[active]){window.location=links[active].href;}else if(items[0]){window.location=items[0].u;}return;}
+        else return;
+        for(var i=0;i<links.length;i++){links[i].className=(i===active?'active':'');}
+        if(links[active]){links[active].scrollIntoView({block:'nearest'});}
+      });
+      document.addEventListener('click',function(e){if(!input.contains(e.target)&&!box.contains(e.target)){box.className='site-search-results';}});
+    })();
+    </script>
 </body>
 </html>
