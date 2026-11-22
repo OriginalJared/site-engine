@@ -1,0 +1,53 @@
+name: Amazon eligibility watch
+
+# Runs the Creators API probe once a day. While the account is still
+# "AssociateNotEligible" the probe step fails quietly and nothing happens.
+# The moment the probe succeeds (API returns product data), this opens a
+# GitHub issue mentioning the owner so you get notified it's time to go live.
+on:
+  schedule:
+    - cron: "23 14 * * *"   # daily, 14:23 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Creators API client
+        run: pip install python-amazon-paapi
+      - name: Probe eligibility
+        id: probe
+        continue-on-error: true
+        env:
+          AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_PARTNER_TAG: halcottmag-20
+          AMAZON_API_VERSION: "3.1"
+          PAAPI_PROBE: "1"
+        run: python scripts/enrich.py
+      - name: Open an issue when eligible
+        if: steps.probe.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Amazon Creators API eligibility cleared — ready to go live";
+            const { owner, repo } = context.repo;
+            const list = await github.rest.issues.listForRepo({ owner, repo, state: "open", per_page: 100 });
+            if (list.data.some(i => i.title === title)) {
+              core.info("Notification issue already open; skipping.");
+              return;
+            }
+            await github.rest.issues.create({
+              owner, repo, title,
+              body: "@" + owner + " The daily Creators API probe just returned product data — the account is now eligible. "
+                  + "Next step: wire `scripts/enrich.py` into the **Generate site** workflow (before `generate.py`, using the existing AMAZON_* secrets) so product images and prices populate automatically on the next build. "
+                  + "_Auto-created by the eligibility-watch workflow._"
+            });
