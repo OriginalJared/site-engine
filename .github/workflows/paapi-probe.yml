@@ -1,0 +1,24 @@
+name: PA-API probe
+
+# Manual test: confirms the Amazon Product Advertising API credentials are active
+# and prints a sample of image/price/title data. Does not change the site.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PA-API client
+        run: pip install python-amazon-paapi
+      - name: Probe the API
+        env:
+          AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_PARTNER_TAG: halcottmag-20
+          PAAPI_PROBE: "1"
+        run: python scripts/enrich.py
