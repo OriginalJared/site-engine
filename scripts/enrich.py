@@ -135,11 +135,12 @@ def extract(item):
 
 
 def main():
-    if not CRED_ID or not CRED_SECRET:
-        die("FAILURE: AMAZON_ACCESS_KEY / AMAZON_SECRET_KEY not set in environment.")
-    if not VERSION:
-        die("FAILURE: AMAZON_API_VERSION not set. Amazon issued this with your credentials "
-            "(one of 2.1, 2.2, 2.3, 3.1, 3.2, 3.3).")
+    if not CRED_ID or not CRED_SECRET or not VERSION:
+        msg = "credentials/version not fully set (AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_API_VERSION)."
+        if PROBE:
+            die("FAILURE: " + msg)
+        print("SKIP: " + msg + " Leaving site unchanged.")
+        return
     print(f"Partner tag: {PARTNER_TAG} | country: {COUNTRY} | version: {VERSION} | probe: {PROBE}")
 
     try:
@@ -176,13 +177,19 @@ def main():
             throttling=THROTTLE_SECONDS,
         )
     except Exception as e:
-        die(f"FAILURE: could not initialize AmazonCreatorsApi ({type(e).__name__}: {e}).")
+        if PROBE:
+            die(f"FAILURE: could not initialize AmazonCreatorsApi ({type(e).__name__}: {e}).")
+        print(f"SKIP: could not initialize AmazonCreatorsApi ({type(e).__name__}: {e}).")
+        return
 
     try:
         items = api.get_items(asins)  # library auto-splits into batches of 10
     except Exception as e:
-        die(f"FAILURE: get_items errored ({type(e).__name__}: {e}). "
-            "If this mentions credentials/version/eligibility, that's the cause.")
+        msg = f"get_items errored ({type(e).__name__}: {e})."
+        if PROBE:
+            die("FAILURE: " + msg + " If this mentions credentials/version/eligibility, that's the cause.")
+        print("SKIP: " + msg + " Leaving existing enrichment unchanged (site renders as before).")
+        return
 
     ENRICH_DIR.mkdir(parents=True, exist_ok=True)
     ok = 0

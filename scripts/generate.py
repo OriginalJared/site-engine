@@ -17,6 +17,7 @@ GENERATED_DIR = ROOT / "generated"
 CATEGORIES_JSON = DATA_DIR / "categories.json"
 COLLECTIONS_JSON = DATA_DIR / "collections.json"
 PRODUCTS_DIR = DATA_DIR / "products"
+ENRICH_DIR = DATA_DIR / "enrichment"
 GUIDES_DIR = DATA_DIR / "guides"
 AFFILIATES_JSON = DATA_DIR / "affiliates.json"
 SITE_JSON = DATA_DIR / "site.json"
@@ -429,22 +430,24 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                        '<a class="home-latest-more" href="/generated/guides/">See all guides &rarr;</a></div>') if latest_items else '<div class="home-latest"></div>'
         ln, lp = marquee_picks[0]
         lslug = as_str(lp.get("slug"))
-        lprice = _fprice(lp)
-        price_tag = f'<span class="feat-price">{lprice}</span>' if lprice else ''
+        limg = as_str(lp.get("image_url"))
+        feat_img = (f'<a class="feat-img" href="/generated/products/{lslug}/">'
+                    f'<img src="{escape(limg, quote=True)}" alt="{escape(as_str(lp.get("name")))}" loading="lazy" /></a>') if limg else ''
         feature_html = (f'<div class="home-feature">'
+                        f'{feat_img}'
                         f'<a class="feat-eyebrow" href="{hub_href_for(ln)}">{escape(slug_to_display(ln))}</a>'
                         f'<h2 class="feat-title"><a href="/generated/products/{lslug}/">{escape(as_str(lp.get("name")))}</a></h2>'
                         f'<p class="feat-verdict">{escape(as_str(lp.get("verdict")))}</p>'
-                        f'<div class="feat-foot">{price_tag}<a class="feat-cta" href="/generated/products/{lslug}/">Read our review &rarr;</a></div>'
+                        f'<div class="feat-foot"><a class="feat-cta" href="/generated/products/{lslug}/">Read our review &rarr;</a></div>'
                         f'</div>')
         rail = ""
         for _n, _p in marquee_picks[1:5]:
             _ps = as_str(_p.get("slug"))
-            _pp = _fprice(_p)
-            _pt = f'<span class="pick-price">{_pp}</span>' if _pp else ''
-            rail += (f'<a class="pick-card" href="/generated/products/{_ps}/">'
-                     f'<span class="pick-eyebrow">{escape(slug_to_display(_n))}</span>'
-                     f'<span class="pick-name">{escape(as_str(_p.get("name")))}</span>{_pt}</a>')
+            _pimg = as_str(_p.get("image_url"))
+            _thumb = (f'<span class="pick-thumb"><img src="{escape(_pimg, quote=True)}" alt="{escape(as_str(_p.get("name")))}" loading="lazy" /></span>') if _pimg else ''
+            rail += (f'<a class="pick-card" href="/generated/products/{_ps}/">{_thumb}'
+                     f'<span class="pick-txt"><span class="pick-eyebrow">{escape(slug_to_display(_n))}</span>'
+                     f'<span class="pick-name">{escape(as_str(_p.get("name")))}</span></span></a>')
         rail_html = f'<div class="home-picks"><h2>Top Picks</h2>{rail}</div>'
         featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
 
@@ -618,6 +621,10 @@ def cover_tile_html(p: Dict[str, Any], large: bool = False) -> str:
     initial = escape(label[:1].upper())
     accent = _accent_for(brand or as_str(p.get("slug")) or name)
     cls = "cover-tile cover-tile-lg" if large else "cover-tile"
+    img = as_str(p.get("image_url"))
+    if img:
+        return (f'<div class="{cls} cover-tile-img">'
+                f'<img src="{escape(img, quote=True)}" alt="{escape(name)}" loading="lazy" /></div>')
     return (f'<div class="{cls}" style="--cover-accent:{accent}" aria-hidden="true">'
             f'<span class="cover-mono">{initial}</span></div>')
 
@@ -1228,6 +1235,37 @@ def build_home_head_extra(site_config: Dict[str, Any], site_url: str, site_name:
     return "\n    ".join(parts)
 
 
+def apply_enrichment(products: List[Dict[str, Any]]) -> int:
+    """Overlay Amazon Creators API enrichment (image, price, cleaned title) onto
+    products. Fully gated: if data/enrichment/ or a product's file is absent,
+    nothing changes, so the site renders exactly as before the API is live."""
+    if not ENRICH_DIR.exists():
+        return 0
+    applied = 0
+    for p in products:
+        asin = ((p.get("network_ids") or {}).get("amazon") or "").strip()
+        if not asin:
+            continue
+        f = ENRICH_DIR / f"{asin}.json"
+        if not f.exists():
+            continue
+        try:
+            e = load_json(f)
+        except Exception:
+            continue
+        img = as_str(e.get("image"))
+        if img:
+            p["image_url"] = img
+        price = e.get("price_usd")
+        if price not in (None, "", 0):
+            p["price_usd"] = price
+        title = as_str(e.get("title_clean"))
+        if title and len(title) >= 12:
+            p["name"] = title
+        applied += 1
+    return applied
+
+
 def main():
     validate_product_filenames()
     # Rebuild generated/ from scratch each run so that renamed or removed
@@ -1251,6 +1289,8 @@ def main():
 
     raw_products = load_all_products()
     products = normalize_products(raw_products)
+    _applied = apply_enrichment(products)
+    print(f"Applied Amazon enrichment to {_applied} product(s).")
     file_count = len(list(PRODUCTS_DIR.glob("*.json"))) if PRODUCTS_DIR.exists() else 0
     print(f"Loaded {len(products)} product(s) from {file_count} file(s) in data/products/")
 
