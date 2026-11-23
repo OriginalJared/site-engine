@@ -2,6 +2,9 @@ name: Generate site
 
 on:
   workflow_dispatch:
+  schedule:
+    # Daily rebuild (~3:17am Denver) so Amazon prices/images stay fresh once API access clears.
+    - cron: "17 10 * * *"
   push:
     paths:
       - "data/**"
@@ -34,6 +37,19 @@ jobs:
 
       - name: Sync with remote
         run: git pull --rebase origin main
+
+      - name: Install Amazon API client
+        continue-on-error: true
+        run: pip install python-amazon-paapi
+
+      - name: Enrich from Amazon Creators API (skips quietly until eligible)
+        continue-on-error: true
+        env:
+          AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_API_VERSION: "3.1"
+          AMAZON_PARTNER_TAG: halcottmag-20
+        run: python scripts/enrich.py
 
       - name: Run generator
         run: python scripts/generate.py
