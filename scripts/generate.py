@@ -366,7 +366,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     if guides:
         nav_items.append('<a class="catnav-link" href="/generated/guides/">Buying Guides</a>')
     nav_items.extend(dept_items)
-    nav_items.append('<a class="catnav-link catnav-all" href="#all-categories">All Categories</a>')
+    nav_items.append('<a class="catnav-link catnav-all" href="/generated/categories/">All Categories</a>')
     category_nav = '<nav class="category-nav" aria-label="Browse categories"><div class="container catnav-inner">' + "".join(nav_items) + '</div></nav>'
 
     gift_block = ""
@@ -628,7 +628,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         "GIFT_BLOCK": gift_block,
         "GUIDES_BLOCK": guides_block,
         "NICHE_SECTIONS": "\n".join(niche_sections),
-        "ALL_CATEGORIES_LIST": "\n".join(all_cats_parts),
+        "ALL_CATEGORIES_LIST": '<a class="all-cats-btn" href="/generated/categories/">Browse all categories &rarr;</a>',
         "TEAM_SECTION": "\n".join(team_parts),
     }
 EDITORIAL_DIR = ROOT / "data" / "editorial"
@@ -1623,7 +1623,46 @@ def main():
         print(f"Generated {len(guides)} buying guide(s) + guides index.")
 
 
+    # ---- All Categories page (replaces the long list that used to sit on the homepage) ----
+    def _strip_price(t):
+        t = re.sub(r"\s*\((?:[^()]*\$\d[^()]*)\)", "", t)
+        return re.sub(r"\s*(?:under|below|less than|for|at)?\s*\$\d[\d,]*(?:\.\d+)?\+?", "", t, flags=re.I).strip()
+    by_niche_cats: Dict[str, List[Dict[str, Any]]] = OrderedDict()
+    for c in categories:
+        by_niche_cats.setdefault(as_str(c.get("niche")), []).append(c)
+    dept_boxes = []
+    for _niche in sorted(k for k in by_niche_cats if k and k != "gifts"):
+        _cs = by_niche_cats[_niche]
+        _hub = next((c for c in _cs if as_str(c.get("slug")) == _niche), None)
+        _hub_href = escape(f"/generated/categories/{as_str(_hub.get('slug')) if _hub else _niche}/", quote=True)
+        _links = []
+        _seen_labels = set()
+        for c in sorted(_cs, key=lambda c: as_str(c.get("name"))):
+            cs = as_str(c.get("slug"))
+            if cs == _niche or cs in thin_slugs:
+                continue
+            tags = c.get("tags") or []
+            label = slug_to_display(tags[0]) if len(tags) == 1 else _strip_price(as_str(c.get("name")))
+            if label.lower() in ("best overall",):
+                label = "Top Picks"
+            if label.lower() in _seen_labels:
+                continue
+            _seen_labels.add(label.lower())
+            _links.append(f'<li><a href="{escape("/generated/categories/" + cs + "/", quote=True)}">{escape(label)}</a></li>')
+        dept_boxes.append(f'<div class="allcat-box"><h2><a href="{_hub_href}">{escape(slug_to_display(_niche))}</a></h2>'
+                          + (f'<ul>{"".join(_links)}</ul>' if _links else '')
+                          + f'<a class="allcat-more" href="{_hub_href}">See all {escape(display_noun(slug_to_display(_niche)))} &rarr;</a></div>')
+    ac_desc = f"Every product category reviewed by {site_name}, from 4K monitors to running shoes."
+    ac_page = {"slug": "", "title": "All Categories", "description": ac_desc,
+               "intro": "Pick a department to see our top picks, budget options, and buying advice."}
+    ac_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("All Categories", ac_desc, f"{site_url}/generated/categories/", site_name, og_type="website"))
+    ac_html = render_guide_page(guide_template, ac_page, site_name, site_tagline, "", "", ac_head,
+                                body_override='<div class="allcat-grid">' + "".join(dept_boxes) + '</div>')
+    ac_html = re.sub(r'<a href="/generated/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", ac_html, count=1)
+    write_text(GENERATED_DIR / "categories" / "index.html", ac_html)
+
     urls = [f"{site_url}/"]
+    urls.append(f"{site_url}/generated/categories/")
     for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
         urls.append(f"{site_url}{sp}")
     for cat in categories:
