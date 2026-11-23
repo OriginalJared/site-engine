@@ -268,5 +268,275 @@
         "dek": "The Pixel Buds Pro 2 fit comfortably and work hand in hand with Gemini and Android."
       }
     ]
+  },
+  "electric-toothbrushes": {
+    "lead": {
+      "pick": "oral-b-pro-1000",
+      "headline": "The Upgrade Your Dentist Has Been Hinting At",
+      "dek": "The Oral-B Pro 1000 is simple, effective, and ADA-accepted, which is all most people need."
+    },
+    "side": [
+      {
+        "category": "budget-electric-toothbrushes",
+        "pick": "philips-sonicare-4100",
+        "headline": "A Sonicare Clean Without the Sonicare Splurge",
+        "dek": "The Philips Sonicare 4100 adds a pressure sensor and a two-week battery to the basics."
+      },
+      {
+        "category": "electric-toothbrushes-for-sensitive-teeth",
+        "pick": "burst-original-sonic",
+        "headline": "Gentle on Gums, Tough on Plaque",
+        "dek": "The BURST Original Sonic pairs ultra-soft bristles with strong sonic vibrations."
+      },
+      {
+        "category": "electric-toothbrushes-for-travel",
+        "pick": "aquasonic-black-series-ultra",
+        "headline": "Pack One Brush, Leave the Clutter",
+        "dek": "The Aquasonic Black Series comes with a travel case, eight brush heads, and wireless charging."
+      }
+    ]
+  },
+  "espresso-machines": {
+    "lead": {
+      "pick": "breville-barista-express",
+      "headline": "Café-Quality Lattes Without Leaving the Kitchen",
+      "dek": "The Breville Barista Express grinds fresh beans for every shot and holds a steady brewing temperature."
+    },
+    "side": [
+      {
+        "category": "espresso-machines-for-beginner",
+        "pick": "breville-barista-express-impress",
+        "headline": "Never Made Espresso? Start Here",
+        "dek": "The Barista Express Impress tamps the grounds for you, taking the guesswork out of every shot."
+      },
+      {
+        "category": "espresso-machines-for-home-barista",
+        "pick": "breville-oracle-jet",
+        "headline": "For the Home Barista Who Wants It All",
+        "dek": "The Breville Oracle Jet automates grinding, dosing, tamping, and milk texturing."
+      },
+      {
+        "category": "budget-espresso-machines",
+        "pick": "casabrews-cm5418",
+        "headline": "Real Espresso on a Starter Budget",
+        "dek": "The CASABREWS CM5418 has a 20-bar pump, a steam wand, and a stainless steel build."
+      }
+    ]
+  },
+  "gaming-mice": {
+    "lead": {
+      "pick": "logitech-g-pro-x-superlight-2",
+      "headline": "Lighter Mouse, Faster Flicks",
+      "dek": "The Logitech G Pro X Superlight 2 weighs just 60 grams and tracks flawlessly."
+    },
+    "side": [
+      {
+        "category": "gaming-mice-for-ergonomic",
+        "pick": "razer-deathadder-v3-hyperspeed",
+        "headline": "Comfort for the Marathon Sessions",
+        "dek": "The Razer DeathAdder V3 HyperSpeed brings the classic DeathAdder shape to wireless play."
+      },
+      {
+        "category": "budget-gaming-mice",
+        "pick": "logitech-g305-lightspeed",
+        "headline": "Wireless Gaming Doesn't Have to Be Expensive",
+        "dek": "The Logitech G305 uses Logitech's lag-free LIGHTSPEED wireless at a budget price."
+      },
+      {
+        "category": "gaming-mice-for-lightweight",
+        "pick": "pulsar-x2v2-mini",
+        "headline": "52 Grams of Precision for Claw-Grip Players",
+        "dek": "The Pulsar X2V2 Mini pairs a refined symmetrical shape with an ultralight build."
+      }
+    ]
+  },
+  "home-security-cameras": {
+    "lead": {
+      "pick": "arlo-pro-6",
+      "headline": "Know Who's at the Door Before You Open It",
+      "dek": "The Arlo Pro 6 records 2K HDR video with color night vision and smart detection alerts."
+    },
+    "side": [
+      {
+        "category": "home-security-cameras-for-no-subscription",
+        "pick": "eufy-solocam-s350",
+        "headline": "Security Without Another Monthly Bill",
+        "dek": "The eufy SoloCam S350 stores video locally and runs on solar, with no subscription required."
+      },
+      {
+        "category": "budget-home-security-cameras",
+        "pick": "wyze-cam-v4",
+        "headline": "Peace of Mind on a Shoestring",
+        "dek": "The Wyze Cam v4 records sharp 2.5K video with color night vision and local storage."
+      },
+      {
+        "category": "home-security-cameras-for-indoor",
+        "pick": "ring-indoor-cam-plus",
+        "headline": "Check On the Dog, Not Your Privacy",
+        "dek": "The Ring Indoor Cam Plus has a privacy shutter you can close when you're home."
+      }
+    ]
+  },
+  "mattresses": {
+    "lead": {
+      "pick": "saatva-classic",
+      "headline": "The Mattress Upgrade You'll Feel Every Morning",
+      "dek": "The Saatva Classic combines innerspring support with a plush Euro pillow top."
+    },
+    "side": [
+      {
+        "category": "budget-mattresses",
+        "pick": "tuft-and-needle-original",
+        "headline": "Great Sleep Without the Luxury Markup",
+        "dek": "The Tuft & Needle Original uses adaptive foam that's surprisingly comfortable for the price."
+      },
+      {
+        "category": "mattresses-for-side-sleepers",
+        "pick": "helix-midnight-luxe",
+        "headline": "Side Sleepers, Your Shoulders Will Thank You",
+        "dek": "The Helix Midnight Luxe adds zoned support and a pillow top to cushion shoulders and hips."
+      },
+      {
+        "category": "mattresses-for-cooling",
+        "pick": "purple-original",
+        "headline": "For People Who Sleep Hot",
+        "dek": "The Purple Original's GelFlex Grid keeps a bouncy, temperature-neutral feel all night."
+      }
+    ]
+  },
+  "mechanical-keyboards": {
+    "lead": {
+      "pick": "aula-f75-pro",
+      "headline": "The Keyboard Upgrade You'll Feel With Every Keystroke",
+      "dek": "The AULA F75 Pro packs a gasket mount, hot-swap switches, and triple-mode wireless."
+    },
+    "side": [
+      {
+        "category": "budget-mechanical-keyboards",
+        "pick": "keychron-c3-pro",
+        "headline": "Your First Mechanical Keyboard Shouldn't Cost Much",
+        "dek": "The Keychron C3 Pro brings a gasket mount and full key remapping to a starter price."
+      },
+      {
+        "category": "quiet-mechanical-keyboards",
+        "pick": "razer-pro-type-ultra",
+        "headline": "Mechanical Feel, Office-Friendly Sound",
+        "dek": "The Razer Pro Type Ultra uses silent switches, so coworkers won't hear every word you type."
+      },
+      {
+        "category": "mechanical-keyboards-for-gaming",
+        "pick": "corsair-k70-pro-tkl",
+        "headline": "Built for the Split-Second Keypress",
+        "dek": "The Corsair K70 Pro TKL adds rapid-trigger magnetic switches and 8,000Hz polling for competitive play."
+      }
+    ]
+  },
+  "mesh-wifi-routers": {
+    "lead": {
+      "pick": "tp-link-deco-xe75",
+      "headline": "Say Goodbye to Wi-Fi Dead Zones",
+      "dek": "The TP-Link Deco XE75 spreads fast Wi-Fi 6E across larger homes, with three units working as one."
+    },
+    "side": [
+      {
+        "category": "mesh-wifi-routers-for-easy-setup",
+        "pick": "eero-pro-6e",
+        "headline": "Whole-Home Wi-Fi You Can Set Up Before Dinner",
+        "dek": "The eero Pro 6E gets running in minutes and doubles as a smart home hub."
+      },
+      {
+        "category": "mesh-wifi-routers-for-large-home",
+        "pick": "netgear-orbi-rbk863s",
+        "headline": "Big House, Strong Signal in Every Room",
+        "dek": "The Netgear Orbi pairs quad-band Wi-Fi with a dedicated backhaul for very large homes."
+      },
+      {
+        "category": "premium-mesh-wifi-routers",
+        "pick": "tp-link-deco-be65",
+        "headline": "Ready for Wi-Fi 7, Without the Sticker Shock",
+        "dek": "The TP-Link Deco BE65 brings Wi-Fi 7 speeds to a whole-home mesh system."
+      }
+    ]
+  },
+  "office-chairs": {
+    "lead": {
+      "pick": "steelcase-leap-v2",
+      "headline": "Your Back Will Notice the Difference by Friday",
+      "dek": "The Steelcase Leap V2's LiveBack design flexes with your spine through the workday."
+    },
+    "side": [
+      {
+        "category": "home-office-chairs",
+        "pick": "branch-ergonomic-chair",
+        "headline": "A Home Office Chair That Looks as Good as It Feels",
+        "dek": "The Branch Ergonomic Chair offers 14 points of adjustment and a 7-year warranty."
+      },
+      {
+        "category": "budget-office-chairs",
+        "pick": "sihoo-m57",
+        "headline": "Real Ergonomics on a Tight Budget",
+        "dek": "The SIHOO M57 adds adjustable lumbar support, a headrest, and 3D armrests to a breathable mesh chair."
+      },
+      {
+        "category": "office-chairs-for-budget-premium",
+        "pick": "secretlab-titan-evo-2026",
+        "headline": "Gamer by Night, Office Chair by Day",
+        "dek": "The Secretlab Titan Evo pairs 4-way lumbar support with a 5-year warranty."
+      }
+    ]
+  },
+  "outdoor-grills": {
+    "lead": {
+      "pick": "weber-spirit-ii-e-310",
+      "headline": "Fire Up Weeknight Dinners in Minutes",
+      "dek": "The Weber Spirit II E-310 heats evenly across three burners and is built to last for seasons."
+    },
+    "side": [
+      {
+        "category": "outdoor-grills-for-smoking",
+        "pick": "traeger-ironwood-650",
+        "headline": "Low and Slow, Without Babysitting the Fire",
+        "dek": "The Traeger Ironwood 650 holds smoking temperatures on its own and sends updates to your phone."
+      },
+      {
+        "category": "budget-outdoor-grills",
+        "pick": "weber-master-touch-22",
+        "headline": "The Classic Charcoal Kettle, Perfected",
+        "dek": "The Weber Master-Touch adds a hinged grate and an ash catcher to the iconic kettle design."
+      },
+      {
+        "category": "outdoor-grills-for-portable",
+        "pick": "weber-go-anywhere-charcoal",
+        "headline": "Take the Cookout Anywhere",
+        "dek": "The Weber Go-Anywhere folds up for camping, tailgates, and beach days."
+      }
+    ]
+  },
+  "over-ear-headphones": {
+    "lead": {
+      "pick": "sony-wh-1000xm5",
+      "headline": "Your Flight Just Got a Lot Quieter",
+      "dek": "The Sony WH-1000XM5 pairs class-leading noise cancellation with comfort for long trips."
+    },
+    "side": [
+      {
+        "category": "budget-over-ear-headphones",
+        "pick": "jbl-tune-770nc",
+        "headline": "Noise Canceling That Won't Drain Your Wallet",
+        "dek": "The JBL Tune 770NC adds adaptive noise cancellation and a 70-hour battery."
+      },
+      {
+        "category": "over-ear-headphones-for-audiophile",
+        "pick": "sennheiser-momentum-4",
+        "headline": "For Listeners Who Care About Every Note",
+        "dek": "The Sennheiser Momentum 4 offers natural, detailed sound and long battery life."
+      },
+      {
+        "category": "premium-over-ear-headphones",
+        "pick": "bose-qc-ultra-headphones",
+        "headline": "The Quietest Seat on the Plane",
+        "dek": "Bose's QuietComfort Ultra Headphones add immersive audio to the brand's signature noise cancellation."
+      }
+    ]
   }
 }
