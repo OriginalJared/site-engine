@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "Over-ear headphones are the best choice for long flights, open offices, and hours of listening. They block more noise and usually sound fuller than earbuds, and they're comfortable to wear for longer.",
+    "If you mainly want quiet on a commute or flight, prioritize noise cancellation. If you're at a desk, comfort and sound quality matter more."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Noise cancellation",
+      "text": "We relied on expert measurements and owner reports of how well each model handles engine and crowd noise."
+    },
+    {
+      "label": "Comfort",
+      "text": "Clamping force, weight, and earcup padding decide whether you can wear headphones for hours, so we weighed owner feedback heavily."
+    },
+    {
+      "label": "Sound quality",
+      "text": "We favored balanced sound out of the box, with an app EQ for adjusting it."
+    },
+    {
+      "label": "Battery life",
+      "text": "We looked for at least 20 hours with noise cancellation on, plus quick charging."
+    },
+    {
+      "label": "Calls and connectivity",
+      "text": "We compared mic quality, multipoint pairing, and wired options for planes and gaming."
+    }
+  ]
+}

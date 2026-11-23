@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "The best running shoe is the one that feels comfortable on your foot. No single model is right for everyone, so use our picks as a shortlist to try on rather than a final answer.",
+    "Daily trainers suit most runners. Stability shoes help if your feet roll inward a lot. Racing shoes with carbon plates are fast but less durable and best saved for race day."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Comfort and fit",
+      "text": "We weighed runner feedback on fit, toe-box room, and comfort over long distances most heavily."
+    },
+    {
+      "label": "Cushioning",
+      "text": "We matched how much cushioning each shoe has to the runs it suits, from easy recovery miles to long runs."
+    },
+    {
+      "label": "Stability",
+      "text": "For runners who overpronate, we looked at shoes with guide rails or firmer support on the inside of the shoe."
+    },
+    {
+      "label": "Durability",
+      "text": "We considered how many miles owners report before the foam or outsole wears down."
+    },
+    {
+      "label": "Weight and drop",
+      "text": "We noted each shoe's weight and heel-to-toe drop, since both change how a shoe feels on the run."
+    }
+  ]
+}

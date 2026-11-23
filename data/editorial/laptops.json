@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "Most people need a laptop that's fast enough for browsing, documents, and video calls, lasts a full workday on battery, and is light enough to carry. That describes a mid-range model, not the most expensive one.",
+    "Pay more if you edit video or photos, play games, or need a premium build for daily travel. Students and casual users can save money with a budget model that has at least 8GB of RAM and an SSD."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Performance",
+      "text": "We matched processor and RAM to real workloads. For most people 16GB of RAM is the comfortable target, and 8GB is the minimum."
+    },
+    {
+      "label": "Battery life",
+      "text": "We weighed independent battery tests over manufacturer claims, favoring laptops that last a full workday."
+    },
+    {
+      "label": "Display",
+      "text": "Screen brightness, resolution, and color matter for comfort and creative work, so we compared them alongside size."
+    },
+    {
+      "label": "Keyboard and build",
+      "text": "A comfortable keyboard, a precise trackpad, and a sturdy chassis make a laptop pleasant to use for years."
+    },
+    {
+      "label": "Ports and weight",
+      "text": "We checked for the ports you're likely to need, such as USB-C charging and USB-A, and how much each laptop weighs."
+    }
+  ]
+}
