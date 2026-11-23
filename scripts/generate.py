@@ -587,7 +587,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             c_slug = as_str(c.get("slug"))
             c_name = as_str(c.get("name"))
             c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
-            all_cats_parts.append(f'<li><a href="{c_href}">{escape(c_name)}</a></li>')
+            all_cats_parts.append(f'<li><a href="{c_href}">{escape(_no_price(c_name))}</a></li>')
         all_cats_parts.append('</ul>')
 
     standards = [
