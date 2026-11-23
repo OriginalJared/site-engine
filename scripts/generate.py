@@ -101,7 +101,7 @@ def normalize_slug(v: Any) -> str:
     return s
 
 
-_DISPLAY_FIXES = {"Hdr": "HDR", "Usb": "USB", "Oled": "OLED", "Ips": "IPS", "Anc": "ANC", "Wifi": "Wi-Fi", "Tv": "TV", "Tvs": "TVs", "Led": "LED", "Gps": "GPS", "Rgb": "RGB", "Ssd": "SSD", "Hepa": "HEPA", "Uv": "UV", "Ai": "AI", "Pc": "PC", "Diy": "DIY", "Mesh": "Mesh"}
+_DISPLAY_FIXES = {"Hdr": "HDR", "Usb": "USB", "Oled": "OLED", "Ips": "IPS", "Anc": "ANC", "Wifi": "Wi-Fi", "Tv": "TV", "Tvs": "TVs", "Led": "LED", "Gps": "GPS", "Rgb": "RGB", "Ssd": "SSD", "Hepa": "HEPA", "Uv": "UV", "Ai": "AI", "Pc": "PC", "Diy": "DIY", "Mesh": "Mesh", "Fps": "FPS", "Mmo": "MMO", "Lte": "LTE", "Adas": "ADAS"}
 
 
 def slug_to_display(slug: str) -> str:
@@ -241,6 +241,25 @@ TAG_CATEGORY_TEMPLATES = {
     "premium": {"slug_pattern": "premium-{niche_slug}", "name": "Premium {niche}", "description": "Top-of-the-line {niche} with the best features, build quality, and warranties available. For those who want the absolute best."},
 }
 
+# Natural-sounding page names for tag-based categories ({niche} is the niche display name).
+# Tags not listed fall back to "Best {niche} for {tag}". Slugs (URLs) are unaffected.
+TAG_NAME_PHRASES = {
+    "compact": "Best Compact {niche}", "versatile": "Most Versatile {niche}", "budget-premium": "Best Mid-Range {niche}",
+    "non-wifi": "Best Non-Wi-Fi {niche}", "lightweight": "Best Lightweight {niche}", "wireless": "Best Wireless {niche}",
+    "portable": "Best Portable {niche}", "automatic": "Best Automatic {niche}", "single-serve": "Best Single-Serve {niche}",
+    "one-touch": "Best One-Touch {niche}", "cushioned": "Best Cushioned {niche}", "ergonomic": "Best Ergonomic {niche}",
+    "personal": "Best Personal {niche}", "smart-features": "Best Smart {niche}", "battery-life": "{niche} With the Best Battery Life",
+    "health": "Best {niche} for Health Tracking", "no-subscription": "Best {niche} Without a Subscription",
+    "under-500": "Best {niche} Under $500", "drip-coffee": "Best Drip {niche}", "gas": "Best Gas {niche}",
+    "indoor": "Best Indoor {niche}", "outdoor": "Best Outdoor {niche}", "solar": "Best Solar-Ready {niche}",
+    "wifi-6e": "Best Wi-Fi 6E {niche}", "home-barista": "Best {niche} for Home Baristas", "beginner": "Best {niche} for Beginners",
+    "first-keyboard": "Best {niche} for First-Timers", "large-home": "Best {niche} for Large Homes",
+    "large-family": "Best {niche} for Large Families", "easy-setup": "Easiest {niche} to Set Up", "party": "Best {niche} for Parties",
+    "audiophile": "Best {niche} for Audiophiles", "apple": "Best {niche} for Apple Users", "bedroom": "Best {niche} for Bedrooms",
+    "noise-canceling": "Best Noise-Canceling {niche}", "long-range": "Best Long-Range {niche}", "fps-gaming": "Best {niche} for FPS Games",
+    "commute": "Best {niche} for Commuting", "smart-home": "Best {niche} for Smart Homes", "students": "Best {niche} for Students",
+}
+
 DEFAULT_TAG_TEMPLATE = {"slug_pattern": "{niche_slug}-for-{tag_slug}", "name": "Best {niche} for {tag}", "description": "The best {niche} for {tag} — curated based on real specs, reviews, and performance data."}
 
 
@@ -267,6 +286,8 @@ def auto_generate_categories(products_by_niche: Dict[str, List[Dict[str, Any]]])
             tmpl = TAG_CATEGORY_TEMPLATES.get(tag_slug, DEFAULT_TAG_TEMPLATE)
             cat_slug = tmpl["slug_pattern"].format(niche_slug=niche_slug, tag_slug=tag_slug)
             cat_name = tmpl["name"].format(niche=niche_display, tag=tag_display, year=str(year))
+            if tag_slug in TAG_NAME_PHRASES:
+                cat_name = TAG_NAME_PHRASES[tag_slug].format(niche=niche_display)
             cat_desc = tmpl["description"].format(niche=niche_display.lower(), tag=tag_display.lower(), year=str(year))
             auto_cats.append({"slug": cat_slug, "name": cat_name, "niche": niche_slug, "description": cat_desc, "tags": [tag_slug], "_auto": True})
     return auto_cats
@@ -295,7 +316,16 @@ def load_manual_categories() -> List[Dict[str, Any]]:
 
 def merge_categories(auto_cats: List[Dict[str, Any]], manual_cats: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     merged: Dict[str, Dict[str, Any]] = {}
+    # A hand-made page and an auto page covering the same niche + tag (e.g. "for bedroom" vs "for bedrooms")
+    # would be near-duplicates; keep the hand-made one.
+    manual_keys = {(c.get("niche"), tuple(sorted(c.get("tags") or []))) for c in manual_cats
+                   if c.get("tags") and c.get("slug") != c.get("niche")}
+    def _norm_tags(tags):
+        return tuple(sorted(t[:-1] if t.endswith("s") else t for t in tags))
+    manual_norm = {(n, _norm_tags(t)) for n, t in manual_keys}
     for c in auto_cats:
+        if c.get("slug") != c.get("niche") and (c.get("niche"), _norm_tags(c.get("tags") or [])) in manual_norm:
+            continue
         merged[c["slug"]] = c
     for c in manual_cats:
         merged[c["slug"]] = c
@@ -1538,6 +1568,9 @@ def strip_price_text(t: str) -> str:
     if "$" not in t: return t
     o=t
     t=re.sub(r"\s*\((?:[^()]*\$\d[^()]*)\)","",t)
+    t=re.sub(r"\bthe\s+"+_PRICE_NUM+r"\s+(price tag|price|premium)",r"the higher \1",t)
+    t=re.sub(r"\bthe\s+"+_PRICE_NUM+r"\s*","the ",t)
+    t=re.sub(r"\b(under|below|above|over|around)\s+the\s+"+_PRICE_NUM+r"\s+mark\b",r"\1 a key price point",t)
     t=re.sub(r"\s+cost\s+"+_PRICE_NUM+r"(?:\s*[-–]\s*\$?[\d.]+)?\s+each"," cost extra per cup",t)
     t=re.sub(r"\ban?\s+"+_PRICE_NUM,"a pricier",t)
     t=re.sub(r"^"+_PRICE_NUM+r"\s*[—–-]\s*","",t)
@@ -1551,6 +1584,8 @@ def strip_price_text(t: str) -> str:
     t=re.sub(r"\bsub-"+_PRICE_NUM+r"\s*","budget-friendly ",t)
     t=re.sub(r"^"+_PRICE_NUM+r"\s*(?:[—–-]\s*)?","",t)
     t=re.sub(_PRICE_NUM,"the price",t)
+    t=t.replace("budget-friendly budget", "budget")
+    t=re.sub(r"([.!?])\s*,\s*([a-z])", lambda m: m.group(1) + " " + m.group(2).upper(), t)
     t=re.sub(r"\s{2,}"," ",t); t=re.sub(r"\s+([,.;:!?])",r"\1",t); t=re.sub(r"([,;])\1+",r"\1",t)
     t=re.sub(r"^[\s,—–:-]+","",t); t=t.strip()
     if t and t[0].islower(): t=t[0].upper()+t[1:]
@@ -1613,6 +1648,18 @@ def main():
 
     raw_products = load_all_products()
     products = normalize_products(raw_products)
+    # Only real, in-stock Amazon listings are shown. data/stock-status.json lists ASINs that were
+    # out of stock or gone at the last check; those products are hidden until they return.
+    _stock_path = DATA_DIR / "stock-status.json"
+    if _stock_path.exists():
+        try:
+            _unav = set((json.loads(_stock_path.read_text(encoding="utf-8")).get("unavailable") or {}).keys())
+        except Exception as e:
+            print(f"WARNING: bad stock-status.json: {e}")
+            _unav = set()
+        _before = len(products)
+        products = [p for p in products if ((p.get("network_ids") or {}).get("amazon") or "").strip() not in _unav]
+        print(f"Stock filter: hid {_before - len(products)} unavailable product(s).")
     _applied = apply_enrichment(products)
     # Amazon compliance: only show prices that came from the API (current, timestamped).
     # Stored prices and dollar amounts written into product prose are never displayed.
