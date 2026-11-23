@@ -7,22 +7,10 @@
     },
     "side": [
       {
-        "category": "budget-4k-monitors",
-        "pick": "dell-s2722qc",
-        "headline": "A Great 4K Monitor Doesn't Have to Cost a Fortune",
-        "dek": "The Dell S2722QC keeps the sharp 27-inch screen and USB-C, and skips the extras."
-      },
-      {
-        "category": "4k-monitors-for-creative-work",
-        "pick": "asus-proart-pa279crv",
-        "headline": "For Photo Editors, Color Is Everything",
-        "dek": "The ASUS ProArt PA279CRV arrives Calman Verified, so colors look right without hours of tweaking."
-      },
-      {
-        "category": "4k-monitors-for-gaming",
-        "pick": "samsung-odyssey-g7-s28bg70",
-        "headline": "4K Gaming Without the Slideshow",
-        "dek": "The Samsung Odyssey G7 pairs 4K sharpness with a 144Hz refresh rate and HDMI 2.1 for current consoles."
+        "category": "4k-monitors-for-office",
+        "pick": "hp-z27k-g3",
+        "headline": "Built for the Office, Down to the Ports",
+        "dek": "The HP Z27k G3 brings enterprise-grade features and a USB-C hub to a sharp 4K screen."
       }
     ]
   },
@@ -47,9 +35,9 @@
       },
       {
         "category": "air-fryers-for-versatile",
-        "pick": "cuisinart-toa-60-toaster-oven-air-fryer",
-        "headline": "The Air Fryer That Wants to Replace Your Toaster, Too",
-        "dek": "The Cuisinart TOA-60 combines a toaster, an oven, and an air fryer in one countertop unit."
+        "pick": "instant-vortex-plus-6-in-1",
+        "headline": "The Air Fryer That Does a Bit of Everything",
+        "dek": "The Instant Vortex Plus also broils, roasts, dehydrates, and reheats in a single basket."
       }
     ]
   },
@@ -73,7 +61,7 @@
         "dek": "The LEVOIT Vital 200S covers larger rooms and adjusts itself with a built-in air quality sensor."
       },
       {
-        "category": "air-purifiers-for-bedroom",
+        "category": "air-purifiers-for-bedrooms",
         "pick": "shark-hp152-neverchange",
         "headline": "The Purifier That Skips the Filter Treadmill",
         "dek": "Shark's NeverChange HP152 uses a five-year HEPA filter, cutting out the biggest ongoing cost."
@@ -89,9 +77,9 @@
     "side": [
       {
         "category": "baby-monitors-for-non-wifi",
-        "pick": "eufy-spaceview-pro",
+        "pick": "infant-optics-dxr-8-pro",
         "headline": "Worried About Hackers? Skip the Wi-Fi Entirely",
-        "dek": "The eufy SpaceView Pro streams to its own 5-inch screen, with no internet connection to break into."
+        "dek": "The Infant Optics DXR-8 Pro streams to its own 5-inch screen, with no internet connection to break into."
       },
       {
         "category": "budget-baby-monitors",
@@ -100,10 +88,10 @@
         "dek": "The VTech RM5764HD offers 1080p video, pan-tilt-zoom, and app access without the premium price."
       },
       {
-        "category": "baby-monitors-for-health-monitoring",
-        "pick": "owlet-dream-duo-2",
-        "headline": "Peace of Mind, Measured",
-        "dek": "The Owlet Dream Duo 2 pairs an HD camera with a sock that tracks heart rate and oxygen while your baby sleeps."
+        "category": "baby-monitors-for-smart-features",
+        "pick": "cubo-ai-plus",
+        "headline": "An Extra Set of Eyes on Every Nap",
+        "dek": "The Cubo Ai Plus sends an alert if your baby's face is covered or they roll over."
       }
     ]
   },
@@ -163,9 +151,9 @@
   },
   "coffee-makers": {
     "lead": {
-      "pick": "breville-precision-brewer",
-      "headline": "Better Morning Coffee Starts With the Right Machine",
-      "dek": "The Breville Precision Brewer is SCA-certified and lets you fine-tune temperature and brew style."
+      "pick": "ninja-cfp307-dualbrew-pro",
+      "headline": "Pods, Grounds, or Iced: One Machine Does It All",
+      "dek": "The Ninja DualBrew Pro brews K-Cups, ground coffee, and specialty drinks in one machine."
     },
     "side": [
       {
@@ -181,10 +169,10 @@
         "dek": "The AeroPress is a cult-favorite manual brewer that makes rich coffee anywhere in about two minutes."
       },
       {
-        "category": "coffee-makers-for-versatile",
-        "pick": "ninja-cfp307-dualbrew-pro",
-        "headline": "Pods or Grounds? This Machine Doesn't Make You Choose",
-        "dek": "The Ninja DualBrew Pro brews K-Cups, ground coffee, and specialty drinks in one machine."
+        "category": "coffee-makers-for-single-serve",
+        "pick": "nespresso-vertuo-next",
+        "headline": "Café-Style Coffee, One Capsule at a Time",
+        "dek": "The Nespresso Vertuo Next reads a barcode on each capsule to brew it just right."
       }
     ]
   },
@@ -196,10 +184,10 @@
     },
     "side": [
       {
-        "category": "cordless-stick-vacuums-for-pets",
-        "pick": "shark-stratos-cordless",
-        "headline": "Pet Hair, Meet Your Match",
-        "dek": "The Shark Stratos takes on fur in carpet and keeps odors in check with its anti-odor tech."
+        "category": "cordless-stick-vacuums-for-compact",
+        "pick": "eureka-nec101-rapidclean",
+        "headline": "Grab It, Clean It, Hang It Back Up",
+        "dek": "The Eureka RapidClean Pro is light enough for quick daily cleanups."
       },
       {
         "category": "cordless-stick-vacuums-for-hard-floors",
@@ -289,7 +277,7 @@
         "dek": "The BURST Original Sonic pairs ultra-soft bristles with strong sonic vibrations."
       },
       {
-        "category": "electric-toothbrushes-for-travel",
+        "category": "best-travel-electric-toothbrushes",
         "pick": "aquasonic-black-series-ultra",
         "headline": "Pack One Brush, Leave the Clutter",
         "dek": "The Aquasonic Black Series comes with a travel case, eight brush heads, and wireless charging."
@@ -310,10 +298,10 @@
         "dek": "The Barista Express Impress tamps the grounds for you, taking the guesswork out of every shot."
       },
       {
-        "category": "espresso-machines-for-home-barista",
-        "pick": "breville-oracle-jet",
-        "headline": "For the Home Barista Who Wants It All",
-        "dek": "The Breville Oracle Jet automates grinding, dosing, tamping, and milk texturing."
+        "category": "espresso-machines-for-automatic",
+        "pick": "delonghi-rivelia",
+        "headline": "Push a Button, Get a Latte",
+        "dek": "The De'Longhi Rivelia grinds, brews, and froths milk on its own, with 18 drink recipes at a touch."
       },
       {
         "category": "budget-espresso-machines",
@@ -344,9 +332,9 @@
       },
       {
         "category": "gaming-mice-for-lightweight",
-        "pick": "pulsar-x2v2-mini",
-        "headline": "52 Grams of Precision for Claw-Grip Players",
-        "dek": "The Pulsar X2V2 Mini pairs a refined symmetrical shape with an ultralight build."
+        "pick": "razer-viper-v3-pro",
+        "headline": "Built for Esports, Light Enough to Forget",
+        "dek": "The Razer Viper V3 Pro is Razer's lightest, fastest wireless mouse."
       }
     ]
   },
@@ -354,14 +342,14 @@
     "lead": {
       "pick": "arlo-pro-6",
       "headline": "Know Who's at the Door Before You Open It",
-      "dek": "The Arlo Pro 6 records 2K HDR video with color night vision and smart detection alerts."
+      "dek": "The Arlo Pro 5S records 2K HDR video with color night vision and smart detection alerts."
     },
     "side": [
       {
         "category": "home-security-cameras-for-no-subscription",
         "pick": "eufy-solocam-s350",
         "headline": "Security Without Another Monthly Bill",
-        "dek": "The eufy SoloCam S350 stores video locally and runs on solar, with no subscription required."
+        "dek": "The eufy SoloCam S340 stores video locally and runs on solar, with no subscription required."
       },
       {
         "category": "budget-home-security-cameras",
@@ -379,9 +367,9 @@
   },
   "mattresses": {
     "lead": {
-      "pick": "saatva-classic",
-      "headline": "The Mattress Upgrade You'll Feel Every Morning",
-      "dek": "The Saatva Classic combines innerspring support with a plush Euro pillow top."
+      "pick": "casper-original",
+      "headline": "The Mattress That Works for Almost Everyone",
+      "dek": "The Casper Original's foam layers balance comfort and support for most sleepers."
     },
     "side": [
       {
@@ -391,16 +379,10 @@
         "dek": "The Tuft & Needle Original uses adaptive foam that's surprisingly comfortable for the price."
       },
       {
-        "category": "mattresses-for-side-sleepers",
+        "category": "mattresses-for-couples",
         "pick": "helix-midnight-luxe",
         "headline": "Side Sleepers, Your Shoulders Will Thank You",
         "dek": "The Helix Midnight Luxe adds zoned support and a pillow top to cushion shoulders and hips."
-      },
-      {
-        "category": "mattresses-for-cooling",
-        "pick": "purple-original",
-        "headline": "For People Who Sleep Hot",
-        "dek": "The Purple Original's GelFlex Grid keeps a bouncy, temperature-neutral feel all night."
       }
     ]
   },
@@ -452,9 +434,9 @@
       },
       {
         "category": "premium-mesh-wifi-routers",
-        "pick": "tp-link-deco-be65",
-        "headline": "Ready for Wi-Fi 7, Without the Sticker Shock",
-        "dek": "The TP-Link Deco BE65 brings Wi-Fi 7 speeds to a whole-home mesh system."
+        "pick": "asus-zenwifi-xt9",
+        "headline": "Mesh Wi-Fi for Power Users",
+        "dek": "The ASUS ZenWiFi XT9 adds deep customization and built-in network security for people who like to tinker."
       }
     ]
   },
@@ -487,28 +469,28 @@
   },
   "outdoor-grills": {
     "lead": {
-      "pick": "weber-spirit-ii-e-310",
-      "headline": "Fire Up Weeknight Dinners in Minutes",
-      "dek": "The Weber Spirit II E-310 heats evenly across three burners and is built to last for seasons."
+      "pick": "weber-master-touch-22",
+      "headline": "The Classic Charcoal Kettle, Perfected",
+      "dek": "The Weber Master-Touch adds a hinged grate and an ash catcher to the iconic kettle design."
     },
     "side": [
       {
-        "category": "outdoor-grills-for-smoking",
-        "pick": "traeger-ironwood-650",
-        "headline": "Low and Slow, Without Babysitting the Fire",
-        "dek": "The Traeger Ironwood 650 holds smoking temperatures on its own and sends updates to your phone."
+        "category": "outdoor-grills-for-large-family",
+        "pick": "blackstone-36-inch-griddle",
+        "headline": "Smash Burgers for the Whole Crew",
+        "dek": "The Blackstone 36-inch griddle gives you a huge flat-top for breakfasts, burgers, and stir-fries."
       },
       {
         "category": "budget-outdoor-grills",
-        "pick": "weber-master-touch-22",
-        "headline": "The Classic Charcoal Kettle, Perfected",
-        "dek": "The Weber Master-Touch adds a hinged grate and an ash catcher to the iconic kettle design."
+        "pick": "char-broil-performance-4-burner",
+        "headline": "A Full-Size Gas Grill Without the Splurge",
+        "dek": "The Char-Broil Performance has four main burners plus a side burner."
       },
       {
-        "category": "outdoor-grills-for-portable",
-        "pick": "weber-go-anywhere-charcoal",
-        "headline": "Take the Cookout Anywhere",
-        "dek": "The Weber Go-Anywhere folds up for camping, tailgates, and beach days."
+        "category": "outdoor-grills-for-gas",
+        "pick": "napoleon-prestige-500",
+        "headline": "The Backyard Showpiece",
+        "dek": "The Napoleon Prestige 500 adds infrared burners and a huge cooking area in stainless steel."
       }
     ]
   },
@@ -554,15 +536,15 @@
       },
       {
         "category": "budget-portable-power-stations",
-        "pick": "anker-solix-c1000",
-        "headline": "Backup Power Without the Big Investment",
-        "dek": "The Anker SOLIX C1000 packs over 1,000Wh and 1,800W of output into a value-priced unit."
+        "pick": "ecoflow-river-2",
+        "headline": "Small Power Station, Big Peace of Mind",
+        "dek": "The EcoFlow RIVER 2 packs 256Wh of LiFePO4 power, with X-Boost for higher-draw devices."
       },
       {
-        "category": "portable-power-stations-for-home-backup",
-        "pick": "ecoflow-delta-pro-3",
-        "headline": "Keep the Whole House Running",
-        "dek": "The EcoFlow DELTA Pro 3 starts at 4kWh and expands for serious whole-home backup."
+        "category": "portable-power-stations-for-solar",
+        "pick": "goal-zero-yeti-700",
+        "headline": "Built Tough for Off-Grid Power",
+        "dek": "The Goal Zero Yeti 700 is a rugged 677Wh LiFePO4 unit made for harsh conditions and solar charging."
       }
     ]
   },
@@ -575,15 +557,15 @@
     "side": [
       {
         "category": "robot-vacuums-for-pet-hair",
-        "pick": "irobot-roomba-combo-j9",
-        "headline": "A Robot That Steers Clear of Pet Accidents",
-        "dek": "The Roomba Combo j9+ avoids pet messes and lifts its mop pad when it reaches carpet."
+        "pick": "narwal-freo-x-ultra",
+        "headline": "Pet Hair Without the Tangles",
+        "dek": "The Narwal Freo X Ultra pairs strong suction with a tangle-free brush and smart mopping."
       },
       {
-        "category": "robot-vacuums-for-hardwood",
-        "pick": "ecovacs-deebot-t30s-omni",
-        "headline": "Hard Floors, Mopped Right to the Edge",
-        "dek": "The ECOVACS Deebot T30S extends its mop toward walls and handles the cleanup at its dock."
+        "category": "best-robot-vacuums",
+        "pick": "shark-av2511ae-matrix-clean",
+        "headline": "Clean Rows, No Missed Spots",
+        "dek": "The Shark Matrix cleans in a tight grid pattern so it doesn't skip patches of floor."
       },
       {
         "category": "premium-robot-vacuums",
@@ -622,16 +604,16 @@
   },
   "standing-desks": {
     "lead": {
-      "pick": "flexispot-e7-pro",
-      "headline": "Stand Up, Stay Steady: The Desks That Don't Wobble",
-      "dek": "The FlexiSpot E7 Pro is rock-solid at standing height and holds plenty of weight."
+      "pick": "apexdesk-elite-pro-60",
+      "headline": "Stand Up, Spread Out: The Desks Worth Working At",
+      "dek": "The ApexDesk Elite Pro gives you a full 60-inch workspace at a mid-range price."
     },
     "side": [
       {
         "category": "standing-desks-under-500",
-        "pick": "apexdesk-elite-pro-60",
-        "headline": "A Full-Size Desk Without the Full-Size Bill",
-        "dek": "The ApexDesk Elite Pro gives you a 60-inch workspace at a mid-range price."
+        "pick": "autonomous-smartdesk-pro",
+        "headline": "A Feature-Packed Desk on a Sensible Budget",
+        "dek": "The Autonomous SmartDesk Pro offers strong lift capacity and a 7-year warranty."
       },
       {
         "category": "home-office-standing-desks",
@@ -640,10 +622,10 @@
         "dek": "The Vari Electric Standing Desk is backed by a 10-year warranty."
       },
       {
-        "category": "standing-desks-for-tall-people",
-        "pick": "fully-jarvis-bamboo",
-        "headline": "Tall? This Desk Finally Rises to Meet You",
-        "dek": "The Fully Jarvis Bamboo reaches over 50 inches, high enough for very tall users."
+        "category": "budget-standing-desks",
+        "pick": "fezibo-48x24-electric",
+        "headline": "Stand While You Work Without Spending Big",
+        "dek": "The FEZIBO 48x24 is a compact electric desk that fits smaller rooms."
       }
     ]
   },
@@ -662,15 +644,15 @@
       },
       {
         "category": "budget-tablets",
-        "pick": "amazon-fire-hd-10",
+        "pick": "samsung-galaxy-tab-a9-plus",
         "headline": "Big-Screen Streaming on a Small Budget",
-        "dek": "The Amazon Fire HD 10 has a 10.1-inch display and battery life for a full day of shows."
+        "dek": "The Samsung Galaxy Tab A9+ has an 11-inch display, expandable storage, and the full Google Play Store."
       },
       {
         "category": "premium-tablets",
-        "pick": "apple-ipad-pro-m4",
-        "headline": "When a Tablet Needs to Replace Your Laptop",
-        "dek": "The iPad Pro with M4 has an Ultra Retina XDR OLED display and laptop-class power."
+        "pick": "apple-ipad-mini-7",
+        "headline": "Big Power in a Small Tablet",
+        "dek": "The iPad mini packs the A17 Pro chip and Apple Pencil Pro support into an 8.3-inch body."
       }
     ]
   },
@@ -686,45 +668,6 @@
         "pick": "niu-kqi3-max",
         "headline": "A Smoother Ride for Longer Commutes",
         "dek": "The NIU KQi3 Max pairs a 40-mile range with wide tubeless tires for a comfortable ride."
-      },
-      {
-        "category": "budget-electric-scooters",
-        "pick": "hiboy-s2-pro",
-        "headline": "Flat Tires? Not on This Scooter",
-        "dek": "The Hiboy S2 Pro rides on solid, maintenance-free tires and goes up to 25 miles per charge."
-      },
-      {
-        "category": "electric-scooters-for-commuting",
-        "pick": "segway-ninebot-f2-pro",
-        "headline": "A Commuter Scooter With Shock Absorption",
-        "dek": "The Segway Ninebot F2 Pro adds front suspension and a long range to Segway's reliable design."
-      }
-    ]
-  },
-  "laptops": {
-    "lead": {
-      "pick": "apple-macbook-air-m3",
-      "headline": "The Laptop That Gets Through a Full Workday",
-      "dek": "The 15-inch MacBook Air with M3 is fast, light, and rated for up to 18 hours of battery."
-    },
-    "side": [
-      {
-        "category": "laptops-for-gaming",
-        "pick": "asus-rog-zephyrus-g14-2024",
-        "headline": "Serious Gaming in a Slim, Packable Body",
-        "dek": "The ASUS ROG Zephyrus G14 fits an RTX 4060 and an OLED display into a 3.3-pound laptop."
-      },
-      {
-        "category": "laptops-for-students",
-        "pick": "lenovo-ideapad-flex-5i-14",
-        "headline": "Take Notes by Hand, Write Papers by Keyboard",
-        "dek": "The Lenovo IdeaPad Flex 5i folds into a tablet and works with a pen."
-      },
-      {
-        "category": "premium-laptops",
-        "pick": "lenovo-thinkpad-x1-carbon-gen-12",
-        "headline": "Built for the Road Warrior",
-        "dek": "The ThinkPad X1 Carbon pairs ThinkPad reliability with a famously comfortable keyboard."
       }
     ]
   },
@@ -736,10 +679,10 @@
     },
     "side": [
       {
-        "category": "projectors-for-home-theater",
-        "pick": "hisense-px2-pro",
-        "headline": "The Projector That Could Replace Your TV",
-        "dek": "The Hisense PX2-Pro sits inches from the wall and projects up to a 130-inch 4K image."
+        "category": "projectors-for-gaming",
+        "pick": "benq-tk700sti",
+        "headline": "Big-Screen Gaming Without the Lag",
+        "dek": "The BenQ TK700STi pairs true 4K with low input lag and a short-throw design."
       },
       {
         "category": "budget-projectors",
@@ -752,21 +695,6 @@
         "pick": "nebula-capsule-3-laser",
         "headline": "A Movie Theater the Size of a Soda Can",
         "dek": "The Nebula Capsule 3 Laser runs about 2.5 hours on battery, so you can watch anywhere."
-      }
-    ]
-  },
-  "electric-bikes": {
-    "lead": {
-      "pick": "lectric-xp-lite-2",
-      "headline": "An E-Bike That Folds Into Your Trunk",
-      "dek": "The Lectric XP Lite 2.0 is light, folds for apartments and car trunks, and goes the distance."
-    },
-    "side": [
-      {
-        "category": "electric-bikes-for-commuting",
-        "pick": "aventon-soltera-3-adv",
-        "headline": "Commute Faster, Arrive Without the Sweat",
-        "dek": "The Aventon Soltera 3 ADV uses a torque sensor that boosts your pedaling naturally."
       }
     ]
   },
