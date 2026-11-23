@@ -685,6 +685,138 @@ def data_driven_description(display: str, matched: List[Dict[str, Any]]) -> str:
     return f"{lead} We compared {n} {display_noun(display)} on specs, expert reviews, and owner feedback."
 
 
+
+# ---------------- Page embellishments (pick cards, share row, section bar, promo) ----------------
+def build_section_bar(items: List[tuple]) -> str:
+    """Sticky 'Sections in this article' bar shown under the header."""
+    if not items:
+        return ""
+    lis = "".join(f'<li><a href="#{escape(a, quote=True)}">{escape(l)}</a></li>' for a, l in items)
+    return ('<div class="section-bar"><div class="container sb-inner">'
+            '<span class="sb-label">Browse</span>'
+            '<details class="sb-menu"><summary>Sections in this article</summary>'
+            f'<ul>{lis}</ul></details></div></div>'
+            '<script>document.addEventListener("click",function(e){var a=e.target.closest(".sb-menu a");'
+            'if(a){var d=a.closest("details");if(d)d.removeAttribute("open");}});</script>')
+
+
+_SHARE_ICONS = {
+    "link": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10.6 13.4a1 1 0 0 1 0-1.4l3.4-3.4a3 3 0 1 1 4.2 4.2l-1.8 1.8a1 1 0 1 1-1.4-1.4l1.8-1.8a1 1 0 1 0-1.4-1.4L12 13.4a1 1 0 0 1-1.4 0zm2.8-2.8a1 1 0 0 1 0 1.4L10 15.4a3 3 0 1 1-4.2-4.2l1.8-1.8a1 1 0 1 1 1.4 1.4l-1.8 1.8a1 1 0 1 0 1.4 1.4l3.4-3.4a1 1 0 0 1 1.4 0z"/></svg>',
+    "x": '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>',
+    "fb": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.5h-2.8C11.1 2.5 10.5 4.8 10.5 6.3v2.2H8.3V12h2.2v9.5H14V12h2.7l.4-3.5H14z"/></svg>',
+    "mail": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3-8-5.3zM5.6 7l6.4 4.3L18.4 7H5.6z"/></svg>',
+}
+
+
+def share_row_html(url: str, title: str) -> str:
+    from urllib.parse import quote
+    u, t = quote(url, safe=""), quote(title, safe="")
+    return ('<div class="share-row" aria-label="Share this page">'
+            f'<button type="button" class="share-btn share-copy" data-url="{escape(url, quote=True)}" title="Copy link" aria-label="Copy link">{_SHARE_ICONS["link"]}<span class="share-copied">Link copied</span></button>'
+            f'<a class="share-btn" href="https://twitter.com/intent/tweet?url={u}&amp;text={t}" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X">{_SHARE_ICONS["x"]}</a>'
+            f'<a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u={u}" target="_blank" rel="noopener" title="Share on Facebook" aria-label="Share on Facebook">{_SHARE_ICONS["fb"]}</a>'
+            f'<a class="share-btn" href="mailto:?subject={t}&amp;body={u}" title="Share by email" aria-label="Share by email">{_SHARE_ICONS["mail"]}</a>'
+            '</div>'
+            '<script>document.addEventListener("click",function(e){var b=e.target.closest(".share-copy");if(!b)return;'
+            'var u=b.getAttribute("data-url");var done=function(){b.classList.add("is-copied");setTimeout(function(){b.classList.remove("is-copied")},1800)};'
+            'try{navigator.clipboard.writeText(u).then(done,function(){prompt("Copy this link:",u)})}catch(x){prompt("Copy this link:",u)}});</script>')
+
+
+def promo_box_html() -> str:
+    path = DATA_DIR / "promo.json"
+    if not path.exists():
+        return ""
+    try:
+        pr = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"WARNING: bad promo.json: {e}")
+        return ""
+    today = date.today().isoformat()
+    if as_str(pr.get("start")) and today < as_str(pr.get("start")):
+        return ""
+    if as_str(pr.get("end")) and today > as_str(pr.get("end")):
+        return ""
+    if not as_str(pr.get("title")):
+        return ""
+    link = ""
+    if as_str(pr.get("link")):
+        link = f'<a class="promo-link" href="{escape(as_str(pr.get("link")), quote=True)}">{escape(as_str(pr.get("link_text")) or "Learn more")} &rarr;</a>'
+    return (f'<div class="aside-box promo-box"><h2>{escape(as_str(pr.get("title")))}</h2>'
+            f'<p>{escape(as_str(pr.get("text")))}</p>{link}</div>')
+
+
+def _top_rated(products: List[Dict[str, Any]], exclude: set, tag: str = "") -> Optional[Dict[str, Any]]:
+    best, best_r = None, None
+    for p in products:
+        if as_str(p.get("slug")) in exclude:
+            continue
+        if tag and tag not in [normalize_slug(t) for t in (p.get("best_for") or [])]:
+            continue
+        try:
+            r = float(p.get("rating"))
+        except (TypeError, ValueError):
+            r = 0.0
+        if best_r is None or r > best_r:
+            best, best_r = p, r
+    return best
+
+
+def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Optional[List[tuple]] = None) -> str:
+    """Wirecutter-style tabbed pick cards: Top pick, Budget pick, Upgrade pick, plus 'Best for…' minis."""
+    top = _best_pick(matched)
+    if not top:
+        return ""
+    used = {as_str(top.get("slug"))}
+    budget = _top_rated(matched, used, "budget")
+    if budget:
+        used.add(as_str(budget.get("slug")))
+    upgrade = _top_rated(matched, used, "premium")
+    if upgrade:
+        used.add(as_str(upgrade.get("slug")))
+
+    def nm(p):
+        return as_str(p.get("name")) or as_str(p.get("slug"))
+    intro = f"After comparing {len(matched)} {escape(noun)}, we recommend the <strong>{escape(nm(top))}</strong>."
+    if budget:
+        intro += f" If you want to spend less, the <strong>{escape(nm(budget))}</strong> is a strong value."
+    if upgrade:
+        intro += f" For the best of the best, consider the <strong>{escape(nm(upgrade))}</strong>."
+
+    def card(p, tab, kicker, cls):
+        slug = as_str(p.get("slug"))
+        detail = escape(f"/generated/products/{slug}/", quote=True)
+        aff = safe_url(as_str(p.get("affiliate_url")))
+        return (f'<article class="pick-card {cls}"><span class="pick-tab">{tab}</span>'
+                f'<div class="pick-media"><a href="{detail}" tabindex="-1">{cover_tile_html(p, large=True)}</a></div>'
+                f'<div class="pick-body"><p class="pick-kicker">{kicker}</p>'
+                f'<h3 class="pick-name"><a href="{detail}">{escape(nm(p))}</a></h3>'
+                f'<p class="pick-verdict">{escape(as_str(p.get("verdict")))}</p>'
+                f'<a class="pick-buy" href="{aff}" target="_blank" rel="nofollow sponsored noopener">Check price on Amazon</a>'
+                f'<a class="pick-review" href="{detail}">Read our full review &rarr;</a></div></article>')
+    parts = [f'<section class="pick-cards" id="top-pick" aria-label="Our picks"><p class="pick-intro">{intro}</p>']
+    parts.append(card(top, "Top pick", "Our favorite overall", "pick-top"))
+    if budget:
+        parts.append(card(budget, "Budget pick", "Great value for less", "pick-budget"))
+    if upgrade:
+        parts.append(card(upgrade, "Upgrade pick", "Worth the splurge", "pick-upgrade"))
+    minis = []
+    for label, p, href in (best_for or []):
+        if as_str(p.get("slug")) in used:
+            continue
+        used.add(as_str(p.get("slug")))
+        aff = safe_url(as_str(p.get("affiliate_url")))
+        minis.append(f'<div class="bestfor-card"><div class="bestfor-media">{cover_tile_html(p)}</div>'
+                     f'<div class="bestfor-body"><p class="bestfor-kicker">Best for {escape(label.lower())}</p>'
+                     f'<h3><a href="{escape(href, quote=True)}">{escape(nm(p))}</a></h3>'
+                     f'<a class="bestfor-buy" href="{aff}" target="_blank" rel="nofollow sponsored noopener">Check price on Amazon &rarr;</a></div></div>')
+        if len(minis) >= 4:
+            break
+    if minis:
+        parts.append('<div class="bestfor-grid">' + "".join(minis) + '</div>')
+    parts.append('</section>')
+    return "".join(parts)
+
+
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return template.replace("{{CATEGORY_NAME}}", escape(name)).replace("{{CATEGORY_DESCRIPTION}}", escape(description)).replace("{{PRODUCT_LIST}}", product_list_html)
 
@@ -1167,9 +1299,11 @@ def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str,
 
 def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
                       related_cta: str, faq_html: str, head_extra: str, body_override=None,
-                      toc_nav: str = "") -> str:
+                      toc_nav: str = "", section_bar: str = "", share_row: str = "") -> str:
     body = body_override if body_override is not None else guide_body_html(guide.get("sections"))
     return (template
+        .replace("{{SECTION_BAR}}", section_bar)
+        .replace("{{SHARE_ROW}}", share_row)
         .replace("{{TOC_NAV}}", toc_nav)
         .replace("{{GUIDE_TITLE}}", escape(as_str(guide.get("title"))))
         .replace("{{GUIDE_DESCRIPTION}}", escape(as_str(guide.get("description"))))
@@ -1495,7 +1629,8 @@ def main():
         slug = as_str(p.get("slug"))
         if not slug:
             continue
-        html = render_product_page(product_template, p)
+        html = render_product_page(product_template, p).replace(
+            "{{SHARE_ROW}}", share_row_html(f"{site_url}/generated/products/{as_str(p.get('slug'))}/", f"{as_str(p.get('name'))} | {site_name}"))
         out_path = GENERATED_DIR / "products" / slug / "index.html"
         write_text(out_path, html)
         product_count += 1
@@ -1541,11 +1676,30 @@ def main():
         guide_link = ""
         if _g:
             guide_link = f'<p class="category-guide-link"><a href="{GUIDE_URL_BASE}/{_g["slug"]}/">Read our {escape(slug_to_display(niche))} buying guide &rarr;</a></p>'
-        toc_nav = build_toc_nav(build_category_toc_items(matched, bool(faqs)))
+        toc_nav = ""
+        section_bar = build_section_bar(build_category_toc_items(matched, bool(faqs)))
+        _bf = []
+        if cslug == niche:
+            for _c in categories:
+                if as_str(_c.get("niche")) != niche or as_str(_c.get("slug")) in (niche, f"best-{niche}"):
+                    continue
+                _tags = [normalize_slug(t) for t in (_c.get("tags") or [])]
+                if len(_tags) != 1 or _tags[0] in ("budget", "premium", "best-overall", "budget-premium"):
+                    continue
+                _cm = [p for p in matched if product_matches(p, _tags)]
+                if len(_cm) < 2:
+                    continue
+                _bp = _top_rated(_cm, set())
+                if _bp:
+                    _bf.append((slug_to_display(_tags[0]), _bp, f"/generated/categories/{as_str(_c.get('slug'))}/"))
+        pick_cards = build_pick_cards_html(matched, display_noun(slug_to_display(niche)), _bf)
         html = (html
             .replace("{{TOC_NAV}}", toc_nav)
             .replace("{{GUIDE_LINK}}", guide_link)
-            .replace("{{TOP_PICK}}", build_top_pick_html(matched))
+            .replace("{{TOP_PICK}}", pick_cards)
+            .replace("{{SECTION_BAR}}", section_bar)
+            .replace("{{SHARE_ROW}}", share_row_html(f"{site_url}/generated/categories/{cslug}/", f"{name} | {site_name}"))
+            .replace("{{PROMO_BOX}}", promo_box_html())
             .replace("{{FAQ_SECTION}}", build_faq_section_html(faqs))
             .replace("{{SITE_NAME}}", escape(site_name))
             .replace("{{SITE_TAGLINE}}", escape(site_tagline))
@@ -1604,8 +1758,9 @@ def main():
             faqs = g.get("faqs") or []
             faq_html = build_faq_section_html([(q, a) for q, a in faqs])
             head_extra = build_guide_head_extra(g, site_url, site_name, faqs)
-            toc_nav = build_toc_nav(build_guide_toc_items(g, bool(faqs)))
-            html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra, toc_nav=toc_nav)
+            html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra,
+                                     section_bar=build_section_bar(build_guide_toc_items(g, bool(faqs))),
+                                     share_row=share_row_html(f"{site_url}{GUIDE_URL_BASE}/{gslug}/", f"{as_str(g.get('title'))} | {site_name}"))
             write_text(GENERATED_DIR / "guides" / gslug / "index.html", html)
             guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/{gslug}/")
         items = []
