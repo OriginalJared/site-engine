@@ -409,3 +409,20 @@ html { scroll-behavior: smooth; }
 .dept-card h3 { font-size: 1.3rem; }
 @media (max-width: 800px) { .dept-grid3 { grid-template-columns: 1fr; gap: 28px; } }
 .dept-card .dept-mono { font-size: 1.6rem; }
+
+/* ---- All Categories: homepage button + dedicated page ---- */
+.all-cats-cta { text-align: center; margin: 36px 0 8px; }
+.all-cats-btn { display: inline-block; background: var(--color-text); color: #fff; font-weight: 600; letter-spacing: 0.02em; padding: 14px 30px; border-radius: var(--radius); text-decoration: none; border-bottom: 3px solid var(--color-accent); }
+.all-cats-btn:hover { background: #000; color: var(--color-accent); }
+.allcat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 8px; }
+.allcat-box { border-top: 3px solid var(--color-text); padding-top: 12px; }
+.allcat-box h2 { font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 10px; border: none; padding: 0; }
+.allcat-box h2 a { color: var(--color-text); text-decoration: none; }
+.allcat-box h2 a:hover { color: var(--color-accent); }
+.allcat-box ul { list-style: none; margin: 0 0 10px; padding: 0; }
+.allcat-box li { padding: 3px 0; font-size: 0.95rem; }
+.allcat-box li a { color: var(--color-text-muted); text-decoration: none; }
+.allcat-box li a:hover { color: var(--color-accent); }
+.allcat-more { font-size: 0.88rem; font-weight: 600; color: var(--color-accent); text-decoration: none; }
+@media (max-width: 800px) { .allcat-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .allcat-grid { grid-template-columns: 1fr; } }
