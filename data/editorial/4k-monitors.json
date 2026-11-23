@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A 4K monitor makes sense if you spend hours looking at text, spreadsheets, code, or photos. At 27 inches, 4K resolution makes text noticeably sharper than a 1440p screen and gives you room to put two windows side by side.",
+    "If you mainly play fast competitive games, a high-refresh 1440p monitor is often the better value. If you're plugging in a laptop, look for USB-C with power delivery, which lets one cable handle video, charging, and accessories."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Panel type",
+      "text": "IPS and IPS Black panels hold color and contrast at an angle better than VA and TN panels, which matters for desk work and photo editing."
+    },
+    {
+      "label": "Color accuracy",
+      "text": "For creative work we favored monitors that ship factory-calibrated, with a published report or a Calman or Pantone verification."
+    },
+    {
+      "label": "Refresh rate",
+      "text": "60Hz is fine for office work. For gaming we looked for 144Hz or faster, plus a quick response time."
+    },
+    {
+      "label": "Connectivity",
+      "text": "USB-C with enough wattage to charge a laptop, a built-in hub, and a KVM switch can replace a separate dock."
+    },
+    {
+      "label": "Value",
+      "text": "We compared each monitor's price with the features it actually adds, because many 4K panels are close in image quality."
+    }
+  ]
+}

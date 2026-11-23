@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "Good wireless earbuds are worth it if you listen on your commute, at the gym, or on calls throughout the day. Paying more mostly gets you stronger noise cancellation, clearer call mics, and better fit options. Basic sound quality is good even at lower prices.",
+    "Your phone matters. AirPods work best with iPhones, and Samsung and Pixel buds have Android-only extras. If you need to hear traffic while running, open-ear models are the safer choice."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Noise cancellation",
+      "text": "We weighed expert measurements and owner reports on how well ANC handles engine rumble and voices, not just the spec sheet."
+    },
+    {
+      "label": "Fit and comfort",
+      "text": "Earbuds you can't wear for two hours aren't a good pick. We looked at the tip sizes included, weight per bud, and owner comfort feedback."
+    },
+    {
+      "label": "Battery life",
+      "text": "We favored at least six hours per charge with ANC on, plus a case that adds a full day or more."
+    },
+    {
+      "label": "Call quality",
+      "text": "Mic performance in wind and noise varies widely, so we leaned on reviews that include recorded call samples."
+    },
+    {
+      "label": "Ecosystem and codecs",
+      "text": "We noted which models support features like auto-switching, spatial audio, or LDAC/aptX for each phone platform."
+    }
+  ]
+}

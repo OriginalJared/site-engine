@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A robot vacuum is best for keeping floors consistently clean between deeper cleanings, especially with pets or a busy household. It won't replace a stick or upright vacuum for stairs, upholstery, or tight corners.",
+    "Self-emptying docks are worth the extra cost if you don't want to empty a small bin every day or two. Mopping models make the most sense in homes with a lot of hard flooring."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Navigation",
+      "text": "Lidar and camera-based mapping lets a robot clean in neat rows, avoid obstacles, and respect no-go zones. We passed over models that bump around at random."
+    },
+    {
+      "label": "Pickup on carpet and hair",
+      "text": "Suction numbers alone can mislead, so we also weighed brush design and tangle resistance, which matter most for pet hair."
+    },
+    {
+      "label": "Dock and maintenance",
+      "text": "We compared self-empty bag capacity, mop washing and drying, and the ongoing cost of replacement bags and pads."
+    },
+    {
+      "label": "App and obstacle avoidance",
+      "text": "Reliable avoidance of cords and socks, plus a clear app with room-by-room control, separates good robots from frustrating ones."
+    },
+    {
+      "label": "Noise and battery",
+      "text": "We looked at runtime relative to home size and how loud each robot is on its standard setting."
+    }
+  ]
+}

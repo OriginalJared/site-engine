@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "An air purifier helps if you deal with allergies, pet dander, wildfire smoke, or cooking odors. It works best in the room where you spend the most time, usually a bedroom or living room, running continuously.",
+    "Size it to the room. A purifier that's too small for the space will barely change the air no matter what filter it uses."
+  ],
+  "how_we_picked": [
+    {
+      "label": "CADR and coverage",
+      "text": "Clean Air Delivery Rate measures how fast a purifier cleans the air. We matched each unit's CADR to realistic room sizes rather than the optimistic maximum on the box."
+    },
+    {
+      "label": "True HEPA filtration",
+      "text": "We favored sealed True HEPA filters, which capture at least 99.97% of particles 0.3 microns in size. We avoided purifiers that depend on ionizers or ozone to clean the air; where a pick has an ionizer, it can be switched off."
+    },
+    {
+      "label": "Noise",
+      "text": "A purifier only helps when it's running, so we weighed how quiet it is on a setting that still moves meaningful air, especially for bedrooms."
+    },
+    {
+      "label": "Filter cost",
+      "text": "Replacement filters can cost more than the purifier over a few years, so we factored in yearly filter prices."
+    },
+    {
+      "label": "Smart features",
+      "text": "Air-quality sensors and an auto mode are useful. App control is a bonus, not a requirement."
+    }
+  ]
+}

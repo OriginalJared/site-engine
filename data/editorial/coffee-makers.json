@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A good drip coffee maker is for anyone who brews several cups at a time and wants consistent results without a manual routine. Single-serve machines trade some flavor and cost per cup for speed and convenience.",
+    "If you mostly drink one cup and like to tinker, a manual brewer like the AeroPress is cheaper and makes excellent coffee."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Brewing temperature",
+      "text": "Coffee extracts best at about 195–205°F. We favored machines certified by the Specialty Coffee Association or shown to hit that range consistently."
+    },
+    {
+      "label": "Even extraction",
+      "text": "A showerhead that wets the grounds evenly and a brew time of about four to six minutes make the biggest difference in taste."
+    },
+    {
+      "label": "Carafe",
+      "text": "Thermal carafes keep coffee hot without the burnt taste a hot plate causes over time."
+    },
+    {
+      "label": "Ease of use and cleaning",
+      "text": "We looked for simple controls, easy-to-fill reservoirs, and parts that are easy to descale and rinse."
+    },
+    {
+      "label": "Durability and warranty",
+      "text": "We weighed owner reports on long-term reliability alongside each manufacturer's warranty."
+    }
+  ]
+}
