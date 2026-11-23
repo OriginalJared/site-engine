@@ -52,6 +52,8 @@ def load_products():
         except Exception as e:
             print(f"  ! could not read {path}: {e}")
             continue
+        if isinstance(data, dict):
+            data = data.get("products")
         if not isinstance(data, list):
             continue
         for p in data:
@@ -146,7 +148,11 @@ def main():
     try:
         from amazon_creatorsapi import AmazonCreatorsApi, Country
     except Exception as e:
-        die(f"FAILURE: could not import amazon_creatorsapi ({e}). Is python-amazon-paapi installed?")
+        msg = f"could not import amazon_creatorsapi ({e}). Is python-amazon-paapi installed?"
+        if PROBE:
+            die("FAILURE: " + msg)
+        print("SKIP: " + msg + " Leaving site unchanged.")
+        return
 
     country = getattr(Country, COUNTRY, None)
     if country is None:
