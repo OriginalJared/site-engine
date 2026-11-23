@@ -538,5 +538,263 @@
         "dek": "Bose's QuietComfort Ultra Headphones add immersive audio to the brand's signature noise cancellation."
       }
     ]
+  },
+  "portable-power-stations": {
+    "lead": {
+      "pick": "ecoflow-delta-2",
+      "headline": "When the Power Goes Out, the Coffee Maker Doesn't Have To",
+      "dek": "The EcoFlow DELTA 3 stores 1,024Wh and recharges from the wall in under an hour."
+    },
+    "side": [
+      {
+        "category": "portable-power-stations-for-camping",
+        "pick": "jackery-explorer-1000-v2",
+        "headline": "Bring Real Power to the Campsite",
+        "dek": "The Jackery Explorer 1000 v2 is easy to use, recharges fast, and pairs with solar panels."
+      },
+      {
+        "category": "budget-portable-power-stations",
+        "pick": "anker-solix-c1000",
+        "headline": "Backup Power Without the Big Investment",
+        "dek": "The Anker SOLIX C1000 packs over 1,000Wh and 1,800W of output into a value-priced unit."
+      },
+      {
+        "category": "portable-power-stations-for-home-backup",
+        "pick": "ecoflow-delta-pro-3",
+        "headline": "Keep the Whole House Running",
+        "dek": "The EcoFlow DELTA Pro 3 starts at 4kWh and expands for serious whole-home backup."
+      }
+    ]
+  },
+  "robot-vacuums": {
+    "lead": {
+      "pick": "roborock-qrevo-curvx",
+      "headline": "Come Home to Clean Floors, Every Day",
+      "dek": "The Roborock Qrevo Curv reaches into edges with its FlexiArm and empties itself at the dock."
+    },
+    "side": [
+      {
+        "category": "robot-vacuums-for-pet-hair",
+        "pick": "irobot-roomba-combo-j9",
+        "headline": "A Robot That Steers Clear of Pet Accidents",
+        "dek": "The Roomba Combo j9+ avoids pet messes and lifts its mop pad when it reaches carpet."
+      },
+      {
+        "category": "robot-vacuums-for-hardwood",
+        "pick": "ecovacs-deebot-t30s-omni",
+        "headline": "Hard Floors, Mopped Right to the Edge",
+        "dek": "The ECOVACS Deebot T30S extends its mop toward walls and handles the cleanup at its dock."
+      },
+      {
+        "category": "premium-robot-vacuums",
+        "pick": "dreame-x50-ultra",
+        "headline": "The Robot That Climbs Over Thresholds",
+        "dek": "The Dreame X50 Ultra lifts itself over door thresholds that stop most robot vacuums."
+      }
+    ]
+  },
+  "smartwatches": {
+    "lead": {
+      "pick": "apple-watch-series-10",
+      "headline": "The Health Tracker You'll Actually Wear",
+      "dek": "The Apple Watch Series 10 adds an ECG, an always-on display, and crash detection to everyday iPhone life."
+    },
+    "side": [
+      {
+        "category": "smartwatches-for-android",
+        "pick": "samsung-galaxy-watch-7",
+        "headline": "Android Users, This Is Your Watch",
+        "dek": "The Samsung Galaxy Watch 7 pairs detailed health sensors with seamless Galaxy phone integration."
+      },
+      {
+        "category": "smartwatches-for-battery-life",
+        "pick": "garmin-forerunner-265",
+        "headline": "A Watch That Lasts Longer Than Your Training Block",
+        "dek": "The Garmin Forerunner 265 adds training readiness and race predictions, with battery life measured in days."
+      },
+      {
+        "category": "budget-smartwatches",
+        "pick": "apple-watch-se-2024",
+        "headline": "Apple Watch Essentials for Less",
+        "dek": "The Apple Watch SE keeps crash detection, fall detection, and core health tracking."
+      }
+    ]
+  },
+  "standing-desks": {
+    "lead": {
+      "pick": "flexispot-e7-pro",
+      "headline": "Stand Up, Stay Steady: The Desks That Don't Wobble",
+      "dek": "The FlexiSpot E7 Pro is rock-solid at standing height and holds plenty of weight."
+    },
+    "side": [
+      {
+        "category": "standing-desks-under-500",
+        "pick": "apexdesk-elite-pro-60",
+        "headline": "A Full-Size Desk Without the Full-Size Bill",
+        "dek": "The ApexDesk Elite Pro gives you a 60-inch workspace at a mid-range price."
+      },
+      {
+        "category": "home-office-standing-desks",
+        "pick": "vari-electric-60",
+        "headline": "A Desk Built to Outlast Your Job",
+        "dek": "The Vari Electric Standing Desk is backed by a 10-year warranty."
+      },
+      {
+        "category": "standing-desks-for-tall-people",
+        "pick": "fully-jarvis-bamboo",
+        "headline": "Tall? This Desk Finally Rises to Meet You",
+        "dek": "The Fully Jarvis Bamboo reaches over 50 inches, high enough for very tall users."
+      }
+    ]
+  },
+  "tablets": {
+    "lead": {
+      "pick": "apple-ipad-11th-gen",
+      "headline": "The Tablet That Fits Almost Everyone",
+      "dek": "The 11-inch iPad pairs the A16 chip with 128GB of storage and the full iPad app library."
+    },
+    "side": [
+      {
+        "category": "tablets-for-android",
+        "pick": "samsung-galaxy-tab-s10-ultra",
+        "headline": "A Giant Screen That Doubles as a Desktop",
+        "dek": "The Samsung Galaxy Tab S10 Ultra has a 14.6-inch AMOLED screen, an included S Pen, and Samsung DeX."
+      },
+      {
+        "category": "budget-tablets",
+        "pick": "amazon-fire-hd-10",
+        "headline": "Big-Screen Streaming on a Small Budget",
+        "dek": "The Amazon Fire HD 10 has a 10.1-inch display and battery life for a full day of shows."
+      },
+      {
+        "category": "premium-tablets",
+        "pick": "apple-ipad-pro-m4",
+        "headline": "When a Tablet Needs to Replace Your Laptop",
+        "dek": "The iPad Pro with M4 has an Ultra Retina XDR OLED display and laptop-class power."
+      }
+    ]
+  },
+  "electric-scooters": {
+    "lead": {
+      "pick": "segway-ninebot-max-g2",
+      "headline": "Skip Traffic, Not Safety Features",
+      "dek": "The Segway Ninebot Max G2 offers a 43-mile range, built-in turn signals, and Apple Find My tracking."
+    },
+    "side": [
+      {
+        "category": "electric-scooters-for-long-range",
+        "pick": "niu-kqi3-max",
+        "headline": "A Smoother Ride for Longer Commutes",
+        "dek": "The NIU KQi3 Max pairs a 40-mile range with wide tubeless tires for a comfortable ride."
+      },
+      {
+        "category": "budget-electric-scooters",
+        "pick": "hiboy-s2-pro",
+        "headline": "Flat Tires? Not on This Scooter",
+        "dek": "The Hiboy S2 Pro rides on solid, maintenance-free tires and goes up to 25 miles per charge."
+      },
+      {
+        "category": "electric-scooters-for-commuting",
+        "pick": "segway-ninebot-f2-pro",
+        "headline": "A Commuter Scooter With Shock Absorption",
+        "dek": "The Segway Ninebot F2 Pro adds front suspension and a long range to Segway's reliable design."
+      }
+    ]
+  },
+  "laptops": {
+    "lead": {
+      "pick": "apple-macbook-air-m3",
+      "headline": "The Laptop That Gets Through a Full Workday",
+      "dek": "The 15-inch MacBook Air with M3 is fast, light, and rated for up to 18 hours of battery."
+    },
+    "side": [
+      {
+        "category": "laptops-for-gaming",
+        "pick": "asus-rog-zephyrus-g14-2024",
+        "headline": "Serious Gaming in a Slim, Packable Body",
+        "dek": "The ASUS ROG Zephyrus G14 fits an RTX 4060 and an OLED display into a 3.3-pound laptop."
+      },
+      {
+        "category": "laptops-for-students",
+        "pick": "lenovo-ideapad-flex-5i-14",
+        "headline": "Take Notes by Hand, Write Papers by Keyboard",
+        "dek": "The Lenovo IdeaPad Flex 5i folds into a tablet and works with a pen."
+      },
+      {
+        "category": "premium-laptops",
+        "pick": "lenovo-thinkpad-x1-carbon-gen-12",
+        "headline": "Built for the Road Warrior",
+        "dek": "The ThinkPad X1 Carbon pairs ThinkPad reliability with a famously comfortable keyboard."
+      }
+    ]
+  },
+  "projectors": {
+    "lead": {
+      "pick": "epson-home-cinema-2350",
+      "headline": "Movie Night, Supersized",
+      "dek": "The Epson Home Cinema 2350 throws a bright, sharp 4K picture and has Android TV built in."
+    },
+    "side": [
+      {
+        "category": "projectors-for-home-theater",
+        "pick": "hisense-px2-pro",
+        "headline": "The Projector That Could Replace Your TV",
+        "dek": "The Hisense PX2-Pro sits inches from the wall and projects up to a 130-inch 4K image."
+      },
+      {
+        "category": "budget-projectors",
+        "pick": "optoma-uhd38x",
+        "headline": "Real 4K That Holds Up in a Bright Room",
+        "dek": "The Optoma UHD38x delivers true 4K, 4,000 lumens, and 240Hz gaming support."
+      },
+      {
+        "category": "projectors-for-portable",
+        "pick": "nebula-capsule-3-laser",
+        "headline": "A Movie Theater the Size of a Soda Can",
+        "dek": "The Nebula Capsule 3 Laser runs about 2.5 hours on battery, so you can watch anywhere."
+      }
+    ]
+  },
+  "electric-bikes": {
+    "lead": {
+      "pick": "lectric-xp-lite-2",
+      "headline": "An E-Bike That Folds Into Your Trunk",
+      "dek": "The Lectric XP Lite 2.0 is light, folds for apartments and car trunks, and goes the distance."
+    },
+    "side": [
+      {
+        "category": "electric-bikes-for-commuting",
+        "pick": "aventon-soltera-3-adv",
+        "headline": "Commute Faster, Arrive Without the Sweat",
+        "dek": "The Aventon Soltera 3 ADV uses a torque sensor that boosts your pedaling naturally."
+      }
+    ]
+  },
+  "running-shoes": {
+    "lead": {
+      "pick": "nike-pegasus-41",
+      "headline": "The Running Shoe That Does a Bit of Everything",
+      "dek": "The Nike Pegasus 41 is a daily trainer refined over decades to handle almost any run."
+    },
+    "side": [
+      {
+        "category": "running-shoes-for-cushioned",
+        "pick": "brooks-ghost-16",
+        "headline": "Long Runs, Soft Landings",
+        "dek": "The Brooks Ghost 16 uses nitrogen-infused foam for a smooth, cushioned ride."
+      },
+      {
+        "category": "running-shoes-for-daily-training",
+        "pick": "saucony-ride-17",
+        "headline": "Cushion and Pop in the Same Shoe",
+        "dek": "The Saucony Ride 17 balances soft PWRRUN+ foam with a responsive feel."
+      },
+      {
+        "category": "premium-running-shoes",
+        "pick": "nike-vaporfly-3",
+        "headline": "Built for Race Day",
+        "dek": "The Nike Vaporfly 3 pairs a carbon fiber plate with ZoomX foam for marathon speed."
+      }
+    ]
   }
 }
