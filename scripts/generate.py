@@ -455,10 +455,13 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
 
     niche_sections = []
+    def _no_price(t):
+        t = re.sub(r"\s*\((?:[^()]*\$\d[^()]*)\)", "", t)
+        return re.sub(r"\s*(?:under|below|less than|for|at)?\s*\$\d[\d,]*(?:\.\d+)?\+?", "", t, flags=re.I).strip()
     def _dept_headline(c, is_hub):
         if is_hub:
             return "The Best " + slug_to_display(as_str(c.get("niche")))
-        nm = as_str(c.get("name"))
+        nm = _no_price(as_str(c.get("name")))
         return ("The " + nm) if nm.startswith("Best ") else ("The Best " + nm)
     def _dept_thumb(p, href, cls):
         img = as_str(p.get("image_url"))
@@ -471,9 +474,16 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                 f'<span class="dept-mono">{escape(label)}</span></a>')
     def _dept_dek(p):
         name = as_str(p.get("name"))
-        verdict = as_str(p.get("verdict"))
+        verdict = re.sub(r"[,]?\s*(?:at |for |around |about )?(?:under |less than |just )?\$\d[\d,]*(?:\.\d+)?\+?", "", as_str(p.get("verdict"))).strip()
         return f'Our pick: <strong>{escape(name)}</strong>. {escape(verdict)}' if verdict else f'Our pick: <strong>{escape(name)}</strong>.'
     TAG_PRIORITY = ["budget", "premium"]
+    _stories_path = DATA_DIR / "homepage-stories.json"
+    homepage_stories = {}
+    if _stories_path.exists():
+        try:
+            homepage_stories = json.loads(_stories_path.read_text(encoding="utf-8")) or {}
+        except Exception as e:
+            print(f"WARNING: could not read homepage-stories.json: {e}")
     for niche, cats in niches.items():
         if niche == "gifts" or not niche:
             continue
@@ -508,26 +518,59 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             if p:
                 used.add(as_str(p.get("slug")))
                 side.append((c, p))
-        side_slugs = {as_str(c.get("slug")) for c, _ in side}
+        side = [(c, p, None) for c, p in side]
+        lead_story = None
+        story = homepage_stories.get(niche) if isinstance(homepage_stories, dict) else None
+        if isinstance(story, dict):
+            prod_by_slug = {as_str(p.get("slug")): p for p in nprods}
+            cat_by_slug = {as_str(c.get("slug")): c for c in cats}
+            L = story.get("lead") or {}
+            lp = prod_by_slug.get(as_str(L.get("pick")))
+            if lp and as_str(L.get("headline")):
+                lead_p, lead_story = lp, L
+            else:
+                print(f"WARNING: homepage story lead for {niche} invalid; using automatic lead")
+            new_side = []
+            for st in (story.get("side") or []):
+                c = cat_by_slug.get(as_str(st.get("category")))
+                p = prod_by_slug.get(as_str(st.get("pick")))
+                ok = False
+                if c and p and as_str(st.get("headline")):
+                    explicit = c.get("products") if isinstance(c.get("products"), list) else None
+                    if explicit:
+                        ok = as_str(p.get("slug")) in [as_str(x) for x in explicit]
+                    else:
+                        ok = product_matches(p, [normalize_slug(t) for t in (c.get("tags") or [])])
+                if ok:
+                    new_side.append((c, p, st))
+                else:
+                    print(f"WARNING: homepage story {niche}/{as_str(st.get('category'))} invalid (pick not on that page); skipped")
+            if new_side:
+                side = new_side
+        side_slugs = {as_str(c.get("slug")) for c, _, _ in side}
         rest = [c for c in subs if as_str(c.get("slug")) not in side_slugs]
         link_bits = []
         for c in rest:
             tags = c.get("tags") or []
-            label = slug_to_display(tags[0]) if len(tags) == 1 else as_str(c.get("name"))
+            label = slug_to_display(tags[0]) if len(tags) == 1 else _no_price(as_str(c.get("name")))
             link_bits.append(f'<a href="{escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)}">{escape(label)}</a>')
         see_all = f'<a href="{hub_href}">see all in {escape(display)}</a>'
         links_html = (", ".join(link_bits) + ", or " + see_all) if link_bits else see_all
         updated = f'<p class="dept-updated">Updated {escape(UPDATED_LABEL)}</p>'
         lead_href = hub_href
+        lead_title = escape(as_str(lead_story.get("headline"))) if lead_story else escape(_dept_headline(hub_cat or {"niche": niche}, True))
+        lead_dek = escape(as_str(lead_story.get("dek"))) if lead_story and as_str(lead_story.get("dek")) else _dept_dek(lead_p)
         lead_html = (f'<article class="dept-lead">{_dept_thumb(lead_p, lead_href, "dept-img dept-img-lg")}'
-                     f'<h3><a href="{lead_href}">{escape(_dept_headline(hub_cat or {"niche": niche}, True))}</a></h3>'
-                     f'<p class="dept-dek">{_dept_dek(lead_p)}</p>{updated}</article>')
+                     f'<h3><a href="{lead_href}">{lead_title}</a></h3>'
+                     f'<p class="dept-dek">{lead_dek}</p>{updated}</article>')
         side_html = ""
-        for c, p in side:
+        for c, p, st in side:
             href = escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+            s_title = escape(as_str(st.get("headline"))) if st else escape(_dept_headline(c, False))
+            s_dek = escape(as_str(st.get("dek"))) if st and as_str(st.get("dek")) else _dept_dek(p)
             side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img")}'
-                          f'<div class="dept-item-txt"><h3><a href="{href}">{escape(_dept_headline(c, False))}</a></h3>'
-                          f'<p class="dept-dek">{_dept_dek(p)}</p>{updated}</div></article>')
+                          f'<div class="dept-item-txt"><h3><a href="{href}">{s_title}</a></h3>'
+                          f'<p class="dept-dek">{s_dek}</p>{updated}</div></article>')
         section = (f'<section class="dept" id="dept-{escape(niche, quote=True)}">'
                    f'<h2 class="dept-title"><a href="{hub_href}">{escape(display)}</a></h2>'
                    f'<p class="dept-links">{links_html}</p>'
