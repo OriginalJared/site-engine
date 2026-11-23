@@ -402,3 +402,10 @@ html { scroll-behavior: smooth; }
 .ed-section p { font-size: 1.02rem; line-height: 1.7; margin: 0 0 14px; }
 .ed-criteria { margin: 0; padding-left: 20px; }
 .ed-criteria li { font-size: 1.02rem; line-height: 1.65; margin: 0 0 12px; }
+
+/* ---- Three-across department variant (alternating) ---- */
+.dept-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.dept-card .dept-img { margin-bottom: 14px; }
+.dept-card h3 { font-size: 1.3rem; }
+@media (max-width: 800px) { .dept-grid3 { grid-template-columns: 1fr; gap: 28px; } }
+.dept-card .dept-mono { font-size: 1.6rem; }
