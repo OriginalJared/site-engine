@@ -484,6 +484,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             homepage_stories = json.loads(_stories_path.read_text(encoding="utf-8")) or {}
         except Exception as e:
             print(f"WARNING: could not read homepage-stories.json: {e}")
+    dept_idx = -1
     for niche, cats in niches.items():
         if niche == "gifts" or not niche:
             continue
@@ -547,6 +548,10 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                     print(f"WARNING: homepage story {niche}/{as_str(st.get('category'))} invalid (pick not on that page); skipped")
             if new_side:
                 side = new_side
+        dept_idx += 1
+        three_up = (dept_idx % 2 == 1) and len(side) >= 2
+        if three_up:
+            side = side[:2]
         side_slugs = {as_str(c.get("slug")) for c, _, _ in side}
         rest = [c for c in subs if as_str(c.get("slug")) not in side_slugs]
         link_bits = []
@@ -571,10 +576,24 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img")}'
                           f'<div class="dept-item-txt"><h3><a href="{href}">{s_title}</a></h3>'
                           f'<p class="dept-dek">{s_dek}</p>{updated}</div></article>')
+        if three_up:
+            cards = [(lead_href, lead_p, lead_title, lead_dek)]
+            for c, p, st in side:
+                href = escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+                cards.append((href,
+                              p,
+                              escape(as_str(st.get("headline"))) if st else escape(_dept_headline(c, False)),
+                              escape(as_str(st.get("dek"))) if st and as_str(st.get("dek")) else _dept_dek(p)))
+            body_html = '<div class="dept-grid3">' + "".join(
+                f'<article class="dept-card">{_dept_thumb(p, h, "dept-img")}'
+                f'<h3><a href="{h}">{t}</a></h3><p class="dept-dek">{d}</p>{updated}</article>'
+                for h, p, t, d in cards) + '</div>'
+        else:
+            body_html = f'<div class="dept-grid">{lead_html}<div class="dept-side">{side_html}</div></div>'
         section = (f'<section class="dept" id="dept-{escape(niche, quote=True)}">'
                    f'<h2 class="dept-title"><a href="{hub_href}">{escape(display)}</a></h2>'
                    f'<p class="dept-links">{links_html}</p>'
-                   f'<div class="dept-grid">{lead_html}<div class="dept-side">{side_html}</div></div>'
+                   f'{body_html}'
                    f'</section>')
         niche_sections.append(section)
 
