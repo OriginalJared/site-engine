@@ -426,3 +426,59 @@ html { scroll-behavior: smooth; }
 .allcat-more { font-size: 0.88rem; font-weight: 600; color: var(--color-accent); text-decoration: none; }
 @media (max-width: 800px) { .allcat-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .allcat-grid { grid-template-columns: 1fr; } }
+
+/* ---- Sticky "Sections in this article" bar ---- */
+.section-bar { position: sticky; top: 0; z-index: 60; background: #f1eee6; border-bottom: 1px solid var(--color-border); box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.sb-inner { display: flex; align-items: center; gap: 14px; min-height: 46px; }
+.sb-label { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding-right: 14px; border-right: 1px solid var(--color-border); }
+.sb-menu { position: relative; flex: 1; }
+.sb-menu summary { list-style: none; cursor: pointer; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; }
+.sb-menu summary::-webkit-details-marker { display: none; }
+.sb-menu summary::after { content: "\25BE"; display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: var(--color-text); color: #fff; font-size: 0.8rem; }
+.sb-menu[open] summary::after { content: "\25B4"; }
+.sb-menu ul { position: absolute; left: 0; right: 0; top: calc(100% + 10px); margin: 0; padding: 8px 0; list-style: none; background: #fff; border: 1px solid var(--color-border); border-top: 3px solid var(--color-accent); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+.sb-menu li a { display: block; padding: 9px 18px; color: var(--color-text); text-decoration: none; }
+.sb-menu li a:hover { background: #faf6ec; color: var(--color-accent); }
+
+/* ---- Share row ---- */
+.share-row { display: flex; gap: 10px; margin: 14px 0 4px; }
+.share-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.92); color: #111; border: none; cursor: pointer; text-decoration: none; transition: background 0.15s, color 0.15s; }
+.share-btn:hover { background: var(--color-accent); color: #fff; }
+.share-copied { display: none; position: absolute; top: 44px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: #111; color: #fff; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; }
+.share-copy.is-copied .share-copied { display: block; }
+
+/* ---- Tabbed pick cards ---- */
+.pick-cards { margin: 8px 0 36px; }
+.pick-intro { font-size: 1.12rem; line-height: 1.65; margin: 0 0 30px; max-width: 760px; }
+.pick-card { position: relative; display: grid; grid-template-columns: 300px 1fr; gap: 32px; align-items: center; background: #fff; border: 3px solid var(--color-text); padding: 34px 30px 28px; margin: 0 0 40px; }
+.pick-card.pick-top { border-color: var(--color-accent); }
+.pick-tab { position: absolute; top: -18px; left: 22px; background: var(--color-text); color: #fff; font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; padding: 6px 22px 6px 14px; clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%); }
+.pick-top .pick-tab { background: var(--color-accent); }
+.pick-media .cover-tile { margin: 0; }
+.pick-kicker { margin: 0 0 4px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
+.pick-name { font-family: var(--font-heading); font-size: 1.6rem; line-height: 1.2; margin: 0 0 10px; border: none; padding: 0; }
+.pick-name a { color: var(--color-text); text-decoration: none; }
+.pick-name a:hover { color: var(--color-accent); }
+.pick-verdict { margin: 0 0 18px; color: var(--color-text-muted); line-height: 1.6; }
+.pick-buy { display: inline-block; background: var(--color-text); color: #fff; font-weight: 700; padding: 12px 26px; border-radius: 6px; text-decoration: none; margin-right: 16px; }
+.pick-buy:hover { background: #000; color: var(--color-accent); }
+.pick-review { font-weight: 600; color: var(--color-accent); text-decoration: none; }
+.bestfor-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 8px; }
+.bestfor-card { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; background: #fff; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px; }
+.bestfor-media .cover-tile { height: 90px; margin: 0; }
+.bestfor-media .cover-mono { font-size: 2rem; }
+.bestfor-kicker { margin: 0 0 2px; font-size: 0.82rem; color: var(--color-text-muted); }
+.bestfor-card h3 { font-family: var(--font-heading); font-size: 1.08rem; margin: 0 0 6px; border: none; padding: 0; }
+.bestfor-card h3 a { color: var(--color-text); text-decoration: none; }
+.bestfor-buy { font-size: 0.88rem; font-weight: 600; color: var(--color-text); }
+
+/* ---- Seasonal promo box ---- */
+.promo-box { background: #111; color: #fff; border-top: 3px solid var(--color-accent); }
+.promo-box h2 { color: #fff; border-bottom-color: var(--color-accent); }
+.promo-box p { color: rgba(255,255,255,0.85); }
+.promo-link { color: var(--color-accent); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 800px) {
+  .pick-card { grid-template-columns: 1fr; gap: 18px; padding: 30px 20px 22px; }
+  .bestfor-grid { grid-template-columns: 1fr; }
+}
