@@ -110,7 +110,7 @@
     "category": "air-purifiers",
     "price_usd": 160,
     "rating": 4.7,
-    "verdict": "The Wirecutter's top pick for 6 years running — proven performance, eco mode, and a 4-stage filtration system.",
+    "verdict": "A proven, reliable performer — eco mode and a 4-stage filtration system in a compact unit.",
     "description": "The Coway AP-1512HH has been the most recommended air purifier by independent reviewers for half a decade, and the reason is consistency. Its 4-stage filtration (pre-filter, deodorization filter, True HEPA, vital ionizer) handles particles, odors, and VOCs. The eco mode automatically shuts off the fan when air quality is good for 30 minutes, saving energy. The air quality indicator ring changes color in real-time so you can see the purifier working. At $160, it's slightly more than budget picks but the track record of reliability and performance justifies every penny.",
     "features": [
       "4-stage filtration: pre-filter, carbon, True HEPA, ionizer",
@@ -423,7 +423,7 @@
     "price_usd": 550,
     "rating": 4.8,
     "verdict": "The best premium air purifier — 6-layer filtration, customizable filters, wall-mountable, and whisper-quiet.",
-    "description": "The Rabbit Air A3 is the air purifier you buy when you want the absolute best. Its 6-layer filtration system includes a customizable filter that you choose based on your specific concern — germ defense, toxin absorber, odor remover, or pet allergy. The BioGS HEPA filter is designed to maintain efficiency over time rather than degrading like standard HEPA filters. At 20.3 dB on its lowest setting, it's the quietest purifier in this roundup. It covers up to 1,070 sq ft, mounts on the wall to save floor space, and can even be customized with art panels. Forbes' #1 pick for 2026.",
+    "description": "The Rabbit Air A3 is the air purifier you buy when you want the absolute best. Its 6-layer filtration system includes a customizable filter that you choose based on your specific concern — germ defense, toxin absorber, odor remover, or pet allergy. The BioGS HEPA filter is designed to maintain efficiency over time rather than degrading like standard HEPA filters. At 20.3 dB on its lowest setting, it's the quietest purifier in this roundup. It covers up to 1,070 sq ft, mounts on the wall to save floor space, and can even be customized with art panels.",
     "features": [
       "6-layer filtration with customizable filter",
       "BioGS HEPA — maintains efficiency over time",
@@ -434,8 +434,7 @@
     "pros": [
       "Customizable filter targets your specific concern",
       "Quietest air purifier tested — 20.3 dB",
-      "Wall mounting is a unique space-saver",
-      "Forbes #1 pick for 2026"
+      "Wall mounting is a unique space-saver"
     ],
     "cons": [
       "Expensive — over $500",

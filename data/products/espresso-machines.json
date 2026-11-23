@@ -7,7 +7,7 @@
     "price_usd": 650,
     "rating": 4.7,
     "verdict": "The best espresso machine overall — built-in grinder, PID temperature control, and 15-bar pump in one package.",
-    "description": "The Breville Barista Express has been the most recommended home espresso machine for years, and it still earns that title. The built-in conical burr grinder means you're grinding fresh for every shot — the single biggest factor in espresso quality. PID temperature control ensures consistent extraction, and the 15-bar Italian pump delivers proper pressure. The dose-control grinding and manual tamping give you full control over your shots. The steam wand produces microfoam for latte art. CNET, Forbes, and Food Network all name it their top pick. At $650, it replaces $5 daily cafe visits in about 4 months.",
+    "description": "The Breville Barista Express has been the most recommended home espresso machine for years, and it still earns that title. The built-in conical burr grinder means you're grinding fresh for every shot — the single biggest factor in espresso quality. PID temperature control ensures consistent extraction, and the 15-bar Italian pump delivers proper pressure. The dose-control grinding and manual tamping give you full control over your shots. The steam wand produces microfoam for latte art. At $650, it replaces $5 daily cafe visits in about 4 months.",
     "features": [
       "Built-in conical burr grinder",
       "PID temperature control for consistency",
@@ -57,7 +57,7 @@
     "price_usd": 400,
     "rating": 4.6,
     "verdict": "The best compact espresso machine — 3-second heat-up, automatic milk steaming, and Breville quality in a tiny footprint.",
-    "description": "The Bambino Plus is Breville's answer for small kitchens. It heats up in just 3 seconds (vs 30+ for most machines), automatically steams milk to your preferred temperature, and delivers the same 15-bar extraction as larger Breville machines. The compact footprint takes up less counter space than a toaster. The auto-purge function cleans the group head between shots. No built-in grinder means you'll need a separate one, but that also means a smaller machine. Food Network's 'Best Overall' pick and Forbes' 'Best Compact.' At $400, it's the premium compact choice.",
+    "description": "The Bambino Plus is Breville's answer for small kitchens. It heats up in just 3 seconds (vs 30+ for most machines), automatically steams milk to your preferred temperature, and delivers the same 15-bar extraction as larger Breville machines. The compact footprint takes up less counter space than a toaster. The auto-purge function cleans the group head between shots. No built-in grinder means you'll need a separate one, but that also means a smaller machine. At $400, it's the premium compact choice.",
     "features": [
       "3-second heat-up time",
       "Automatic milk steaming to set temperature",
@@ -68,8 +68,7 @@
     "pros": [
       "3-second heat-up is incredible",
       "Automatic milk steaming is foolproof",
-      "Compact enough for any kitchen",
-      "Food Network's #1 pick"
+      "Compact enough for any kitchen"
     ],
     "cons": [
       "No built-in grinder — need separate",
@@ -107,13 +106,12 @@
     "price_usd": 122,
     "rating": 4.4,
     "verdict": "The best budget espresso machine — 20-bar pump, steam wand, and stainless steel build for $122.",
-    "description": "The CASABREWS CM5418 is Amazon's #1 best-selling espresso machine, and at $122 it's easy to see why. The 20-bar pump (more than enough for proper extraction), stainless steel construction, and functional steam wand deliver real espresso at a fraction of premium prices. The 34oz removable water tank is easy to fill, and the drip tray catches spills cleanly. It won't match a Breville in temperature stability or grind precision, but for someone who wants to make real espresso (not pod coffee) without spending $500+, this is the starting point. CNET's 'Best Budget' pick.",
+    "description": "The CASABREWS CM5418 is Amazon's #1 best-selling espresso machine, and at $122 it's easy to see why. The 20-bar pump (more than enough for proper extraction), stainless steel construction, and functional steam wand deliver real espresso at a fraction of premium prices. The 34oz removable water tank is easy to fill, and the drip tray catches spills cleanly. It won't match a Breville in temperature stability or grind precision, but for someone who wants to make real espresso (not pod coffee) without spending $500+, this is the starting point.",
     "features": [
       "20-bar pump — more than adequate pressure",
       "Stainless steel construction",
       "Steam milk frother wand",
-      "34oz removable water tank",
-      "CNET's Best Budget pick"
+      "34oz removable water tank"
     ],
     "pros": [
       "Real espresso for $122",
@@ -156,7 +154,7 @@
     "price_usd": 1100,
     "rating": 4.7,
     "verdict": "The best fully automatic — 18 drink recipes, built-in grinder, automatic milk, and one-touch operation.",
-    "description": "The De'Longhi Rivelia does everything automatically. Drop in beans, press a button, and it grinds, tamps, extracts, and froths milk for 18 different drink recipes — from espresso to flat white to cold brew. The LatteCrema system produces cafe-quality microfoam automatically, and the color touchscreen makes drink selection intuitive. The bean hopper is removable and sealed to keep beans fresh, and the entire brew group is removable for easy cleaning. Forbes' 'Best Fully Automatic' pick. At $1,100, it's expensive, but it replaces both a grinder and espresso machine while requiring zero barista skill.",
+    "description": "The De'Longhi Rivelia does everything automatically. Drop in beans, press a button, and it grinds, tamps, extracts, and froths milk for 18 different drink recipes — from espresso to flat white to cold brew. The LatteCrema system produces cafe-quality microfoam automatically, and the color touchscreen makes drink selection intuitive. The bean hopper is removable and sealed to keep beans fresh, and the entire brew group is removable for easy cleaning. At $1,100, it's expensive, but it replaces both a grinder and espresso machine while requiring zero barista skill.",
     "features": [
       "18 pre-programmed drink recipes",
       "LatteCrema automatic milk system",
@@ -206,7 +204,7 @@
     "price_usd": 150,
     "rating": 4.6,
     "verdict": "The best pod espresso machine — consistent shots every time with zero cleanup and a tiny footprint.",
-    "description": "The Nespresso Essenza Mini is for people who want espresso without any effort or learning curve. Insert a pod, press a button, get consistent espresso in 30 seconds. The 19-bar pump extracts properly from Nespresso's aluminum capsules, and the results are remarkably consistent — every shot tastes the same. The machine is tiny (barely bigger than a water bottle) and heats up in 25 seconds. Nespresso offers 30+ capsule varieties from intense ristretto to mild lungo. At $150 (often bundled with a milk frother), it's the easiest path to real espresso. Food Network's 'Best Capsule' pick.",
+    "description": "The Nespresso Essenza Mini is for people who want espresso without any effort or learning curve. Insert a pod, press a button, get consistent espresso in 30 seconds. The 19-bar pump extracts properly from Nespresso's aluminum capsules, and the results are remarkably consistent — every shot tastes the same. The machine is tiny (barely bigger than a water bottle) and heats up in 25 seconds. Nespresso offers 30+ capsule varieties from intense ristretto to mild lungo. At $150 (often bundled with a milk frother), it's the easiest path to real espresso.",
     "features": [
       "19-bar pump for proper extraction",
       "30+ Nespresso capsule varieties",
@@ -256,7 +254,7 @@
     "price_usd": 700,
     "rating": 4.7,
     "verdict": "The best for beginners — auto-tamping takes the guesswork out of espresso making while still using fresh-ground beans.",
-    "description": "The Barista Express Impress adds one critical feature to the beloved Barista Express: automatic tamping. The Impress system doses and tamps with consistent pressure every time — eliminating the most common beginner mistake (inconsistent tamping). An extraction feedback gauge tells you if your shot is running too fast or slow, teaching you to adjust grind size. Everything else matches the original: built-in burr grinder, PID temperature control, 15-bar pump, and steam wand. Forbes' 'Best for Beginners' pick. At $700, the $50 premium over the original is worth it for the learning assistance.",
+    "description": "The Barista Express Impress adds one critical feature to the beloved Barista Express: automatic tamping. The Impress system doses and tamps with consistent pressure every time — eliminating the most common beginner mistake (inconsistent tamping). An extraction feedback gauge tells you if your shot is running too fast or slow, teaching you to adjust grind size. Everything else matches the original: built-in burr grinder, PID temperature control, 15-bar pump, and steam wand. At $700, the $50 premium over the original is worth it for the learning assistance.",
     "features": [
       "Automatic tamping system (Impress)",
       "Extraction feedback gauge",
@@ -267,7 +265,6 @@
     "pros": [
       "Auto-tamping eliminates biggest beginner mistake",
       "Extraction gauge teaches proper technique",
-      "Forbes' #1 pick for beginners",
       "Same proven Barista Express platform"
     ],
     "cons": [
@@ -455,7 +452,7 @@
     "price_usd": 600,
     "rating": 4.5,
     "verdict": "The most versatile coffee machine — makes espresso, drip coffee, cold brew, and frothy milk in one device.",
-    "description": "The Ninja Luxe Café isn't just an espresso machine — it's an entire coffee system. It makes espresso with a 20-bar pump, brews drip coffee, creates cold brew concentrate, and froths milk with an automatic frother — all in one machine. The built-in grinder handles everything from fine espresso to coarse cold brew. The touchscreen interface guides you through each drink type. CNET's 'Best for Espresso and Drip' pick. At $600, it replaces 3-4 separate devices. If your household has different coffee preferences (espresso for you, drip for your partner, cold brew for summer), the Luxe Café covers everyone.",
+    "description": "The Ninja Luxe Café isn't just an espresso machine — it's an entire coffee system. It makes espresso with a 20-bar pump, brews drip coffee, creates cold brew concentrate, and froths milk with an automatic frother — all in one machine. The built-in grinder handles everything from fine espresso to coarse cold brew. The touchscreen interface guides you through each drink type. At $600, it replaces 3-4 separate devices. If your household has different coffee preferences (espresso for you, drip for your partner, cold brew for summer), the Luxe Café covers everyone.",
     "features": [
       "Espresso + drip + cold brew in one machine",
       "Built-in grinder with adjustable settings",
@@ -466,8 +463,7 @@
     "pros": [
       "Most versatile coffee machine available",
       "Replaces 3-4 separate devices",
-      "Built-in grinder handles all grind sizes",
-      "CNET's top pick for versatility"
+      "Built-in grinder handles all grind sizes"
     ],
     "cons": [
       "Jack of all trades — espresso isn't as good as dedicated machines",

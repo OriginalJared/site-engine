@@ -58,7 +58,7 @@
     "price_usd": 37,
     "rating": 4.5,
     "verdict": "The best budget mechanical keyboard — QMK/VIA support, gasket mount, and red backlight for around $37.",
-    "description": "The Keychron C3 Pro rewrites what's possible at $37. It has features that cost $100+ just two years ago: a gasket-mounted design for a softer typing feel, QMK/VIA firmware for full key remapping, and red backlight LEDs. The pre-lubed Keychron mechanical switches feel smooth out of the box, and the double-shot keycaps are durable enough for daily use. The wired USB-C connection means zero latency and no battery to charge. PCMag gave it an Editors' Choice as a top budget mechanical keyboard. If you've never tried a mechanical keyboard, this is where to start.",
+    "description": "The Keychron C3 Pro rewrites what's possible at $37. It has features that cost $100+ just two years ago: a gasket-mounted design for a softer typing feel, QMK/VIA firmware for full key remapping, and red backlight LEDs. The pre-lubed Keychron mechanical switches feel smooth out of the box, and the double-shot keycaps are durable enough for daily use. The wired USB-C connection means zero latency and no battery to charge. If you've never tried a mechanical keyboard, this is where to start.",
     "features": [
       "Gasket mount at a $37 price point",
       "QMK/VIA programmable firmware",
@@ -69,8 +69,7 @@
     "pros": [
       "Absurd value — gasket mount + QMK/VIA for $37",
       "QMK/VIA support at this price is rare",
-      "Pre-lubed switches feel smooth out of box",
-      "PCMag Editors' Choice winner"
+      "Pre-lubed switches feel smooth out of box"
     ],
     "cons": [
       "Wired only — no Bluetooth",

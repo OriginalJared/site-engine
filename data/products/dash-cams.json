@@ -160,7 +160,7 @@
     "price_usd": 250,
     "rating": 4.5,
     "verdict": "The best dash cam for safety features — Emergency SOS, Alexa built-in, and image stabilization.",
-    "description": "The Nextbase 622GW is the dash cam that could save your life. Its Emergency SOS feature detects a collision and automatically sends your GPS location to emergency services if you're unresponsive — a feature no other dash cam offers. Alexa is built-in for voice control, 4K recording captures razor-sharp footage, and digital image stabilization smooths out bumpy roads. The modular rear camera (sold separately) clicks on magnetically. What3Words location sharing pinpoints your exact position for emergency responders. PCMag's Editors' Choice for safety-focused dash cams.",
+    "description": "The Nextbase 622GW is the dash cam that could save your life. Its Emergency SOS feature detects a collision and automatically sends your GPS location to emergency services if you're unresponsive — a feature no other dash cam offers. Alexa is built-in for voice control, 4K recording captures razor-sharp footage, and digital image stabilization smooths out bumpy roads. The modular rear camera (sold separately) clicks on magnetically. What3Words location sharing pinpoints your exact position for emergency responders.",
     "features": [
       "Emergency SOS — auto-alerts emergency services",
       "Alexa built-in for voice control",
@@ -171,8 +171,7 @@
     "pros": [
       "Emergency SOS is genuinely lifesaving",
       "Alexa integration is unique",
-      "Image stabilization smooths footage",
-      "PCMag Editors' Choice"
+      "Image stabilization smooths footage"
     ],
     "cons": [
       "$250 for front-only camera",
@@ -363,7 +362,7 @@
     "price_usd": 400,
     "rating": 4.6,
     "verdict": "The best connected dash cam — live LTE monitoring, cloud storage, and remote access from anywhere.",
-    "description": "The Garmin Dash Cam Live is the first dash cam with built-in LTE connectivity. This means you can check your car's camera feed from anywhere via the Garmin Drive app — at work, on vacation, whenever you want to see what's happening around your vehicle. Cloud storage saves footage automatically without SD card management. Live view, event-triggered alerts, and remote parking monitoring make it the most connected dash cam available. 1440p HDR recording, GPS, and incident detection complete the package. The LTE subscription (after trial) is the ongoing cost. PCMag's Editors' Choice.",
+    "description": "The Garmin Dash Cam Live is the first dash cam with built-in LTE connectivity. This means you can check your car's camera feed from anywhere via the Garmin Drive app — at work, on vacation, whenever you want to see what's happening around your vehicle. Cloud storage saves footage automatically without SD card management. Live view, event-triggered alerts, and remote parking monitoring make it the most connected dash cam available. 1440p HDR recording, GPS, and incident detection complete the package. The LTE subscription (after trial) is the ongoing cost.",
     "features": [
       "Built-in LTE — live monitoring from anywhere",
       "Cloud storage for automatic footage backup",
@@ -374,7 +373,6 @@
     "pros": [
       "Live monitoring from anywhere is revolutionary",
       "Cloud storage eliminates SD card management",
-      "PCMag Editors' Choice",
       "Theft alerts add parking security"
     ],
     "cons": [
