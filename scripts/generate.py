@@ -674,7 +674,7 @@ def build_editorial_html(ed: Optional[Dict[str, Any]], display: str, n_products:
 
 
 def data_driven_description(display: str, matched: List[Dict[str, Any]]) -> str:
-    best = _best_pick(matched) or (matched[0] if matched else None)
+    best = primary_pick(matched) or (matched[0] if matched else None)
     if not best:
         return ""
     name = as_str(best.get("name"))
@@ -761,9 +761,14 @@ def _top_rated(products: List[Dict[str, Any]], exclude: set, tag: str = "") -> O
     return best
 
 
+def primary_pick(matched: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    """Top pick: highest-rated product tagged best-overall, else highest-rated overall."""
+    return _top_rated(matched, set(), "best-overall") or _best_pick(matched)
+
+
 def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Optional[List[tuple]] = None) -> str:
     """Wirecutter-style tabbed pick cards: Top pick, Budget pick, Upgrade pick, plus 'Best for…' minis."""
-    top = _best_pick(matched)
+    top = primary_pick(matched)
     if not top:
         return ""
     used = {as_str(top.get("slug"))}
