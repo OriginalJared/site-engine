@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "Home security cameras help you check on your home, packages, and pets from your phone. Indoor cameras watch rooms and pets. Outdoor cameras need weather resistance and good night vision.",
+    "Plan for ongoing costs. Many cameras need a monthly subscription to save video history, while others store clips locally on a card or hub."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Video quality",
+      "text": "We compared resolution, field of view, and night vision clarity, because detail matters when you need to identify a face or a license plate."
+    },
+    {
+      "label": "Smart alerts",
+      "text": "Person, package, and vehicle detection cuts down on useless notifications."
+    },
+    {
+      "label": "Subscription costs",
+      "text": "We noted which features need a paid plan and favored cameras that stay useful without one."
+    },
+    {
+      "label": "Power and installation",
+      "text": "We weighed battery life, solar options, and wired setups against how easy each camera is to install."
+    },
+    {
+      "label": "Privacy and security",
+      "text": "We favored brands with two-factor authentication and clear privacy controls."
+    }
+  ]
+}

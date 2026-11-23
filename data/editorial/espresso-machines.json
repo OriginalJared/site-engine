@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A home espresso machine pays off if you drink lattes or espresso most days. Manual machines with a steam wand give you the most control but take practice. Automatic and pod machines make a drink at the push of a button.",
+    "Budget for a good grinder too. Unless the machine has one built in, a burr grinder makes more difference to espresso than almost anything else."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Temperature stability",
+      "text": "Steady brewing temperature from shot to shot leads to consistent espresso, so we favored machines with PID control or a thermocoil."
+    },
+    {
+      "label": "Grinder",
+      "text": "For all-in-one machines, we looked at grind adjustment range and consistency."
+    },
+    {
+      "label": "Milk frothing",
+      "text": "We compared manual steam wands and automatic milk systems on how easily they make microfoam for lattes."
+    },
+    {
+      "label": "Ease of use and cleaning",
+      "text": "We weighed how much effort daily cleaning and descaling take, especially for automatic machines."
+    },
+    {
+      "label": "Learning curve",
+      "text": "We matched each machine to the right user, from beginners who want one-touch drinks to enthusiasts who want control."
+    }
+  ]
+}

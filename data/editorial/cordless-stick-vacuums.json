@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A cordless stick vacuum is ideal for quick daily cleanups and smaller homes. It's light, quick to grab, and easy to use on stairs or in a car. In larger homes with lots of carpet, it often works alongside a full-size vacuum rather than replacing it.",
+    "Pet owners should look for tangle-resistant brush rolls. Homes with mostly hard floors benefit from a soft roller or a wet-dry model."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Cleaning performance",
+      "text": "We weighed expert test results on carpet, hard floors, and pet hair over suction specs alone."
+    },
+    {
+      "label": "Runtime",
+      "text": "We looked at realistic runtime on standard power, not just the maximum on the lowest setting."
+    },
+    {
+      "label": "Weight and handling",
+      "text": "A vacuum that's tiring to hold won't get used, so we compared weight and maneuverability."
+    },
+    {
+      "label": "Filtration and bin",
+      "text": "Sealed filtration helps with allergies, and an easy-to-empty bin keeps cleanup less messy."
+    },
+    {
+      "label": "Battery and parts",
+      "text": "We favored models with replaceable batteries and easy-to-find parts, which extend a vacuum's life."
+    }
+  ]
+}

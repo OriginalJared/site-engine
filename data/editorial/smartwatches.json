@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A smartwatch is worth it if you want notifications on your wrist, fitness and health tracking, or both. Your phone decides a lot. Apple Watches only work with iPhones, while Samsung, Pixel, and Garmin watches work best with Android or across both.",
+    "If you mostly want fitness tracking and long battery life, a fitness-focused watch or band can be a better and cheaper choice than a full smartwatch."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Phone compatibility",
+      "text": "We grouped picks by which phones they work with, since that limits your choices before anything else."
+    },
+    {
+      "label": "Health and fitness tracking",
+      "text": "We compared heart rate, GPS accuracy, sleep tracking, and health features like ECG, based on expert testing and owner feedback."
+    },
+    {
+      "label": "Battery life",
+      "text": "We weighed realistic battery life with typical use, from about a day for some smartwatches to more than a week for fitness watches."
+    },
+    {
+      "label": "Display and comfort",
+      "text": "A bright, readable screen and a comfortable fit matter for something you wear all day."
+    },
+    {
+      "label": "Apps and features",
+      "text": "We looked at app support, payments, and cellular options for each platform."
+    }
+  ]
+}

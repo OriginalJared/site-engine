@@ -1,0 +1,28 @@
+{
+  "who_for": [
+    "A standing desk lets you switch between sitting and standing through the day. That's a good fit if you work at a desk for hours and want more movement. Standing all day isn't the goal. Alternating is.",
+    "Check the height range against your own height, and make sure the desktop is big enough for your monitors and keyboard."
+  ],
+  "how_we_picked": [
+    {
+      "label": "Stability",
+      "text": "Wobble at standing height is the most common complaint, so we favored frames that owners and reviewers describe as steady."
+    },
+    {
+      "label": "Height range",
+      "text": "We checked that each desk goes low and high enough for a wide range of people, including tall users."
+    },
+    {
+      "label": "Motors and lift capacity",
+      "text": "Dual motors lift more weight more smoothly and usually last longer than single-motor frames."
+    },
+    {
+      "label": "Desktop size and quality",
+      "text": "We compared desktop sizes and materials, from laminate to bamboo and solid wood."
+    },
+    {
+      "label": "Warranty",
+      "text": "Strong frame and motor warranties, often five years or more, signal a desk built to last."
+    }
+  ]
+}
