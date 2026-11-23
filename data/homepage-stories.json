@@ -1,0 +1,272 @@
+{
+  "4k-monitors": {
+    "lead": {
+      "pick": "dell-ultrasharp-u2723qe",
+      "headline": "Sharper Text, Fewer Cables: The 4K Monitors Worth Your Desk",
+      "dek": "The Dell UltraSharp U2723QE's built-in USB-C hub can stand in for your laptop dock."
+    },
+    "side": [
+      {
+        "category": "budget-4k-monitors",
+        "pick": "dell-s2722qc",
+        "headline": "A Great 4K Monitor Doesn't Have to Cost a Fortune",
+        "dek": "The Dell S2722QC keeps the sharp 27-inch screen and USB-C, and skips the extras."
+      },
+      {
+        "category": "4k-monitors-for-creative-work",
+        "pick": "asus-proart-pa279crv",
+        "headline": "For Photo Editors, Color Is Everything",
+        "dek": "The ASUS ProArt PA279CRV arrives Calman Verified, so colors look right without hours of tweaking."
+      },
+      {
+        "category": "4k-monitors-for-gaming",
+        "pick": "samsung-odyssey-g7-s28bg70",
+        "headline": "4K Gaming Without the Slideshow",
+        "dek": "The Samsung Odyssey G7 pairs 4K sharpness with a 144Hz refresh rate and HDMI 2.1 for current consoles."
+      }
+    ]
+  },
+  "air-fryers": {
+    "lead": {
+      "pick": "ninja-dz201-foodi-dualzone",
+      "headline": "Two Baskets, One Dinner, Everything Done at Once",
+      "dek": "The Ninja Foodi DualZone cooks two foods at two temperatures, so the fries and the chicken land together."
+    },
+    "side": [
+      {
+        "category": "budget-air-fryers",
+        "pick": "cosori-pro-le-l501",
+        "headline": "The Budget Pick That Doesn't Feel Like a Compromise",
+        "dek": "The COSORI Pro LE has a roomy 5-quart basket and presets that make it hard to get wrong."
+      },
+      {
+        "category": "air-fryers-for-compact",
+        "pick": "ninja-af101-air-fryer",
+        "headline": "Crispy Results Without the Countertop Hog",
+        "dek": "The Ninja AF101 is simple, reliable, and small enough for a tight kitchen."
+      },
+      {
+        "category": "air-fryers-for-versatile",
+        "pick": "cuisinart-toa-60-toaster-oven-air-fryer",
+        "headline": "The Air Fryer That Wants to Replace Your Toaster, Too",
+        "dek": "The Cuisinart TOA-60 combines a toaster, an oven, and an air fryer in one countertop unit."
+      }
+    ]
+  },
+  "air-purifiers": {
+    "lead": {
+      "pick": "coway-airmega-ap1512hh",
+      "headline": "Breathe Easier: The Air Purifiers That Actually Clear the Air",
+      "dek": "The Coway Airmega AP-1512HH pairs proven filtration with an eco mode that saves power when the air is clean."
+    },
+    "side": [
+      {
+        "category": "air-purifiers-for-allergies",
+        "pick": "levoit-core-400s",
+        "headline": "Allergy Season Starts Indoors",
+        "dek": "The LEVOIT Core 400S uses an H13 HEPA filter and a laser dust sensor to keep tabs on your air."
+      },
+      {
+        "category": "air-purifiers-for-large-rooms",
+        "pick": "levoit-vital-200s",
+        "headline": "Open Floor Plan? A Small Purifier Won't Cut It",
+        "dek": "The LEVOIT Vital 200S covers larger rooms and adjusts itself with a built-in air quality sensor."
+      },
+      {
+        "category": "air-purifiers-for-bedroom",
+        "pick": "shark-hp152-neverchange",
+        "headline": "The Purifier That Skips the Filter Treadmill",
+        "dek": "Shark's NeverChange HP152 uses a five-year HEPA filter, cutting out the biggest ongoing cost."
+      }
+    ]
+  },
+  "baby-monitors": {
+    "lead": {
+      "pick": "nanit-pro-camera",
+      "headline": "Finally, a Baby Monitor That Tells You How the Night Went",
+      "dek": "The Nanit Pro tracks sleep and breathing motion from an overhead camera, then sums it up in the app."
+    },
+    "side": [
+      {
+        "category": "baby-monitors-for-non-wifi",
+        "pick": "eufy-spaceview-pro",
+        "headline": "Worried About Hackers? Skip the Wi-Fi Entirely",
+        "dek": "The eufy SpaceView Pro streams to its own 5-inch screen, with no internet connection to break into."
+      },
+      {
+        "category": "budget-baby-monitors",
+        "pick": "vtech-rm5764hd",
+        "headline": "Smart Monitor Features on a Tight Budget",
+        "dek": "The VTech RM5764HD offers 1080p video, pan-tilt-zoom, and app access without the premium price."
+      },
+      {
+        "category": "baby-monitors-for-health-monitoring",
+        "pick": "owlet-dream-duo-2",
+        "headline": "Peace of Mind, Measured",
+        "dek": "The Owlet Dream Duo 2 pairs an HD camera with a sock that tracks heart rate and oxygen while your baby sleeps."
+      }
+    ]
+  },
+  "blenders": {
+    "lead": {
+      "pick": "vitamix-e310-explorian",
+      "headline": "The Blender That Outlasts the Smoothie Phase",
+      "dek": "The Vitamix E310 Explorian brings Vitamix power and durability at the brand's most accessible price."
+    },
+    "side": [
+      {
+        "category": "budget-blenders",
+        "pick": "ninja-professional-plus-bn701",
+        "headline": "Big Blender Power Without the Big Spend",
+        "dek": "The Ninja Professional Plus BN701 has a 1,400-watt motor and one-touch Auto-iQ programs."
+      },
+      {
+        "category": "premium-blenders",
+        "pick": "breville-super-q",
+        "headline": "Smoothies at 6 a.m. Without Waking the House",
+        "dek": "The Breville Super Q uses noise-suppression tech to run much quieter than most full-size blenders."
+      },
+      {
+        "category": "blenders-for-smoothies",
+        "pick": "nutribullet-pro-900",
+        "headline": "Blend It, Grab It, Go",
+        "dek": "The NutriBullet Pro 900 blends right in the cup you drink from."
+      }
+    ]
+  },
+  "bluetooth-speakers": {
+    "lead": {
+      "pick": "jbl-charge-5",
+      "headline": "The Speaker That Keeps the Party Going (and Your Phone Charged)",
+      "dek": "The JBL Charge 5 pairs big, punchy sound with a long battery that can top up your phone."
+    },
+    "side": [
+      {
+        "category": "bluetooth-speakers-for-outdoor",
+        "pick": "ultimate-ears-boom-3",
+        "headline": "Drop It, Dunk It, Keep Listening",
+        "dek": "The Ultimate Ears Boom 3 plays 360-degree sound from a rugged, waterproof body that floats."
+      },
+      {
+        "category": "bluetooth-speakers-for-party",
+        "pick": "jbl-xtreme-4",
+        "headline": "When a Small Speaker Can't Fill the Backyard",
+        "dek": "The JBL Xtreme 4 brings big bass, a 24-hour battery, and a shoulder strap for carrying it anywhere."
+      },
+      {
+        "category": "bluetooth-speakers-for-portable",
+        "pick": "bose-soundlink-flex-2nd-gen",
+        "headline": "Pocket-Size, Surprisingly Big Sound",
+        "dek": "The Bose SoundLink Flex packs clear sound and deep bass into a rugged, compact speaker."
+      }
+    ]
+  },
+  "coffee-makers": {
+    "lead": {
+      "pick": "breville-precision-brewer",
+      "headline": "Better Morning Coffee Starts With the Right Machine",
+      "dek": "The Breville Precision Brewer is SCA-certified and lets you fine-tune temperature and brew style."
+    },
+    "side": [
+      {
+        "category": "coffee-makers-for-drip-coffee",
+        "pick": "technivorm-moccamaster-kbgv-select",
+        "headline": "Built to Brew for Years, Not Months",
+        "dek": "The Moccamaster KBGV Select is handmade in the Netherlands, SCA-certified, and known for lasting."
+      },
+      {
+        "category": "budget-coffee-makers",
+        "pick": "aeropress-original",
+        "headline": "The Cheapest Way to Seriously Good Coffee",
+        "dek": "The AeroPress is a cult-favorite manual brewer that makes rich coffee anywhere in about two minutes."
+      },
+      {
+        "category": "coffee-makers-for-versatile",
+        "pick": "ninja-cfp307-dualbrew-pro",
+        "headline": "Pods or Grounds? This Machine Doesn't Make You Choose",
+        "dek": "The Ninja DualBrew Pro brews K-Cups, ground coffee, and specialty drinks in one machine."
+      }
+    ]
+  },
+  "cordless-stick-vacuums": {
+    "lead": {
+      "pick": "dyson-v15-detect",
+      "headline": "The Vacuum That Shows You the Dust You've Been Missing",
+      "dek": "The Dyson V15 Detect lights up hidden dust with a laser and counts the particles it picks up."
+    },
+    "side": [
+      {
+        "category": "cordless-stick-vacuums-for-pets",
+        "pick": "shark-stratos-cordless",
+        "headline": "Pet Hair, Meet Your Match",
+        "dek": "The Shark Stratos takes on fur in carpet and keeps odors in check with its anti-odor tech."
+      },
+      {
+        "category": "cordless-stick-vacuums-for-hard-floors",
+        "pick": "tineco-floor-one-s5",
+        "headline": "Vacuum and Mop in a Single Pass",
+        "dek": "The Tineco Floor One S5 picks up wet and dry messes at once, leaving hard floors spotless."
+      },
+      {
+        "category": "budget-cordless-stick-vacuums",
+        "pick": "dyson-v8",
+        "headline": "The Easiest Way Into a Dyson",
+        "dek": "The Dyson V8 delivers proven performance and whole-machine HEPA filtration at the brand's lowest price."
+      }
+    ]
+  },
+  "dash-cams": {
+    "lead": {
+      "pick": "garmin-dash-cam-x310",
+      "headline": "If Something Happens on the Road, You'll Want This Footage",
+      "dek": "The Garmin Dash Cam X310 records sharp 4K video and adds driver-assist alerts."
+    },
+    "side": [
+      {
+        "category": "dash-cams-for-night-vision",
+        "pick": "viofo-a229-pro",
+        "headline": "Clear Footage After Dark, Front and Back",
+        "dek": "The VIOFO A229 Pro records 4K up front and 2K out back with Sony STARVIS 2 sensors made for low light."
+      },
+      {
+        "category": "budget-dash-cams",
+        "pick": "rove-r2-4k-pro",
+        "headline": "4K Protection Without Paying Extra for It",
+        "dek": "The Rove R2-4K Pro has two STARVIS 2 sensors and Wi-Fi, and it comes with a 128GB memory card."
+      },
+      {
+        "category": "premium-dash-cams",
+        "pick": "garmin-dash-cam-live",
+        "headline": "Check On Your Parked Car From Anywhere",
+        "dek": "The Garmin Dash Cam Live uses an LTE connection for live view and cloud storage, wherever you are."
+      }
+    ]
+  },
+  "wireless-earbuds": {
+    "lead": {
+      "pick": "sony-wf-1000xm5",
+      "headline": "The Earbuds That Make Your Commute Disappear",
+      "dek": "Sony's WF-1000XM5 combines class-leading sound with elite noise cancellation."
+    },
+    "side": [
+      {
+        "category": "best-noise-canceling-earbuds",
+        "pick": "bose-quietcomfort-ultra-earbuds",
+        "headline": "Silence the Plane, the Office, and the Coffee Shop",
+        "dek": "Bose's QuietComfort Ultra Earbuds bring the noise cancellation the brand is known for."
+      },
+      {
+        "category": "budget-wireless-earbuds",
+        "pick": "earfun-air-pro-4",
+        "headline": "Flagship Features, Budget Price Tag",
+        "dek": "The EarFun Air Pro 4 adds noise cancellation plus aptX Lossless and LDAC support for less than you'd expect."
+      },
+      {
+        "category": "best-earbuds-for-android",
+        "pick": "google-pixel-buds-pro-2",
+        "headline": "Android Users, These Are Your AirPods",
+        "dek": "The Pixel Buds Pro 2 fit comfortably and work hand in hand with Gemini and Android."
+      }
+    ]
+  }
+}
