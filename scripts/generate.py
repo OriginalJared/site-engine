@@ -300,8 +300,6 @@ def merge_categories(auto_cats: List[Dict[str, Any]], manual_cats: List[Dict[str
     for c in manual_cats:
         merged[c["slug"]] = c
     out = sorted(merged.values(), key=lambda x: x["slug"])
-    for c in out:
-        c.pop("_auto", None)
     return out
 
 
@@ -571,6 +569,60 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         "ALL_CATEGORIES_LIST": "\n".join(all_cats_parts),
         "TEAM_SECTION": "\n".join(team_parts),
     }
+EDITORIAL_DIR = ROOT / "data" / "editorial"
+THIN_CATEGORY_MIN = 3
+
+
+def display_noun(display: str) -> str:
+    return " ".join(w if (w.isupper() or any(ch.isdigit() for ch in w) or "-" in w and w.upper() == w) else w.lower() for w in display.split())
+
+
+def load_editorial(niche: str) -> Optional[Dict[str, Any]]:
+    path = EDITORIAL_DIR / f"{niche}.json"
+    if not niche or not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"WARNING: bad editorial file {path.name}: {e}")
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def build_editorial_html(ed: Optional[Dict[str, Any]], display: str, n_products: int) -> str:
+    if not ed:
+        return ""
+    noun = display_noun(display)
+    out = ['<div class="cat-editorial">']
+    out.append('<section class="ed-section" id="why-trust-us"><h2>Why you should trust us</h2>'
+               f'<p>We compared {n_products} {escape(noun)} using manufacturer specifications, published expert reviews, '
+               'and verified owner feedback, and we revisit our picks as models change. '
+               'We don\'t accept payment for placement or free products in exchange for coverage. '
+               'Read our <a href="/editorial-policy/">editorial policy</a> for how we work.</p></section>')
+    who = [as_str(x) for x in (ed.get("who_for") or []) if as_str(x)]
+    if who:
+        out.append('<section class="ed-section" id="who-this-is-for"><h2>Who this is for</h2>'
+                   + "".join(f"<p>{escape(x)}</p>" for x in who) + '</section>')
+    crit = [c for c in (ed.get("how_we_picked") or []) if isinstance(c, dict) and as_str(c.get("label"))]
+    if crit:
+        items = "".join(f'<li><strong>{escape(as_str(c.get("label")))}:</strong> {escape(as_str(c.get("text")))}</li>' for c in crit)
+        out.append(f'<section class="ed-section" id="how-we-picked"><h2>How we picked</h2><ul class="ed-criteria">{items}</ul></section>')
+    out.append('</div>')
+    return "".join(out)
+
+
+def data_driven_description(display: str, matched: List[Dict[str, Any]]) -> str:
+    best = _best_pick(matched) or (matched[0] if matched else None)
+    if not best:
+        return ""
+    name = as_str(best.get("name"))
+    verdict = as_str(best.get("verdict")).rstrip(".")
+    n = len(matched)
+    lead = f"Our pick is the {name}"
+    lead += f": {verdict[:1].lower() + verdict[1:]}." if verdict else "."
+    return f"{lead} We compared {n} {display_noun(display)} on specs, expert reviews, and owner feedback."
+
+
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return template.replace("{{CATEGORY_NAME}}", escape(name)).replace("{{CATEGORY_DESCRIPTION}}", escape(description)).replace("{{PRODUCT_LIST}}", product_list_html)
 
@@ -1387,6 +1439,7 @@ def main():
         product_count += 1
 
     category_count = 0
+    thin_slugs = set()
     slug_to_product = {as_str(p.get("slug")): p for p in products if as_str(p.get("slug"))}
     for cat in categories:
         cslug = as_str(cat.get("slug"))
@@ -1398,11 +1451,24 @@ def main():
         explicit_slugs = cat.get("products") if isinstance(cat.get("products"), list) else None
         if explicit_slugs:
             matched = [slug_to_product[as_str(s)] for s in explicit_slugs if as_str(s) in slug_to_product]
+            real_count = len(matched)
         else:
             niche_products = products_by_niche.get(niche, [])
             matched = [p for p in niche_products if product_matches(p, match_tags)]
             if not matched and niche_products:
                 matched = niche_products
+                real_count = 0
+            else:
+                real_count = len(matched)
+        if cat.get("_auto") and real_count:
+            _dd = data_driven_description(slug_to_display(niche), matched)
+            if _dd:
+                description = _dd
+                cat["description"] = _dd
+        is_thin = real_count < THIN_CATEGORY_MIN
+        if is_thin:
+            thin_slugs.add(cslug)
+        editorial_html = build_editorial_html(load_editorial(niche), slug_to_display(niche), len(matched)) if cslug == niche else ""
         product_list_html = build_category_product_list(matched)
         reviewer = niche_to_reviewer.get(niche, {})
         faq_name = name if explicit_slugs else slug_to_display(niche)
@@ -1425,7 +1491,8 @@ def main():
             .replace("{{REVIEWER_ROLE}}", escape(reviewer.get("role", "")))
             .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", "")))
             .replace("{{SIDEBAR_LINKS}}", sidebar)
-            .replace("{{HEAD_EXTRA}}", build_category_head_extra(cat, matched, site_url, site_name, faqs)))
+            .replace("{{EDITORIAL}}", editorial_html)
+            .replace("{{HEAD_EXTRA}}", ('<meta name="robots" content="noindex, follow" />\n' if is_thin else "") + build_category_head_extra(cat, matched, site_url, site_name, faqs)))
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
@@ -1499,6 +1566,8 @@ def main():
         urls.append(f"{site_url}{sp}")
     for cat in categories:
         cslug = as_str(cat.get("slug"))
+        if cslug in thin_slugs:
+            continue
         urls.append(f"{site_url}/generated/categories/{cslug}/")
     for p in products:
         pslug = as_str(p.get("slug"))
@@ -1509,7 +1578,7 @@ def main():
     write_text(ROBOTS_TXT, build_robots(site_url))
 
     run_quality_gates()
-    print(f"Generated {category_count} category page(s).")
+    print(f"Generated {category_count} category page(s); {len(thin_slugs)} thin page(s) set to noindex and left out of the sitemap.")
     print(f"Generated {product_count} product page(s).")
     print("Generated sitemap.xml and robots.txt.")
 
