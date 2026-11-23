@@ -101,8 +101,13 @@ def normalize_slug(v: Any) -> str:
     return s
 
 
+_DISPLAY_FIXES = {"Hdr": "HDR", "Usb": "USB", "Oled": "OLED", "Ips": "IPS", "Anc": "ANC", "Wifi": "Wi-Fi", "Tv": "TV", "Tvs": "TVs", "Led": "LED", "Gps": "GPS", "Rgb": "RGB", "Ssd": "SSD", "Hepa": "HEPA", "Uv": "UV", "Ai": "AI", "Pc": "PC", "Diy": "DIY", "Mesh": "Mesh"}
+
+
 def slug_to_display(slug: str) -> str:
-    return slug.replace("-", " ").title()
+    words = [_DISPLAY_FIXES.get(w, w) for w in slug.replace("-", " ").title().split()]
+    out = " ".join(words)
+    return out.replace("USB C", "USB-C")
 
 
 def require_list(v: Any, name: str) -> List[Any]:
@@ -452,58 +457,84 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
 
     niche_sections = []
+    def _dept_headline(c, is_hub):
+        if is_hub:
+            return "The Best " + slug_to_display(as_str(c.get("niche")))
+        nm = as_str(c.get("name"))
+        return ("The " + nm) if nm.startswith("Best ") else ("The Best " + nm)
+    def _dept_thumb(p, href, cls):
+        img = as_str(p.get("image_url"))
+        if img:
+            inner = f'<img src="{escape(img, quote=True)}" alt="{escape(as_str(p.get("name")))}" loading="lazy" />'
+            return f'<a class="{cls} has-img" href="{href}" tabindex="-1">{inner}</a>'
+        label = as_str(p.get("brand")) or as_str(p.get("name")) or "?"
+        accent = _accent_for(as_str(p.get("brand")) or as_str(p.get("slug")))
+        return (f'<a class="{cls}" href="{href}" tabindex="-1" aria-hidden="true" style="--cover-accent:{accent}">'
+                f'<span class="dept-mono">{escape(label)}</span></a>')
+    def _dept_dek(p):
+        name = as_str(p.get("name"))
+        verdict = as_str(p.get("verdict"))
+        return f'Our pick: <strong>{escape(name)}</strong>. {escape(verdict)}' if verdict else f'Our pick: <strong>{escape(name)}</strong>.'
+    TAG_PRIORITY = ["budget", "premium"]
     for niche, cats in niches.items():
         if niche == "gifts" or not niche:
             continue
         display = slug_to_display(niche)
-        product_count = len(products_by_niche.get(niche, []))
-        reviewer = niche_to_reviewer.get(niche, {})
-        reviewer_name = reviewer.get("name", "")
-        reviewer_role = reviewer.get("role", "")
-        hub_cat = None
-        for c in cats:
-            if as_str(c.get("slug")) == niche:
-                hub_cat = c
+        nprods = products_by_niche.get(niche, []) or []
+        hub_cat = next((c for c in cats if as_str(c.get("slug")) == niche), None)
+        hub_href = hub_href_for(niche)
+        used = set()
+        def _pick_for(c):
+            tags = [normalize_slug(t) for t in (c.get("tags") or [])]
+            matched = [p for p in nprods if product_matches(p, tags)] if tags else list(nprods)
+            ranked = sorted(matched, key=lambda p: -(float(p.get("rating")) if isinstance(p.get("rating"), (int, float)) else 0))
+            for p in ranked:
+                if as_str(p.get("slug")) not in used:
+                    return p
+            return None
+        lead_p = _pick_for(hub_cat) if hub_cat else _best_pick(nprods)
+        if not lead_p:
+            continue
+        used.add(as_str(lead_p.get("slug")))
+        subs = [c for c in cats if as_str(c.get("slug")) not in (niche, f"best-{niche}")]
+        def _prio(c):
+            tags = c.get("tags") or []
+            t = tags[0] if len(tags) == 1 else ""
+            return (TAG_PRIORITY.index(t) if t in TAG_PRIORITY else len(TAG_PRIORITY), 0)
+        subs_sorted = sorted(subs, key=_prio)
+        side = []
+        for c in subs_sorted:
+            if len(side) >= 3:
                 break
-        hub_slug = as_str(hub_cat.get("slug")) if hub_cat else niche
-        hub_href = escape(f"/generated/categories/{hub_slug}/", quote=True)
-        sub_cats = [c for c in cats if as_str(c.get("slug")) != niche][:3]
-        cards = []
-        for sc in sub_cats:
-            sc_slug = as_str(sc.get("slug"))
-            sc_name = as_str(sc.get("name"))
-            sc_desc = as_str(sc.get("description"))
-            if len(sc_desc) > 120:
-                sc_desc = sc_desc[:117].rsplit(" ", 1)[0] + "..."
-            sc_href = escape(f"/generated/categories/{sc_slug}/", quote=True)
-            card = '<div class="card" style="flex:1;min-width:220px;">'
-            card += f'<h3>{escape(sc_name)}</h3>'
-            card += f'<p>{escape(sc_desc)}</p>'
-            card += f'<a class="cta" href="{sc_href}">Browse</a>'
-            card += '</div>'
-            cards.append(card)
-        cards_html = "\n".join(cards)
-        remaining_cats = [c for c in cats if as_str(c.get("slug")) != niche and c not in sub_cats]
-        more_html = ""
-        if remaining_cats:
-            more_items = []
-            for rc in remaining_cats:
-                rc_slug = as_str(rc.get("slug"))
-                rc_name = as_str(rc.get("name"))
-                rc_href = escape(f"/generated/categories/{rc_slug}/", quote=True)
-                more_items.append(f'<li><a href="{rc_href}">{escape(rc_name)}</a></li>')
-            more_list = "\n".join(more_items)
-            more_html = f'<div style="margin-top:12px;"><strong>More {escape(display)}:</strong><ul style="margin:6px 0 0 18px;">{more_list}</ul></div>'
-        reviewer_html = ""
-        if reviewer_name:
-            reviewer_html = f'<p class="niche-reviewer"><strong>Reviewed by {escape(reviewer_name)}</strong>, {escape(reviewer_role)}</p>'
-        section = f'<section class="niche-section">'
-        count_html = f' <span style="font-size:0.6em;color:#888;">({product_count} products)</span>' if product_count else ''
-        section += f'<h2><a href="{hub_href}" style="text-decoration:none;color:inherit;">{escape(display)}</a>{count_html}</h2>'
-        section += reviewer_html
-        section += f'<div style="display:flex;gap:16px;flex-wrap:wrap;">{cards_html}</div>'
-        section += more_html
-        section += '</section>'
+            p = _pick_for(c)
+            if p:
+                used.add(as_str(p.get("slug")))
+                side.append((c, p))
+        side_slugs = {as_str(c.get("slug")) for c, _ in side}
+        rest = [c for c in subs if as_str(c.get("slug")) not in side_slugs]
+        link_bits = []
+        for c in rest:
+            tags = c.get("tags") or []
+            label = slug_to_display(tags[0]) if len(tags) == 1 else as_str(c.get("name"))
+            link_bits.append(f'<a href="{escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)}">{escape(label)}</a>')
+        see_all = f'<a href="{hub_href}">see all in {escape(display)}</a>'
+        links_html = (", ".join(link_bits) + ", or " + see_all) if link_bits else see_all
+        updated = f'<p class="dept-updated">Updated {escape(UPDATED_LABEL)}</p>'
+        lead_href = hub_href
+        lead_html = (f'<article class="dept-lead">{_dept_thumb(lead_p, lead_href, "dept-img dept-img-lg")}'
+                     f'<h3><a href="{lead_href}">{escape(_dept_headline(hub_cat or {"niche": niche}, True))}</a></h3>'
+                     f'<p class="dept-dek">{_dept_dek(lead_p)}</p>{updated}</article>')
+        side_html = ""
+        for c, p in side:
+            href = escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+            side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img")}'
+                          f'<div class="dept-item-txt"><h3><a href="{href}">{escape(_dept_headline(c, False))}</a></h3>'
+                          f'<p class="dept-dek">{_dept_dek(p)}</p>{updated}</div></article>')
+        section = (f'<section class="dept" id="dept-{escape(niche, quote=True)}">'
+                   f'<h2 class="dept-title"><a href="{hub_href}">{escape(display)}</a></h2>'
+                   f'<p class="dept-links">{links_html}</p>'
+                   f'<div class="dept-grid">{lead_html}<div class="dept-side">{side_html}</div></div>'
+                   f'</section>')
         niche_sections.append(section)
 
     all_cats_parts = []
