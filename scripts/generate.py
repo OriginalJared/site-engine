@@ -937,17 +937,30 @@ def badge_html(badge: Any) -> str:
     return f'<span class="product-badge {BADGE_CLASS.get(b, "badge-generic")}">{escape(b)}</span>'
 
 
-def price_display_html(price: Any) -> str:
+def price_as_of_text(as_of: Any) -> str:
+    try:
+        from datetime import datetime as _dt
+        d = _dt.fromisoformat(as_str(as_of).replace("Z", "+00:00"))
+        return d.strftime("as of %b %-d, %Y %H:%M UTC")
+    except Exception:
+        return "as of today"
+
+
+AMAZON_PRICE_DISCLAIMER = ("Product prices and availability are accurate as of the date/time indicated and are subject to change. "
+                           "Any price and availability information displayed on Amazon at the time of purchase will apply to the purchase of this product.")
+
+
+def price_display_html(price: Any, as_of: Any = None) -> str:
     if price is None or as_str(price) == "":
-        return '<span class="price-note">See Amazon for price</span>'
+        return '<span class="price-note">See Amazon for current price</span>'
     return (f'<span class="price-amount">${escape(str(price))}</span>'
-            f'<span class="price-note">at time of review</span>')
+            f'<span class="price-note" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">{escape(price_as_of_text(as_of))} &middot; Details</span>')
 
 
-def price_inline_text(price: Any) -> str:
+def price_inline_text(price: Any, as_of: Any = None) -> str:
     if price is None or as_str(price) == "":
         return ""
-    return f'${escape(str(price))} at time of review'
+    return f'${escape(str(price))} {escape(price_as_of_text(as_of))}'
 
 
 def key_specs_grid(specs: Any) -> str:
@@ -1012,8 +1025,8 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{STARS}}", stars_html(p.get("rating")))
         .replace("{{BADGE}}", badge_html(p.get("badge")))
         .replace("{{KEY_SPECS_GRID}}", key_specs_grid(p.get("specs") or {}))
-        .replace("{{PRICE_DISPLAY}}", price_display_html(p.get("price_usd")))
-        .replace("{{PRICE_INLINE}}", price_inline_text(p.get("price_usd")))
+        .replace("{{PRICE_DISPLAY}}", price_display_html(p.get("price_usd"), p.get("price_as_of")))
+        .replace("{{PRICE_INLINE}}", price_inline_text(p.get("price_usd"), p.get("price_as_of")))
         .replace("{{UPDATED}}", UPDATED_LABEL))
 
 
@@ -1067,7 +1080,7 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         if brand:
             meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
         if price is not None:
-            meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))}")
+            meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
         meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
         spec_bits = []
         for sk, sv in specs.items():
@@ -1130,7 +1143,7 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
     if brand:
         meta.append(f"<strong>Brand:</strong> {escape(brand)}")
     if price is not None:
-        meta.append(f"<strong>Price:</strong> ${escape(str(price))}")
+        meta.append(f"<strong>Price:</strong> ${escape(str(price))} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
     meta_html = " &nbsp;\u2022&nbsp; ".join(meta)
     parts = ['<aside class="top-pick" id="top-pick" aria-label="Top pick">']
     parts.append('<div class="top-pick-badge">\u2605 Our Top Pick</div>')
@@ -1519,6 +1532,31 @@ def build_home_head_extra(site_config: Dict[str, Any], site_url: str, site_name:
     return "\n    ".join(parts)
 
 
+_PRICE_NUM=r"~?\$(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:\s?[kK])?\+?"
+def strip_price_text(t: str) -> str:
+    """Remove hard-coded dollar amounts from product prose (Amazon only allows API-sourced, current prices)."""
+    if "$" not in t: return t
+    o=t
+    t=re.sub(r"\s*\((?:[^()]*\$\d[^()]*)\)","",t)
+    t=re.sub(r"\s+cost\s+"+_PRICE_NUM+r"(?:\s*[-–]\s*\$?[\d.]+)?\s+each"," cost extra per cup",t)
+    t=re.sub(r"\ban?\s+"+_PRICE_NUM,"a pricier",t)
+    t=re.sub(r"^"+_PRICE_NUM+r"\s*[—–-]\s*","",t)
+    t=re.sub(r"^"+_PRICE_NUM+r"\s+(starting price|price tag|price)\b",r"The \1",t)
+    t=re.sub(r"^"+_PRICE_NUM+r"\s+(?:is|was)\s+","",t)
+    t=re.sub(r"^"+_PRICE_NUM+r"\s+","The price ",t)
+    t=re.sub(r"^(?:Under|Below|Less than)\s+"+_PRICE_NUM+r"\s+(?=for\b)","An affordable price ",t)
+    t=re.sub(r"\b(spends?|spending|pay|paying)\s+(?:over\s+|more than\s+)?"+_PRICE_NUM,r"\1 more",t)
+    t=re.sub(r"^(?:At|For|Under|Around|Just|Only)\s+(?:just\s+|only\s+|about\s+|around\s+|under\s+)?"+_PRICE_NUM+r"[^,—–:]*?[,—–:]\s*","",t)
+    t=re.sub(r"(?:[,;]\s*|\s+)(?:all\s+)?(?:at|for|under|around|about|near|below|less than|just|only|roughly|approximately|priced at|costs?|starting at|from)\s+(?:just\s+|only\s+|about\s+|around\s+|under\s+|roughly\s+|a\s+)?(?:sub-)?"+_PRICE_NUM+r"(?:\s+(?:price|price point|price tag|range|mark|budget))?","",t,flags=re.I)
+    t=re.sub(r"\bsub-"+_PRICE_NUM+r"\s*","budget-friendly ",t)
+    t=re.sub(r"^"+_PRICE_NUM+r"\s*(?:[—–-]\s*)?","",t)
+    t=re.sub(_PRICE_NUM,"the price",t)
+    t=re.sub(r"\s{2,}"," ",t); t=re.sub(r"\s+([,.;:!?])",r"\1",t); t=re.sub(r"([,;])\1+",r"\1",t)
+    t=re.sub(r"^[\s,—–:-]+","",t); t=t.strip()
+    if t and t[0].islower(): t=t[0].upper()+t[1:]
+    return t
+
+
 def apply_enrichment(products: List[Dict[str, Any]]) -> int:
     """Overlay Amazon Creators API enrichment (image, price, cleaned title) onto
     products. Fully gated: if data/enrichment/ or a product's file is absent,
@@ -1543,6 +1581,8 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
         price = e.get("price_usd")
         if price not in (None, "", 0):
             p["price_usd"] = price
+            p["_api_price"] = True
+            p["price_as_of"] = as_str(e.get("fetched_at"))
         title = as_str(e.get("title_clean"))
         if title and len(title) >= 12:
             p["name"] = title
@@ -1574,6 +1614,17 @@ def main():
     raw_products = load_all_products()
     products = normalize_products(raw_products)
     _applied = apply_enrichment(products)
+    # Amazon compliance: only show prices that came from the API (current, timestamped).
+    # Stored prices and dollar amounts written into product prose are never displayed.
+    for _p in products:
+        if not _p.get("_api_price"):
+            _p["price_usd"] = None
+        for _k in ("verdict", "description"):
+            if isinstance(_p.get(_k), str):
+                _p[_k] = strip_price_text(_p[_k])
+        for _k in ("pros", "cons", "features"):
+            if isinstance(_p.get(_k), list):
+                _p[_k] = [strip_price_text(x) if isinstance(x, str) else x for x in _p[_k]]
     print(f"Applied Amazon enrichment to {_applied} product(s).")
     file_count = len(list(PRODUCTS_DIR.glob("*.json"))) if PRODUCTS_DIR.exists() else 0
     print(f"Loaded {len(products)} product(s) from {file_count} file(s) in data/products/")
