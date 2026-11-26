@@ -1618,9 +1618,12 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
             p["price_usd"] = price
             p["_api_price"] = True
             p["price_as_of"] = as_str(e.get("fetched_at"))
+        # Keep our own editorial product names; Amazon's titles are long SEO strings.
+        # Only fall back to Amazon's title when a product has no name of its own.
         title = as_str(e.get("title_clean"))
-        if title and len(title) >= 12:
+        if title and not as_str(p.get("name")):
             p["name"] = title
+        p["amazon_title"] = title
         applied += 1
     return applied
 
