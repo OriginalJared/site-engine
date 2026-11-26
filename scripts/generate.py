@@ -796,6 +796,16 @@ def primary_pick(matched: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     return _top_rated(matched, set(), "best-overall") or _best_pick(matched)
 
 
+def pick_buy_html(p: Dict[str, Any], aff: str) -> str:
+    b = sale_price_bits(p)
+    if not b:
+        return f'<a class="pick-buy" href="{aff}" target="_blank" rel="nofollow sponsored noopener">Check price on Amazon</a>'
+    was = f'<s class="pick-was">{b["was"]}</s> ' if b.get("was") else ""
+    badge = f'<span class="deal-badge">{b["badge"]}</span>' if b.get("badge") else (f'<span class="deal-badge">Save {b["pct"]}</span>' if b.get("pct") else "")
+    return (f'{badge}<a class="pick-buy" href="{aff}" target="_blank" rel="nofollow sponsored noopener">{was}{b["now"]} from Amazon</a>'
+            f'<span class="pick-asof" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">Price {b["asof"]} &middot; Details</span>')
+
+
 def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Optional[List[tuple]] = None) -> str:
     """Wirecutter-style tabbed pick cards: Top pick, Budget pick, Upgrade pick, plus 'Best for…' minis."""
     top = primary_pick(matched)
@@ -826,7 +836,7 @@ def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Op
                 f'<div class="pick-body"><p class="pick-kicker">{kicker}</p>'
                 f'<h3 class="pick-name"><a href="{detail}">{escape(nm(p))}</a></h3>'
                 f'<p class="pick-verdict">{escape(as_str(p.get("verdict")))}</p>'
-                f'<a class="pick-buy" href="{aff}" target="_blank" rel="nofollow sponsored noopener">Check price on Amazon</a>'
+                f'{pick_buy_html(p, aff)}'
                 f'<a class="pick-review" href="{detail}">Read our full review &rarr;</a></div></article>')
     parts = [f'<section class="pick-cards" id="top-pick" aria-label="Our picks"><p class="pick-intro">{intro}</p>']
     parts.append(card(top, "Top pick", "Our favorite overall", "pick-top"))
@@ -980,11 +990,46 @@ AMAZON_PRICE_DISCLAIMER = ("Product prices and availability are accurate as of t
                            "Any price and availability information displayed on Amazon at the time of purchase will apply to the purchase of this product.")
 
 
+def sale_price_bits(p: Dict[str, Any]) -> Dict[str, str]:
+    """Escaped price pieces for one product (API prices only)."""
+    price = p.get("price_usd")
+    if price in (None, ""):
+        return {}
+    def fmt(v):
+        try:
+            f = float(v)
+            return f"${f:,.0f}" if f == int(f) else f"${f:,.2f}"
+        except (TypeError, ValueError):
+            return f"${v}"
+    out = {"now": escape(fmt(price)), "asof": escape(price_as_of_text(p.get("price_as_of")))}
+    if p.get("was_price_usd") not in (None, ""):
+        out["was"] = escape(fmt(p.get("was_price_usd")))
+        try:
+            pct = int(round(float(p.get("savings_percent"))))
+            if pct > 0:
+                out["pct"] = f"{pct}%"
+        except (TypeError, ValueError):
+            pass
+    if as_str(p.get("deal_badge")):
+        out["badge"] = escape(as_str(p.get("deal_badge")))
+    return out
+
+
 def price_display_html(price: Any, as_of: Any = None) -> str:
     if price is None or as_str(price) == "":
         return '<span class="price-note">See Amazon for current price</span>'
     return (f'<span class="price-amount">${escape(str(price))}</span>'
             f'<span class="price-note" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">{escape(price_as_of_text(as_of))} &middot; Details</span>')
+
+
+def product_price_html(p: Dict[str, Any]) -> str:
+    b = sale_price_bits(p)
+    if not b:
+        return price_display_html(None)
+    was = f'<s class="price-was">{b["was"]}</s>' if b.get("was") else ""
+    save = f'<span class="deal-badge">{b.get("badge") or ("Save " + b["pct"])}</span>' if (b.get("badge") or b.get("pct")) else ""
+    return (f'{save}<span class="price-amount">{was} {b["now"]}</span>'
+            f'<span class="price-note" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">{b["asof"]} &middot; Details</span>')
 
 
 def price_inline_text(price: Any, as_of: Any = None) -> str:
@@ -1055,7 +1100,7 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{STARS}}", stars_html(p.get("rating")))
         .replace("{{BADGE}}", badge_html(p.get("badge")))
         .replace("{{KEY_SPECS_GRID}}", key_specs_grid(p.get("specs") or {}))
-        .replace("{{PRICE_DISPLAY}}", price_display_html(p.get("price_usd"), p.get("price_as_of")))
+        .replace("{{PRICE_DISPLAY}}", product_price_html(p))
         .replace("{{PRICE_INLINE}}", price_inline_text(p.get("price_usd"), p.get("price_as_of")))
         .replace("{{UPDATED}}", UPDATED_LABEL))
 
@@ -1110,7 +1155,7 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
         if brand:
             meta_parts.append(f"<strong>Brand:</strong> {escape(brand)}")
         if price is not None:
-            meta_parts.append(f"<strong>Price:</strong> ${escape(str(price))} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
+            meta_parts.append(f"<strong>Price:</strong> " + (f"<s>{sale_price_bits(p).get('was')}</s> " if sale_price_bits(p).get('was') else "") + f"{sale_price_bits(p).get('now')} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
         meta_html = " &nbsp;•&nbsp; ".join(meta_parts) if meta_parts else ""
         spec_bits = []
         for sk, sv in specs.items():
@@ -1173,7 +1218,7 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
     if brand:
         meta.append(f"<strong>Brand:</strong> {escape(brand)}")
     if price is not None:
-        meta.append(f"<strong>Price:</strong> ${escape(str(price))} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
+        meta.append(f"<strong>Price:</strong> " + (f"<s>{sale_price_bits(p).get('was')}</s> " if sale_price_bits(p).get('was') else "") + f"{sale_price_bits(p).get('now')} <span class=\"price-asof\" title=\"{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}\">({escape(price_as_of_text(p.get('price_as_of')))})</span>")
     meta_html = " &nbsp;\u2022&nbsp; ".join(meta)
     parts = ['<aside class="top-pick" id="top-pick" aria-label="Top pick">']
     parts.append('<div class="top-pick-badge">\u2605 Our Top Pick</div>')
@@ -1618,6 +1663,16 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
             p["price_usd"] = price
             p["_api_price"] = True
             p["price_as_of"] = as_str(e.get("fetched_at"))
+            was = e.get("was_price_usd")
+            try:
+                if was not in (None, "") and float(was) > float(price):
+                    p["was_price_usd"] = was
+                    p["was_price_label"] = as_str(e.get("was_price_label"))
+                    p["savings_percent"] = e.get("savings_percent")
+            except (TypeError, ValueError):
+                pass
+            if as_str(e.get("deal_badge")):
+                p["deal_badge"] = as_str(e.get("deal_badge"))
         # Keep our own editorial product names; Amazon's titles are long SEO strings.
         # Only fall back to Amazon's title when a product has no name of its own.
         title = as_str(e.get("title_clean"))
@@ -1654,15 +1709,34 @@ def main():
     # Only real, in-stock Amazon listings are shown. data/stock-status.json lists ASINs that were
     # out of stock or gone at the last check; those products are hidden until they return.
     _stock_path = DATA_DIR / "stock-status.json"
+    _stock_cfg = {}
     if _stock_path.exists():
         try:
-            _unav = set((json.loads(_stock_path.read_text(encoding="utf-8")).get("unavailable") or {}).keys())
+            _stock_cfg = json.loads(_stock_path.read_text(encoding="utf-8")) or {}
         except Exception as e:
             print(f"WARNING: bad stock-status.json: {e}")
-            _unav = set()
-        _before = len(products)
-        products = [p for p in products if ((p.get("network_ids") or {}).get("amazon") or "").strip() not in _unav]
-        print(f"Stock filter: hid {_before - len(products)} unavailable product(s).")
+    _exempt = set(_stock_cfg.get("exempt_niches") or [])
+    _run_path = ENRICH_DIR / "_run.json"
+    _unav = None
+    if _run_path.exists():
+        try:
+            _run = json.loads(_run_path.read_text(encoding="utf-8"))
+            _ret = _run.get("returned") or {}
+            _unav = {a for a in (_run.get("requested") or [])
+                     if a not in _ret or not _ret[a].get("has_offer")
+                     or (as_str(_ret[a].get("availability_type")).upper() in ("OUT_OF_STOCK", "UNAVAILABLE"))}
+            print(f"Stock source: Amazon API run ({as_str(_run.get('fetched_at'))[:16]}).")
+        except Exception as e:
+            print(f"WARNING: bad enrichment _run.json ({e}); falling back to stock-status.json")
+            _unav = None
+    if _unav is None:
+        _unav = set((_stock_cfg.get("unavailable") or {}).keys())
+        print("Stock source: data/stock-status.json (manual check).")
+    _before = len(products)
+    products = [p for p in products
+                if as_str(p.get("category")) in _exempt
+                or ((p.get("network_ids") or {}).get("amazon") or "").strip() not in _unav]
+    print(f"Stock filter: hid {_before - len(products)} unavailable product(s).")
     _applied = apply_enrichment(products)
     # Amazon compliance: only show prices that came from the API (current, timestamped).
     # Stored prices and dollar amounts written into product prose are never displayed.

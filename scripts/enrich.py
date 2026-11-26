@@ -109,23 +109,30 @@ def _get(obj, *path):
     return cur
 
 
+def _money(m):
+    if m is None:
+        return None, None
+    amt = getattr(m, "amount", None)
+    disp = getattr(m, "display_amount", None) or (f"${amt}" if amt is not None else None)
+    return amt, disp
+
+
 def extract(item):
     asin = getattr(item, "asin", None)
     image = _get(item, "images", "primary", "large", "url") or _get(item, "images", "primary", "medium", "url")
     title = _get(item, "item_info", "title", "display_value")
-    price_amount = None
-    price_display = None
     o2 = getattr(item, "offers_v2", None)
-    listings = getattr(o2, "listings", None) if o2 else None
-    if listings:
-        money = _get(listings[0], "price", "money")
-        if money is not None:
-            price_amount = getattr(money, "amount", None)
-            disp = getattr(money, "display_amount", None) or getattr(money, "display", None)
-            if disp:
-                price_display = disp
-            elif price_amount is not None:
-                price_display = f"${price_amount}"
+    listings = list(getattr(o2, "listings", None) or []) if o2 else []
+    # Prefer the buy-box listing (the price a shopper actually sees).
+    listing = next((l for l in listings if getattr(l, "is_buy_box_winner", False)), listings[0] if listings else None)
+    price_amount, price_display = _money(_get(listing, "price", "money"))
+    was_amount, was_display = _money(_get(listing, "price", "saving_basis", "money"))
+    was_label = _get(listing, "price", "saving_basis", "saving_basis_type_label")
+    save_pct = _get(listing, "price", "savings", "percentage")
+    deal_badge = _get(listing, "deal_details", "badge")
+    deal_end = _get(listing, "deal_details", "end_time")
+    avail_type = _get(listing, "availability", "type")
+    avail_msg = _get(listing, "availability", "message")
     return {
         "asin": asin,
         "image": image,
@@ -133,6 +140,14 @@ def extract(item):
         "title_clean": clean_title(title),
         "price_usd": price_amount,
         "price_display": price_display,
+        "was_price_usd": was_amount if (was_amount and price_amount and was_amount > price_amount) else None,
+        "was_price_label": was_label,
+        "savings_percent": save_pct,
+        "deal_badge": deal_badge,
+        "deal_end": deal_end,
+        "has_offer": listing is not None,
+        "availability_type": str(avail_type) if avail_type is not None else None,
+        "availability_message": avail_msg,
     }
 
 
@@ -200,6 +215,7 @@ def main():
     ENRICH_DIR.mkdir(parents=True, exist_ok=True)
     ok = 0
     fail = 0
+    returned = {}
     for item in (items or []):
         rec = extract(item)
         if not rec.get("asin"):
@@ -213,11 +229,25 @@ def main():
             print(f"      price      : {rec['price_display']} ({rec['price_usd']})")
             print(f"      image      : {rec['image']}")
         else:
+            returned[rec["asin"]] = {
+                "has_offer": rec["has_offer"],
+                "availability_type": rec["availability_type"],
+            }
             rec["fetched_at"] = datetime.now(timezone.utc).isoformat()
             (ENRICH_DIR / f"{rec['asin']}.json").write_text(
                 json.dumps(rec, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"\nDONE: {ok} item(s) returned, {fail} without an ASIN.")
+    if not PROBE and ok:
+        # Run summary: lets the site hide products Amazon didn't return or can't sell right now.
+        (ENRICH_DIR / "_run.json").write_text(json.dumps({
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "requested": asins,
+            "returned": returned,
+        }, indent=2), encoding="utf-8")
+        no_offer = sum(1 for r in returned.values() if not r["has_offer"])
+        oos = sum(1 for r in returned.values() if (r["availability_type"] or "").upper() in ("OUT_OF_STOCK", "UNAVAILABLE"))
+        print(f"Stock: {len(asins) - ok} not returned, {no_offer} with no offer, {oos} out of stock.")
     if PROBE:
         if ok > 0:
             print("SUCCESS: Creators API returned product data. The API is active.")
