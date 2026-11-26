@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-23",
-  "note": "Products whose Amazon listing was out of stock or gone when last checked. The generator hides them. Re-run the stock check and remove entries that come back.",
+  "note": "Fallback only. When the Amazon API runs, its results decide stock automatically. 'exempt_niches' are never hidden (shoe listings read as unavailable until a size is chosen).",
   "unavailable": {
     "B00FDOON9C": "out_of_stock",
     "B01D8DAYII": "out_of_stock",
@@ -79,5 +79,8 @@
     "B0HNR6CS7W": "out_of_stock",
     "B0HP97DN2V": "out_of_stock",
     "B0HP9LC58M": "out_of_stock"
-  }
+  },
+  "exempt_niches": [
+    "running-shoes"
+  ]
 }
