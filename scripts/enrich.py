@@ -151,6 +151,45 @@ def extract(item):
     }
 
 
+def check_candidates(api):
+    """Look up products we're considering adding (data/candidates.json). Results are only
+    logged and saved to data/enrichment/_candidates.json for review; nothing is published."""
+    path = ROOT / "data" / "candidates.json"
+    if not path.exists():
+        return
+    try:
+        cands = json.loads(path.read_text(encoding="utf-8")).get("candidates") or []
+    except Exception as e:
+        print(f"Candidates: could not read candidates.json ({e})")
+        return
+    asins = [c.get("asin") for c in cands if c.get("asin")]
+    if not asins:
+        return
+    try:
+        items = api.get_items(asins, include_unavailable=True)
+    except Exception as e:
+        print(f"Candidates: lookup failed ({type(e).__name__}: {e})")
+        return
+    found = {}
+    for item in (items or []):
+        rec = extract(item)
+        if rec.get("asin"):
+            found[rec["asin"]] = rec
+    out = []
+    print(f"\nCANDIDATES ({len(asins)}):")
+    for c in cands:
+        a = c.get("asin")
+        r = found.get(a) or {}
+        row = {"asin": a, "for": c.get("for"), "expected": c.get("expected"),
+               "title": r.get("title_raw"), "has_offer": r.get("has_offer"),
+               "availability": r.get("availability_type"), "price": r.get("price_display")}
+        out.append(row)
+        print(f"  {a} [{c.get('for')}] expected '{c.get('expected')}' -> {row['title'] or 'NOT FOUND'} | offer={row['has_offer']} | {row['availability']} | {row['price']}")
+    ENRICH_DIR.mkdir(parents=True, exist_ok=True)
+    (ENRICH_DIR / "_candidates.json").write_text(json.dumps({
+        "checked_at": datetime.now(timezone.utc).isoformat(), "results": out}, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def main():
     if not CRED_ID or not CRED_SECRET or not VERSION:
         msg = "credentials/version not fully set (AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_API_VERSION)."
@@ -238,6 +277,8 @@ def main():
                 json.dumps(rec, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"\nDONE: {ok} item(s) returned, {fail} without an ASIN.")
+    if not PROBE:
+        check_candidates(api)
     if not PROBE and ok:
         # Run summary: lets the site hide products Amazon didn't return or can't sell right now.
         (ENRICH_DIR / "_run.json").write_text(json.dumps({

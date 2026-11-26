@@ -1637,6 +1637,15 @@ def strip_price_text(t: str) -> str:
     return t
 
 
+def _enrichment_fresh(fetched_at: Any, max_hours: float = 24.0) -> bool:
+    try:
+        from datetime import datetime as _dt, timezone as _tz
+        t = _dt.fromisoformat(as_str(fetched_at).replace("Z", "+00:00"))
+        return (_dt.now(_tz.utc) - t).total_seconds() <= max_hours * 3600
+    except Exception:
+        return False
+
+
 def apply_enrichment(products: List[Dict[str, Any]]) -> int:
     """Overlay Amazon Creators API enrichment (image, price, cleaned title) onto
     products. Fully gated: if data/enrichment/ or a product's file is absent,
@@ -1655,6 +1664,8 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
             e = load_json(f)
         except Exception:
             continue
+        if not _enrichment_fresh(e.get("fetched_at")):
+            continue  # older than 24h: Amazon data may not be shown
         img = as_str(e.get("image"))
         if img:
             p["image_url"] = img
@@ -1721,6 +1732,8 @@ def main():
     if _run_path.exists():
         try:
             _run = json.loads(_run_path.read_text(encoding="utf-8"))
+            if not _enrichment_fresh(_run.get("fetched_at")):
+                raise ValueError("Amazon run data is older than 24 hours")
             _ret = _run.get("returned") or {}
             _unav = {a for a in (_run.get("requested") or [])
                      if a not in _ret or not _ret[a].get("has_offer")
