@@ -62,6 +62,10 @@ jobs:
           # Always stage generated site output
           git add -A generated
 
+          # Keep the last good Amazon data so a brief API outage doesn't blank photos/prices.
+          # The generator only uses it while it is under 24 hours old (Amazon's caching limit).
+          if [ -d data/enrichment ]; then git add -A data/enrichment; fi
+
           # Also stage root-level files the generator creates
           if [ -f sitemap.xml ]; then git add sitemap.xml; fi
           if [ -f robots.txt ]; then git add robots.txt; fi

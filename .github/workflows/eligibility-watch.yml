@@ -5,8 +5,6 @@ name: Amazon eligibility watch
 # The moment the probe succeeds (API returns product data), this opens a
 # GitHub issue mentioning the owner so you get notified it's time to go live.
 on:
-  schedule:
-    - cron: "23 14 * * *"   # daily, 14:23 UTC
   workflow_dispatch:
 
 permissions:
