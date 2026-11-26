@@ -482,3 +482,11 @@ html { scroll-behavior: smooth; }
   .pick-card { grid-template-columns: 1fr; gap: 18px; padding: 30px 20px 22px; }
   .bestfor-grid { grid-template-columns: 1fr; }
 }
+
+/* ---- Live Amazon prices & deals (API only) ---- */
+.deal-badge { display: inline-block; background: #b3261e; color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.03em; padding: 4px 9px; border-radius: 4px; margin: 0 0 10px; }
+.pick-body .deal-badge { display: table; }
+.pick-was, .price-was { color: rgba(255,255,255,0.65); font-weight: 400; margin-right: 4px; }
+.price-was { color: var(--color-text-muted); }
+.pick-asof { display: block; margin-top: 8px; font-size: 0.75rem; color: var(--color-text-muted); cursor: help; }
+.card-meta s, .top-pick-meta s { color: var(--color-text-muted); }
