@@ -86,12 +86,6 @@
         "pick": "vtech-rm5764hd",
         "headline": "Smart Monitor Features on a Tight Budget",
         "dek": "The VTech RM5764HD offers 1080p video, pan-tilt-zoom, and app access without the premium price."
-      },
-      {
-        "category": "baby-monitors-for-smart-features",
-        "pick": "cubo-ai-plus",
-        "headline": "An Extra Set of Eyes on Every Nap",
-        "dek": "The Cubo Ai Plus sends an alert if your baby's face is covered or they roll over."
       }
     ]
   },
@@ -142,10 +136,10 @@
         "dek": "The JBL Xtreme 4 brings big bass, a 24-hour battery, and a shoulder strap for carrying it anywhere."
       },
       {
-        "category": "bluetooth-speakers-for-portable",
-        "pick": "bose-soundlink-flex-2nd-gen",
-        "headline": "Pocket-Size, Surprisingly Big Sound",
-        "dek": "The Bose SoundLink Flex packs clear sound and deep bass into a rugged, compact speaker."
+        "category": "bluetooth-speakers-for-bass",
+        "pick": "marshall-emberton-ii",
+        "headline": "Rock-and-Roll Looks, Room-Filling Sound",
+        "dek": "The Marshall Emberton II pairs iconic amp-inspired styling with punchy bass."
       }
     ]
   },
@@ -346,10 +340,10 @@
     },
     "side": [
       {
-        "category": "home-security-cameras-for-no-subscription",
-        "pick": "eufy-solocam-s350",
-        "headline": "Security Without Another Monthly Bill",
-        "dek": "The eufy SoloCam S340 stores video locally and runs on solar, with no subscription required."
+        "category": "home-security-cameras-for-smart-home",
+        "pick": "google-nest-cam-battery",
+        "headline": "The Camera Built for a Google Home",
+        "dek": "The Google Nest Cam sends intelligent alerts and includes three hours of free event history."
       },
       {
         "category": "budget-home-security-cameras",
@@ -374,9 +368,9 @@
     "side": [
       {
         "category": "budget-mattresses",
-        "pick": "tuft-and-needle-original",
+        "pick": "brooklyn-bedding-signature-hybrid",
         "headline": "Great Sleep Without the Luxury Markup",
-        "dek": "The Tuft & Needle Original uses adaptive foam that's surprisingly comfortable for the price."
+        "dek": "The Brooklyn Bedding Signature Hybrid sells factory-direct, pairing coils and foam for less."
       },
       {
         "category": "mattresses-for-couples",
@@ -395,9 +389,9 @@
     "side": [
       {
         "category": "budget-mechanical-keyboards",
-        "pick": "keychron-c3-pro",
+        "pick": "redragon-k552-kumara",
         "headline": "Your First Mechanical Keyboard Shouldn't Cost Much",
-        "dek": "The Keychron C3 Pro brings a gasket mount and full key remapping to a starter price."
+        "dek": "The Redragon K552 is a no-frills mechanical keyboard that's an easy place to start."
       },
       {
         "category": "quiet-mechanical-keyboards",
@@ -433,10 +427,10 @@
         "dek": "The Netgear Orbi pairs quad-band Wi-Fi with a dedicated backhaul for very large homes."
       },
       {
-        "category": "premium-mesh-wifi-routers",
-        "pick": "asus-zenwifi-xt9",
-        "headline": "Mesh Wi-Fi for Power Users",
-        "dek": "The ASUS ZenWiFi XT9 adds deep customization and built-in network security for people who like to tinker."
+        "category": "mesh-wifi-routers-for-smart-home",
+        "pick": "amazon-eero-6-plus",
+        "headline": "Wi-Fi and a Smart Home Hub in One",
+        "dek": "The eero 6+ adds a built-in Zigbee hub and dead-simple setup to whole-home Wi-Fi."
       }
     ]
   },
@@ -449,15 +443,15 @@
     "side": [
       {
         "category": "home-office-chairs",
-        "pick": "branch-ergonomic-chair",
-        "headline": "A Home Office Chair That Looks as Good as It Feels",
-        "dek": "The Branch Ergonomic Chair offers 14 points of adjustment and a 7-year warranty."
+        "pick": "nouhaus-ergo3d",
+        "headline": "A Home Office Chair With Real Adjustability",
+        "dek": "The Nouhaus Ergo3D adds 4D armrests and an adjustable headrest to a breathable mesh design."
       },
       {
-        "category": "budget-office-chairs",
-        "pick": "sihoo-m57",
-        "headline": "Real Ergonomics on a Tight Budget",
-        "dek": "The SIHOO M57 adds adjustable lumbar support, a headrest, and 3D armrests to a breathable mesh chair."
+        "category": "premium-office-chairs",
+        "pick": "steelcase-gesture",
+        "headline": "The Chair With the Best Armrests",
+        "dek": "The Steelcase Gesture's 360-degree arms support you whether you're typing, texting, or on a tablet."
       },
       {
         "category": "office-chairs-for-budget-premium",
@@ -496,9 +490,9 @@
   },
   "over-ear-headphones": {
     "lead": {
-      "pick": "sony-wh-1000xm5",
-      "headline": "Your Flight Just Got a Lot Quieter",
-      "dek": "The Sony WH-1000XM5 pairs class-leading noise cancellation with comfort for long trips."
+      "pick": "beats-studio-pro",
+      "headline": "One Pair of Headphones for iPhone and Android",
+      "dek": "The Beats Studio Pro offers USB-C lossless audio and works smoothly with both kinds of phones."
     },
     "side": [
       {
@@ -508,10 +502,10 @@
         "dek": "The JBL Tune 770NC adds adaptive noise cancellation and a 70-hour battery."
       },
       {
-        "category": "over-ear-headphones-for-audiophile",
-        "pick": "sennheiser-momentum-4",
-        "headline": "For Listeners Who Care About Every Note",
-        "dek": "The Sennheiser Momentum 4 offers natural, detailed sound and long battery life."
+        "category": "over-ear-headphones-for-commute",
+        "pick": "sony-wh-ch720n",
+        "headline": "Sony Noise Canceling for the Daily Commute",
+        "dek": "The Sony WH-CH720N brings Sony's noise cancellation to a lightweight, comfortable pair."
       },
       {
         "category": "premium-over-ear-headphones",
@@ -530,21 +524,15 @@
     "side": [
       {
         "category": "portable-power-stations-for-camping",
-        "pick": "jackery-explorer-1000-v2",
-        "headline": "Bring Real Power to the Campsite",
-        "dek": "The Jackery Explorer 1000 v2 is easy to use, recharges fast, and pairs with solar panels."
+        "pick": "jackery-explorer-300",
+        "headline": "Campsite Power That Won't Weigh You Down",
+        "dek": "The Jackery Explorer 300 is a light LiFePO4 unit for phones, lights, and small gear."
       },
       {
         "category": "budget-portable-power-stations",
         "pick": "ecoflow-river-2",
         "headline": "Small Power Station, Big Peace of Mind",
         "dek": "The EcoFlow RIVER 2 packs 256Wh of LiFePO4 power, with X-Boost for higher-draw devices."
-      },
-      {
-        "category": "portable-power-stations-for-solar",
-        "pick": "goal-zero-yeti-700",
-        "headline": "Built Tough for Off-Grid Power",
-        "dek": "The Goal Zero Yeti 700 is a rugged 677Wh LiFePO4 unit made for harsh conditions and solar charging."
       }
     ]
   },
@@ -557,9 +545,9 @@
     "side": [
       {
         "category": "robot-vacuums-for-pet-hair",
-        "pick": "narwal-freo-x-ultra",
-        "headline": "Pet Hair Without the Tangles",
-        "dek": "The Narwal Freo X Ultra pairs strong suction with a tangle-free brush and smart mopping."
+        "pick": "irobot-roomba-combo-j9",
+        "headline": "A Robot That Steers Clear of Pet Accidents",
+        "dek": "The Roomba Combo j9+ avoids pet messes and lifts its mop pad when it reaches carpet."
       },
       {
         "category": "best-robot-vacuums",
@@ -611,9 +599,9 @@
     "side": [
       {
         "category": "standing-desks-under-500",
-        "pick": "autonomous-smartdesk-pro",
-        "headline": "A Feature-Packed Desk on a Sensible Budget",
-        "dek": "The Autonomous SmartDesk Pro offers strong lift capacity and a 7-year warranty."
+        "pick": "shw-48-electric",
+        "headline": "The Simplest Way to Start Standing",
+        "dek": "The SHW 48-inch electric desk is bare-bones, but it gets you a motorized sit-stand setup."
       },
       {
         "category": "home-office-standing-desks",
@@ -691,10 +679,10 @@
         "dek": "The Optoma UHD38x delivers true 4K, 4,000 lumens, and 240Hz gaming support."
       },
       {
-        "category": "projectors-for-portable",
-        "pick": "nebula-capsule-3-laser",
-        "headline": "A Movie Theater the Size of a Soda Can",
-        "dek": "The Nebula Capsule 3 Laser runs about 2.5 hours on battery, so you can watch anywhere."
+        "category": "projectors-for-home-theater",
+        "pick": "benq-ht2060",
+        "headline": "Movie Night Without the Splurge",
+        "dek": "The BenQ HT2060 delivers 1080p with HDR10 and BenQ's accurate color."
       }
     ]
   },
