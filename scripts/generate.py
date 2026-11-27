@@ -637,14 +637,17 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                          f'<span class="hx-lead-cta">Shop the gift guides &rarr;</span></div></a>')
             tiles_html = "".join(
                 f'<a class="hx-tile hx-{escape(col, quote=True)}" href="{h}"><div class="hx-tile-art">'
-                f'<img src="{escape(_pimg(q), quote=True)}" alt="{escape(as_str(q.get("name")), quote=True)}" loading="lazy" /></div>'
+                f'<img src="{escape(_pimg(q), quote=True)}" alt="{escape(as_str(q.get("name")), quote=True)}" loading="lazy" />{home_price_chip(q)}</div>'
                 f'<h3>{escape(t)}</h3></a>' for h, q, t, col in tiles[:4])
             rail_html2 = (f'<aside class="hx-rail"><div class="hx-rail-head"><p class="hx-rail-kicker">{escape(as_str(_hero_cfg.get("rail_title")) or "Best of the Best")}</p>'
                           f'<p class="hx-rail-sub">{escape(as_str(_hero_cfg.get("rail_sub")))}</p></div>'
                           f'<ul>{"".join(rail_items)}</ul>'
                           f'<a class="hx-rail-more" href="/generated/categories/">All categories &rarr;</a></aside>') if rail_items else ""
+            _asof = next((sale_price_bits(q).get("asof") for _, q, _, _ in tiles[:4] if sale_price_bits(q)), "")
+            asof_html = (f'<p class="hx-asof" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">'
+                         f'Prices are from Amazon, {_asof}, and may change. Hover a price for details.</p>') if _asof else ""
             featured_block = (f'<section class="hx">{rail_html2}<div class="hx-main">{lead_html}'
-                              f'<div class="hx-tiles">{tiles_html}</div></div></section>')
+                              f'<div class="hx-tiles">{tiles_html}</div>{asof_html}</div></section>')
         else:
             print("WARNING: hero.json lead/tiles invalid; using automatic featured block")
 
@@ -661,7 +664,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         img = as_str(p.get("image_url"))
         if img:
             inner = f'<img src="{escape(img, quote=True)}" alt="{escape(as_str(p.get("name")))}" loading="lazy" />'
-            return f'<a class="{cls} has-img" href="{href}" tabindex="-1">{inner}</a>'
+            return f'<a class="{cls} has-img" href="{href}" tabindex="-1">{inner}{home_price_chip(p)}</a>'
         label = as_str(p.get("brand")) or as_str(p.get("name")) or "?"
         accent = _accent_for(as_str(p.get("brand")) or as_str(p.get("slug")))
         return (f'<a class="{cls}" href="{href}" tabindex="-1" aria-hidden="true" style="--cover-accent:{accent}">'
@@ -1198,6 +1201,17 @@ def sale_price_bits(p: Dict[str, Any]) -> Dict[str, str]:
     if as_str(p.get("deal_badge")):
         out["badge"] = escape(as_str(p.get("deal_badge")))
     return out
+
+
+def home_price_chip(p: Dict[str, Any]) -> str:
+    """Small price chip for photo tiles: live Amazon price only, timestamp + disclaimer on hover."""
+    b = sale_price_bits(p)
+    if not b:
+        return ""
+    tip = escape(f"Price {b['asof']}. {AMAZON_PRICE_DISCLAIMER}", quote=True)
+    was = f'<s>{b["was"]}</s> ' if b.get("was") else ""
+    deal = f'<span class="pc-deal">{b["badge"] if b.get("badge") else "Save " + b["pct"]}</span>' if (b.get("badge") or b.get("pct")) else ""
+    return f'<span class="price-chip" title="{tip}">{deal}<span class="pc-amt">{was}{b["now"]}</span></span>'
 
 
 def price_display_html(price: Any, as_of: Any = None) -> str:
