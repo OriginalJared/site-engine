@@ -12,15 +12,15 @@
   ],
   "title_raw": "BenQ HT2060 1080p HDR LED Home Theater Projector | DCI-P3 & Rec.709 Wide Color Gamut | 8.3ms 120hz | Vertical Lens Shift | 2D Keystone | 1.3x Zoom | S/PDIF | HDMI 2.0 | Built-in 5Wx2 Speakers | 3D",
   "title_clean": "BenQ HT2060 1080p HDR LED Home Theater Projector",
-  "price_usd": 1545.99,
-  "price_display": "$1,545.99",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK",
-  "availability_message": "In stock",
-  "fetched_at": "2026-11-27T21:29:53.235423+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-27T21:40:22.756043+00:00"
 }

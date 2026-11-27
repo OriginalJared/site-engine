@@ -17,10 +17,10 @@
   "was_price_usd": 849.99,
   "was_price_label": "List Price:",
   "savings_percent": 30,
-  "deal_badge": null,
-  "deal_end": null,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-20T07:59:59Z",
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 2 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:29:53.200192+00:00"
+  "availability_type": "LEADTIME",
+  "availability_message": "Usually ships within 1 to 2 months",
+  "fetched_at": "2026-11-27T21:40:22.723123+00:00"
 }
