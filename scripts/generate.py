@@ -664,11 +664,11 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             return "The Best " + slug_to_display(as_str(c.get("niche")))
         nm = _no_price(as_str(c.get("name")))
         return ("The " + nm) if nm.startswith("Best ") else ("The Best " + nm)
-    def _dept_thumb(p, href, cls):
+    def _dept_thumb(p, href, cls, chip=True):
         img = as_str(p.get("image_url"))
         if img:
             inner = f'<img src="{escape(img, quote=True)}" alt="{escape(as_str(p.get("name")))}" loading="lazy" />'
-            return f'<a class="{cls} has-img" href="{href}" tabindex="-1">{inner}{home_price_chip(p)}</a>'
+            return f'<a class="{cls} has-img" href="{href}" tabindex="-1">{inner}{home_price_chip(p) if chip else ""}</a>'
         label = as_str(p.get("brand")) or as_str(p.get("name")) or "?"
         accent = _accent_for(as_str(p.get("brand")) or as_str(p.get("slug")))
         return (f'<a class="{cls}" href="{href}" tabindex="-1" aria-hidden="true" style="--cover-accent:{accent}">'
@@ -794,9 +794,11 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             s_title = _side_title(c, p, st)
             s_dek = (escape(as_str(st.get("dek"))) if st and as_str(st.get("dek"))
                      else escape(_no_price(as_str(p.get("verdict")))) if c is None else _dept_dek(p))
-            side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img")}'
+            _pc = home_price_chip(p)
+            _pline = f'<p class="dept-price-line">{_pc}</p>' if _pc else updated
+            side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img", chip=False)}'
                           f'<div class="dept-item-txt"><h3><a href="{href}">{s_title}</a></h3>'
-                          f'<p class="dept-dek">{s_dek}</p>{updated}</div></article>')
+                          f'<p class="dept-dek">{s_dek}</p>{_pline}</div></article>')
         if three_up:
             cards = [(lead_href, lead_p, lead_title, lead_dek)]
             for c, p, st in side:
