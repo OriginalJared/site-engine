@@ -404,6 +404,54 @@ DEPARTMENTS = OrderedDict([
 ])
 
 
+PASTELS = ["#f6ecd2", "#e3efe6", "#e6ecf5", "#f5e4df", "#ece6f3", "#e2f0f1"]
+
+
+def _pimg(p: Dict[str, Any]) -> str:
+    u = as_str(p.get("image_url"))
+    return u if u.startswith("https://") else ""
+
+
+def photo_trio_html(prods: List[Dict[str, Any]], n: int = 3) -> str:
+    """Up to n product photos as a small collage on a white plate."""
+    imgs = []
+    for q in prods:
+        u = _pimg(q)
+        if u and u not in imgs:
+            imgs.append(u)
+        if len(imgs) >= n:
+            break
+    if not imgs:
+        return ""
+    cells = "".join(f'<span class="trio-cell"><img src="{escape(u, quote=True)}" alt="" loading="lazy" /></span>' for u in imgs)
+    return f'<div class="photo-trio trio-{len(imgs)}">{cells}</div>'
+
+
+def _rated(prods: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    return sorted(prods, key=lambda q: -(float(q.get("rating")) if isinstance(q.get("rating"), (int, float)) else 0))
+
+
+def cat_products(cat: Dict[str, Any], products_by_niche: Dict[str, List[Dict[str, Any]]]) -> List[Dict[str, Any]]:
+    explicit = cat.get("products") if isinstance(cat.get("products"), list) else None
+    if explicit:
+        by_slug = {as_str(q.get("slug")): q for lst in products_by_niche.values() for q in lst}
+        return [by_slug[as_str(x)] for x in explicit if as_str(x) in by_slug]
+    nprods = products_by_niche.get(as_str(cat.get("niche")), [])
+    tags = [normalize_slug(t) for t in (cat.get("tags") or []) if as_str(t)]
+    m = [q for q in nprods if product_matches(q, tags)] if tags else list(nprods)
+    return m or list(nprods)
+
+
+def photo_card_html(href: str, title: str, desc: str, prods: List[Dict[str, Any]], i: int, cta: str = "", kicker: str = "") -> str:
+    tint = PASTELS[i % len(PASTELS)]
+    trio = photo_trio_html(_rated(prods))
+    k = f'<p class="pc-kicker">{escape(kicker)}</p>' if kicker else ""
+    c = f'<span class="pc-cta">{cta}</span>' if cta else ""
+    return (f'<a class="photo-card" href="{escape(href, quote=True)}" style="--tint:{tint}">'
+            f'<div class="pc-media">{trio}</div><div class="pc-body">{k}<h3>{escape(title)}</h3>'
+            f'<p>{escape(desc)}</p>{c}</div></a>')
+
+
 def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str, List[Dict[str, Any]]], niche_to_reviewer: Dict[str, Dict[str, str]], guides: Optional[List[Dict[str, Any]]] = None) -> Dict[str, str]:
     guides = guides or []
     niches: Dict[str, List[Dict[str, Any]]] = OrderedDict()
@@ -463,12 +511,13 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             if len(sc_desc) > 140:
                 sc_desc = sc_desc[:137].rsplit(" ", 1)[0] + "..."
             href = escape(f"/generated/categories/{sc_slug}/", quote=True)
-            cards.append(f'<a class="gift-card" href="{href}"><h3>{escape(sc_name)}</h3><p>{escape(sc_desc)}</p><span class="gift-card-cta">Shop this guide &rarr;</span></a>')
+            cards.append(photo_card_html(f"/generated/categories/{sc_slug}/", sc_name, sc_desc,
+                                         cat_products(sc, products_by_niche), len(cards), "Shop this guide &rarr;"))
         gift_block = ('<section class="home-block gift-block">'
                       '<div class="block-head"><h2>Holiday Gift Guides</h2>'
                       f'<a class="block-head-link" href="{hub_href_for("gifts")}">See all gift guides &rarr;</a></div>'
                       '<p class="block-sub">Hand-picked, verified-in-stock gifts for everyone on your list &mdash; ready for Black Friday.</p>'
-                      '<div class="gift-grid">' + "".join(cards) + '</div></section>')
+                      '<div class="photo-grid photo-grid-4">' + "".join(cards) + '</div></section>')
 
     guides_block = ""
     if guides:
@@ -480,12 +529,14 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             if len(gdesc) > 130:
                 gdesc = gdesc[:127].rsplit(" ", 1)[0] + "..."
             href = escape(f"/generated/guides/{gslug}/", quote=True)
-            cards.append(f'<a class="guide-card" href="{href}"><h3>{escape(gtitle)}</h3><p>{escape(gdesc)}</p></a>')
+            cards.append(photo_card_html(f"/generated/guides/{gslug}/", gtitle, gdesc,
+                                         products_by_niche.get(as_str(g.get("niche")), []), len(cards) + 2,
+                                         "Read the guide &rarr;", "Buying guide"))
         guides_block = ('<section class="home-block guides-block">'
                         '<div class="block-head"><h2>Buying Guides</h2>'
                         '<a class="block-head-link" href="/generated/guides/">See all guides &rarr;</a></div>'
                         '<p class="block-sub">What actually matters before you buy &mdash; no jargon, no fluff.</p>'
-                        '<div class="guide-grid">' + "".join(cards) + '</div></section>')
+                        '<div class="photo-grid photo-grid-3">' + "".join(cards) + '</div></section>')
 
     # ---- Featured highlights (Wirecutter-style top block) ----
     MARQUEE = ["wireless-earbuds", "robot-vacuums", "mattresses", "coffee-makers", "running-shoes", "outdoor-grills", "mesh-wifi-routers", "air-purifiers", "laptops", "office-chairs"]
@@ -1488,10 +1539,12 @@ def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str,
 
 def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
                       related_cta: str, faq_html: str, head_extra: str, body_override=None,
-                      toc_nav: str = "", section_bar: str = "", share_row: str = "") -> str:
+                      toc_nav: str = "", section_bar: str = "", share_row: str = "", hero_media: str = "") -> str:
     body = body_override if body_override is not None else guide_body_html(guide.get("sections"))
     return (template
         .replace("{{SECTION_BAR}}", section_bar)
+        .replace("{{GUIDE_HERO_MEDIA}}", hero_media)
+        .replace("{{GUIDE_HERO_CLASS}}", " has-media" if hero_media else "")
         .replace("{{SHARE_ROW}}", share_row)
         .replace("{{TOC_NAV}}", toc_nav)
         .replace("{{GUIDE_TITLE}}", escape(as_str(guide.get("title"))))
@@ -2051,28 +2104,44 @@ def main():
             gslug = g["slug"]
             related_cta = ""
             hub = hub_by_niche.get(g.get("niche"))
+            gprods = products_by_niche.get(as_str(g.get("niche")), [])
             if hub:
                 hub_href = escape(f"/generated/categories/{hub[0]}/", quote=True)
-                related_cta = (f'<div class="guide-cta"><strong>Ready to compare the top {escape(hub[1].lower())}?</strong>'
-                               f'<a class="cta cta-lg" href="{hub_href}">See our {escape(hub[1])} picks &rarr;</a></div>')
+                related_cta = (f'<div class="guide-cta guide-cta-photo">{photo_trio_html(_rated(gprods))}'
+                               f'<div class="gcp-text"><strong>Ready to compare the top {escape(hub[1].lower())}?</strong>'
+                               f'<p>See every pick we recommend, with live Amazon prices.</p>'
+                               f'<a class="cta cta-buy" href="{hub_href}">See all {len(gprods)} {escape(hub[1])} picks &rarr;</a></div></div>')
+            picks_html = ""
+            if gprods:
+                picks_html = ('<section class="guide-picks" id="our-picks"><p class="gp-kicker">Our picks</p>'
+                              + build_pick_cards_html(gprods, display_noun(slug_to_display(as_str(g.get("niche"))))) + '</section>')
+            _secs = guide_body_html(g.get("sections"))
+            _cut = [m.end() for m in re.finditer(r'</section>', _secs)]
+            gbody = (_secs[:_cut[0]] + picks_html + _secs[_cut[0]:]) if _cut else (picks_html + _secs)
             faqs = g.get("faqs") or []
             faq_html = build_faq_section_html([(q, a) for q, a in faqs])
             head_extra = build_guide_head_extra(g, site_url, site_name, faqs)
             html = render_guide_page(guide_template, g, site_name, site_tagline, related_cta, faq_html, head_extra,
+                                     body_override=gbody, hero_media=photo_trio_html(_rated(gprods)),
                                      section_bar=build_section_bar(build_guide_toc_items(g, bool(faqs))),
                                      share_row=share_row_html(f"{site_url}{GUIDE_URL_BASE}/{gslug}/", f"{as_str(g.get('title'))} | {site_name}"))
             write_text(GENERATED_DIR / "guides" / gslug / "index.html", html)
             guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/{gslug}/")
         items = []
-        for g in guides:
-            href = escape(f"{GUIDE_URL_BASE}/{g['slug']}/", quote=True)
-            items.append(f'<li class="guide-index-item"><h2><a href="{href}">{escape(g["title"])}</a></h2><p>{escape(g["description"])}</p></li>')
-        idx_body = '<ul class="guides-index-list">' + "".join(items) + "</ul>"
+        for i, g in enumerate(guides):
+            gd = as_str(g.get("description"))
+            if len(gd) > 150:
+                gd = gd[:147].rsplit(" ", 1)[0] + "..."
+            items.append(photo_card_html(f"{GUIDE_URL_BASE}/{g['slug']}/", as_str(g.get("title")), gd,
+                                         products_by_niche.get(as_str(g.get("niche")), []), i,
+                                         "Read the guide &rarr;", slug_to_display(as_str(g.get("niche")))))
+        idx_body = '<div class="photo-grid photo-grid-3 guides-index-grid">' + "".join(items) + "</div>"
         idx_desc = "In-depth buying guides from the " + site_name + " editorial team to help you choose the right product before you buy."
         idx_guide = {"slug": "", "title": "Buying Guides", "description": idx_desc,
                      "intro": "Practical, jargon-free guides to help you pick the right product with confidence."}
         idx_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("Buying Guides", idx_desc, f"{site_url}{GUIDE_URL_BASE}/", site_name, og_type="website"))
         idx_html = render_guide_page(guide_template, idx_guide, site_name, site_tagline, "", "", idx_head, body_override=idx_body)
+        idx_html = re.sub(r'<a href="/generated/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", idx_html, count=1)
         write_text(GENERATED_DIR / "guides" / "index.html", idx_html)
         guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/")
         print(f"Generated {len(guides)} buying guide(s) + guides index.")
