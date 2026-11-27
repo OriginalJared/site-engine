@@ -1,0 +1,26 @@
+{
+  "asin": "B0GR1JTFP8",
+  "image": "https://m.media-amazon.com/images/I/41ZqZQY3BjL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41ZqZQY3BjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31esXqLYGBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31QZgxdDnvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Zl9pt-sYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41baYv5+SjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31hcGxJFLrL._SL500_.jpg"
+  ],
+  "title_raw": "Apple 2026 MacBook Air 13-inch Laptop with M5 chip: Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage Camera, Touch ID, Wi-Fi 7; Midnight",
+  "title_clean": "Apple 2026 MacBook Air 13-inch Laptop with M5 chip: Built for AI",
+  "price_usd": 999.0,
+  "price_display": "$999.00",
+  "was_price_usd": 1299.0,
+  "was_price_label": "List Price:",
+  "savings_percent": 23,
+  "deal_badge": null,
+  "deal_end": null,
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.216889+00:00"
+}

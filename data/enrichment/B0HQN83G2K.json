@@ -1,0 +1,26 @@
+{
+  "asin": "B0HQN83G2K",
+  "image": "https://m.media-amazon.com/images/I/41tAg0eHPaL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41tAg0eHPaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ulqsF5oJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51a5FEqcVCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51pqd7tHzlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51m30qXpnAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41hpmISojpL._SL500_.jpg"
+  ],
+  "title_raw": "ASUS Zenbook-14 OLED Touchscreen Laptop - Ultra Light, Long Battery Life | Ryzen AI 9 465, 16GB RAM, 1TB SSD, 2K 500 nits HDR, Backlit Keyboard, Windows 11 Pro, Copilot+ PC for Business Office",
+  "title_clean": "ASUS Zenbook-14 OLED Touchscreen Laptop",
+  "price_usd": 1399.98,
+  "price_display": "$1,399.98",
+  "was_price_usd": 2399.99,
+  "was_price_label": "Typical price:",
+  "savings_percent": 42,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-01T07:59:59Z",
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.217081+00:00"
+}

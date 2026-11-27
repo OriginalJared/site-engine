@@ -1,0 +1,26 @@
+{
+  "asin": "B0G1S7C7J4",
+  "image": "https://m.media-amazon.com/images/I/41pEBFJUo1L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41pEBFJUo1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41sGByWFs9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41TqNup1fGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZiSJfnOkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51aXAEOVk+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Gs7mVSv8L._SL500_.jpg"
+  ],
+  "title_raw": "Microsoft Surface Laptop 7, 13.8\" Touchscreen, Snapdragon X Plus, 16GB/1TB | 2K+ 120Hz, AI Copilot+ PC, > Intel i7-1355U, 20-Hr Long Battery Life, 1080p IR Webcam, Wi-Fi 7, Backlit, Windows 11, Black",
+  "title_clean": "Microsoft Surface Laptop 7",
+  "price_usd": 1299.99,
+  "price_display": "$1,299.99",
+  "was_price_usd": null,
+  "was_price_label": null,
+  "savings_percent": null,
+  "deal_badge": null,
+  "deal_end": null,
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.217455+00:00"
+}

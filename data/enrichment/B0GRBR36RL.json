@@ -1,0 +1,26 @@
+{
+  "asin": "B0GRBR36RL",
+  "image": "https://m.media-amazon.com/images/I/41-B3RvLSuL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41-B3RvLSuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31N3Yv6+siL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31xilUD5JtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WZI3BdDHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AzFEa743L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51PdNeoUEHL._SL500_.jpg"
+  ],
+  "title_raw": "Acer Chromebook Plus 514 Laptop with Google AI – 14\" WUXGA 1920 x 1080 IPS Touch Matte Display | Intel Core i3-1315U | 8GB LPDDR5 | 256GB SSD | Wi-Fi 7 | FHD Camera | Chrome OS | CB514-5HT-33RD",
+  "title_clean": "Acer Chromebook Plus 514 Laptop with Google AI",
+  "price_usd": 499.99,
+  "price_display": "$499.99",
+  "was_price_usd": 599.99,
+  "was_price_label": "List Price:",
+  "savings_percent": 17,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-01T07:59:59Z",
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.217373+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "asin": "B0HNVQ6NCG",
+  "image": "https://m.media-amazon.com/images/I/51ATnnF6vHL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51ATnnF6vHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Z-ZENmhAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Xvc15vATL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51fL9vzmSgL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51hMk24Kx+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51q-MH8iboL._SL500_.jpg"
+  ],
+  "title_raw": "Lenovo Yoga 7i 2-in-1 Laptop 2026, 16\" 2K Touchscreen, Intel Ultra 5 322 | 46 TOPS NPU AI Laptop, 16GB LPDDR5X 1TB SSD, Win 11 Pro, Copilot+PC, WiFi 7, Backlit KB, Fingerprint, 360° Convertible Design",
+  "title_clean": "Lenovo Yoga 7i 2-in-1 Laptop 2026",
+  "price_usd": 1169.99,
+  "price_display": "$1,169.99",
+  "was_price_usd": 2099.99,
+  "was_price_label": "Typical price:",
+  "savings_percent": 44,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-01T07:59:59Z",
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.217555+00:00"
+}

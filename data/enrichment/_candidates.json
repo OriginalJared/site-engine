@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T17:15:46.484932+00:00",
+  "checked_at": "2026-11-27T17:29:53.019497+00:00",
   "results": [
     {
       "asin": "B0GR1JTFP8",
@@ -142,7 +142,7 @@
       "expected": "Jasion RetroVolt",
       "title": "Jasion RetroVolt Electric Bike, 70-Mile Range, 2000W Peak, Fat Tire | 48V 15Ah Removable Battery, 30MPH E bike, 5 Riding Modes, 7-Speed, Full Suspension, IPX6, for Commuters, Beaches, Weekends",
       "has_offer": true,
-      "availability": "IN_STOCK",
+      "availability": "LEADTIME",
       "price": "$522.49"
     },
     {

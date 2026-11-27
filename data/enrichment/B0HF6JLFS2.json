@@ -1,0 +1,26 @@
+{
+  "asin": "B0HF6JLFS2",
+  "image": "https://m.media-amazon.com/images/I/41v8Z3CcAbL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41v8Z3CcAbL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TgzVD1DAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51UqZLXNE8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41DlMWPECXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41iJDt9nBHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41EI0GHVHAL._SL500_.jpg"
+  ],
+  "title_raw": "ASUS ROG Zephyrus G14 5080 Gaming Laptop, AMD Ryzen AI 9 HX 370, 32GB/2TB | 14.0\" 120Hz OLED 3K Display, GeForce RTX 5080 16GB GDDR7, RGB Backlit Keyboard, VR Ready, Bluetooth 5.4, Webcam, Win 11 Pro",
+  "title_clean": "ASUS ROG Zephyrus G14 5080 Gaming Laptop",
+  "price_usd": 3399.99,
+  "price_display": "$3,399.99",
+  "was_price_usd": null,
+  "was_price_label": null,
+  "savings_percent": null,
+  "deal_badge": null,
+  "deal_end": null,
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T17:29:50.217236+00:00"
+}
