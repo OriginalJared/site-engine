@@ -1,0 +1,17 @@
+{
+  "asin": "B0C34XWKQR",
+  "image": "https://m.media-amazon.com/images/I/41bev1L989L._SL500_.jpg",
+  "title_raw": "Saucony Men's Ride 17 Running Shoes",
+  "title_clean": "Saucony Men's Ride 17 Running Shoes",
+  "price_usd": 110.7,
+  "price_display": "$110.70",
+  "was_price_usd": null,
+  "was_price_label": null,
+  "savings_percent": null,
+  "deal_badge": null,
+  "deal_end": null,
+  "has_offer": true,
+  "availability_type": "IN_STOCK_SCARCE",
+  "availability_message": "Only 5 left in stock - order soon.",
+  "fetched_at": "2026-11-27T00:03:57.878729+00:00"
+}

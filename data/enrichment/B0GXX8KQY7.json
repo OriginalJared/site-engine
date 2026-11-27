@@ -1,0 +1,17 @@
+{
+  "asin": "B0GXX8KQY7",
+  "image": "https://m.media-amazon.com/images/I/31ivV5CjH5L._SL500_.jpg",
+  "title_raw": "Dyson V15 Detect Cordless Vacuum",
+  "title_clean": "Dyson V15 Detect Cordless Vacuum",
+  "price_usd": 598.5,
+  "price_display": "$598.50",
+  "was_price_usd": 849.99,
+  "was_price_label": "List Price:",
+  "savings_percent": 30,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-20T07:59:59Z",
+  "has_offer": true,
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T00:03:57.866124+00:00"
+}

@@ -1,0 +1,158 @@
+{
+  "checked_at": "2026-11-27T00:04:01.006577+00:00",
+  "results": [
+    {
+      "asin": "B0GR1JTFP8",
+      "for": "laptops",
+      "expected": "Apple MacBook Air 13-inch (M5, 2026)",
+      "title": "Apple 2026 MacBook Air 13-inch Laptop with M5 chip: Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage Camera, Touch ID, Wi-Fi 7; Midnight",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$999.00"
+    },
+    {
+      "asin": "B0GR114BV7",
+      "for": "laptops",
+      "expected": "Apple MacBook Air 15-inch (M5, 2026)",
+      "title": "Apple 2026 MacBook Air 15-inch Laptop with M5 chip: Built for AI, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage Camera, Touch ID, Wi-Fi 7; Midnight",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$1,199.00"
+    },
+    {
+      "asin": "B0CHF298QR",
+      "for": "laptops",
+      "expected": "Dell 14 Plus (Core Ultra 7 258V, 32GB)",
+      "title": null,
+      "has_offer": false,
+      "availability": null,
+      "price": null
+    },
+    {
+      "asin": "B0HQN83G2K",
+      "for": "laptops",
+      "expected": "ASUS Zenbook 14 OLED",
+      "title": "ASUS Zenbook-14 OLED Touchscreen Laptop - Ultra Light, Long Battery Life | Ryzen AI 9 465, 16GB RAM, 1TB SSD, 2K 500 nits HDR, Backlit Keyboard, Windows 11 Pro, Copilot+ PC for Business Office",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$1,399.98"
+    },
+    {
+      "asin": "B0HFT7M5GP",
+      "for": "laptops",
+      "expected": "Lenovo ThinkPad X1 Carbon Gen 14",
+      "title": "Lenovo 2026 ThinkPad X1 Carbon Gen 14 with Core Ultra 5 335, OLED Non-Touch | 512GB SSD, 32GB LPDDR5X-8533MT/s RAM, Intel Series 3 vPro Processor, 14\" 2.8K VRR 30-120Hz OLED, 3x Thunderbolt 4 -21V7006DUS",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$2,069.00"
+    },
+    {
+      "asin": "B0HF6JLFS2",
+      "for": "laptops",
+      "expected": "ASUS ROG Zephyrus G14 (RTX 5080)",
+      "title": "ASUS ROG Zephyrus G14 5080 Gaming Laptop, AMD Ryzen AI 9 HX 370, 32GB/2TB | 14.0\" 120Hz OLED 3K Display, GeForce RTX 5080 16GB GDDR7, RGB Backlit Keyboard, VR Ready, Bluetooth 5.4, Webcam, Win 11 Pro",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$3,399.99"
+    },
+    {
+      "asin": "B0DZZWMB2L",
+      "for": "laptops",
+      "expected": "ASUS ROG Strix G16 (2025)",
+      "title": "ASUS ROG Strix G16 (2025) Gaming Laptop, 16” FHD+ 16:10 165Hz/3ms, NVIDIA® GeForce RTX™ 5060, Intel® Core™ i7 Processor 14650HX, 16GB DDR5, 1TB Gen 4 SSD, Wi-Fi 7, Windows 11 Home, G615JMR-AS74",
+      "has_offer": true,
+      "availability": "AVAILABLE_DATE",
+      "price": "$1,489.00"
+    },
+    {
+      "asin": "B0GRBR36RL",
+      "for": "laptops",
+      "expected": "Acer Chromebook Plus 514",
+      "title": "Acer Chromebook Plus 514 Laptop with Google AI – 14\" WUXGA 1920 x 1080 IPS Touch Matte Display | Intel Core i3-1315U | 8GB LPDDR5 | 256GB SSD | Wi-Fi 7 | FHD Camera | Chrome OS | CB514-5HT-33RD",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$499.99"
+    },
+    {
+      "asin": "B0G1S7C7J4",
+      "for": "laptops",
+      "expected": "Microsoft Surface Laptop 7 (13.8-inch, Snapdragon X Plus)",
+      "title": "Microsoft Surface Laptop 7, 13.8\" Touchscreen, Snapdragon X Plus, 16GB/1TB | 2K+ 120Hz, AI Copilot+ PC, > Intel i7-1355U, 20-Hr Long Battery Life, 1080p IR Webcam, Wi-Fi 7, Backlit, Windows 11, Black",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$1,299.99"
+    },
+    {
+      "asin": "B0HNVQ6NCG",
+      "for": "laptops",
+      "expected": "Lenovo Yoga 7i 2-in-1 16-inch (2026)",
+      "title": "Lenovo Yoga 7i 2-in-1 Laptop 2026, 16\" 2K Touchscreen, Intel Ultra 5 322 | 46 TOPS NPU AI Laptop, 16GB LPDDR5X 1TB SSD, Win 11 Pro, Copilot+PC, WiFi 7, Backlit KB, Fingerprint, 360° Convertible Design",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$1,196.99"
+    },
+    {
+      "asin": "B0HJVBQ9H3",
+      "for": "laptops",
+      "expected": "Lenovo IdeaPad Slim 3i 15.6-inch",
+      "title": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office Included • Intel CPU • 128GB SSD • 1TB Cloud Storage • 2027 Edition • Windows 11",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$349.99"
+    },
+    {
+      "asin": "B0GTFH1DNL",
+      "for": "laptops",
+      "expected": "Acer Aspire Go 15",
+      "title": "Acer Aspire Go 15 AI Ready Laptop | 15.6\" FHD (1920 x 1080) IPS Display | Intel Core 3 Processor N355 | Intel Graphics | 8GB DDR5 | 128GB UFS | Wi-Fi 6 | Windows 11 Home in S Mode | AG15-32P-352Z",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$299.99"
+    },
+    {
+      "asin": "B0GVL2N9HF",
+      "for": "electric-bikes",
+      "expected": "Jasion EB5",
+      "title": "Jasion EB5 Electric Bike for Adults 1000W Peak, 26\" Mountain Ebike 7-Speed | Removable Battery Commuting Electric Mountain Bike,Up to 40Miles,Front Fork Suspension Ebike",
+      "has_offer": true,
+      "availability": "IN_STOCK_SCARCE",
+      "price": "$299.99"
+    },
+    {
+      "asin": "B0GKNQRS57",
+      "for": "electric-bikes",
+      "expected": "Heybike Ranger 2.0 (folding)",
+      "title": "Heybike Ranger 2.0 Folding Electric Bike for Adults, 2000W Peak Motor Ebike | 600Wh Removable Battery, Up to 30+MPH & 70 Miles, 20\" Fat Tire All-Terrain E Bike, Step-Thru Foldable Electric Bicycle-BG",
+      "has_offer": true,
+      "availability": "IN_STOCK_SCARCE",
+      "price": "$699.99"
+    },
+    {
+      "asin": "B0C1VN5VPN",
+      "for": "electric-bikes",
+      "expected": "Gotrax R1 20-inch folding",
+      "title": "Gotrax R1 20\" Folding Electric Bike with 40 Miles (Pedal-assist1) by 48V Battery, 20Mph Power by 350W, Weighs Only 45lbs, LCD Display & 5 Pedal-Assist Levels, Suitable for Leisure Riding&Commuting WHI",
+      "has_offer": true,
+      "availability": "IN_STOCK_SCARCE",
+      "price": "$560.90"
+    },
+    {
+      "asin": "B0HF478B8L",
+      "for": "electric-bikes",
+      "expected": "Jasion RetroVolt",
+      "title": "Jasion RetroVolt Electric Bike, 70-Mile Range, 2000W Peak, Fat Tire | 48V 15Ah Removable Battery, 30MPH E bike, 5 Riding Modes, 7-Speed, Full Suspension, IPX6, for Commuters, Beaches, Weekends",
+      "has_offer": true,
+      "availability": "IN_STOCK",
+      "price": "$522.49"
+    },
+    {
+      "asin": "B0GT6LP9BD",
+      "for": "electric-bikes",
+      "expected": "Jasion EB5 MAX (fat tire)",
+      "title": "Jasion EB5 MAX Electric Bike for Adults 2000W Peak Motor, 48V 15Ah Battery | 720Wh Battery Electric Mountain Bike, 26'' x 4'' Fat Tire Ebike, 28+MPH Speed, Cruise Control, Fenders, Rear Rack",
+      "has_offer": true,
+      "availability": "IN_STOCK_SCARCE",
+      "price": "$699.99"
+    }
+  ]
+}
