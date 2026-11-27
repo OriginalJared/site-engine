@@ -12,15 +12,15 @@
   ],
   "title_raw": "Apple Watch SE (2nd Gen) [GPS 44mm] Smartwatch with Midnight Aluminum Case with Midnight Sport Band M/L. Fitness and Sleep Trackers, Crash Detection, Heart Rate Monitor, Retina Display",
   "title_clean": "Apple Watch SE (2nd Gen) [GPS 44mm] Smartwatch with Midnight Aluminum",
-  "price_usd": 271.74,
-  "price_display": "$271.74",
-  "was_price_usd": 309.21,
-  "was_price_label": "Typical price:",
-  "savings_percent": 12,
+  "price_usd": null,
+  "price_display": null,
+  "was_price_usd": null,
+  "was_price_label": null,
+  "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "AVAILABLE_DATE",
-  "availability_message": "",
-  "fetched_at": "2026-11-27T17:52:07.605406+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-27T18:51:18.116323+00:00"
 }

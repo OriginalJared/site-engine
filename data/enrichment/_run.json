@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T17:52:10.273217+00:00",
+  "fetched_at": "2026-11-27T18:51:21.028820+00:00",
   "requested": [
     "B09TQZP9CL",
     "B0BGVYQ8CC",
@@ -541,7 +541,7 @@
     },
     "B095HZYNFM": {
       "has_offer": true,
-      "availability_type": "OUT_OF_STOCK"
+      "availability_type": "IN_STOCK_SCARCE"
     },
     "B0047BIWSK": {
       "has_offer": true,
@@ -1061,7 +1061,7 @@
     },
     "B0CT9XTKKM": {
       "has_offer": true,
-      "availability_type": "AVAILABLE_DATE"
+      "availability_type": "IN_STOCK_SCARCE"
     },
     "B0C8PR4W22": {
       "has_offer": true,
@@ -1221,7 +1221,7 @@
     },
     "B0DGJ2NM9S": {
       "has_offer": true,
-      "availability_type": "AVAILABLE_DATE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B0BS1T9J4Y": {
       "has_offer": true,
