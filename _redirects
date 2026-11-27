@@ -1,0 +1,13 @@
+# Old /generated/ addresses -> clean addresses (permanent)
+/generated/categories/          /best/                301
+/generated/categories/:slug/    /best/:slug/          301
+/generated/categories/:slug     /best/:slug/          301
+/generated/products/            /best/                301
+/generated/products/:slug/      /reviews/:slug/       301
+/generated/products/:slug       /reviews/:slug/       301
+/generated/guides/              /guides/              301
+/generated/guides/:slug/        /guides/:slug/        301
+/generated/guides/:slug         /guides/:slug/        301
+/generated/search-index.v1.js   /search-index.v1.js   301
+/generated                      /                     301
+/generated/                     /                     301
