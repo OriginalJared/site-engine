@@ -601,3 +601,27 @@ main.container.guide-page:has(.guides-index-grid) { max-width:1120px; }
 .hp-tile:hover .hp-tile-name { color:var(--color-accent); }
 @media (max-width: 900px) { .home-feature-row { grid-template-columns:1fr; } .hp-tiles { grid-template-columns:repeat(4,1fr); } }
 @media (max-width: 560px) { .hp-tiles { grid-template-columns:1fr 1fr; } }
+
+/* ===== v14: category pages + All Categories ===== */
+.cat-hero.has-media .cat-hero-inner { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:36px; align-items:center; }
+.cat-hero:not(.has-media) .cat-hero-media { display:none; }
+.cat-hero-media .photo-trio { box-shadow:0 14px 34px rgba(0,0,0,.35); }
+.pick-card { border:1px solid #d9d4c7; border-radius:14px; box-shadow:0 4px 18px rgba(0,0,0,.05); }
+.pick-card.pick-top { border:2px solid var(--color-accent); }
+.pick-tab { border-radius:4px 0 0 4px; }
+.product-card .cover-tile.cover-tile-img { height:210px; border:1px solid var(--color-border-light); }
+.product-card .cover-tile.cover-tile-img img { object-fit:contain; }
+.pick-media .cover-tile.cover-tile-img, .bestfor-media .cover-tile.cover-tile-img { background:#fff; }
+.pick-media .cover-tile.cover-tile-img { height:240px; }
+main.guide-page.wide-page { max-width:1120px; }
+.allcat-grid { gap:22px; }
+.allcat-box { background:var(--tint,#f6ecd2); border:none; border-radius:14px; padding:14px 18px 18px; }
+.allcat-media { display:block; margin:0 -4px 12px; }
+.allcat-media .photo-trio { aspect-ratio:16/9; }
+.allcat-box ul { display:flex; flex-wrap:wrap; gap:6px; }
+.allcat-box li { padding:0; }
+.allcat-box li a { display:inline-block; background:rgba(255,255,255,.75); border-radius:999px; padding:4px 11px; font-size:.82rem; color:#333; font-weight:600; }
+.allcat-box li a:hover { background:#111; color:#fff; }
+.allcat-more { color:#111; border-bottom:2px solid #c9a227; }
+@media (max-width: 900px) { .cat-hero.has-media .cat-hero-inner { grid-template-columns:1fr; gap:18px; } .allcat-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width: 560px) { .allcat-grid { grid-template-columns:1fr; } }
