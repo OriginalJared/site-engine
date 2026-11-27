@@ -293,6 +293,53 @@ def auto_generate_categories(products_by_niche: Dict[str, List[Dict[str, Any]]])
     return auto_cats
 
 
+# Price-tier gift guides, rebuilt every day from live Amazon prices. They only exist while
+# fresh API prices are available, so "Under $50" is always true when a shopper sees it.
+PRICE_GIFT_GUIDES = [
+    {"slug": "gifts-under-50", "cap": 50, "name": "Gifts Under $50", "home_name": "Stocking Stuffers & Small Gifts",
+     "description": "Small gifts and stocking stuffers that don't cost a fortune. This list updates daily with live Amazon prices, so every pick is in stock and within budget today."},
+    {"slug": "gifts-under-100", "cap": 100, "name": "Gifts Under $100", "home_name": "Great Gifts for Less",
+     "description": "Great gifts that feel generous without the big price tag, from headphones to kitchen upgrades. This list updates daily with live Amazon prices, so every pick is in stock and within budget today."},
+]
+PRICE_GIFT_SKIP_NICHES = {"gifts", "mattresses", "electric-bikes", "electric-scooters", "office-chairs", "standing-desks", "outdoor-grills"}
+
+
+def build_price_gift_guides(products: List[Dict[str, Any]], per_guide: int = 12) -> List[Dict[str, Any]]:
+    out = []
+    priced = []
+    for p in products:
+        if not p.get("_api_price") or as_str(p.get("category")) in PRICE_GIFT_SKIP_NICHES:
+            continue
+        try:
+            priced.append((float(p.get("price_usd")), p))
+        except (TypeError, ValueError):
+            continue
+    for g in PRICE_GIFT_GUIDES:
+        lo = 0 if g["cap"] <= 50 else 50  # "Under $100" focuses on the $50-$100 range so the two guides differ
+        pool = [(pr, p) for pr, p in priced if lo < pr <= g["cap"]]
+        def score(item):
+            try:
+                return float(item[1].get("rating") or 0)
+            except (TypeError, ValueError):
+                return 0.0
+        pool.sort(key=score, reverse=True)
+        picks, seen_niche = [], {}
+        for pr, p in pool:  # at most two per department, for variety
+            n = as_str(p.get("category"))
+            if seen_niche.get(n, 0) >= 2:
+                continue
+            seen_niche[n] = seen_niche.get(n, 0) + 1
+            picks.append(as_str(p.get("slug")))
+            if len(picks) >= per_guide:
+                break
+        if len(picks) >= 6:
+            out.append({"slug": g["slug"], "name": g["name"], "home_name": g["home_name"], "niche": "gifts",
+                        "description": g["description"], "tags": [], "products": picks, "_auto": False})
+    if out:
+        print(f"Price gift guides: {', '.join(f'{c['slug']} ({len(c['products'])})' for c in out)}")
+    return out
+
+
 def load_manual_categories() -> List[Dict[str, Any]]:
     out = []
     for _path in (CATEGORIES_JSON, COLLECTIONS_JSON):
@@ -307,6 +354,8 @@ def load_manual_categories() -> List[Dict[str, Any]]:
             if not slug:
                 continue
             entry = {"slug": slug, "name": as_str(c.get("name")) or slug, "niche": as_str(c.get("niche")), "description": as_str(c.get("description")), "tags": [normalize_slug(t) for t in require_list(c.get("tags"), f"categories[{i}].tags") if as_str(t)], "_auto": False}
+            if as_str(c.get("home_name")):
+                entry["home_name"] = as_str(c.get("home_name"))
             prods = c.get("products")
             if isinstance(prods, list):
                 entry["products"] = [as_str(s) for s in prods if as_str(s)]
@@ -403,10 +452,12 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     gift_cats = niches.get("gifts", [])
     if gift_cats:
         gift_subs = [c for c in gift_cats if as_str(c.get("slug")) != "gifts"]
+        gift_subs.sort(key=lambda c: {"gifts-under-50": 0, "gifts-under-100": 1}.get(as_str(c.get("slug")), 2))
+        gift_subs = gift_subs[:8]
         cards = []
         for sc in gift_subs:
             sc_slug = as_str(sc.get("slug"))
-            sc_name = as_str(sc.get("name"))
+            sc_name = as_str(sc.get("home_name")) or as_str(sc.get("name"))
             sc_desc = as_str(sc.get("description"))
             if len(sc_desc) > 140:
                 sc_desc = sc_desc[:137].rsplit(" ", 1)[0] + "..."
@@ -1630,6 +1681,7 @@ def strip_price_text(t: str) -> str:
     t=re.sub(r"^"+_PRICE_NUM+r"\s*(?:[—–-]\s*)?","",t)
     t=re.sub(_PRICE_NUM,"the price",t)
     t=t.replace("budget-friendly budget", "budget")
+    t=re.sub(r",?\s+(?:and|or|at|for|from)\s*([.!?])", r"\1", t)
     t=re.sub(r"([.!?])\s*,\s*([a-z])", lambda m: m.group(1) + " " + m.group(2).upper(), t)
     t=re.sub(r"\s{2,}"," ",t); t=re.sub(r"\s+([,.;:!?])",r"\1",t); t=re.sub(r"([,;])\1+",r"\1",t)
     t=re.sub(r"^[\s,—–:-]+","",t); t=t.strip()
@@ -1787,7 +1839,7 @@ def main():
                 _p["badge"] = ""
 
     auto_cats = auto_generate_categories(products_by_niche)
-    manual_cats = load_manual_categories()
+    manual_cats = load_manual_categories() + build_price_gift_guides(products)
     categories = merge_categories(auto_cats, manual_cats)
     print(f"Categories: {len(categories)} total ({len(manual_cats)} manual overrides from categories.json, remainder auto-generated)")
     assert_unique_slugs(categories, "category")
@@ -1885,7 +1937,8 @@ def main():
                 _bp = _top_rated(_cm, set())
                 if _bp:
                     _bf.append((slug_to_display(_tags[0]), _bp, f"/generated/categories/{as_str(_c.get('slug'))}/"))
-        pick_cards = build_pick_cards_html(matched, display_noun(slug_to_display(niche)), _bf)
+        # Gift guides are browsable lists, not ranked reviews, so they skip the Top/Budget/Upgrade cards.
+        pick_cards = "" if niche == "gifts" else build_pick_cards_html(matched, display_noun(slug_to_display(niche)), _bf)
         html = (html
             .replace("{{TOC_NAV}}", toc_nav)
             .replace("{{GUIDE_LINK}}", guide_link)
