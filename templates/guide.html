@@ -6,7 +6,7 @@
     <title>{{GUIDE_TITLE}} | {{SITE_NAME}}</title>
     <meta name="description" content="{{GUIDE_DESCRIPTION}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="/assets/site-v2.css?v=11" />
+    <link rel="stylesheet" href="/assets/site-v2.css?v=12" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 {{HEAD_EXTRA}}
 </head>
@@ -29,8 +29,8 @@
     </header>
     {{SECTION_BAR}}
 
-    <section class="hero-band guide-hero">
-        <div class="container">
+    <section class="hero-band guide-hero{{GUIDE_HERO_CLASS}}">
+        <div class="container guide-hero-inner"><div class="guide-hero-text">
             <nav class="breadcrumb">
                 <a href="/">Home</a>
                 <span class="breadcrumb-sep">&rsaquo;</span>
@@ -41,7 +41,7 @@
             <h1>{{GUIDE_TITLE}}</h1>
             <p class="guide-byline">By the {{SITE_NAME}} editorial team &middot; Updated {{UPDATED}}</p>
             {{SHARE_ROW}}
-        </div>
+        </div><div class="guide-hero-media">{{GUIDE_HERO_MEDIA}}</div></div>
     </section>
 
     <main class="container guide-page guide-main">
