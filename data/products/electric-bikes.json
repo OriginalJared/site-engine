@@ -1,107 +1,230 @@
 [
   {
-    "slug": "lectric-xp-lite-2",
-    "name": "Lectric XP Lite 2.0 Folding Electric Bike",
-    "brand": "Lectric",
+    "slug": "jasion-retrovolt",
+    "name": "Jasion RetroVolt Electric Bike",
+    "brand": "Jasion",
     "category": "electric-bikes",
-    "price_usd": 799,
     "rating": 4.6,
-    "verdict": "The best value folding e-bike — lightweight, folds for a trunk or apartment, with a long-range battery option and hydraulic brakes.",
-    "description": "The Lectric XP Lite 2.0 is the lightweight, affordable folding e-bike that makes electric riding accessible. It folds down to fit in a car trunk or a small apartment, and at a far lighter weight than the fat-tire XP models it's genuinely easy to carry. The 48V system delivers a peak 819W of power with 5 levels of pedal assist plus a throttle, and the long-range battery option stretches range up to 80 miles. Hydraulic brakes, an LCD display, and a quick-fold frame round out one of the best-selling e-bikes on Amazon.",
+    "verdict": "The best all-around e-bike — full suspension, fat tires, and up to 70 miles of range in a retro-styled ride.",
+    "description": "The RetroVolt is our favorite all-rounder because it's comfortable almost anywhere. Full suspension and fat tires soak up potholes, gravel, and sand, so it works for commuting during the week and the beach or trail on weekends. A removable 48V 15Ah battery is rated for up to 70 miles, and a motor rated at 2000W peak gives you strong acceleration up hills. Five riding modes, a 7-speed drivetrain, and an IPX6 water-resistance rating round it out.",
     "features": [
-      "Folds to fit a trunk or apartment",
-      "48V battery — up to 45-80 mile range",
-      "Peak 819W power with throttle + 5 pedal-assist levels",
-      "Hydraulic brakes",
-      "Lightweight, easy to carry and store"
+      "2000W peak motor",
+      "48V 15Ah removable battery, up to 70-mile range",
+      "Full suspension",
+      "Fat tires",
+      "5 riding modes, 7-speed",
+      "IPX6 water resistance"
     ],
     "pros": [
-      "Light and genuinely portable",
-      "Long-range battery option reaches up to 80 miles",
-      "Hydraulic brakes at an affordable price",
-      "One of the best-selling e-bikes on Amazon"
+      "Very comfortable full suspension",
+      "Long rated range",
+      "Removable battery for indoor charging",
+      "Handles pavement, gravel, and sand"
     ],
     "cons": [
-      "Smaller tires limit rough-terrain use",
-      "Lighter frame means a lower weight capacity than fat-tire models",
-      "Accessories add up",
-      "Single-speed gearing on steep hills"
+      "Heavy, like most fat-tire bikes",
+      "Top speed exceeds Class 2 limits in many areas — check local rules",
+      "Assembly required"
     ],
     "network_ids": {
-      "amazon": "B0D9PNJ747"
+      "amazon": "B0HF478B8L"
     },
     "image_url": "",
     "best_for": [
       "best-overall",
-      "budget",
+      "commuting"
+    ],
+    "specs": {
+      "Motor": "2000W peak",
+      "Battery": "48V 15Ah, removable",
+      "Range": "Up to 70 miles",
+      "Top speed": "30 mph",
+      "Suspension": "Full",
+      "Gearing": "7-speed, 5 riding modes"
+    },
+    "date_added": "2026-11-27",
+    "date_updated": "2026-11-27"
+  },
+  {
+    "slug": "heybike-ranger-2-folding",
+    "name": "Heybike Ranger 2.0 Folding E-Bike",
+    "brand": "Heybike",
+    "category": "electric-bikes",
+    "rating": 4.5,
+    "verdict": "The best folding e-bike — a fat-tire, step-thru frame that folds for the car trunk or apartment, with a 600Wh battery.",
+    "description": "The Ranger 2.0 solves the biggest e-bike problem: where to put it. The frame folds, so it fits in a car trunk, a closet, or a small apartment, and the step-thru design makes it easy to get on and off. Don't let the folding frame fool you, though. Its 20-inch fat tires handle rough pavement and dirt, the motor is rated at 2000W peak, and the removable 600Wh battery is rated for up to 70 miles.",
+    "features": [
+      "Folding frame, step-thru design",
+      "2000W peak motor",
+      "600Wh removable battery, up to 70 miles",
+      "20\" fat tires",
+      "Up to 30+ mph"
+    ],
+    "pros": [
+      "Folds for storage and transport",
+      "Easy step-thru frame",
+      "Fat tires for all-terrain riding",
+      "Big 600Wh battery"
+    ],
+    "cons": [
+      "Heavier than non-fat-tire folders",
+      "Top speed exceeds Class 2 limits in many areas — check local rules",
+      "Smaller wheels feel twitchier at speed"
+    ],
+    "network_ids": {
+      "amazon": "B0GKNQRS57"
+    },
+    "image_url": "",
+    "best_for": [
       "folding",
       "commuting"
     ],
     "specs": {
-      "motor_watts": 819,
-      "battery_volts": 48,
-      "range_miles": 80,
-      "top_speed_mph": 20,
-      "weight_lbs": 49,
-      "tire_size": "20x2.4",
-      "frame": "Folding",
-      "brakes": "Hydraulic disc",
-      "gears": "Single-speed",
-      "warranty_years": 1
+      "Motor": "2000W peak",
+      "Battery": "600Wh, removable",
+      "Range": "Up to 70 miles",
+      "Top speed": "30+ mph",
+      "Tires": "20\" fat tire",
+      "Frame": "Folding step-thru"
     },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-11-18"
+    "date_added": "2026-11-27",
+    "date_updated": "2026-11-27"
   },
   {
-    "slug": "aventon-soltera-3-adv",
-    "name": "Aventon Soltera 3 ADV Electric Bike",
-    "brand": "Aventon",
+    "slug": "gotrax-r1-folding",
+    "name": "Gotrax R1 Folding E-Bike",
+    "brand": "Gotrax",
     "category": "electric-bikes",
-    "price_usd": 1399,
-    "rating": 4.5,
-    "verdict": "The best lightweight commuter e-bike — a torque sensor that rewards your effort in a clean, bike-like package.",
-    "description": "The Aventon Soltera 3 ADV is for riders who want a light, bike-like electric ride rather than a heavy motorcycle-style e-bike. The torque sensor multiplies your pedaling effort so assist feels natural, and the lightweight frame means it still rides well even with the power off. The 250W motor (500W peak) handles commutes and errands with around 50 miles of range, and the hidden battery keeps the look clean. Integrated lighting and a Shimano drivetrain make it a practical, good-looking daily commuter.",
+    "rating": 4.3,
+    "verdict": "The best lightweight and budget e-bike — just 45 pounds, folds up, and has a gentle 350W motor for easy commutes.",
+    "description": "The Gotrax R1 is the e-bike for people who don't want a heavy machine. At about 45 pounds it's light for an e-bike, and the folding frame makes it easy to carry up stairs or toss in a trunk. The 350W motor tops out at 20 mph, which keeps it within common e-bike rules and makes it approachable for new riders. A 48V battery is rated for up to 40 miles on the lowest pedal-assist level, and an LCD display shows your speed and five assist levels.",
     "features": [
-      "Torque sensor for natural pedal assist",
-      "250W motor (500W peak)",
-      "Up to ~50 mile range",
-      "Lightweight, bike-like frame",
-      "Hidden battery with clean styling"
+      "350W motor, 20 mph top speed",
+      "48V battery, up to 40 miles (pedal-assist 1)",
+      "Folding 20\" frame",
+      "Weighs about 45 lbs",
+      "LCD display, 5 pedal-assist levels"
     ],
     "pros": [
-      "Torque sensor feels natural and rewards effort",
-      "Light enough to ride comfortably unpowered",
-      "Clean, understated e-bike look",
-      "Practical integrated lighting"
+      "Light and easy to carry",
+      "Folds for storage",
+      "20 mph top speed is beginner-friendly",
+      "Affordable"
     ],
     "cons": [
-      "Pricier than entry-level e-bikes",
-      "Lower peak power than fat-tire models",
-      "Road-oriented — limited off-road ability",
-      "No full suspension"
+      "Less power for steep hills",
+      "Rated range is at the lowest assist level",
+      "No suspension"
     ],
     "network_ids": {
-      "amazon": "B0HNDHH4MZ"
+      "amazon": "B0C1VN5VPN"
     },
     "image_url": "",
     "best_for": [
-      "commuting",
+      "budget",
+      "folding",
       "lightweight",
+      "commuting"
+    ],
+    "specs": {
+      "Motor": "350W",
+      "Battery": "48V",
+      "Range": "Up to 40 miles (PAS 1)",
+      "Top speed": "20 mph",
+      "Weight": "About 45 lbs",
+      "Wheels": "20\", folding frame"
+    },
+    "date_added": "2026-11-27",
+    "date_updated": "2026-11-27"
+  },
+  {
+    "slug": "jasion-eb5-max",
+    "name": "Jasion EB5 MAX Fat-Tire E-Bike",
+    "brand": "Jasion",
+    "category": "electric-bikes",
+    "rating": 4.5,
+    "verdict": "A powerful fat-tire mountain e-bike with commuter extras — cruise control, fenders, and a rear rack included.",
+    "description": "The EB5 MAX takes Jasion's popular EB5 and adds muscle and practicality. The motor is rated at 2000W peak, the 48V 15Ah (720Wh) battery gives you plenty of range, and 26×4-inch fat tires grip loose ground. What makes it great for daily riding are the extras that usually cost more: cruise control for long flat stretches, fenders to keep you clean, and a rear rack for bags or groceries.",
+    "features": [
+      "2000W peak motor",
+      "48V 15Ah (720Wh) battery",
+      "26\" × 4\" fat tires",
+      "28+ mph top speed",
+      "Cruise control",
+      "Fenders and rear rack included"
+    ],
+    "pros": [
+      "Strong motor for hills",
+      "Cruise control on long rides",
+      "Fenders and rack included",
+      "Fat tires add stability"
+    ],
+    "cons": [
+      "Heavy",
+      "Top speed exceeds Class 2 limits in many areas — check local rules",
+      "Front suspension only"
+    ],
+    "network_ids": {
+      "amazon": "B0GT6LP9BD"
+    },
+    "image_url": "",
+    "best_for": [
+      "commuting"
+    ],
+    "specs": {
+      "Motor": "2000W peak",
+      "Battery": "48V 15Ah (720Wh)",
+      "Tires": "26\" × 4\" fat tire",
+      "Top speed": "28+ mph",
+      "Extras": "Cruise control, fenders, rear rack"
+    },
+    "date_added": "2026-11-27",
+    "date_updated": "2026-11-27"
+  },
+  {
+    "slug": "jasion-eb5",
+    "name": "Jasion EB5 Electric Mountain Bike",
+    "brand": "Jasion",
+    "category": "electric-bikes",
+    "rating": 4.4,
+    "verdict": "A great-value commuter and trail e-bike — a 26-inch mountain frame, front suspension, and a 7-speed drivetrain.",
+    "description": "The original EB5 is one of the most popular entry-level e-bikes for good reason. Its 26-inch mountain-bike frame and front suspension fork handle bike paths and light trails comfortably, and the 7-speed drivetrain lets you pedal efficiently when you want the exercise. The motor is rated at 1000W peak, and the removable battery is rated for up to 40 miles, which covers most commutes with charge to spare.",
+    "features": [
+      "1000W peak motor",
+      "Removable battery, up to 40 miles",
+      "26\" mountain frame",
+      "Front fork suspension",
+      "7-speed drivetrain"
+    ],
+    "pros": [
+      "Strong value",
+      "Comfortable front suspension",
+      "Removable battery",
+      "Works on paths and light trails"
+    ],
+    "cons": [
+      "Shorter rated range than bigger-battery models",
+      "No fenders or rack included",
+      "Assembly required"
+    ],
+    "network_ids": {
+      "amazon": "B0GVL2N9HF"
+    },
+    "image_url": "",
+    "best_for": [
+      "budget",
+      "commuting",
       "fitness"
     ],
     "specs": {
-      "motor_watts": 500,
-      "battery_volts": 36,
-      "range_miles": 50,
-      "top_speed_mph": 20,
-      "weight_lbs": 47,
-      "tire_size": "700c",
-      "frame": "Step-over",
-      "brakes": "Hydraulic disc",
-      "gears": "Shimano",
-      "warranty_years": 2
+      "Motor": "1000W peak",
+      "Range": "Up to 40 miles",
+      "Battery": "Removable",
+      "Wheels": "26\"",
+      "Suspension": "Front fork",
+      "Gearing": "7-speed"
     },
-    "date_added": "2026-04-22",
-    "date_updated": "2026-11-18"
+    "date_added": "2026-11-27",
+    "date_updated": "2026-11-27"
   }
 ]
