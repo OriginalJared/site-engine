@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T16:48:52.867025+00:00",
+  "checked_at": "2026-11-27T17:00:36.656845+00:00",
   "results": [
     {
       "asin": "B0GR1JTFP8",
@@ -115,7 +115,7 @@
       "expected": "Jasion EB5",
       "title": "Jasion EB5 Electric Bike for Adults 1000W Peak, 26\" Mountain Ebike 7-Speed | Removable Battery Commuting Electric Mountain Bike,Up to 40Miles,Front Fork Suspension Ebike",
       "has_offer": true,
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "price": "$299.99"
     },
     {
@@ -151,7 +151,7 @@
       "expected": "Jasion EB5 MAX (fat tire)",
       "title": "Jasion EB5 MAX Electric Bike for Adults 2000W Peak Motor, 48V 15Ah Battery | 720Wh Battery Electric Mountain Bike, 26'' x 4'' Fat Tire Ebike, 28+MPH Speed, Cruise Control, Fenders, Rear Rack",
       "has_offer": true,
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "IN_STOCK",
       "price": "$699.99"
     }
   ]
