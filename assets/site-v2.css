@@ -668,3 +668,37 @@ main.guide-page.wide-page { max-width:1120px; }
 }
 .product-features li { position:relative; padding-left:34px !important; }
 .product-features li::before { position:absolute !important; left:12px !important; top:50% !important; transform:translateY(-50%); margin:0 !important; }
+
+/* ===== v16: mobile pass ===== */
+.dept-links a.dept-seeall { background:#111; color:#fff !important; }
+.product-card { min-width:0; max-width:100%; box-sizing:border-box; }
+.cat-products > * { min-width:0; }
+@media (max-width: 700px) {
+  .category-nav .catnav-inner { gap:8px 16px; padding:10px 0; }
+  .catnav-link { font-size:.78rem; }
+  .home-feature-row { display:flex !important; flex-direction:column; }
+  .home-feature-row .home-feature { order:1; }
+  .home-feature-row .home-picks { order:2; }
+  .home-feature-row .home-latest { order:3; }
+  .home-feature .feat-img img { max-height:240px; }
+  .photo-grid:not(.guides-index-grid) { display:flex !important; overflow-x:auto; scroll-snap-type:x mandatory; gap:14px; padding:2px 2px 12px; margin:0 -4px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .photo-grid:not(.guides-index-grid)::-webkit-scrollbar { display:none; }
+  .photo-grid:not(.guides-index-grid) > .photo-card { flex:0 0 78%; scroll-snap-align:start; }
+  .gift-block { background:#14251d; padding:20px 16px 12px; }
+  .guides-block { padding:20px 16px; }
+  .block-head { flex-wrap:wrap; gap:4px 12px; }
+  .cat-hero-media .photo-trio, .guide-hero-media .photo-trio { aspect-ratio:16/8; }
+  .pick-media .cover-tile.cover-tile-img { height:200px; }
+  .dept:nth-of-type(4n+2) { margin-left:-8px; margin-right:-8px; }
+}
+@media (max-width: 700px) {
+  .dept-img-lg.has-img { max-height:190px; }
+  .dept-img-lg.has-img img { max-height:170px; object-fit:contain; }
+  .dept-updated { display:none; }
+  .dept-grid3 { display:flex !important; overflow-x:auto; scroll-snap-type:x mandatory; gap:14px; padding-bottom:8px; scrollbar-width:none; }
+  .dept-grid3::-webkit-scrollbar { display:none; }
+  .dept-grid3 > .dept-card { flex:0 0 72%; scroll-snap-align:start; }
+  .dept-grid3 .dept-img.has-img { height:150px; display:flex; align-items:center; justify-content:center; }
+  .dept-grid3 .dept-img.has-img img { max-height:130px; object-fit:contain; }
+  .dept { margin-bottom:22px; }
+}
