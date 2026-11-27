@@ -833,3 +833,11 @@ h1, h2, h3, h4,
   .cmp-vs { width:50px; height:50px; margin:-6px auto; }
   .cmp-choose-grid, .cmp-pc-grid { grid-template-columns:1fr; }
 }
+
+/* ===== v22: price chips never cover small photos ===== */
+.dept-price-line { margin:6px 0 0; }
+.dept-price-line .price-chip { position:static; flex-direction:row; align-items:center; gap:6px; }
+.price-chip { left:8px; bottom:8px; gap:2px; }
+.pc-amt { font-size:.78rem; padding:3px 8px; }
+.pc-deal { font-size:.62rem; padding:2px 7px; }
+.dept-card .price-chip, .hx-tile-art .price-chip { flex-direction:row; align-items:center; gap:5px; }
