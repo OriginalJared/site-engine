@@ -6,7 +6,7 @@
     <title>{{PRODUCT_NAME}} Review | {{SITE_NAME}}</title>
     <meta name="description" content="{{PRODUCT_VERDICT}}" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="/assets/site-v2.css?v=10" />
+    <link rel="stylesheet" href="/assets/site-v2.css?v=11" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 {{HEAD_EXTRA}}
 </head>
@@ -56,7 +56,7 @@
                     <div class="product-buybox">
                         <div class="buybox-top">
                             <div class="buybox-price">{{PRICE_DISPLAY}}</div>
-                            <a class="cta cta-lg" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon &rarr;</a>
+                            <a class="cta cta-lg cta-buy" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">{{BUY_LABEL}}</a>
                         </div>
                         <p class="buybox-disclosure">As an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Prices come from Amazon and are accurate as of the date/time shown; any price on Amazon at the time of purchase applies.</p>
                     </div>
@@ -98,7 +98,7 @@
                     <strong>Ready to buy the {{PRODUCT_NAME}}?</strong>
                     <span class="price-note-inline">{{PRICE_INLINE}}</span>
                 </div>
-                <a class="cta cta-lg" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">Check Price on Amazon &rarr;</a>
+                <a class="cta cta-lg cta-buy" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">{{BUY_LABEL}}</a>
             </div>
 
             <div class="reviewer-byline">
@@ -106,14 +106,12 @@
             </div>
         </article>
 
-        <hr class="section-divider" />
-
-        <aside class="category-sidebar">
-            <h2>More in {{PRIMARY_CATEGORY_NAME}}</h2>
-            <ul class="sidebar-list">
-                {{SIDEBAR_LINKS}}
-            </ul>
-        </aside>
+        <section class="product-alternatives">
+            <h2>Other picks in {{PRIMARY_CATEGORY_NAME}}</h2>
+            {{ALTERNATIVES}}
+            <p class="alt-more"><a href="{{PRIMARY_CATEGORY_URL}}">See all {{PRIMARY_CATEGORY_NAME}} &rarr;</a></p>
+        </section>
+        <div class="mobile-buybar"><span class="mb-name">{{PRODUCT_NAME}}</span><a class="cta cta-buy" href="{{AFFILIATE_URL}}" rel="nofollow sponsored noopener" target="_blank">{{BUY_LABEL}}</a></div>
     </main>
 
     <footer class="site-footer">
