@@ -501,6 +501,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         nav_items.append(f'<a class="catnav-link catnav-accent" href="{hub_href_for("gifts")}">Gift Guides</a>')
     if guides:
         nav_items.append('<a class="catnav-link" href="/guides/">Buying Guides</a>')
+        nav_items.append('<a class="catnav-link" href="/compare/">Comparisons</a>')
     nav_items.extend(dept_items)
     nav_items.append('<a class="catnav-link catnav-all" href="/best/">All Categories</a>')
     category_nav = '<nav class="category-nav" aria-label="Browse categories"><div class="container catnav-inner">' + "".join(nav_items) + '</div></nav>'
@@ -1315,6 +1316,10 @@ def product_gallery_html(p: Dict[str, Any]) -> str:
     return "".join(out)
 
 
+def _no_price_text(t: str) -> str:
+    return t
+
+
 def review_figure_html(p: Dict[str, Any]) -> str:
     """A second Amazon photo beside the review text (a different angle from the hero)."""
     gal = [u for u in (p.get("gallery") or []) if real_image(u)]
@@ -1396,6 +1401,7 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{COVER_TILE}}", product_gallery_html(p))
         .replace("{{BUY_LABEL}}", buy_label_html(p))
         .replace("{{REVIEW_FIGURE}}", review_figure_html(p))
+        .replace("{{RELATED_LINKS}}", as_str(p.get("related_html")))
         .replace("{{ALTERNATIVES}}", as_str(p.get("alternatives_html")))
         .replace("{{STARS}}", stars_html(p.get("rating")))
         .replace("{{BADGE}}", badge_html(p.get("badge")))
@@ -1690,6 +1696,89 @@ def build_guide_head_extra(guide: Dict[str, Any], site_url: str, site_name: str,
     return "\n    ".join(parts)
 
 
+COMPARE_OUT = ROOT / "compare"
+
+
+SPEC_LABELS = {"anc": "Noise cancelling", "battery_hours_buds": "Battery, earbuds (hours)", "battery_hours_total": "Battery, with case (hours)",
+               "weight_g_per_bud": "Weight per earbud (g)", "warranty_years": "Warranty (years)", "battery_life_hours": "Battery life (hours)",
+               "battery_life_min": "Battery life (minutes)", "suction_pa": "Suction (Pa)", "noise_db": "Noise (dB)", "gps": "GPS", "ecg": "ECG",
+               "display_size_mm": "Display size (mm)", "pump_bars": "Pump pressure (bars)", "portafilter_mm": "Portafilter (mm)",
+               "water_tank_oz": "Water tank (oz)", "water_tank_ml": "Water tank (ml)", "dustbin_ml": "Dustbin (ml)", "driver_mm": "Driver size (mm)"}
+
+
+def _spec_label(k: str) -> str:
+    k = as_str(k)
+    if k in SPEC_LABELS:
+        return SPEC_LABELS[k]
+    m = re.match(r"^(.*)_(mm|g|ml|oz|pa|db|min|hours|mah|w|in)$", k)
+    unit = {"mm": "mm", "g": "g", "ml": "ml", "oz": "oz", "pa": "Pa", "db": "dB", "min": "min", "hours": "hours", "mah": "mAh", "w": "W", "in": "in"}
+    if m:
+        base = m.group(1).replace("_", " ")
+        return f"{base[:1].upper()}{base[1:]} ({unit[m.group(2)]})"
+    k = k.replace("_", " ")
+    return k[:1].upper() + k[1:] if k.islower() else k
+
+
+def _spec_val(v: Any) -> str:
+    if isinstance(v, bool):
+        return "Yes" if v else "No"
+    if isinstance(v, list):
+        return ", ".join(as_str(x) for x in v)
+    return as_str(v)
+
+
+def build_compare_page(a: Dict[str, Any], b: Dict[str, Any]) -> Dict[str, str]:
+    """Head-to-head page assembled only from our own reviewed product data."""
+    def _short(n):
+        return re.sub(r"\s*\([^)]*\)", "", n).strip()
+    sa, sb = _short(as_str(a.get("name"))), _short(as_str(b.get("name")))
+    ra = float(a.get("rating") or 0)
+    rb = float(b.get("rating") or 0)
+    winner = a if ra > rb else b if rb > ra else None
+    def card(p):
+        href = escape(f"/reviews/{as_str(p.get('slug'))}/", quote=True)
+        bits = sale_price_bits(p)
+        asof = f'<p class="cmp-asof">Price {bits["asof"]}</p>' if bits else ""
+        win = '<span class="cmp-win">Our pick</span>' if winner is p else ""
+        return (f'<div class="cmp-card">{win}<a class="cmp-media" href="{href}">{cover_tile_html(p)}</a>'
+                f'<p class="cmp-brand">{escape(as_str(p.get("brand")))}</p><h3><a href="{href}">{escape(as_str(p.get("name")))}</a></h3>'
+                f'<p class="cmp-rating">{escape(str(p.get("rating") or ""))} / 5 &middot; our rating</p>'
+                f'<p class="cmp-verdict">{escape(strip_price_text(as_str(p.get("verdict"))))}</p>'
+                f'<a class="cta cta-buy" href="{escape(as_str(p.get("affiliate_url")), quote=True)}" rel="nofollow sponsored noopener" target="_blank">{buy_label_html(p)}</a>{asof}</div>')
+    sa_specs, sb_specs = a.get("specs") or {}, b.get("specs") or {}
+    keys = [k for k in sa_specs if k in sb_specs] + [k for k in sa_specs if k not in sb_specs] + [k for k in sb_specs if k not in sa_specs]
+    rows = "".join(f'<tr><th>{escape(_spec_label(k))}</th><td>{escape(_spec_val(sa_specs.get(k, "—")))}</td><td>{escape(_spec_val(sb_specs.get(k, "—")))}</td></tr>' for k in keys[:12])
+    table = (f'<section class="cmp-specs"><h2>Specs side by side</h2><div class="cmp-table-wrap"><table class="cmp-table">'
+             f'<thead><tr><th></th><th>{escape(sa)}</th><th>{escape(sb)}</th></tr></thead><tbody>{rows}</tbody></table></div></section>') if rows else ""
+    def pc(p, short):
+        pros = "".join(f"<li>{escape(strip_price_text(as_str(x)))}</li>" for x in (p.get("pros") or [])[:5])
+        cons = "".join(f"<li>{escape(strip_price_text(as_str(x)))}</li>" for x in (p.get("cons") or [])[:4])
+        return (f'<div class="cmp-pc"><h3 class="cmp-pc-name">{escape(short)}</h3><div class="pros-cons"><div class="pros"><h3>What we like</h3><ul>{pros}</ul></div>'
+                f'<div class="cons"><h3>Worth noting</h3><ul>{cons}</ul></div></div></div>')
+    def choose(p, other, short):
+        theirs = [as_str(x) for x in (other.get("best_for") or [])]
+        mine = [as_str(t) for t in (p.get("best_for") or []) if as_str(t) not in theirs]
+        tags = ", ".join(slug_to_display(t).lower() for t in mine[:3])
+        line = f" It's the better fit if you care most about: {escape(tags)}." if tags else ""
+        return (f'<div class="cmp-choose"><h3>Choose the {escape(short)} if&hellip;</h3>'
+                f'<p>{escape(strip_price_text(as_str(p.get("verdict"))))}{line}</p></div>')
+    if winner is not None:
+        lose = b if winner is a else a
+        bottom = (f"Both are excellent, but the {_short(as_str(winner.get('name')))} edges ahead in our ratings "
+                  f"({winner.get('rating')} vs {lose.get('rating')}). Pick the {_short(as_str(lose.get('name')))} if its strengths below match how you'll use it.")
+    else:
+        bottom = f"It's a genuine tie in our ratings ({ra} each). Let the 'Choose it if' notes below decide."
+    body = (f'<div class="cmp-head">{card(a)}<div class="cmp-vs">VS</div>{card(b)}</div>'
+            f'<section class="cmp-bottom"><h2>The bottom line</h2><p>{escape(bottom)}</p></section>'
+            f'<section class="cmp-choose-grid">{choose(a, b, sa)}{choose(b, a, sb)}</section>'
+            f'{table}<section class="cmp-pcs"><h2>Pros and cons</h2><div class="cmp-pc-grid">{pc(a, sa)}{pc(b, sb)}</div></section>')
+    title = f"{sa} vs {sb}: Which Should You Buy?"
+    desc = (f"{sa} vs {sb} compared side by side: specs, pros and cons, and which one we'd buy. Live Amazon prices, checked daily.")[:160]
+    intro = (f"The {sa} and the {sb} are two of the most popular picks in {slug_to_display(as_str(a.get('category'))).lower()}. "
+             f"Here's how they compare on the things that matter, based on our reviews of both.")
+    return {"title": title, "description": desc, "intro": intro, "body": body}
+
+
 def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
                       related_cta: str, faq_html: str, head_extra: str, body_override=None,
                       toc_nav: str = "", section_bar: str = "", share_row: str = "", hero_media: str = "") -> str:
@@ -1854,15 +1943,14 @@ def build_product_head_extra(p: Dict[str, Any], site_url: str, site_name: str) -
         review = {
             "@type": "Review",
             "reviewRating": {"@type": "Rating", "ratingValue": rating, "bestRating": 5, "worstRating": 1},
-            "author": {"@type": "Person", "name": reviewer},
+            "author": {"@type": "Organization" if reviewer == site_name else "Person", "name": reviewer},
             "publisher": {"@type": "Organization", "name": site_name},
         }
         if verdict:
             review["reviewBody"] = verdict
         product_ld["review"] = review
-    if price is not None:
-        product_ld["offers"] = {"@type": "Offer", "priceCurrency": "USD", "price": price,
-                                "availability": "https://schema.org/InStock", "url": canonical}
+    # No price in structured data: search engines cache it for days, and Amazon prices
+    # may only be shown with a current timestamp (shown on the page itself instead).
 
     breadcrumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": site_url + "/"},
@@ -2116,6 +2204,20 @@ def main():
             p["primary_category_name"] = cat_slug or "All Products"
             niche = cat_slug
         p["sidebar_links"] = build_sidebar_links(niche, categories, exclude_slug=cat_slug)
+        # "Keep reading" links: this niche's buying guide + gift guides that feature the product.
+        _rel = []
+        _g = guide_by_niche.get(niche)
+        if _g:
+            _rel.append((f"/guides/{as_str(_g.get('slug'))}/", "Buying guide", as_str(_g.get("title"))))
+        _pslug = as_str(p.get("slug"))
+        for _c in categories:
+            if isinstance(_c.get("products"), list) and _pslug in [as_str(x) for x in _c["products"]] and as_str(_c.get("slug")) != cat_slug:
+                _rel.append((f"/best/{as_str(_c.get('slug'))}/", "Featured in", as_str(_c.get("name"))))
+            if len(_rel) >= 4:
+                break
+        p["related_html"] = ('<section class="keep-reading"><h2>Keep reading</h2><div class="kr-grid">' + "".join(
+            f'<a class="kr-card" href="{escape(h, quote=True)}"><span class="kr-kicker">{escape(k)}</span><span class="kr-title">{escape(_no_price_text(t))}</span></a>'
+            for h, k, t in _rel) + '</div></section>') if _rel else ""
         reviewer = niche_to_reviewer.get(cat_slug, {})
         p["reviewer_name"] = reviewer.get("name", "")
         p["reviewer_role"] = reviewer.get("role", "")
@@ -2352,6 +2454,44 @@ def main():
     ac_html = re.sub(r'<a href="/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", ac_html, count=1)
     write_text(CAT_OUT / "index.html", ac_html)
 
+    # ---- Comparison pages (/compare/a-vs-b/) ----
+    compare_urls = []
+    try:
+        _pairs = json.loads((DATA_DIR / "comparisons.json").read_text(encoding="utf-8")).get("pairs") or []
+    except Exception:
+        _pairs = []
+    if COMPARE_OUT.exists():
+        shutil.rmtree(COMPARE_OUT)
+    _cmp_links = []
+    for _pr in _pairs:
+        _a, _b = slug_to_product.get(as_str(_pr.get("a"))), slug_to_product.get(as_str(_pr.get("b")))
+        if not _a or not _b or not guide_template:
+            continue
+        _cslug = f"{as_str(_a.get('slug'))}-vs-{as_str(_b.get('slug'))}"
+        _cp = build_compare_page(_a, _b)
+        _curl = f"{site_url}/compare/{_cslug}/"
+        _chead = "\n    ".join(list(FAVICON_LINKS) + [f'<link rel="canonical" href="{escape(_curl, quote=True)}" />'] + _og_meta(_cp["title"], _cp["description"], _curl, site_name, og_type="article"))
+        _chtml = render_guide_page(guide_template, {"title": _cp["title"], "description": _cp["description"], "intro": _cp["intro"]},
+                                   site_name, site_tagline, "", "", _chead, body_override=_cp["body"],
+                                   share_row=share_row_html(_curl, _cp["title"]),
+                                   hero_media=photo_trio_html([_a, _b], 2))
+        _chtml = _chtml.replace('<a href="/guides/">Buying Guides</a>', '<a href="/compare/">Comparisons</a>')
+        write_text(COMPARE_OUT / _cslug / "index.html", _chtml)
+        compare_urls.append(_curl)
+        _cmp_links.append((f"/compare/{_cslug}/", _cp["title"], [_a, _b]))
+        search_index.append({"t": _cp["title"], "u": f"/compare/{_cslug}/", "k": "Comparison"})
+    if _cmp_links:
+        _cards = "".join(photo_card_html(h, t, "Specs, pros and cons, and which one we'd buy.", ps, i, "See the comparison &rarr;", "Head to head")
+                         for i, (h, t, ps) in enumerate(_cmp_links))
+        _ci = render_guide_page(guide_template, {"title": "Comparisons", "description": "Head-to-head comparisons of popular products.",
+                                "intro": "Can't decide between two popular picks? We put them side by side."}, site_name, site_tagline, "", "",
+                                "\n    ".join(list(FAVICON_LINKS) + _og_meta("Comparisons", "Head-to-head product comparisons.", f"{site_url}/compare/", site_name)),
+                                body_override='<div class="photo-grid photo-grid-3 guides-index-grid">' + _cards + '</div>')
+        _ci = re.sub(r'<a href="/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", _ci, count=1)
+        write_text(COMPARE_OUT / "index.html", _ci)
+        compare_urls.append(f"{site_url}/compare/")
+        write_text(ROOT / "search-index.v1.js", "window.__HALCOTT_SEARCH__=" + json.dumps(search_index, ensure_ascii=False) + ";")
+    print(f"Generated {len(_cmp_links)} comparison page(s).")
     urls = [f"{site_url}/"]
     urls.append(f"{site_url}/best/")
     for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
@@ -2365,6 +2505,7 @@ def main():
         pslug = as_str(p.get("slug"))
         urls.append(f"{site_url}/reviews/{pslug}/")
     urls.extend(guide_urls)
+    urls.extend(compare_urls)
     urls = sorted(set(urls))
     write_text(SITEMAP_XML, build_sitemap(urls))
     write_text(ROBOTS_TXT, build_robots(site_url))
