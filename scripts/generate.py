@@ -2056,6 +2056,8 @@ def main():
             .replace("{{TOC_NAV}}", toc_nav)
             .replace("{{GUIDE_LINK}}", guide_link)
             .replace("{{TOP_PICK}}", pick_cards)
+            .replace("{{HERO_MEDIA}}", photo_trio_html(_rated(matched)))
+            .replace("{{HERO_CLASS}}", " has-media" if photo_trio_html(_rated(matched)) else "")
             .replace("{{SECTION_BAR}}", section_bar)
             .replace("{{SHARE_ROW}}", share_row_html(f"{site_url}/generated/categories/{cslug}/", f"{name} | {site_name}"))
             .replace("{{PROMO_BOX}}", promo_box_html())
@@ -2179,7 +2181,10 @@ def main():
                 continue
             _seen_labels.add(label.lower())
             _links.append(f'<li><a href="{escape("/generated/categories/" + cs + "/", quote=True)}">{escape(label)}</a></li>')
-        dept_boxes.append(f'<div class="allcat-box"><h2><a href="{_hub_href}">{escape(slug_to_display(_niche))}</a></h2>'
+        _trio = photo_trio_html(_rated(products_by_niche.get(_niche, [])))
+        dept_boxes.append(f'<div class="allcat-box" style="--tint:{PASTELS[len(dept_boxes) % len(PASTELS)]}">'
+                          + (f'<a class="allcat-media" href="{_hub_href}">{_trio}</a>' if _trio else '')
+                          + f'<h2><a href="{_hub_href}">{escape(slug_to_display(_niche))}</a></h2>'
                           + (f'<ul>{"".join(_links)}</ul>' if _links else '')
                           + f'<a class="allcat-more" href="{_hub_href}">See all {escape(display_noun(slug_to_display(_niche)))} &rarr;</a></div>')
     ac_desc = f"Every product category reviewed by {site_name}, from 4K monitors to running shoes."
@@ -2188,6 +2193,7 @@ def main():
     ac_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("All Categories", ac_desc, f"{site_url}/generated/categories/", site_name, og_type="website"))
     ac_html = render_guide_page(guide_template, ac_page, site_name, site_tagline, "", "", ac_head,
                                 body_override='<div class="allcat-grid">' + "".join(dept_boxes) + '</div>')
+    ac_html = ac_html.replace('<main class="container guide-page', '<main class="container guide-page wide-page', 1)
     ac_html = re.sub(r'<a href="/generated/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", ac_html, count=1)
     write_text(GENERATED_DIR / "categories" / "index.html", ac_html)
 
