@@ -1,25 +1,78 @@
 {
-  "_note": "Homepage hero. Each item is checked at build time: products must be in stock with an Amazon photo, categories must exist. Invalid items are skipped. No prices or dollar amounts here.",
+  "_note": "Homepage hero. Each item is checked at build time: products must be in stock with an Amazon photo, categories must exist. Invalid items are skipped. No prices or dollar amounts here. Tiles: the first 4 valid ones are shown; extras are backups.",
   "rail_title": "Best of the Best",
   "rail_sub": "Our top picks and most-read buying guides",
   "rail": [
-    {"category": "laptops", "headline": "The Best Laptops of 2026: Our Top Picks for Work, School and Play"},
-    {"category": "robot-vacuums", "headline": "Best Robot Vacuums: The Ones Worth Handing Your Floors To"},
-    {"category": "wireless-earbuds", "headline": "Best Wireless Earbuds for Every Ear and Budget"},
-    {"category": "air-fryers", "headline": "Best Air Fryers: Crispy Dinners Without the Oil"},
-    {"category": "mattresses", "headline": "Best Mattresses for Better Sleep Tonight"}
+    {
+      "category": "laptops",
+      "headline": "The Best Laptops of 2026: Our Top Picks for Work, School and Play"
+    },
+    {
+      "category": "robot-vacuums",
+      "headline": "Best Robot Vacuums: The Ones Worth Handing Your Floors To"
+    },
+    {
+      "category": "wireless-earbuds",
+      "headline": "Best Wireless Earbuds for Every Ear and Budget"
+    },
+    {
+      "category": "air-fryers",
+      "headline": "Best Air Fryers: Crispy Dinners Without the Oil"
+    },
+    {
+      "category": "mattresses",
+      "headline": "Best Mattresses for Better Sleep Tonight"
+    }
   ],
   "lead": {
     "category": "gifts",
     "kicker": "Black Friday",
     "headline": "Black Friday Is Here. These Are the Gifts Worth Grabbing First",
     "dek": "Every pick is in stock and checked against live Amazon data each day, so you can skip the endless scrolling and go straight to the good stuff.",
-    "images": ["apple-watch-series-10", "sony-wh-1000xm5", "ninja-dz201-foodi-dualzone", "jbl-charge-5", "breville-bambino-plus", "logitech-g-pro-x-superlight-2"]
+    "images": [
+      "apple-watch-series-10",
+      "sony-wh-1000xm5",
+      "ninja-dz201-foodi-dualzone",
+      "jbl-charge-5",
+      "breville-bambino-plus",
+      "logitech-g-pro-x-superlight-2"
+    ]
   },
   "tiles": [
-    {"product": "apple-macbook-air-13-m5", "headline": "The Laptop We'd Hand to Almost Anyone This Year", "color": "yellow"},
-    {"category": "robot-vacuums", "image": "dreame-x50-ultra", "headline": "Never Push a Mop Again: The Robot That Vacuums, Mops and Cleans Itself", "color": "mint"},
-    {"category": "over-ear-headphones", "image": "sony-wh-1000xm5", "headline": "Turn Down the World: Our Favorite Noise-Canceling Headphones", "color": "lavender"},
-    {"category": "espresso-machines", "image": "breville-bambino-plus", "headline": "Café-Style Lattes at Home, No Barista Training Required", "color": "coral"}
+    {
+      "product": "apple-macbook-air-13-m5",
+      "headline": "The Laptop We'd Hand to Almost Anyone This Year",
+      "color": "yellow"
+    },
+    {
+      "category": "robot-vacuums",
+      "image": "dreame-x50-ultra",
+      "headline": "Never Push a Mop Again: The Robot That Vacuums, Mops and Cleans Itself",
+      "color": "mint"
+    },
+    {
+      "category": "over-ear-headphones",
+      "image": "sony-wh-1000xm5",
+      "headline": "Turn Down the World: Our Favorite Noise-Canceling Headphones",
+      "color": "lavender"
+    },
+    {
+      "category": "espresso-machines",
+      "image": "breville-bambino-plus",
+      "headline": "Café-Style Lattes at Home, No Barista Training Required",
+      "color": "coral"
+    },
+    {
+      "category": "bluetooth-speakers",
+      "image": "jbl-charge-5",
+      "headline": "The Party Speaker That Survives Pool Splashes and Backyard Bashes",
+      "color": "sky"
+    },
+    {
+      "category": "smartwatches",
+      "image": "apple-watch-series-10",
+      "headline": "Is It Time for a Smartwatch? Our Favorites for Every Wrist",
+      "color": "yellow"
+    }
   ]
 }
