@@ -12,15 +12,15 @@
   ],
   "title_raw": "Sony WH-1000XM5 Premium Noise Cancelling Wireless Headphones, Black | Auto NC Optimizer, Up to 30 Hrs of Battery, Carrying Case, Crystal Clear Calls, Touch Control, Multipoint Connection",
   "title_clean": "Sony WH-1000XM5 Premium Noise Cancelling Wireless Headphones",
-  "price_usd": null,
-  "price_display": null,
+  "price_usd": 161.49,
+  "price_display": "$161.49",
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "OUT_OF_STOCK",
-  "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T19:29:02.890727+00:00"
+  "availability_type": "IN_STOCK_SCARCE",
+  "availability_message": "Only 1 left in stock - order soon.",
+  "fetched_at": "2026-11-27T21:29:53.229639+00:00"
 }

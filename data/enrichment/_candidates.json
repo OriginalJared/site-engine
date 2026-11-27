@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T19:29:05.573038+00:00",
+  "checked_at": "2026-11-27T21:29:55.783274+00:00",
   "results": [
     {
       "asin": "B0GR1JTFP8",
@@ -43,8 +43,8 @@
       "expected": "Lenovo ThinkPad X1 Carbon Gen 14",
       "title": "Lenovo 2026 ThinkPad X1 Carbon Gen 14 with Core Ultra 5 335, OLED Non-Touch | 512GB SSD, 32GB LPDDR5X-8533MT/s RAM, Intel Series 3 vPro Processor, 14\" 2.8K VRR 30-120Hz OLED, 3x Thunderbolt 4 -21V7006DUS",
       "has_offer": true,
-      "availability": "IN_STOCK_SCARCE",
-      "price": "$2,039.00"
+      "availability": "IN_STOCK",
+      "price": "$2,039.99"
     },
     {
       "asin": "B0HF6JLFS2",
@@ -89,7 +89,7 @@
       "title": "Lenovo Yoga 7i 2-in-1 Laptop 2026, 16\" 2K Touchscreen, Intel Ultra 5 322 | 46 TOPS NPU AI Laptop, 16GB LPDDR5X 1TB SSD, Win 11 Pro, Copilot+PC, WiFi 7, Backlit KB, Fingerprint, 360° Convertible Design",
       "has_offer": true,
       "availability": "IN_STOCK",
-      "price": "$1,169.99"
+      "price": "$1,139.99"
     },
     {
       "asin": "B0HJVBQ9H3",
@@ -115,7 +115,7 @@
       "expected": "Jasion EB5",
       "title": "Jasion EB5 Electric Bike for Adults 1000W Peak, 26\" Mountain Ebike 7-Speed | Removable Battery Commuting Electric Mountain Bike,Up to 40Miles,Front Fork Suspension Ebike",
       "has_offer": true,
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "price": "$299.99"
     },
     {
@@ -124,8 +124,8 @@
       "expected": "Heybike Ranger 2.0 (folding)",
       "title": "Heybike Ranger 2.0 Folding Electric Bike for Adults, 2000W Peak Motor Ebike | 600Wh Removable Battery, Up to 30+MPH & 70 Miles, 20\" Fat Tire All-Terrain E Bike, Step-Thru Foldable Electric Bicycle-BG",
       "has_offer": true,
-      "availability": "IN_STOCK_SCARCE",
-      "price": "$679.99"
+      "availability": "OUT_OF_STOCK",
+      "price": null
     },
     {
       "asin": "B0C1VN5VPN",
@@ -151,7 +151,7 @@
       "expected": "Jasion EB5 MAX (fat tire)",
       "title": "Jasion EB5 MAX Electric Bike for Adults 2000W Peak Motor, 48V 15Ah Battery | 720Wh Battery Electric Mountain Bike, 26'' x 4'' Fat Tire Ebike, 28+MPH Speed, Cruise Control, Fenders, Rear Rack",
       "has_offer": true,
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "price": "$699.99"
     }
   ]

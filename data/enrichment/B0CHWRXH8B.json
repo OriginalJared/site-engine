@@ -12,15 +12,15 @@
   ],
   "title_raw": "Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C Charging, Up to 2X More Active Noise Cancelling Bluetooth Headphones, Transparency Mode, Adaptive, Personalized Spatial Audio, White",
   "title_clean": "Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C",
-  "price_usd": 196.35,
-  "price_display": "$196.35",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T19:29:02.938780+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-27T21:29:53.286806+00:00"
 }
