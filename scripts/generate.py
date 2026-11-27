@@ -687,11 +687,20 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                     print(f"WARNING: homepage story {niche}/{as_str(st.get('category'))} invalid (pick not on that page); skipped")
             if new_side:
                 side = new_side
+        # Fill empty side slots with other well-rated picks from this department (links to their reviews).
+        if len(side) < 3:
+            _taken = {as_str(lead_p.get("slug"))} | {as_str(p.get("slug")) for _, p, _ in side}
+            for q in _rated([q for q in nprods if _pimg(q)]):
+                if len(side) >= 3:
+                    break
+                if as_str(q.get("slug")) not in _taken:
+                    _taken.add(as_str(q.get("slug")))
+                    side.append((None, q, None))
         dept_idx += 1
         three_up = (dept_idx % 2 == 1) and len(side) >= 2
         if three_up:
             side = side[:2]
-        side_slugs = {as_str(c.get("slug")) for c, _, _ in side}
+        side_slugs = {as_str(c.get("slug")) for c, _, _ in side if c}
         rest = [c for c in subs if as_str(c.get("slug")) not in side_slugs]
         link_bits = []
         for c in rest:
@@ -708,21 +717,33 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                      f'<h3><a href="{lead_href}">{lead_title}</a></h3>'
                      f'<p class="dept-dek">{lead_dek}</p>{updated}</article>')
         side_html = ""
+        def _side_href(c, p):
+            if c is None:
+                return escape("/generated/products/" + as_str(p.get("slug")) + "/", quote=True)
+            return escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+        def _side_title(c, p, st):
+            if st:
+                return escape(as_str(st.get("headline")))
+            if c is None:
+                return escape(as_str(p.get("name")))
+            return escape(_dept_headline(c, False))
         for c, p, st in side:
-            href = escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
-            s_title = escape(as_str(st.get("headline"))) if st else escape(_dept_headline(c, False))
-            s_dek = escape(as_str(st.get("dek"))) if st and as_str(st.get("dek")) else _dept_dek(p)
+            href = _side_href(c, p)
+            s_title = _side_title(c, p, st)
+            s_dek = (escape(as_str(st.get("dek"))) if st and as_str(st.get("dek"))
+                     else escape(_no_price(as_str(p.get("verdict")))) if c is None else _dept_dek(p))
             side_html += (f'<article class="dept-item">{_dept_thumb(p, href, "dept-img")}'
                           f'<div class="dept-item-txt"><h3><a href="{href}">{s_title}</a></h3>'
                           f'<p class="dept-dek">{s_dek}</p>{updated}</div></article>')
         if three_up:
             cards = [(lead_href, lead_p, lead_title, lead_dek)]
             for c, p, st in side:
-                href = escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+                href = _side_href(c, p)
                 cards.append((href,
                               p,
-                              escape(as_str(st.get("headline"))) if st else escape(_dept_headline(c, False)),
-                              escape(as_str(st.get("dek"))) if st and as_str(st.get("dek")) else _dept_dek(p)))
+                              _side_title(c, p, st),
+                              escape(as_str(st.get("dek"))) if st and as_str(st.get("dek"))
+                              else escape(_no_price(as_str(p.get("verdict")))) if c is None else _dept_dek(p)))
             body_html = '<div class="dept-grid3">' + "".join(
                 f'<article class="dept-card">{_dept_thumb(p, h, "dept-img")}'
                 f'<h3><a href="{h}">{t}</a></h3><p class="dept-dek">{d}</p>{updated}</article>'
@@ -1009,11 +1030,11 @@ def pros_cons_html(pros: Any, cons: Any) -> str:
     parts = []
     parts.append('<div class="pros-cons">')
     if pro_list:
-        parts.append('<div class="pros"><h3>✅ What We Like</h3><ul>')
+        parts.append('<div class="pros"><h3>What we like</h3><ul>')
         parts.extend(f"<li>{escape(p)}</li>" for p in pro_list)
         parts.append('</ul></div>')
     if con_list:
-        parts.append('<div class="cons"><h3>⚠️ Worth Noting</h3><ul>')
+        parts.append('<div class="cons"><h3>Worth noting</h3><ul>')
         parts.extend(f"<li>{escape(c)}</li>" for c in con_list)
         parts.append('</ul></div>')
     parts.append('</div>')
@@ -1178,6 +1199,15 @@ def product_gallery_html(p: Dict[str, Any]) -> str:
     return "".join(out)
 
 
+def review_figure_html(p: Dict[str, Any]) -> str:
+    """A second Amazon photo beside the review text (a different angle from the hero)."""
+    gal = [u for u in (p.get("gallery") or []) if real_image(u)]
+    if len(gal) < 2:
+        return ""
+    return (f'<figure class="review-fig"><img src="{escape(gal[1], quote=True)}" '
+            f'alt="{escape(as_str(p.get("name")), quote=True)}" loading="lazy" /></figure>')
+
+
 def buy_label_html(p: Dict[str, Any]) -> str:
     b = sale_price_bits(p)
     if not b:
@@ -1249,6 +1279,7 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra")))
         .replace("{{COVER_TILE}}", product_gallery_html(p))
         .replace("{{BUY_LABEL}}", buy_label_html(p))
+        .replace("{{REVIEW_FIGURE}}", review_figure_html(p))
         .replace("{{ALTERNATIVES}}", as_str(p.get("alternatives_html")))
         .replace("{{STARS}}", stars_html(p.get("rating")))
         .replace("{{BADGE}}", badge_html(p.get("badge")))
