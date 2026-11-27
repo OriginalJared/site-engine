@@ -1,0 +1,12 @@
+{
+  "_note": "Head-to-head pages at /compare/<a>-vs-<b>/. Built only from our reviewed catalog data; a pair is skipped if either product is unavailable.",
+  "pairs": [
+    {"a": "sony-wf-1000xm5", "b": "apple-airpods-pro-2-usbc"},
+    {"a": "sony-wh-1000xm5", "b": "bose-qc-ultra-headphones"},
+    {"a": "apple-macbook-air-13-m5", "b": "microsoft-surface-laptop-7-13-8"},
+    {"a": "dreame-x50-ultra", "b": "roborock-qrevo-curvx"},
+    {"a": "apple-watch-series-10", "b": "samsung-galaxy-watch-7"},
+    {"a": "breville-barista-express", "b": "breville-bambino-plus"},
+    {"a": "ninja-dz201-foodi-dualzone", "b": "cosori-pro-le-l501"}
+  ]
+}
