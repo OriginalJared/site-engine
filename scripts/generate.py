@@ -1102,6 +1102,48 @@ def key_specs_grid(specs: Any) -> str:
     return '<div class="spec-grid">' + "".join(cells) + "</div>"
 
 
+def product_gallery_html(p: Dict[str, Any]) -> str:
+    """Large main photo plus clickable thumbnails (Amazon API images only)."""
+    gal = [u for u in (p.get("gallery") or []) if u]
+    main = as_str(p.get("image_hi")) or (gal[0] if gal else as_str(p.get("image_url")))
+    if not main:
+        return f'<div class="pg-main pg-empty">{cover_tile_html(p, large=True)}</div>'
+    name = escape(as_str(p.get("name")))
+    out = [f'<div class="pg-main"><img id="pg-main-img" src="{escape(main, quote=True)}" alt="{name}" /></div>']
+    if len(gal) > 1:
+        thumbs = "".join(
+            f'<button type="button" class="pg-thumb{" is-active" if i == 0 else ""}" data-src="{escape(u, quote=True)}" aria-label="Photo {i + 1}">'
+            f'<img src="{escape(u, quote=True)}" alt="" loading="lazy" /></button>' for i, u in enumerate(gal))
+        out.append(f'<div class="pg-thumbs">{thumbs}</div>')
+        out.append('<script>document.addEventListener("click",function(e){var b=e.target.closest(".pg-thumb");if(!b)return;'
+                   'document.getElementById("pg-main-img").src=b.getAttribute("data-src");'
+                   'document.querySelectorAll(".pg-thumb").forEach(function(t){t.classList.toggle("is-active",t===b)});});</script>')
+    return "".join(out)
+
+
+def buy_label_html(p: Dict[str, Any]) -> str:
+    b = sale_price_bits(p)
+    if not b:
+        return "Check Price on Amazon &rarr;"
+    was = f'<s class="btn-was">{b["was"]}</s> ' if b.get("was") else ""
+    return f'{was}{b["now"]} on Amazon &rarr;'
+
+
+def alternatives_html(p: Dict[str, Any], pool: List[Dict[str, Any]], limit: int = 4) -> str:
+    """Photo cards for other picks in the same department."""
+    me = as_str(p.get("slug"))
+    others = [q for q in pool if as_str(q.get("slug")) != me]
+    others.sort(key=lambda q: -(float(q.get("rating")) if isinstance(q.get("rating"), (int, float)) else 0))
+    cards = []
+    for q in others[:limit]:
+        href = escape(f"/generated/products/{as_str(q.get('slug'))}/", quote=True)
+        b = sale_price_bits(q)
+        price = (f'<p class="alt-price">{("<s>" + b["was"] + "</s> ") if b.get("was") else ""}{b["now"]}</p>' if b else "")
+        cards.append(f'<a class="alt-card" href="{href}"><div class="alt-media">{cover_tile_html(q)}</div>'
+                     f'<p class="alt-brand">{escape(as_str(q.get("brand")))}</p><h3>{escape(as_str(q.get("name")))}</h3>{price}</a>')
+    return '<div class="alt-grid">' + "".join(cards) + '</div>' if cards else ""
+
+
 def render_product_page(template: str, p: Dict[str, Any]) -> str:
     name = as_str(p.get("name"))
     brand = as_str(p.get("brand"))
@@ -1148,7 +1190,9 @@ def render_product_page(template: str, p: Dict[str, Any]) -> str:
         .replace("{{SITE_NAME}}", escape(site_name))
         .replace("{{SITE_TAGLINE}}", escape(site_tagline))
         .replace("{{HEAD_EXTRA}}", as_str(p.get("head_extra")))
-        .replace("{{COVER_TILE}}", as_str(p.get("cover_tile")))
+        .replace("{{COVER_TILE}}", product_gallery_html(p))
+        .replace("{{BUY_LABEL}}", buy_label_html(p))
+        .replace("{{ALTERNATIVES}}", as_str(p.get("alternatives_html")))
         .replace("{{STARS}}", stars_html(p.get("rating")))
         .replace("{{BADGE}}", badge_html(p.get("badge")))
         .replace("{{KEY_SPECS_GRID}}", key_specs_grid(p.get("specs") or {}))
@@ -1719,6 +1763,10 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
             continue
         if not _enrichment_fresh(e.get("fetched_at")):
             continue  # older than 24h: Amazon data may not be shown
+        if isinstance(e.get("gallery"), list):
+            p["gallery"] = [as_str(u) for u in e["gallery"] if as_str(u).startswith("https://")][:6]
+        if as_str(e.get("image_hi")).startswith("https://"):
+            p["image_hi"] = as_str(e.get("image_hi"))
         img = as_str(e.get("image"))
         if img:
             p["image_url"] = img
@@ -1869,6 +1917,11 @@ def main():
         p["site_tagline"] = site_tagline
         p["head_extra"] = build_product_head_extra(p, site_url, site_name)
         p["cover_tile"] = cover_tile_html(p, large=True)
+    _by_cat = {}
+    for p in products:
+        _by_cat.setdefault(as_str(p.get("category")), []).append(p)
+    for p in products:
+        p["alternatives_html"] = alternatives_html(p, _by_cat.get(as_str(p.get("category")), []))
 
     product_count = 0
     for p in products:

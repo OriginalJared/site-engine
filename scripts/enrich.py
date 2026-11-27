@@ -120,6 +120,14 @@ def _money(m):
 def extract(item):
     asin = getattr(item, "asin", None)
     image = _get(item, "images", "primary", "large", "url") or _get(item, "images", "primary", "medium", "url")
+    image_hi = _get(item, "images", "primary", "hi_res", "url")
+    gallery = [image] if image else []
+    for v in (_get(item, "images", "variants") or []):
+        u = _get(v, "large", "url") or _get(v, "medium", "url")
+        if u and u not in gallery:
+            gallery.append(u)
+        if len(gallery) >= 6:
+            break
     title = _get(item, "item_info", "title", "display_value")
     o2 = getattr(item, "offers_v2", None)
     listings = list(getattr(o2, "listings", None) or []) if o2 else []
@@ -136,6 +144,8 @@ def extract(item):
     return {
         "asin": asin,
         "image": image,
+        "image_hi": image_hi,
+        "gallery": gallery,
         "title_raw": title,
         "title_clean": clean_title(title),
         "price_usd": price_amount,
