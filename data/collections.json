@@ -5,7 +5,14 @@
     "niche": "gifts",
     "description": "Our 2026 holiday gift guides, organized by who you're shopping for. Every pick is a product we've independently researched and verified in stock — no filler, no guesswork, just gifts people actually want. Great for Black Friday and Cyber Monday deal hunting.",
     "tags": [],
-    "products": ["nike-pegasus-41", "ecoflow-delta-2", "blackstone-36-inch-griddle", "wyze-cam-v4", "segway-ninebot-max-g2", "hoka-clifton-9"]
+    "products": [
+      "nike-pegasus-41",
+      "ecoflow-delta-2",
+      "blackstone-36-inch-griddle",
+      "wyze-cam-v4",
+      "segway-ninebot-max-g2",
+      "hoka-clifton-9"
+    ]
   },
   {
     "slug": "gifts-for-outdoor-lovers",
@@ -13,7 +20,14 @@
     "niche": "gifts",
     "description": "The best gifts for campers, tailgaters, backyard cooks, and anyone who'd rather be outside. From portable power that keeps the campsite running to a griddle that turns a parking lot into a kitchen, these are the outdoor gifts worth giving in 2026.",
     "tags": [],
-    "products": ["blackstone-36-inch-griddle", "weber-go-anywhere-charcoal", "ecoflow-delta-2", "jackery-explorer-300", "goal-zero-yeti-700", "segway-ninebot-max-g2"]
+    "products": [
+      "blackstone-36-inch-griddle",
+      "weber-go-anywhere-charcoal",
+      "ecoflow-delta-2",
+      "jackery-explorer-300",
+      "goal-zero-yeti-700",
+      "segway-ninebot-max-g2"
+    ]
   },
   {
     "slug": "gifts-for-runners",
@@ -21,7 +35,14 @@
     "niche": "gifts",
     "description": "Shopping for a runner? These are the shoes they actually want — from the everyday trainer that does it all to the carbon-plated racer built for a PR. Our picks span daily training, max cushion, stability, and race day, so there's a match for every stride.",
     "tags": [],
-    "products": ["nike-pegasus-41", "hoka-clifton-9", "brooks-ghost-16", "on-cloudmonster-2", "asics-gel-kayano-31", "nike-vaporfly-3"]
+    "products": [
+      "nike-pegasus-41",
+      "hoka-clifton-9",
+      "brooks-ghost-16",
+      "on-cloudmonster-2",
+      "asics-gel-kayano-31",
+      "nike-vaporfly-3"
+    ]
   },
   {
     "slug": "gifts-for-smart-home",
@@ -29,6 +50,89 @@
     "niche": "gifts",
     "description": "The smart-home and tech gifts worth giving — security cameras that actually work at night, mesh WiFi that kills dead zones, and backup power for when the grid doesn't cooperate. Options from under $40 to premium, so you can match the gift to the budget.",
     "tags": [],
-    "products": ["ring-outdoor-cam-plus", "wyze-cam-v4", "blink-outdoor-4", "google-nest-cam-battery", "tp-link-deco-xe75", "eero-pro-6e", "anker-solix-c1000"]
+    "products": [
+      "ring-outdoor-cam-plus",
+      "wyze-cam-v4",
+      "google-nest-cam-battery",
+      "ring-indoor-cam-plus",
+      "tp-link-deco-xe75",
+      "eero-pro-6e",
+      "amazon-eero-6-plus"
+    ]
+  },
+  {
+    "slug": "gifts-for-coffee-lovers",
+    "name": "Gifts for Coffee Lovers",
+    "niche": "gifts",
+    "description": "Gifts for anyone who lives for their morning cup, from a cult-favorite manual brewer to café-style espresso at home. Each pick is a well-reviewed machine we'd be happy to give.",
+    "tags": [],
+    "products": [
+      "aeropress-original",
+      "nespresso-vertuo-next",
+      "technivorm-moccamaster-kbgv-select",
+      "casabrews-cm5418",
+      "breville-barista-express",
+      "ninja-cfp307-dualbrew-pro"
+    ]
+  },
+  {
+    "slug": "gifts-for-home-cooks",
+    "name": "Gifts for Home Cooks",
+    "niche": "gifts",
+    "description": "Kitchen gear that earns its counter space: air fryers that make weeknights easier, blenders built to last, and a countertop oven that can do a little of everything.",
+    "tags": [],
+    "products": [
+      "ninja-dz201-foodi-dualzone",
+      "cosori-pro-le-l501",
+      "vitamix-e310-explorian",
+      "kitchenaid-k400-variable-speed",
+      "ninja-ss101-foodi-smoothie-bowl-maker",
+      "breville-smart-oven-air-fryer-pro"
+    ]
+  },
+  {
+    "slug": "gifts-for-gamers",
+    "name": "Gifts for Gamers",
+    "niche": "gifts",
+    "description": "Upgrades a gamer will notice on day one: ultralight wireless mice, fast mechanical keyboards, and gear built for competitive play.",
+    "tags": [],
+    "products": [
+      "logitech-g-pro-x-superlight-2",
+      "razer-deathadder-v3-hyperspeed",
+      "logitech-g502-x-plus",
+      "corsair-k70-pro-tkl",
+      "aula-f75-pro",
+      "asus-rog-strix-scope-ii-96"
+    ]
+  },
+  {
+    "slug": "gifts-for-music-lovers",
+    "name": "Gifts for Music Lovers",
+    "niche": "gifts",
+    "description": "Headphones, earbuds, and speakers for people who always have something playing, from noise-canceling favorites to portable speakers that fill a room.",
+    "tags": [],
+    "products": [
+      "bose-qc-ultra-headphones",
+      "sony-wf-1000xm5",
+      "apple-airpods-pro-2-usbc",
+      "marshall-emberton-ii",
+      "jbl-charge-5",
+      "sonos-roam-2"
+    ]
+  },
+  {
+    "slug": "gifts-for-home-office",
+    "name": "Gifts for the Home Office",
+    "niche": "gifts",
+    "description": "Upgrades for anyone who works from home: a sharper monitor, a better keyboard, a more comfortable chair, and the small things that make long days easier.",
+    "tags": [],
+    "products": [
+      "logitech-mx-mechanical",
+      "asus-proart-pa279crv",
+      "nouhaus-ergo3d",
+      "fezibo-48x24-electric",
+      "tp-link-deco-xe75",
+      "jbl-tune-770nc"
+    ]
   }
 ]
