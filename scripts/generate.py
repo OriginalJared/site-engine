@@ -593,6 +593,61 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         rail_html = f'<div class="home-picks"><h2>Top Picks</h2><div class="hp-tiles">{rail}</div></div>'
         featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
 
+    # ---- Bold CNET-style hero (data/hero.json); falls back to the featured block above ----
+    try:
+        _hero_cfg = json.loads((DATA_DIR / "hero.json").read_text(encoding="utf-8"))
+    except Exception:
+        _hero_cfg = None
+    def _hx_np(t):
+        return re.sub(r"\s*\$\s?\d[\d,]*(?:\.\d+)?", "", t)
+    if isinstance(_hero_cfg, dict):
+        _by_slug = {as_str(q.get("slug")): q for lst in products_by_niche.values() for q in lst}
+        _cat_slugs = {as_str(c.get("slug")) for c in categories}
+        def _hp(slug):
+            q = _by_slug.get(as_str(slug))
+            return q if q and _pimg(q) else None
+        def _chref(slug):
+            return escape(f"/generated/categories/{slug}/", quote=True) if as_str(slug) in _cat_slugs else ""
+        rail_items = []
+        for it in _hero_cfg.get("rail") or []:
+            h = _chref(it.get("category"))
+            if h and as_str(it.get("headline")):
+                rail_items.append(f'<li><a href="{h}">{escape(_hx_np(as_str(it.get("headline"))))}</a></li>')
+        L = _hero_cfg.get("lead") or {}
+        lead_href = _chref(L.get("category"))
+        lead_imgs = [q for q in (_hp(x) for x in (L.get("images") or [])) if q][:6]
+        tiles = []
+        for it in _hero_cfg.get("tiles") or []:
+            if it.get("product"):
+                q = _hp(it.get("product"))
+                h = escape(f"/generated/products/{as_str(it.get('product'))}/", quote=True) if q else ""
+            else:
+                q = _hp(it.get("image"))
+                h = _chref(it.get("category")) if q else ""
+            if q and h and as_str(it.get("headline")):
+                tiles.append((h, q, _hx_np(as_str(it.get("headline"))), as_str(it.get("color")) or "yellow"))
+        if lead_href and lead_imgs and as_str(L.get("headline")) and len(tiles) >= 2:
+            floats = "".join(
+                f'<span class="hx-float hx-f{i + 1}"><img src="{escape(_pimg(q), quote=True)}" alt="{escape(as_str(q.get("name")), quote=True)}" /></span>'
+                for i, q in enumerate(lead_imgs))
+            lead_html = (f'<a class="hx-lead" href="{lead_href}">'
+                         f'<div class="hx-lead-art"><span class="hx-burst">{escape(as_str(L.get("kicker")) or "Top Picks")}</span>{floats}</div>'
+                         f'<div class="hx-lead-txt"><h2>{escape(_hx_np(as_str(L.get("headline"))))}</h2>'
+                         f'<p>{escape(_hx_np(as_str(L.get("dek"))))}</p>'
+                         f'<span class="hx-lead-cta">Shop the gift guides &rarr;</span></div></a>')
+            tiles_html = "".join(
+                f'<a class="hx-tile hx-{escape(col, quote=True)}" href="{h}"><div class="hx-tile-art">'
+                f'<img src="{escape(_pimg(q), quote=True)}" alt="{escape(as_str(q.get("name")), quote=True)}" loading="lazy" /></div>'
+                f'<h3>{escape(t)}</h3></a>' for h, q, t, col in tiles[:4])
+            rail_html2 = (f'<aside class="hx-rail"><div class="hx-rail-head"><p class="hx-rail-kicker">{escape(as_str(_hero_cfg.get("rail_title")) or "Best of the Best")}</p>'
+                          f'<p class="hx-rail-sub">{escape(as_str(_hero_cfg.get("rail_sub")))}</p></div>'
+                          f'<ul>{"".join(rail_items)}</ul>'
+                          f'<a class="hx-rail-more" href="/generated/categories/">All categories &rarr;</a></aside>') if rail_items else ""
+            featured_block = (f'<section class="hx">{rail_html2}<div class="hx-main">{lead_html}'
+                              f'<div class="hx-tiles">{tiles_html}</div></div></section>')
+        else:
+            print("WARNING: hero.json lead/tiles invalid; using automatic featured block")
+
     niche_sections = []
     def _no_price(t):
         t = re.sub(r"\s*\((?:[^()]*\$\d[^()]*)\)", "", t)
