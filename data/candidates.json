@@ -1,7 +1,107 @@
 {
   "note": "Products under consideration. The daily Amazon step looks these up and saves the results to data/enrichment/_candidates.json for review. Nothing here is published until it is added to data/products/.",
   "candidates": [
-    {"asin": "B0DZDCPMGK", "for": "laptops", "expected": "Apple MacBook Air 13-inch (M4, 2025)"},
-    {"asin": "B0DZG4YPGL", "for": "laptops", "expected": "Apple MacBook Air 13-inch (M4, 2025), 16GB"}
+    {
+      "asin": "B0GR1JTFP8",
+      "for": "laptops",
+      "expected": "Apple MacBook Air 13-inch (M5, 2026)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GR114BV7",
+      "for": "laptops",
+      "expected": "Apple MacBook Air 15-inch (M5, 2026)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0CHF298QR",
+      "for": "laptops",
+      "expected": "Dell 14 Plus (Core Ultra 7 258V, 32GB)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HQN83G2K",
+      "for": "laptops",
+      "expected": "ASUS Zenbook 14 OLED",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HFT7M5GP",
+      "for": "laptops",
+      "expected": "Lenovo ThinkPad X1 Carbon Gen 14",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HF6JLFS2",
+      "for": "laptops",
+      "expected": "ASUS ROG Zephyrus G14 (RTX 5080)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0DZZWMB2L",
+      "for": "laptops",
+      "expected": "ASUS ROG Strix G16 (2025)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GRBR36RL",
+      "for": "laptops",
+      "expected": "Acer Chromebook Plus 514",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0G1S7C7J4",
+      "for": "laptops",
+      "expected": "Microsoft Surface Laptop 7 (13.8-inch, Snapdragon X Plus)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HNVQ6NCG",
+      "for": "laptops",
+      "expected": "Lenovo Yoga 7i 2-in-1 16-inch (2026)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HJVBQ9H3",
+      "for": "laptops",
+      "expected": "Lenovo IdeaPad Slim 3i 15.6-inch",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GTFH1DNL",
+      "for": "laptops",
+      "expected": "Acer Aspire Go 15",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GVL2N9HF",
+      "for": "electric-bikes",
+      "expected": "Jasion EB5",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GKNQRS57",
+      "for": "electric-bikes",
+      "expected": "Heybike Ranger 2.0 (folding)",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0C1VN5VPN",
+      "for": "electric-bikes",
+      "expected": "Gotrax R1 20-inch folding",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0HF478B8L",
+      "for": "electric-bikes",
+      "expected": "Jasion RetroVolt",
+      "browser_checked": "2026-11-26 in stock"
+    },
+    {
+      "asin": "B0GT6LP9BD",
+      "for": "electric-bikes",
+      "expected": "Jasion EB5 MAX (fat tire)",
+      "browser_checked": "2026-11-26 in stock"
+    }
   ]
 }
