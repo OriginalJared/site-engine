@@ -244,7 +244,7 @@ TAG_CATEGORY_TEMPLATES = {
 # Natural-sounding page names for tag-based categories ({niche} is the niche display name).
 # Tags not listed fall back to "Best {niche} for {tag}". Slugs (URLs) are unaffected.
 TAG_NAME_PHRASES = {
-    "compact": "Best Compact {niche}", "versatile": "Most Versatile {niche}", "budget-premium": "Best Mid-Range {niche}",
+    "compact": "Best Compact {niche}", "folding": "Best Folding {niche}", "2-in-1": "Best 2-in-1 {niche}", "versatile": "Most Versatile {niche}", "budget-premium": "Best Mid-Range {niche}",
     "non-wifi": "Best Non-Wi-Fi {niche}", "lightweight": "Best Lightweight {niche}", "wireless": "Best Wireless {niche}",
     "portable": "Best Portable {niche}", "automatic": "Best Automatic {niche}", "single-serve": "Best Single-Serve {niche}",
     "one-touch": "Best One-Touch {niche}", "cushioned": "Best Cushioned {niche}", "ergonomic": "Best Ergonomic {niche}",
@@ -707,8 +707,8 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             tags = c.get("tags") or []
             label = slug_to_display(tags[0]) if len(tags) == 1 else _no_price(as_str(c.get("name")))
             link_bits.append(f'<a href="{escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)}">{escape(label)}</a>')
-        see_all = f'<a href="{hub_href}">see all in {escape(display)}</a>'
-        links_html = (", ".join(link_bits) + ", or " + see_all) if link_bits else see_all
+        see_all = f'<a class="dept-seeall" href="{hub_href}">See all {escape(display)} &rarr;</a>'
+        links_html = " ".join(link_bits + [see_all])
         updated = f'<p class="dept-updated">Updated {escape(UPDATED_LABEL)}</p>'
         lead_href = hub_href
         lead_title = escape(as_str(lead_story.get("headline"))) if lead_story else escape(_dept_headline(hub_cat or {"niche": niche}, True))
