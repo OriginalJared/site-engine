@@ -764,3 +764,5 @@ main.guide-page.wide-page { max-width:1120px; }
   .hx-tile h3 { font-size:1rem; }
   .hx-rail-kicker { font-size:1.35rem; }
 }
+.hx-tile-art img { filter:none; }
+.hx-tile-art { isolation:auto; }
