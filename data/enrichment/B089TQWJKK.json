@@ -1,6 +1,15 @@
 {
   "asin": "B089TQWJKK",
   "image": "https://m.media-amazon.com/images/I/41rM5ZQZZwL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41rM5ZQZZwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+3tQ+MWlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510bma4LnmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mA0fEPjXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jEbJ3PdFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41eVQ5FzBpL._SL500_.jpg"
+  ],
   "title_raw": "Ninja Foodi Air Fryer, 8 Qt DualZone, 6-in-1, Grey, DZ201 | Air fry, roast, broil, bake, reheat, dehydrate, 2 independent baskets, Smart Finish, Match Cook",
   "title_clean": "Ninja Foodi Air Fryer, 8 Qt DualZone, 6-in-1, Grey, DZ201",
   "price_usd": 128.69,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.417736+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012278+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B073ZGWN12",
   "image": "https://m.media-amazon.com/images/I/310A7MbDdTL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/310A7MbDdTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/419MhkuTjdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uddlptPvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41q4LoPaWrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Mg0XwqOgL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vSQkY2A7L._SL500_.jpg"
+  ],
   "title_raw": "Breville Nespresso Original Essenza Mini Espresso Machine | Piano black compact espresso machine with 19 bar pressure, 25 second heat-up and 2 programmable cup sizes: Espresso, Lungo.",
   "title_clean": "Breville Nespresso Original Essenza Mini Espresso Machine",
   "price_usd": 174.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "AVAILABLE_DATE",
   "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.440294+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021037+00:00"
 }

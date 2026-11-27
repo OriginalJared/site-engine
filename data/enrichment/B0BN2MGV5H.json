@@ -1,6 +1,15 @@
 {
   "asin": "B0BN2MGV5H",
   "image": "https://m.media-amazon.com/images/I/31K9NLoXncL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31K9NLoXncL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41kogmBjaoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51yMiqaFsoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41R1BFMxGOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51QfuKohR5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513tSWfM8zL._SL500_.jpg"
+  ],
   "title_raw": "BLUEAIR Air Purifiers for Home Large Room up to 3,235 Ft², Blue 211i Max | Wirecutter Pick, WiFi, Auto Mode, Quiet 23dB, HEPASilent Filtration, AHAM Verified, Pre-Filter, Pet Hair Allergens Dust Smoke",
   "title_clean": "BLUEAIR Air Purifiers for Home Large Room up to 3",
   "price_usd": 199.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.420832+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013415+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0D79ND3N7",
   "image": "https://m.media-amazon.com/images/I/21loPKn5T+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/21loPKn5T+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41pmRzCwIHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jwkGcPs+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jh+XsXeJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51hrI4LcoqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31iaQuncfUL._SL500_.jpg"
+  ],
   "title_raw": "Google Pixel Buds Pro 2 - Wireless Bluetooth Earbuds - Hazel | Pro-level Active Noise Cancellation, help from Gemini, twist-to-adjust fit, 30-hour battery, Adaptive Audio",
   "title_clean": "Google Pixel Buds Pro 2",
   "price_usd": 167.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.474026+00:00"
+  "fetched_at": "2026-11-27T16:46:06.033338+00:00"
 }

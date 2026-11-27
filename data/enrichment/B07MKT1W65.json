@@ -1,10 +1,19 @@
 {
   "asin": "B07MKT1W65",
   "image": "https://m.media-amazon.com/images/I/41pKuLpSyzL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41pKuLpSyzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31DFvmnQ9hL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/411w-gG7jVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+++E6PbKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/312r8Cwnq7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31YaXJPtSyL._SL500_.jpg"
+  ],
   "title_raw": "LG 27UL850-W 27 Inch UltraFine (3840 x 2160) IPS Display with VESA DisplayHDR 400 and USB Type-C Connectivity, White",
   "title_clean": "LG 27UL850-W 27 Inch UltraFine (3840 x 2160) IPS Display with VESA",
-  "price_usd": 349.99,
-  "price_display": "$349.99",
+  "price_usd": 346.99,
+  "price_display": "$346.99",
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
@@ -12,6 +21,6 @@
   "deal_end": null,
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 20 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.417245+00:00"
+  "availability_message": "Only 9 left in stock - order soon.",
+  "fetched_at": "2026-11-27T16:46:06.012106+00:00"
 }

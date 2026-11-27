@@ -1,6 +1,15 @@
 {
   "asin": "B01728NLRG",
   "image": "https://m.media-amazon.com/images/I/31pCHKKqN2L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31pCHKKqN2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51yWAG7ec4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41OVuzDHvML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41zO+pw2L6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41nTt3bN7FL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Sz3exyqkL._SL500_.jpg"
+  ],
   "title_raw": "COWAY Air Purifier for Home Up to 1,748ft², HEPA Filter for Smoke, Allergies, Pet Dander, Odor, Air Quality Monitor, Auto&Eco Mode, Timer, Filter Indicator, 3yr Warranty, Mighty AP-1512HH(W), White",
   "title_clean": "COWAY Air Purifier for Home Up to 1",
   "price_usd": 143.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.420595+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013342+00:00"
 }

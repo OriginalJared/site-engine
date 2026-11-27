@@ -1,6 +1,15 @@
 {
   "asin": "B0D92D198P",
   "image": "https://m.media-amazon.com/images/I/41Dyq2uIE+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Dyq2uIE+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GBer5M83L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lfj+fm-tL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NpXbccs2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31BiMatn75L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41y04tVbXuL._SL500_.jpg"
+  ],
   "title_raw": "Nike Pegasus 41 Men's Road Running Shoes (FD2722-104, Black/Anthracite/Black) Size 10",
   "title_clean": "Nike Pegasus 41 Men's Road Running Shoes (FD2722-104",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.465132+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030017+00:00"
 }

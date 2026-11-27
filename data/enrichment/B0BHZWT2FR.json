@@ -1,6 +1,15 @@
 {
   "asin": "B0BHZWT2FR",
   "image": "https://m.media-amazon.com/images/I/41+Bbs8B57L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41+Bbs8B57L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CLTy0CXsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51MtpRiBABL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51gGeQiSPeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51KAwxDvwnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41F7TLf8FrL._SL500_.jpg"
+  ],
   "title_raw": "Amazon Fire HD 10 tablet, built for relaxation, 10.1\" vibrant Full HD screen, octa-core processor, 3 GB RAM, 64 GB, Lilac",
   "title_clean": "Amazon Fire HD 10 tablet",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.472162+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032684+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09GM8JZM9",
   "image": "https://m.media-amazon.com/images/I/41NRmVQ4HrL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41NRmVQ4HrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41TG-KnJRqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KQAu+oXvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41IhgFCYgmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41riT8WF7DL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51hqnuaszgL._SL500_.jpg"
+  ],
   "title_raw": "HelloBaby No WiFi Baby Monitor Camera and Audio HB6550, 5\" Video Screen | Trusted by 10M+ Families, 30H Battery, PTZ, Private No-WiFi, Night Vision, 1000ft, Easy Setup, 2-Way Talk, VOX, Travel Ready",
   "title_clean": "HelloBaby No WiFi Baby Monitor Camera and Audio HB6550",
   "price_usd": 56.98,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.424291+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014764+00:00"
 }

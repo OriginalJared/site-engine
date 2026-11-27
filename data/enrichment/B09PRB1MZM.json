@@ -1,6 +1,15 @@
 {
   "asin": "B09PRB1MZM",
   "image": "https://m.media-amazon.com/images/I/31JjLZD+50L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31JjLZD+50L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GsowZ41dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51vkb22oW3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41MgRDEvCbL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CTuulqz0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51nD2LbkWXL._SL500_.jpg"
+  ],
   "title_raw": "TP-Link Deco X55 AX3000 WiFi 6 Mesh System, Deco X55(3-pack) | Covers up to 6500 Sq.Ft. , Replaces Wireless Router and Extender, 3 Gigabit ports per unit, supports Ethernet Backhaul",
   "title_clean": "TP-Link Deco X55 AX3000 WiFi 6 Mesh System, Deco X55",
   "price_usd": 142.39,
@@ -8,10 +17,10 @@
   "was_price_usd": 195.29,
   "was_price_label": "List Price:",
   "savings_percent": 27,
-  "deal_badge": "Black Friday Deal",
+  "deal_badge": "Deal selling fast",
   "deal_end": "2026-12-03T07:59:59Z",
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.451520+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025322+00:00"
 }

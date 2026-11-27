@@ -1,6 +1,10 @@
 {
   "asin": "B0HN1FCXC7",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "Dual Blaze® 6.8-Quart Smart Air Fryer",
   "title_clean": "Dual Blaze® 6.8-Quart Smart Air Fryer",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.418881+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012659+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09T4YZGQR",
   "image": "https://m.media-amazon.com/images/I/41wr7gt2e+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41wr7gt2e+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TGbRdtN6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/514D6LjX0eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513s3zDJA8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51KEqWiapFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51+grhRzDAL._SL500_.jpg"
+  ],
   "title_raw": "Shark AI Ultra Robot Vacuum, Black/Silver, Carpet and Hard Floors, AV2511AE | Matrix Clean Navigation for Carpet, Hard Floors & Pet Hair, HEPA, Powerful Suction, Anti-Hair Wrap, LiDAR Mapping, Wi-Fi",
   "title_clean": "Shark AI Ultra Robot Vacuum",
   "price_usd": 249.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.464684+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029860+00:00"
 }

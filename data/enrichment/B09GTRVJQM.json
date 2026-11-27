@@ -1,6 +1,15 @@
 {
   "asin": "B09GTRVJQM",
   "image": "https://m.media-amazon.com/images/I/41ODC2Uu41L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41ODC2Uu41L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51MX5AhCpfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51kKZBua1dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51NuS0TEBPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+J3taGAKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51UusamiLzL._SL500_.jpg"
+  ],
   "title_raw": "Levoit Air Purifiers for Bedroom Home Pets Dorm Room, Small Air Purifiers | Filter Cleaner with Fragrance Sponge, Filters Smoke, Allergens, Pet Dander, Odor, Dust, Office, Desktop, Core Mini-P, White",
   "title_clean": "Levoit Air Purifiers for Bedroom Home Pets Dorm Room",
   "price_usd": 37.98,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.421257+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013553+00:00"
 }

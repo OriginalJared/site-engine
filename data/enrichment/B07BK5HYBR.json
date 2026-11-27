@@ -1,17 +1,26 @@
 {
   "asin": "B07BK5HYBR",
   "image": "https://m.media-amazon.com/images/I/41Padnn85UL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Padnn85UL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41diKHQSayL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51fcaE+U1VL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+d5OIRo1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AHdrbFf0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+nzORIEaL._SL500_.jpg"
+  ],
   "title_raw": "Cuisinart DGB-800C Fully Automatic 12-Cup Burr Grind & BrewTM Coffeemaker, Black/Silver, 1 Count, Silver",
   "title_clean": "Cuisinart DGB-800C Fully Automatic 12-Cup Burr Grind & BrewTM",
-  "price_usd": 399.99,
-  "price_display": "$399.99",
+  "price_usd": 459.97,
+  "price_display": "$459.97",
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "AVAILABLE_DATE",
-  "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.429796+00:00"
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T16:46:06.016991+00:00"
 }

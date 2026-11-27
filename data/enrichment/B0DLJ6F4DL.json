@@ -1,6 +1,10 @@
 {
   "asin": "B0DLJ6F4DL",
   "image": "https://m.media-amazon.com/images/I/31GUcPV+z5L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31GUcPV+z5L._SL500_.jpg"
+  ],
   "title_raw": "Samsung Galaxy Tab S10 Ultra 14.6” AMOLED Touchscreen, 256GB SSD Tablet with S-Pen (Wi-Fi Only, 12GB RAM, Fingerprint Reader, Android 14 OS) US Version, Moonstone Gray, SM-X920NZAAXAR",
   "title_clean": "Samsung Galaxy Tab S10 Ultra 14.6” AMOLED Touchscreen",
   "price_usd": 1255.79,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 7 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.471698+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032530+00:00"
 }

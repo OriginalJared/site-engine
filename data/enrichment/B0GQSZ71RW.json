@@ -1,6 +1,15 @@
 {
   "asin": "B0GQSZ71RW",
   "image": "https://m.media-amazon.com/images/I/411JZ1iadYL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/411JZ1iadYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51XjYTrf2fL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51RsFKXx3pL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516CA3p10eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41EyiuXIgLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HhjRAlyJL._SL500_.jpg"
+  ],
   "title_raw": "WOLFBOX G900 Tripro Bumper-N 3 Channel 4K Mirror Dash Cam,STARVIS IMX678 | 8MP 4K+2.5K+1080P Front Rear & Bumper Camera,Night Vision,5.8GHz WiFi,12\" Smart Screen for Off-Road & Blind Spot,No SD Card",
   "title_clean": "WOLFBOX G900 Tripro Bumper-N 3 Channel 4K Mirror Dash Cam",
   "price_usd": 308.74,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.435045+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019043+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0BXD5L1M5",
   "image": "https://m.media-amazon.com/images/I/31u-9up9g8L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31u-9up9g8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410ou2paC5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51uq8RG3IdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51HCo+Ec7yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Coj-3MoNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vF2qf93wL._SL500_.jpg"
+  ],
   "title_raw": "DREAME R20 Cordless Vacuum Cleaner with Dual Brush Head, Smart Stick Vacuum for Home, 190AW Powerful Suction, Up to 90 Mins, Blue Lights, Lightweight for Hard Floor, Carpet, Pet Hair",
   "title_clean": "DREAME R20 Cordless Vacuum Cleaner with Dual Brush Head",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.432214+00:00"
+  "fetched_at": "2026-11-27T16:46:06.017951+00:00"
 }

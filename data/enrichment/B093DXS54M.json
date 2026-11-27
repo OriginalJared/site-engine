@@ -1,6 +1,15 @@
 {
   "asin": "B093DXS54M",
   "image": "https://m.media-amazon.com/images/I/41Xw9m11ALS._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Xw9m11ALS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41j7PXIuQaS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KsYadHp4S._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-nW-xtEXS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xF-K4j5lL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41aVWmacRaS._SL500_.jpg"
+  ],
   "title_raw": "Moccamaster 53948 KBGV Select 10-Cup Coffee Maker, Matte Black, 40 ounce, 1.25l",
   "title_clean": "Moccamaster 53948 KBGV Select 10-Cup Coffee Maker",
   "price_usd": 247.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.428652+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016508+00:00"
 }

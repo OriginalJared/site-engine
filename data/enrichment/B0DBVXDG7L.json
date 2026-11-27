@@ -1,6 +1,15 @@
 {
   "asin": "B0DBVXDG7L",
   "image": "https://m.media-amazon.com/images/I/41mf1whZ6kL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41mf1whZ6kL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xJ73mUOBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uorXbTkoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/314tVIch7IL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41zo5YK1PwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/311izfK6EdL._SL500_.jpg"
+  ],
   "title_raw": "OnePlus Pad 2, 12GB RAM, 256GB Storage, Snapdragon 8 Gen 3, 3K+ 144Hz Display, Wi-Fi Gray Nimbus",
   "title_clean": "OnePlus Pad 2, 12GB RAM, 256GB Storage, Snapdragon 8 Gen 3, 3K+ 144Hz",
   "price_usd": 1299.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "LEADTIME",
   "availability_message": "Usually ships within 4 to 5 weeks",
-  "fetched_at": "2026-11-27T00:13:18.472636+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032865+00:00"
 }

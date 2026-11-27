@@ -1,6 +1,15 @@
 {
   "asin": "B0GLK66B85",
   "image": "https://m.media-amazon.com/images/I/41l-HMNvU9L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41l-HMNvU9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415cTxZNHEL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415DGrI1EeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41kPuQZdY2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41cpmow24AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Ne9DKN+oL._SL500_.jpg"
+  ],
   "title_raw": "Brooklyn Bedding Signature Hybrid Queen 13 Inch Mattress, Medium Feel, CERTIPUR-US Certified Foam",
   "title_clean": "Brooklyn Bedding Signature Hybrid Queen 13 Inch Mattress",
   "price_usd": 1025.5,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "LEADTIME",
   "availability_message": "Usually ships within 7 to 8 days",
-  "fetched_at": "2026-11-27T00:13:18.447891+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024159+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09LD8T445",
   "image": "https://m.media-amazon.com/images/I/412xi+Cp8WL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/412xi+Cp8WL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41DYwh1QvFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uzIkLGxWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41si3md9-AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Xv5wyVhmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lbP0IoIIL._SL500_.jpg"
+  ],
   "title_raw": "Philips Sonicare 4100 Rechargeable Electric Toothbrush, 1 Brush Head, White | 700% More Plaque Removal¹, Pressure Sensor, 2 Brush Settings, 2-Minute Guided Timer, 14-Day Battery, HX3681/23",
   "title_clean": "Philips Sonicare 4100 Rechargeable Electric Toothbrush",
   "price_usd": 29.96,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.437807+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020187+00:00"
 }

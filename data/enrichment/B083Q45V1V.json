@@ -1,6 +1,15 @@
 {
   "asin": "B083Q45V1V",
   "image": "https://m.media-amazon.com/images/I/31Vkd6nTDzL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31Vkd6nTDzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41PJngoNFML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KyEjPqi1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/511jgFzssKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/411Hgl+LLeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41W6q+fPEoL._SL500_.jpg"
+  ],
   "title_raw": "ASUS ZenWiFi AX6600 Tri-Band Mesh WiFi 6 System (XT8 2PK) - Whole Home Coverage up to 5500 sq.ft & 6+ Rooms, AiMesh, Included Lifetime Internet Security, Easy Setup, 3 SSID, Parental Control, White",
   "title_clean": "ASUS ZenWiFi AX6600 Tri-Band Mesh WiFi 6 System",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.452726+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025729+00:00"
 }

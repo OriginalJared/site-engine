@@ -1,17 +1,26 @@
 {
   "asin": "B00YEYKK8U",
   "image": "https://m.media-amazon.com/images/I/41o0XxoT2cL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41o0XxoT2cL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51qL+6U185L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4193Rj9X3TL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fxgRptuVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51UDTSpkGBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51H5bENtndL._SL500_.jpg"
+  ],
   "title_raw": "OXO Brew 9-Cup Drip Coffee Maker – Programmable Machine, Stainless Steel | Stainless Steel, Single Serve Or Full Carafe Option, SCA Certified Home Brewer, Temperature Controlled, Rainmaker Shower Head",
   "title_clean": "OXO Brew 9-Cup Drip Coffee Maker",
-  "price_usd": 221.3,
-  "price_display": "$221.30",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.430022+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-27T16:46:06.017081+00:00"
 }

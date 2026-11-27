@@ -1,6 +1,15 @@
 {
   "asin": "B0CX6BL391",
   "image": "https://m.media-amazon.com/images/I/31nLCQ8noRL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31nLCQ8noRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/419mb-NwOqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41TgZXY3gUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ODBZZlcNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51EIXcQjJdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/519E6-+irnL._SL500_.jpg"
+  ],
   "title_raw": "Philips Premium Air Fryer XXL - Air Fry, Bake, Grill, Roast & Reheat, 7.7 Qts Capacity, Rapid Air & Fat Removal Technology, Keep Warm Mode, QuickClean, 5 Smart Chef Programs, Black Copper (HD9867/16)",
   "title_clean": "Philips Premium Air Fryer XXL",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.418438+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012521+00:00"
 }

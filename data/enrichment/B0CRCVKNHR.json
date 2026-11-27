@@ -1,6 +1,15 @@
 {
   "asin": "B0CRCVKNHR",
   "image": "https://m.media-amazon.com/images/I/41DZxrtctzL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41DZxrtctzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jX68pYw9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51oQ6ymU5EL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Bjva7BbLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510SX8-4SZL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/313jMy9LOZL._SL500_.jpg"
+  ],
   "title_raw": "Goal Zero Yeti 700 Portable Power Station, 677Wh LiFePO4, Solar Ready | 600W AC Output with 1000W Surge, 4,000+ Cycle Lifespan, Fast Charging, IPX4 Water & Dust Resistant, for Outdoors & Home",
   "title_clean": "Goal Zero Yeti 700 Portable Power Station",
   "price_usd": 699.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.460752+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028340+00:00"
 }

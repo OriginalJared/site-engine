@@ -1,6 +1,15 @@
 {
   "asin": "B0B8YR3KZS",
   "image": "https://m.media-amazon.com/images/I/41KeAs6Hj9L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41KeAs6Hj9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31TQ-UgNz-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/517C9LYZZlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51w7eSzPEGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51+tZPX8T2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51cp2T67ZuL._SL500_.jpg"
+  ],
   "title_raw": "Amazfit Smart Watch GTR 4 | 46mm, 12-Day Battery, Water-Resistant, Bluetooth Calls & Text, Alexa Built-in, Heart Rate Monitoring, 150 Sports Modes",
   "title_clean": "Amazfit Smart Watch GTR 4",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.468302+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031019+00:00"
 }

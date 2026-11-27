@@ -1,6 +1,15 @@
 {
   "asin": "B0BPJL4KPY",
   "image": "https://m.media-amazon.com/images/I/414ao1CIm0L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/414ao1CIm0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/419eEOrpIzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/413dZlHWg9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412UZkJERCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Gt06353AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WXHhtwkOL._SL500_.jpg"
+  ],
   "title_raw": "Garmin Dash Cam™ Live, 24/7 Live View, Always-Connected Dash Cam",
   "title_clean": "Garmin Dash Cam™ Live",
   "price_usd": 389.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.434589+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018874+00:00"
 }

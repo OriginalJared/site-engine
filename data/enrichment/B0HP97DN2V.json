@@ -1,6 +1,10 @@
 {
   "asin": "B0HP97DN2V",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "Anker SOLIX C1000 Portable Power Station, 1800W (Peak 2400W) Solar Generator, Full Charge in 58 Min, 1056wh LiFePO4 Battery for Home Backup, Power Outages, and Outdoor Camping (Optional Solar Panel)",
   "title_clean": "Anker SOLIX C1000 Portable Power Station",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.459823+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028057+00:00"
 }

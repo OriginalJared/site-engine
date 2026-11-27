@@ -1,6 +1,15 @@
 {
   "asin": "B09J72K6SM",
   "image": "https://m.media-amazon.com/images/I/412Y98thvsL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/412Y98thvsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Tvny7H2gL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415Ra6eM9uL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41t56asQFDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41MpMf1Ks9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41QdO-psQmL._SL500_.jpg"
+  ],
   "title_raw": "Razer Pro Type Ultra Wireless Mechanical Keyboard, Silent Linear Switches | Ergonomic Office Design, Cushioned Wrist Rest, Sound-Dampening Foam, Soft-Touch Keycaps, Connect up to 4 Devices, HyperSpeed",
   "title_clean": "Razer Pro Type Ultra Wireless Mechanical Keyboard",
   "price_usd": 139.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.449031+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024534+00:00"
 }

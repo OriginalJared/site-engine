@@ -1,6 +1,15 @@
 {
   "asin": "B08WSTTCMG",
   "image": "https://m.media-amazon.com/images/I/41Q5cH7akJL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Q5cH7akJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51wBdK1ZrRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Q4s-NCwxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41w6+UpuYML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51aBTPWtu1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417mCqB8pIL._SL500_.jpg"
+  ],
   "title_raw": "Waterpik Sonic-Fusion Flossing Electric Toothbrush Water Flosser, White | 2-in-1 Combo with 3 Modes for Daily Gum Health & Cleaning Teeth, Braces, Implants, ADA Accepted, SF-04 Packaging May Vary",
   "title_clean": "Waterpik Sonic-Fusion Flossing Electric Toothbrush Water Flosser",
   "price_usd": 129.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.438483+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020444+00:00"
 }

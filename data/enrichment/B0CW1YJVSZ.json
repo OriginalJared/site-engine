@@ -1,6 +1,15 @@
 {
   "asin": "B0CW1YJVSZ",
   "image": "https://m.media-amazon.com/images/I/41YFrYdjXwL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41YFrYdjXwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NuvaHWdAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xFp1VmD+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41gDxqrEF9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41OJkNzdw2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qptL0gRwL._SL500_.jpg"
+  ],
   "title_raw": "Marshall Emberton II Portable Bluetooth Waterproof Speaker - Black & Steel | Rugged IP67 Waterproof & Dustproof Design | 30+ Hr Playtime | Loud Stereo Sound & Deep Bass | Wireless for Outdoors & Travel",
   "title_clean": "Marshall Emberton II Portable Bluetooth Waterproof Speaker",
   "price_usd": 89.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.427553+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016068+00:00"
 }

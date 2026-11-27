@@ -1,6 +1,15 @@
 {
   "asin": "B0D5M9SH1X",
   "image": "https://m.media-amazon.com/images/I/41SXsGSBnBL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41SXsGSBnBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Yy0R7EyrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41oVZ0Sjw+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/517g3o5ibUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51J-WMR2JcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410iIjAVLFL._SL500_.jpg"
+  ],
   "title_raw": "EarFun Air Pro 4 Adaptive Hybrid Noise Canceling Wireless Earbuds, Qualcomm Snapdragon Sound, aptX™ Lossless, 6 Mics AI CVC 8.0 Call, LDAC Hi-Res Audio, 52H Playtime, Bluetooth 5.4, in-Ear Detection",
   "title_clean": "EarFun Air Pro 4 Adaptive Hybrid Noise Canceling Wireless Earbuds",
   "price_usd": 50.5,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.474835+00:00"
+  "fetched_at": "2026-11-27T16:46:06.033677+00:00"
 }

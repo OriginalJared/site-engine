@@ -1,6 +1,15 @@
 {
   "asin": "B0BWR3KMYQ",
   "image": "https://m.media-amazon.com/images/I/31qHEqbE39L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31qHEqbE39L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51uX+1SrEaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51aeg0BYi+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51XNA-+7M7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51umh-ze5RL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510PNKBawVL._SL500_.jpg"
+  ],
   "title_raw": "FEZIBO 63\" L Shaped Standing Desk - Adjustable Corner Standing Desk L Shape, L-Shaped Adjustable Table with Splice Board, Vintage-Brown",
   "title_clean": "FEZIBO 63\" L Shaped Standing Desk",
   "price_usd": 259.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.471007+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031888+00:00"
 }

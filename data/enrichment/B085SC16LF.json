@@ -1,6 +1,15 @@
 {
   "asin": "B085SC16LF",
   "image": "https://m.media-amazon.com/images/I/319IyQNkbUL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/319IyQNkbUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41rJvle+cPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/411keeOIXWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412W5u+dqwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41LJ85+52uL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41igdS-YedL._SL500_.jpg"
+  ],
   "title_raw": "Nespresso Vertuo Next Coffee & Espresso Maker by Breville, Light Grey | Light grey coffee machine with slim, sustainable design. Brews 6 cup sizes, espresso to 18 oz., all topped with crema.",
   "title_clean": "Nespresso Vertuo Next Coffee & Espresso Maker by Breville",
   "price_usd": 116.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.429568+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016900+00:00"
 }

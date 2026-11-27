@@ -1,6 +1,15 @@
 {
   "asin": "B08C1DJNR2",
   "image": "https://m.media-amazon.com/images/I/41W-JMkciGS._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41W-JMkciGS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51twtwQbw5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51hDnr69HLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51VK1R5M8lL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51nRaO51mSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51aSQFdbhML._SL500_.jpg"
+  ],
   "title_raw": "Ninja Foodi Personal Blender and Smoothie Maker, 1200PW, SS101 | smartTORQUE motor, Smooth nutrient extractor, (2) 24-oz cups. Dishwasher safe.",
   "title_clean": "Ninja Foodi Personal Blender and Smoothie Maker",
   "price_usd": 89.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.426413+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015619+00:00"
 }

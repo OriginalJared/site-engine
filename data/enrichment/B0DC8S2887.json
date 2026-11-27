@@ -1,6 +1,15 @@
 {
   "asin": "B0DC8S2887",
   "image": "https://m.media-amazon.com/images/I/31AECLZA5GL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31AECLZA5GL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31IGMxDE+VL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41q19BWzrTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bKuzrxOFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/517iCQCaX+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414OJzU1eGL._SL500_.jpg"
+  ],
   "title_raw": "Vari Classic Electric Standing Desk, 60x30, Walnut/Slate | Dual Motors, Four Memory Presets, One-Piece Laminate Top, Slide-and-Lock Assembly",
   "title_clean": "Vari Classic Electric Standing Desk, 60x30, Walnut/Slate",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.469614+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031423+00:00"
 }

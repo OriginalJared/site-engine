@@ -1,6 +1,15 @@
 {
   "asin": "B00DYN0438",
   "image": "https://m.media-amazon.com/images/I/31xhH5wpdNL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31xhH5wpdNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51tFUCC3tRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31jwTM8Va7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ePr-DTiaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31WIblvMuXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51UiRdFoUkL._SL500_.jpg"
+  ],
   "title_raw": "Blackstone 36 Inch 4 Burner 60,000 BTU Portable Steel Griddle Cooking Station with Foldable Legs, Grease Pan, and Storage Rack, Black",
   "title_clean": "Blackstone 36 Inch 4 Burner 60",
   "price_usd": 399.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.457024+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027147+00:00"
 }

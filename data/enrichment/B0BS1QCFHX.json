@@ -1,6 +1,15 @@
 {
   "asin": "B0BS1QCFHX",
   "image": "https://m.media-amazon.com/images/I/31+CMjgVyHL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31+CMjgVyHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31pqpd+p9sL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/518bJuZRjwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51I5rPANNTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41i4wtorPjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41syo-ZDVhL._SL500_.jpg"
+  ],
   "title_raw": "Sony WH-CH720N Wireless Noise Cancelling Over-Ear Headphones, Black | Comfortable Lightweight Design, Dual Noise Sensor technology, Up to 35 Hrs Battery with Quick Charging, Multipoint Connection",
   "title_clean": "Sony WH-CH720N Wireless Noise Cancelling Over-Ear Headphones",
   "price_usd": null,
@@ -11,7 +20,7 @@
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 8 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.458453+00:00"
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T16:46:06.027598+00:00"
 }

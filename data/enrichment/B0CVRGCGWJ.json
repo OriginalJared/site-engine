@@ -1,6 +1,15 @@
 {
   "asin": "B0CVRGCGWJ",
   "image": "https://m.media-amazon.com/images/I/31f-at+es2L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31f-at+es2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41dJl-7qKfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fJq9NH9HL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-A92xhDFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Tx62v6SNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31uxtBlHb7L._SL500_.jpg"
+  ],
   "title_raw": "Razer Viper V3 Pro Wireless Esports Gaming Mouse, 54g Lightweight, Black | 35K DPI Optical Sensor, Gen3 Optical Switches, 8 Programmable Controls, 95 Hr Battery, 8000 Hz Polling Rate, for PC & Mac",
   "title_clean": "Razer Viper V3 Pro Wireless Esports Gaming Mouse",
   "price_usd": 99.01,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.442272+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021686+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0CPLP422K",
   "image": "https://m.media-amazon.com/images/I/31JBdbrCZbL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31JBdbrCZbL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41dIeWm+UiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-YWzbjW6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HC9YqyfnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qd09Xwd6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51U-J+LxqrL._SL500_.jpg"
+  ],
   "title_raw": "NARWAL Flow Robot Vacuum and Mop Combo, 22000Pa, AI Avoidance, Ivory White",
   "title_clean": "NARWAL Flow Robot Vacuum and Mop Combo",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.463801+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029506+00:00"
 }

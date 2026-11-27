@@ -1,6 +1,15 @@
 {
   "asin": "B0CVL1K7DX",
   "image": "https://m.media-amazon.com/images/I/41lcMyreKjL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41lcMyreKjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+eQaMdWxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ncFsmt4JL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41r4JBgji4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31oQjfYEheL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31EPlHeA1AL._SL500_.jpg"
+  ],
   "title_raw": "Bose SoundLink Max Bluetooth Speaker - Portable Wireless Party Speaker, IP67 Waterproof, Rope Handle, Up to 20 Hours of Playtime, USB-C, Built-in 3.5mm AUX Input, Black",
   "title_clean": "Bose SoundLink Max Bluetooth Speaker",
   "price_usd": 279.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.428014+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016245+00:00"
 }

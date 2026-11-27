@@ -1,6 +1,10 @@
 {
   "asin": "B0CDC6H66Y",
   "image": "https://m.media-amazon.com/images/I/41QV-py2vJL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41QV-py2vJL._SL500_.jpg"
+  ],
   "title_raw": "Garmin Venu® 3, Premium Fitness Smartwatch, 45mm, Black | Body Battery™ Energy Monitoring, Sleep Coach, Built-In Sports Apps, Built-In Speaker & Mic, Workout Benefit & Recovery Time",
   "title_clean": "Garmin Venu® 3, Premium Fitness Smartwatch, 45mm, Black",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.467377+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030710+00:00"
 }

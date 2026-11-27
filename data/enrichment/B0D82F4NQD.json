@@ -1,6 +1,15 @@
 {
   "asin": "B0D82F4NQD",
   "image": "https://m.media-amazon.com/images/I/41GWgYdqBSL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41GWgYdqBSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41j+04acNJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41VwOcZ-axL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31xmGZvja5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41EvCm2dIvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JcW0qJd4L._SL500_.jpg"
+  ],
   "title_raw": "ASICS Men's Gel-Kayano 31 Running Shoes, 13, Indigo Blue/Gunmetal",
   "title_clean": "ASICS Men's Gel-Kayano 31 Running Shoes",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.465598+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030150+00:00"
 }

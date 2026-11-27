@@ -1,17 +1,26 @@
 {
   "asin": "B09P2RKRWX",
   "image": "https://m.media-amazon.com/images/I/31wnqMKagFL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31wnqMKagFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TJabpneUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51HcCMOA-AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51eSQbN16CL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51H1ve7yi+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51nceZbJbGL._SL500_.jpg"
+  ],
   "title_raw": "Tineco Floor ONE S5 Smart Cordless Wet Dry Vacuum Cleaner and Mop for Hard Floors, Digital Display, Long Run Time, Great for Sticky Messes and Pet Hair, Space-Saving Design, Blue",
   "title_clean": "Tineco Floor ONE S5 Smart Cordless Wet Dry Vacuum Cleaner and Mop",
-  "price_usd": 189.9,
-  "price_display": "$189.90",
-  "was_price_usd": 349.99,
-  "was_price_label": "List Price:",
-  "savings_percent": 46,
-  "deal_badge": "Black Friday Deal",
-  "deal_end": "2026-12-01T07:59:59Z",
+  "price_usd": 129.95,
+  "price_display": "$129.95",
+  "was_price_usd": null,
+  "was_price_label": null,
+  "savings_percent": null,
+  "deal_badge": null,
+  "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK",
-  "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.431275+00:00"
+  "availability_type": "IN_STOCK_SCARCE",
+  "availability_message": "Only 16 left in stock - order soon.",
+  "fetched_at": "2026-11-27T16:46:06.017593+00:00"
 }

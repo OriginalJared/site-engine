@@ -1,6 +1,15 @@
 {
   "asin": "B0D83TJ5RB",
   "image": "https://m.media-amazon.com/images/I/41Hs+G3oAuL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Hs+G3oAuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Ei5uaHstL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51N8+Ug3hwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51wxpwXliGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41gDWgASPiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41aai-QAyiL._SL500_.jpg"
+  ],
   "title_raw": "CORSAIR K70 PRO TKL RGB Tenkeyless Mechanical Wired Gaming Keyboard – Black | QWERTY US, Pre-Lubed Hall Effect MGX Hyperdrive Adjustable Switches, Simultaneous SOCD and Rapid Trigger, ABS Double-Shot",
   "title_clean": "CORSAIR K70 PRO TKL RGB Tenkeyless Mechanical Wired Gaming Keyboard",
   "price_usd": 129.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.449476+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024689+00:00"
 }

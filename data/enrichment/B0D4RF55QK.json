@@ -1,6 +1,15 @@
 {
   "asin": "B0D4RF55QK",
   "image": "https://m.media-amazon.com/images/I/31D4dnvCXtL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31D4dnvCXtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41MOMEBr7CL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/413p9BS76OL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/413YP1e8o3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414pmFuLOcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CMFYd1lmL._SL500_.jpg"
+  ],
   "title_raw": "Razer DeathAdder V3 HyperSpeed Ergonomic Wireless Gaming Mouse, 55g, Black | Lightweight, Focus X 26K Optical Sensor, Optical Switches Gen-3, HyperSpeed Wireless, Up to 100 Hr Battery, USB-C Charging",
   "title_clean": "Razer DeathAdder V3 HyperSpeed Ergonomic Wireless Gaming Mouse",
   "price_usd": 59.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.442054+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021608+00:00"
 }

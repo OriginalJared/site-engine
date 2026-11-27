@@ -1,6 +1,15 @@
 {
   "asin": "B0936FGLQS",
   "image": "https://m.media-amazon.com/images/I/51gvwoKdp1L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51gvwoKdp1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/512DFedSaXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51PThcyiaOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51JJXekRLAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TBr0GMmAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51kYN6ebChL._SL500_.jpg"
+  ],
   "title_raw": "Cosori Air Fryer Pro LE 5 Qt, 9-in-1, Ceramic Coating, Shake Reminder, Grey | 7 presets with Reheat, Keep Warm, Max 450°F, 85% Less Oil, Touch control, LED glass panel, 130+ Chef-inspired Recipes, 1500W",
   "title_clean": "Cosori Air Fryer Pro LE 5 Qt",
   "price_usd": 89.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.417977+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012364+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09DTDRJWP",
   "image": "https://m.media-amazon.com/images/I/51Xt42ACkML._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51Xt42ACkML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51OCSpDwK9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bZN+PI2OL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41D9JcVRPdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CxulhiJpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51SADzcqE6L._SL500_.jpg"
+  ],
   "title_raw": "Dell S2722QC Monitor - 27 inch 4K USB-C , UHD (3840 x 2160) Display, 60Hz Refresh Rate, 8MS Grey-to-Grey Response Time, Built-in Dual 3W Speakers, 1.07 Billion Colors - Platinum Silver",
   "title_clean": "Dell S2722QC Monitor",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.416469+00:00"
+  "fetched_at": "2026-11-27T16:46:06.011741+00:00"
 }

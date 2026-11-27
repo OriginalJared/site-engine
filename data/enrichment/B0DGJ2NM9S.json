@@ -1,6 +1,15 @@
 {
   "asin": "B0DGJ2NM9S",
   "image": "https://m.media-amazon.com/images/I/318GcaNFixL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/318GcaNFixL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31a-MKOMoFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41yjB6XiAmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414kmB6Bf-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41nyDTF5UwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31vHgmTWPPL._SL500_.jpg"
+  ],
   "title_raw": "Apple Watch SE (2nd Gen) [GPS 44mm] Smartwatch with Midnight Aluminum Case with Midnight Sport Band M/L. Fitness and Sleep Trackers, Crash Detection, Heart Rate Monitor, Retina Display",
   "title_clean": "Apple Watch SE (2nd Gen) [GPS 44mm] Smartwatch with Midnight Aluminum",
   "price_usd": 271.74,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "AVAILABLE_DATE",
   "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.467860+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030885+00:00"
 }

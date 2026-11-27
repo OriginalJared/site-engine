@@ -1,6 +1,15 @@
 {
   "asin": "B0B8MXPRDB",
   "image": "https://m.media-amazon.com/images/I/31oJJr5KzCL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31oJJr5KzCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41i-Z9QS0wL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HamSiBHiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4193ZTSlftL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51HIgr62fsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ODu3-bdXL._SL500_.jpg"
+  ],
   "title_raw": "EF ECOFLOW Portable Power Station RIVER 2, 256Wh 300W | 1 Hr Fast Charging, LiFePO4 Battery,Up to 600W Solar Generator for Outdoor Camping/RVs/Home Use(Solar Panel Optional)",
   "title_clean": "EF ECOFLOW Portable Power Station RIVER 2, 256Wh 300W",
   "price_usd": 209.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 3 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.460977+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028416+00:00"
 }

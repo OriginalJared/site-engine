@@ -1,6 +1,15 @@
 {
   "asin": "B09C13PZX7",
   "image": "https://m.media-amazon.com/images/I/31N1BZUZLwL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31N1BZUZLwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51XpciVLsRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51r1de4BG6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4113r7ViQWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412Tjg-VgfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vmgZyWlHL._SL500_.jpg"
+  ],
   "title_raw": "Razer Basilisk V3 Customizable RGB Wired Ergonomic Gaming Mouse, Black | Fastest Gaming Mouse Switch, Chroma RGB Lighting, 26K DPI Optical Sensor, 11 Programmable Buttons, HyperScroll Tilt Wheel",
   "title_clean": "Razer Basilisk V3 Customizable RGB Wired Ergonomic Gaming Mouse",
   "price_usd": 32.99,
@@ -8,10 +17,10 @@
   "was_price_usd": 69.99,
   "was_price_label": "List Price:",
   "savings_percent": 53,
-  "deal_badge": null,
-  "deal_end": null,
+  "deal_badge": "Black Friday Deal",
+  "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.442746+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021877+00:00"
 }

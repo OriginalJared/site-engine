@@ -1,6 +1,10 @@
 {
   "asin": "B0D9PNJ747",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "LECTRIC XP Lite2 Folding Electric Bike for Adults - Lightweight eBike with a 48V Battery Powers Up to 45-80 Mile Range, 20Mph Peak 819W Motor, Hydraulic Brakes, LCD Display, 5 Pedal Assist & Throttle",
   "title_clean": "LECTRIC XP Lite2 Folding Electric Bike for Adults",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.435267+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019124+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B07GN4H96T",
   "image": "https://m.media-amazon.com/images/I/41f416PT0dL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41f416PT0dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41gHiw0kY0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41oiPg9uAmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41yHpTCcWGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jFyG6uiLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41B1uLxTdHL._SL500_.jpg"
+  ],
   "title_raw": "SIHOO Ergonomic Adjustable Office Chair with 3D Arm Rests and Lumbar Support - High Back with Breathable Mesh - Mesh Seat Cushion - Adjustable Head & Reclines(Red)",
   "title_clean": "SIHOO Ergonomic Adjustable Office Chair with 3D Arm Rests and Lumbar",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.454630+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026406+00:00"
 }

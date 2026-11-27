@@ -1,6 +1,15 @@
 {
   "asin": "B0G1S75G2K",
   "image": "https://m.media-amazon.com/images/I/31YzDXWwJFL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31YzDXWwJFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21B2L-HU+ML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZbP48ZToL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ywyMhE0dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41cH6rx4xCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WfvnbgEaL._SL500_.jpg"
+  ],
   "title_raw": "Secretlab Magnus Pro Electric Standing Desk with Black Leatherette Mat | Magnetic Cable Management, Integrated Power Supply Column, Built-in Cable Management Tray, Gaming Office Desk, Ergonomic",
   "title_clean": "Secretlab Magnus Pro Electric Standing Desk with Black Leatherette Mat",
   "price_usd": 1010.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.469843+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031488+00:00"
 }

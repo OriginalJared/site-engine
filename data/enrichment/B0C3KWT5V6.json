@@ -1,6 +1,15 @@
 {
   "asin": "B0C3KWT5V6",
   "image": "https://m.media-amazon.com/images/I/31hWM0InLBL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31hWM0InLBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ywRheFkDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51HjD1+Z3gL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51pAsUwE9GL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51e1VWUNcvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51cQ4AG5vjL._SL500_.jpg"
+  ],
   "title_raw": "Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Blue | Over-Ear, Bluetooth, 40H ANC Playtime, Hi-Res Audio, Big Bass, Transparency Mode, Customize via App, Travel, Home, Office",
   "title_clean": "Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones",
   "price_usd": 42.69,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.458231+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027531+00:00"
 }

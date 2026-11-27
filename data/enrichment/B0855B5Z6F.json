@@ -1,6 +1,15 @@
 {
   "asin": "B0855B5Z6F",
   "image": "https://m.media-amazon.com/images/I/41DtVBcR1eL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41DtVBcR1eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51SXnqDugtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51depehyPRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51u5LfyJHmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513GkUWo4AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41OKCJ85JNL._SL500_.jpg"
+  ],
   "title_raw": "Ninja Professional Plus Blender, Auto-iQ, 1400W, 72oz Pitcher, BN701 | 1400 peak-watt motor, 3 Auto-iQ presets, smoothies, frozen drinks & ice cream. Total Crushing. Dishwasher safe.",
   "title_clean": "Ninja Professional Plus Blender",
   "price_usd": 99.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.425036+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015111+00:00"
 }

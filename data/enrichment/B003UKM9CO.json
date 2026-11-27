@@ -1,6 +1,15 @@
 {
   "asin": "B003UKM9CO",
   "image": "https://m.media-amazon.com/images/I/41tS399Td6L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41tS399Td6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41h7zrH6SwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41DkzeU+zlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HFhRZkfoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41o8-BGEtGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410sm3RDXXL._SL500_.jpg"
+  ],
   "title_raw": "Oral-B Pro 1000 Rechargeable Electric Toothbrush, White",
   "title_clean": "Oral-B Pro 1000 Rechargeable Electric Toothbrush, White",
   "price_usd": 49.94,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.437126+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019878+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B08ZK2BHP2",
   "image": "https://m.media-amazon.com/images/I/11kGYZ0i5+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/11kGYZ0i5+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31yD7qbOFGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41kx5OeLnlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Tr9Vk4BJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31wpYcfh74L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Xwf8+b04L._SL500_.jpg"
+  ],
   "title_raw": "Amazon eero 6+ mesh wifi system - Supports internet plans up to a Gigabit, Coverage up to 4,500 sq. ft., Connect 75+ devices, 3-pack",
   "title_clean": "Amazon eero 6+ mesh wifi system",
   "price_usd": 199.99,
@@ -8,10 +17,10 @@
   "was_price_usd": 299.99,
   "was_price_label": "List Price:",
   "savings_percent": 33,
-  "deal_badge": "Black Friday Deal",
+  "deal_badge": "Deal selling fast",
   "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.451984+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025457+00:00"
 }

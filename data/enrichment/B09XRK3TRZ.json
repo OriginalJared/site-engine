@@ -1,6 +1,15 @@
 {
   "asin": "B09XRK3TRZ",
   "image": "https://m.media-amazon.com/images/I/410nCHtmw7L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/410nCHtmw7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31YpWwjWvGS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41K54xgZR3S._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51BME7lsboS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51eRGpL306L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51y8hrZ+inL._SL500_.jpg"
+  ],
   "title_raw": "Keurig® K-Supreme Plus SMART Single Serve K-Cup Pod Coffee Maker (Black) 3-Month Brewer Maintenance Kit",
   "title_clean": "Keurig® K-Supreme Plus SMART Single Serve K-Cup Pod Coffee Maker",
   "price_usd": 213.47,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.429099+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016696+00:00"
 }

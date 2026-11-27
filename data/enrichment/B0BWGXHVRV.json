@@ -1,6 +1,15 @@
 {
   "asin": "B0BWGXHVRV",
   "image": "https://m.media-amazon.com/images/I/31MX-p4v2oL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31MX-p4v2oL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GHvh+4q5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Sy9tkK1vL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51C9SCC1pvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51+u3M2ytTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TWksvszPL._SL500_.jpg"
+  ],
   "title_raw": "BenQ HT2060 1080p HDR LED Home Theater Projector | DCI-P3 & Rec.709 Wide Color Gamut | 8.3ms 120hz | Vertical Lens Shift | 2D Keystone | 1.3x Zoom | S/PDIF | HDMI 2.0 | Built-in 5Wx2 Speakers | 3D",
   "title_clean": "BenQ HT2060 1080p HDR LED Home Theater Projector",
   "price_usd": 1545.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In stock",
-  "fetched_at": "2026-11-27T00:13:18.462812+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029119+00:00"
 }

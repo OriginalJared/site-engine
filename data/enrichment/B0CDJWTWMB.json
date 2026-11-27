@@ -1,6 +1,15 @@
 {
   "asin": "B0CDJWTWMB",
   "image": "https://m.media-amazon.com/images/I/31z1Taxua4L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31z1Taxua4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415JAgruWGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41etZXq2zQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KxRakezzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41QJ2riYaoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51cK8LrUMhL._SL500_.jpg"
+  ],
   "title_raw": "Soundcore Motion 300 by Anker, Bluetooth Speaker, Wireless Hi-Res Portable Speaker, IPX7 Waterproof, BassUp, Bluetooth 5.3, 30W Stereo Sound, 13H Playtime for Home, Shower, Outdoor, and Travel",
   "title_clean": "Soundcore Motion 300 by Anker",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.428229+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016332+00:00"
 }

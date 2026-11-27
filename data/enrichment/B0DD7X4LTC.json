@@ -1,6 +1,15 @@
 {
   "asin": "B0DD7X4LTC",
   "image": "https://m.media-amazon.com/images/I/314d7zDggcL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/314d7zDggcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31xF8TbCxhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41aCIjjmrhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41O7r6hFtDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21ti4XlEF9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31l949qpfLL._SL500_.jpg"
+  ],
   "title_raw": "Nextbase Piqo 1k Smart Dash Cam with App, Compact Design, 1080p Ultra-Wide HD View with Smart Parking, Emergency SOS, and Voice Control",
   "title_clean": "Nextbase Piqo 1k Smart Dash Cam with App",
   "price_usd": 129.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.433860+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018597+00:00"
 }

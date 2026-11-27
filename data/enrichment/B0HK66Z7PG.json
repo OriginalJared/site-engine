@@ -1,6 +1,10 @@
 {
   "asin": "B0HK66Z7PG",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "Large Big Green Egg",
   "title_clean": "Large Big Green Egg",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.456520+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027011+00:00"
 }

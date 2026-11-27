@@ -1,6 +1,15 @@
 {
   "asin": "B0D81675BQ",
   "image": "https://m.media-amazon.com/images/I/31fGKCPEyIL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31fGKCPEyIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412yRPSKAUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41gWKd+GglL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513atFeMJQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51R0a8HeNOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/416Wqx8GVoL._SL500_.jpg"
+  ],
   "title_raw": "roborock Qrevo Curv Robot Vacuum and Mop, Zero-Tangling, AdaptiLift Chassis, FlexiArm Technology, Al Obstacle Recognition, 17mm Mop Lift, 18,500Pa Suction, Hot Water Mop Washing & Dock Self Cleaning",
   "title_clean": "roborock Qrevo Curv Robot Vacuum and Mop",
   "price_usd": 499.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In stock",
-  "fetched_at": "2026-11-27T00:13:18.463564+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029429+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0FMGZFVK9",
   "image": "https://m.media-amazon.com/images/I/31e1GcSOLbL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31e1GcSOLbL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414CBIlTDqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31aUXlpHRmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lxaTM17LL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41kT1rLohCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KpqTQQ1EL._SL500_.jpg"
+  ],
   "title_raw": "Branch Ergonomic Chair Pro, Mesh Office Chair with 14 Points of Adjustment | Height, Depth and Tilt Adjustable, 5D Armrests, Forward Tilt, Smooth Recline, and Lumbar Support, Black",
   "title_clean": "Branch Ergonomic Chair Pro",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.453474+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026047+00:00"
 }

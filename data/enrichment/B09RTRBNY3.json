@@ -1,6 +1,15 @@
 {
   "asin": "B09RTRBNY3",
   "image": "https://m.media-amazon.com/images/I/21CeBiKjYiL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/21CeBiKjYiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZF+qIkDyL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GZvlWjWfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41F-gssDicL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41gDy2uQRfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xD9CAD5pL._SL500_.jpg"
+  ],
   "title_raw": "Google Nest Security Cam (Wired) - 2nd Generation - Fog, 1080p, Motion Only",
   "title_clean": "Google Nest Security Cam",
   "price_usd": 117.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.423838+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014573+00:00"
 }

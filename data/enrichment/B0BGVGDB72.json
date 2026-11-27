@@ -1,6 +1,15 @@
 {
   "asin": "B0BGVGDB72",
   "image": "https://m.media-amazon.com/images/I/31cDl7mp3BL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31cDl7mp3BL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41--6C7i91L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51+NIXrPejL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TKeZqL+SL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/515gtYFNOSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41FMJpeitiL._SL500_.jpg"
+  ],
   "title_raw": "Optoma UHD38x Bright, True 4K UHD Gaming Projector | 4000 Lumens | 4.2ms Response Time at 1080p with Enhanced Gaming Mode | Lowest Input Lag on 4K Projector | 240Hz Refresh Rate | HDR10 & HLG, White",
   "title_clean": "Optoma UHD38x Bright, True 4K UHD Gaming Projector",
   "price_usd": 899.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.462358+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028946+00:00"
 }

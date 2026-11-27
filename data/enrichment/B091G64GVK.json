@@ -1,6 +1,15 @@
 {
   "asin": "B091G64GVK",
   "image": "https://m.media-amazon.com/images/I/11wEl3WazLL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/11wEl3WazLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31UkRALUMfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41oF9y5uSVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/3198Vytr8vL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vMal9jrML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41FUYmTDtCL._SL500_.jpg"
+  ],
   "title_raw": "Amazon eero Pro 6E mesh wifi system - Supports internet plans up to 2.5 Gbps, Coverage up to 6,000 sq. ft., Connect 100+ devices, 3-pack",
   "title_clean": "Amazon eero Pro 6E mesh wifi system",
   "price_usd": 349.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.450853+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025121+00:00"
 }

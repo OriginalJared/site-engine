@@ -1,6 +1,15 @@
 {
   "asin": "B0BQPSX5CR",
   "image": "https://m.media-amazon.com/images/I/51yOeLxc3qL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51yOeLxc3qL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Kf0M4DzuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41iUSjq1E5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417mbmZumdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NbbHdMyPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mHMWCSJ2L._SL500_.jpg"
+  ],
   "title_raw": "ASUS ProArt PA279CRV 27 Inch 4K UHD USB-C HDR Professional Monitor for Mac | Calman Verified, Delta E<2, Daisy Chain, IPS, USB-C PD 96W, Height Adjustable, 99% DCI-P3, 99% Adobe RGB",
   "title_clean": "ASUS ProArt PA279CRV 27 Inch 4K UHD USB-C HDR Professional Monitor",
   "price_usd": 349.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.415697+00:00"
+  "fetched_at": "2026-11-27T16:46:06.011493+00:00"
 }

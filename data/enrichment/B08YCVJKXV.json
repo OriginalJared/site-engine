@@ -1,6 +1,15 @@
 {
   "asin": "B08YCVJKXV",
   "image": "https://m.media-amazon.com/images/I/41R4KEKcvfL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41R4KEKcvfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4113SPqbFOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41yAhl5ooXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41FF+8OmdUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41z3vzVcksL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WR8YXaNJL._SL500_.jpg"
+  ],
   "title_raw": "Philips Sonicare 9900 Prestige Electric Toothbrush, 1 Brush Head, Blue | 2000% More Plaque Removal¹, SenseIQ Adaptive Protection, 15 Brush Settings, App Connected, Charging Travel Case, HX9990/12",
   "title_clean": "Philips Sonicare 9900 Prestige Electric Toothbrush",
   "price_usd": 249.96,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.438026+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020269+00:00"
 }

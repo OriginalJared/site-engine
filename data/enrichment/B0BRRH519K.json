@@ -1,6 +1,15 @@
 {
   "asin": "B0BRRH519K",
   "image": "https://m.media-amazon.com/images/I/315zPOO6AqL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/315zPOO6AqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21BuNptvERL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21YxJLjOO4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41elomsjzfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41yBeIUAfmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41dhm+PBsqL._SL500_.jpg"
+  ],
   "title_raw": "TP-Link Deco BE65(3-Pack), BE9300 Mbps, 4 × 2.5 Gbps Ports, 320 MHz Channels, Works on a 6 GHz Band, Connectivity up to 200 Devices, VPN, WPA3, Tri-Band Wi-Fi 7 Mesh System",
   "title_clean": "TP-Link Deco BE65(3-Pack)",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.452211+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025527+00:00"
 }

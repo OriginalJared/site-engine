@@ -1,6 +1,15 @@
 {
   "asin": "B0F9SX3JB9",
   "image": "https://m.media-amazon.com/images/I/516ybLtkgQL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/516ybLtkgQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513nxXOav3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51bc7VFJJoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51zseIRBGCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51WGC1RlrjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51a9rB7srBL._SL500_.jpg"
+  ],
   "title_raw": "ROVE R2-4K Dual PRO Dash Cam Front and Rear, 4K+2K Dash Camera for Cars | Dual STARVIS 2 IMX678 + IMX675 Sensors, FREE 128GB Card + CPL, WiFi 6 - up to 30MB/s, Night Vision, 3\" IPS, 24Hr Parking Mode",
   "title_clean": "ROVE R2-4K Dual PRO Dash Cam Front and Rear",
   "price_usd": 206.49,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.433382+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018407+00:00"
 }

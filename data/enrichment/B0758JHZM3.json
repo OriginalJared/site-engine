@@ -1,6 +1,15 @@
 {
   "asin": "B0758JHZM3",
   "image": "https://m.media-amazon.com/images/I/31vaq8tA8iL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31vaq8tA8iL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/418GtEgSoUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Q1Q4PvdhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AgqdVv7fL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510JuWlO4fL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51reecSwo1L._SL500_.jpg"
+  ],
   "title_raw": "Vitamix E310 Explorian Blender, Professional-Grade, Self-Cleaning 48 oz. Container, Black",
   "title_clean": "Vitamix E310 Explorian Blender",
   "price_usd": 299.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.424806+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015019+00:00"
 }

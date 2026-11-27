@@ -1,6 +1,13 @@
 {
   "asin": "B0C6XQ1WXJ",
   "image": "https://m.media-amazon.com/images/I/41J3Aldqo8L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41J3Aldqo8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41zKVtBoTzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jWdAhrB8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+pCHmxI5L._SL500_.jpg"
+  ],
   "title_raw": "Hoka, Ice Water Evening Primrose, 10 US | Trail running shoes",
   "title_clean": "Hoka, Ice Water Evening Primrose, 10 US",
   "price_usd": 127.28,
@@ -13,5 +20,5 @@
   "has_offer": true,
   "availability_type": "AVAILABLE_DATE",
   "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.465834+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030219+00:00"
 }

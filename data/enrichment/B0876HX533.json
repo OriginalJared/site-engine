@@ -1,6 +1,15 @@
 {
   "asin": "B0876HX533",
   "image": "https://m.media-amazon.com/images/I/41N1GRyJL8L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41N1GRyJL8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51bm6xXvaGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41DVBPwXgGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41sc1RbAxsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51BFS1dwswL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mVLp+HLaL._SL500_.jpg"
+  ],
   "title_raw": "Purple Mattress, Queen, 9.25 Inch Cooling Mattress, 2 Inch GelFlex Grid | Pressure Relief, Temperature Neutral, Responsive, Breathable, Made in USA",
   "title_clean": "Purple Mattress, Queen, 9.25 Inch Cooling Mattress, 2 Inch GelFlex",
   "price_usd": 1234.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.447421+00:00"
+  "fetched_at": "2026-11-27T16:46:06.023982+00:00"
 }

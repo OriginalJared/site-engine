@@ -1,6 +1,15 @@
 {
   "asin": "B09NBWL8J5",
   "image": "https://m.media-amazon.com/images/I/21+V7OqgCEL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/21+V7OqgCEL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31+99WMgAxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4187Tpk0YkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41iGX73BT6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510SXsSBt1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31QYyVYyX6L._SL500_.jpg"
+  ],
   "title_raw": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse, Black | Lightweight, LIGHTFORCE hybrid switches, HERO 2 sensor, 32,000 DPI, 5 programmable buttons, USB-C charging, Mac & PC gaming",
   "title_clean": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse",
   "price_usd": 155.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.441830+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021533+00:00"
 }

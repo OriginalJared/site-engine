@@ -1,6 +1,15 @@
 {
   "asin": "B0BCZPNZ3D",
   "image": "https://m.media-amazon.com/images/I/31FYP05NpUL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31FYP05NpUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21jefvAYvOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31QTNbEfn+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21CWvHEfiIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31hPYA2u88L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31ULPn5U8GL._SL500_.jpg"
+  ],
   "title_raw": "SAMSUNG Jet 75 Cordless Stick Vacuum Titan ChroMetal VS20T7511T5/AA",
   "title_clean": "SAMSUNG Jet 75 Cordless Stick Vacuum Titan ChroMetal VS20T7511T5/AA",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.432000+00:00"
+  "fetched_at": "2026-11-27T16:46:06.017863+00:00"
 }

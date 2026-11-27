@@ -1,6 +1,15 @@
 {
   "asin": "B077JTCMKQ",
   "image": "https://m.media-amazon.com/images/I/41MzMTLhb1L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41MzMTLhb1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Lvh+ODJYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/5193nkFW-QL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Nyru4TPBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41UB1wEcSHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31d2+VAAZjL._SL500_.jpg"
+  ],
   "title_raw": "Weber Spirit II E-310 3-Burner Liquid Propane Grill, Black",
   "title_clean": "Weber Spirit II E-310 3-Burner Liquid Propane Grill, Black",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.455111+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026560+00:00"
 }

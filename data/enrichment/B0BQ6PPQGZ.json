@@ -1,6 +1,15 @@
 {
   "asin": "B0BQ6PPQGZ",
   "image": "https://m.media-amazon.com/images/I/41Yqw5Ck+oL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Yqw5Ck+oL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41iqp+UnxBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414EpM8WwfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412z7n5DutL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/416MpjmebhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AvFzX3tVL._SL500_.jpg"
+  ],
   "title_raw": "CASABREWS CM5418 Espresso Maker, Compact Espresso Machine with Milk Frother | Stainless Steel, 20-Bar Pump, Built-in Pressure Gauge, Powerful Steam Wand for Cappuccino Latte for Home, 34oz Water Tank",
   "title_clean": "CASABREWS CM5418 Espresso Maker",
   "price_usd": 135.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.439840+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020893+00:00"
 }

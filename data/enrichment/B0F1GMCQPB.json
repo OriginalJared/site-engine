@@ -1,6 +1,15 @@
 {
   "asin": "B0F1GMCQPB",
   "image": "https://m.media-amazon.com/images/I/41LSVFsVCuL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41LSVFsVCuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51QVPUJwCAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51RK8Ure2NL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/512-XBjZqsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51OupnzUNdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41eRdumGIoL._SL500_.jpg"
+  ],
   "title_raw": "De'Longhi Rivelia Automatic Espresso Machine, Milk Frother, Black | #1 Worldwide Espresso Machine Maker, Removable Bean Hoppers, 18 One-Touch Recipes, Milk Frother, 4 Unique Colors",
   "title_clean": "De'Longhi Rivelia Automatic Espresso Machine",
   "price_usd": 999.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.440065+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020964+00:00"
 }

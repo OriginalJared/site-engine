@@ -1,6 +1,15 @@
 {
   "asin": "B01N3O6RDT",
   "image": "https://m.media-amazon.com/images/I/31Fhicv0BWL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31Fhicv0BWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/316iXV0qN0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31EilYaXbmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31mIu5OYKtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31ZUzbnVpyL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31PGPYjiBlL._SL500_.jpg"
+  ],
   "title_raw": "Autonomous ErgoChair - Premium Ergonomic Office Chair - All Black",
   "title_clean": "Autonomous ErgoChair",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.453934+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026191+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0BS9GR47F",
   "image": "https://m.media-amazon.com/images/I/41Ws2yQq51L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Ws2yQq51L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/413YP2DOUiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41c+jYr3xtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NE+psFZLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+fZwT-OGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41c5wqTvLmL._SL500_.jpg"
+  ],
   "title_raw": "SHW 48-Inch Electric Height Adjustable Sit to Stand Desk, White | with Hanging Hooks and Cable Management, White Frame and White Top",
   "title_clean": "SHW 48-Inch Electric Height Adjustable Sit to Stand Desk",
   "price_usd": 118.89,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 8 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.470778+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031761+00:00"
 }

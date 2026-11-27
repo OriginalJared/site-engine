@@ -1,6 +1,15 @@
 {
   "asin": "B07CMS5Q6P",
   "image": "https://m.media-amazon.com/images/I/31zy93Vq31L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31zy93Vq31L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41VMDnekRYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41nEOiMktJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jhuDOzB6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/416DZbMWLWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Axz44ruhL._SL500_.jpg"
+  ],
   "title_raw": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse, Hero 12K Sensor - Black | 12,000 DPI, lightweight, 6 programmable buttons, 250h battery life, on-board memory, PC/Mac, lightweight gaming mouse",
   "title_clean": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse",
   "price_usd": 26.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.442970+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021957+00:00"
 }

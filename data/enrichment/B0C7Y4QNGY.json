@@ -1,6 +1,15 @@
 {
   "asin": "B0C7Y4QNGY",
   "image": "https://m.media-amazon.com/images/I/31xGFAoApkL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31xGFAoApkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31xKbWLm6qL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51tCachtE3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/515dES8kRSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41YLhvIC9FL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xiUrf7tjL._SL500_.jpg"
+  ],
   "title_raw": "Hisense PX2-PRO Trichroma Ultra Short Throw Home Theater Projector, 90\"-130\", 4K UHD, Dolby Vision & Atmos, HDR10, 2400 ANSI Lumens, Google TV, Netflix",
   "title_clean": "Hisense PX2-PRO Trichroma Ultra Short Throw Home Theater Projector",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.461907+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028714+00:00"
 }

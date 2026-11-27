@@ -1,6 +1,15 @@
 {
   "asin": "B08SL6H83X",
   "image": "https://m.media-amazon.com/images/I/41BIxJCoblL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41BIxJCoblL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+6yPj5gRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51D2Mm-F3LL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51BfUffWM2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uUDz2tsYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417lh1fDHoL._SL500_.jpg"
+  ],
   "title_raw": "Babysense 5\" HD Non WiFi Split-Screen Baby Monitor, Video Baby Monitor with 2 Cameras and Audio, Night Light, 1000ft Range, Two-Way Audio, 4X Zoom, Night Vision, 4000mAh Battery",
   "title_clean": "Babysense 5\" HD Non WiFi Split-Screen Baby Monitor",
   "price_usd": 129.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.423599+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014482+00:00"
 }

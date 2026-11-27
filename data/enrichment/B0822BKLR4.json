@@ -1,6 +1,15 @@
 {
   "asin": "B0822BKLR4",
   "image": "https://m.media-amazon.com/images/I/41ILVk6FRVL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41ILVk6FRVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51zOs1FTwAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51u2nQgeqAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51rxV4KO0IL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GmD9ro6IL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51uRiW0NLVL._SL500_.jpg"
+  ],
   "title_raw": "Traeger Ironwood 650 Wood Pellet Grill & Smoker, 650 Sq In, WiFi | 500°F max, meat probe included, Super Smoke Mode, WiFIRE app – 6-in-1 grill, smoke, bake & BBQ",
   "title_clean": "Traeger Ironwood 650 Wood Pellet Grill & Smoker",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.455341+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026636+00:00"
 }

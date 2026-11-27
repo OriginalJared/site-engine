@@ -1,6 +1,15 @@
 {
   "asin": "B08QKTXT1N",
   "image": "https://m.media-amazon.com/images/I/41LRxr7HCiL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41LRxr7HCiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51JF-g+Q8cL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/512oPlF1naL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51kQ7PzW9jL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/5119t4M4OQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41611r2XNGL._SL500_.jpg"
+  ],
   "title_raw": "Ninja Air Fryer XL, 5.5 Qt, 5-in-1, Grey, AF150AMZ | Air fry, roast, reheat, dehydrate, 1750W, 400F max, Fits 3 lbs wings, Dishwasher-safe",
   "title_clean": "Ninja Air Fryer XL, 5.5 Qt, 5-in-1, Grey, AF150AMZ",
   "price_usd": 89.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.419647+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013048+00:00"
 }

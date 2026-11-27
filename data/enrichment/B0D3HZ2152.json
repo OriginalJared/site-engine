@@ -1,6 +1,15 @@
 {
   "asin": "B0D3HZ2152",
   "image": "https://m.media-amazon.com/images/I/31C2qKTlFiL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31C2qKTlFiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41r0kjgD2zL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31u1zs60lGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51nCv26GEpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51yiNZLFiQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51EKFgIxjZL._SL500_.jpg"
+  ],
   "title_raw": "adidas Mens Ultraboost Ultra Boost Light Running Sneakers Shoes - Grey",
   "title_clean": "adidas Mens Ultraboost Ultra Boost Light Running Sneakers Shoes",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": null,
   "availability_message": null,
-  "fetched_at": "2026-11-27T00:13:18.466470+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030426+00:00"
 }

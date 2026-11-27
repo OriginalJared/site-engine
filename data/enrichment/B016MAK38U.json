@@ -1,6 +1,15 @@
 {
   "asin": "B016MAK38U",
   "image": "https://m.media-amazon.com/images/I/41LSGymHc7L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41LSGymHc7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51h4s48vCcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/514g-jBw4yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41PTkROE2eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51U3FMI1BYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/513q9+2oeZL._SL500_.jpg"
+  ],
   "title_raw": "Redragon K552 Mechanical Keyboard, LED Gaming Keyboard with Red Switches | 87-Key TKL Compact, Anti-Ghosting, Metal Frame for PC Gaming & Typing, Beginner-Friendly, Redragon Classic Gaming Keyboard",
   "title_clean": "Redragon K552 Mechanical Keyboard",
   "price_usd": 29.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.450410+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024984+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B07JVD78TT",
   "image": "https://m.media-amazon.com/images/I/41Oxx2gOf0L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Oxx2gOf0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51-NrDFA0dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bEw6bdGaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Qgc5jxJnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NPAEhi6OL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41x8C0XcUrL._SL500_.jpg"
+  ],
   "title_raw": "Breville BES500BSS Bambino Plus Espresso Machine, Brushed Stainless Steel | Make café-quality espresso, lattes and cappuccinos at home with this compact, semi-automatic coffee maker for home baristas",
   "title_clean": "Breville BES500BSS Bambino Plus Espresso Machine",
   "price_usd": 499.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.439608+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020789+00:00"
 }

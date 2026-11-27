@@ -1,6 +1,15 @@
 {
   "asin": "B08HMWZBXC",
   "image": "https://m.media-amazon.com/images/I/31F5V0piU7L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31F5V0piU7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41dD6bQEsSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vTae9zyIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/411QWaqd1yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qj+boc8ML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/313tjuGpk9L._SL500_.jpg"
+  ],
   "title_raw": "Soundcore by Anker Q30 Hybrid Active Noise Cancelling Headphones, Black | Over-Ear, Bluetooth, Multiple Modes, Hi-Res, Custom EQ via App, 50H ANC Playtime, Comfortable Fit, Multipoint Connection",
   "title_clean": "Soundcore by Anker Q30 Hybrid Active Noise Cancelling Headphones",
   "price_usd": 53.19,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.459115+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027823+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0F3HZFZBL",
   "image": "https://m.media-amazon.com/images/I/31WkjttbFcL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31WkjttbFcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bD0jDdfXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/514zJbZ5C0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51DvSDrhcAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jGI0uRt7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51csn-v-tmL._SL500_.jpg"
+  ],
   "title_raw": "dreame X50 Ultra Complete Robot Vacuum with Self-Cleaning & Emptying | 2.36 in(6cm) Obstacle Crossing for Carpet, 20,000Pa & Detangling Brush for Hair, Low Spaces Cleaning",
   "title_clean": "dreame X50 Ultra Complete Robot Vacuum with Self-Cleaning & Emptying",
   "price_usd": 899.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.463241+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029284+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0DXF5L3B1",
   "image": "https://m.media-amazon.com/images/I/3112Rc+firL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/3112Rc+firL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51CilAnzAkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51I3nxBa+1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51bDYMe3D7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ZFyEj29kL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51KBJ5MzahL._SL500_.jpg"
+  ],
   "title_raw": "Jackery Explorer 1000 v2 and Carrying Bag,1024Wh,1500W AC | LiFePO4 Battery, 50-Min Fast Charge, 10ms UPS Solar Generator for Home Emergency, Camping & RV",
   "title_clean": "Jackery Explorer 1000 v2 and Carrying Bag,1024Wh,1500W AC",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.459585+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027972+00:00"
 }

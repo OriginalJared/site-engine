@@ -1,6 +1,15 @@
 {
   "asin": "B0BL215FRC",
   "image": "https://m.media-amazon.com/images/I/311XhtGAIWL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/311XhtGAIWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51TwvGgfr0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51c05KK92yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51gZS2k6rBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ChHaKMu7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mVsW30LfL._SL500_.jpg"
+  ],
   "title_raw": "Arlo Pro 5S - Wireless Security Camera 2K HDR - 1 Camera, Black | Wireless Outdoor, Rechargeable Removeable Battery, Event Captions, Emergency Response, 1-Month Trial of Secure Plan Included",
   "title_clean": "Arlo Pro 5S - Wireless Security Camera 2K HDR - 1 Camera",
   "price_usd": 94.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.443904+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022272+00:00"
 }

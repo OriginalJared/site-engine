@@ -1,6 +1,15 @@
 {
   "asin": "B08Z6X4NK3",
   "image": "https://m.media-amazon.com/images/I/31rtIUUw7bL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31rtIUUw7bL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AwFo814PL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HGhNQ61LL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ykTFgjKnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51t5KKhkX+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qlUh2HCCL._SL500_.jpg"
+  ],
   "title_raw": "Logitech G413 SE Full-Size Mechanical Gaming Keyboard, Black Aluminum | Backlit keyboard with tactile mechanical switches, anti-ghosting, and compatible with Windows and macOS",
   "title_clean": "Logitech G413 SE Full-Size Mechanical Gaming Keyboard",
   "price_usd": 49.98,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.449945+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024847+00:00"
 }

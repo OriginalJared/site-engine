@@ -1,6 +1,15 @@
 {
   "asin": "B0C34XWKQR",
   "image": "https://m.media-amazon.com/images/I/41bev1L989L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41bev1L989L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41aaqImzqQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Mk3m4yP6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41YrZiKj8iL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31bqHN3aWiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41LQfLE4GPL._SL500_.jpg"
+  ],
   "title_raw": "Saucony Men's Ride 17 Running Shoes",
   "title_clean": "Saucony Men's Ride 17 Running Shoes",
   "price_usd": 110.7,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 5 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.466260+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030358+00:00"
 }

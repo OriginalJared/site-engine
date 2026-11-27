@@ -1,6 +1,15 @@
 {
   "asin": "B09Q62HDPX",
   "image": "https://m.media-amazon.com/images/I/51Ftth+e7gL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51Ftth+e7gL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fAmmFb3PL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51r+VnPVWOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/514WdSwjJVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51L7hTGhCJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516ADRQlY+L._SL500_.jpg"
+  ],
   "title_raw": "ViewSonic VP2786-4K 27 Inch Premium IPS 4K USB C Monitor with Integrated Color Wheel, 100% Adobe RGB, 98% DCI-P3, Pantone Validated, 90W Charging, HDMI, DisplayPort for Professional Home and Office",
   "title_clean": "ViewSonic VP2786-4K 27 Inch Premium IPS 4K USB C Monitor",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.417479+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012195+00:00"
 }

@@ -1,17 +1,26 @@
 {
   "asin": "B0DNMLK6SC",
   "image": "https://m.media-amazon.com/images/I/411ywOUf7eL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/411ywOUf7eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51h2+bu39ML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/512vSssS9FL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41BpMGkjvCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41tqsex0F4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51r9d0r+nOL._SL500_.jpg"
+  ],
   "title_raw": "Bitvae ADA Accepted Electric Toothbrush, 60-Day Battery Travel Toothbrush | Adults and Kids, 5 Modes, 8 Heads, Travel Case & Holder, Rechargeable Power, Smart Timer, IPX7 Waterproof, Shadow Black",
   "title_clean": "Bitvae ADA Accepted Electric Toothbrush",
-  "price_usd": 16.99,
-  "price_display": "$16.99",
+  "price_usd": 14.99,
+  "price_display": "$14.99",
   "was_price_usd": 24.99,
   "was_price_label": "List Price:",
-  "savings_percent": 32,
+  "savings_percent": 40,
   "deal_badge": "Black Friday Deal",
   "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
   "availability_type": "PREORDER",
   "availability_message": "This item will be released on February 1, 2027.",
-  "fetched_at": "2026-11-27T00:13:18.438942+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020583+00:00"
 }

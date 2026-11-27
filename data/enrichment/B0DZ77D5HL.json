@@ -1,6 +1,15 @@
 {
   "asin": "B0DZ77D5HL",
   "image": "https://m.media-amazon.com/images/I/31vdaNPJfqL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31vdaNPJfqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51-S+EFyZHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51D1bwifCRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31iXi2wySKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GBPpx3lrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41q-aE-fHAL._SL500_.jpg"
+  ],
   "title_raw": "Apple iPad 11-inch: A16 chip, 11-inch Model, Liquid Retina Display, 128GB, Wi-Fi 6, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
   "title_clean": "Apple iPad 11-inch: A16 chip",
   "price_usd": 379.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.471231+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032273+00:00"
 }

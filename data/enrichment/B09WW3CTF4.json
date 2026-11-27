@@ -1,6 +1,15 @@
 {
   "asin": "B09WW3CTF4",
   "image": "https://m.media-amazon.com/images/I/41j0ifZu03L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41j0ifZu03L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51uNLhnUT1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41pr7rlNRGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41z1cpRJzTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GnJr14e0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410OCUY7LdL._SL500_.jpg"
+  ],
   "title_raw": "BLUETTI EB3A Portable Power Station, 268Wh Solar Generator LiFePO4 Battery Backup w/ 2 600W (1200W Surge) AC Outlets, Recharge from 0-80% in 30 Min., LFP Backup for Outdoor Camping, Trip, Power Outage",
   "title_clean": "BLUETTI EB3A Portable Power Station",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.460074+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028130+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B08Z355Q31",
   "image": "https://m.media-amazon.com/images/I/313zBFohl4L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/313zBFohl4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ppuveRd4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41owGTzc+FL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41oFSm6tBnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fD+U-I2bL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41YOdZ5ZBzL._SL500_.jpg"
+  ],
   "title_raw": "CüboAi Cubo Ai Plus Smart Baby Monitor with Wall Mount: Sleep Safety Alerts for Covered Face, Danger Zone & Sleep Analytics - 1080p HD Night Vision Camera, 2-Way Audio, Cry & Temperature Detection",
   "title_clean": "CüboAi Cubo Ai Plus Smart Baby Monitor with Wall Mount: Sleep Safety",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.424060+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014666+00:00"
 }

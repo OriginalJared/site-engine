@@ -1,6 +1,13 @@
 {
   "asin": "B07CXM33MD",
   "image": "https://m.media-amazon.com/images/I/51hb8+MHgzL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51hb8+MHgzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mRqO5LgfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51zahGwMvaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51cBGsUjqYL._SL500_.jpg"
+  ],
   "title_raw": "Cuisinart TOA-60 Convection Toaster Oven Air Fryer with Light, Silver w/ 1 Year Extended Warranty",
   "title_clean": "Cuisinart TOA-60 Convection Toaster Oven Air Fryer with Light",
   "price_usd": null,
@@ -13,5 +20,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.418672+00:00"
+  "fetched_at": "2026-11-27T16:46:06.012594+00:00"
 }

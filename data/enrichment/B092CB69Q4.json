@@ -1,6 +1,15 @@
 {
   "asin": "B092CB69Q4",
   "image": "https://m.media-amazon.com/images/I/31Vl5r7CwCL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31Vl5r7CwCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41amvdSa2pL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41cx2naid0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412MenyWAML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41VckymDGoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ILL7s8NnL._SL500_.jpg"
+  ],
   "title_raw": "Logitech G502 X Plus Wireless RGB Gaming Mouse - Black | Optical Switches, RGB, 13 Buttons , Infinite Scroll Toggle, <130 hr Battery, USB-C, Wireless Charging Capable, for PC/MacOS",
   "title_clean": "Logitech G502 X Plus Wireless RGB Gaming Mouse",
   "price_usd": 119.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.442505+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021768+00:00"
 }

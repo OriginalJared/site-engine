@@ -1,10 +1,19 @@
 {
   "asin": "B0CLSCDZ81",
   "image": "https://m.media-amazon.com/images/I/41rOUhq9aXL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41rOUhq9aXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qYzTYw-IL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ORe-vwOZL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AJY9-jSlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41d0W08IbWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-vkpPQaXL._SL500_.jpg"
+  ],
   "title_raw": "DreamCloud Premier 13\" Queen Mattress, Luxury Gel Memory Foam | Premium Pressure-Relieving Layers, CertiPUR-US® Certified, 365 Night Trial & Forever Warranty",
   "title_clean": "DreamCloud Premier 13\" Queen Mattress",
-  "price_usd": 1057.83,
-  "price_display": "$1,057.83",
+  "price_usd": 1057.7,
+  "price_display": "$1,057.70",
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.448326+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024313+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0B2DP88SD",
   "image": "https://m.media-amazon.com/images/I/41OIkZ+MM4L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41OIkZ+MM4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516g3qrCCdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51N0iB9AQ2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51aTBMwfEZL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41OtATxdKqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41k1d7SYnlL._SL500_.jpg"
+  ],
   "title_raw": "Keychron K10 Pro Wireless Custom Mechanical Keyboard Full-Size Layout | QMK Programmable Bluetooth/Wired White Backlit with Hot-swappable Keychron Brown Switch for Mac Windows Linux",
   "title_clean": "Keychron K10 Pro Wireless Custom Mechanical Keyboard Full-Size Layout",
   "price_usd": 69.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.449711+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024760+00:00"
 }

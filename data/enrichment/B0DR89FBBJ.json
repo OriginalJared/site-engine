@@ -1,6 +1,15 @@
 {
   "asin": "B0DR89FBBJ",
   "image": "https://m.media-amazon.com/images/I/41MXuJD7CKL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41MXuJD7CKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+QfXWlJlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41sVnvSeRUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41j4BUslVBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41oRCg6Nt9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41iUfjbIaWL._SL500_.jpg"
+  ],
   "title_raw": "eufy Omni Robot Vacuum",
   "title_clean": "eufy Omni Robot Vacuum",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.464466+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029754+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B07VVK39F7",
   "image": "https://m.media-amazon.com/images/I/419EDCYNm+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/419EDCYNm+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41y++Gnsj6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/515cd2VB7CL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/5172c2+JwZL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jlnTkdkmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51MYuhfP+NL._SL500_.jpg"
+  ],
   "title_raw": "Levoit Air Purifier for Home Pets Hair Allergens in Bedroom Quiet Purifiers | Quiet HEPA Sleep Mode, Remove 99.97% Dust Pollen Smoke Pet Odor, AHAM VERIFIDE, Core300-P, Up to 1073 ft², White",
   "title_clean": "Levoit Air Purifier for Home Pets Hair Allergens in Bedroom Quiet",
   "price_usd": 80.73,
@@ -8,10 +17,10 @@
   "was_price_usd": 99.99,
   "was_price_label": "List Price:",
   "savings_percent": 19,
-  "deal_badge": "Black Friday Deal",
+  "deal_badge": "Deal selling fast",
   "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.420109+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013191+00:00"
 }

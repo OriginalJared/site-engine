@@ -1,6 +1,15 @@
 {
   "asin": "B0BLF5NH32",
   "image": "https://m.media-amazon.com/images/I/41vu0q0ZrqL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41vu0q0ZrqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41MRXqwFS0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414IUNVnUBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JocO++MsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415+OyPZGmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41A8g2Vh3UL._SL500_.jpg"
+  ],
   "title_raw": "GLORIOUS Model O 2 Wireless Gaming Mouse (Black) | 68g Superlight Symmetrical Shell, Hybrid 2.4GHz And Bluetooth Connectivity, 26K Optical Sensor, 80M Clicks, 210Hr Battery",
   "title_clean": "GLORIOUS Model O 2 Wireless Gaming Mouse",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.443672+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022197+00:00"
 }

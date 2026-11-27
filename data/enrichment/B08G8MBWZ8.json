@@ -1,6 +1,15 @@
 {
   "asin": "B08G8MBWZ8",
   "image": "https://m.media-amazon.com/images/I/318iENRzrXL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/318iENRzrXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lyZqCC13L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41j4S2-J+6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZIeOv5LjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51zguxSopjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415UcQ9wklL._SL500_.jpg"
+  ],
   "title_raw": "eufy Security, SpaceView Pro Video Baby Monitor E210 with 5\" Screen, Two-Way Audio, Security Camera, 720p, Pan & Tilt, Night Vision, Lullaby Player, Wide Angle Lens Not Included (No App Required)",
   "title_clean": "eufy Security, SpaceView Pro Video Baby Monitor E210 with 5\" Screen",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.422647+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014109+00:00"
 }

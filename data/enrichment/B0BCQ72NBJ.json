@@ -1,6 +1,15 @@
 {
   "asin": "B0BCQ72NBJ",
   "image": "https://m.media-amazon.com/images/I/41tHk4Bsq5L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41tHk4Bsq5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Ja0-HEEhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CY8B2qO2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51xhALj2VwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41YTVc5DUiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41pm+XyWe6L._SL500_.jpg"
+  ],
   "title_raw": "VTech RM5764HD 1080p Smart WiFi Remote Access Baby Monitor, 360° Pan & Tilt, 5\" 720p HD Display, HD Night Vision, Soothing Sounds, 2-Way Talk, Temperature Sensor, Motion Detection, iOS & Android",
   "title_clean": "VTech RM5764HD 1080p Smart WiFi Remote Access Baby Monitor",
   "price_usd": 129.95,
@@ -12,6 +21,6 @@
   "deal_end": null,
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 9 left in stock (more on the way).",
-  "fetched_at": "2026-11-27T00:13:18.423346+00:00"
+  "availability_message": "Only 8 left in stock (more on the way).",
+  "fetched_at": "2026-11-27T16:46:06.014386+00:00"
 }

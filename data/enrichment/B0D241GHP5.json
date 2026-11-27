@@ -1,6 +1,15 @@
 {
   "asin": "B0D241GHP5",
   "image": "https://m.media-amazon.com/images/I/11lqFl5di9L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/11lqFl5di9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41j21a5R8yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JDTUhzYXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ptjpMM10L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31XCb8dMX1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HI2d86L6L._SL500_.jpg"
+  ],
   "title_raw": "Ring Outdoor Cam Plus (newest model), Wide-angle 2K video, White | Ring Vision, Home or business security, Low-Light Sight for full-color night vision, Mount-anywhere versatility, Battery",
   "title_clean": "Ring Outdoor Cam Plus (newest model)",
   "price_usd": 99.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.444372+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022429+00:00"
 }

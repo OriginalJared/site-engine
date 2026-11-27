@@ -1,6 +1,15 @@
 {
   "asin": "B0954PQDM8",
   "image": "https://m.media-amazon.com/images/I/21PrP9n7OeL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/21PrP9n7OeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JwevN9N3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41VPkbj-ZeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51THcg28YtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41q2nkJV0-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41NshF8MaEL._SL500_.jpg"
+  ],
   "title_raw": "LG CordZero Cordless Stick Vacuum Cleaner, 2 Batteries [10 Year Motor Warranty] Powerful Cleaning for Carpet, Floor, Hardwood, Pet Hair, Furniture, Dust, Lightweight, High-Capacity Dust Bin, A927",
   "title_clean": "LG CordZero Cordless Stick Vacuum Cleaner",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.431510+00:00"
+  "fetched_at": "2026-11-27T16:46:06.017680+00:00"
 }

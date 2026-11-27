@@ -1,6 +1,10 @@
 {
   "asin": "B09YS9N7H2",
   "image": "https://m.media-amazon.com/images/I/31aRyk6KBHL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31aRyk6KBHL._SL500_.jpg"
+  ],
   "title_raw": "Dyson V8 Cordless Vacuum, Cleans Hard Floors and Carpets, Detangles, Converts to Handheld, 115AW, 2 Power Modes, Up to 40 Minutes¹",
   "title_clean": "Dyson V8 Cordless Vacuum",
   "price_usd": 349.0,
@@ -12,6 +16,6 @@
   "deal_end": null,
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 2 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.431773+00:00"
+  "availability_message": "Only 1 left in stock - order soon.",
+  "fetched_at": "2026-11-27T16:46:06.017762+00:00"
 }

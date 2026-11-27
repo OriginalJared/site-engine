@@ -1,6 +1,15 @@
 {
   "asin": "B0CNWP7D7G",
   "image": "https://m.media-amazon.com/images/I/31MF7F0dH2L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31MF7F0dH2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/315jTaqyoeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31ZJLkqb1fL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31KvMewgTaL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/319Zj1stD8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31V3EoV7KoL._SL500_.jpg"
+  ],
   "title_raw": "NIU KQi3 Max Electric Scooter - Gray/Black",
   "title_clean": "NIU KQi3 Max Electric Scooter",
   "price_usd": 499.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 20 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.436898+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019751+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0DBT9KTFY",
   "image": "https://m.media-amazon.com/images/I/41TltdPFrXL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41TltdPFrXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51CLLcqG3aL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xsSlSx-LL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41h6dN+eZLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Q21KCMDTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51pXlWi7SvL._SL500_.jpg"
+  ],
   "title_raw": "ECOVACS DEEBOT T30S Care Robot Vacuum and Mop, 11000Pa, ZeroTangle Technology, TruEdge Adaptive Edge Mopping, Hot Water Mop Washing, Self-Emptying, Self Refilling, Auto-Mop Lifting, Obstacle Avoidance",
   "title_clean": "ECOVACS DEEBOT T30S Care Robot Vacuum and Mop",
   "price_usd": 1029.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.464031+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029591+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0BL8WSCH3",
   "image": "https://m.media-amazon.com/images/I/31cTn0SAUFL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31cTn0SAUFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lccjxsiAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ZBVYFVwoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41BLLvQ381L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/418AUtqt54L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/411dHCqhIkL._SL500_.jpg"
+  ],
   "title_raw": "Amazon Fire 7 Kids tablet, ages 3-7. Includes ad-free and exclusive content, easy parental controls, 10-hr battery, 16 GB, Purple",
   "title_clean": "Amazon Fire 7 Kids tablet",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.472853+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032942+00:00"
 }

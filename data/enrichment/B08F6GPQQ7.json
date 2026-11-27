@@ -1,6 +1,15 @@
 {
   "asin": "B08F6GPQQ7",
   "image": "https://m.media-amazon.com/images/I/11ONm1y7kyL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/11ONm1y7kyL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31iHRXUgIfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ws8x4kHkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41sib9gRgML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31keOt6kH8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417xEpFBi-L._SL500_.jpg"
+  ],
   "title_raw": "Ring Floodlight Cam Wired Plus (2nd Gen), Home or business security, White | Motion-activated 1080p HD video, Floodlights",
   "title_clean": "Ring Floodlight Cam Wired Plus (2nd Gen)",
   "price_usd": 89.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.445545+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022870+00:00"
 }

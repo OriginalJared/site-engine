@@ -1,6 +1,15 @@
 {
   "asin": "B0CD2FSRDD",
   "image": "https://m.media-amazon.com/images/I/31HFNknLOPL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31HFNknLOPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41EH4FuWT2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31WMK+nSd1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31VGVS+x49L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31zuIoDdn1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/313w0AmMnpL._SL500_.jpg"
+  ],
   "title_raw": "Bose QuietComfort Ultra Bluetooth Earbuds, Wireless Earbuds with Spatial Audio and World-Class Active Noise Cancellation, Deep Bass, Up to 6 Hours of Playtime, Black",
   "title_clean": "Bose QuietComfort Ultra Bluetooth Earbuds",
   "price_usd": 269.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.473807+00:00"
+  "fetched_at": "2026-11-27T16:46:06.033258+00:00"
 }

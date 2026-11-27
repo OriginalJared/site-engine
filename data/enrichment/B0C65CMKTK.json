@@ -1,6 +1,15 @@
 {
   "asin": "B0C65CMKTK",
   "image": "https://m.media-amazon.com/images/I/31CpaIf4q+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31CpaIf4q+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/515-wGnd+KL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ctUKst+qL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51WgtT0-6RL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51WhGdwApRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41PH78D3UVL._SL500_.jpg"
+  ],
   "title_raw": "Segway Ninebot MAX G2 Electric Scooter, Up to 43 Miles of Range | Power by 450W Motor power, 22 MPH Top Speed, w/t 10-inch Tires , Dual Brakes & Suspension, UL-2272 2271 Certified",
   "title_clean": "Segway Ninebot MAX G2 Electric Scooter",
   "price_usd": 598.48,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.435789+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019342+00:00"
 }

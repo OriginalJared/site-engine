@@ -1,6 +1,15 @@
 {
   "asin": "B08CVN4CVD",
   "image": "https://m.media-amazon.com/images/I/41hGxgOAN0L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41hGxgOAN0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ADnflti4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41G9rSePImL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GKdOwNj1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Fw8ygf0iL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4154VgWXmyL._SL500_.jpg"
+  ],
   "title_raw": "Nextbase 622GW Dash Cam Full 4K/30fps UHD Recording in Car DVR Camera- 140° Front- Wi-Fi, GPS, Bluetooth- Super Slow Motion @ 120fps- Image Stabilisation- what3words- Night Vision- Alexa Built-in",
   "title_clean": "Nextbase 622GW Dash Cam Full 4K/30fps UHD Recording in Car DVR",
   "price_usd": 229.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.433626+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018507+00:00"
 }

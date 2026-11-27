@@ -1,6 +1,15 @@
 {
   "asin": "B0DCBYMC9D",
   "image": "https://m.media-amazon.com/images/I/31QO9wVU+QL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31QO9wVU+QL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51iZF950QFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516XX1uFbEL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51SmkQJLseL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Clk9lHfhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41TQXg2PV4L._SL500_.jpg"
+  ],
   "title_raw": "EF ECOFLOW Delta 3 Portable Power Station, 1024Wh 1800W | LiFePO4 Battery, Full Charge in 56 Min, 1800W AC/100W USB-C Output, Solar Generator for Home Backup Power, Camping & RVs",
   "title_clean": "EF ECOFLOW Delta 3 Portable Power Station, 1024Wh 1800W",
   "price_usd": 599.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.459348+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027901+00:00"
 }

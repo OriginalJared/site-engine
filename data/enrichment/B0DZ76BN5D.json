@@ -1,6 +1,15 @@
 {
   "asin": "B0DZ76BN5D",
   "image": "https://m.media-amazon.com/images/I/31WJubkt7AL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31WJubkt7AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31t0gceBb-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/414QgI3A25L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51X-htPIraL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WPX1JHeBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31A3EENbqOL._SL500_.jpg"
+  ],
   "title_raw": "Apple iPad Air 11-inch with M3 chip Built for Apple Intelligence, Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life — Space Gray",
   "title_clean": "Apple iPad Air 11-inch with M3 chip Built for Apple Intelligence",
   "price_usd": 649.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.471459+00:00"
+  "fetched_at": "2026-11-27T16:46:06.032441+00:00"
 }

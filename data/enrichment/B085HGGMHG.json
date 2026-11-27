@@ -1,6 +1,15 @@
 {
   "asin": "B085HGGMHG",
   "image": "https://m.media-amazon.com/images/I/410bjvHoYPL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/410bjvHoYPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41S29expHwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/518dQppZSsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CaYgeNE5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51NKNbf+DzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Dv4awi-vL._SL500_.jpg"
+  ],
   "title_raw": "Casper Sleep Original 11\" Memory Foam Queen Mattress – Medium Firm Feel | Breathable Memory Foam, Zoned Support, Motion Isolation, 100-Night Trial, CertiPUR-US",
   "title_clean": "Casper Sleep Original 11\" Memory Foam Queen Mattress",
   "price_usd": 899.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.447666+00:00"
+  "fetched_at": "2026-11-27T16:46:06.024076+00:00"
 }

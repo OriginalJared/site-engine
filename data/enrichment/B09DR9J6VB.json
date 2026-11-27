@@ -1,6 +1,15 @@
 {
   "asin": "B09DR9J6VB",
   "image": "https://m.media-amazon.com/images/I/41kBdwc7j9L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41kBdwc7j9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/210PEOu292L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21vjncqzw0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xtNZ6gn9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jodz2pNSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uH3+DZPqL._SL500_.jpg"
+  ],
   "title_raw": "Linksys MX8503 Atlas Max 6E Tri-Band Mesh Wi-Fi 6E System (3 Pack)",
   "title_clean": "Linksys MX8503 Atlas Max 6E Tri-Band Mesh Wi-Fi 6E System",
   "price_usd": 724.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 3 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.452432+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025595+00:00"
 }

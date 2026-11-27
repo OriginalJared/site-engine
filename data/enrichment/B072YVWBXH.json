@@ -1,6 +1,15 @@
 {
   "asin": "B072YVWBXH",
   "image": "https://m.media-amazon.com/images/I/41CuhvxMjDL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41CuhvxMjDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41rUEppotzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Ob7Pku+LL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51DCuaaRuxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41au78zog0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41zw0jSPj+L._SL500_.jpg"
+  ],
   "title_raw": "Aquasonic Black Series Ultra Whitening Toothbrush – ADA Accepted Electric Toothbrush- 8 Brush Heads & Travel Case – 40,000 VPM Electric Motor & Wireless Charging - 4 Modes w Smart Timer",
   "title_clean": "Aquasonic Black Series Ultra Whitening Toothbrush – ADA Accepted",
   "price_usd": 29.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.438263+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020366+00:00"
 }

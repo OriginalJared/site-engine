@@ -1,6 +1,15 @@
 {
   "asin": "B0CM6VDKSQ",
   "image": "https://m.media-amazon.com/images/I/31vSfCMTKcL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31vSfCMTKcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/517LV6KNymL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51fQ4mNQkuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51cX1xQmujL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51CWu66OSBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51RT5MlUUFL._SL500_.jpg"
+  ],
   "title_raw": "Shark NeverChange Air Purifier, HP152, Charcoal | For Home, Large Room, HEPA-Exceeding Filter with Odor Neutralizer, Captures Pollutants, Pet Dander, Dust, Smoke, and More",
   "title_clean": "Shark NeverChange Air Purifier, HP152, Charcoal",
   "price_usd": 149.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.421747+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013703+00:00"
 }

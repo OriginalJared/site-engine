@@ -1,6 +1,15 @@
 {
   "asin": "B0CY6S748H",
   "image": "https://m.media-amazon.com/images/I/31klEQ41i3L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31klEQ41i3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bw7Z03jWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41wAJ0hnHpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31y4xXNIUIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41z9YsKTJ0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ImQEQ0foL._SL500_.jpg"
+  ],
   "title_raw": "Sonos Roam 2 - Black - Portable Waterproof Bluetooth Speaker | 10-Hr Battery | IP67 Waterproof | WiFi & AirPlay 2 | Works with Sonos System",
   "title_clean": "Sonos Roam 2 - Black - Portable Waterproof Bluetooth Speaker",
   "price_usd": 139.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.427081+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015883+00:00"
 }

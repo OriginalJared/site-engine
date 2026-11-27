@@ -1,6 +1,15 @@
 {
   "asin": "B0CYC8MD75",
   "image": "https://m.media-amazon.com/images/I/31IrPVcj0OL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31IrPVcj0OL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31dbiu9eNCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41X5bMsgl+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ffB-+gKhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/312vt8TbyML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fMWJiWRQL._SL500_.jpg"
+  ],
   "title_raw": "Owlet® Dream Duo 2 Smart Baby Monitor: FDA-Cleared Dream Sock® Plus Owlet Cam 2- Dusty Rose & Accessory Fabric Sock for Dream Sock Baby Monitor, Fits Babies 0 to 18 Months, Dusty Rose",
   "title_clean": "Owlet® Dream Duo 2 Smart Baby Monitor: FDA-Cleared Dream Sock®",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.422882+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014204+00:00"
 }

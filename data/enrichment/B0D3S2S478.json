@@ -1,6 +1,15 @@
 {
   "asin": "B0D3S2S478",
   "image": "https://m.media-amazon.com/images/I/413yqmbslpL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/413yqmbslpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JGIT481eL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/418Gz5v76JL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41bGjuOjlzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ROP0PZJUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31YFW9OZ8zL._SL500_.jpg"
+  ],
   "title_raw": "Helix Midnight Luxe with GlacioTex Cooling Mattress, Queen",
   "title_clean": "Helix Midnight Luxe with GlacioTex Cooling Mattress, Queen",
   "price_usd": 2061.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In stock",
-  "fetched_at": "2026-11-27T00:13:18.447191+00:00"
+  "fetched_at": "2026-11-27T16:46:06.023853+00:00"
 }

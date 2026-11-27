@@ -1,6 +1,15 @@
 {
   "asin": "B09322FB84",
   "image": "https://m.media-amazon.com/images/I/31VmCI6yE-S._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31VmCI6yE-S._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51T0yWvs0NS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31l-79i2FDS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41TrVzN1QsS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uNl7G4KRS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51g8U+ir9CS._SL500_.jpg"
+  ],
   "title_raw": "Fully Jarvis Standing Desk 36\" x 24\" Natural Bamboo Top - Electric Adjustable Desk Height from 25.5\" to 50.7\" with Memory Preset Controller (Rectangle, Black Frame)",
   "title_clean": "Fully Jarvis Standing Desk 36\" x 24\" Natural Bamboo Top",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.469369+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031359+00:00"
 }

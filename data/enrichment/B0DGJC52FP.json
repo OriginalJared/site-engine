@@ -1,6 +1,15 @@
 {
   "asin": "B0DGJC52FP",
   "image": "https://m.media-amazon.com/images/I/31cMRLhVaEL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31cMRLhVaEL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31HMe+QSi9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41W8E9QkDEL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KUWUGIRmL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41B0046oPyL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31f0ce2LZbL._SL500_.jpg"
+  ],
   "title_raw": "Apple AirPods Max Wireless Over-Ear Headphones, Pro-Level Active Noise Cancellation, Transparency Mode, Personalized Spatial Audio, USB-C Charging, Bluetooth Headphones for iPhone - Midnight",
   "title_clean": "Apple AirPods Max Wireless Over-Ear Headphones",
   "price_usd": 419.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.457915+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027408+00:00"
 }

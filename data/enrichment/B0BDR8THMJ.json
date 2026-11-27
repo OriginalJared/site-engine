@@ -1,6 +1,15 @@
 {
   "asin": "B0BDR8THMJ",
   "image": "https://m.media-amazon.com/images/I/312wUjWDHNL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/312wUjWDHNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41w6IpOvBVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51BqDjP9PeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412pi022k5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41U3g8JipKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51sOTn7gc9L._SL500_.jpg"
+  ],
   "title_raw": "Epson Home Cinema 2350 4K PRO-UHD Smart Streaming Projector with Android TV | 3-Chip 3LCD 2800 Lumens Color and White Brightness HDR10 HLG Low Latency 10 W Speaker Bluetooth Home Theater",
   "title_clean": "Epson Home Cinema 2350 4K PRO-UHD Smart Streaming Projector",
   "price_usd": 1099.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.461417+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028563+00:00"
 }

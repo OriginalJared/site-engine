@@ -1,6 +1,15 @@
 {
   "asin": "B016OIF2JU",
   "image": "https://m.media-amazon.com/images/I/31M2TQ+hl+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31M2TQ+hl+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vJblEokkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41CRqBA5PCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41BOUYmdTtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51EYpaQ3McL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Mr4THGmjL._SL500_.jpg"
+  ],
   "title_raw": "Steelcase Gesture Office Chair, Carpet Floors, Graphite Gray | Ergonomic Work Chair with Wheels for Carpet, Comfortable & Intuitive-to-Adjust for Desk, with 360-Degree Arms",
   "title_clean": "Steelcase Gesture Office Chair, Carpet Floors, Graphite Gray",
   "price_usd": 1208.25,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.453698+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026121+00:00"
 }

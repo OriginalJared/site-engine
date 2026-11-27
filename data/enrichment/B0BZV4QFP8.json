@@ -1,7 +1,16 @@
 {
   "asin": "B0BZV4QFP8",
   "image": "https://m.media-amazon.com/images/I/31InW7uHGNL._SL500_.jpg",
-  "title_raw": "Soundcore by Anker Liberty 4 NC Wireless Earbuds",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31InW7uHGNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41t41tdLRvL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51dGOHOEWeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/510Vq4mgNxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41XNprhTMNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GhlXep5XL._SL500_.jpg"
+  ],
+  "title_raw": "Soundcore by Anker Liberty 4 NC Wireless Earbuds | 98.5% Noise Reduction, Adaptive Noise Cancelling to Environment, Hi-Res Sound, 50H Battery, Wireless Charging, Bluetooth 5.3",
   "title_clean": "Soundcore by Anker Liberty 4 NC Wireless Earbuds",
   "price_usd": 69.99,
   "price_display": "$69.99",
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.475070+00:00"
+  "fetched_at": "2026-11-27T16:46:06.033753+00:00"
 }

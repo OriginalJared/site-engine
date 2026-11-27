@@ -1,6 +1,15 @@
 {
   "asin": "B0BHL9T17Y",
   "image": "https://m.media-amazon.com/images/I/31TWpDi+lhL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31TWpDi+lhL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31oWIWcWXoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41u5C23EQOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/212SqK4FvML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41mFInvSZsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/517RsAUfrpL._SL500_.jpg"
+  ],
   "title_raw": "ASUS ZenWiFi XT9 AX7800 Tri-Band WiFi6 Mesh WiFiSystem (2Pack), 802.11ax, up to 5700 sq ft & 6+ Rooms, AiMesh, Lifetime Free Internet Security, Parental Controls, 2.5G WAN Port, UNII 4, White",
   "title_clean": "ASUS ZenWiFi XT9 AX7800 Tri-Band WiFi6 Mesh WiFiSystem (2Pack)",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.451775+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025392+00:00"
 }

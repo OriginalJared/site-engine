@@ -1,6 +1,15 @@
 {
   "asin": "B0CXPRHTNB",
   "image": "https://m.media-amazon.com/images/I/41xSsPwg+yL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41xSsPwg+yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51P66ca9BAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/416e294KwSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41SCVNcUnZL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41VSy8ImraL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lvD9DxDKL._SL500_.jpg"
+  ],
   "title_raw": "Nothing Ear (a) Wireless Earbuds, 45dB Hybrid Noise Cancelling Earbuds, Hi-Res Audio, Advanced Equaliser, Dual Connect, 6 Mics, 42.5H Playtime Ear Buds Wireless Bluetooth, White",
   "title_clean": "Nothing Ear (a) Wireless Earbuds",
   "price_usd": 55.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.474589+00:00"
+  "fetched_at": "2026-11-27T16:46:06.033594+00:00"
 }

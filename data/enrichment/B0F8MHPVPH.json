@@ -1,6 +1,15 @@
 {
   "asin": "B0F8MHPVPH",
   "image": "https://m.media-amazon.com/images/I/418JjdqdnpL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/418JjdqdnpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51PKoPJFp9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ICHKyGE3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ucAoicwuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51MkfjE+aWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51bQMcQxTeL._SL500_.jpg"
+  ],
   "title_raw": "FEZIBO Standing Desk 48 × 24 Inch Electric Height Adjustable, Maple | Sit and Stand Up Adjustable Desk, Home Office Computer Desk with 3 Customizable Memory Presets",
   "title_clean": "FEZIBO Standing Desk 48 × 24 Inch Electric Height Adjustable",
   "price_usd": 94.98,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.470537+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031693+00:00"
 }

@@ -1,6 +1,10 @@
 {
   "asin": "B0CLL4ZQ15",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "Gotrax G4 Series Electric Scooter for Adults, 500-650W Motor 10\"/11\" Shock Absorbing Tires, Max 25-45 Miles Long Range 20-38MPH Top Speed, with Electric Code Lock Foldable Commuting Electric Scooter",
   "title_clean": "Gotrax G4 Series Electric Scooter for Adults",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.436021+00:00"
+  "fetched_at": "2026-11-27T16:46:06.019425+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0FTSL4FXJ",
   "image": "https://m.media-amazon.com/images/I/31l7NMvkGWL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31l7NMvkGWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31o4eihvu8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41k0YVjOSJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41z1G8cuEjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41yKrXUXk6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51sLVNVwN7L._SL500_.jpg"
+  ],
   "title_raw": "Nanit Smart Baby Video Monitor - Camera & Floor Stand - 1080p Wi-Fi Camera | Pro edition, 2-way audio, sound/motion/cry notifications, night vision, see your baby from anywhere, video camera",
   "title_clean": "Nanit Smart Baby Video Monitor",
   "price_usd": 217.49,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.422414+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014003+00:00"
 }

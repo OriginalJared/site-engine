@@ -1,6 +1,15 @@
 {
   "asin": "B0CNGLPFKB",
   "image": "https://m.media-amazon.com/images/I/31EALoY6YVL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31EALoY6YVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41lOBieNZQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/5103ioS1kCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qaqW8HAYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41nDqK6AiOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410Ysjfr4nL._SL500_.jpg"
+  ],
   "title_raw": "Hbada Ergonomic Office Chair with 3D Adjustable Armrests, Adjustable Lumbar Support High Back for Computer Chair, Big and Tall Mesh Office Chair, Home Office Desk Chairs Black",
   "title_clean": "Hbada Ergonomic Office Chair with 3D Adjustable Armrests",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.454164+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026263+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09TQZP9CL",
   "image": "https://m.media-amazon.com/images/I/51xKveoh1WL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51xKveoh1WL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21Ca43l6JCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51vtCDol3vL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31tGTC15z+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21fJlyC1poL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/511uczVGohL._SL500_.jpg"
+  ],
   "title_raw": "Dell UltraSharp U2723QE 27\" 4K UHD WLED LCD Monitor - 16:9 - Black, Silver",
   "title_clean": "Dell UltraSharp U2723QE 27\" 4K UHD WLED LCD Monitor",
   "price_usd": 699.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "AVAILABLE_DATE",
   "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.414987+00:00"
+  "fetched_at": "2026-11-27T16:46:06.011039+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0DKXQT2D1",
   "image": "https://m.media-amazon.com/images/I/51S704Eq-BL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/51S704Eq-BL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51PxvaDNyQL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412jg-Sc3dL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41sVqu+pgJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41k1ELiY-5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51SnHTfBIOL._SL500_.jpg"
+  ],
   "title_raw": "REDTIGER F7NP Dash Cam Front Rear with OBD Hardwire Kit",
   "title_clean": "REDTIGER F7NP Dash Cam Front Rear with OBD Hardwire Kit",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.434328+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018772+00:00"
 }

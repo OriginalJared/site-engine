@@ -1,6 +1,15 @@
 {
   "asin": "B09XS7JWHH",
   "image": "https://m.media-amazon.com/images/I/31fEv99XZ+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31fEv99XZ+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41nbsNSYhdL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ApBB0G39L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51NqNdAATeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51JrVofK3nL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-E8jpyU5L._SL500_.jpg"
+  ],
   "title_raw": "Sony WH-1000XM5 Premium Noise Cancelling Wireless Headphones, Black | Auto NC Optimizer, Up to 30 Hrs of Battery, Carrying Case, Crystal Clear Calls, Touch Control, Multipoint Connection",
   "title_clean": "Sony WH-1000XM5 Premium Noise Cancelling Wireless Headphones",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.457458+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027273+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0C2JRFKKX",
   "image": "https://m.media-amazon.com/images/I/31tz7UAcA2L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31tz7UAcA2L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51quuY44oiL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41wqFvpowWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HfyEvp0bL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51B4QxN-72L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jTusChfAL._SL500_.jpg"
+  ],
   "title_raw": "Tapo TP-Link Outdoor Wireless Security Camera, 2K QHD, Color Night Vision, Starlight Sensor, Motion/Person/Vehicle Detection, 180 Day Battery, Works w/Alexa & Google Home, 1-Camera, C420S1",
   "title_clean": "Tapo TP-Link Outdoor Wireless Security Camera",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.445307+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022729+00:00"
 }

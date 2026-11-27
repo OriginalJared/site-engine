@@ -1,6 +1,10 @@
 {
   "asin": "B0HNR6CS7W",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "Breville the Oracle Jet Espresso Machine - Brushed Stainless Steel",
   "title_clean": "Breville the Oracle Jet Espresso Machine",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.441113+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021300+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0BBYNPV33",
   "image": "https://m.media-amazon.com/images/I/41RsdiklN+L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41RsdiklN+L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vOhsG-VFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41AUkooFX0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/511MogbaFuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41xuYvb9QbL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4148jImA9mL._SL500_.jpg"
+  ],
   "title_raw": "Breville BES876BSS Barista Express Impress, Brushed Stainless Steel | Craft café-quality lattes and cappuccinos at home with this semi-automatic espresso machine with built-in grinder",
   "title_clean": "Breville BES876BSS Barista Express Impress",
   "price_usd": 794.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.440549+00:00"
+  "fetched_at": "2026-11-27T16:46:06.021105+00:00"
 }

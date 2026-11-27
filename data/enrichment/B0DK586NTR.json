@@ -1,6 +1,15 @@
 {
   "asin": "B0DK586NTR",
   "image": "https://m.media-amazon.com/images/I/41Rt58-3XrL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41Rt58-3XrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41aHRckJ4lL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JfnvUdYxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31jgqQsuPwL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Aovbje1nL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41M+iYxQRXL._SL500_.jpg"
+  ],
   "title_raw": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch Pour Over, Auto Pause Brewing with Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS",
   "title_clean": "Bonavita 8 Cup Drip Coffee Maker Machine",
   "price_usd": 142.46,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.429323+00:00"
+  "fetched_at": "2026-11-27T16:46:06.016789+00:00"
 }

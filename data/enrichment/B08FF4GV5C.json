@@ -1,6 +1,15 @@
 {
   "asin": "B08FF4GV5C",
   "image": "https://m.media-amazon.com/images/I/41SleOO2QsL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41SleOO2QsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZxPu+JsTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41OncwpjdIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41HW2JrDDeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qD+hTMOlL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JPwrqYamL._SL500_.jpg"
+  ],
   "title_raw": "Infant Optics DXR-8 PRO - Patented Active Noise Reduction (ANR), 5” HD Video Baby Monitor with 1 Camera, No WiFi, Hack-Proof,Pan Tilt Zoom, Interchangeable Lens",
   "title_clean": "Infant Optics DXR-8 PRO",
   "price_usd": 199.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.423105+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014295+00:00"
 }

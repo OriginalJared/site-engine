@@ -1,6 +1,15 @@
 {
   "asin": "B0B3RL6YFG",
   "image": "https://m.media-amazon.com/images/I/31AWZq4SytL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31AWZq4SytL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JWlBqARFL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415WFKh7akL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41eeViOj4SL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/3127hJvqfpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41BldwopTXL._SL500_.jpg"
+  ],
   "title_raw": "Secretlab Titan Evo XL Black Gaming Chair - Leatherette, Ergonomic | Lumbar Support, High Back, Reclining, Magnetic Head Pillow, Big & Tall (Up to 395 lbs), 4D Armrests, Height Adjustable, Basic",
   "title_clean": "Secretlab Titan Evo XL Black Gaming Chair",
   "price_usd": 679.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.453257+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025965+00:00"
 }

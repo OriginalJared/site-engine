@@ -1,6 +1,15 @@
 {
   "asin": "B0CJWTL482",
   "image": "https://m.media-amazon.com/images/I/41P9-w5eJqL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41P9-w5eJqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ZQ9xRb7PL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/419zrBjXGcL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51UlJ5ASHOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41BUrULIQnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41PvBgp3g8L._SL500_.jpg"
+  ],
   "title_raw": "BURST Pro Sonic Electric Toothbrush for Adults - Soft Bristle Toothbrush for Deep Clean & Plaque Removal - Up to 9 Month Battery, Smart Pressure Sensor, 5 Sonic Toothbrush Modes - Black",
   "title_clean": "BURST Pro Sonic Electric Toothbrush for Adults",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.439164+00:00"
+  "fetched_at": "2026-11-27T16:46:06.020648+00:00"
 }

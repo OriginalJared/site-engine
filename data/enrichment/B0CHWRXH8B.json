@@ -1,17 +1,26 @@
 {
   "asin": "B0CHWRXH8B",
   "image": "https://m.media-amazon.com/images/I/21fBDZCm5QL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/21fBDZCm5QL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/317cK2pqGgL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51QS-BX4D-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31PbPujVDrL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/316Y9560fLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jM0GvpYRL._SL500_.jpg"
+  ],
   "title_raw": "Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C Charging, Up to 2X More Active Noise Cancelling Bluetooth Headphones, Transparency Mode, Adaptive, Personalized Spatial Audio, White",
   "title_clean": "Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C",
-  "price_usd": 196.35,
-  "price_display": "$196.35",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.473565+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-27T16:46:06.033176+00:00"
 }

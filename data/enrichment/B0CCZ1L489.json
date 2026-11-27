@@ -1,6 +1,15 @@
 {
   "asin": "B0CCZ1L489",
   "image": "https://m.media-amazon.com/images/I/31n8zJ5mBDL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31n8zJ5mBDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41v0CawhM5L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31FMVoMGv1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31YUe7P2d1L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31KhP1XAeeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JOx6MluaL._SL500_.jpg"
+  ],
   "title_raw": "Bose QuietComfort Ultra Bluetooth Headphones, Wireless Headphones with Spatial Audio, Over Ear Noise Cancelling with Mic, Up to 24 Hours of Playtime, Black",
   "title_clean": "Bose QuietComfort Ultra Bluetooth Headphones",
   "price_usd": 269.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "AVAILABLE_DATE",
   "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.457686+00:00"
+  "fetched_at": "2026-11-27T16:46:06.027339+00:00"
 }

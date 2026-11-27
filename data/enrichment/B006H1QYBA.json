@@ -1,6 +1,15 @@
 {
   "asin": "B006H1QYBA",
   "image": "https://m.media-amazon.com/images/I/31AEkNhh-8L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31AEkNhh-8L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51F-kEF-8XL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41jiiqUuVUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51DyvoAtHDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GXtwsS-fL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41EwXx-agZL._SL500_.jpg"
+  ],
   "title_raw": "Steelcase Leap Office Chair, Ergonomic Back Support, Onyx | Ergonomic Work Chair with Wheels for Carpet, Supports Unique Body Shape via Natural Glide System & Liveback Technology",
   "title_clean": "Steelcase Leap Office Chair, Ergonomic Back Support, Onyx",
   "price_usd": 1080.77,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "LEADTIME",
   "availability_message": "Usually ships within 2 to 3 weeks",
-  "fetched_at": "2026-11-27T00:13:18.453006+00:00"
+  "fetched_at": "2026-11-27T16:46:06.025839+00:00"
 }

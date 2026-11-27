@@ -1,6 +1,15 @@
 {
   "asin": "B0998FWTHP",
   "image": "https://m.media-amazon.com/images/I/312nqxgtMIL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/312nqxgtMIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mlETpsPxL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51T+7h0HEXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51tT8JoqCWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51g6-xeeB3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Etvp7um8L._SL500_.jpg"
+  ],
   "title_raw": "PuroAir 240 HEPA Air Purifiers for Home Pets Bedroom 1000 Ft² - Black | Certified HEPA + CarbonTech™ Air Filter for Smoke, Odor, Allergies - PuroIQ Sensor Auto-Mode, Quiet Sleep-Mode, 360° Intake",
   "title_clean": "PuroAir 240 HEPA Air Purifiers for Home Pets Bedroom 1000 Ft²",
   "price_usd": 146.3,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.421489+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013628+00:00"
 }

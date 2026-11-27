@@ -1,6 +1,15 @@
 {
   "asin": "B096TX9P4D",
   "image": "https://m.media-amazon.com/images/I/41-SV7NZ-LS._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41-SV7NZ-LS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/318BnaktpVS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21Ku-wt0ITS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/313AVMNmz2S._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31sHKMy5rKS._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31CV8gOg8gS._SL500_.jpg"
+  ],
   "title_raw": "LG 27GP950-B 27 Inch UHD (3840 x 2160) Ultragear Nano IPS 1ms 144Hz Gaming Monitor with G-SYNC Compatibility (Black)",
   "title_clean": "LG 27GP950-B 27 Inch UHD (3840 x 2160) Ultragear Nano IPS 1ms 144Hz",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.415959+00:00"
+  "fetched_at": "2026-11-27T16:46:06.011588+00:00"
 }

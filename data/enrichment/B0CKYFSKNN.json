@@ -1,6 +1,15 @@
 {
   "asin": "B0CKYFSKNN",
   "image": "https://m.media-amazon.com/images/I/41GSXxpdncL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41GSXxpdncL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51jTHOAffBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41f8hS4QYHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51RPRK9CW3L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41KBb3BIkgL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51FzpquBpnL._SL500_.jpg"
+  ],
   "title_raw": "VIOFO A229 Pro 4K HDR Dash Cam Front and Rear, Dual STARVIS 2 Sensors | 4K Front and 2K Rear, IMX678 & IMX675 sensors, 5GHz Wi-Fi, GPS, Voice Control, Buffered 24H Parking Mode, Night Vision 2.0",
   "title_clean": "VIOFO A229 Pro 4K HDR Dash Cam Front and Rear",
   "price_usd": 219.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.433147+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018316+00:00"
 }

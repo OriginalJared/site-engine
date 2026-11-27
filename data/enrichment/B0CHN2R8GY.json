@@ -1,6 +1,15 @@
 {
   "asin": "B0CHN2R8GY",
   "image": "https://m.media-amazon.com/images/I/31BRy-v076L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31BRy-v076L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41hvif2SzNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41cHSmYfjPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+08oE1lPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41fzoFJeSsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417sCkp+90L._SL500_.jpg"
+  ],
   "title_raw": "Corsair M75 AIR Wireless Ultra Lightweight Gaming Mouse – 2.4GHz & Bluetooth – 26,000 DPI – Up to 100hrs Battery – iCUE Compatible – Black",
   "title_clean": "Corsair M75 AIR Wireless Ultra Lightweight Gaming Mouse",
   "price_usd": 99.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.443208+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022034+00:00"
 }

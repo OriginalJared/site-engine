@@ -1,6 +1,15 @@
 {
   "asin": "B07R6TZMZL",
   "image": "https://m.media-amazon.com/images/I/416dhupDdTL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/416dhupDdTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51-AvFuqQVL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Rg-tYMtDL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51rh1Wnrb9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uyEQrGFRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51uqJxV85RL._SL500_.jpg"
+  ],
   "title_raw": "CHEFMAN Small Air Fryer Healthy Cooking, 3.6 Qt, Nonstick, User Friendly and Dual Control Temperature, w/ 60 Minute Timer & Auto Shutoff, Dishwasher Safe Basket, Matte Black, Cookbook Included",
   "title_clean": "CHEFMAN Small Air Fryer Healthy Cooking",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.419885+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013118+00:00"
 }

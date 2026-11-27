@@ -1,6 +1,15 @@
 {
   "asin": "B082TMBYR6",
   "image": "https://m.media-amazon.com/images/I/41WY4aAoRLL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41WY4aAoRLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51S4SbRXsJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51sL2j2b5iL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41-mvh+uJUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41J2JcKrMLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ic0G99WBL._SL500_.jpg"
+  ],
   "title_raw": "Jackery Explorer 300 Portable Power Station,292Wh | Backup LiFePO4 Battery, Solar Generator for Outdoors, Camping, Travel, Hunting, Blackout (Solar Panel Optional)",
   "title_clean": "Jackery Explorer 300 Portable Power Station,292Wh",
   "price_usd": 289.0,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.460289+00:00"
+  "fetched_at": "2026-11-27T16:46:06.028199+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B0DDM46B9R",
   "image": "https://m.media-amazon.com/images/I/414ao1CIm0L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/414ao1CIm0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/419eEOrpIzL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/413dZlHWg9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/412UZkJERCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Gt06353AL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WXHhtwkOL._SL500_.jpg"
+  ],
   "title_raw": "Garmin Dash Cam™ X310, Compact 4k Ultra HD Dash Cam | Records 4k Ultra HD Video with a 140-Degree Field of View, Compact Size & 2.4\" Touchscreen Display, Voice Control",
   "title_clean": "Garmin Dash Cam™ X310, Compact 4k Ultra HD Dash Cam",
   "price_usd": 349.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.432890+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018216+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B09TD77SG2",
   "image": "https://m.media-amazon.com/images/I/41E326G3zNL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41E326G3zNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51Z5JlCDS4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/418H8J0twCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41zkcxu+NXL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/61ozcYJ8jIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51IaJMVSxYL._SL500_.jpg"
+  ],
   "title_raw": "KitchenAid K400 Variable Speed Blender w/Tamper, KSB4028, Contour SIlver | Preset Recipe Programs: Ice Crush, Icy Drinks, and Smoothie, 5-speed variable speed dial, Intelli-Speed Motor Control",
   "title_clean": "KitchenAid K400 Variable Speed Blender w/Tamper",
   "price_usd": 259.95,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.425720+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015360+00:00"
 }

@@ -1,6 +1,15 @@
 {
   "asin": "B07V2NRP5R",
   "image": "https://m.media-amazon.com/images/I/41H8kbXlSGL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41H8kbXlSGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51s1li0EYkL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31JvLCuG+UL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uGk6nmAML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41XkcoI1fIL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/310qpwNp9tL._SL500_.jpg"
+  ],
   "title_raw": "Amazon Basics Executive Desk Chair with Easy Assembly, Adjustable Height, 275lb Capacity, Wide Oversized Cushion, 29.13\"D x 25.2\"W x 43.11\"H, Grey Bonded Leather",
   "title_clean": "Amazon Basics Executive Desk Chair with Easy Assembly",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.454385+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026335+00:00"
 }

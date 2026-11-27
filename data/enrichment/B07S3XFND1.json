@@ -1,6 +1,14 @@
 {
   "asin": "B07S3XFND1",
   "image": "https://m.media-amazon.com/images/I/41yi4YxadHL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41yi4YxadHL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51YLS92e64L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51T5rqkXTqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516QMZ7ufNL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415AJMT3kVL._SL500_.jpg"
+  ],
   "title_raw": "Breville BBL920BSS Super Q Blender for Kitchens, Brushed Stainless Steel | Quietly blend smoothies, soups and more with powerful noise-suppression technology for a peaceful kitchen | 68 oz capacity",
   "title_clean": "Breville BBL920BSS Super Q Blender for Kitchens",
   "price_usd": 399.95,
@@ -13,5 +21,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.426186+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015537+00:00"
 }

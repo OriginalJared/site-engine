@@ -1,6 +1,15 @@
 {
   "asin": "B09BJN3CX4",
   "image": "https://m.media-amazon.com/images/I/41B1blJ5C6L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41B1blJ5C6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51+MTH5n0rL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51vcBJoqRtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51eMfnJSbuL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51zW6-zNNLL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51imYz4HY8L._SL500_.jpg"
+  ],
   "title_raw": "LEVOIT Smart Air Purifiers for Home Large Room Up to 1718 Ft² Core 400S-P | HEPA Sleep Mode, AHAM VERIFIDE, Auto Mode, Air Quality Monitor, 3-in-1 Filter For Pet Allergy, Smoke, Dust, ChildLock, Black",
   "title_clean": "LEVOIT Smart Air Purifiers for Home Large Room Up to 1718 Ft² Core",
   "price_usd": 199.99,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.422195+00:00"
+  "fetched_at": "2026-11-27T16:46:06.013916+00:00"
 }

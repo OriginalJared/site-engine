@@ -1,6 +1,15 @@
 {
   "asin": "B081P7SJ3V",
   "image": "https://m.media-amazon.com/images/I/317fuTy97yL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/317fuTy97yL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41+G+yeF+aL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51GM2GliFgL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/5156w8TIXsL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51ozITGqSSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41O1RKdwIyL._SL500_.jpg"
+  ],
   "title_raw": "24 in. WIFI Woodwind Pellet Grill & Smoker - WIFI & Bluetooth Connectivity",
   "title_clean": "24 in. WIFI Woodwind Pellet Grill & Smoker",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.456299+00:00"
+  "fetched_at": "2026-11-27T16:46:06.026951+00:00"
 }

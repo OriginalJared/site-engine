@@ -1,6 +1,15 @@
 {
   "asin": "B0DBHTL3CN",
   "image": "https://m.media-amazon.com/images/I/415p6mupjYL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/415p6mupjYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41on5TwAJBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41F0edmNpnL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41GM9a9ormL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/4183nGstf0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51wyqNsHrDL._SL500_.jpg"
+  ],
   "title_raw": "PHILIPS 5500 Series Fully Automatic Espresso Machine, LatteGo Milk System | 20 Hot & Iced Coffee Pre-Sets customize coffee strength, milk and cup size, QuickStart, ceramic grinder, 15 bars (EP5544/94)",
   "title_clean": "PHILIPS 5500 Series Fully Automatic Espresso Machine",
   "price_usd": 848.0,
@@ -11,7 +20,7 @@
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "AVAILABLE_DATE",
-  "availability_message": "",
-  "fetched_at": "2026-11-27T00:13:18.441361+00:00"
+  "availability_type": "IN_STOCK",
+  "availability_message": "In Stock",
+  "fetched_at": "2026-11-27T16:46:06.021371+00:00"
 }

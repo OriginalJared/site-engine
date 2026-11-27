@@ -1,6 +1,15 @@
 {
   "asin": "B0FL1WYTYQ",
   "image": "https://m.media-amazon.com/images/I/31Cz50P8IYL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31Cz50P8IYL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41wHZkNUyGL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31+srrxMGPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/21BVJn5PVUL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31kb319ofTL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31LNZM8XcIL._SL500_.jpg"
+  ],
   "title_raw": "Autonomous Desk Pro Electric Standing Desk, Gray, 53×29 Inches, Premium Adjustable Height Desk, Dual Motor Sit Stand Desk with Hidden Keypad Control & Cable Tray for Home Office",
   "title_clean": "Autonomous Desk Pro Electric Standing Desk",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.470297+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031626+00:00"
 }

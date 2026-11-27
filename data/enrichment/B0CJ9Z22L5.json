@@ -1,6 +1,15 @@
 {
   "asin": "B0CJ9Z22L5",
   "image": "https://m.media-amazon.com/images/I/3191clIuzPL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/3191clIuzPL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41W-7c1CG6L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41RCzP45X0L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51PJm1VUvtL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51iZwgtwM7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51BfkoWdaUL._SL500_.jpg"
+  ],
   "title_raw": "WYZE Cam v4, 2.5K Indoor/Outdoor Security Camera, Color Night Vision, Grey | 2.4 GHz Wi-Fi Only, Enhanced Two-Way Audio and Motion Detection for Home Security, Baby Monitoring and Pet Camera",
   "title_clean": "WYZE Cam v4, 2.5K Indoor/Outdoor Security Camera, Color Night Vision",
   "price_usd": 34.98,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.444142+00:00"
+  "fetched_at": "2026-11-27T16:46:06.022353+00:00"
 }

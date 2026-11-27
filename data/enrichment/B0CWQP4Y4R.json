@@ -1,6 +1,15 @@
 {
   "asin": "B0CWQP4Y4R",
   "image": "https://m.media-amazon.com/images/I/41OOh-ZnuML._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/41OOh-ZnuML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41S72-25ENL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51D9VZPzlRL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/511NkVo0oJL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41JjWBwpGpL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51VLEm0-oQL._SL500_.jpg"
+  ],
   "title_raw": "roborock Q5 Max+ Robot Vacuum with Self-Empty Dock, Upgraded from Q5+, 5500 Pa Suction, DuoRoller Brush, Hands-Free Cleaning for up to 7 Weeks, PreciSense LiDAR Navigation, App & Voice Control",
   "title_clean": "roborock Q5 Max+ Robot Vacuum with Self-Empty Dock",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.464917+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029943+00:00"
 }

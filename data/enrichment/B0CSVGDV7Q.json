@@ -1,6 +1,15 @@
 {
   "asin": "B0CSVGDV7Q",
   "image": "https://m.media-amazon.com/images/I/510r8xfzICL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/510r8xfzICL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41ly6M3WlCL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41V6nRW6h7L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/417CN7lM4oL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41uhOv5VgBL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31H7Q+FsLrL._SL500_.jpg"
+  ],
   "title_raw": "Apple Watch Ultra 2 [GPS + Cellular 49mm] Smartwatch with Rugged Titanium Case & Olive Alpine Loop Small. Fitness Tracker, Precision GPS, Action Button, Extra-Long Battery Life",
   "title_clean": "Apple Watch Ultra 2 [GPS + Cellular 49mm] Smartwatch with Rugged",
   "price_usd": 682.73,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK_SCARCE",
   "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T00:13:18.468592+00:00"
+  "fetched_at": "2026-11-27T16:46:06.031090+00:00"
 }

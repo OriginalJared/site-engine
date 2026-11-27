@@ -1,6 +1,15 @@
 {
   "asin": "B0B48WY5PR",
   "image": "https://m.media-amazon.com/images/I/31krrHwZ0NL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31krrHwZ0NL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/415XkXB4a9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41vo2OSWcAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51p9g5Qlk4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Maf+KYQeL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/51mAkk3x8XL._SL500_.jpg"
+  ],
   "title_raw": "Hamilton Beach Wave Crusher Blender For Shakes and Smoothies With 40 Oz Glass Jar and 14 Functions, Ice Sabre Blades & 700 Watts for Consistently Smooth Results, Black + Stainless Steel (54221)",
   "title_clean": "Hamilton Beach Wave Crusher Blender For Shakes and Smoothies With 40",
   "price_usd": 72.9,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T00:13:18.425958+00:00"
+  "fetched_at": "2026-11-27T16:46:06.015454+00:00"
 }

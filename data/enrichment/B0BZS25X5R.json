@@ -1,6 +1,15 @@
 {
   "asin": "B0BZS25X5R",
   "image": "https://m.media-amazon.com/images/I/31ncNPyeGKL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31ncNPyeGKL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/318+Z8sCgOL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410tK0y8z4L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/418ytutcvqL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/516NAY7T9RL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41QRVSyUcnL._SL500_.jpg"
+  ],
   "title_raw": "Miku Pro Smart Baby Monitor with Floor Stand - Contact-Free Breathing & Sleep Tracking - Real-Time - HD Video Baby Monitor with Camera & Audio, Night Vision, Humidity & Temperature - Two-Way Talk",
   "title_clean": "Miku Pro Smart Baby Monitor with Floor Stand",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.424514+00:00"
+  "fetched_at": "2026-11-27T16:46:06.014865+00:00"
 }

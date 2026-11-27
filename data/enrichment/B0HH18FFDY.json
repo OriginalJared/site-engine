@@ -1,6 +1,10 @@
 {
   "asin": "B0HH18FFDY",
   "image": "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/01RmK+J4pJL._SL500_.gif"
+  ],
   "title_raw": "70mai Dash Cam 4K A810 with Sony STARVIS 2 IMX678, 4G LTE & Dual HDR Supported",
   "title_clean": "70mai Dash Cam 4K A810 with Sony STARVIS 2 IMX678",
   "price_usd": null,
@@ -13,5 +17,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.434822+00:00"
+  "fetched_at": "2026-11-27T16:46:06.018956+00:00"
 }

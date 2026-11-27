@@ -1,6 +1,15 @@
 {
   "asin": "B0CWS9V158",
   "image": "https://m.media-amazon.com/images/I/31MyvszhL-L._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31MyvszhL-L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31mr3vD4DSL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31-0edoBAWL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41WgCNu8OAL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31kPhp96LML._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31g-Sz1zSqL._SL500_.jpg"
+  ],
   "title_raw": "Nike Vaporfly 3 Men's Road Racing Shoes (FZ4017-100, White/Volt/Sail/Pro Green) Size 8",
   "title_clean": "Nike Vaporfly 3 Men's Road Racing Shoes (FZ4017-100",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.466050+00:00"
+  "fetched_at": "2026-11-27T16:46:06.030292+00:00"
 }

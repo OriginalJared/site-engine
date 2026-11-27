@@ -1,6 +1,15 @@
 {
   "asin": "B09S6T4HPF",
   "image": "https://m.media-amazon.com/images/I/31t4hn4f+HL._SL500_.jpg",
+  "image_hi": null,
+  "gallery": [
+    "https://m.media-amazon.com/images/I/31t4hn4f+HL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31JwY4VFY9L._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31Zth+BpecL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/410y4FcXCoL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41QE9jV5QfL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/31epDmJokAL._SL500_.jpg"
+  ],
   "title_raw": "LG CineBeam UHD 4K Projector HU710PW - DLP Home Theater Smart Projector, White",
   "title_clean": "LG CineBeam UHD 4K Projector HU710PW",
   "price_usd": null,
@@ -13,5 +22,5 @@
   "has_offer": true,
   "availability_type": "OUT_OF_STOCK",
   "availability_message": "Currently unavailable.",
-  "fetched_at": "2026-11-27T00:13:18.463022+00:00"
+  "fetched_at": "2026-11-27T16:46:06.029195+00:00"
 }
