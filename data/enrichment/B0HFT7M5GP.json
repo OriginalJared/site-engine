@@ -12,15 +12,15 @@
   ],
   "title_raw": "Lenovo 2026 ThinkPad X1 Carbon Gen 14 with Core Ultra 5 335, OLED Non-Touch | 512GB SSD, 32GB LPDDR5X-8533MT/s RAM, Intel Series 3 vPro Processor, 14\" 2.8K VRR 30-120Hz OLED, 3x Thunderbolt 4 -21V7006DUS",
   "title_clean": "Lenovo 2026 ThinkPad X1 Carbon Gen 14 with Core Ultra 5 335",
-  "price_usd": 2069.0,
-  "price_display": "$2,069.00",
+  "price_usd": 2039.0,
+  "price_display": "$2,039.00",
   "was_price_usd": 3219.0,
   "was_price_label": "List Price:",
-  "savings_percent": 36,
+  "savings_percent": 37,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK",
-  "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T18:51:18.047353+00:00"
+  "availability_type": "IN_STOCK_SCARCE",
+  "availability_message": "Only 14 left in stock - order soon.",
+  "fetched_at": "2026-11-27T19:29:02.876332+00:00"
 }
