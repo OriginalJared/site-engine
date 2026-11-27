@@ -404,12 +404,17 @@ DEPARTMENTS = OrderedDict([
 ])
 
 
+def real_image(u: str) -> bool:
+    """Amazon serves a tiny 'No image available' GIF when a listing has no photo."""
+    return u.startswith("https://") and not u.lower().endswith(".gif") and "01RmK+J4pJL" not in u
+
+
 PASTELS = ["#f6ecd2", "#e3efe6", "#e6ecf5", "#f5e4df", "#ece6f3", "#e2f0f1"]
 
 
 def _pimg(p: Dict[str, Any]) -> str:
     u = as_str(p.get("image_url"))
-    return u if u.startswith("https://") else ""
+    return u if real_image(u) else ""
 
 
 def photo_trio_html(prods: List[Dict[str, Any]], n: int = 3) -> str:
@@ -561,12 +566,14 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     if marquee_picks:
         latest_items = ""
         for g in (guides or [])[:5]:
-            latest_items += f'<li><a href="/generated/guides/{as_str(g.get("slug"))}/">{escape(as_str(g.get("title")))}</a></li>'
+            _gp = _rated([q for q in products_by_niche.get(as_str(g.get("niche")), []) if _pimg(q)])
+            _gt = (f'<span class="hl-thumb"><img src="{escape(_pimg(_gp[0]), quote=True)}" alt="" loading="lazy" /></span>') if _gp else ""
+            latest_items += f'<li><a href="/generated/guides/{as_str(g.get("slug"))}/">{_gt}<span>{escape(as_str(g.get("title")))}</span></a></li>'
         latest_html = (f'<div class="home-latest"><h2>Buying Guides</h2><ul class="latest-list">{latest_items}</ul>'
                        '<a class="home-latest-more" href="/generated/guides/">See all guides &rarr;</a></div>') if latest_items else '<div class="home-latest"></div>'
         ln, lp = marquee_picks[0]
         lslug = as_str(lp.get("slug"))
-        limg = as_str(lp.get("image_url"))
+        limg = _pimg(lp)
         feat_img = (f'<a class="feat-img" href="/generated/products/{lslug}/">'
                     f'<img src="{escape(limg, quote=True)}" alt="{escape(as_str(lp.get("name")))}" loading="lazy" /></a>') if limg else ''
         feature_html = (f'<div class="home-feature">'
@@ -577,14 +584,13 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                         f'<div class="feat-foot"><a class="feat-cta" href="/generated/products/{lslug}/">Read our review &rarr;</a></div>'
                         f'</div>')
         rail = ""
-        for _n, _p in marquee_picks[1:5]:
+        for _n, _p in [mp for mp in marquee_picks[1:] if _pimg(mp[1])][:4]:
             _ps = as_str(_p.get("slug"))
-            _pimg = as_str(_p.get("image_url"))
-            _thumb = (f'<span class="pick-thumb"><img src="{escape(_pimg, quote=True)}" alt="{escape(as_str(_p.get("name")))}" loading="lazy" /></span>') if _pimg else ''
-            rail += (f'<a class="pick-card" href="/generated/products/{_ps}/">{_thumb}'
-                     f'<span class="pick-txt"><span class="pick-eyebrow">{escape(slug_to_display(_n))}</span>'
-                     f'<span class="pick-name">{escape(as_str(_p.get("name")))}</span></span></a>')
-        rail_html = f'<div class="home-picks"><h2>Top Picks</h2>{rail}</div>'
+            rail += (f'<a class="hp-tile" href="/generated/products/{_ps}/">'
+                     f'<span class="hp-tile-img"><img src="{escape(_pimg(_p), quote=True)}" alt="{escape(as_str(_p.get("name")))}" loading="lazy" /></span>'
+                     f'<span class="hp-tile-eyebrow">{escape(slug_to_display(_n))}</span>'
+                     f'<span class="hp-tile-name">{escape(as_str(_p.get("name")))}</span></a>')
+        rail_html = f'<div class="home-picks"><h2>Top Picks</h2><div class="hp-tiles">{rail}</div></div>'
         featured_block = f'<section class="home-feature-row">{latest_html}{feature_html}{rail_html}</section>'
 
     niche_sections = []
@@ -1817,11 +1823,11 @@ def apply_enrichment(products: List[Dict[str, Any]]) -> int:
         if not _enrichment_fresh(e.get("fetched_at")):
             continue  # older than 24h: Amazon data may not be shown
         if isinstance(e.get("gallery"), list):
-            p["gallery"] = [as_str(u) for u in e["gallery"] if as_str(u).startswith("https://")][:6]
-        if as_str(e.get("image_hi")).startswith("https://"):
+            p["gallery"] = [as_str(u) for u in e["gallery"] if real_image(as_str(u))][:6]
+        if real_image(as_str(e.get("image_hi"))):
             p["image_hi"] = as_str(e.get("image_hi"))
         img = as_str(e.get("image"))
-        if img:
+        if real_image(img):
             p["image_url"] = img
         price = e.get("price_usd")
         if price not in (None, "", 0):
