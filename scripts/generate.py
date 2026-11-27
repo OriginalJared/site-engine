@@ -336,7 +336,8 @@ def build_price_gift_guides(products: List[Dict[str, Any]], per_guide: int = 12)
             out.append({"slug": g["slug"], "name": g["name"], "home_name": g["home_name"], "niche": "gifts",
                         "description": g["description"], "tags": [], "products": picks, "_auto": False})
     if out:
-        print(f"Price gift guides: {', '.join(f'{c['slug']} ({len(c['products'])})' for c in out)}")
+        summary = ", ".join("%s (%d)" % (c["slug"], len(c["products"])) for c in out)
+        print(f"Price gift guides: {summary}")
     return out
 
 
