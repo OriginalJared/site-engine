@@ -12,7 +12,10 @@ from collections import OrderedDict
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 TEMPLATES_DIR = ROOT / "templates"
-GENERATED_DIR = ROOT / "generated"
+GENERATED_DIR = ROOT / "generated"  # legacy output folder; removed each run (old URLs 301 via _redirects)
+CAT_OUT = ROOT / "best"        # /best/<category>/
+PROD_OUT = ROOT / "reviews"    # /reviews/<product>/
+GUIDE_OUT = ROOT / "guides"    # /guides/<guide>/
 
 CATEGORIES_JSON = DATA_DIR / "categories.json"
 COLLECTIONS_JSON = DATA_DIR / "collections.json"
@@ -391,7 +394,7 @@ def build_sidebar_links(niche: str, categories: List[Dict[str, Any]], exclude_sl
     for c in niche_cats:
         slug = as_str(c.get("slug"))
         name = as_str(c.get("name"))
-        href = escape(f"/generated/categories/{slug}/", quote=True)
+        href = escape(f"/best/{slug}/", quote=True)
         items.append(f'<li><a href="{href}">{escape(name)}</a></li>')
     return "\n            ".join(items)
 
@@ -473,7 +476,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
                 hub = c
                 break
         slug = as_str(hub.get("slug")) if hub else niche
-        return escape(f"/generated/categories/{slug}/", quote=True)
+        return escape(f"/best/{slug}/", quote=True)
 
     def dept_dropdown(label, members):
         links = "".join(f'<a href="{hub_href_for(n)}">{escape(slug_to_display(n))}</a>' for n in members)
@@ -497,9 +500,9 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
     if "gifts" in niches:
         nav_items.append(f'<a class="catnav-link catnav-accent" href="{hub_href_for("gifts")}">Gift Guides</a>')
     if guides:
-        nav_items.append('<a class="catnav-link" href="/generated/guides/">Buying Guides</a>')
+        nav_items.append('<a class="catnav-link" href="/guides/">Buying Guides</a>')
     nav_items.extend(dept_items)
-    nav_items.append('<a class="catnav-link catnav-all" href="/generated/categories/">All Categories</a>')
+    nav_items.append('<a class="catnav-link catnav-all" href="/best/">All Categories</a>')
     category_nav = '<nav class="category-nav" aria-label="Browse categories"><div class="container catnav-inner">' + "".join(nav_items) + '</div></nav>'
 
     gift_block = ""
@@ -515,8 +518,8 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             sc_desc = as_str(sc.get("description"))
             if len(sc_desc) > 140:
                 sc_desc = sc_desc[:137].rsplit(" ", 1)[0] + "..."
-            href = escape(f"/generated/categories/{sc_slug}/", quote=True)
-            cards.append(photo_card_html(f"/generated/categories/{sc_slug}/", sc_name, sc_desc,
+            href = escape(f"/best/{sc_slug}/", quote=True)
+            cards.append(photo_card_html(f"/best/{sc_slug}/", sc_name, sc_desc,
                                          cat_products(sc, products_by_niche), len(cards), "Shop this guide &rarr;"))
         gift_block = ('<section class="home-block gift-block">'
                       '<div class="block-head"><h2>Holiday Gift Guides</h2>'
@@ -533,13 +536,13 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             gdesc = as_str(g.get("description"))
             if len(gdesc) > 130:
                 gdesc = gdesc[:127].rsplit(" ", 1)[0] + "..."
-            href = escape(f"/generated/guides/{gslug}/", quote=True)
-            cards.append(photo_card_html(f"/generated/guides/{gslug}/", gtitle, gdesc,
+            href = escape(f"/guides/{gslug}/", quote=True)
+            cards.append(photo_card_html(f"/guides/{gslug}/", gtitle, gdesc,
                                          products_by_niche.get(as_str(g.get("niche")), []), len(cards) + 2,
                                          "Read the guide &rarr;", "Buying guide"))
         guides_block = ('<section class="home-block guides-block">'
                         '<div class="block-head"><h2>Buying Guides</h2>'
-                        '<a class="block-head-link" href="/generated/guides/">See all guides &rarr;</a></div>'
+                        '<a class="block-head-link" href="/guides/">See all guides &rarr;</a></div>'
                         '<p class="block-sub">What actually matters before you buy &mdash; no jargon, no fluff.</p>'
                         '<div class="photo-grid photo-grid-3">' + "".join(cards) + '</div></section>')
 
@@ -568,25 +571,25 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         for g in (guides or [])[:5]:
             _gp = _rated([q for q in products_by_niche.get(as_str(g.get("niche")), []) if _pimg(q)])
             _gt = (f'<span class="hl-thumb"><img src="{escape(_pimg(_gp[0]), quote=True)}" alt="" loading="lazy" /></span>') if _gp else ""
-            latest_items += f'<li><a href="/generated/guides/{as_str(g.get("slug"))}/">{_gt}<span>{escape(as_str(g.get("title")))}</span></a></li>'
+            latest_items += f'<li><a href="/guides/{as_str(g.get("slug"))}/">{_gt}<span>{escape(as_str(g.get("title")))}</span></a></li>'
         latest_html = (f'<div class="home-latest"><h2>Buying Guides</h2><ul class="latest-list">{latest_items}</ul>'
-                       '<a class="home-latest-more" href="/generated/guides/">See all guides &rarr;</a></div>') if latest_items else '<div class="home-latest"></div>'
+                       '<a class="home-latest-more" href="/guides/">See all guides &rarr;</a></div>') if latest_items else '<div class="home-latest"></div>'
         ln, lp = marquee_picks[0]
         lslug = as_str(lp.get("slug"))
         limg = _pimg(lp)
-        feat_img = (f'<a class="feat-img" href="/generated/products/{lslug}/">'
+        feat_img = (f'<a class="feat-img" href="/reviews/{lslug}/">'
                     f'<img src="{escape(limg, quote=True)}" alt="{escape(as_str(lp.get("name")))}" loading="lazy" /></a>') if limg else ''
         feature_html = (f'<div class="home-feature">'
                         f'{feat_img}'
                         f'<a class="feat-eyebrow" href="{hub_href_for(ln)}">{escape(slug_to_display(ln))}</a>'
-                        f'<h2 class="feat-title"><a href="/generated/products/{lslug}/">{escape(as_str(lp.get("name")))}</a></h2>'
+                        f'<h2 class="feat-title"><a href="/reviews/{lslug}/">{escape(as_str(lp.get("name")))}</a></h2>'
                         f'<p class="feat-verdict">{escape(as_str(lp.get("verdict")))}</p>'
-                        f'<div class="feat-foot"><a class="feat-cta" href="/generated/products/{lslug}/">Read our review &rarr;</a></div>'
+                        f'<div class="feat-foot"><a class="feat-cta" href="/reviews/{lslug}/">Read our review &rarr;</a></div>'
                         f'</div>')
         rail = ""
         for _n, _p in [mp for mp in marquee_picks[1:] if _pimg(mp[1])][:4]:
             _ps = as_str(_p.get("slug"))
-            rail += (f'<a class="hp-tile" href="/generated/products/{_ps}/">'
+            rail += (f'<a class="hp-tile" href="/reviews/{_ps}/">'
                      f'<span class="hp-tile-img"><img src="{escape(_pimg(_p), quote=True)}" alt="{escape(as_str(_p.get("name")))}" loading="lazy" /></span>'
                      f'<span class="hp-tile-eyebrow">{escape(slug_to_display(_n))}</span>'
                      f'<span class="hp-tile-name">{escape(as_str(_p.get("name")))}</span></a>')
@@ -607,7 +610,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             q = _by_slug.get(as_str(slug))
             return q if q and _pimg(q) else None
         def _chref(slug):
-            return escape(f"/generated/categories/{slug}/", quote=True) if as_str(slug) in _cat_slugs else ""
+            return escape(f"/best/{slug}/", quote=True) if as_str(slug) in _cat_slugs else ""
         rail_items = []
         for it in _hero_cfg.get("rail") or []:
             h = _chref(it.get("category"))
@@ -620,7 +623,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         for it in _hero_cfg.get("tiles") or []:
             if it.get("product"):
                 q = _hp(it.get("product"))
-                h = escape(f"/generated/products/{as_str(it.get('product'))}/", quote=True) if q else ""
+                h = escape(f"/reviews/{as_str(it.get('product'))}/", quote=True) if q else ""
             else:
                 q = _hp(it.get("image"))
                 h = _chref(it.get("category")) if q else ""
@@ -642,7 +645,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
             rail_html2 = (f'<aside class="hx-rail"><div class="hx-rail-head"><p class="hx-rail-kicker">{escape(as_str(_hero_cfg.get("rail_title")) or "Best of the Best")}</p>'
                           f'<p class="hx-rail-sub">{escape(as_str(_hero_cfg.get("rail_sub")))}</p></div>'
                           f'<ul>{"".join(rail_items)}</ul>'
-                          f'<a class="hx-rail-more" href="/generated/categories/">All categories &rarr;</a></aside>') if rail_items else ""
+                          f'<a class="hx-rail-more" href="/best/">All categories &rarr;</a></aside>') if rail_items else ""
             _asof = next((sale_price_bits(q).get("asof") for _, q, _, _ in tiles[:4] if sale_price_bits(q)), "")
             asof_html = (f'<p class="hx-asof" title="{escape(AMAZON_PRICE_DISCLAIMER, quote=True)}">'
                          f'Prices are from Amazon, {_asof}, and may change. Hover a price for details.</p>') if _asof else ""
@@ -764,7 +767,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         for c in rest:
             tags = c.get("tags") or []
             label = slug_to_display(tags[0]) if len(tags) == 1 else _no_price(as_str(c.get("name")))
-            link_bits.append(f'<a href="{escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)}">{escape(label)}</a>')
+            link_bits.append(f'<a href="{escape("/best/" + as_str(c.get("slug")) + "/", quote=True)}">{escape(label)}</a>')
         see_all = f'<a class="dept-seeall" href="{hub_href}">See all {escape(display)} &rarr;</a>'
         links_html = " ".join(link_bits + [see_all])
         updated = f'<p class="dept-updated">Updated {escape(UPDATED_LABEL)}</p>'
@@ -777,8 +780,8 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         side_html = ""
         def _side_href(c, p):
             if c is None:
-                return escape("/generated/products/" + as_str(p.get("slug")) + "/", quote=True)
-            return escape("/generated/categories/" + as_str(c.get("slug")) + "/", quote=True)
+                return escape("/reviews/" + as_str(p.get("slug")) + "/", quote=True)
+            return escape("/best/" + as_str(c.get("slug")) + "/", quote=True)
         def _side_title(c, p, st):
             if st:
                 return escape(as_str(st.get("headline")))
@@ -823,7 +826,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         for c in cats:
             c_slug = as_str(c.get("slug"))
             c_name = as_str(c.get("name"))
-            c_href = escape(f"/generated/categories/{c_slug}/", quote=True)
+            c_href = escape(f"/best/{c_slug}/", quote=True)
             all_cats_parts.append(f'<li><a href="{c_href}">{escape(_no_price(c_name))}</a></li>')
         all_cats_parts.append('</ul>')
 
@@ -846,7 +849,7 @@ def build_homepage(categories: List[Dict[str, Any]], products_by_niche: Dict[str
         "GIFT_BLOCK": gift_block,
         "GUIDES_BLOCK": guides_block,
         "NICHE_SECTIONS": "\n".join(niche_sections),
-        "ALL_CATEGORIES_LIST": '<a class="all-cats-btn" href="/generated/categories/">Browse all categories &rarr;</a>',
+        "ALL_CATEGORIES_LIST": '<a class="all-cats-btn" href="/best/">Browse all categories &rarr;</a>',
         "TEAM_SECTION": "\n".join(team_parts),
     }
 EDITORIAL_DIR = ROOT / "data" / "editorial"
@@ -1017,7 +1020,7 @@ def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Op
 
     def card(p, tab, kicker, cls):
         slug = as_str(p.get("slug"))
-        detail = escape(f"/generated/products/{slug}/", quote=True)
+        detail = escape(f"/reviews/{slug}/", quote=True)
         aff = safe_url(as_str(p.get("affiliate_url")))
         return (f'<article class="pick-card {cls}"><span class="pick-tab">{tab}</span>'
                 f'<div class="pick-media"><a href="{detail}" tabindex="-1">{cover_tile_html(p, large=True)}</a></div>'
@@ -1336,7 +1339,7 @@ def alternatives_html(p: Dict[str, Any], pool: List[Dict[str, Any]], limit: int 
     others.sort(key=lambda q: -(float(q.get("rating")) if isinstance(q.get("rating"), (int, float)) else 0))
     cards = []
     for q in others[:limit]:
-        href = escape(f"/generated/products/{as_str(q.get('slug'))}/", quote=True)
+        href = escape(f"/reviews/{as_str(q.get('slug'))}/", quote=True)
         b = sale_price_bits(q)
         price = (f'<p class="alt-price">{("<s>" + b["was"] + "</s> ") if b.get("was") else ""}{b["now"]}</p>' if b else "")
         cards.append(f'<a class="alt-card" href="{href}"><div class="alt-media">{cover_tile_html(q)}</div>'
@@ -1462,8 +1465,8 @@ def build_category_product_list(matched: List[Dict[str, Any]]) -> str:
                 break
         specs_html = " ".join(spec_bits)
         aff_href = safe_url(affiliate_url)
-        detail_href = escape(f"/generated/products/{slug}/", quote=True)
-        name_href = escape(f"/generated/products/{slug}/", quote=True)
+        detail_href = escape(f"/reviews/{slug}/", quote=True)
+        name_href = escape(f"/reviews/{slug}/", quote=True)
         card = f'<div class="product-card" id="p-{escape(slug, quote=True)}">'
         card += cover_tile_html(p)
         card += f'<h3><a href="{name_href}">{escape(name)}</a></h3>'
@@ -1510,7 +1513,7 @@ def build_top_pick_html(matched: List[Dict[str, Any]]) -> str:
     rating = p.get("rating")
     price = p.get("price_usd")
     aff_href = safe_url(as_str(p.get("affiliate_url")))
-    detail_href = escape(f"/generated/products/{slug}/", quote=True)
+    detail_href = escape(f"/reviews/{slug}/", quote=True)
     meta = []
     if brand:
         meta.append(f"<strong>Brand:</strong> {escape(brand)}")
@@ -1581,7 +1584,7 @@ def build_faq_ld(faqs: List[tuple]) -> Dict[str, Any]:
                             "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
 
 
-GUIDE_URL_BASE = "/generated/guides"
+GUIDE_URL_BASE = "/guides"
 
 
 def load_guides() -> List[Dict[str, Any]]:
@@ -1732,10 +1735,10 @@ def build_robots(site_url: str) -> str:
 
 def run_quality_gates():
     failures: List[str] = []
-    product_pages = sorted(GENERATED_DIR.glob("products/*/index.html"))
-    category_pages = sorted(GENERATED_DIR.glob("categories/*/index.html"))
+    product_pages = sorted(PROD_OUT.glob("*/index.html"))
+    category_pages = sorted(CAT_OUT.glob("*/index.html"))
     for page in product_pages:
-        rel = page.relative_to(GENERATED_DIR)
+        rel = page.relative_to(ROOT)
         content = page.read_text(encoding="utf-8")
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
@@ -1746,7 +1749,7 @@ def run_quality_gates():
         if "{{" in content and "}}" in content:
             failures.append(f"[UNREPLACED PLACEHOLDER] {rel}")
     for page in category_pages:
-        rel = page.relative_to(GENERATED_DIR)
+        rel = page.relative_to(ROOT)
         content = page.read_text(encoding="utf-8")
         if "<html" not in content.lower():
             failures.append(f"[MISSING <html>] {rel}")
@@ -1836,7 +1839,7 @@ def build_product_head_extra(p: Dict[str, Any], site_url: str, site_name: str) -
     price = p.get("price_usd")
     image = as_str(p.get("image_url"))
     reviewer = as_str(p.get("reviewer_name")) or site_name
-    canonical = f"{site_url}/generated/products/{slug}/"
+    canonical = f"{site_url}/reviews/{slug}/"
     cat_name = as_str(p.get("primary_category_name"))
     cat_url = site_url + as_str(p.get("primary_category_url"))
 
@@ -1877,11 +1880,11 @@ def build_category_head_extra(cat: Dict[str, Any], matched: List[Dict[str, Any]]
     cslug = as_str(cat.get("slug"))
     name = as_str(cat.get("name"))
     desc = as_str(cat.get("description"))
-    canonical = f"{site_url}/generated/categories/{cslug}/"
+    canonical = f"{site_url}/best/{cslug}/"
     items = []
     for i, p in enumerate(matched, start=1):
         items.append({"@type": "ListItem", "position": i,
-                      "url": f"{site_url}/generated/products/{as_str(p.get('slug'))}/",
+                      "url": f"{site_url}/reviews/{as_str(p.get('slug'))}/",
                       "name": as_str(p.get("name"))})
     itemlist_ld = {"@context": "https://schema.org", "@type": "ItemList", "name": name, "itemListElement": items}
     breadcrumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -2002,9 +2005,10 @@ def main():
     validate_product_filenames()
     # Rebuild generated/ from scratch each run so that renamed or removed
     # categories/products do not leave orphaned, unlinked "ghost" pages behind.
-    if GENERATED_DIR.exists():
-        shutil.rmtree(GENERATED_DIR)
-        print("Cleared previous generated/ output (prevents orphaned/stale pages).")
+    for _d in (GENERATED_DIR, CAT_OUT, PROD_OUT, GUIDE_OUT):
+        if _d.exists():
+            shutil.rmtree(_d)
+    print("Cleared previous page output (prevents orphaned/stale pages).")
     site_config = load_site_config()
     site_name = as_str(site_config.get("name")) or "Site Engine"
     site_tagline = as_str(site_config.get("tagline"))
@@ -2104,7 +2108,7 @@ def main():
         cat_slug = as_str(p.get("category"))
         cat = category_by_slug.get(cat_slug)
         if cat:
-            p["primary_category_url"] = f"/generated/categories/{cat_slug}/"
+            p["primary_category_url"] = f"/best/{cat_slug}/"
             p["primary_category_name"] = as_str(cat.get("name"))
             niche = as_str(cat.get("niche"))
         else:
@@ -2132,8 +2136,8 @@ def main():
         if not slug:
             continue
         html = render_product_page(product_template, p).replace(
-            "{{SHARE_ROW}}", share_row_html(f"{site_url}/generated/products/{as_str(p.get('slug'))}/", f"{as_str(p.get('name'))} | {site_name}"))
-        out_path = GENERATED_DIR / "products" / slug / "index.html"
+            "{{SHARE_ROW}}", share_row_html(f"{site_url}/reviews/{as_str(p.get('slug'))}/", f"{as_str(p.get('name'))} | {site_name}"))
+        out_path = PROD_OUT / slug / "index.html"
         write_text(out_path, html)
         product_count += 1
 
@@ -2198,7 +2202,7 @@ def main():
                     continue
                 _bp = _top_rated(_cm, set())
                 if _bp:
-                    _bf.append((slug_to_display(_tags[0]), _bp, f"/generated/categories/{as_str(_c.get('slug'))}/"))
+                    _bf.append((slug_to_display(_tags[0]), _bp, f"/best/{as_str(_c.get('slug'))}/"))
         # Gift guides are browsable lists, not ranked reviews, so they skip the Top/Budget/Upgrade cards.
         pick_cards = "" if niche == "gifts" else build_pick_cards_html(matched, display_noun(slug_to_display(niche)), _bf)
         html = (html
@@ -2208,7 +2212,7 @@ def main():
             .replace("{{HERO_MEDIA}}", photo_trio_html(_rated(matched)))
             .replace("{{HERO_CLASS}}", " has-media" if photo_trio_html(_rated(matched)) else "")
             .replace("{{SECTION_BAR}}", section_bar)
-            .replace("{{SHARE_ROW}}", share_row_html(f"{site_url}/generated/categories/{cslug}/", f"{name} | {site_name}"))
+            .replace("{{SHARE_ROW}}", share_row_html(f"{site_url}/best/{cslug}/", f"{name} | {site_name}"))
             .replace("{{PROMO_BOX}}", promo_box_html())
             .replace("{{FAQ_SECTION}}", build_faq_section_html(faqs))
             .replace("{{SITE_NAME}}", escape(site_name))
@@ -2221,7 +2225,7 @@ def main():
             .replace("{{SEO_TITLE}}", escape(category_seo_title(name, len(matched), _is_hub, bool(explicit_slugs), niche)))
             .replace("{{SEO_DESC}}", escape(category_seo_desc(name, matched, niche, description)))
             .replace("{{HEAD_EXTRA}}", ('<meta name="robots" content="noindex, follow" />\n' if is_thin else "") + build_category_head_extra(cat, matched, site_url, site_name, faqs)))
-        out_path = GENERATED_DIR / "categories" / cslug / "index.html"
+        out_path = CAT_OUT / cslug / "index.html"
         write_text(out_path, html)
         category_count += 1
 
@@ -2240,17 +2244,17 @@ def main():
     for _p in products:
         _s = as_str(_p.get("slug"))
         if _s:
-            search_index.append({"t": as_str(_p.get("name")), "u": f"/generated/products/{_s}/", "k": "Review"})
+            search_index.append({"t": as_str(_p.get("name")), "u": f"/reviews/{_s}/", "k": "Review"})
     for _c in categories:
         _s = as_str(_c.get("slug"))
         if _s:
-            search_index.append({"t": as_str(_c.get("name")), "u": f"/generated/categories/{_s}/", "k": "Category"})
+            search_index.append({"t": as_str(_c.get("name")), "u": f"/best/{_s}/", "k": "Category"})
     for _g in guides:
         _s = as_str(_g.get("slug"))
         if _s:
-            search_index.append({"t": as_str(_g.get("title")), "u": f"/generated/guides/{_s}/", "k": "Guide"})
-    write_text(GENERATED_DIR / "search-index.v1.js", "window.__HALCOTT_SEARCH__=" + json.dumps(search_index, ensure_ascii=False) + ";")
-    print(f"Generated generated/search-index.v1.js ({len(search_index)} entries).")
+            search_index.append({"t": as_str(_g.get("title")), "u": f"/guides/{_s}/", "k": "Guide"})
+    write_text(ROOT / "search-index.v1.js", "window.__HALCOTT_SEARCH__=" + json.dumps(search_index, ensure_ascii=False) + ";")
+    print(f"Generated search-index.v1.js ({len(search_index)} entries).")
 
     guide_urls: List[str] = []
     guide_template = read_text_optional(GUIDE_TEMPLATE, "")
@@ -2265,7 +2269,7 @@ def main():
             hub = hub_by_niche.get(g.get("niche"))
             gprods = products_by_niche.get(as_str(g.get("niche")), [])
             if hub:
-                hub_href = escape(f"/generated/categories/{hub[0]}/", quote=True)
+                hub_href = escape(f"/best/{hub[0]}/", quote=True)
                 related_cta = (f'<div class="guide-cta guide-cta-photo">{photo_trio_html(_rated(gprods))}'
                                f'<div class="gcp-text"><strong>Ready to compare the top {escape(hub[1].lower())}?</strong>'
                                f'<p>See every pick we recommend, with live Amazon prices.</p>'
@@ -2284,7 +2288,7 @@ def main():
                                      body_override=gbody, hero_media=photo_trio_html(_rated(gprods)),
                                      section_bar=build_section_bar(build_guide_toc_items(g, bool(faqs))),
                                      share_row=share_row_html(f"{site_url}{GUIDE_URL_BASE}/{gslug}/", f"{as_str(g.get('title'))} | {site_name}"))
-            write_text(GENERATED_DIR / "guides" / gslug / "index.html", html)
+            write_text(GUIDE_OUT / gslug / "index.html", html)
             guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/{gslug}/")
         items = []
         for i, g in enumerate(guides):
@@ -2300,8 +2304,8 @@ def main():
                      "intro": "Practical, jargon-free guides to help you pick the right product with confidence."}
         idx_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("Buying Guides", idx_desc, f"{site_url}{GUIDE_URL_BASE}/", site_name, og_type="website"))
         idx_html = render_guide_page(guide_template, idx_guide, site_name, site_tagline, "", "", idx_head, body_override=idx_body)
-        idx_html = re.sub(r'<a href="/generated/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", idx_html, count=1)
-        write_text(GENERATED_DIR / "guides" / "index.html", idx_html)
+        idx_html = re.sub(r'<a href="/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", idx_html, count=1)
+        write_text(GUIDE_OUT / "index.html", idx_html)
         guide_urls.append(f"{site_url}{GUIDE_URL_BASE}/")
         print(f"Generated {len(guides)} buying guide(s) + guides index.")
 
@@ -2317,7 +2321,7 @@ def main():
     for _niche in sorted(k for k in by_niche_cats if k and k != "gifts"):
         _cs = by_niche_cats[_niche]
         _hub = next((c for c in _cs if as_str(c.get("slug")) == _niche), None)
-        _hub_href = escape(f"/generated/categories/{as_str(_hub.get('slug')) if _hub else _niche}/", quote=True)
+        _hub_href = escape(f"/best/{as_str(_hub.get('slug')) if _hub else _niche}/", quote=True)
         _links = []
         _seen_labels = set()
         for c in sorted(_cs, key=lambda c: as_str(c.get("name"))):
@@ -2331,7 +2335,7 @@ def main():
             if label.lower() in _seen_labels:
                 continue
             _seen_labels.add(label.lower())
-            _links.append(f'<li><a href="{escape("/generated/categories/" + cs + "/", quote=True)}">{escape(label)}</a></li>')
+            _links.append(f'<li><a href="{escape("/best/" + cs + "/", quote=True)}">{escape(label)}</a></li>')
         _trio = photo_trio_html(_rated(products_by_niche.get(_niche, [])))
         dept_boxes.append(f'<div class="allcat-box" style="--tint:{PASTELS[len(dept_boxes) % len(PASTELS)]}">'
                           + (f'<a class="allcat-media" href="{_hub_href}">{_trio}</a>' if _trio else '')
@@ -2341,25 +2345,25 @@ def main():
     ac_desc = f"Every product category reviewed by {site_name}, from 4K monitors to running shoes."
     ac_page = {"slug": "", "title": "All Categories", "description": ac_desc,
                "intro": "Pick a department to see our top picks, budget options, and buying advice."}
-    ac_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("All Categories", ac_desc, f"{site_url}/generated/categories/", site_name, og_type="website"))
+    ac_head = "\n    ".join(list(FAVICON_LINKS) + _og_meta("All Categories", ac_desc, f"{site_url}/best/", site_name, og_type="website"))
     ac_html = render_guide_page(guide_template, ac_page, site_name, site_tagline, "", "", ac_head,
                                 body_override='<div class="allcat-grid">' + "".join(dept_boxes) + '</div>')
     ac_html = ac_html.replace('<main class="container guide-page', '<main class="container guide-page wide-page', 1)
-    ac_html = re.sub(r'<a href="/generated/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", ac_html, count=1)
-    write_text(GENERATED_DIR / "categories" / "index.html", ac_html)
+    ac_html = re.sub(r'<a href="/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", ac_html, count=1)
+    write_text(CAT_OUT / "index.html", ac_html)
 
     urls = [f"{site_url}/"]
-    urls.append(f"{site_url}/generated/categories/")
+    urls.append(f"{site_url}/best/")
     for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
         urls.append(f"{site_url}{sp}")
     for cat in categories:
         cslug = as_str(cat.get("slug"))
         if cslug in thin_slugs:
             continue
-        urls.append(f"{site_url}/generated/categories/{cslug}/")
+        urls.append(f"{site_url}/best/{cslug}/")
     for p in products:
         pslug = as_str(p.get("slug"))
-        urls.append(f"{site_url}/generated/products/{pslug}/")
+        urls.append(f"{site_url}/reviews/{pslug}/")
     urls.extend(guide_urls)
     urls = sorted(set(urls))
     write_text(SITEMAP_XML, build_sitemap(urls))
