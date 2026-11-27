@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T21:40:25.623241+00:00",
+  "checked_at": "2026-11-27T21:52:25.814194+00:00",
   "results": [
     {
       "asin": "B0GR1JTFP8",
@@ -61,7 +61,7 @@
       "expected": "ASUS ROG Strix G16 (2025)",
       "title": "ASUS ROG Strix G16 (2025) Gaming Laptop, 16” FHD+ 16:10 165Hz/3ms, NVIDIA® GeForce RTX™ 5060, Intel® Core™ i7 Processor 14650HX, 16GB DDR5, 1TB Gen 4 SSD, Wi-Fi 7, Windows 11 Home, G615JMR-AS74",
       "has_offer": true,
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "price": "$1,489.00"
     },
     {
