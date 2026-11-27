@@ -766,3 +766,25 @@ main.guide-page.wide-page { max-width:1120px; }
 }
 .hx-tile-art img { filter:none; }
 .hx-tile-art { isolation:auto; }
+
+/* ===== v19: one bold sans typeface site-wide + homepage price chips ===== */
+:root {
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body { font-size:17px; line-height:1.6; }
+h1, h2, h3, h4,
+.dept-title, .feat-title, .pick-card h3, .photo-card h3, .block-head h2, .alt-card h3,
+.product-hero-info h1, .hero-band h1, .guide-hero h1 { font-family:var(--font-heading) !important; font-weight:800 !important; letter-spacing:-.012em; }
+.hero-band h1, .guide-hero h1, .product-hero-info h1 { font-weight:900 !important; letter-spacing:-.02em; }
+.dept-card h3, .dept-item h3, .dept-lead h3 { font-weight:800 !important; }
+.dept-lead h3 { font-size:1.6rem; line-height:1.15; }
+.dept-card h3, .dept-item h3 { font-size:1.08rem; line-height:1.28; }
+.dept-dek, .photo-card p { font-size:.95rem; }
+.logo, .site-logo, .brand-name { letter-spacing:.28em; }
+.price-chip { position:absolute; left:10px; bottom:10px; display:inline-flex; flex-direction:column; align-items:flex-start; gap:3px; z-index:3; }
+.pc-amt { background:#111; color:#fff; font-weight:800; font-size:.85rem; padding:4px 9px; border-radius:999px; line-height:1.2; }
+.pc-amt s { color:rgba(255,255,255,.6); font-weight:500; margin-right:2px; }
+.pc-deal { background:#d92d20; color:#fff; font-weight:800; font-size:.7rem; padding:3px 8px; border-radius:999px; text-transform:uppercase; letter-spacing:.03em; }
+.hx-tile-art, .dept-img.has-img, .dept-img-lg.has-img { position:relative; }
+.hx-asof { margin:2px 0 0; font-size:.78rem; color:#6b6b6b; cursor:help; }
