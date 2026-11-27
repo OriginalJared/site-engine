@@ -1050,6 +1050,50 @@ def build_pick_cards_html(matched: List[Dict[str, Any]], noun: str, best_for: Op
     return "".join(parts)
 
 
+SEO_YEAR = date.today().year
+
+
+def _seo_clean(name: str) -> str:
+    n = re.sub(r"\s*\([^)]*\)", "", as_str(name)).strip()
+    n = re.sub(r"^(the\s+)?best\s+", "", n, flags=re.I).strip()
+    n = re.sub(r"\s+(of\s+)?20\d\d$", "", n).strip()
+    return n
+
+
+def category_seo_title(name: str, n: int, is_hub: bool, is_collection: bool, niche: str) -> str:
+    core = _seo_clean(name) or slug_to_display(niche)
+    if niche == "gifts" and is_hub:
+        return f"Holiday Gift Guide {SEO_YEAR}: The Best Gifts for Everyone on Your List"
+    if niche == "gifts" or core.lower().startswith("gift"):
+        t = f"Best {core} ({SEO_YEAR}): {n} Picks They'll Actually Use" if n >= 3 else f"Best {core} ({SEO_YEAR})"
+    elif is_hub:
+        t = f"Best {core} of {SEO_YEAR}: {n} Top Picks Compared" if n >= 3 else f"Best {core} of {SEO_YEAR}"
+    else:
+        t = f"Best {core} ({SEO_YEAR}): {n} Top Picks" if n >= 3 else f"Best {core} ({SEO_YEAR})"
+    return f"{t} | Halcott Magazine" if len(t) <= 58 else t
+
+
+def category_seo_desc(name: str, matched: List[Dict[str, Any]], niche: str, fallback: str) -> str:
+    top = primary_pick(matched) if matched else None
+    if not top:
+        return strip_price_text(fallback)[:158]
+    used = {as_str(top.get("slug"))}
+    budget = _top_rated(matched, used, "budget")
+    core = _seo_clean(name).lower() or slug_to_display(niche).lower()
+    if niche == "gifts" and core.startswith("holiday"):
+        return "Gift ideas for everyone on your list, from stocking stuffers to splurges. Every pick is in stock with live Amazon prices, checked daily."
+    if niche == "gifts":
+        d = f"{len(matched)} {core} they'll actually use, all in stock with live Amazon prices checked daily. Top pick: the {as_str(top.get('name'))}."
+        return d[:160]
+    d = f"We compared {len(matched)} {core}. Our top pick: the {as_str(top.get('name'))}."
+    if budget:
+        d += f" Best value: the {as_str(budget.get('name'))}."
+    d += " Live Amazon prices, checked daily."
+    if len(d) > 160:
+        d = f"We compared {len(matched)} {core}. Our top pick: the {as_str(top.get('name'))}. Live Amazon prices, checked daily."
+    return d[:160]
+
+
 def render_category_page(template: str, name: str, description: str, product_list_html: str) -> str:
     return template.replace("{{CATEGORY_NAME}}", escape(name)).replace("{{CATEGORY_DESCRIPTION}}", escape(description)).replace("{{PRODUCT_LIST}}", product_list_html)
 
@@ -2121,6 +2165,11 @@ def main():
                 description = _dd
                 cat["description"] = _dd
         is_thin = real_count < THIN_CATEGORY_MIN
+        # Sub-pages only earn a spot in Google if they're a real, narrower list (5+ picks, fewer than the hub).
+        _is_hub = cslug == niche
+        _hub_n = len(products_by_niche.get(niche, []))
+        if not _is_hub and not explicit_slugs and (real_count < 5 or real_count >= _hub_n):
+            is_thin = True
         if is_thin:
             thin_slugs.add(cslug)
         editorial_html = build_editorial_html(load_editorial(niche), slug_to_display(niche), len(matched)) if cslug == niche else ""
@@ -2169,6 +2218,8 @@ def main():
             .replace("{{REVIEWER_BIO}}", escape(reviewer.get("bio", "")))
             .replace("{{SIDEBAR_LINKS}}", sidebar)
             .replace("{{EDITORIAL}}", editorial_html)
+            .replace("{{SEO_TITLE}}", escape(category_seo_title(name, len(matched), _is_hub, bool(explicit_slugs), niche)))
+            .replace("{{SEO_DESC}}", escape(category_seo_desc(name, matched, niche, description)))
             .replace("{{HEAD_EXTRA}}", ('<meta name="robots" content="noindex, follow" />\n' if is_thin else "") + build_category_head_extra(cat, matched, site_url, site_name, faqs)))
         out_path = GENERATED_DIR / "categories" / cslug / "index.html"
         write_text(out_path, html)
