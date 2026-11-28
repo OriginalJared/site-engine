@@ -1,0 +1,6 @@
+{
+  "_note": "Email signup box. Turn 'enabled' on only after the SUBSCRIBERS storage is connected in Cloudflare Pages.",
+  "enabled": false,
+  "headline": "Get our best deals, before everyone else",
+  "dek": "One short email when prices drop on the picks we actually recommend. No spam, unsubscribe anytime."
+}
