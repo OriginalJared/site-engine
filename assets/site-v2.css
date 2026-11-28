@@ -841,3 +841,34 @@ h1, h2, h3, h4,
 .pc-amt { font-size:.78rem; padding:3px 8px; }
 .pc-deal { font-size:.62rem; padding:2px 7px; }
 .dept-card .price-chip, .hx-tile-art .price-chip { flex-direction:row; align-items:center; gap:5px; }
+
+/* ===== v23: email signup ===== */
+.nl-box { margin:36px auto; }
+.nl-band { background:radial-gradient(circle at 15% 20%, #2a3b2f 0, #14251d 55%, #0d1813 100%); color:#fff; border-radius:20px; padding:38px 40px; max-width:1100px; box-sizing:border-box; }
+.nl-compact { background:#111; color:#fff; border-radius:16px; padding:26px 28px; max-width:780px; box-sizing:border-box; }
+.nl-inner { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:28px; align-items:center; }
+.nl-compact .nl-inner { grid-template-columns:1fr; gap:14px; }
+.nl-kicker { margin:0 0 6px; font-size:.72rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; color:#ffd93b; }
+.nl-box h2 { margin:0 0 8px; color:#fff !important; font-size:1.9rem; line-height:1.12; border:none !important; padding:0 !important; }
+.nl-compact h2 { font-size:1.35rem; }
+.nl-box h2::before { display:none !important; }
+.nl-dek { margin:0; color:rgba(255,255,255,.78); font-size:1rem; line-height:1.5; }
+.nl-form { display:flex; flex-wrap:wrap; gap:10px; }
+.nl-form input[type=email] { flex:1 1 220px; min-width:0; padding:14px 18px; border-radius:999px; border:2px solid transparent; font-size:1rem; font-family:inherit; background:#fff; color:#111; }
+.nl-form input[type=email]:focus { outline:none; border-color:#ffd93b; }
+.nl-form button { padding:14px 24px; border-radius:999px; border:none; background:#ffd93b; color:#111; font-weight:900; font-size:1rem; cursor:pointer; font-family:inherit; }
+.nl-form button:hover { background:#fff; }
+.nl-form button:disabled { opacity:.6; cursor:wait; }
+.nl-msg { flex-basis:100%; margin:2px 0 0; font-size:.9rem; color:rgba(255,255,255,.85); min-height:1px; }
+.nl-msg.nl-err { color:#ffb4a8; }
+.nl-fine { flex-basis:100%; margin:0; font-size:.75rem; color:rgba(255,255,255,.55); }
+.nl-fine a { color:rgba(255,255,255,.8); }
+.nl-done { margin:0; font-size:1.1rem; font-weight:800; color:#ffd93b; }
+.nl-hp, .nl-sr { position:absolute !important; left:-9999px !important; width:1px; height:1px; overflow:hidden; }
+@media (max-width: 760px) {
+  .nl-band { padding:26px 20px; border-radius:16px; margin-left:12px; margin-right:12px; }
+  .nl-inner { grid-template-columns:1fr; gap:16px; }
+  .nl-box h2 { font-size:1.5rem; }
+  .nl-compact { margin-left:12px; margin-right:12px; }
+  .nl-form button { flex:1 1 100%; }
+}
