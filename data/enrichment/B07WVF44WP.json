@@ -12,15 +12,15 @@
   ],
   "title_raw": "Burst Original Sonic Electric Toothbrush for Adults (White) | Soft Bristle | Rechargeable Electric Sonic Toothbrush | Deep Clean Stain & Plaque Removal | 3 Modes: Teeth Whitening, Sensitive & Massage",
   "title_clean": "Burst Original Sonic Electric Toothbrush for Adults",
-  "price_usd": 60.0,
-  "price_display": "$60.00",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 2 left in stock - order soon.",
-  "fetched_at": "2026-11-28T16:49:39.225289+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-28T18:14:53.752611+00:00"
 }
