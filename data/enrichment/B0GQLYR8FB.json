@@ -7,15 +7,15 @@
   ],
   "title_raw": "Char-Broil Performance Series 4-Burner Gas Grill with Side Burner in Gray Stainless",
   "title_clean": "Char-Broil Performance Series 4-Burner Gas Grill with Side Burner",
-  "price_usd": 384.05,
-  "price_display": "$384.05",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 7 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:52:23.176660+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-28T16:35:32.393129+00:00"
 }

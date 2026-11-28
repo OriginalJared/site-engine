@@ -12,15 +12,15 @@
   ],
   "title_raw": "Hamilton Beach FlexBrew Trio 2-Way Coffee Maker, Compatible with K-Cup Pods or Grounds, Combo, Single Serve & Full 12c Pot, Black - Fast Brewing (49902)",
   "title_clean": "Hamilton Beach FlexBrew Trio 2-Way Coffee Maker",
-  "price_usd": 75.95,
-  "price_display": "$75.95",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:52:23.130717+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-28T16:35:32.362295+00:00"
 }

@@ -4,23 +4,23 @@
   "image_hi": null,
   "gallery": [
     "https://m.media-amazon.com/images/I/41rNsnhDgkL._SL500_.jpg",
-    "https://m.media-amazon.com/images/I/41Bep3yKSrL._SL500_.jpg",
     "https://m.media-amazon.com/images/I/41SGiXeJUWL._SL500_.jpg",
-    "https://m.media-amazon.com/images/I/31UmUqUoPjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41Bep3yKSrL._SL500_.jpg",
     "https://m.media-amazon.com/images/I/41YYc-YySXL._SL500_.jpg",
-    "https://m.media-amazon.com/images/I/41D6DtbFpyL._SL500_.jpg"
+    "https://m.media-amazon.com/images/I/31UmUqUoPjL._SL500_.jpg",
+    "https://m.media-amazon.com/images/I/41qdBhoCBBL._SL500_.jpg"
   ],
-  "title_raw": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office Included • Intel CPU • 128GB SSD • 1TB Cloud Storage • 2027 Edition • Windows 11",
+  "title_raw": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office Included • Intel CPU • 128GB PCle SSD • 1TB Cloud Storage • 2027 Edition • Windows 11",
   "title_clean": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office",
-  "price_usd": 349.99,
-  "price_display": "$349.99",
+  "price_usd": 349.98,
+  "price_display": "$349.98",
   "was_price_usd": 869.99,
   "was_price_label": "Typical price:",
   "savings_percent": 60,
-  "deal_badge": "Black Friday Deal",
+  "deal_badge": "Cyber Monday Deal",
   "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
   "availability_type": "IN_STOCK",
   "availability_message": "In Stock",
-  "fetched_at": "2026-11-27T21:52:23.156168+00:00"
+  "fetched_at": "2026-11-28T16:35:32.382113+00:00"
 }

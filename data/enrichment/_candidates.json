@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T21:52:25.814194+00:00",
+  "checked_at": "2026-11-28T16:35:35.243489+00:00",
   "results": [
     {
       "asin": "B0GR1JTFP8",
@@ -62,7 +62,7 @@
       "title": "ASUS ROG Strix G16 (2025) Gaming Laptop, 16” FHD+ 16:10 165Hz/3ms, NVIDIA® GeForce RTX™ 5060, Intel® Core™ i7 Processor 14650HX, 16GB DDR5, 1TB Gen 4 SSD, Wi-Fi 7, Windows 11 Home, G615JMR-AS74",
       "has_offer": true,
       "availability": "IN_STOCK_SCARCE",
-      "price": "$1,489.00"
+      "price": "$1,488.00"
     },
     {
       "asin": "B0GRBR36RL",
@@ -95,10 +95,10 @@
       "asin": "B0HJVBQ9H3",
       "for": "laptops",
       "expected": "Lenovo IdeaPad Slim 3i 15.6-inch",
-      "title": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office Included • Intel CPU • 128GB SSD • 1TB Cloud Storage • 2027 Edition • Windows 11",
+      "title": "Lenovo IdeaPad Slim 3i • 15.6\" FHD Laptop with Microsoft Office Included • Intel CPU • 128GB PCle SSD • 1TB Cloud Storage • 2027 Edition • Windows 11",
       "has_offer": true,
       "availability": "IN_STOCK",
-      "price": "$349.99"
+      "price": "$349.98"
     },
     {
       "asin": "B0GTFH1DNL",
@@ -124,8 +124,8 @@
       "expected": "Heybike Ranger 2.0 (folding)",
       "title": "Heybike Ranger 2.0 Folding Electric Bike for Adults, 2000W Peak Motor Ebike | 600Wh Removable Battery, Up to 30+MPH & 70 Miles, 20\" Fat Tire All-Terrain E Bike, Step-Thru Foldable Electric Bicycle-BG",
       "has_offer": true,
-      "availability": "OUT_OF_STOCK",
-      "price": null
+      "availability": "IN_STOCK",
+      "price": "$679.99"
     },
     {
       "asin": "B0C1VN5VPN",

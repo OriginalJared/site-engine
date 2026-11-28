@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T21:52:25.815287+00:00",
+  "fetched_at": "2026-11-28T16:35:35.244324+00:00",
   "requested": [
     "B09TQZP9CL",
     "B0BGVYQ8CC",
@@ -453,7 +453,7 @@
     },
     "B06XRKC719": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B0FJF3P5GV": {
       "has_offer": true,
@@ -541,7 +541,7 @@
     },
     "B095HZYNFM": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B0047BIWSK": {
       "has_offer": true,
@@ -549,7 +549,7 @@
     },
     "B0GXX8KQY7": {
       "has_offer": true,
-      "availability_type": "LEADTIME"
+      "availability_type": "IN_STOCK"
     },
     "B0CKJCJCDM": {
       "has_offer": true,
@@ -557,7 +557,7 @@
     },
     "B09P2RKRWX": {
       "has_offer": true,
-      "availability_type": "IN_STOCK"
+      "availability_type": "IN_STOCK_SCARCE"
     },
     "B0954PQDM8": {
       "has_offer": true,
@@ -629,7 +629,7 @@
     },
     "B0GKNQRS57": {
       "has_offer": true,
-      "availability_type": "OUT_OF_STOCK"
+      "availability_type": "IN_STOCK"
     },
     "B0C1VN5VPN": {
       "has_offer": true,
@@ -645,7 +645,7 @@
     },
     "B0C65CMKTK": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "AVAILABLE_DATE"
     },
     "B0CLL4ZQ15": {
       "has_offer": true,
@@ -681,7 +681,7 @@
     },
     "B09LD8T445": {
       "has_offer": true,
-      "availability_type": "IN_STOCK"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B08YCVJKXV": {
       "has_offer": true,
@@ -773,7 +773,7 @@
     },
     "B0CHN2R8GY": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "AVAILABLE_DATE"
     },
     "B0CH9X9PGK": {
       "has_offer": true,
@@ -805,7 +805,7 @@
     },
     "B0B6GLQJMV": {
       "has_offer": true,
-      "availability_type": "IN_STOCK"
+      "availability_type": "IN_STOCK_SCARCE"
     },
     "B0C2JRFKKX": {
       "has_offer": true,
@@ -1029,7 +1029,7 @@
     },
     "B0GQLYR8FB": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B00DYN0438": {
       "has_offer": true,
@@ -1061,7 +1061,7 @@
     },
     "B0CT9XTKKM": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "IN_STOCK"
     },
     "B0C8PR4W22": {
       "has_offer": true,
@@ -1101,7 +1101,7 @@
     },
     "B0B8MXPRDB": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B0HP9LC58M": {
       "has_offer": true,
@@ -1237,7 +1237,7 @@
     },
     "B0CHN2F11G": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "IN_STOCK"
     },
     "B08B3X9CKH": {
       "has_offer": true,
@@ -1257,7 +1257,7 @@
     },
     "B09CJJHJSJ": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "OUT_OF_STOCK"
     },
     "B0FL1WYTYQ": {
       "has_offer": true,
@@ -1297,7 +1297,7 @@
     },
     "B0CLF2DNMV": {
       "has_offer": true,
-      "availability_type": "IN_STOCK_SCARCE"
+      "availability_type": "AVAILABLE_DATE"
     },
     "B0DBVXDG7L": {
       "has_offer": true,
@@ -1321,7 +1321,7 @@
     },
     "B0CD2FSRDD": {
       "has_offer": true,
-      "availability_type": "IN_STOCK"
+      "availability_type": "IN_STOCK_SCARCE"
     },
     "B0D79ND3N7": {
       "has_offer": true,

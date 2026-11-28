@@ -17,10 +17,10 @@
   "was_price_usd": 999.99,
   "was_price_label": "List Price:",
   "savings_percent": 40,
-  "deal_badge": "Black Friday Deal",
+  "deal_badge": "Cyber Monday Deal",
   "deal_end": "2026-12-01T07:59:59Z",
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 15 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:52:23.139645+00:00"
+  "availability_type": "AVAILABLE_DATE",
+  "availability_message": "",
+  "fetched_at": "2026-11-28T16:35:32.368853+00:00"
 }

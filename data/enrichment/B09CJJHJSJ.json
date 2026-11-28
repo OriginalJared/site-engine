@@ -12,15 +12,15 @@
   ],
   "title_raw": "ApexDesk Elite Pro Series 60\" x 27\" Electric Height Adjustable Stand up Desk, Sit Stand Home Office Desk, Computer Desk - Curved Bamboo",
   "title_clean": "ApexDesk Elite Pro Series 60\" x 27\" Electric Height Adjustable Stand",
-  "price_usd": 449.99,
-  "price_display": "$449.99",
+  "price_usd": null,
+  "price_display": null,
   "was_price_usd": null,
   "was_price_label": null,
   "savings_percent": null,
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:52:23.233744+00:00"
+  "availability_type": "OUT_OF_STOCK",
+  "availability_message": "Currently unavailable.",
+  "fetched_at": "2026-11-28T16:35:32.407470+00:00"
 }

@@ -20,7 +20,7 @@
   "deal_badge": null,
   "deal_end": null,
   "has_offer": true,
-  "availability_type": "IN_STOCK_SCARCE",
-  "availability_message": "Only 1 left in stock - order soon.",
-  "fetched_at": "2026-11-27T21:52:23.149771+00:00"
+  "availability_type": "AVAILABLE_DATE",
+  "availability_message": "",
+  "fetched_at": "2026-11-28T16:35:32.376960+00:00"
 }
