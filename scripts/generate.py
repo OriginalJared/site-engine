@@ -87,6 +87,15 @@ def ensure_dir(path: Path):
 
 
 def write_text(path: Path, text: str):
+    try:
+        _rel = path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except Exception:
+        _rel = ""
+    if _rel.endswith(".html"):
+        if _rel == "index.html":
+            text = inject_newsletter(text, "band", "home")
+        elif _rel.split("/")[0] in ("best", "reviews", "guides", "compare"):
+            text = inject_newsletter(text, "compact", _rel.split("/")[0])
     ensure_dir(path.parent)
     path.write_text(text, encoding="utf-8")
 
@@ -1781,6 +1790,42 @@ def build_compare_page(a: Dict[str, Any], b: Dict[str, Any]) -> Dict[str, str]:
     return {"title": title, "description": desc, "intro": intro, "body": body}
 
 
+def newsletter_box_html(variant: str = "compact", source: str = "") -> str:
+    """Email signup form posting to our own Cloudflare function (/api/subscribe). Off unless data/newsletter.json enables it."""
+    try:
+        cfg = json.loads((DATA_DIR / "newsletter.json").read_text(encoding="utf-8"))
+    except Exception:
+        return ""
+    if not cfg.get("enabled"):
+        return ""
+    head = escape(as_str(cfg.get("headline")) or "Get our best deals")
+    dek = escape(as_str(cfg.get("dek")))
+    cls = "nl-box nl-band" if variant == "band" else "nl-box nl-compact"
+    return (f'<section class="{cls}"><div class="nl-inner"><div class="nl-copy"><p class="nl-kicker">The Halcott Deals List</p>'
+            f'<h2>{head}</h2><p class="nl-dek">{dek}</p></div>'
+            f'<form class="nl-form" action="/api/subscribe" method="post" novalidate>'
+            f'<label class="nl-sr" for="nl-email-{variant}">Email address</label>'
+            f'<input id="nl-email-{variant}" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />'
+            f'<input type="text" name="website" class="nl-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />'
+            f'<input type="hidden" name="source" value="{escape(source, quote=True)}" />'
+            f'<button type="submit">Sign me up</button>'
+            f'<p class="nl-msg" role="status" aria-live="polite"></p>'
+            f'<p class="nl-fine">By signing up you agree to our <a href="/privacy-policy">privacy policy</a>.</p></form></div></section>')
+
+
+NEWSLETTER_JS = """<script>document.addEventListener('submit',function(e){var f=e.target;if(!f.classList||!f.classList.contains('nl-form'))return;e.preventDefault();var m=f.querySelector('.nl-msg'),b=f.querySelector('button'),em=f.querySelector('input[type=email]');if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(em.value.trim())){m.textContent='Please enter a valid email address.';m.className='nl-msg nl-err';return;}b.disabled=true;m.textContent='Signing you up...';m.className='nl-msg';fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}}).then(function(r){return r.json().catch(function(){return{ok:false}})}).then(function(d){if(d.ok){f.innerHTML='<p class="nl-done">You\\'re on the list. Thanks for joining!</p>';}else{m.textContent=d.error||'Something went wrong. Please try again.';m.className='nl-msg nl-err';b.disabled=false;}}).catch(function(){m.textContent='Something went wrong. Please try again.';m.className='nl-msg nl-err';b.disabled=false;});});</script>"""
+
+
+def inject_newsletter(html: str, variant: str, source: str) -> str:
+    box = newsletter_box_html(variant, source)
+    if not box or '<footer class="site-footer">' not in html:
+        return html
+    _m = re.search(r'<section class="[^"]*guides-block', html) if variant == "band" else None
+    if _m:
+        return html[:_m.start()] + box + NEWSLETTER_JS + html[_m.start():]
+    return html.replace('<footer class="site-footer">', box + NEWSLETTER_JS + '\n    <footer class="site-footer">', 1)
+
+
 def render_guide_page(template: str, guide: Dict[str, Any], site_name: str, site_tagline: str,
                       related_cta: str, faq_html: str, head_extra: str, body_override=None,
                       toc_nav: str = "", section_bar: str = "", share_row: str = "", hero_media: str = "") -> str:
@@ -2494,6 +2539,17 @@ def main():
         compare_urls.append(f"{site_url}/compare/")
         write_text(ROOT / "search-index.v1.js", "window.__HALCOTT_SEARCH__=" + json.dumps(search_index, ensure_ascii=False) + ";")
     print(f"Generated {len(_cmp_links)} comparison page(s).")
+    # ---- Signup thank-you page (used when JavaScript is off) ----
+    if guide_template:
+        _th = render_guide_page(guide_template, {"title": "You're on the list", "description": "Thanks for joining the Halcott Magazine deals list.",
+                                "intro": "Thanks for signing up. We'll only email when it's worth your time."}, site_name, site_tagline, "", "",
+                                '<meta name="robots" content="noindex, follow" />\n    ' + "\n    ".join(list(FAVICON_LINKS)),
+                                body_override=('<div class="thanks-box"><p id="thanks-ok">Your email is saved. In the meantime, browse our '
+                                               '<a href="/best/gifts/">holiday gift guides</a> or <a href="/guides/">buying guides</a>.</p>'
+                                               '<p id="thanks-err" hidden>That didn\'t go through. Please <a href="/">go back</a> and check your email address.</p></div>'
+                                               '<script>if(location.search.indexOf("error=1")>-1){document.getElementById("thanks-ok").hidden=true;document.getElementById("thanks-err").hidden=false;}</script>'))
+        _th = re.sub(r'<a href="/guides/">Buying Guides</a>\s*<span class="breadcrumb-sep">&rsaquo;</span>\s*', "", _th, count=1)
+        write_text(ROOT / "thanks" / "index.html", _th)
     urls = [f"{site_url}/"]
     urls.append(f"{site_url}/best/")
     for sp in ("/about/", "/editorial-policy/", "/contact", "/privacy-policy", "/terms"):
